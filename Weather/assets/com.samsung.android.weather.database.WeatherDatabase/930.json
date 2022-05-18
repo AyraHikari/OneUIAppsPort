@@ -1,0 +1,943 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 930,
+    "identityHash": "fa0be11ffd3f88bfe24d0c1d9ba149fe",
+    "entities": [
+      {
+        "tableName": "TABLE_WEATHER_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COL_WEATHER_CONVERTED_ICON_NUM` INTEGER, `COL_WEATHER_TIME` INTEGER, `COL_WEATHER_CURRENT_TEMP` REAL, `COL_WEATHER_WEATHER_TEXT` TEXT, `COL_WEATHER_NAME` TEXT, `COL_WEATHER_NAME_ENG` TEXT, `COL_WEATHER_KEY` TEXT NOT NULL, `COL_WEATHER_AQI_INDEX` INTEGER, `COL_WEATHER_STATE` TEXT, `COL_WEATHER_STATE_ENG` TEXT, `COL_WEATHER_COUNTRY` TEXT, `COL_WEATHER_COUNTRY_ENG` TEXT, `COL_WEATHER_LOCATION` TEXT NOT NULL, `COL_WEATHER_LATITUDE` TEXT, `COL_WEATHER_LONGITUDE` TEXT, `COL_WEATHER_THEME_CODE` TEXT, `COL_WEATHER_TIMEZONE` TEXT, `COL_WEATHER_IS_DAYLIGHT_SAVING` INTEGER, `COL_WEATHER_UPDATE_TIME` INTEGER, `COL_WEATHER_SUNRISE_TIME` INTEGER, `COL_WEATHER_SUNSET_TIME` INTEGER, `COL_WEATHER_IS_DAY_OR_NIGHT` INTEGER, `COL_WEATHER_FEELSLIKE_TEMP` REAL, `COL_WEATHER_HIGH_TEMP` REAL, `COL_WEATHER_LOW_TEMP` REAL, `COL_WEATHER_YESTERDAY_HIGH_TEMP` REAL, `COL_WEATHER_YESTERDAY_LOW_TEMP` REAL, `COL_WEATHER_ICON_NUM` INTEGER, `COL_WEATHER_FORECAST_TEXT` TEXT, `COL_WEATHER_DAY_RAIN_PROBABILITY` INTEGER, `COL_WEATHER_DAY_SNOW_PROBABILITY` INTEGER, `COL_WEATHER_DAY_HAIL_PROBABILITY` INTEGER, `COL_WEATHER_DAY_PRECIPITATION_PROBABILITY` INTEGER, `COL_WEATHER_DAY_RAIN_AMOUNT` REAL, `COL_WEATHER_DAY_SNOW_AMOUNT` REAL, `COL_WEATHER_DAY_HAIL_AMOUNT` REAL, `COL_WEATHER_DAY_PRECIPITATION_AMOUNT` REAL, `COL_WEATHER_NIGHT_RAIN_PROBABILITY` INTEGER, `COL_WEATHER_NIGHT_SNOW_PROBABILITY` INTEGER, `COL_WEATHER_NIGHT_HAIL_PROBABILITY` INTEGER, `COL_WEATHER_NIGHT_PRECIPITATION_PROBABILITY` INTEGER, `COL_WEATHER_NIGHT_RAIN_AMOUNT` REAL, `COL_WEATHER_NIGHT_SNOW_AMOUNT` REAL, `COL_WEATHER_NIGHT_HAIL_AMOUNT` REAL, `COL_WEATHER_NIGHT_PRECIPITATION_AMOUNT` REAL, `COL_WEATHER_URL` TEXT, `COL_WEATHER_ORDER` INTEGER, `COL_WEATHER_HAS_INDEX` TEXT, `COL_WEATHER_PRIVACY` TEXT, `COL_WEATHER_BROADCAST` TEXT, `COL_WEATHER_10MIN` TEXT, `COL_WEATHER_PROVIDER_NAME` TEXT, PRIMARY KEY(`COL_WEATHER_KEY`))",
+        "fields": [
+          {
+            "fieldPath": "convertedIconNum",
+            "columnName": "COL_WEATHER_CONVERTED_ICON_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "COL_WEATHER_TIME",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentTemp",
+            "columnName": "COL_WEATHER_CURRENT_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weatherText",
+            "columnName": "COL_WEATHER_WEATHER_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "COL_WEATHER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nameEng",
+            "columnName": "COL_WEATHER_NAME_ENG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "key",
+            "columnName": "COL_WEATHER_KEY",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "AQIIndex",
+            "columnName": "COL_WEATHER_AQI_INDEX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "COL_WEATHER_STATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stateEng",
+            "columnName": "COL_WEATHER_STATE_ENG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "country",
+            "columnName": "COL_WEATHER_COUNTRY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "countryEng",
+            "columnName": "COL_WEATHER_COUNTRY_ENG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "COL_WEATHER_LOCATION",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "COL_WEATHER_LATITUDE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "COL_WEATHER_LONGITUDE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "themeCode",
+            "columnName": "COL_WEATHER_THEME_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "timeZone",
+            "columnName": "COL_WEATHER_TIMEZONE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isDaylightSaving",
+            "columnName": "COL_WEATHER_IS_DAYLIGHT_SAVING",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "updateTime",
+            "columnName": "COL_WEATHER_UPDATE_TIME",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sunRiseTime",
+            "columnName": "COL_WEATHER_SUNRISE_TIME",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sunSetTime",
+            "columnName": "COL_WEATHER_SUNSET_TIME",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isDayOrNight",
+            "columnName": "COL_WEATHER_IS_DAY_OR_NIGHT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "feelsLikeTemp",
+            "columnName": "COL_WEATHER_FEELSLIKE_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "highTemp",
+            "columnName": "COL_WEATHER_HIGH_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lowTemp",
+            "columnName": "COL_WEATHER_LOW_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "yesterdayHighTemp",
+            "columnName": "COL_WEATHER_YESTERDAY_HIGH_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "yesterdayLowTemp",
+            "columnName": "COL_WEATHER_YESTERDAY_LOW_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconNum",
+            "columnName": "COL_WEATHER_ICON_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "forecastText",
+            "columnName": "COL_WEATHER_FORECAST_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayRainProbability",
+            "columnName": "COL_WEATHER_DAY_RAIN_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "daySnowProbability",
+            "columnName": "COL_WEATHER_DAY_SNOW_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayHailProbability",
+            "columnName": "COL_WEATHER_DAY_HAIL_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayPrecipitationProbability",
+            "columnName": "COL_WEATHER_DAY_PRECIPITATION_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayRainAmount",
+            "columnName": "COL_WEATHER_DAY_RAIN_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "daySnowAmount",
+            "columnName": "COL_WEATHER_DAY_SNOW_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayHailAmount",
+            "columnName": "COL_WEATHER_DAY_HAIL_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayPrecipitationAmount",
+            "columnName": "COL_WEATHER_DAY_PRECIPITATION_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightRainProbability",
+            "columnName": "COL_WEATHER_NIGHT_RAIN_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightSnowProbability",
+            "columnName": "COL_WEATHER_NIGHT_SNOW_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightHailProbability",
+            "columnName": "COL_WEATHER_NIGHT_HAIL_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightPrecipitationProbability",
+            "columnName": "COL_WEATHER_NIGHT_PRECIPITATION_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightRainAmount",
+            "columnName": "COL_WEATHER_NIGHT_RAIN_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightSnowAmount",
+            "columnName": "COL_WEATHER_NIGHT_SNOW_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightHailAmount",
+            "columnName": "COL_WEATHER_NIGHT_HAIL_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nightPrecipitationAmount",
+            "columnName": "COL_WEATHER_NIGHT_PRECIPITATION_AMOUNT",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "COL_WEATHER_URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "order",
+            "columnName": "COL_WEATHER_ORDER",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hasidx",
+            "columnName": "COL_WEATHER_HAS_INDEX",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "privacy",
+            "columnName": "COL_WEATHER_PRIVACY",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "broadcastUrl",
+            "columnName": "COL_WEATHER_BROADCAST",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tenminUrl",
+            "columnName": "COL_WEATHER_10MIN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "providerName",
+            "columnName": "COL_WEATHER_PROVIDER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "COL_WEATHER_KEY"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "TABLE_HOURLY_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COL_WEATHER_KEY` TEXT NOT NULL, `COL_HOURLY_TIME` INTEGER NOT NULL, `COL_HOURLY_IS_DAY_OR_NIGHT` INTEGER, `COL_HOURLY_CURRENT_TEMP` REAL, `COL_HOURLY_HIGH_TEMP` REAL, `COL_HOURLY_LOW_TEMP` REAL, `COL_HOURLY_ICON_NUM` INTEGER, `COL_HOURLY_CONVERTED_ICON_NUM` INTEGER, `COL_HOURLY_RAIN_PROBABILITY` INTEGER, `COL_HOURLY_WIND_DIRECTION` TEXT, `COL_HOURLY_WIND_SPEED` INTEGER, `COL_HOURLY_HUMIDITY` INTEGER, `COL_HOURLY_WEATHER_TEXT` TEXT, `COL_HOURLY_URL` TEXT, `COL_HOURLY_PM25F` INTEGER, `COL_HOURLY_PM25FLEVEL` INTEGER, `COL_HOURLY_AQI` INTEGER, `COL_HOURLY_RAIN_PRECIPITATION` INTEGER, PRIMARY KEY(`COL_WEATHER_KEY`, `COL_HOURLY_TIME`), FOREIGN KEY(`COL_WEATHER_KEY`) REFERENCES `TABLE_WEATHER_INFO`(`COL_WEATHER_KEY`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "COL_WEATHER_KEY",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "COL_HOURLY_TIME",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDayOrNight",
+            "columnName": "COL_HOURLY_IS_DAY_OR_NIGHT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentTemp",
+            "columnName": "COL_HOURLY_CURRENT_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "highTemp",
+            "columnName": "COL_HOURLY_HIGH_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lowTemp",
+            "columnName": "COL_HOURLY_LOW_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconNum",
+            "columnName": "COL_HOURLY_ICON_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "convertedIconNum",
+            "columnName": "COL_HOURLY_CONVERTED_ICON_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rainProbability",
+            "columnName": "COL_HOURLY_RAIN_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "windDirection",
+            "columnName": "COL_HOURLY_WIND_DIRECTION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "windSpeed",
+            "columnName": "COL_HOURLY_WIND_SPEED",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "humidity",
+            "columnName": "COL_HOURLY_HUMIDITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weatherText",
+            "columnName": "COL_HOURLY_WEATHER_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "COL_HOURLY_URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pm25f",
+            "columnName": "COL_HOURLY_PM25F",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pm25fLevel",
+            "columnName": "COL_HOURLY_PM25FLEVEL",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "AQI",
+            "columnName": "COL_HOURLY_AQI",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rainPrecipitation",
+            "columnName": "COL_HOURLY_RAIN_PRECIPITATION",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "COL_WEATHER_KEY",
+            "COL_HOURLY_TIME"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "TABLE_WEATHER_INFO",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "COL_WEATHER_KEY"
+            ],
+            "referencedColumns": [
+              "COL_WEATHER_KEY"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "TABLE_DAILY_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COL_DAILY_HIGH_TEMP` REAL, `COL_DAILY_LOW_TEMP` REAL, `COL_DAILY_CONVERTED_ICON_NUM` INTEGER, `COL_WEATHER_KEY` TEXT NOT NULL, `COL_DAILY_TIME` INTEGER NOT NULL, `COL_DAILY_CURRENT_TEMP` REAL, `COL_DAILY_ICON_NUM` INTEGER, `COL_DAILY_ICON_DAY_NUM` INTEGER, `COL_DAILY_CONVERTED_ICON_DAY_NUM` INTEGER, `COL_DAILY_ICON_NIGHT_NUM` INTEGER, `COL_DAILY_CONVERTED_ICON_NIGHT_NUM` INTEGER, `COL_DAILY_PM10` REAL, `COL_DAILY_PM10LEVEL` INTEGER, `COL_DAILY_PM25` REAL, `COL_DAILY_PM25LEVEL` INTEGER, `COL_DAILY_WEATHER_TEXT` TEXT, `COL_DAILY_WEATHER_TEXT_NIGHT` TEXT, `COL_DAILY_URL` TEXT, `COL_DAILY_PROBABILITY` INTEGER, PRIMARY KEY(`COL_WEATHER_KEY`, `COL_DAILY_TIME`), FOREIGN KEY(`COL_WEATHER_KEY`) REFERENCES `TABLE_WEATHER_INFO`(`COL_WEATHER_KEY`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "highTemp",
+            "columnName": "COL_DAILY_HIGH_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lowTemp",
+            "columnName": "COL_DAILY_LOW_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "convertedIconNum",
+            "columnName": "COL_DAILY_CONVERTED_ICON_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "key",
+            "columnName": "COL_WEATHER_KEY",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "COL_DAILY_TIME",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentTemp",
+            "columnName": "COL_DAILY_CURRENT_TEMP",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconNum",
+            "columnName": "COL_DAILY_ICON_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconDayNum",
+            "columnName": "COL_DAILY_ICON_DAY_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "convertedIconDayNum",
+            "columnName": "COL_DAILY_CONVERTED_ICON_DAY_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "iconNightNum",
+            "columnName": "COL_DAILY_ICON_NIGHT_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "convertedIconNightNum",
+            "columnName": "COL_DAILY_CONVERTED_ICON_NIGHT_NUM",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pm10",
+            "columnName": "COL_DAILY_PM10",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pm10Level",
+            "columnName": "COL_DAILY_PM10LEVEL",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pm25",
+            "columnName": "COL_DAILY_PM25",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pm25Level",
+            "columnName": "COL_DAILY_PM25LEVEL",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weatherText",
+            "columnName": "COL_DAILY_WEATHER_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weatherTextNight",
+            "columnName": "COL_DAILY_WEATHER_TEXT_NIGHT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "COL_DAILY_URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "probability",
+            "columnName": "COL_DAILY_PROBABILITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "COL_WEATHER_KEY",
+            "COL_DAILY_TIME"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "TABLE_WEATHER_INFO",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "COL_WEATHER_KEY"
+            ],
+            "referencedColumns": [
+              "COL_WEATHER_KEY"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "TABLE_LIFE_INDEX_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COL_WEATHER_KEY` TEXT NOT NULL, `COL_LIFE_INDEX_TYPE` INTEGER NOT NULL, `COL_LIFE_INDEX_TEXT` TEXT, `COL_LIFE_INDEX_VALUE` REAL, `COL_LIFE_INDEX_PRIORITY` INTEGER, `COL_LIFE_INDEX_LEVEL` INTEGER, `COL_LIFE_INDEX_URL` TEXT, `COL_LIFE_INDEX_CATEGORY` INTEGER NOT NULL, PRIMARY KEY(`COL_WEATHER_KEY`, `COL_LIFE_INDEX_TYPE`, `COL_LIFE_INDEX_CATEGORY`), FOREIGN KEY(`COL_WEATHER_KEY`) REFERENCES `TABLE_WEATHER_INFO`(`COL_WEATHER_KEY`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "COL_WEATHER_KEY",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "COL_LIFE_INDEX_TYPE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "COL_LIFE_INDEX_TEXT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "COL_LIFE_INDEX_VALUE",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "priority",
+            "columnName": "COL_LIFE_INDEX_PRIORITY",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "COL_LIFE_INDEX_LEVEL",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "COL_LIFE_INDEX_URL",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "COL_LIFE_INDEX_CATEGORY",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "COL_WEATHER_KEY",
+            "COL_LIFE_INDEX_TYPE",
+            "COL_LIFE_INDEX_CATEGORY"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "TABLE_WEATHER_INFO",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "COL_WEATHER_KEY"
+            ],
+            "referencedColumns": [
+              "COL_WEATHER_KEY"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "TABLE_WEB_MENU_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COL_WEATHER_KEY` TEXT NOT NULL, `COL_WEB_MENU_TYPE` INTEGER NOT NULL, `COL_WEB_MENU_TITLE` TEXT NOT NULL, `COL_WEB_MENU_IMAGE` TEXT, `COL_WEB_MENU_URL` TEXT NOT NULL, `COL_WEB_MENU_UPDATE_TIME` INTEGER, PRIMARY KEY(`COL_WEATHER_KEY`, `COL_WEB_MENU_TITLE`, `COL_WEB_MENU_URL`), FOREIGN KEY(`COL_WEATHER_KEY`) REFERENCES `TABLE_WEATHER_INFO`(`COL_WEATHER_KEY`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "COL_WEATHER_KEY",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "COL_WEB_MENU_TYPE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "COL_WEB_MENU_TITLE",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "COL_WEB_MENU_IMAGE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "COL_WEB_MENU_URL",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updateTime",
+            "columnName": "COL_WEB_MENU_UPDATE_TIME",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "COL_WEATHER_KEY",
+            "COL_WEB_MENU_TITLE",
+            "COL_WEB_MENU_URL"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "TABLE_WEATHER_INFO",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "COL_WEATHER_KEY"
+            ],
+            "referencedColumns": [
+              "COL_WEATHER_KEY"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "TABLE_SETTING_INFO",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COL_SETTING_TEMP_SCALE` INTEGER NOT NULL, `COL_SETTING_LAST_SEL_LOCATION` TEXT, `COL_SETTING_ID` INTEGER NOT NULL, `COL_SETTING_AUTO_REFRESH_TIME` INTEGER NOT NULL, `COL_SETTING_AUTO_REF_NEXT_TIME` INTEGER NOT NULL, `COL_SETTING_NOTIFICATION` INTEGER, `COL_SETTING_NOTIFICATION_SET_TIME` INTEGER NOT NULL, `COL_SETTING_SHOW_USE_LOCATION_POPUP` INTEGER NOT NULL, `COL_SETTING_WIDGET_COUNT` INTEGER NOT NULL, `DAEMON_DIVISION_CHECK` TEXT NOT NULL, `COL_SETTING_S_PLANNER` INTEGER, `COL_SETTING_WIDGET_BACKGROUND_TRANSPARENCY` REAL, `COL_SETTING_WIDGET_BACKGROUND_COLOR` INTEGER, `COL_SETTING_WIDGET_BACKGROUND_TRANSPARENCY_FOR_COVER` REAL, `COL_SETTING_WIDGET_BACKGROUND_COLOR_FOR_COVER` INTEGER, `COL_SETTING_LAST_UPDATED_TIME_OF_NAME_LIST` TEXT, `COL_SETTING_CURRENT_LOCATION_ERROR` INTEGER, `COL_SETTING_DEFAULT_LOCATION` TEXT, `COL_SETTING_REFRESH_STATE` INTEGER NOT NULL, `COL_SETTING_LOCATING_THE_CURRENT_STATE` INTEGER NOT NULL, `COL_SETTING_LOCATION_SERVICES` INTEGER NOT NULL, `COL_SETTING_SHOW_MOBILE_POPUP` INTEGER NOT NULL, `COL_SETTING_SHOW_WLAN_POPUP` INTEGER NOT NULL, `COL_SETTING_SHOW_CHARGER_POPUP` INTEGER NOT NULL, `COL_SETTING_INITIAL_CP_TYPE` TEXT, `COL_SETTING_RESTORE_MODE` INTEGER NOT NULL, `COL_SETTING_RECOMMEND_UPDATE_TIME` INTEGER, `COL_SETTING_MIGRATION_DONE` INTEGER NOT NULL, `COL_SETTING_PINNED_LOCATION` INTEGER NOT NULL, PRIMARY KEY(`COL_SETTING_ID`))",
+        "fields": [
+          {
+            "fieldPath": "tempScale",
+            "columnName": "COL_SETTING_TEMP_SCALE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastSelLocation",
+            "columnName": "COL_SETTING_LAST_SEL_LOCATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "COL_SETTING_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "autoRefreshTime",
+            "columnName": "COL_SETTING_AUTO_REFRESH_TIME",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "autoRefNextTime",
+            "columnName": "COL_SETTING_AUTO_REF_NEXT_TIME",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "notification",
+            "columnName": "COL_SETTING_NOTIFICATION",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "notificationSetTime",
+            "columnName": "COL_SETTING_NOTIFICATION_SET_TIME",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "privacyPolicyAgreement",
+            "columnName": "COL_SETTING_SHOW_USE_LOCATION_POPUP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "widgetCount",
+            "columnName": "COL_SETTING_WIDGET_COUNT",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "daemonDivisionCheck",
+            "columnName": "DAEMON_DIVISION_CHECK",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sPlanner",
+            "columnName": "COL_SETTING_S_PLANNER",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "widgetBackgroundTransparency",
+            "columnName": "COL_SETTING_WIDGET_BACKGROUND_TRANSPARENCY",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "widgetBackgroundColor",
+            "columnName": "COL_SETTING_WIDGET_BACKGROUND_COLOR",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "widgetBackgroundTransparencyForCover",
+            "columnName": "COL_SETTING_WIDGET_BACKGROUND_TRANSPARENCY_FOR_COVER",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "widgetBackgroundColorForCover",
+            "columnName": "COL_SETTING_WIDGET_BACKGROUND_COLOR_FOR_COVER",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastUpdatedTime",
+            "columnName": "COL_SETTING_LAST_UPDATED_TIME_OF_NAME_LIST",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentLocationError",
+            "columnName": "COL_SETTING_CURRENT_LOCATION_ERROR",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "defaultLocation",
+            "columnName": "COL_SETTING_DEFAULT_LOCATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "refreshState",
+            "columnName": "COL_SETTING_REFRESH_STATE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "locatingTheCurrentState",
+            "columnName": "COL_SETTING_LOCATING_THE_CURRENT_STATE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "locationServices",
+            "columnName": "COL_SETTING_LOCATION_SERVICES",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "showMobilePupup",
+            "columnName": "COL_SETTING_SHOW_MOBILE_POPUP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "showWlanPopup",
+            "columnName": "COL_SETTING_SHOW_WLAN_POPUP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "showChargerPopup",
+            "columnName": "COL_SETTING_SHOW_CHARGER_POPUP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "initialCpType",
+            "columnName": "COL_SETTING_INITIAL_CP_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "restoreMode",
+            "columnName": "COL_SETTING_RESTORE_MODE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recommendUpdateTime",
+            "columnName": "COL_SETTING_RECOMMEND_UPDATE_TIME",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "migrationDone",
+            "columnName": "COL_SETTING_MIGRATION_DONE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pinnedLocation",
+            "columnName": "COL_SETTING_PINNED_LOCATION",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "COL_SETTING_ID"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"fa0be11ffd3f88bfe24d0c1d9ba149fe\")"
+    ]
+  }
+}

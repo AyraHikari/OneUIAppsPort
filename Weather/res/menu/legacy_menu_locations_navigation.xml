@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/weather_legacy_citylist_ic_check_mtrl" android:id="@id/menu_locations_set_favorite" android:title="@string/set_favorite" app:contentDescription="@string/set_favorite" app:showAsAction="always" app:tooltipText="@string/set_favorite" />
+    <item android:icon="@drawable/weather_legacy_citylist_ic_delete_mtrl" android:id="@id/menu_locations_delete" android:title="@string/menu_delete_title" app:contentDescription="@string/menu_delete_title" app:showAsAction="always" app:tooltipText="@string/menu_delete_title" />
+</menu>

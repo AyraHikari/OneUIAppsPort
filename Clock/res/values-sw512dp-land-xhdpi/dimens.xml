@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_setting_preview_height">240.0dip</dimen>
+    <dimen name="widget_setting_seek_bar_height">43.0dip</dimen>
+</resources>

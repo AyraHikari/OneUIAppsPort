@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__39" android:duration="66" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__40" android:duration="66" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:duration="200" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__41" android:duration="66" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__42" android:duration="66" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:duration="183" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__43" android:duration="66" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__44" android:duration="66" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__45" android:duration="66" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__46" android:duration="66" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:duration="200" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__47" android:duration="66" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__48" android:duration="66" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:duration="183" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__49" android:duration="66" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnyshowerthunderstorm__50" android:duration="66" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleY" />
+    </set>
+</set>

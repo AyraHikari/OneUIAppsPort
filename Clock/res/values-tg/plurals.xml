@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Бедоркунак баъди %d рӯз</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бедоркунак баъди %d рӯз</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Бедоркунак баъди %d соат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бедоркунак баъди %d соат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Бедоркунак баъди %d соат 1 дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бедоркунак баъди %d соат 1 дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Бедоркунак баъди %d дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Бедоркунак баъди %d дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Баъди %d дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Баъди %d дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Зиёда аз %d бедоркунак илова кардан ғайриимкон аст.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Зиёда аз %d бедоркунак илова кардан ғайриимкон аст.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d тасвири пасзаминаро нест кунем?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d тасвири пасзаминаро нест кунем?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d интихоб карда шуд</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d интихоб карда шуд</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d дақиқа пеш</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа пеш</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s ва %3$d дигар</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s ва %3$d дигар</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Давомнокии хоб: %d соат</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Давомнокии хоб: %d соат</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Давомнокии хоб: %d дақиқа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Давомнокии хоб: %d дақиқа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d дақиқа монондан</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа монондан</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">%d дақиқа камтар</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа камтар</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">%d дақиқа бештар</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дақиқа бештар</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Зиёда аз %d таймери пештанзим илова кардан ғайриимкон аст.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Зиёда аз %d таймери пештанзим илова кардан ғайриимкон аст.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Илова кардани зиёда аз %d шаҳр ғайриимкон аст.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Зиёда аз %d шаҳр илова кардан ғайриимкон аст.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

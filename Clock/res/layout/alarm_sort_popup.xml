@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="@drawable/alarm_sort_popup_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:outlineProvider="background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@id/row_sort_alarm_time_wrapper" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/sort_popup_padding" android:paddingRight="@dimen/sort_popup_padding" android:focusable="true" android:clickable="true">
+        <TextView android:textSize="@dimen/sort_popup_text_size" android:textColor="@color/sort_popup_menu_title_text_color" android:ellipsize="end" android:id="@id/sort_alarm_time_textview" android:paddingTop="@dimen/sort_popup_text_padding" android:paddingRight="@dimen/sort_popup_gap_between_text_and_icon" android:paddingBottom="@dimen/sort_popup_text_padding" android:text="@string/alarm_time_sort_order" android:maxLines="1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/sort_alarm_time_icon" android:layout_width="@dimen/sort_popup_icon_size" android:layout_height="@dimen/sort_popup_icon_size" />
+    </TableRow>
+    <TableRow android:id="@id/row_sort_custom_wrapper" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/sort_popup_padding" android:paddingRight="@dimen/sort_popup_padding" android:focusable="true" android:clickable="true">
+        <TextView android:textSize="@dimen/sort_popup_text_size" android:textColor="@color/sort_popup_menu_title_text_color" android:ellipsize="end" android:id="@id/sort_custom_textview" android:paddingTop="@dimen/sort_popup_text_padding" android:paddingRight="@dimen/sort_popup_gap_between_text_and_icon" android:paddingBottom="@dimen/sort_popup_text_padding" android:text="@string/alarm_custom_sort_order" android:maxLines="1" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/sort_custom_icon" android:layout_width="@dimen/sort_popup_icon_size" android:layout_height="@dimen/sort_popup_icon_size" />
+    </TableRow>
+</TableLayout>

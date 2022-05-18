@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="external_files" path="." />
+    <files-path name="logs" path="./logs" />
+    <files-path name="imageCache" path="./imageCache" />
+    <files-path name="share" path="./share" />
+    <files-path name="clipboardCache" path="./clipboardCache" />
+</paths>

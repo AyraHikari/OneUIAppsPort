@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/face_widget_layout" android:paddingTop="@dimen/facewidget_upper_padding" android:paddingBottom="@dimen/facewidget_bottom_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/facewidget_width" android:minHeight="@dimen/facewidget_height" android:paddingHorizontal="@dimen/facewidget_base_margin_left_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/face_widget_common_text_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/facewidget_common_temp_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/face_widget_common_text" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_roboto_regular" android:paddingHorizontal="@dimen/facewidget_additional_padding_left_right" android:paddingVertical="@dimen/facewidget_additional_padding_top_bottom" />
+    </LinearLayout>
+</LinearLayout>

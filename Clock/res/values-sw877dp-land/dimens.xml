@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">348.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">348.0dip</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.SwitchPreferenceCompat android:title="@string/alarm_sound_mode_jpn" android:key="sound_mode_jpn" android:summary="@string/alarm_sound_mode_sub_title_jpn" android:defaultValue="true" />
+</androidx.preference.PreferenceScreen>

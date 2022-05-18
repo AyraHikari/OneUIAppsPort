@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>ମିଡୱେ</item>
+        <item>ହନୋଲୁଲୁ</item>
+        <item>ହାୱାଇ</item>
+        <item>ଆଲସ୍କା</item>
+        <item>ଏଙ୍କରେଜ୍</item>
+        <item>ସାନ ଫ୍ରାନସିସ୍କୋ</item>
+        <item>ଭାନକୋଭେର୍</item>
+        <item>ସେଟେଲ୍</item>
+        <item>ଲସ୍‍ ଆନଜେଲସ୍</item>
+        <item>ତିଜୁଆନା</item>
+        <item>କାଲଗାରୀ</item>
+        <item>ଫୋନିକ୍ସ</item>
+        <item>ମାଜାଟଲାନ୍</item>
+        <item>ଡେନଭର୍</item>
+        <item>ମେକ୍ସିକୋ ସହର</item>
+        <item>ୱିନିପେଗ୍</item>
+        <item>ଡିଏଗୋ ଗାରସିଆ</item>
+        <item>ଡାଲ୍ଲାସ୍</item>
+        <item>ଚିକାଗୋ</item>
+        <item>ଟରୋଣ୍ଟୋ</item>
+        <item>ମିଆମି</item>
+        <item>ଲିମା</item>
+        <item>କୁଇଟୋ</item>
+        <item>ୱାସିଂଟନ୍ DC</item>
+        <item>ଓଟ୍ଟୱା</item>
+        <item>ନ୍ୟୁ ୟର୍କ୍</item>
+        <item>ବୋଗୋଟା</item>
+        <item>ସାଣ୍ଟିଆଗୋ</item>
+        <item>ଲା ପାଜ୍</item>
+        <item>କାରାକାସ୍</item>
+        <item>ବୁଏନସ ଏୟାର୍ସ</item>
+        <item>ନିୟୁଫାଉଣ୍ଡଲ୍ୟାଣ୍ଡ</item>
+        <item>ସେଣ୍ଟ ଜନ’ଙ୍କ</item>
+        <item>ସାଓ ପାଉଲ୍</item>
+        <item>ବ୍ରାସିଲିଆ</item>
+        <item>ରିଓ ଡି ଜେନେରିଓ</item>
+        <item>ଫର୍ଣ୍ଣାଣ୍ଡୋ ଦେ ନୋରନାହ</item>
+        <item>ଏଜୋରେସ୍‍</item>
+        <item>ଲିସବନ୍</item>
+        <item>କାସାବ୍ଲାଙ୍କା</item>
+        <item>ଡବଲିନ୍</item>
+        <item>ରାବଟ୍</item>
+        <item>ମାଡ୍ରିଡ</item>
+        <item>ଦି ସେଟେଲମେଣ୍ଟ</item>
+        <item>ଲଣ୍ଡନ</item>
+        <item>କିଙ୍ଗଷ୍ଟନ୍</item>
+        <item>ବାର୍ସିଲୋନା</item>
+        <item>ପ୍ୟାରିସ୍</item>
+        <item>ଆଲଜିଏର୍ସ</item>
+        <item>ଟୁନିସ୍</item>
+        <item>ତ୍ରିପୋଲି</item>
+        <item>ବର୍ଲିନ୍</item>
+        <item>ରୋମ୍</item>
+        <item>ପାରାଗୁଏ</item>
+        <item>କିନଶା</item>
+        <item>ଷ୍ଟକହୋମ୍</item>
+        <item>ବ୍ରାଟିସାଲଭା</item>
+        <item>କେପ୍ ଟାଉନ୍</item>
+        <item>ବୁଡାପେଷ୍ଟ</item>
+        <item>ୱାରସ୍ଵ</item>
+        <item>କଲିନିଗ୍ରାଡ୍</item>
+        <item>ସୋଫିଆ</item>
+        <item>ଏଥେନସ୍</item>
+        <item>ଲଭିଭ୍‍</item>
+        <item>ହେଲସିଙ୍କି</item>
+        <item>ରିଗା</item>
+        <item>ଟାଲିନ୍ନ</item>
+        <item>ବୁଚରେଷ୍ଟ</item>
+        <item>ଭିଲନିୟସ୍</item>
+        <item>ଲୁବୁମବାସି</item>
+        <item>ମିନସ୍କ</item>
+        <item>ସେଣ୍ଟ ପିଟର୍ସବର୍ଗ</item>
+        <item>ଇସ୍ତାନାବୁଲ୍</item>
+        <item>କମଚଟକା</item>
+        <item>କ୍ୟିବ୍</item>
+        <item>ଜେରୁସଲେମ୍</item>
+        <item>ମସ୍କୋ</item>
+        <item>ଖାର୍କିଭ୍</item>
+        <item>ନାଇରୋବି</item>
+        <item>ଜେଡହ</item>
+        <item>ଭୋଲଗୋଗ୍ରାଡ୍</item>
+        <item>ୟେରେଭାନ</item>
+        <item>ତବିଲିସି</item>
+        <item>ବାକୁ</item>
+        <item>ଚିତା</item>
+        <item>ସାମାରା</item>
+        <item>ତେହେରାନ</item>
+        <item>ଇଜେଭାସ୍କ</item>
+        <item>ଆବୁ ଧାବି</item>
+        <item>ଦୁବାଇ</item>
+        <item>ୟୁଫା</item>
+        <item>ୟେକଟେରିନବର୍ଗ</item>
+        <item>ଚେଲିଆବିନସକ୍</item>
+        <item>କରାଚି</item>
+        <item>କାବୁଲ୍</item>
+        <item>ତାସକେଣ୍ଟ</item>
+        <item>ଇସଲମାବାଦ୍</item>
+        <item>ମୁମ୍ୱାଇ</item>
+        <item>ଓମାସ୍କ</item>
+        <item>ଆଲମାଟି</item>
+        <item>ବାଙ୍ଗାଲୋର</item>
+        <item>ହାଇଦ୍ରାବାଦ୍</item>
+        <item>ନୁଆ ଦିଲ୍ଲୀ</item>
+        <item>କଲମ୍ୱୋ</item>
+        <item>ଚେନ୍ନାଇ</item>
+        <item>ନୋଭୋସିବ୍ରିସ୍କ</item>
+        <item>କାଠମାଣ୍ଡୁ</item>
+        <item>ନୋଭୋକୁଜନେଟସ୍କ</item>
+        <item>କୋଲକତା</item>
+        <item>ଢାକା</item>
+        <item>ଖୋଭଡ୍</item>
+        <item>କର୍ସୋନୋୟାରସ୍କ</item>
+        <item>ବ୍ୟାଙ୍କକକ୍</item>
+        <item>କୁଆଲା ଲମ୍ପପୁର</item>
+        <item>ସିଙ୍ଗାପୁର</item>
+        <item>ଇରକୁଟସ୍କ</item>
+        <item>ଫନୋମ୍ ପେନହ</item>
+        <item>ହାନୋଇ</item>
+        <item>ଜାକର୍ତ୍ତା</item>
+        <item>ଉଲାନ୍ ବାଟାର୍</item>
+        <item>ହଂ କଂ</item>
+        <item>ପର୍ଥ</item>
+        <item>ବେଜିଂ</item>
+        <item>ମାନିଲା</item>
+        <item>ତାଇପେ</item>
+        <item>ସିଓଲ୍</item>
+        <item>ଆମବୋନ୍</item>
+        <item>ଭ୍ଲାଡିଭୋଷ୍ଟକ୍</item>
+        <item>ୟାକୁଟସ୍କ</item>
+        <item>ଖାବରୋଭାସ୍କ</item>
+        <item>ଆଡିଲେଡ୍</item>
+        <item>ଟୋକିଓ</item>
+        <item>ୟଝୋନୋ-ସାଖାଲିନସ୍କ</item>
+        <item>ହାଲିଫାକ୍ସ</item>
+        <item>ଗୁଆମ୍</item>
+        <item>କାନବେରା</item>
+        <item>ମାଗାଡାନ୍</item>
+        <item>ସିଡନୀ</item>
+        <item>ପେଟ୍ରୋପାଭାଲଭୋସ୍କ-କାମଚାଟସ୍କି</item>
+        <item>ତରୱା</item>
+        <item>ଅକଲେଣ୍ଡ</item>
+        <item>ୱେଲିଂଟନ୍</item>
+        <item>ପାଗୋ ପାଗୋ</item>
+        <item>ଡେନପସାର୍</item>
+        <item>ବର୍ନ</item>
+        <item>ଜୁରିକ୍</item>
+        <item>କାଇରୋ</item>
+        <item>ଆବିଦଜାନ୍</item>
+        <item>ଆକ୍ରା</item>
+        <item>ଆଡିସ୍ ଆବବା</item>
+        <item>ଆମ୍ମାନ୍</item>
+        <item>ଆମଷ୍ଟରଡାମ୍</item>
+        <item>ଆନାଡାୟାର</item>
+        <item>ଆନକାରା</item>
+        <item>ଆଣ୍ଟେନାନାରଭିଓ</item>
+        <item>ଆସଗାବାତ୍</item>
+        <item>ଆସମାରା</item>
+        <item>ଅସ୍ତାନା</item>
+        <item>ଅସୁନସିଅନ୍‍</item>
+        <item>ଅଷ୍ଟିନ୍</item>
+        <item>ବାଗଦାଦ୍</item>
+        <item>ବାଲ୍ଟିମୋରେ</item>
+        <item>ବାମାକୋ</item>
+        <item>ବାଙ୍ଗୁଇ</item>
+        <item>ବରି</item>
+        <item>ବାସେ-ଟେରେ</item>
+        <item>ବିରୁଟ୍</item>
+        <item>ବେଲଗ୍ରେଡ୍</item>
+        <item>ବେଲିଯେ ସହର</item>
+        <item>ଭିଶେକକ୍</item>
+        <item>ବିସାଉ</item>
+        <item>ବୋଲୋଗନା</item>
+        <item>ବୋଷ୍ଟନ୍</item>
+        <item>ବ୍ରିଜ୍ ଟାଉନ୍</item>
+        <item>ବ୍ରିସବେନ୍</item>
+        <item>ଭ୍ରୁସଲ୍ସ</item>
+        <item>କାନାରେ ଆଇଲାଣ୍ଡସ୍</item>
+        <item>କାଟାନଜାରୋ</item>
+        <item>କାୟେନେ</item>
+        <item>ଚାରଲୋତେ</item>
+        <item>ଚିଶିନାଉ</item>
+        <item>କ୍ଲେଭେଲ୍ୟାଣ୍ଡ</item>
+        <item>କଲମ୍ୱସ୍</item>
+        <item>କୋନାକ୍ରୀ</item>
+        <item>କୋପେନହାଜେନ</item>
+        <item>କର୍କ</item>
+        <item>କ୍ରୋଟୋନେ</item>
+        <item>ଡାକାର୍</item>
+        <item>ଡାମାସକୁସ୍</item>
+        <item>ଦାର ଏ ସଲାମ</item>
+        <item>ଡାର୍ୱିନ୍</item>
+        <item>ଡେଟ୍ରୋଏଟ୍</item>
+        <item>ଡଜିବୌଟି</item>
+        <item>ଦୋହା</item>
+        <item>ଡଉଲା</item>
+        <item>ଡୁଶାନବେ</item>
+        <item>ପୂର୍ବି ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ଇଡେନବର୍ଗ</item>
+        <item>ଏଲ୍ ପାସୋ</item>
+        <item>ଫ୍ଲୋରେନ୍ସ</item>
+        <item>ଫୋର୍ଟ-ଦେ-ଫ୍ରାଂସ</item>
+        <item>ଫ୍ରିଟାଉନ</item>
+        <item>ଗାବୋରୋନ୍</item>
+        <item>ଗାଲାପାଗୋସ ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ଜେନିଭା</item>
+        <item>ଜେନୋଅ</item>
+        <item>ଜିଓର୍ଜଟାଉନ</item>
+        <item>ଗ୍ରିଟିଭିକେନ୍</item>
+        <item>ଗୁଆତେମାଲା ସହର</item>
+        <item>ଗୁଷ୍ଟାଭିଆ</item>
+        <item>ହେମବର୍ଗ୍</item>
+        <item>ହାରାରେ</item>
+        <item>ହାଭାନା</item>
+        <item>ହୋବାର୍ଟ</item>
+        <item>ହୋଷ୍ଟନ୍</item>
+        <item>ଇଣ୍ଡିଆନପୋଲିସ୍‍</item>
+        <item>ଜୋହନସବର୍ଗ</item>
+        <item>କମ୍ପଲ</item>
+        <item>ଖାରଟୋମ୍</item>
+        <item>କିଙ୍ଗଷ୍ଟନ୍</item>
+        <item>କୁଏତ ସହର</item>
+        <item>ଲାଗୋସ୍</item>
+        <item>ଲାସ୍ ଭେଗାସ୍</item>
+        <item>ଲଜୁବଲଜାନା</item>
+        <item>ହାଇକୌ</item>
+        <item>ଲୌସିଭିଲ୍ଲେ</item>
+        <item>ଲୁଆଣ୍ଡା</item>
+        <item>ଲୁସାକା</item>
+        <item>ଲକ୍ସେମବର୍ଗ</item>
+        <item>ମକାଉ</item>
+        <item>ମାଲାବୋ</item>
+        <item>ମେଲ୍</item>
+        <item>ମନାଗୁଆ</item>
+        <item>ମାନାମା</item>
+        <item>ମାପୁଟୋ</item>
+        <item>ମାରିଗଟ୍</item>
+        <item>ମେକ୍କା</item>
+        <item>ମେଲବର୍ନ</item>
+        <item>ମେମଫିସ୍</item>
+        <item>ମେସିନା</item>
+        <item>ମିଲାନୋ</item>
+        <item>ମିଲୱାଉକି</item>
+        <item>ମୋଗାଡିଶୁ</item>
+        <item>ମୋନରୋଭିଆ</item>
+        <item>ମୋଣ୍ଟେଭିଡିଓ</item>
+        <item>ମୋନଟ୍ରେଏଲ୍</item>
+        <item>ମୁନିଚି</item>
+        <item>ମସ୍କାଟ୍</item>
+        <item>ନାପୋଲି</item>
+        <item>ନାଟେର୍ସ</item>
+        <item>"ନ'ଡଜେମାନା"</item>
+        <item>ନିୟମେ</item>
+        <item>ନୌକାଚୋଟ୍</item>
+        <item>ନୌମେ</item>
+        <item>ନୁକୁ’ଆଲୋଫା</item>
+        <item>ନୁକ୍</item>
+        <item>ଓସାକା</item>
+        <item>ଓଗାଡୗଗୋ</item>
+        <item>ପାଲେରମୋ</item>
+        <item>ପାନାମା ସହର</item>
+        <item>ପାରାମାରିବୋ</item>
+        <item>ପର୍ମ</item>
+        <item>ଫିଲାଡେଲଫିଆ</item>
+        <item>ପୋଦଗୋରିଚ</item>
+        <item>ପୋଣ୍ଟା ଡେଲଗାଡା</item>
+        <item>ପୋର୍ଟ୍ ଲୌଇସ୍</item>
+        <item>ପୋର୍ଟ-ଆଉ-ପ୍ରିନ୍ସ</item>
+        <item>ପୋର୍ଟଲାଣ୍ତ, ଓରିଗୋନ</item>
+        <item>ପ୍ୟାଙ୍ଗଗ୍ୟାଙ୍ଗ</item>
+        <item>ୟାନଗାଓନ</item>
+        <item>ରେସିଫେ</item>
+        <item>ରେୟକଜାଭିକ୍</item>
+        <item>ରିୟାଦ</item>
+        <item>ସେଣ୍ଟ-ଡେନିସ୍</item>
+        <item>ସାନ୍ ଆନଟୋନିଓ</item>
+        <item>ସାନ୍‍ ଡିଏଗୋ</item>
+        <item>ସାନ୍ ଜୋସେ</item>
+        <item>ସାନ୍ ଜୋସେ</item>
+        <item>ସାନ ଜୁଆନ୍</item>
+        <item>ସାନ ମାରିନୋ</item>
+        <item>ସାନ୍ ସାଲଭାଡୋର୍</item>
+        <item>ସାନାଆ</item>
+        <item>ସାଣ୍ଟୋ ଡୋମିଙ୍ଗୋ</item>
+        <item>ସାଂଘାଇ</item>
+        <item>ଶେହଜେନ୍</item>
+        <item>ସ୍କୋପଜେ</item>
+        <item>ସେଣ୍ଟ ଜନ’ଙ୍କ</item>
+        <item>ସୁଭା</item>
+        <item>ତାହିତି</item>
+        <item>ତେଗୁକିଗଲ୍ପା</item>
+        <item>ହୋ ଚି ମିନହ୍ ସହର</item>
+        <item>ତିଆନଜିନ୍</item>
+        <item>ଟୋରିନ୍</item>
+        <item>ଭାଡୁଜ</item>
+        <item>ଭାଲେତ୍ତ</item>
+        <item>ଭେରୋନା</item>
+        <item>ଭିକ୍ଟୋରିଆ</item>
+        <item>ଭିଏନା</item>
+        <item>ୟାମୋଉସୁକ୍ରୋ</item>
+        <item>ୟାଉଣ୍ଡେ</item>
+        <item>ଜାଗ୍ରେବ୍</item>
+        <item>ଗୁନଞ୍ଜହଉ</item>
+        <item>କାର୍ଡିଫ୍</item>
+        <item>ରେଗିନା</item>
+        <item>ଚାର୍ଲୋତ୍ତେ ଆମାଲିଏ</item>
+        <item>ଆଟଲାଣ୍ଟା</item>
+        <item>ମାୟୋଟ୍ଟେ</item>
+        <item>ସେଣ୍ଟ ପିରେ ଏବଂ ମିକ୍ୟୁଲେଓନ୍</item>
+        <item>ଓସଲୋ</item>
+        <item>ସ୍ରିଡେନକୋଲିୟାମସ୍‌</item>
+        <item>ସେଭରୋ-କୁରିଲ୍ସିକ୍‌</item>
+        <item>ୱୁହାନ୍</item>
+        <item>ଚେଙ୍ଗେଡୁ</item>
+        <item>ଶିୟାନ</item>
+        <item>ପୋର୍ଟ ମରେସବି</item>
+        <item>ଡାଭାଓ ସହର</item>
+        <item>ଚଂକିଂ</item>
+        <item>ଶେନୟାଂ</item>
+        <item>ନାନଜିଂ</item>
+        <item>ହାରବିନ</item>
+        <item>ଜିନାନ୍</item>
+        <item>ଝେଙ୍ଗଝୌ</item>
+        <item>କୁନମିଂ</item>
+        <item>ଚାଂଚୁନ</item>
+        <item>ଫଜିହୌ</item>
+        <item>କୁଚିଂ</item>
+        <item>ମାକାସାର୍</item>
+        <item>ହାଂଝୋ</item>
+        <item>କିଂଡାଓ</item>
+        <item>ନେନିଙ୍ଗ</item>
+        <item>ଉରୁମିକ</item>
+        <item>ନାସସୁ</item>
+        <item>ନିକୋସିଆ</item>
+        <item>ଡିଲି</item>
+        <item>ରୋଡ୍ ଟାଉନ୍</item>
+        <item>ଲୋମ୍</item>
+        <item>ରସିଉ</item>
+        <item>ଲିବ୍ରେଭିଲ୍ଲେ</item>
+        <item>ମାର୍ସୋଲେ</item>
+        <item>ମାସେରୁ</item>
+        <item>ମଜାଉରୋ</item>
+        <item>ମୋନାକୋ</item>
+        <item>ବାନ୍ଦ୍ର ସେରୀ ବେଗୱାନ</item>
+        <item>ବଞ୍ଜୁଳା</item>
+        <item>ବୁସାନା</item>
+        <item>ବୁଜାମ୍ବୁରା</item>
+        <item>ବ୍ରଜୟାଭିଲ୍ଲେ</item>
+        <item>ଭିନେଟାଆନେ</item>
+        <item>ୱିନଧୋଏକ</item>
+        <item>ସାରାଜେଭୋ</item>
+        <item>ସାଇପାନ୍</item>
+        <item>ସାଓ ଟମ</item>
+        <item>ସେଣ୍ଟ. ଜିଓର୍ଜସ୍</item>
+        <item>ଷ୍ଟାନଲେୟ</item>
+        <item>ଆଡେନ୍</item>
+        <item>ଆପାଇଆ</item>
+        <item>ଆଣ୍ଡୋରା ଲା ଭିଲା</item>
+        <item>ଲାୟୁନେ</item>
+        <item>ୱିଲେମଷ୍ଟେଡ୍</item>
+        <item>ମବାବାନେ</item>
+        <item>କାଷ୍ଟ୍ରିଏସ୍</item>
+        <item>କୋରର</item>
+        <item>କାନକୁନ</item>
+        <item>କିଗାଲି</item>
+        <item>କିଙ୍ଗସଟାଉନ୍</item>
+        <item>ତେଲ ଆଭିଭ୍</item>
+        <item>ଟେର୍ଶୋବନ</item>
+        <item>ଟିରାନା</item>
+        <item>ଥିମ୍ଫୁ</item>
+        <item>ପୋର୍ଟ-ନଭୋ</item>
+        <item>ପ୍ରାୟା</item>
+        <item>ଫ୍ରାଙ୍କଫ୍ରୁଟ୍</item>
+        <item>ପ୍ରିଷ୍ଟିନା</item>
+        <item>ହମିଲଟନ</item>
+        <item>ହୋନୀର</item>
+        <item>ପୋର୍ଟ ଅଫ୍ ସ୍ପେନ୍</item>
+        <item>ମିନିଆପୋଲିସ</item>
+        <item>ହିଲୋ</item>
+        <item>ଓର୍ଲାଣ୍ତ</item>
+        <item>କାନସାସ୍ ସହର</item>
+        <item>ନିୟୁ ଅର୍ଲୋନ୍ସ</item>
+        <item>ନାସଭିଲ୍ଲେ</item>
+        <item>ଟକ୍ସନ</item>
+        <item>ଟାମ୍ପା</item>
+        <item>ଜ୍ୟାକସନଭିଲ୍</item>
+        <item>ଓକଲାହୋମା ସହର</item>
+        <item>ଅଲ୍ବ୍ୟୁକର୍କ</item>
+        <item>ଓମହା</item>
+        <item>ଭିର୍ଜିନିଆ ସମୁଦ୍ରକୂଳ</item>
+        <item>ବେଇସ</item>
+        <item>ଡେସ୍ ମୋଇନେସ୍</item>
+        <item>ବର୍ମିଙ୍ଗହମ୍</item>
+        <item>ସ୍ଲେଟ୍ ଲେକ୍ ସହର</item>
+        <item>ଲିଟିଲ୍ ରକ୍</item>
+        <item>ସିୟୁକ ଫୋଲ୍ସ</item>
+        <item>ଜ୍ୟାକସନ୍</item>
+        <item>ଚାର୍ଲଷ୍ଟନ୍, ଉତ୍ତର କାରୋଲିନା</item>
+        <item>ଫାର୍ଗୋ</item>
+        <item>ବିଲିଂନ୍ସ</item>
+        <item>ପୋର୍ଟଲାଣ୍ତ, ମୈନ୍</item>
+        <item>ଚେୟନେ</item>
+        <item>ଚାର୍ଲଷ୍ଟନ୍, ପଶ୍ଚିମ ଭିର୍ଜିନିଆ</item>
+        <item>ପିତ୍ତସବର୍ଗୋ</item>
+        <item>ଗ୍ରୀନ୍ ବେ</item>
+        <item>ସେଣ୍ଟ. ଲୁସିଆ</item>
+        <item>ଭେଲ୍ଲୀ</item>
+        <item>UTC (ସମନ୍ୱିତ ୟୁନିଭର୍ସାଲ୍ ଟାଇମ୍)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>ଆଫଗାନିସ୍ଥାନ୍</item>
+        <item>ଆଲଜେରିଆ</item>
+        <item>ସମୋଆ</item>
+        <item>ଆଣ୍ଟିଗୁଆ ଓ ବରବୁଡା</item>
+        <item>ଆର୍ଜେଣ୍ଟିନା</item>
+        <item>ଆରମେନିଆ</item>
+        <item>ଅଷ୍ଟ୍ରେଲିଆ</item>
+        <item>ଆଜେରବାଇଜାନ୍‍</item>
+        <item>ବାଙ୍ଗଲାଦେଶ</item>
+        <item>ଭାସ୍କୋରଟୋଷ୍ଟନ୍ ଗଣରାଜ୍ୟ</item>
+        <item>ବେଲାରୁସ୍</item>
+        <item>ବୋଲିଭିଆ</item>
+        <item>ବ୍ରାଜିଲ୍‍</item>
+        <item>ବୁଲଗେରିଆ</item>
+        <item>କାମବୋଡିଆ</item>
+        <item>କାନାଡା</item>
+        <item>ଚିଲି</item>
+        <item>ଚୀନ</item>
+        <item>କଲୋମ୍ଵିଆ</item>
+        <item>ଚେକ୍ ଗଣତନ୍ତ୍ର</item>
+        <item>କଙ୍ଗୋ ଗଣତନ୍ତ୍ର</item>
+        <item>ଇକ୍ୱାଡୋର୍</item>
+        <item>ଏସ୍ତୋନିଆ</item>
+        <item>ଫିନଲ୍ୟାଣ୍ଡ</item>
+        <item>ଫ୍ରାନ୍ସ</item>
+        <item>ଜର୍ଜିଆ</item>
+        <item>ଜର୍ମାନୀ</item>
+        <item>ଗ୍ରୀସ୍</item>
+        <item>ହଙ୍ଗେରୀ</item>
+        <item>ଭାରତ</item>
+        <item>ଇଣ୍ଡୋନେସିଆ</item>
+        <item>ଇରାନ୍</item>
+        <item>ଆୟରଲ୍ୟାଣ୍ଡ</item>
+        <item>ଇସ୍ରାଏଲ୍</item>
+        <item>ଇଟାଲୀ</item>
+        <item>ଜାପାନ</item>
+        <item>କାଜାଖସ୍ତାନ୍</item>
+        <item>କେନିଆ</item>
+        <item>କିରିବଟି</item>
+        <item>ଲାଟଭିଆ</item>
+        <item>ଲିଥୁଆନିଆ</item>
+        <item>ମାଲେସିୟା</item>
+        <item>ମେକ୍ସିକୋ</item>
+        <item>ମଙ୍ଗୋଲିଆ</item>
+        <item>ମୋରୋକୋ</item>
+        <item>ନେପାଳ</item>
+        <item>ନ୍ୟୁଜିଲ୍ୟାଣ୍ଡ</item>
+        <item>ପାକିସ୍ତାନ</item>
+        <item>ପେରୁ</item>
+        <item>ଫିଲିପାଇନ୍ସ</item>
+        <item>ପୋଲାଣ୍ଡ</item>
+        <item>ପର୍ତ୍ତୁଗାଲ୍</item>
+        <item>ମାନଚିତ୍ର</item>
+        <item>ଦକ୍ଷିଣ କୋରିଆ</item>
+        <item>ସିଙ୍ଗାପୁର ଗଣରାଜ୍ୟ</item>
+        <item>ଲିବିୟା</item>
+        <item>ରୋମାନିଆ</item>
+        <item>ଋଷିଆ</item>
+        <item>ସାଉଦି ଆରବିଆ</item>
+        <item>ସ୍ଲୋଭାକିଆ</item>
+        <item>ଦକ୍ଷିଣ ଆଫ୍ରିକା</item>
+        <item>ସ୍ପେନ୍</item>
+        <item>ଶ୍ରୀଲଙ୍କା</item>
+        <item>ସ୍ଵିଡେନ୍</item>
+        <item>ତାଇୱାନ୍</item>
+        <item>ଥାଇଲ୍ୟାଣ୍ଡ</item>
+        <item>ତୁନିସିଆ</item>
+        <item>ତୁର୍କୀ</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>ୟୁକ୍ରେନ୍</item>
+        <item>USA</item>
+        <item>ଉଜବେକିସ୍ଥାନ</item>
+        <item>ଭେନେଜୁଏଲା</item>
+        <item>ଭିଏତନାମ୍‍</item>
+        <item>GB ଭର୍ଜନ ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ସ୍ଵିଜରଲ୍ୟାଣ୍ଡ</item>
+        <item>ଇଜିପ୍ଟ</item>
+        <item>କୋଟେ ଡ୍ଲଭୋରିଆ</item>
+        <item>ଘାନା</item>
+        <item>ଏଥିଓପିଆ</item>
+        <item>ଜୋର୍ଡାନ୍</item>
+        <item>ନେଦରଲ୍ୟାଣ୍ଡ</item>
+        <item>ମାଡାଗାସ୍କାର</item>
+        <item>ତୁର୍କମାନିସ୍ତାନ</item>
+        <item>ଏରିଟ୍ରେଆ</item>
+        <item>ପାରାଗୁଏ</item>
+        <item>ଇରାକ୍</item>
+        <item>ମାଲି</item>
+        <item>କେନ୍ଦ୍ରୀୟ ଆଫ୍ରିକୀୟ ଗଣରାଜ୍ୟ</item>
+        <item>ଗୁୱାଦେଲୌପେ</item>
+        <item>ଲେବାନନ୍</item>
+        <item>ସର୍ବିଆ</item>
+        <item>ବେଲିଜ୍</item>
+        <item>କେରଜିଗସ୍ତାନ</item>
+        <item>ଗୁଇନିଆ ବିସାଉ</item>
+        <item>ବାର୍ବାଡସ୍</item>
+        <item>ବେଲଜିୟମ୍</item>
+        <item>ଫ୍ରେଞ୍ଚ ଗୁଏନା</item>
+        <item>ମୋଲଡୋଭା</item>
+        <item>ଗୁଇନିଆ</item>
+        <item>ଡେନମାର୍କ</item>
+        <item>ସେନେଗଲ୍‍</item>
+        <item>ସିରିଆ</item>
+        <item>ତାଞ୍ଜାନିଆ</item>
+        <item>ଡଜିବୌଟି</item>
+        <item>କ୍ୱାତାର୍</item>
+        <item>କ୍ୟାମେରୋନ୍</item>
+        <item>ତାଜିକିସ୍ତାନ୍</item>
+        <item>ସ୍କଟଲ୍ୟାଣ୍ଡ</item>
+        <item>ମାର୍ଟିନିକ୍ୟୁ</item>
+        <item>ସିଆରା ଲିଓନେ</item>
+        <item>ବୋଟସୱାନା</item>
+        <item>ଗୁୟାନା</item>
+        <item>ଦକ୍ଷିଣ ଜିଓର୍ଜିଆ</item>
+        <item>ଗୁଆଟେମାଲା</item>
+        <item>ସେଣ୍ଟ ବାର୍ଥେଲେମି</item>
+        <item>ଜିମ୍ବାୱେ</item>
+        <item>କ୍ୟୁବା</item>
+        <item>ୟୁଗାଣ୍ଡା</item>
+        <item>ସୁଦାନ୍</item>
+        <item>ଜାମାଇକା</item>
+        <item>କୁଏତ୍</item>
+        <item>ନାଇଜେରିଆ</item>
+        <item>ଆଙ୍ଗୋଲା</item>
+        <item>ଜାମ୍ବିଆ</item>
+        <item>ଲକ୍ସେମବର୍ଗ</item>
+        <item>ୟକ୍ୱାଓରିଆଲ ଗୁଏନା</item>
+        <item>ମାଳଦ୍ୱୀପ</item>
+        <item>ନିକାରାଗୁଆ</item>
+        <item>ବାହାରିନ୍</item>
+        <item>ମୋଜାମ୍ୱିକ୍</item>
+        <item>ସେଣ୍ଟ ମାର୍ଟିନ୍</item>
+        <item>ସୋମାଲିଆ</item>
+        <item>ଲିବେରିଆ</item>
+        <item>ଉରୁଗୁଏ</item>
+        <item>ଓମାନ୍</item>
+        <item>ଚାଦ୍</item>
+        <item>ନାଇଜର୍</item>
+        <item>ମୌରିତାନିଆ</item>
+        <item>ନ୍ୟୁ କ୍ୟାଲେଡୋନିଆ</item>
+        <item>ଟୋଙ୍ଗା</item>
+        <item>ଗ୍ରୀନଲ୍ୟାଣ୍ଡ</item>
+        <item>ବୁରକିନା ଫାସୋ</item>
+        <item>ପାନାମା</item>
+        <item>ସୁରିନେମ୍</item>
+        <item>ମୋଣ୍ଟେନେଗ୍ରୋ</item>
+        <item>ମରିସସ୍</item>
+        <item>ହାଇତି</item>
+        <item>କୋରିଆର ଡେମୋକ୍ରେଟିକ୍ ପିପୁଲସ୍ ରିପବ୍ଲିକ୍</item>
+        <item>ମିଆଁମାର</item>
+        <item>ଆଇଲ୍ୟାଣ୍ଡ</item>
+        <item>ରିୟୁନିଅନ୍ ଦ୍ଵୀପ</item>
+        <item>କୋଷ୍ଟା ରିକା</item>
+        <item>ପୁଏର୍ତୋ ରିକୋ</item>
+        <item>ଏଲ୍ ସାଲଭାଡୋର୍</item>
+        <item>ୟମେନ୍</item>
+        <item>ଡୋମିନିକାନ୍ ଗଣତନ୍ତ୍ର</item>
+        <item>ମାସେଡୋନିଆ</item>
+        <item>ଫିଜି</item>
+        <item>ଫ୍ରେଞ୍ଚ ପୋଲିନେସିଆ</item>
+        <item>ହୋଣ୍ଡୁରାସ୍</item>
+        <item>ଲିଏଚେଟେନଷ୍ଟିନ୍</item>
+        <item>ମାଲ୍ଟା</item>
+        <item>ସେଚେଲସ୍</item>
+        <item>ଅଷ୍ଟ୍ରିଆ</item>
+        <item>କ୍ରୋଆଟିଆ</item>
+        <item>ୱାଲେସ୍</item>
+        <item>US ଭର୍ଜନ୍ ଦ୍ଵୀପ.</item>
+        <item>ସ୍ଲୋଭେନିଆ</item>
+        <item>ସାନ ମାରିନୋ</item>
+        <item>ନରୱେ</item>
+        <item>ପପୁଆ ନିୟୁ ଗୁଏନିଆ</item>
+        <item>ବାହାମାସ୍</item>
+        <item>ସାଇପ୍ରସ</item>
+        <item>ଟିମୋର୍-ଲେଷ୍ଟେ</item>
+        <item>ଟଗୋ</item>
+        <item>ଡୋମିନିକୋ</item>
+        <item>ଗାବୋନ୍</item>
+        <item>ଲେସୋଥୋ</item>
+        <item>ମାର୍ସଲ୍ ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ମୋନାକୋ</item>
+        <item>ବ୍ରୁନେଇ</item>
+        <item>ଗାମ୍ଵିଆ</item>
+        <item>ବୁରୁଣ୍ଡି</item>
+        <item>କଙ୍ଗୋ ଡେମୋକ୍ରେଟିକ୍ ଗଣତନ୍ତ୍ର</item>
+        <item>ଲାଓ</item>
+        <item>ନାମିବିଆ</item>
+        <item>ବୋସନୀୟ ଏବଂ ହେରଜେଗୋବିନା</item>
+        <item>ସାଇପାନ୍</item>
+        <item>ସାଓ ଟମ ଏବଂ ପ୍ରିନସିପେ</item>
+        <item>ଗ୍ରେନାଡା</item>
+        <item>ଫକଲ୍ୟାଣ୍ଡ ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ଆମେରିକୀୟ ସାମୋଆ</item>
+        <item>ଆଣ୍ଡୋରା</item>
+        <item>ସାହ୍ରାବି ରିପବ୍ଲିକ୍</item>
+        <item>କୁରାକାଓ</item>
+        <item>ଇସ୍ୱାତିନୀ</item>
+        <item>ସେଣ୍ଟ ଲୁସିଆ</item>
+        <item>ପାଲାଉ</item>
+        <item>ରାୱାଣ୍ଡା</item>
+        <item>ସେଣ୍ଟ ଭିନସେଣ୍ଟ ଏବଂ ଦି ଗ୍ରେନାଡିନେସ୍</item>
+        <item>ଫାରୋଇ ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ଆଲବାନିଆ</item>
+        <item>ଭୁଟାନ୍</item>
+        <item>ବେନିନ୍</item>
+        <item>କେପ୍ ଭେର୍ଡ</item>
+        <item>କୋସୋବୋ</item>
+        <item>ବରମୁଡା</item>
+        <item>ସୋଲୋମନ ଦ୍ଵୀପପୁଞ୍ଜ</item>
+        <item>ତାଇୱାନ୍, ଚୀନ</item>
+        <item>ତ୍ରିନିଦାଦ୍ ଏବଂ ଟୋବେଗୋ</item>
+        <item>ଆଙ୍ଗୁଇଲା</item>
+        <item>UTC (ସମନ୍ୱିତ ୟୁନିଭର୍ସାଲ୍ ଟାଇମ୍)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ 1 ମିନିଟ୍ ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %2$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s ଏବଂ %2$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %2$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s, %2$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନରୁ %s ପାଇଁ ଆଲରାମ୍ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନରୁ %1$s ଏବଂ %2$s ପାଇଁ ଆଲରାମ୍ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s, %2$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନରୁ %1$s ଏବଂ %2$s ପାଇଁ ଆଲରାମ୍ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s, %2$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନ ଠାରୁ ଆଲରାମ୍ %1$s, %2$s ଏବଂ %3$s ପାଇଁ ସେଟ୍ ହୋଇଛି।</item>
+        <item>ବର୍ତ୍ତମାନରୁ %1$s, %2$s, %3$s, ଏବଂ %4$s ପାଇଁ ଆଲରାମ୍ ସେଟ୍ ହୋଇଛି।</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

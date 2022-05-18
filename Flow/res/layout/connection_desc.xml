@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="34.0dip" android:textColor="@color/setup_title_text_color" android:layout_gravity="center_horizontal" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="@string/setup_tab_select_device_title" android:singleLine="false" android:textAlignment="center" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/help_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:src="@drawable/welcome_image_tablet" android:adjustViewBounds="true" android:maxWidth="400.0dip" android:maxHeight="236.0dip" android:contentDescription="@null" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="34.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/subheader_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_available_device" android:fontFamily="sec-roboto-light" />
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="5.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/subheader_divider" android:layout_marginStart="16.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="18.0dip" android:textColor="#ff909090" android:layout_gravity="center_horizontal" android:id="@id/searching_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:maxWidth="368.0dip" android:text="@string/setup_tab_select_device_desc" android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d plików dodano do listy przesyłania plików.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d plik dodano do listy przesyłania plików.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d pliki dodano do listy przesyłania plików.</item>
+        <item quantity="many">%d plików dodano do listy przesyłania plików.</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Zarejestruj maksymalnie %d komputera lub tabletu i zarządzaj nimi w Samsung Flow.
+
+Jednocześnie z telefonem można połączyć tylko jeden komputer lub tablet. Gdy oba zarejestrowane komputery lub tablety będą próbować połączyć się z telefonem, trzeba będzie wybrać jeden z nich."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Zarejestruj maksymalnie %d komputer lub tablet i zarządzaj nim w Samsung Flow.
+
+Jednocześnie z telefonem można połączyć tylko jeden komputer lub tablet. Gdy oba zarejestrowane komputery lub tablety będą próbować połączyć się z telefonem, trzeba będzie wybrać jeden z nich."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">"Zarejestruj maksymalnie %d komputery lub tablety i zarządzaj nimi w Samsung Flow.
+
+Jednocześnie z telefonem można połączyć tylko jeden komputer lub tablet. Gdy oba zarejestrowane komputery lub tablety będą próbować połączyć się z telefonem, trzeba będzie wybrać jeden z nich."</item>
+        <item quantity="many">"Zarejestruj maksymalnie %d komputerów lub tabletów i zarządzaj nimi w Samsung Flow.
+
+Jednocześnie z telefonem można połączyć tylko jeden komputer lub tablet. Gdy oba zarejestrowane komputery lub tablety będą próbować połączyć się z telefonem, trzeba będzie wybrać jeden z nich."</item>
+    </plurals>
+</resources>

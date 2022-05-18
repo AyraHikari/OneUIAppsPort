@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d файлуудыг шилжүүлэх файлын жагсаалтад нэмсэн.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d файлыг шилжүүлэх файлын жагсаалтад нэмсэн.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Бүртгүүлж, Samsung Flow дээр %d хүртэлх компьютер эсвэл таблетыг удирд.
+
+Нэг удаа зөвхөн нэг компьютер эсвэл таблетыг утсандаа холбох боломжтой. Компьютер эсвэл таблет хоёр хоёулаа бүртгэгдээд утсанд холбогдохыг оролдох үеэр та нэгийг нь сонгох хэрэгтэй болно."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Бүртгүүлж, Samsung Flow дээр %d хүртэлх компьютер эсвэл таблетыг удирд.
+
+Нэг удаа зөвхөн нэг компьютер эсвэл таблетыг утсандаа холбох боломжтой. Компьютер эсвэл таблет хоёр хоёулаа бүртгэгдээд утсанд холбогдохыг оролдох үеэр та нэгийг нь сонгох хэрэгтэй болно."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

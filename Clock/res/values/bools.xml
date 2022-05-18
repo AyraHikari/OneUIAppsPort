@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="cts_use_fahrenheit">false</bool>
+    <bool name="light_navigation_bar_icon_color">true</bool>
+    <bool name="liveicon_from_theme">false</bool>
+    <bool name="sesl_action_bar_text_item_mode">false</bool>
+    <bool name="sesl_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="sesl_config_desktop_mode">false</bool>
+    <bool name="sesl_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="sesl_seekbar_sliding_animation">true</bool>
+    <bool name="status_bar_icon_color">true</bool>
+</resources>

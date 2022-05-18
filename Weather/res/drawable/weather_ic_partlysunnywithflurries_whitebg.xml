@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_partlysunnywithflurries_whitebg__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s11" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__1" />
+    <target android:name="s11pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__5" />
+    <target android:name="s10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__7" />
+    <target android:name="s10pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__11" />
+    <target android:name="s9" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__13" />
+    <target android:name="s9pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__17" />
+    <target android:name="s8" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__19" />
+    <target android:name="s8pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__23" />
+    <target android:name="s7" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__25" />
+    <target android:name="s7pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__29" />
+    <target android:name="s6" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__31" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__35" />
+    <target android:name="s5" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__37" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__41" />
+    <target android:name="s4" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__42" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__46" />
+    <target android:name="s3" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__47" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__51" />
+    <target android:name="s2" android:animation="@drawable/$weather_ic_partlysunnywithflurries_whitebg__52" />
+</animated-vector>

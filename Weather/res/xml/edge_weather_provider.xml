@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cocktail-provider cocktailWidth="550" label="@string/weather" labelhide="true" launchOnClick="com.sec.android.daemonapp.app.interaction.EdgeInteractionActivity" permitVisibilityChanged="true" previewImage="@drawable/weather_edge_preview" />

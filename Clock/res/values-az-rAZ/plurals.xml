@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">%d günə siqnal</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d günə siqnal</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">%d saata siqnal</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d saata siqnal</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Zəngli saat %d saat 1 dəqiqə sonra çalacaq</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Zəngli saat %d saat 1 dəqiqə sonra çalacaq</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">%d dəqiqəyə siqnal</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dəqiqəyə siqnal</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d dəqiqəyə</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dəqiqəyə</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%d-dən çox siqnal əlavə etmək olmur.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-dən çox siqnal əlavə etmək olmur.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d dəqiqə</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d fon silinsin?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fon silinsin?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d seçildi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seçildi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d dəqiqə əvvəl</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dəqiqə əvvəl</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s və daha %3$d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s və daha %3$d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Yuxu vaxtı: %d saat</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Yuxu vaxtı: %d saat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Yuxu vaxtı: %d dəqiqə</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Yuxu vaxtı: %d dəqiqə</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d dəq ertələ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dəq ertələ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d dəqiqə</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d dəqiqə</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plyus %d dəqiqə</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plyus %d dəqiqə</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Ən çoxu %d hazır taymer əlavə etmək mümkündür.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ən çoxu %d hazır taymer əlavə etmək mümkündür.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%d çox şəhər əlavə etmək olmur.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d çox şəhər əlavə etmək olmur.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

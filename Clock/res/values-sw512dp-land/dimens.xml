@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_popup_name_edittext_margin_bottom">10.0dip</dimen>
+    <item type="dimen" name="alarm_timepicker_bottom_margin_weight">1.0</item>
+    <item type="dimen" name="alarm_timepicker_weight">10.0</item>
+    <dimen name="button_bottom_margin_landscape_edit_mode">30.0dip</dimen>
+    <dimen name="timer_circle_bg_height">275.0dip</dimen>
+    <dimen name="timer_circle_bg_min_width">195.0dip</dimen>
+    <dimen name="timer_circle_bg_width">275.0dip</dimen>
+    <dimen name="timer_circle_bg_width_flex">320.0dip</dimen>
+    <dimen name="timer_circle_bg_width_non_flex">294.0dip</dimen>
+    <dimen name="timer_circle_vertical_padding">13.0dip</dimen>
+    <item type="dimen" name="timer_common_circle_vertical_bias">0.011</item>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">54.0dip</dimen>
+    <dimen name="timer_common_hms_textview_colon_width_flex">18.0dip</dimen>
+    <dimen name="timer_common_hms_textview_time_textsize_flex">66.0dip</dimen>
+    <dimen name="timer_common_hms_textview_time_width_flex">37.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">54.0dip</dimen>
+    <dimen name="timer_common_name_width">140.0dip</dimen>
+    <item type="dimen" name="timer_common_picker_vertical_bias">0.513</item>
+    <dimen name="timer_common_preset_item_background_height">85.0dip</dimen>
+    <dimen name="timer_common_preset_item_background_width">85.0dip</dimen>
+    <item type="dimen" name="timer_common_preset_popup_margin_top_flex">135.0</item>
+    <dimen name="timer_common_preset_popup_name_margin_top">5.0dip</dimen>
+    <dimen name="timer_common_preset_popup_time_margin_top">5.0dip</dimen>
+    <dimen name="timer_common_timepicker_bg_width">268.0dip</dimen>
+    <item type="dimen" name="timer_common_title_vertical_bias">0.625</item>
+    <dimen name="timer_end_time_bottom_margin_flex">90.0dip</dimen>
+    <dimen name="timer_progress_bar_top_margin">236.0dip</dimen>
+    <dimen name="timer_progress_bar_top_margin_end">330.0dip</dimen>
+    <dimen name="timer_title_height">30.0dip</dimen>
+    <dimen name="worldclock_main_toolbar_height">56.0dip</dimen>
+</resources>

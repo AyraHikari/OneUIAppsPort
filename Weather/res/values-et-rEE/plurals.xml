@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Ei saa lisada üle %d asukoha. Kustutage mõned asukohad, et lisada see.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ei saa lisada üle %d asukoha. Kustutage mõned asukohad, et lisada see.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Ei saa sisestada üle %d märgi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ei saa sisestada üle %d märgi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d on valitud</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d on valitud</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d päeva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d päev</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d tundi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tund</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

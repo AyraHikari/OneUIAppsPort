@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">%d ದಿನಗಳಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ದಿನದಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">%d ಗಂಟೆಗಳಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಗಂಟೆಯಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">%d ಗಂಟೆಗಳು 1 ನಿಮಿಷಕ್ಕೆ ಎಚ್ಚರಗಂಟೆ ಇದೆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಗಂಟೆ 1 ನಿಮಿಷದಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ ಇದೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">%d ನಿಮಿಷಗಳಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ನಿಮಿಷದಲ್ಲಿ ಎಚ್ಚರಗಂಟೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d ನಿಮಿಷಗಳಲ್ಲಿ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ನಿಮಿಷದಲ್ಲಿ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಎಚ್ಚರಗಂಟೆಗಳನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಎಚ್ಚರಗಂಟೆ ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d ನಿಮಿಷಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ನಿಮಿಷ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d ಹಿನ್ನೆಲೆಗಳನ್ನು ಅಳಿಸುವುದೇ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಹಿನ್ನೆಲೆ ಅಳಿಸುವುದೇ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ಆಯ್ಕೆಯಾಗಿದೆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಆಯ್ಕೆ ಆಗಿದೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d ನಿಮಿಷಗಳ ಮೊದಲು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ನಿಮಿಷದ ಮೊದಲು</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s ಮತ್ತು %3$d ಇತರವುಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s ಮತ್ತು %3$d ಇತರೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">ನಿದ್ರೆ ಸಮಯ: %d ಗಂಟೆಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ನಿದ್ರೆ ಸಮಯ: %d ಗಂಟೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">ನಿದ್ರೆ ಸಮಯ: %d ನಿಮಿಷಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ನಿದ್ರೆ ಸಮಯ: %d ನಿಮಿಷ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d ನಿಮಿಷಗಳು ಸ್ನೂಜ್ ಮಾಡಿ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ನಿಮಿಷ ಸ್ನೂಜ್ ಮಾಡಿ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">ಮೈನಸ್ %d ನಿಮಿಷಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ಮೈನಸ್ %d ನಿಮಿಷ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">ಪ್ಲಸ್ %d ನಿಮಿಷಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ಪ್ಲಸ್ %d ನಿಮಿಷ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಪ್ರೀಸೆಟ್‌ ಟೈಮರ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಪ್ರಿಸೆಟ್ ಟೈಮರ್ ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ನಗರಗಳನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ನಗರವನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/bedtime_ripple_color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/bottom_bedtime_layout_radius" android:topRightRadius="@dimen/bottom_bedtime_layout_radius" android:bottomLeftRadius="@dimen/bottom_bedtime_layout_radius" android:bottomRightRadius="@dimen/bottom_bedtime_layout_radius" />
+            <solid android:color="?android:colorBackground" />
+        </shape>
+    </item>
+</ripple>

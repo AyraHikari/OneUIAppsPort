@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?android:dialogPreferredPadding" android:paddingEnd="?android:dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/dialog_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="24.0dip" android:src="@drawable/ic_media_projection_permission" />
+    <TextView android:textSize="20.0sp" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" />
+</LinearLayout>

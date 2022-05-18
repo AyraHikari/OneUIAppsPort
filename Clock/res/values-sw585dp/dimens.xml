@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pip_timer_layout_height">110.0dip</dimen>
+    <dimen name="pip_timer_top_controller_icon_height">30.0dip</dimen>
+    <dimen name="pip_timer_top_controller_icon_width">30.0dip</dimen>
+    <dimen name="pip_timer_top_margin">5.0dip</dimen>
+    <dimen name="timer_circle_bg_height">350.0dip</dimen>
+    <dimen name="timer_circle_bg_width">350.0dip</dimen>
+    <item type="dimen" name="timer_common_circle_vertical_bias">0.021</item>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">330.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">270.0dip</dimen>
+    <item type="dimen" name="timer_common_picker_vertical_bias">0.504</item>
+    <dimen name="timer_common_preset_item_background_height">95.0dip</dimen>
+    <dimen name="timer_common_preset_item_background_width">95.0dip</dimen>
+    <dimen name="timer_common_timepicker_bg_width">350.0dip</dimen>
+    <item type="dimen" name="timer_common_title_vertical_bias">0.175</item>
+</resources>

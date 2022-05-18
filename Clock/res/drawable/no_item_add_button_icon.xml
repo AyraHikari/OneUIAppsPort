@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="@dimen/clock_no_item_add_button_icon_size" android:width="@dimen/clock_no_item_add_button_icon_size" android:drawable="@drawable/tw_ic_ab_add_mtrl_icon" />
+</layer-list>

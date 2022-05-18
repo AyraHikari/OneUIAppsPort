@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__53" android:duration="991" android:valueFrom="177.4972" android:valueTo="171" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__54" android:duration="991" android:valueFrom="171" android:valueTo="177.4972" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__55" android:duration="991" android:valueFrom="177.4972" android:valueTo="171" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__56" android:duration="991" android:valueFrom="171" android:valueTo="177.4972" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__57" android:duration="991" android:valueFrom="81.59979" android:valueTo="96.006996" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__58" android:duration="991" android:valueFrom="96.006996" android:valueTo="81.59979" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__59" android:duration="991" android:valueFrom="81.59979" android:valueTo="96.006996" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__60" android:duration="991" android:valueFrom="96.006996" android:valueTo="81.59979" android:propertyName="translateY" />
+    </set>
+</set>

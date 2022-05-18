@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">Đã thêm %d file vào danh sách truyền file.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Đăng ký và quản lý tối đa %d máy tính hoặc máy tính bảng trong Samsung Flow.
+
+Chỉ một máy tính hoặc máy tính bảng có thể kết nối với điện thoại của bạn cùng lúc. Bạn sẽ phải chọn một khi cả hai máy tính hoặc máy tính bảng đã đăng ký tìm cách kết nối với điện thoại của bạn."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <ImageView android:id="@id/flow_icon" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/logo_samsung_flow_partner" />
+            <View android:layout_gravity="center_vertical" android:id="@id/icon_divider" android:background="@color/samsung_pass_companion_divider_color" android:layout_width="@dimen/samsung_pass_companion_divider_width" android:layout_height="17.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/samsung_pass_icon" android:layout_width="103.0dip" android:layout_height="17.0dip" android:src="@drawable/logo_samsung_pass" android:tint="@color/dialog_title_color" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/finger_auth_guide_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/fingerprint_icon" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/fingerprint_default_ic_gray" android:contentDescription="@null" android:layout_marginEnd="8.0dip" />
+                <TextView android:textSize="@dimen/auth_guide_text_size" android:textColor="@color/dialog_desc_color" android:layout_gravity="center_vertical" android:id="@id/fingerprint_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_guide" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/verify_loading_dialog_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/auth_screen_common_padding" android:paddingEnd="@dimen/auth_screen_common_padding"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+                <TextView android:textSize="@dimen/auth_verify_text_size" android:textColor="@color/auth_text_color" android:gravity="center" android:id="@id/verify_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auth_verify_text_marginTop" android:text="@string/biometric_authentification" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/verify_success_dialog_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/auth_screen_common_padding" android:paddingEnd="@dimen/auth_screen_common_padding"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <ImageView android:id="@id/dialog_verify_success_img" android:layout_width="@dimen/auth_success_ring_size" android:layout_height="@dimen/auth_success_ring_size" android:src="@drawable/anim_verify_success" android:contentDescription="@null" />
+                <TextView android:textSize="@dimen/auth_verify_text_size" android:textColor="@color/auth_text_color" android:gravity="center" android:id="@id/dialog_verify_success_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auth_verify_text_marginTop" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

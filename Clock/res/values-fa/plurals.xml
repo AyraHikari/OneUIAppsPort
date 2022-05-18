@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">زنگ هشدار %d روز دیگر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">زنگ هشدار %d روز دیگر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">زنگ هشدار %d ساعت دیگر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">زنگ هشدار %d ساعت دیگر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">زنگ هشدار %d ساعت و ۱ دقیقه دیگر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">زنگ هشدار %d ساعت و ۱ دقیقه دیگر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">زنگ هشدار %d دقیقه دیگر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">زنگ هشدار %d دقیقه دیگر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d دقیقه دیگر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d دقیقه دیگر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">افزودن بیشتر از %d زنگ هشدار ممکن نیست.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">افزودن بیشتر از %d زنگ هشدار ممکن نیست.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d دقیقه</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d دقیقه</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">این %d پس‌زمینه حذف شود؟</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">این %d پس‌زمینه حذف شود؟</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d اعلان جدید</item>
+        <item quantity="one">%d اعلان جدید</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d مورد انتخاب شد</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d مورد انتخاب شد</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d دقیقه پیش</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d دقیقه پیش</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s، %2$s و %3$d مورد دیگر</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s، %2$s و %3$d مورد دیگر</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">زمان خواب: %d ساعت</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">زمان خواب: %d ساعت</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">زمان خواب: %d دقیقه</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">زمان خواب: %d دقیقه</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d دقیقه تعویق</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d دقیقه تعویق</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">منفی %d دقیقه</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">منفی %d دقیقه</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">مثبت %d دقیقه</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">مثبت %d دقیقه</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">افزودن بیشتر از %d تایمر پیش‌تنظیم ممکن نیست.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">افزودن بیشتر از %d تایمر پیش‌تنظیم ممکن نیست.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">افزودن بیشتر از %d شهر ممکن نیست.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">افزودن بیشتر از %d شهر ممکن نیست.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

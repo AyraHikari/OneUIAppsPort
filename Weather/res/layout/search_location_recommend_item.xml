@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/search_location_recommend_item_0" android:paddingBottom="@dimen/recommend_row_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.weather.app.common.view.SizeLimitedTextView android:textAppearance="@style/Weather.TextAppearance.Recommend" android:gravity="center" android:id="@id/text" android:tag="binding_1" android:background="@drawable/search_recommend_ripple" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/recommend_item_min_height" android:layout_marginHorizontal="@dimen/recommend_item_margin_side" android:paddingHorizontal="@dimen/recommend_item_padding_side" android:paddingVertical="@dimen/recommend_item_padding_top_bottom" app:textSizeLimit="large" />
+</RelativeLayout>

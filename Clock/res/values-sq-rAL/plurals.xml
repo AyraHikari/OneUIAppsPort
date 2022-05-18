@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarmi pas %d ditësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmi pas %d dite</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarmi pas %d orësh</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmi pas %d ore</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Alarmi pas %d orësh 1 minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmi pas %d ore 1 minute</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarmi pas %d minutash</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmi pas %d minute</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Pas %d minutash</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Pas %d minute</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">S’mund të shtohen më shumë se %d alarme.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">S’mund të shtohet më shumë se %d alarm.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Të hiqen %d sfonde?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Të hiqet %d sfond?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d janë përzgjedhur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d është përzgjedhur</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">Para %d minutash</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Para %d minute</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s dhe %3$d të tjera</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s dhe %3$d tjetër</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Koha e gjumit: %d orë</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Koha e gjumit: %d orë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Koha e gjumit: %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Koha e gjumit: %d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Shtyje %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Shtyje %d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minuta</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plus %d minutë</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">S’mund të shtohen më shumë se %d kohëmatës të paracilësuar.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">S’mund të shtohet më shumë se %d kohëmatës i paracilësuar.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">S‘mund të shtohen më shumë se %d qytete.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">S‘mund të shtohet më shumë se %d qytet.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

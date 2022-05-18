@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_rain__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s15" android:animation="@drawable/$weather_ic_rain__1" />
+    <target android:name="s15pg1p10" android:animation="@drawable/$weather_ic_rain__4" />
+    <target android:name="s15pg1p10" android:animation="@drawable/$weather_ic_rain__6" />
+    <target android:name="s14" android:animation="@drawable/$weather_ic_rain__8" />
+    <target android:name="s14pg1p10" android:animation="@drawable/$weather_ic_rain__11" />
+    <target android:name="s14pg1p10" android:animation="@drawable/$weather_ic_rain__13" />
+    <target android:name="s13" android:animation="@drawable/$weather_ic_rain__15" />
+    <target android:name="s13pg1p10" android:animation="@drawable/$weather_ic_rain__18" />
+    <target android:name="s13pg1p10" android:animation="@drawable/$weather_ic_rain__21" />
+    <target android:name="s12" android:animation="@drawable/$weather_ic_rain__23" />
+    <target android:name="s12pg1p10" android:animation="@drawable/$weather_ic_rain__26" />
+    <target android:name="s12pg1p10" android:animation="@drawable/$weather_ic_rain__29" />
+    <target android:name="s11" android:animation="@drawable/$weather_ic_rain__31" />
+    <target android:name="s11pg1p10" android:animation="@drawable/$weather_ic_rain__34" />
+    <target android:name="s11pg1p10" android:animation="@drawable/$weather_ic_rain__36" />
+    <target android:name="s10" android:animation="@drawable/$weather_ic_rain__38" />
+    <target android:name="s10pg1p10" android:animation="@drawable/$weather_ic_rain__41" />
+    <target android:name="s10pg1p10" android:animation="@drawable/$weather_ic_rain__43" />
+    <target android:name="s9" android:animation="@drawable/$weather_ic_rain__45" />
+    <target android:name="s9pg1p10" android:animation="@drawable/$weather_ic_rain__48" />
+    <target android:name="s9pg1p10" android:animation="@drawable/$weather_ic_rain__50" />
+    <target android:name="s8" android:animation="@drawable/$weather_ic_rain__52" />
+    <target android:name="s8pg1p10" android:animation="@drawable/$weather_ic_rain__55" />
+    <target android:name="s8pg1p10" android:animation="@drawable/$weather_ic_rain__58" />
+    <target android:name="s7" android:animation="@drawable/$weather_ic_rain__60" />
+    <target android:name="s7pg1p10" android:animation="@drawable/$weather_ic_rain__63" />
+    <target android:name="s7pg1p10" android:animation="@drawable/$weather_ic_rain__65" />
+    <target android:name="s6" android:animation="@drawable/$weather_ic_rain__67" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$weather_ic_rain__70" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$weather_ic_rain__72" />
+    <target android:name="s5" android:animation="@drawable/$weather_ic_rain__74" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_rain__77" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_rain__80" />
+    <target android:name="s4" android:animation="@drawable/$weather_ic_rain__82" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_rain__85" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_rain__88" />
+    <target android:name="s3" android:animation="@drawable/$weather_ic_rain__90" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_rain__93" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_rain__95" />
+    <target android:name="s2" android:animation="@drawable/$weather_ic_rain__97" />
+    <target android:name="s2pg1p10" android:animation="@drawable/$weather_ic_rain__100" />
+    <target android:name="s2pg1p10" android:animation="@drawable/$weather_ic_rain__103" />
+    <target android:name="s1" android:animation="@drawable/$weather_ic_rain__105" />
+    <target android:name="s1pg1p10" android:animation="@drawable/$weather_ic_rain__108" />
+    <target android:name="s1pg1p10" android:animation="@drawable/$weather_ic_rain__111" />
+</animated-vector>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="timer_common_timepicker_layout_min_height">146.0dip</dimen>
+</resources>

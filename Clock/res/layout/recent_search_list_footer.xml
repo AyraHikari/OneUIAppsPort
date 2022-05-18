@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout android:orientation="vertical" android:id="@id/item_container" android:background="@color/window_content_area_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/RobotoMedium" android:textSize="@dimen/recent_search_list_clear_history_text_size" android:textColor="?android:colorPrimary" android:gravity="center" android:id="@id/clear_search_history" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/footer_text_view_top_bottom_padding" android:paddingBottom="@dimen/footer_text_view_top_bottom_padding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clear_search_history" android:paddingStart="@dimen/recent_search_footer_text_start_end_padding" android:paddingEnd="@dimen/recent_search_footer_text_start_end_padding" />
+</com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout>

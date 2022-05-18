@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d ਫਾਈਲਾਂ ਨੂੰ ਫਾਈਲ ਟ੍ਰਾਂਸਫਰ ਸੂਚੀ ਵਿੱਚ ਜੋੜ ਦਿੱਤਾ ਗਿਆ ਹੈ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਫਾਈਲ ਨੂੰ ਫਾਈਲ ਟ੍ਰਾਂਸਫਰ ਸੂਚੀ ਵਿੱਚ ਜੋੜ ਦਿੱਤਾ ਗਿਆ ਹੈ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow ਵਿੱਚ %d ਕੰਪਿਊਟਰਸ ਜਾਂ ਟੈਬਲੇਟਸ ਨੂੰ ਰਜਿਸਟਰ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰੋ।
+
+ਇੱਕੋ ਵਾਰ ਸਿਰਫ ਇੱਕ ਕੰਪਿਊਟਰ ਜਾਂ ਟੈਬਲੇਟ ਤੁਹਾਡੇ ਫ਼ੋਨ ਨਾਲ ਕਨੈਕਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। ਜਦੋਂ ਦੋਵੇ ਰਜਿਸਟਰ ਕੀਤੇ ਗਏ ਕੰਪਿਊਟਰਸ ਜਾਂ ਟੈਬਲੇਟਸ ਤੁਹਾਡੇ ਫ਼ੋਨ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਨ ਤਾਂ ਤੁਹਾਨੂੰ ਇੱਕ ਦੀ ਚੋਣ ਕਰਨੀ ਪਵੇਗੀ।"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Flow ਵਿੱਚ %d ਕੰਪਿਊਟਰ ਜਾਂ ਟੈਬਲੇਟ ਨੂੰ ਰਜਿਸਟਰ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰੋ।
+
+ਇੱਕੋ ਵਾਰ ਸਿਰਫ ਇੱਕ ਕੰਪਿਊਟਰ ਜਾਂ ਟੈਬਲੇਟ ਤੁਹਾਡੇ ਫ਼ੋਨ ਨਾਲ ਕਨੈਕਟ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। ਜਦੋਂ ਦੋਵੇ ਰਜਿਸਟਰ ਕੀਤੇ ਗਏ ਕੰਪਿਊਟਰਸ ਜਾਂ ਟੈਬਲੇਟਸ ਤੁਹਾਡੇ ਫ਼ੋਨ ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਨ ਤਾਂ ਤੁਹਾਨੂੰ ਇੱਕ ਦੀ ਚੋਣ ਕਰਨੀ ਪਵੇਗੀ।"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

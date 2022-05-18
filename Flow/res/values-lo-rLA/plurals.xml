@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">ເພີ່ມ %d ໄຟລ໌ໃສ່ລາຍການໂອນໄຟລ໌ແລ້ວ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"ລົງທະບຽນ ແລະ ຈັດການຄອມພິວເຕີ ຫຼື ແທັບເລັດໄດ້ເຖິງ %d ເຄື່ອງໃນ Samsung Flow.
+
+ພຽງຄອມພິວເຕີ ຫຼື ແທັບເລັດໜຶ່ງເຄື່ອງເທົ່ານັ້ນທີ່ສາມາດເຊື່ອມຕໍ່ກັບໂທລະສັບຂອງທ່ານໄດ້ໃນໜຶ່ງຄັ້ງ. ທ່ານຈະຕ້ອງໄດ້ເລືອກໜຶ່ງເຄື່ອງເມື່ອຄອມພິວເຕີ ຫຼື ແທັບເລັດທັງສອງເຄື່ອງພະຍາຍາມເຊື່ອມຕໍ່ກັບໂທລະສັບຂອງທ່ານ."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

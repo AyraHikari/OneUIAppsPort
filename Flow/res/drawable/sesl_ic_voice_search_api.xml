@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/sesl_action_button_src_size" android:width="@dimen/sesl_action_button_src_size" android:viewportWidth="72.0" android:viewportHeight="72.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@android:color/white" android:pathData="M57.379,34.732l-5.22,-0.078c-0.13,8.72 -7.209,15.55 -16.116,15.55c-9.548,0 -16.202,-8.176 -16.202,-15.512h-5.221c0,9.107 7.584,19.174 18.769,20.572v9.988h5.22v-9.969C49.166,54.075 57.22,45.485 57.379,34.732z" />
+    <path android:fillColor="@android:color/white" android:pathData="M36,44.958c5.651,0 10.249,-4.621 10.249,-10.298l0.029,-17.612c0,-5.68 -4.611,-10.301 -10.278,-10.301c-5.667,0 -10.278,4.621 -10.278,10.301v17.609C25.721,40.337 30.333,44.958 36,44.958z" />
+</vector>

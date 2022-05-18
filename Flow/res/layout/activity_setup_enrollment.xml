@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:backgroundTint="@color/background_round_color" />
+    <LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginBottom="33.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ProgressBar android:id="@id/progressBar" android:background="@drawable/circular_progressbar_bar_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:max="100" android:progress="12" android:indeterminate="false" android:progressDrawable="@drawable/circular_progressbar_bar" style="?android:progressBarStyleHorizontal" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_fileName="sc_easy_setup_check_medium.json" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/progress_circle_text_color" android:id="@id/progressText" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12%" android:layout_centerInParent="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/setupPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

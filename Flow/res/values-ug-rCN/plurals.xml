@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d 个文件已添加至文件传输列表</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"在 Samsung Flow 中注册并管理最多 %d 台电脑或平板电脑。
+
+一次只能有一台电脑或平板电脑连接至您的手机。当已注册的电脑或平板电脑同时尝试连接至您的手机时，您必须选择其中一台。"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

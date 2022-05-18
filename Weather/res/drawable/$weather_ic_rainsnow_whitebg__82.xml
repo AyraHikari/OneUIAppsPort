@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="3998" android:valueFrom="0" android:valueTo="0" android:propertyName="trimPathStart" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1716" android:valueFrom="0.04" android:valueTo="0.04" android:propertyName="trimPathEnd" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__83" android:duration="816" android:valueFrom="0.04" android:valueTo="1" android:propertyName="trimPathEnd" />
+        <objectAnimator android:duration="1466" android:valueFrom="1" android:valueTo="1" android:propertyName="trimPathEnd" />
+    </set>
+</set>

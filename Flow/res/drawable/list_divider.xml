@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/activity_horizontal_ss_margin" android:insetRight="@dimen/activity_horizontal_ss_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <gradient android:height="2.0px" android:startColor="@color/list_divider_color" android:endColor="@color/list_divider_color" android:angle="0.0" />
+    </shape>
+</inset>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_main_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/mainPanel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_list_item_title" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="24.0dip" android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/rounded_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:textColor="@color/primary_text_color" android:id="@id/tvText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_ss_top_margin" android:textIsSelectable="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/activity_horizontal_ss_margin" android:layout_marginEnd="@dimen/activity_horizontal_ss_margin" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

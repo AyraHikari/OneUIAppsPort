@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/itemPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:layout_marginTop="3.0dip" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/img_pcimage" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/primary_text_color" android:id="@id/txt_pcname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/img_pcimage" />
+    </RelativeLayout>
+</LinearLayout>

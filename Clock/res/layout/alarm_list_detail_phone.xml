@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/stub_workingday_holiday" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/line3" android:visibility="gone" style="@style/ListViewLineSeparator" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dummy_view_to_take_focus_from_edit_text" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="0.0px" android:layout_height="0.0px" />
+    <com.google.android.material.textfield.TextInputLayout android:theme="@style/CustomTextInputLayoutStyle" android:id="@id/alarm_name_input_layout" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/alarm_popup_name_edittext_margin_top" android:layout_marginBottom="10.0dip" android:layout_marginStart="@dimen/alarm_detail_alarmname_edittext_margin_start" android:layout_marginEnd="@dimen/alarm_popup_name_edittext_margin_right">
+        <EditText android:textSize="@dimen/alarm_alarmname_text_size" android:id="@id/alarm_name" style="@style/NameEditTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/alarm_sound_box" android:onClick="optionClicked" android:paddingVertical="0.0dip" style="@style/ListViewStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/alarm_winset_listview_padding_top_bottom">
+            <TextView android:id="@id/alarm_sound_option" android:text="@string/alarm_sound" style="@style/TextStyle_1" />
+            <RelativeLayout android:id="@id/alarm_sound_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_detail_item_textview_margin_start" android:layout_marginEnd="@dimen/alarm_detail_item_switch_margin_start">
+                <TextView android:id="@id/alarm_sound" android:maxLines="4" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/TextStyle_2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/spotify_error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/spotify_error_icon" android:layout_marginEnd="@dimen/alarm_sound_spotify_error_icon_margin_end" />
+        <Switch android:theme="@style/SwitchStyle" android:gravity="center_vertical" android:id="@id/alarm_sound_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:drawablePadding="@dimen/common_setting_switch_drawable_padding" android:contentDescription="@string/alarm_sound" android:drawableStart="@drawable/alarm_option_line" android:paddingEnd="@dimen/alarm_detail_item_textview_margin_end" />
+    </LinearLayout>
+    <View android:id="@id/line5" style="@style/ListViewLineSeparator" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/alarm_pattern_boz" android:onClick="optionClicked" android:paddingVertical="0.0dip" style="@style/ListViewStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/alarm_winset_listview_padding_top_bottom">
+            <TextView android:id="@id/alarm_pattern_subject" android:text="@string/alarmvibration" style="@style/TextStyle_1" />
+            <TextView android:id="@id/alarm_pattern_value" style="@style/TextStyle_2" />
+        </LinearLayout>
+        <Switch android:theme="@style/SwitchStyle" android:gravity="center_vertical" android:id="@id/alarm_vibrate_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:drawablePadding="@dimen/common_setting_switch_drawable_padding" android:contentDescription="@string/alarmvibration" android:drawableStart="@drawable/alarm_option_line" android:paddingEnd="@dimen/alarm_detail_item_textview_margin_end" />
+    </LinearLayout>
+    <View android:id="@id/line6" style="@style/ListViewLineSeparator" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/alarm_snooze_boz" android:onClick="optionClicked" android:paddingVertical="0.0dip" style="@style/ListViewStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/alarm_winset_listview_padding_top_bottom">
+            <TextView android:id="@id/alarm_snooze_subject" android:text="@string/snooze" style="@style/TextStyle_1" />
+            <TextView android:id="@id/alarm_snooze_value" style="@style/TextStyle_2" />
+        </LinearLayout>
+        <Switch android:theme="@style/SwitchStyle" android:gravity="center_vertical" android:id="@id/alarm_snooze_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:drawablePadding="@dimen/common_setting_switch_drawable_padding" android:contentDescription="@string/snooze" android:drawableStart="@drawable/alarm_option_line" android:paddingEnd="@dimen/alarm_detail_item_textview_margin_end" />
+    </LinearLayout>
+</LinearLayout>

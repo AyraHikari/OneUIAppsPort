@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tw_fab_add_mtrl" android:id="@id/menu_add_preset" android:title="@string/timer_add_preset" android:showAsAction="ifRoom" />
+    <item android:id="@id/menu_edit_preset" android:visible="false" android:title="@string/timer_edit_preset" android:showAsAction="never" />
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_name_landscape_full_max_width">150.0dip</dimen>
+    <dimen name="alarm_name_landscape_max_width">90.0dip</dimen>
+    <dimen name="alarm_name_landscape_pre_full_max_width_phone">70.0dip</dimen>
+    <dimen name="alarm_timeview_number_textview_textsize_tablet">13.0dip</dimen>
+    <dimen name="alarm_widget_ampm_ko_text_size_mini_land">9.0dip</dimen>
+    <dimen name="alarm_widget_ampm_text_size">10.0dip</dimen>
+    <dimen name="alarm_widget_date_and_onoff_btn_item_margin_land_phone">4.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size_mini_phone">9.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size_phone">9.0dip</dimen>
+    <dimen name="alarm_widget_full_ampm_text_size_phone">11.0dip</dimen>
+    <dimen name="alarm_widget_full_vertical_clock_layout_margin">5.0dip</dimen>
+    <dimen name="alarm_widget_item_margin_end">9.0dip</dimen>
+    <dimen name="alarm_widget_item_margin_start">9.0dip</dimen>
+    <dimen name="alarm_widget_name_text_size">9.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_height_phone">19.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_width_phone">19.0dip</dimen>
+    <dimen name="alarm_widget_repeat_day_single_space">3.0dip</dimen>
+    <dimen name="alarm_widget_time_margin_bottom">-5.0dip</dimen>
+    <dimen name="alarm_widget_time_margin_top">-5.0dip</dimen>
+    <dimen name="alarm_widget_time_text_size">23.0dip</dimen>
+    <dimen name="alarm_widget_time_text_size_phone">16.0dip</dimen>
+    <dimen name="digitalclock_day_night_icon_size_tablet">12.0dip</dimen>
+    <dimen name="digitalclock_timeview_number_textview_textsize_horizontal">32.0dip</dimen>
+    <dimen name="dualclock_common_city_textview_textsize">13.0dip</dimen>
+    <dimen name="dualclock_date_textview_textsize">13.0dip</dimen>
+    <dimen name="dualclock_horizontal_clock_layout_margin_top_tablet">8.0dip</dimen>
+    <dimen name="dualclock_prefull_timeview_textsize_tablet">11.0dip</dimen>
+    <dimen name="dualclock_timeview_number_textview_textsize">28.0dip</dimen>
+    <dimen name="first_city_text_size_tablet">6.0dip</dimen>
+</resources>

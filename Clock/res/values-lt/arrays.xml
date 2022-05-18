@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Midvėjus</item>
+        <item>Honolulu</item>
+        <item>Havajai</item>
+        <item>Aliaska</item>
+        <item>Ankoridžas</item>
+        <item>San Fransiskas</item>
+        <item>Vankuveris</item>
+        <item>Sietlas</item>
+        <item>Los Andželas</item>
+        <item>Tichuana</item>
+        <item>Kalgaris</item>
+        <item>Finiksas</item>
+        <item>Mazatlanas</item>
+        <item>Denveris</item>
+        <item>Meksikas</item>
+        <item>Vinipegas</item>
+        <item>Diego Garsija</item>
+        <item>Dalasas</item>
+        <item>Čikaga</item>
+        <item>Torontas</item>
+        <item>Majamis</item>
+        <item>Lima</item>
+        <item>Kitas</item>
+        <item>Vašingtonas</item>
+        <item>Otava</item>
+        <item>Niujorkas</item>
+        <item>Bogota</item>
+        <item>Santjagas</item>
+        <item>La Pasas</item>
+        <item>Karakasas</item>
+        <item>Buenos Airės</item>
+        <item>Niufaundlendas</item>
+        <item>Sent Džonsas</item>
+        <item>San Paulas</item>
+        <item>Brazilija</item>
+        <item>Rio de Žaneiras</item>
+        <item>Fernando de Noronija</item>
+        <item>Azorų salos</item>
+        <item>Lisabona</item>
+        <item>Kasablanka</item>
+        <item>Dublinas</item>
+        <item>Rabatas</item>
+        <item>Madridas</item>
+        <item>Setlmentas</item>
+        <item>Londonas</item>
+        <item>Kingstonas</item>
+        <item>Barselona</item>
+        <item>Paryžius</item>
+        <item>Alžyras</item>
+        <item>Tunisas</item>
+        <item>Tripolis</item>
+        <item>Berlynas</item>
+        <item>Roma</item>
+        <item>Praha</item>
+        <item>Kinšasa</item>
+        <item>Stokholmas</item>
+        <item>Bratislava</item>
+        <item>Keiptaunas</item>
+        <item>Budapeštas</item>
+        <item>Varšuva</item>
+        <item>Kaliningradas</item>
+        <item>Sofija</item>
+        <item>Atėnai</item>
+        <item>Lvovas</item>
+        <item>Helsinkis</item>
+        <item>Ryga</item>
+        <item>Talinas</item>
+        <item>Bukareštas</item>
+        <item>Vilnius</item>
+        <item>Lubumbašis</item>
+        <item>Minskas</item>
+        <item>Sankt Peterburgas</item>
+        <item>Stambulas</item>
+        <item>Kamčiatka</item>
+        <item>Kijevas</item>
+        <item>Jeruzalė</item>
+        <item>Maskva</item>
+        <item>Charkovas</item>
+        <item>Nairobis</item>
+        <item>Džida</item>
+        <item>Volgogradas</item>
+        <item>Jerevanas</item>
+        <item>Tbilisis</item>
+        <item>Baku</item>
+        <item>Čita</item>
+        <item>Samara</item>
+        <item>Teheranas</item>
+        <item>Iževskas</item>
+        <item>Abu Dabis</item>
+        <item>Dubajus</item>
+        <item>Ufa</item>
+        <item>Jakaterinburgas</item>
+        <item>Čeljabinskas</item>
+        <item>Karačis</item>
+        <item>Kabulas</item>
+        <item>Taškentas</item>
+        <item>Islamabadas</item>
+        <item>Mumbajus</item>
+        <item>Omskas</item>
+        <item>Almata</item>
+        <item>Bengalūras</item>
+        <item>Hyderabad</item>
+        <item>Naujasis Delis</item>
+        <item>Kolombas</item>
+        <item>Čenajus</item>
+        <item>Novosibirskas</item>
+        <item>Katmandu</item>
+        <item>Novokuzneckas</item>
+        <item>Kalkuta</item>
+        <item>Daka</item>
+        <item>Hovdas</item>
+        <item>Krasnojarskas</item>
+        <item>Bankokas</item>
+        <item>Kvala Lumpūras</item>
+        <item>Singapūras</item>
+        <item>Irkutskas</item>
+        <item>Pnompenis</item>
+        <item>Hanojus</item>
+        <item>Džakarta</item>
+        <item>Ulan Batoras</item>
+        <item>Honkongas</item>
+        <item>Pertas</item>
+        <item>Pekinas</item>
+        <item>Manila</item>
+        <item>Taipėjus</item>
+        <item>Seulas</item>
+        <item>Ambonas</item>
+        <item>Vladivostokas</item>
+        <item>Jakutskas</item>
+        <item>Chabarovskas</item>
+        <item>Adelaidė</item>
+        <item>Tokijas</item>
+        <item>Južno Sachalinskas</item>
+        <item>Halifaksas</item>
+        <item>Gvamas</item>
+        <item>Kanbera</item>
+        <item>Magadanas</item>
+        <item>Sidnėjus</item>
+        <item>Petropavlovskas, Kamčiatka</item>
+        <item>Tarava</item>
+        <item>Oklandas</item>
+        <item>Velingtonas</item>
+        <item>Pago Pagas</item>
+        <item>Denpasaras</item>
+        <item>Bernas</item>
+        <item>Ciurichas</item>
+        <item>Kairas</item>
+        <item>Abidžanas</item>
+        <item>Akra</item>
+        <item>Adis Ababas</item>
+        <item>Amanas</item>
+        <item>Amsterdamas</item>
+        <item>Anadyris</item>
+        <item>Ankara</item>
+        <item>Antananarivas</item>
+        <item>Ašchabadas</item>
+        <item>Asmara</item>
+        <item>Astana</item>
+        <item>Asunsjonas</item>
+        <item>Ostinas</item>
+        <item>Bagdadas</item>
+        <item>Baltimorė</item>
+        <item>Bamakas</item>
+        <item>Bangis</item>
+        <item>Baris</item>
+        <item>Basteras</item>
+        <item>Beirutas</item>
+        <item>Belgradas</item>
+        <item>Belizas</item>
+        <item>Biškekas</item>
+        <item>Bisau</item>
+        <item>Bolonija</item>
+        <item>Bostonas</item>
+        <item>Bridžtaunas</item>
+        <item>Brisbenas</item>
+        <item>Briuselis</item>
+        <item>Kanarų salos</item>
+        <item>Katandzaras</item>
+        <item>Kajenas</item>
+        <item>Šarlotė</item>
+        <item>Kišiniovas</item>
+        <item>Klivelandas</item>
+        <item>Kolumbas</item>
+        <item>Konakris</item>
+        <item>Kopenhaga</item>
+        <item>Korkas</item>
+        <item>Krotonė</item>
+        <item>Dakaras</item>
+        <item>Damaskas</item>
+        <item>Dar es Salamas</item>
+        <item>Darvinas</item>
+        <item>Detroitas</item>
+        <item>Džibutis</item>
+        <item>Doha</item>
+        <item>Duala</item>
+        <item>Dušanbė</item>
+        <item>Velykų Sala</item>
+        <item>Edinburgas</item>
+        <item>El Pasas</item>
+        <item>Florencija</item>
+        <item>For de Fransas</item>
+        <item>Fritaunas</item>
+        <item>Gaboronas</item>
+        <item>Galapagų salos</item>
+        <item>Ženeva</item>
+        <item>Genua</item>
+        <item>Džordžtaunas</item>
+        <item>Griutvikenas</item>
+        <item>Gvatemalos miestas</item>
+        <item>Gustavija</item>
+        <item>Hamburgas</item>
+        <item>Hararė</item>
+        <item>Havana</item>
+        <item>Hobartas</item>
+        <item>Hiūstonas</item>
+        <item>Indianapolis</item>
+        <item>Johanesburgas</item>
+        <item>Kampala</item>
+        <item>Chartumas</item>
+        <item>Kingstonas</item>
+        <item>Kuveito miestas</item>
+        <item>Lagosas</item>
+        <item>Las Vegasas</item>
+        <item>Liubliana</item>
+        <item>Haikou</item>
+        <item>Luisvilis</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Liuksemburgas</item>
+        <item>Makau</item>
+        <item>Malabas</item>
+        <item>Malė</item>
+        <item>Managva</item>
+        <item>Manama</item>
+        <item>Maputo</item>
+        <item>Marigo</item>
+        <item>Meka</item>
+        <item>Melburnas</item>
+        <item>Memfis</item>
+        <item>Mesina</item>
+        <item>Milanas</item>
+        <item>Milvokis</item>
+        <item>Mogadišas</item>
+        <item>Monrovia</item>
+        <item>Montevidėjas</item>
+        <item>Monrealis</item>
+        <item>Miunchenas</item>
+        <item>Muskatas</item>
+        <item>Neapolis</item>
+        <item>Nateras</item>
+        <item>Ndžamena</item>
+        <item>Niamėjus</item>
+        <item>Nuakšotas</item>
+        <item>Numė</item>
+        <item>Nukualofa</item>
+        <item>Nukas</item>
+        <item>Osaka</item>
+        <item>Uagadugu</item>
+        <item>Palermas</item>
+        <item>Panamos miestas</item>
+        <item>Paramaribas</item>
+        <item>Permė</item>
+        <item>Filadelfija</item>
+        <item>Podgorica</item>
+        <item>Ponta Delgada</item>
+        <item>Port Luisas</item>
+        <item>Port o Prensas</item>
+        <item>Portlandas, Oregonas</item>
+        <item>Pchenjanas</item>
+        <item>Rangūnas</item>
+        <item>Recife</item>
+        <item>Reikjavikas</item>
+        <item>Rijadas</item>
+        <item>Sen Deni</item>
+        <item>San Antonijus</item>
+        <item>San Diege</item>
+        <item>San Chosė</item>
+        <item>San Chosė</item>
+        <item>San Chuanas</item>
+        <item>San Marinas</item>
+        <item>San Salvadoras</item>
+        <item>"Sana'a"</item>
+        <item>Santo Domingas</item>
+        <item>Šanchajus</item>
+        <item>Šenzenas</item>
+        <item>Skopjė</item>
+        <item>Sent Džonsas</item>
+        <item>Suva</item>
+        <item>Taitis</item>
+        <item>Tegusigalpa</item>
+        <item>Hošiminas</item>
+        <item>Tiandzinas</item>
+        <item>Turinas</item>
+        <item>Vaducas</item>
+        <item>Valeta</item>
+        <item>Verona</item>
+        <item>Viktorija</item>
+        <item>Viena</item>
+        <item>Jamusukras</item>
+        <item>Jaundė</item>
+        <item>Zagrebas</item>
+        <item>Guangdžou</item>
+        <item>Kardifas</item>
+        <item>Redžaina</item>
+        <item>Šarlotė Amalija</item>
+        <item>Atlanta</item>
+        <item>Majotas</item>
+        <item>Sent Pjeras ir Mikelonas</item>
+        <item>Oslas</item>
+        <item>Srednekolymskas</item>
+        <item>Šiaurės Kurilskas</item>
+        <item>Uhanas</item>
+        <item>Čengdu</item>
+        <item>Sianas</item>
+        <item>Port Morsbis</item>
+        <item>Davao miestas</item>
+        <item>Čongčingas</item>
+        <item>Šenjangas</item>
+        <item>Nandzingas</item>
+        <item>Harbinas</item>
+        <item>Dzinanas</item>
+        <item>Džengdžou</item>
+        <item>Kunmingas</item>
+        <item>Čangčunas</item>
+        <item>Fudžou</item>
+        <item>Kučingas</item>
+        <item>Makassar</item>
+        <item>Hangdžou</item>
+        <item>Čingdao</item>
+        <item>Naningas</item>
+        <item>Urumkvi</item>
+        <item>Nasau</item>
+        <item>Nikosija</item>
+        <item>Dilis</item>
+        <item>Roudtaunas</item>
+        <item>Lomė</item>
+        <item>Rozo</item>
+        <item>Librevilis</item>
+        <item>Marselis</item>
+        <item>Maseru</item>
+        <item>Madžūras</item>
+        <item>Monakas</item>
+        <item>Bandar Seri Begavanas</item>
+        <item>Bandžulis</item>
+        <item>Busanas</item>
+        <item>Bužumbūra</item>
+        <item>Brazavilis</item>
+        <item>Vientianas</item>
+        <item>Vindhukas</item>
+        <item>Sarajevas</item>
+        <item>Saipanas</item>
+        <item>San Tomė</item>
+        <item>Sent Džordžas</item>
+        <item>Stenlis</item>
+        <item>Adenas</item>
+        <item>Apija</item>
+        <item>Andora</item>
+        <item>Al Ajunas</item>
+        <item>Vilemstadas</item>
+        <item>Mbabanė</item>
+        <item>Kastris</item>
+        <item>Kororas</item>
+        <item>Kankunas</item>
+        <item>Kigalis</item>
+        <item>Kingstaunas</item>
+        <item>Tel Avivas</item>
+        <item>Toršaunas</item>
+        <item>Tirana</item>
+        <item>Timpu</item>
+        <item>Porto Novas</item>
+        <item>Praja</item>
+        <item>Frankfurtas</item>
+        <item>Priština</item>
+        <item>Hamiltonas</item>
+        <item>Honiara</item>
+        <item>Ispanijos uostas</item>
+        <item>Mineapolis</item>
+        <item>Hilas</item>
+        <item>Orlandas</item>
+        <item>Kanzas Sitis</item>
+        <item>Naujasis Orleanas</item>
+        <item>Nešvilis</item>
+        <item>Tuksonas</item>
+        <item>Tampa</item>
+        <item>Džeksonvilis</item>
+        <item>Oklahoma</item>
+        <item>Albukerkė</item>
+        <item>Omaha</item>
+        <item>Virdžinija Bičas</item>
+        <item>Boisis</item>
+        <item>Di Moinas</item>
+        <item>Birmingamas</item>
+        <item>Solt Leik Sitis</item>
+        <item>Litl Rokas</item>
+        <item>Su Folsas</item>
+        <item>Džeksonas</item>
+        <item>Čarlstonas, Pietų Karolina</item>
+        <item>Fargas</item>
+        <item>Bilingsas</item>
+        <item>Portlandas, Meinas</item>
+        <item>Šajenas</item>
+        <item>Čarlstonas, Vakarų Virdžinija</item>
+        <item>Pitsburgas</item>
+        <item>Grin Bėjus</item>
+        <item>Sent Luisas</item>
+        <item>Valis</item>
+        <item>UTC (pasaulinis koordinuotasis laikas)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Afganistanas</item>
+        <item>Alžyras</item>
+        <item>Samoa</item>
+        <item>Antigva ir Barbuda</item>
+        <item>Argentina</item>
+        <item>Armėnija</item>
+        <item>Australija</item>
+        <item>Azerbaidžanas</item>
+        <item>Bangladešas</item>
+        <item>Baškortostano Respublika</item>
+        <item>Baltarusija</item>
+        <item>Bolivija</item>
+        <item>Brazilija</item>
+        <item>Bulgarija</item>
+        <item>Kambodža</item>
+        <item>Kanada</item>
+        <item>Čilė</item>
+        <item>Kinija</item>
+        <item>Kolumbija</item>
+        <item>Čekijos Respublika</item>
+        <item>Kongo Respublika</item>
+        <item>Ekvadoras</item>
+        <item>Estija</item>
+        <item>Suomija</item>
+        <item>Prancūzija</item>
+        <item>Gruzija</item>
+        <item>Vokietija</item>
+        <item>Graikija</item>
+        <item>Vengrija</item>
+        <item>Indija</item>
+        <item>Indonezija</item>
+        <item>Iranas</item>
+        <item>Airija</item>
+        <item>Izraelis</item>
+        <item>Italija</item>
+        <item>Japonija</item>
+        <item>Kazachstanas</item>
+        <item>Kenija</item>
+        <item>Kiribatis</item>
+        <item>Latvija</item>
+        <item>Lietuva</item>
+        <item>Malaizija</item>
+        <item>Meksika</item>
+        <item>Mongolija</item>
+        <item>Marokas</item>
+        <item>Nepalas</item>
+        <item>Naujoji Zelandija</item>
+        <item>Pakistanas</item>
+        <item>Peru</item>
+        <item>Filipinai</item>
+        <item>Lenkija</item>
+        <item>Portugalija</item>
+        <item>Žemėlapis</item>
+        <item>Pietų Korėja</item>
+        <item>Singapūro Respublika</item>
+        <item>Libija</item>
+        <item>Rumunija</item>
+        <item>Rusija</item>
+        <item>Saudo Arabija</item>
+        <item>Slovakija</item>
+        <item>Pietų Afrika</item>
+        <item>Ispanija</item>
+        <item>Šri Lanka</item>
+        <item>Švedų</item>
+        <item>Taivanas</item>
+        <item>Tailandas</item>
+        <item>Tunisas</item>
+        <item>Turkija</item>
+        <item>JAE</item>
+        <item>JK</item>
+        <item>Ukraina</item>
+        <item>JAV</item>
+        <item>Uzbekistanas</item>
+        <item>Venesuela</item>
+        <item>Vietnamas</item>
+        <item>Merg. Sal. JK</item>
+        <item>Šveicarija</item>
+        <item>Egiptas</item>
+        <item>Dramblio Kaulo Krantas</item>
+        <item>Gana</item>
+        <item>Etiopija</item>
+        <item>Jordanija</item>
+        <item>Nyderlandai</item>
+        <item>Madagaskaras</item>
+        <item>Turkmėnistanas</item>
+        <item>Eritrėja</item>
+        <item>Paragvajus</item>
+        <item>Irakas</item>
+        <item>Malis</item>
+        <item>Centrinės Afrikos Respublika</item>
+        <item>Gvadelupa</item>
+        <item>Libanas</item>
+        <item>Serbija</item>
+        <item>Belizas</item>
+        <item>Kirgizija</item>
+        <item>Bisau Gvinėja</item>
+        <item>Barbadosas</item>
+        <item>Belgija</item>
+        <item>Prancūzijos Gviana</item>
+        <item>Moldova</item>
+        <item>Gvinėja</item>
+        <item>Danija</item>
+        <item>Senegalas</item>
+        <item>Sirija</item>
+        <item>Tanzanija</item>
+        <item>Džibutis</item>
+        <item>Kataras</item>
+        <item>Kamerūnas</item>
+        <item>Tadžikistanas</item>
+        <item>Škotija</item>
+        <item>Martinika</item>
+        <item>Siera Leonė</item>
+        <item>Botsvana</item>
+        <item>Gajana</item>
+        <item>Pietų Džordžija</item>
+        <item>Gvatemala</item>
+        <item>Šv. Bartolomėjus</item>
+        <item>Zimbabvė</item>
+        <item>Kuba</item>
+        <item>Uganda</item>
+        <item>Sudanas</item>
+        <item>Jamaika</item>
+        <item>Kuveitas</item>
+        <item>Nigerija</item>
+        <item>Angola</item>
+        <item>Zambija</item>
+        <item>Liuksemburgas</item>
+        <item>Pusiaujo Gvinėja</item>
+        <item>Maldyvai</item>
+        <item>Nikaragva</item>
+        <item>Bahreinas</item>
+        <item>Mozambikas</item>
+        <item>San Martenas</item>
+        <item>Somalis</item>
+        <item>Liberija</item>
+        <item>Urugvajus</item>
+        <item>Omanas</item>
+        <item>Čadas</item>
+        <item>Nigeris</item>
+        <item>Mauritanija</item>
+        <item>Naujoji Kaledonija</item>
+        <item>Tonga</item>
+        <item>Grenlandija</item>
+        <item>Burkina Fasas</item>
+        <item>Panama</item>
+        <item>Surinamas</item>
+        <item>Juodkalnija</item>
+        <item>Mauricijus</item>
+        <item>Haitis</item>
+        <item>Korėjos Liaudies Demokratinė Respublika</item>
+        <item>Mianmaras</item>
+        <item>Islandija</item>
+        <item>Reunjono Sala</item>
+        <item>Kosta Rika</item>
+        <item>Puerto Rikas</item>
+        <item>Salvadoras</item>
+        <item>Jemenas</item>
+        <item>Dominikos Respublika</item>
+        <item>Makedonija</item>
+        <item>Fidžis</item>
+        <item>Prancūzijos Polinezija</item>
+        <item>Hondūras</item>
+        <item>Lichtenšteinas</item>
+        <item>Malta</item>
+        <item>Seišeliai</item>
+        <item>Austrija</item>
+        <item>Kroatija</item>
+        <item>Velsas</item>
+        <item>JAV Merg.S.</item>
+        <item>Slovėnija</item>
+        <item>San Marinas</item>
+        <item>Norvegija</item>
+        <item>Papua Naujoji Gvinėja</item>
+        <item>Bahamos</item>
+        <item>Kipras</item>
+        <item>Rytų Timoras</item>
+        <item>Togas</item>
+        <item>Dominika</item>
+        <item>Gabonas</item>
+        <item>Lesotas</item>
+        <item>Maršalo Salos</item>
+        <item>Monakas</item>
+        <item>Brunėjus</item>
+        <item>Gambija</item>
+        <item>Burundis</item>
+        <item>Kongo Demokratinė Respublika</item>
+        <item>Laosas</item>
+        <item>Namibija</item>
+        <item>Bosnija ir Hercegovina</item>
+        <item>Saipanas</item>
+        <item>San Tomė ir Prinsipė</item>
+        <item>Grenada</item>
+        <item>Folklando Salos</item>
+        <item>Amerikos Samoa</item>
+        <item>Andora</item>
+        <item>Scharos Respublika</item>
+        <item>Kiurasao</item>
+        <item>Esvatinis</item>
+        <item>Sent Lusija</item>
+        <item>Palau</item>
+        <item>Ruanda</item>
+        <item>Sent Vinsentas ir Grenadinai</item>
+        <item>Farerų Salos</item>
+        <item>Albanija</item>
+        <item>Butanas</item>
+        <item>Beninas</item>
+        <item>Žaliasis Kyšulys</item>
+        <item>Kosovas</item>
+        <item>Bermudų Salos</item>
+        <item>Saliamono Salos</item>
+        <item>Taivanas, Kinija</item>
+        <item>Trinidadas ir Tobagas</item>
+        <item>Angilija</item>
+        <item>UTC (pasaulinis koordinuotasis laikas)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Signalas nustatytas 1 min. nuo dabar.</item>
+        <item>Garso signalas skambės po %1$s.</item>
+        <item>Garso signalas skambės po %2$s.</item>
+        <item>Garso signalas skambės po %1$s ir %2$s.</item>
+        <item>Garso signalas skambės po %3$s.</item>
+        <item>Garso signalas skambės po %1$s ir %3$s.</item>
+        <item>Garso signalas skambės po %2$s ir %3$s.</item>
+        <item>Garso signalas skambės po %1$s, %2$s ir %3$s.</item>
+        <item>Garso signalas skambės po %s nuo dabar.</item>
+        <item>Garso signalas skambės po %1$s ir %2$s nuo dabar.</item>
+        <item>Garso signalas skambės po %1$s ir %3$s.</item>
+        <item>Garso signalas skambės po %1$s, %2$s ir %3$s.</item>
+        <item>Garso signalas skambės po %1$s ir %2$s nuo dabar.</item>
+        <item>Garso signalas skambės po %1$s, %2$s ir %3$s.</item>
+        <item>Garso signalas skambės po %1$s, %2$s ir %3$s.</item>
+        <item>Garso signalas skambės po %1$s, %2$s, %3$s ir %4$s nuo dabar.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

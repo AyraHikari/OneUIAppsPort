@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d filer lades till på filöverföringslistan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fil lades till på filöverföringslistan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Registrera och hantera upp till %d datorer eller surfplattor i Samsung Flow.
+
+Det går bara att ansluta en dator eller surfplatta till telefonen samtidigt. Om båda de registrerade datorerna eller surfplattorna försöker ansluta till telefonen, måste du välja en av dem."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Registrera och hantera %d dator eller surfplatta i Samsung Flow.
+
+Det går bara att ansluta en dator eller surfplatta till telefonen samtidigt. Om båda de registrerade datorerna eller surfplattorna försöker ansluta till telefonen, måste du välja en av dem."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

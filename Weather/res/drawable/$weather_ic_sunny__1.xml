@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1016" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__2" android:duration="100" android:valueFrom="1" android:valueTo="1.5" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__3" android:duration="83" android:valueFrom="1.5" android:valueTo="1.45" android:propertyName="scaleX" />
+        <objectAnimator android:duration="333" android:valueFrom="1.45" android:valueTo="1.45" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__4" android:duration="183" android:valueFrom="1.45" android:valueTo="1.55" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__5" android:duration="200" android:valueFrom="1.55" android:valueTo="1.45" android:propertyName="scaleX" />
+        <objectAnimator android:duration="216" android:valueFrom="1.45" android:valueTo="1.45" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__6" android:duration="183" android:valueFrom="1.45" android:valueTo="1.55" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__7" android:duration="200" android:valueFrom="1.55" android:valueTo="1.45" android:propertyName="scaleX" />
+        <objectAnimator android:duration="99" android:valueFrom="1.45" android:valueTo="1.45" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__8" android:duration="166" android:valueFrom="1.45" android:valueTo="1" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1016" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__9" android:duration="100" android:valueFrom="1" android:valueTo="1.5" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__10" android:duration="83" android:valueFrom="1.5" android:valueTo="1.45" android:propertyName="scaleY" />
+        <objectAnimator android:duration="333" android:valueFrom="1.45" android:valueTo="1.45" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__11" android:duration="183" android:valueFrom="1.45" android:valueTo="1.55" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__12" android:duration="200" android:valueFrom="1.55" android:valueTo="1.45" android:propertyName="scaleY" />
+        <objectAnimator android:duration="216" android:valueFrom="1.45" android:valueTo="1.45" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__13" android:duration="183" android:valueFrom="1.45" android:valueTo="1.55" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__14" android:duration="200" android:valueFrom="1.55" android:valueTo="1.45" android:propertyName="scaleY" />
+        <objectAnimator android:duration="99" android:valueFrom="1.45" android:valueTo="1.45" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__15" android:duration="166" android:valueFrom="1.45" android:valueTo="1" android:propertyName="scaleY" />
+    </set>
+</set>

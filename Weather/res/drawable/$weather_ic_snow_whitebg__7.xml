@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="379" android:valueFrom="196" android:valueTo="196" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_snow_whitebg__8" android:duration="588" android:valueFrom="196" android:valueTo="216" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_snow_whitebg__9" android:duration="588" android:valueFrom="216" android:valueTo="196" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_snow_whitebg__10" android:duration="588" android:valueFrom="196" android:valueTo="216" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_snow_whitebg__11" android:duration="588" android:valueFrom="216" android:valueTo="196" android:propertyName="translateY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="379" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_snow_whitebg__12" android:duration="2355" android:valueFrom="0" android:valueTo="180" android:propertyName="rotation" />
+    </set>
+</set>

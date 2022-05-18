@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="start" android:layout_gravity="bottom" android:id="@id/worldclock_weather_logo_layout" android:layout_width="wrap_content" android:layout_height="@dimen/worldclock_main_weather_logo_height" android:importantForAccessibility="noHideDescendants" android:layout_marginHorizontal="@dimen/worldclock_main_weather_logo_margin_start"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/worldclock_cp_powered_by_textsize" android:textColor="@color/worldclock_cp_color_in_globe" android:id="@id/worldclock_cp_powered_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/powered_by" android:layout_centerVertical="true" android:fontFamily="sec-roboto-light" />
+    <ImageView android:id="@id/worldclock_cp_powered_by_iv" android:layout_width="@dimen/worldclock_hwc_cp_powered_by_logo_width" android:layout_height="@dimen/worldclock_hwc_cp_powered_by_logo_height" android:src="@drawable/worldclock_weather_logo_globe_kor_drawable" android:layout_centerVertical="true" android:layout_marginStart="@dimen/worldclock_hwc_cp_powered_by_text_margin_end" android:layout_toEndOf="@id/worldclock_cp_powered_by" />
+</RelativeLayout>

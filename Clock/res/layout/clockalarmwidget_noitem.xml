@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/alarm_noitem" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/widget_no_item_textsize" android:textColor="@color/widget_no_item" android:ellipsize="end" android:gravity="center" android:id="@id/label2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tap_to_create_alarm" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/alarm_widget_no_alarm_margin" android:layout_marginEnd="@dimen/alarm_widget_no_alarm_margin" />
+</FrameLayout>

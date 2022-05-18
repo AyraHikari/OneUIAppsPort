@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">පිහිටීම් %dකට වඩා එක් කළ නොහැක. මෙය එක් කිරීමට පිහිටීම් කිහිපයක් මකන්න.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පිහිටීම් %dකට වඩා එක් කළ නොහැක. මෙය එක් කිරීමට පිහිටීම් කිහිපයක් මකන්න.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">අනුලකුණු %dකට වඩා ඇතුළු කළ නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">අනුලකුණු %dකට වඩා ඇතුළු කළ නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%dක් තේරිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dක් තේරිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">දින %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">දින %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">පැය %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පැය %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

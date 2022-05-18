@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">התראה בעוד %d ימים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">התראה בעוד %d יום</item>
+        <item quantity="two">התראה בעוד %d ימים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">התראה בעוד %d ימים</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">התראה בעוד %d שעות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">התראה בעוד %d שעה</item>
+        <item quantity="two">התראה בעוד %d שעות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">התראה בעוד %d שעות</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">התראה בעוד %d שעות ודקה אחת</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">התראה בעוד %d שעה ודקה אחת</item>
+        <item quantity="two">התראה בעוד %d שעות ודקה אחת</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">התראה בעוד %d שעות ודקה אחת</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">התראה בעוד %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">התראה בעוד %d דקה</item>
+        <item quantity="two">התראה בעוד %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">התראה בעוד %d דקות</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">בעוד %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">בעוד %d דקה</item>
+        <item quantity="two">בעוד %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">בעוד %d דקות</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">ניתן להוסיף לכל היותר %d התראות.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ניתן להוסיף לכל היותר %d התראה.</item>
+        <item quantity="two">ניתן להוסיף לכל היותר %d התראות.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">ניתן להוסיף לכל היותר %d התראות.</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d דקה</item>
+        <item quantity="two">%d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d דקות</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">למחוק %d רקעים?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">למחוק רקע %d?</item>
+        <item quantity="two">למחוק %d רקעים?</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">למחוק %d רקעים?</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d התראות חדשות</item>
+        <item quantity="one">התראה חדשה אחת (%d)</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="many">%d התראות חדשות</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d נבחר/ו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d נבחר/ו</item>
+        <item quantity="two">%d נבחר/ו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d נבחר/ו</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d דקות לפני</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">דקה %d לפני</item>
+        <item quantity="two">%d דקות לפני</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d דקות לפני</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s ו-%3$d נוספים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s ו-%3$d נוסף</item>
+        <item quantity="two">%1$s, %2$s ו-%3$d נוספים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%1$s, %2$s ו-%3$d נוספים</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">זמן שינה: %d שעות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">זמן שינה: שעה %d</item>
+        <item quantity="two">זמן שינה: %d שעות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">זמן שינה: %d שעות</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">זמן שינה: %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">זמן שינה: דקה %d</item>
+        <item quantity="two">זמן שינה: %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">זמן שינה: %d דקות</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">נודניק: %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">נודניק דקה %d</item>
+        <item quantity="two">נודניק: %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">נודניק: %d דקות</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">פחות %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">פחות דקה %d</item>
+        <item quantity="two">פחות %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">פחות %d דקות</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">עוד %d דקות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">עוד דקה %d</item>
+        <item quantity="two">עוד %d דקות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">עוד %d דקות</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">לא ניתן להוסיף יותר מ-%d טיימרים מוגדרים מראש.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">לא ניתן להוסיף יותר מטיימר %d מוגדר מראש.</item>
+        <item quantity="two">לא ניתן להוסיף יותר מ-%d טיימרים מוגדרים מראש.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">לא ניתן להוסיף יותר מ-%d טיימרים מוגדרים מראש.</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">ניתן להוסיף לכל היותר %d ערים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ניתן להוסיף לכל היותר %d עיר.</item>
+        <item quantity="two">ניתן להוסיף לכל היותר %d ערים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">ניתן להוסיף לכל היותר %d ערים.</item>
+    </plurals>
+</resources>

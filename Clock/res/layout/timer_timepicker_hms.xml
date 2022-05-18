@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Direction_LTR"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/timer_picker_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sec.android.app.clockpackage.timer.view.TimerNumberPicker android:id="@id/timer_timepicker_hours_picker" android:nextFocusRight="@id/timer_timepicker_minutes_picker" style="@style/TimerPickerViewPickerStyle" />
+        <TextView android:id="@id/timer_hms_colon" style="@style/TimerPickerViewColonStyle" />
+        <com.sec.android.app.clockpackage.timer.view.TimerNumberPicker android:id="@id/timer_timepicker_minutes_picker" android:nextFocusLeft="@id/timer_timepicker_hours_picker" android:nextFocusRight="@id/timer_timepicker_seconds_picker" style="@style/TimerPickerViewPickerStyle" />
+        <TextView android:id="@id/timer_ms_colon" style="@style/TimerPickerViewColonStyle" />
+        <com.sec.android.app.clockpackage.timer.view.TimerNumberPicker android:id="@id/timer_timepicker_seconds_picker" android:nextFocusLeft="@id/timer_timepicker_minutes_picker" style="@style/TimerPickerViewPickerStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" android:maxWidth="56.0dip" android:maxHeight="56.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/chooser_activity_item_title" android:ellipsize="end" android:gravity="center|top" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:lines="2" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+</RelativeLayout>

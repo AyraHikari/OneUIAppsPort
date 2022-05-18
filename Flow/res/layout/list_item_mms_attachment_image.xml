@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/imageLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+        <com.samsung.android.galaxycontinuity.customcontrols.AspectRatioImageView android:id="@id/attachedImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="230.0dip" android:maxHeight="285.0dip" android:minHeight="108.0dip" app:sriv_border_color="#4db3b3b3" app:sriv_border_width="1.0px" app:sriv_oval="false" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <ImageButton android:id="@id/videoPlayButton" android:background="#00ffffff" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/messages_btn_videoplay" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

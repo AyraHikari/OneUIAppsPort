@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="#41000000"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/mask" android:drawable="@drawable/ftu_button_show_shape_mask" />
+        </ripple>
+    </item>
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/ftu_button_show_shape_mask_disabled" />
+            <item android:drawable="@drawable/ftu_button_show_shape_mask" />
+        </selector>
+    </item>
+</layer-list>

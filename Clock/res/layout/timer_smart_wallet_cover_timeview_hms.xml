@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Direction_Locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/smart_view_wallet_cover_title_text_size" android:textColor="@color/alert_text_color" android:layout_gravity="start|center" android:id="@id/timer_alert_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="clock2019L" android:layout_marginHorizontal="@dimen/smart_view_wallet_timer_alert_minus_minus_end_margin" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Direction_LTR">
+        <TextView android:id="@id/timer_hour_prefix" android:visibility="visible" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_hour_postfix" android:visibility="visible" android:layout_toEndOf="@id/timer_hour_prefix" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_hms_colon" android:visibility="visible" android:text="@string/colon" android:layout_toEndOf="@id/timer_hour_postfix" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_minute_prefix" android:layout_toEndOf="@id/timer_hms_colon" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_minute_postfix" android:layout_toEndOf="@id/timer_minute_prefix" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_ms_colon" android:text="@string/colon" android:layout_toEndOf="@id/timer_minute_postfix" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_second_prefix" android:layout_toEndOf="@id/timer_ms_colon" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_second_postfix" android:layout_toEndOf="@id/timer_second_prefix" style="@style/TimerSmartViewWalletCoverTimeViewStyle" />
+    </RelativeLayout>
+</LinearLayout>

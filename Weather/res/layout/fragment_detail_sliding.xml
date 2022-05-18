@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sliding_container" android:tag="layout/fragment_detail_sliding_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/gradient_bg" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/theme_bg" android:tag="binding_2" android:background="@color/detail_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.slidingpanelayout.widget.SlidingPaneLayout android:id="@id/sliding_panel_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:seslDrawRoundedCorner="false">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/drawer_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:tag="binding_3" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" android:layout_marginStart="@dimen/navigation_rail_marginStart">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@android:color/transparent" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior=".detail.view.DetailAppBarBehavior" app:seslUseCustomHeight="true" app:seslUseCustomPadding="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/card_view" android:focusable="false" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <include android:id="@id/toolbar_layout" layout="@layout/detail_app_toolbar_layout" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.slidingpanelayout.widget.SlidingPaneLayout>
+</FrameLayout>

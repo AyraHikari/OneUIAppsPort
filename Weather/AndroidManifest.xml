@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.sec.android.daemonapp" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
+    <uses-permission android:name="com.sec.android.app.samsungapps.accesspermission.UPDATE_EXISTS"/>
+    <uses-permission android:name="com.samsung.android.rubin.context.permission.READ_CONTEXT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.suggestion.permission.READ_SUGGESTION_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.persona.permission.READ_PERSONA_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.debugmode.ACCESS_DEBUG_MODE"/>
+    <uses-permission android:name="com.samsung.android.rubin.app.ui.permission.LAUNCH_RUBIN_SETTING"/>
+    <uses-permission android:name="com.msc.openprovider.OpenContentProvider.READ_CONTENT"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.samsung.systemui.permission.FACE_WIDGET"/>
+    <uses-permission android:name="com.samsung.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_b2d3fb749fbfa462e6e3b594dc81ee02a510effb73f55be5c9a546dc067810809e8d431b60ed2ea0518a3b3118f37da90a6df4ff0c1d5ac33d001f4340e100aa3d11feef197eede6392f7767f982200b7e55708a5edc45b682f45b3aceb44498d6f0932d38d27251b12e0068498da913c9dd2befee87f3c125f182ab92dbef4a"/>
+    <uses-permission android:name="com.samsung.android.app.spage.permission.WRITE_CARD_DATA"/>
+    <uses-permission android:name="com.samsung.android.app.spage.permission.READ_CARD_DATA"/>
+    <uses-permission android:name="com.samsung.sea.retailagent.permission.RETAILMODE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="com.samsung.android.wear.retailmode.permission.RETAILMODE"/>
+    <uses-feature android:name="com.samsung.android.api.version.2901"/>
+    <uses-feature android:name="com.samsung.feature.samsung_experience_mobile"/>
+    <permission android:description="@string/weather_daemon_permission_description" android:label="@string/weather" android:name="com.sec.android.daemonapp.ap.accuweather.ACCUWEATHER_DAEMON_ACCESS_PROVIDER" android:protectionLevel="normal"/>
+    <permission android:description="@string/weather_daemon_permission_description" android:label="@string/weather" android:name="com.samsung.android.weather.permission.READ_DANGEROUS_PROVIDER" android:protectionLevel="dangerous"/>
+    <permission android:description="@string/weather_daemon_permission_description" android:label="@string/weather" android:name="com.samsung.android.weather.permission.READ_SYSTEM_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:description="@string/weather_daemon_permission_description" android:label="@string/weather" android:name="com.sec.android.daemonapp.permission.WRITE_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/weather" android:name="com.samsung.android.weather.DATA_SERVICE" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/weather" android:name="com.samsung.android.weather.permission.SETUP_WIZARD" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/weather" android:name="com.samsung.android.weather.permission.START_ACTIVITY" android:protectionLevel="signatureOrSystem"/>
+    <permission android:description="@string/weather" android:label="@string/weather" android:name="com.samsung.android.weather.permission.START_NORMAL_ACTIVITY" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
+    <uses-permission android:name="com.samsung.android.scloud.backup.lib.read"/>
+    <uses-permission android:name="com.samsung.android.scloud.backup.lib.write"/>
+    <uses-permission android:name="com.sec.android.daemonapp.ap.accuweather.ACCUWEATHER_DAEMON_ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.sec.android.daemonapp.permission.WRITE_PROVIDER"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/weather_launcher_icon" android:label="@string/weather" android:name="com.sec.android.daemonapp.App" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/Weather.Theme.AppCompat.Weather">
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="@string/ad_mob_id"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.samsung.android.notification.blockable" android:value="true"/>
+        <meta-data android:name="com.samsung.android.notification.logging" android:value="runestone"/>
+        <meta-data android:name="com.samsung.android.weather.model.DBVersion" android:value="1000"/>
+        <meta-data android:name="com.samsung.android.weather.gearmode" android:value="3"/>
+        <meta-data android:name="com.samsung.android.weather.content.provider.security.level" android:value="2"/>
+        <meta-data android:name="pp_version" android:value="2"/>
+        <meta-data android:name="com.samsung.android.rubin.runestone_enabled" android:value="true"/>
+        <provider android:authorities="com.sec.android.daemonapp.ap.accuweather.provider" android:exported="true" android:name="com.sec.android.daemonapp.provider.WeatherContentProvider" android:readPermission="com.sec.android.daemonapp.ap.accuweather.ACCUWEATHER_DAEMON_ACCESS_PROVIDER" android:writePermission="com.sec.android.daemonapp.permission.WRITE_PROVIDER"/>
+        <provider android:authorities="com.samsung.android.weather.content.provider.level.dangerous" android:exported="true" android:name="com.sec.android.daemonapp.provider.DangerousLevelContentProvider" android:readPermission="com.samsung.android.weather.permission.READ_DANGEROUS_PROVIDER" android:writePermission="com.sec.android.daemonapp.permission.WRITE_PROVIDER"/>
+        <provider android:authorities="com.samsung.android.weather.content.provider.level.system" android:exported="true" android:name="com.sec.android.daemonapp.provider.SystemLevelContentProvider" android:readPermission="com.samsung.android.weather.permission.READ_SYSTEM_PROVIDER" android:writePermission="com.sec.android.daemonapp.permission.WRITE_PROVIDER"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="false" android:excludeFromRecents="false" android:exported="true" android:label="@string/weather" android:launchMode="standard" android:name="com.samsung.android.weather.app.AppLauncherActivity" android:resizeableActivity="true" android:theme="@style/Weather.Theme.Launcher.Base">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.launcher.icon_theme" android:value="onlyBg"/>
+        </activity>
+        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:enabled="true" android:excludeFromRecents="false" android:exported="true" android:hardwareAccelerated="true" android:label="@string/weather" android:largeHeap="true" android:launchMode="singleTop" android:name="com.sec.android.daemonapp.MainActivity" android:resizeableActivity="true" android:theme="@style/Weather.Theme.AppCompat.Weather">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="com.samsung.android.weather.intent.action.internal.APP"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.SEARCH"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.PARTICULARS"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.SELECT_SEARCH"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.LOCATIONS"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.SELECT_LOCATIONS"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.RECOVERY"/>
+                <action android:name="com.samsung.android.weather.intent.action.DETAIL"/>
+                <action android:name="com.samsung.android.weather.intent.action.CITYLIST"/>
+                <action android:name="com.samsung.android.weather.intent.action.USE_CURRENT_LOCATION"/>
+                <action android:name="com.samsung.android.weather.intent.action.SEARCH"/>
+                <action android:name="com.samsung.android.weather.intent.action.SETTING"/>
+                <action android:name="com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"/>
+                <action android:name="com.sec.android.widgetapp.weather.intent.action.START_ACTIVITY_SETTING_VIEW"/>
+                <action android:name="com.samsung.android.weather.intent.action.internal.SET_LOCATION_ON_WIDGET"/>
+                <action android:name="com.samsung.android.weather.daemon.REQUEST_LOCATION_WEATHER_DATA"/>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.weather.setting"/>
+                <action android:name="com.sec.android.daemonapp.weather.setting"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="true" android:excludeFromRecents="false" android:exported="true" android:label="@string/weather" android:launchMode="standard" android:name="com.samsung.android.weather.app.common.dev.DevOptionsActivity" android:resizeableActivity="true" android:theme="@style/Weather.Theme.AppCompat.Weather">
+            <intent-filter>
+                <action android:name="com.samsung.android.weather.intent.action.internal.WEATHER_DEBUG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="true" android:exported="true" android:name="com.samsung.android.weather.app.oobe.SetupWizardPermissionActivity" android:theme="@style/Weather.Theme.OOBE">
+            <intent-filter>
+                <action android:name="com.samsung.android.spv.ACTION_VIEW_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.sec.android.daemonapp.service.DayNightChangeCheckService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.sec.android.daemonapp.receiver.DaemonReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.ap.accuweatherdaemon.action.CURRENT_LOCATION_WEATHER_DATA"/>
+                <action android:name="com.sec.android.widgetapp.weatherdaemon.action.SHOW_USE_LOCATION_POPUP_CHANGE_SETTING"/>
+                <action android:name="com.sec.android.widgetapp.ap.accuweatherdaemon.action.B_MANUALREFRESH"/>
+                <action android:name="com.sec.android.widgetapp.ap.accuweatherdaemon.action.ACTION_REQUEST_WEATHER_DATA_TO_DAEMON"/>
+                <action android:name="com.sec.android.widgetapp.ap.accuweatherdaemon.action.CHANGE_ICON_OF_DAEMON"/>
+                <action android:name="com.sec.android.widgetapp.ap.accuweatherdaemon.action.APPS_UPDATE_REFRESH"/>
+                <action android:name="com.samsung.android.weather.daemon.REQUEST_LOCATION_WEATHER_DATA_REFRESH"/>
+                <action android:name="com.samsung.android.weather.widget.action.DAEMON_REFRESH_END"/>
+                <action android:name="com.samsung.android.weather.widget.action.GET_CURRENT_LOCATION_END"/>
+                <action android:name="com.samsung.android.weather.daemon.REQUEST_LOCATION_WEATHER_DATA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.daemonapp.notification.NotificationReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.accessory.intent.action.UPDATE_NOTIFICATION_ITEM"/>
+                <action android:name="com.samsung.android.weather.intent.action.REMOVED_NOTIFICATION"/>
+                <action android:name="com.samsung.android.weather.intent.action.ALERT_NOTIFICATION"/>
+                <action android:name="com.samsung.android.weather.intent.action.UPDATE_NOTIFICATION"/>
+                <action android:name="com.samsung.android.weather.widget.action.DAEMON_AUTOREFRESH_END"/>
+                <action android:name="com.samsung.android.weather.widget.action.DAEMON_REFRESH_END"/>
+                <action android:name="com.samsung.android.weather.daemon.action.CUSTOMIZE_EVENT_NOTIFICATION"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.app.action.ENTER_KNOX_DESKTOP_MODE"/>
+                <action android:name="android.app.action.EXIT_KNOX_DESKTOP_MODE"/>
+                <action android:name="com.samsung.android.weather.notification.action.ACTION_NOTIFICATION_UPDATE"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+                <action android:name="com.samsung.android.weather.notification.action.REFRESH_ON_NOTIFICATION"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.widget.action.ACTION_REQUEST_CHANGE_RESTORE_MODE"/>
+                <action android:name="com.samsung.android.weather.intent.action.REMOVED_NOTIFICATION_FROM_GEAR"/>
+                <action android:name="com.samsung.android.weather.notification.action.ACTION_APP_UPDATE_NOTIFICATION"/>
+                <action android:name="com.samsung.android.theme.themecenter.THEME_APPLY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.daemonapp.receiver.AppsAutoUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.samsungapps.UPDATE_EXISTS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.daemonapp.receiver.RetailModeReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.sea.rm.DEMO_RESET_STARTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.daemonapp.receiver.SystemReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="0x00000008" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <meta-data android:name="backup_name" android:resource="@xml/backup_item"/>
+        <meta-data android:name="backup_content_uri" android:value="content://com.sec.android.daemonapp.backup"/>
+        <receiver android:exported="true" android:name="com.samsung.android.weather.bnr.BackupReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_WEATHER_WIDGET"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_WEATHER_WIDGET"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.sec.android.daemonapp.backup" android:enabled="true" android:exported="true" android:label="sCloud Provider for Weather" android:name="com.samsung.android.scloud.oem.lib.ClientProvider" android:readPermission="com.samsung.android.scloud.lib.storage.read" android:syncable="false" android:writePermission="com.samsung.android.scloud.lib.storage.write"/>
+        <meta-data android:name="com.samsung.systemui.facewidget.executable" android:resource="@raw/facewidget"/>
+        <activity android:excludeFromRecents="true" android:hardwareAccelerated="true" android:name="com.sec.android.daemonapp.setting.WidgetSettingActivity" android:resizeableActivity="false" android:taskAffinity="com.sec.android.daemonapp.widget.setting" android:theme="@style/WidgetSetting.Theme"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.sec.android.daemonapp.setting.WidgetCheckConditionActivity" android:resizeableActivity="false" android:taskAffinity="com.sec.android.daemonapp.widget.setting" android:theme="@style/WidgetSettingCondition.Theme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.sec.android.daemonapp.topsync.WidgetTopSyncActivity" android:resizeableActivity="false" android:theme="@style/WidgetDialog.Theme.Base"/>
+        <receiver android:enabled="true" android:exported="true" android:icon="@mipmap/weather_launcher_icon" android:label="@string/weather" android:name="com.sec.android.daemonapp.appwidget.WeatherAppWidget2x1">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hero_widget_remote_widget_provider_2x1"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/supportcellsizeinfo_weather"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.sec.android.daemonapp.setting.WidgetCheckConditionActivity"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:icon="@mipmap/weather_launcher_icon" android:label="@string/widget_name_4x1" android:name="com.sec.android.daemonapp.appwidget.WeatherAppWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hero_widget_remote_widget_provider"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/supportcellsizeinfo_clock"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.sec.android.daemonapp.setting.WidgetCheckConditionActivity"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:icon="@mipmap/weather_launcher_icon" android:label="@string/weather_forecast" android:name="com.sec.android.daemonapp.appwidget.WeatherForecastAppWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hero_widget_remote_widget_provider_forecast"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/supportcellsizeinfo_forecast"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.sec.android.daemonapp.setting.WidgetCheckConditionActivity"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:icon="@mipmap/weather_launcher_icon" android:label="@string/dynamic_widget" android:name="com.sec.android.daemonapp.appwidget.WeatherAestheticAppWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/aesthetic_widget_provider"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/supportcellsizeinfo_aesthetic"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.sec.android.daemonapp.setting.WidgetCheckConditionActivity"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:icon="@mipmap/weather_launcher_icon" android:label="@string/weather" android:name="com.sec.android.daemonapp.appwidget.WeatherCoverAppWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/cover_widget_provider"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.daemonapp.facewidget.FaceWidgetReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_SERVICEBOX_REMOTEVIEWS"/>
+                <action android:name="com.samsung.android.weather.facewidget.action.ACTION_FACEWIDGET_UPDATE"/>
+                <action android:name="com.samsung.android.weather.facewidget.action.START_ACTIVITY"/>
+                <action android:name="com.samsung.android.weather.facewidget.action.START_ACTIVITY_WITH_COVER"/>
+                <action android:name="com.samsung.android.weather.facewidget.action.MANUAL_REFRESH"/>
+                <action android:name="com.samsung.android.weather.widget.action.REFRESH_ERROR"/>
+            </intent-filter>
+        </receiver>
+        <service android:foregroundServiceType="0x00000008" android:name="com.sec.android.daemonapp.facewidget.service.WidgetLockScreenRefreshService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.daemonapp.receiver.WidgetReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
+                <action android:name="com.samsung.android.theme.themecenter.THEME_APPLY"/>
+                <action android:name="com.sec.android.intent.action.LAUNCHER_CHANGED"/>
+                <action android:name="com.samsung.android.weather.widget.action.REFRESH_ERROR"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.widget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.GET_CURRENT_LOCATION_OK"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.ACTION_STOP_ERROR_MSG"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.CITY_CNT_ZERO"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.ACTIVITY"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.START_LOCATION_SETTINGS"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.START_BACKGROUND_DATA_SETTINGS"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.widget.action.ACTION_REQUEST_CHANGE_RESTORE_MODE"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.widget.action.ACTION_RESTORE_START_WEATHER_WIDGET"/>
+                <action android:name="com.sec.android.widgetapp.ap.accuweatherdaemon.action.MANUALREFRESH"/>
+                <action android:name="com.samsung.android.weather.widget.action.ACTION_WIDGET_CITY_CNT_ZERO_WITH_FLIP_COVER"/>
+                <action android:name="com.samsung.android.weather.widget.action.ACTION_WIDGET_START_ACTIVITY_WITH_FLIP_COVER"/>
+                <action android:name="com.samsung.android.weather.widget.action.ACTION_WIDGET_RESTORE_ACTIVITY_WITH_FLIP_COVER"/>
+                <action android:name="com.sec.android.widgetapp.ap.hero.accuweather.action.ACTION_STOP_ICON_ANIMATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.sec.android.daemonapp.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:exported="true" android:name="com.samsung.android.weather.interworking.rubin.receiver.WakeupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:host="com.samsung.android.rubin.context.sleepevent" android:pathPattern="/wakeupevent.*" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.weather.interworking.rubin.receiver.CommutingTimeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:host="com.samsung.android.rubin.context.commutingevent" android:pathPattern="/commuting_time_event.*" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sec.android.diagmonagent.log.ged.scheduler.GEDJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="SPDE.build.signature" android:value="5f5f1dac44bab69266bf3433e85c32da84d8e7d9/92872963/phone-release/Daemon-108100-1.6.41"/>
+        <meta-data android:name="SPDE.env.version" android:value="4.2.2/L31.1.15/0.9.28"/>
+    </application>
+</manifest>

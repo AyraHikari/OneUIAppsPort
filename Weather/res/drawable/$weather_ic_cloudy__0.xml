@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="280.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="280.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="c1" android:pivotX="160.0" android:pivotY="160.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="-20.0" android:translateY="-20.0" aapt:layer_name="Cloudyprecomp">
+        <group android:name="c1s2" android:pivotX="0.0" android:pivotY="49.2312" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="200.0" android:translateY="190.7594" aapt:layer_name="CloudyprecompFill 1">
+            <group android:name="c1s2pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Fill 1">
+                <path android:name="c1s2pg1p10" android:fillColor="#fff1f1f1" android:pathData="M -20 -12.307 C -20 -12.307 7.69 -12.307 7.69 -12.307 C 14.49 -12.307 20 -6.797 20 0.003 C 20 6.793 14.49 12.302 7.69 12.312 C 7.69 12.302 -20 12.312 -20 12.312 C -20 12.312 -20 -12.307 -20 -12.307 Z" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+        <group android:name="c1s1" android:pivotX="0.0" android:pivotY="80.0188" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="120.0" android:translateY="159.9906" aapt:layer_name="CloudyprecompFill 3">
+            <group android:name="c1s1pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Fill 3">
+                <path android:name="c1s1pg1p10" android:fillColor="#ffffffff" android:pathData="M 20 0 C 20 11.05 11.05 20 0 20 C -11.05 20 -20 11.05 -20 0 C -20 -11.05 -11.05 -20 0 -20 C 11.05 -20 20 -11.05 20 0 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+</vector>

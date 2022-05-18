@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="16.0dip" />
+            <stroke android:width="1.0px" android:color="@color/inputbox_share_storke_color" />
+            <solid android:color="@color/inputbox_share_bg_color" />
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="?android:colorControlHighlight"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/mask">
+                <shape android:shape="rectangle">
+                    <corners android:radius="16.0dip" />
+                    <solid android:color="?android:colorAccent" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

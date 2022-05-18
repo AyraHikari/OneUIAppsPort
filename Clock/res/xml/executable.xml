@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <command android:label="@string/add_alarm" android:icon="@mipmap/ic_launcher_clock" android:enabled="true" android:tag="\ 1347664406" android:smallIcon="@drawable/clock_task_edge_add">
+        <extras-attr android:name="type" android:value="activity" />
+        <extras-attr android:name="action" android:value="com.sec.android.app.clockpackage.INTENT_ALARM_ADD" />
+        <extras-attr android:name="packageName" android:value="com.sec.android.app.clockpackage" />
+        <extras-attr android:name="componentName" android:value="com.sec.android.app.clockpackage.alarm.activity.AlarmAddExecutable" />
+        <extras-attr android:name="category" android:value="10@" />
+        <extras-attr android:name="launchMode" android:value="newTask|clearTop" />
+    </command>
+    <command android:label="@string/worldclock" android:icon="@mipmap/ic_launcher_clock" android:enabled="true" android:tag="\ 1722138757" android:smallIcon="@drawable/clock_task_edge_worldclock">
+        <extras-attr android:name="type" android:value="activity" />
+        <extras-attr android:name="action" android:value="com.sec.android.app.clockpackage.INTENT_WORLDCLOCK" />
+        <extras-attr android:name="packageName" android:value="com.sec.android.app.clockpackage" />
+        <extras-attr android:name="componentName" android:value="com.sec.android.app.clockpackage.ClockPackageExecutable" />
+        <extras-attr android:name="category" android:value="9@" />
+        <extras-attr android:name="launchMode" android:value="newTask|singleTop|clearTop" />
+    </command>
+    <command android:label="@string/stopwatch" android:icon="@mipmap/ic_launcher_clock" android:enabled="true" android:tag="\ 2448326096" android:smallIcon="@drawable/clock_task_edge_stopwatch">
+        <extras-attr android:name="type" android:value="activity" />
+        <extras-attr android:name="action" android:value="com.sec.android.app.clockpackage.INTENT_STOPWATCH" />
+        <extras-attr android:name="packageName" android:value="com.sec.android.app.clockpackage" />
+        <extras-attr android:name="componentName" android:value="com.sec.android.app.clockpackage.ClockPackageExecutable" />
+        <extras-attr android:name="category" android:value="8@" />
+        <extras-attr android:name="launchMode" android:value="newTask|singleTop|clearTop" />
+    </command>
+    <command android:label="@string/timer" android:icon="@mipmap/ic_launcher_clock" android:enabled="true" android:tag="\ 1643934600" android:smallIcon="@drawable/clock_task_edge_timer">
+        <extras-attr android:name="type" android:value="activity" />
+        <extras-attr android:name="action" android:value="com.sec.android.app.clockpackage.INTENT_TIMER" />
+        <extras-attr android:name="packageName" android:value="com.sec.android.app.clockpackage" />
+        <extras-attr android:name="componentName" android:value="com.sec.android.app.clockpackage.ClockPackageExecutable" />
+        <extras-attr android:name="category" android:value="7@" />
+        <extras-attr android:name="launchMode" android:value="newTask|singleTop|clearTop" />
+    </command>
+</executable>

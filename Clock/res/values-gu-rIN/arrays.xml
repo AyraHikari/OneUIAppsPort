@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>મિડવે</item>
+        <item>હોનોલુલુ</item>
+        <item>હવાઇ</item>
+        <item>અલાસ્કા</item>
+        <item>એન્કરેજ</item>
+        <item>સાન ફ્રાન્સિસ્કો</item>
+        <item>વેનકુવર</item>
+        <item>સિએટલ</item>
+        <item>લોસ એન્જેલીસ</item>
+        <item>તિજૌના</item>
+        <item>કૅલગેરી</item>
+        <item>ફીનિક્સ</item>
+        <item>મઝાત્લાન</item>
+        <item>ડેનવર</item>
+        <item>મેક્સિકો શહેર</item>
+        <item>વિન્નિપેગ</item>
+        <item>ડિએગો ગાર્સિઆ</item>
+        <item>ડલ્લાસ</item>
+        <item>શિકાગો</item>
+        <item>ટોરેંટો</item>
+        <item>મિયામી</item>
+        <item>લિમા</item>
+        <item>ક્વિટો</item>
+        <item>વૉશિંગ્ટન DC</item>
+        <item>ઓટાવા</item>
+        <item>ન્યૂ યૉર્ક</item>
+        <item>બોગોટા</item>
+        <item>સન્ટીયાગો</item>
+        <item>લા પાઝ</item>
+        <item>કરાકસ</item>
+        <item>બ્યુએન્સ એરીઝ</item>
+        <item>ન્યૂફાઉન્ડલેન્ડ</item>
+        <item>સેઇન્ટ જૉન્સ</item>
+        <item>સાઓ પૉલો</item>
+        <item>બ્રાસિલિયા</item>
+        <item>રીઓ ડી જેનેરો</item>
+        <item>ફર્નેન્ડો ડે નોરોંહા</item>
+        <item>એઝોર્સ</item>
+        <item>લિસબન</item>
+        <item>કાસાબ્લાંકા</item>
+        <item>ડબ્લીન</item>
+        <item>રાબાત</item>
+        <item>મેડ્રિડ</item>
+        <item>સમાધાન</item>
+        <item>લંડન</item>
+        <item>કિંગ્સ્ટન</item>
+        <item>બાર્સલોના</item>
+        <item>પેરિસ</item>
+        <item>એલજીઅર્સ</item>
+        <item>ટુનિસ</item>
+        <item>ત્રીપોલી</item>
+        <item>બર્લિન</item>
+        <item>રોમ</item>
+        <item>પ્રાગ</item>
+        <item>કિન્શાસા</item>
+        <item>સ્ટૉકહોમ</item>
+        <item>બ્રાટીસ્લાવા</item>
+        <item>કેપ ટાઉન</item>
+        <item>બુડાપેસ્ટ</item>
+        <item>વર્સોવ</item>
+        <item>કાલિનિનગ્રાડ</item>
+        <item>સોફિયા</item>
+        <item>એથેન્સ</item>
+        <item>વિવ</item>
+        <item>હેલસિંકિ</item>
+        <item>રીગા</item>
+        <item>તાલિન</item>
+        <item>બૂચારેસ્ટ</item>
+        <item>વીલનીયસ</item>
+        <item>લુબુમબાશિ</item>
+        <item>મિન્સ્ક</item>
+        <item>સેં. પીટર્સબર્ગ</item>
+        <item>ઇસ્તાનબુલ</item>
+        <item>કામ્ચટ્કા</item>
+        <item>કીયુવ</item>
+        <item>જેરૂસલેમ</item>
+        <item>મૉસ્કો</item>
+        <item>ખારકિવ</item>
+        <item>નૈરોબી</item>
+        <item>જેદાહ</item>
+        <item>વૉલ્ગોગ્રાડ</item>
+        <item>યેરેવાન</item>
+        <item>બિલિસી</item>
+        <item>બાકુ</item>
+        <item>ચીતા</item>
+        <item>સામારા</item>
+        <item>તેહરાન</item>
+        <item>ઇઝ્વેસ્ક</item>
+        <item>અબુ ધાબી</item>
+        <item>દુબઈ</item>
+        <item>ઉફા</item>
+        <item>યેકાતેરીંબર્ગ</item>
+        <item>ચેલ્યાબિન્સ્ક</item>
+        <item>કરાંચી</item>
+        <item>કાબુલ</item>
+        <item>તાશકંત</item>
+        <item>ઈસ્લામાબાદ</item>
+        <item>મુંબઇ</item>
+        <item>ઓમ્સ્ક</item>
+        <item>એલ્માટી</item>
+        <item>બેંગલોર</item>
+        <item>હૈદરાબાદ</item>
+        <item>નવી દિલ્હી</item>
+        <item>કોલમ્બો</item>
+        <item>ચેન્નઇ</item>
+        <item>નોવોસિબિર્સ્ક</item>
+        <item>કાઠમંડુ</item>
+        <item>નોવોકુઝનેત્સ્ક</item>
+        <item>કોલકાતા</item>
+        <item>ઢાકા</item>
+        <item>હોવ્ડ</item>
+        <item>ક્રાસ્નોયાર્સ્ક</item>
+        <item>બેંગકોક</item>
+        <item>ક્વાલા લમ્પુર</item>
+        <item>સિંગાપોર</item>
+        <item>ઇરકુત્સ્ક</item>
+        <item>ફનોમ પેન</item>
+        <item>હેનોઇ</item>
+        <item>જાકાર્તા</item>
+        <item>ઉલાનબાટુર</item>
+        <item>હોંગ કોંગ</item>
+        <item>પર્થ</item>
+        <item>બીજિંગ</item>
+        <item>મનીલા</item>
+        <item>તાઈપેઈ</item>
+        <item>સીઉલ</item>
+        <item>એમ્બોન</item>
+        <item>વ્લાડિવોસ્ટોક</item>
+        <item>યાકુત્સક</item>
+        <item>ખબારોવસ્ક</item>
+        <item>એડીલેઇડ</item>
+        <item>ટોક્યો</item>
+        <item>યુઝ્નો-સખાલીંસ્ક</item>
+        <item>હાલીફેક્સ</item>
+        <item>ગુઆમ</item>
+        <item>કેનબેરા</item>
+        <item>મેગાડાન</item>
+        <item>સિડની</item>
+        <item>પેટ્રોપાવલોવસ્ક-કામચટસ્કી</item>
+        <item>તરાવા</item>
+        <item>ઑકલૅન્ડ</item>
+        <item>વેલિંગટન</item>
+        <item>પાગો પાગો</item>
+        <item>ડેનપાસર</item>
+        <item>બર્ન</item>
+        <item>ઝુરીખ</item>
+        <item>કૈરો</item>
+        <item>અબીજાન</item>
+        <item>એક્રા</item>
+        <item>અડીસ અબાબા</item>
+        <item>અમ્માન</item>
+        <item>એમ્સ્ટર્ડમ</item>
+        <item>અનાદિર</item>
+        <item>અંકારા</item>
+        <item>એન્ટનાનારીવો</item>
+        <item>અશગાબત</item>
+        <item>અસ્મારા</item>
+        <item>અસ્તાના</item>
+        <item>અસુનસીયોન</item>
+        <item>ઓસ્ટીન</item>
+        <item>બગદાદ</item>
+        <item>બાલ્ટીમોર</item>
+        <item>બામકો</item>
+        <item>બેનગુઈ</item>
+        <item>બારી</item>
+        <item>બસ-તેરે</item>
+        <item>બૈરૂટ</item>
+        <item>બેલગ્રેડ</item>
+        <item>બેલીઝ શહેર</item>
+        <item>બિશકેક</item>
+        <item>બિસાઉ</item>
+        <item>બોલોગ્ના</item>
+        <item>બોસ્ટૉન</item>
+        <item>બ્રીજટાઉન</item>
+        <item>બ્રિસ્બેન</item>
+        <item>બ્રસેલ્સ</item>
+        <item>કેનેરી ટાપુઓ</item>
+        <item>કેટેનઝારો</item>
+        <item>કીયેન</item>
+        <item>ષારલોટ</item>
+        <item>કિશિનાવુ</item>
+        <item>ક્લીવલેન્ડ</item>
+        <item>કોલંબસ</item>
+        <item>કોનાક્રી</item>
+        <item>કોપનહેગન</item>
+        <item>કોર્ક</item>
+        <item>ક્રોટોન</item>
+        <item>ડેકર</item>
+        <item>દમાસ્ક્સ</item>
+        <item>ડાર એસ સલામ</item>
+        <item>ડાર્વિન</item>
+        <item>ડીટ્રોઈટ</item>
+        <item>જીબૉતી</item>
+        <item>દોહા</item>
+        <item>ડુઆલા</item>
+        <item>દશન્વે</item>
+        <item>ઈસ્ટર ટાપુ</item>
+        <item>એડીનબર્ગ</item>
+        <item>એલ પાસો</item>
+        <item>ફ્લોરેન્સ</item>
+        <item>ફોર્ટ-ડી-ફ્રાન્સ</item>
+        <item>ફ્રીટાઉન</item>
+        <item>ગબોરોને</item>
+        <item>ગલાપેગોસ ટાપુઓ</item>
+        <item>જીનીવા</item>
+        <item>જીનોવા</item>
+        <item>જ્યોર્જટાઉન</item>
+        <item>ગ્રીટવિકેન</item>
+        <item>ગ્વાતેમાલા શહેર</item>
+        <item>ગુસ્તાવિયા</item>
+        <item>હેમ્બર્ગ</item>
+        <item>હરારે</item>
+        <item>હવાના</item>
+        <item>હોબાર્ટ</item>
+        <item>હુસ્ટન</item>
+        <item>ઈન્ડીયેનાપોલીસ</item>
+        <item>જોહેનસબર્ગ</item>
+        <item>કમ્પાલા</item>
+        <item>ખાર્ટૂમ</item>
+        <item>કિંગ્સ્ટન</item>
+        <item>કુવૈત શહેર</item>
+        <item>લાગોસ</item>
+        <item>લાસ વેગસ</item>
+        <item>લુબ્લેઆન</item>
+        <item>હાઈકોયુ</item>
+        <item>લુઈસવીલ</item>
+        <item>લુઆન્ડા</item>
+        <item>લુસાકા</item>
+        <item>લક્ઝમબૌર્ગ</item>
+        <item>મેકાઉ</item>
+        <item>માલેબુ</item>
+        <item>માલે</item>
+        <item>માનાગુયા</item>
+        <item>મનામા</item>
+        <item>મેપુટો</item>
+        <item>મૅરીગટ</item>
+        <item>મક્કા</item>
+        <item>મેલબર્ન</item>
+        <item>મેમ્ફીસ</item>
+        <item>મેસીના</item>
+        <item>મિલાન</item>
+        <item>મીલવૉકી</item>
+        <item>મોગાદિશૂ</item>
+        <item>મોનરોવીયા</item>
+        <item>મોન્ટેવિડિયો</item>
+        <item>મોંટ્રિયલ</item>
+        <item>મ્યુનિચ</item>
+        <item>મસ્કત</item>
+        <item>નેપલ્સ</item>
+        <item>નાતેર્સ</item>
+        <item>"એન'ઝામેના"</item>
+        <item>નીયામે</item>
+        <item>ન્વેકશોટ</item>
+        <item>નૉમી</item>
+        <item>નુકૂયાલોફા</item>
+        <item>નૂક</item>
+        <item>ઓસાકા</item>
+        <item>વેગેડુગુ</item>
+        <item>પાલેરમો</item>
+        <item>પનામા શહેર</item>
+        <item>પૅરમૅર્બો</item>
+        <item>પર્મ</item>
+        <item>ફીલેડેલફીયા</item>
+        <item>પૉડગોરીકા</item>
+        <item>પોન્ટ ડેલગાડા</item>
+        <item>પોર્ટ લૂઈ</item>
+        <item>પોર્ટ-ઓ-પ્રિન્સ</item>
+        <item>પૉર્ટલૅન્ડ, ઑરેગોન</item>
+        <item>પ્યોંગયંગ</item>
+        <item>યંગૂન</item>
+        <item>રીસાઈફ</item>
+        <item>રૈક્જાવીક</item>
+        <item>રીયાધ</item>
+        <item>સેન્ટ-ડેનીસ</item>
+        <item>સેન એન્ટોનીયો</item>
+        <item>સન ડિએગો</item>
+        <item>સન જોઝ</item>
+        <item>સેન જોઝ</item>
+        <item>સેન જુઓન</item>
+        <item>સેન મરીનો</item>
+        <item>સન સાલ્વાડોર</item>
+        <item>સાના</item>
+        <item>સન્ટો ડોમીંગો</item>
+        <item>શાંગહાઈ</item>
+        <item>શેન્જન</item>
+        <item>સ્કોપજે</item>
+        <item>સેઇન્ટ જૉન્સ</item>
+        <item>સુવા</item>
+        <item>તાહીતિ</item>
+        <item>ટેગુસગેલપ</item>
+        <item>હો ચી મીંગ શહેર</item>
+        <item>ટ્યાન્જીન</item>
+        <item>ટુરીન</item>
+        <item>વદુઝ</item>
+        <item>વલેત્તા</item>
+        <item>વરોના</item>
+        <item>વિક્ટોરીયા</item>
+        <item>વીએના</item>
+        <item>યામૂસુક્રો</item>
+        <item>યાઉનડે</item>
+        <item>ઝાગ્રેબ</item>
+        <item>ગ્વાંગઝૌ</item>
+        <item>કાર્ડિફ</item>
+        <item>રિજીના</item>
+        <item>શારલેટ ઍમેલી</item>
+        <item>એટલાન્ટા</item>
+        <item>માયોટે</item>
+        <item>સેન્ટ પીયરે અને મીક્યુલોન</item>
+        <item>ઓસ્લો</item>
+        <item>સ્રેડનેકોલીમ્સ્ક</item>
+        <item>સેવેરો-કુર્લિસ્ક</item>
+        <item>વૂહન</item>
+        <item>ચેંગડુ</item>
+        <item>શિઆન</item>
+        <item>પોર્ટ મોર્સબી</item>
+        <item>ડેવો શહેર</item>
+        <item>ચોંગ્કિંગ</item>
+        <item>શેનયાંગ</item>
+        <item>નાનજીંગ</item>
+        <item>હારબિન</item>
+        <item>જિનાન</item>
+        <item>ઝેંગઝોઉ</item>
+        <item>કન્મિંગ</item>
+        <item>ચાંગચૂન</item>
+        <item>ફૂઝઉ</item>
+        <item>કુચિંગ</item>
+        <item>મકાસ્સાર</item>
+        <item>હાંગઝોઉ</item>
+        <item>કિંગડાઉ</item>
+        <item>નાન્નીંગ</item>
+        <item>ઉરુમ્ચી</item>
+        <item>નાસાઉ</item>
+        <item>નિકોસિયા</item>
+        <item>દિલ્લી</item>
+        <item>રોડ ટાઉન</item>
+        <item>લોમ</item>
+        <item>રોઝૌ</item>
+        <item>લિબ્રેવિલે</item>
+        <item>માર્સેલી</item>
+        <item>માસેરુ</item>
+        <item>મજૂરો</item>
+        <item>મોનેકો</item>
+        <item>બંદર સેરી બેગવન</item>
+        <item>બાન્જુલ</item>
+        <item>બુસાન</item>
+        <item>બુજામ્બુરા</item>
+        <item>બ્રાઝાવિલે</item>
+        <item>વિયેટિએન</item>
+        <item>વિંડહોક</item>
+        <item>સારજેયેવો</item>
+        <item>સાઇપન</item>
+        <item>સાઓ ટોમે</item>
+        <item>સેંટ. જ્યોર્જ્સ</item>
+        <item>સ્ટેન્લી</item>
+        <item>એડન</item>
+        <item>એપીઆ</item>
+        <item>એન્ડોરા લા વેલ્લા</item>
+        <item>લાઉઓન</item>
+        <item>વિલેમસ્ટેડ</item>
+        <item>મોબાબેન</item>
+        <item>કાસ્ટેરીઝ</item>
+        <item>કોરોર</item>
+        <item>કાન્કુન</item>
+        <item>કિગાલી</item>
+        <item>કિંગ્સ્ટાઉન</item>
+        <item>ટેલ અવિવ</item>
+        <item>ટોરશોન</item>
+        <item>તિરાના</item>
+        <item>થિમ્ફુ</item>
+        <item>પોર્ટો-નોવો</item>
+        <item>પ્રેયા</item>
+        <item>ફ્રેન્કફર્ટ</item>
+        <item>પ્રિસટીના</item>
+        <item>હેમિલ્ટન</item>
+        <item>હોનિઆરા</item>
+        <item>સ્પેન નું બંદર</item>
+        <item>મિનીઅપૉલિસ</item>
+        <item>હીલો</item>
+        <item>ઑર્લેન્ડો</item>
+        <item>કૅન્સાસ સિટી</item>
+        <item>ન્યૂ ઑર્લીન્ઝ</item>
+        <item>નૅશવિલે</item>
+        <item>ટક્સન</item>
+        <item>ટૅમ્પા</item>
+        <item>જૅક્સનવિલે</item>
+        <item>ઓક્લાહોમા સિટી</item>
+        <item>અલ્બુકર્ક</item>
+        <item>ઓમાહા</item>
+        <item>વર્જિનિયા બીચ</item>
+        <item>બૉઇઝી</item>
+        <item>દ મૉઇન</item>
+        <item>બર્મિંગહામ</item>
+        <item>સૉલ્ટ લેક સિટી</item>
+        <item>લિટલ રૉક</item>
+        <item>સૂ ફૉલ્સ</item>
+        <item>જૅક્સન</item>
+        <item>ચાર્લ્સટન, સાઉથ કૅરોલિના</item>
+        <item>ફાર્ગો</item>
+        <item>બિલિંગ્સ</item>
+        <item>પૉર્ટલૅન્ડ, મેઇન</item>
+        <item>શાહેન</item>
+        <item>ચાર્લ્સટન, વેસ્ટ વર્જિનિયા</item>
+        <item>પિટ્સબર્ગ</item>
+        <item>ગ્રીન બે</item>
+        <item>સેંટ લૂઈ</item>
+        <item>ખીણ</item>
+        <item>UTC (કોઓર્ડિનેટેડ યુનિવર્સલ ટાઇમ)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>અફઘાનિસ્તાન</item>
+        <item>અલ્જીરિયા</item>
+        <item>સામોઆ</item>
+        <item>એન્ટીગ્વા અને બાર્બુડા</item>
+        <item>અર્જન્ટીના</item>
+        <item>આર્મેનીયા</item>
+        <item>ઓસ્ટ્રેલીયા</item>
+        <item>અઝરબૈજાન</item>
+        <item>બાંગ્લાદેશ</item>
+        <item>બશકોર્તોસ્તાનનો પ્રજાસત્તાક</item>
+        <item>બેલારસ</item>
+        <item>બાલીવીયા</item>
+        <item>બ્રાઝીલ</item>
+        <item>બલગેરીયા</item>
+        <item>કેમ્બોડીયા</item>
+        <item>કેનેડા</item>
+        <item>ચીલી</item>
+        <item>ચીન</item>
+        <item>કોલંબિયા</item>
+        <item>ચૅક રિપબ્લીક</item>
+        <item>કોંગોનો પ્રજાસત્તાક</item>
+        <item>ઈક્યુડોર</item>
+        <item>એસ્ટોનીયા</item>
+        <item>ફીનલેન્ડ</item>
+        <item>ફ્રાન્સ</item>
+        <item>જ્યોર્જીયા</item>
+        <item>જર્મની</item>
+        <item>ગ્રીસ</item>
+        <item>હંગેરી</item>
+        <item>ભારત</item>
+        <item>ઈન્ડોનેસિયા</item>
+        <item>ઇરાન</item>
+        <item>આઈરલેન્ડ</item>
+        <item>ઈઝરાએલ</item>
+        <item>ઇટલી</item>
+        <item>જપાન</item>
+        <item>કઝાકસ્તાન</item>
+        <item>કેન્યા</item>
+        <item>કિરિબાતી</item>
+        <item>લતાવીયા</item>
+        <item>લીથુઆનીયા</item>
+        <item>મલેશિયા</item>
+        <item>મેક્સિકો</item>
+        <item>મોન્ગોલીયા</item>
+        <item>મોરક્કો</item>
+        <item>નેપાલ</item>
+        <item>ન્યુઝીલેન્ડ</item>
+        <item>પાકિસ્તાન</item>
+        <item>પેરુ</item>
+        <item>ફીલીપાઇન્સ</item>
+        <item>પોલેન્ડ</item>
+        <item>પોર્ટુગલ</item>
+        <item>નક્શો</item>
+        <item>દક્ષિણ કોરિયા</item>
+        <item>સિંગાપોરનો પ્રજાસત્તાક</item>
+        <item>લિબિયા</item>
+        <item>રોમાનીયા</item>
+        <item>રશિયા</item>
+        <item>સાઉદી અરેબિયા</item>
+        <item>સ્લોવાક્યા</item>
+        <item>દક્ષિણ આફ્રિકા</item>
+        <item>સ્પેન</item>
+        <item>શ્રીલંકા</item>
+        <item>સ્વિડન</item>
+        <item>ટાઈવાન</item>
+        <item>થાઈલેન્ડ</item>
+        <item>ટ્યૂનિશિયા</item>
+        <item>તુર્કી</item>
+        <item>UAE</item>
+        <item>યુનાઇટેડ કીંગ્ડમ</item>
+        <item>યુક્રેઇન</item>
+        <item>USA</item>
+        <item>ઉસબેગીસ્તાન</item>
+        <item>વેનેઝ્યુએલા</item>
+        <item>વીએતનામ</item>
+        <item>GB વર્જિન ટાપુઓ</item>
+        <item>સ્વીટ્ઝરલેન્ડ</item>
+        <item>ઈજિપ્ત</item>
+        <item>કોટ ડ વોઈરે</item>
+        <item>ઘાના</item>
+        <item>ઈથોપીયા</item>
+        <item>જોર્ડન</item>
+        <item>નેધરલેન્ડ્સ</item>
+        <item>માદાગાસ્કર</item>
+        <item>તુર્કમેનિસ્તાન</item>
+        <item>એરીટ્રીયા</item>
+        <item>પેરેગ્વે</item>
+        <item>ઇરાક</item>
+        <item>માલી</item>
+        <item>કેન્દ્રીય આફ્રીકનનો ગણતંત્ર</item>
+        <item>ગ્વોડેલુપ</item>
+        <item>લેબનોન</item>
+        <item>સર્બિયા</item>
+        <item>બેલીઝ</item>
+        <item>કીર્ગીસ્તાન</item>
+        <item>ગીની બિસાઉ</item>
+        <item>બાર્બેડોસ</item>
+        <item>બેલ્ગિયમ</item>
+        <item>ફ્રેન્ચ ગુયાના</item>
+        <item>મોલ્ડોવ</item>
+        <item>ગીની</item>
+        <item>ડૅનમાર્ક</item>
+        <item>સેનેગલ</item>
+        <item>સીરીયા</item>
+        <item>ટાન્ઝાનીયા</item>
+        <item>જિબૂતી</item>
+        <item>કતાર</item>
+        <item>કૅમૅરૂન</item>
+        <item>તાજીકીસ્થાન</item>
+        <item>સ્કૉટલેન્ડ</item>
+        <item>માર્ટીનીક</item>
+        <item>સીએરા લીયોન</item>
+        <item>બોટસ્વાના</item>
+        <item>ગુયાના</item>
+        <item>સાઉથ જ્યોર્જિયા</item>
+        <item>ગ્વાતેમાલા</item>
+        <item>સેન્ટ બાર્થેલેમી</item>
+        <item>ઝીમ્બાબ્વે</item>
+        <item>ક્યુબા</item>
+        <item>યુગાન્ડા</item>
+        <item>સુદાન</item>
+        <item>જમૈકા</item>
+        <item>કુવૈત</item>
+        <item>નાઇજીરિયા</item>
+        <item>એન્ગોલા</item>
+        <item>ઝામ્બીયા</item>
+        <item>લક્ઝમબર્ગ</item>
+        <item>ઈક્વટોરીઅલ ગીની</item>
+        <item>માલડીવ્સ</item>
+        <item>નિકારાગુઆ</item>
+        <item>બહરિન</item>
+        <item>મોઝાંબિક</item>
+        <item>સેન્ટ માર્ટીન</item>
+        <item>સોમાલીયા</item>
+        <item>લાઈબેરીયા</item>
+        <item>યુરુગ્વે</item>
+        <item>ઓમાન</item>
+        <item>ચેડ</item>
+        <item>નાઈજર</item>
+        <item>મૌરીટાનીયા</item>
+        <item>ન્યૂ કૅલેડોનીયા</item>
+        <item>ટોંગા</item>
+        <item>ગ્રીનલેન્ડ</item>
+        <item>બર્કિન ફાસો</item>
+        <item>પનામા</item>
+        <item>સુરીનેમ</item>
+        <item>મોન્ટેનેગ્રો</item>
+        <item>મૉરીશ્યસ</item>
+        <item>હાઈતી</item>
+        <item>લોકશાહી લોકોના કોરિયાનો પ્રજાસત્તાક</item>
+        <item>મ્યાનમાર</item>
+        <item>આઈસલેન્ડ</item>
+        <item>રીયુનિયન ટાપુ</item>
+        <item>કોસ્ટા રીકા</item>
+        <item>પ્યુઅર્ટો રિકો</item>
+        <item>એલ સેન્વેડોર</item>
+        <item>યમન</item>
+        <item>ડૉમિનિકન રિપલ્બિક</item>
+        <item>મેસેડોનિયા</item>
+        <item>ફિજી</item>
+        <item>ફ્રેન્ચ પૉલીનેસીયા</item>
+        <item>હોન્ડુરસ</item>
+        <item>લિકટનસ્ટાઈન</item>
+        <item>માલ્ટા</item>
+        <item>સેશેલ્સ</item>
+        <item>ઓસ્ટ્રીયા</item>
+        <item>ક્રોએસિયા</item>
+        <item>વેલ્સ</item>
+        <item>US વર્જિન ટાપુઓ</item>
+        <item>સ્લોવેનીયા</item>
+        <item>સેન મરીનો</item>
+        <item>નોર્વે</item>
+        <item>પાપુઆ ન્યુ ગીની</item>
+        <item>બહામાસ</item>
+        <item>સાઇપ્રસ</item>
+        <item>તિમોર-લેસ્ટે</item>
+        <item>ટોગો</item>
+        <item>ડોમીનીકા</item>
+        <item>ગબોન</item>
+        <item>લેસોથો</item>
+        <item>માર્શલ ટાપુઓ</item>
+        <item>મોનેકો</item>
+        <item>બ્રુનેઇ</item>
+        <item>ગામ્બીયા</item>
+        <item>બરુંડી</item>
+        <item>કોંગોનો લોકશાહી ગણતંત્ર</item>
+        <item>લાઓસ</item>
+        <item>નામિબીયા</item>
+        <item>બોસ્નીયા અને હર્ઝગોવીના</item>
+        <item>સાઇપન</item>
+        <item>સાઓટોમ અને પ્રિંસિપે</item>
+        <item>ગ્રેનાડા</item>
+        <item>ફાલ્કલેન્ડ ટાપુઓ</item>
+        <item>અમેરિકન સામોઆ</item>
+        <item>એન્ડોરા</item>
+        <item>સાહ્રાહી ગણતંત્ર</item>
+        <item>કુરાકાવ</item>
+        <item>એસ્વાટીની</item>
+        <item>સેન્ટ લુસીયા</item>
+        <item>પલાઉ</item>
+        <item>રવાન્ડા</item>
+        <item>સેંન્ટ વિન્સેટ એન્ડ ધી ગ્રેનેડાઇન્સ</item>
+        <item>ફૅરો ટાપુઓ</item>
+        <item>અલબાનીયા</item>
+        <item>ભુટાન</item>
+        <item>બેનીન</item>
+        <item>કેપ વર્ડે</item>
+        <item>કોસોવો</item>
+        <item>બર્મુડા</item>
+        <item>સોલોમન ટાપુઓ</item>
+        <item>તાઇવાન, ચીન</item>
+        <item>ત્રિનિદાદ ઍન્ડ ટોબેગો</item>
+        <item>ઍન્ગ્વિલા</item>
+        <item>UTC (કોઓર્ડિનેટેડ યુનિવર્સલ ટાઇમ)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>હમણાંથી 1 મિનિટ પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s પછી એલાર્મ ગોઠવેલો છે.</item>
+        <item>હમણાંથી %2$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s અને %2$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %2$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s, %2$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %s પછી માટે એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s અને %2$s પછી માટે એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s, %2$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s અને %2$s પછી માટે એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s, %2$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s, %2$s અને %3$s પછી એલાર્મ સેટ કરેલું છે.</item>
+        <item>હમણાંથી %1$s, %2$s, %3$s, અને %4$s પછી માટે એલાર્મ સેટ કરેલું છે.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

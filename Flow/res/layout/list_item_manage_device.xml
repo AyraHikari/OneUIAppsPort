@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:selectableItemBackground" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <RelativeLayout android:id="@id/defaultPhoneIconLayout" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/list_item_device_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/list_ic_tablet" android:tint="@color/mamange_device_type_icon_tint_color" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toStartOf="@id/settting_button_panel" android:layout_toEndOf="@id/defaultPhoneIconLayout">
+            <TextView android:ellipsize="end" android:id="@id/list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" style="@style/TextViewListItemTitle" />
+            <TextView android:textSize="13.0sp" android:textColor="#99252525" android:id="@id/list_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/settting_button_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageButton android:id="@id/list_item_end_button" android:background="@drawable/ripple_oval" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/flow_setting_ic" android:scaleType="fitXY" android:tint="@color/app_color_primary" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

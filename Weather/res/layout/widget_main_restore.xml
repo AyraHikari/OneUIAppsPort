@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_restore_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/widget_restore_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/widget_restore_margin">
+        <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:textSize="@dimen/widget_restore_text_size" android:gravity="center" android:id="@id/widget_restore_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_weather_data" />
+        <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error" android:textSize="@dimen/widget_restore_text_size" android:gravity="center" android:id="@id/widget_restore_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_weather_data" />
+    </FrameLayout>
+</FrameLayout>

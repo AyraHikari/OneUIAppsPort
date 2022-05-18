@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/analog_widget_frame" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AnalogClock android:layout_gravity="center" android:id="@id/analog_clock_dial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/analog_clock_theme_white_2_dial" android:hand_hour="@drawable/analog_clock_theme_white_2_hour" android:hand_minute="@drawable/analog_clock_theme_white_2_min" android:hand_second="@drawable/analog_clock_theme_white_2_sec" />
+</FrameLayout>

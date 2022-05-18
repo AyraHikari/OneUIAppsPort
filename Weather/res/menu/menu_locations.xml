@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_title_add" android:id="@id/menu_locations_add" android:visible="false" android:title="@string/menu_add_title" app:iconTint="@color/col_def_action_button_tint_color" app:showAsAction="always" />
+    <item android:id="@id/menu_locations_edit" android:visible="false" android:title="@string/menu_edit_title" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backup_items>
+    <backup_item category="CLOCK" client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.AlarmSCloudBackupRestore" contents_id="v5VJ0Ep6EE" name="Alarm" />
+    <backup_item client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.BedTimeAlarmSCloudBackupRestore" contents_id="0MdMornJmg" interface="IRecordDataClient" name="bedtime_alarm" />
+    <backup_item category="CLOCK" client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.WorldclockSCloudBackupRestore" contents_id="pYz7p28bSl" name="WorldClock" />
+    <backup_item category="CLOCK" client_impl_class="com.sec.android.app.clockpackage.backuprestore.receiver.ClockBackupRestoreReceiver" contents_id="8atzPhYZaE" name="TIMER" quick_backup="true" />
+    <backup_item category="APPLICATIONS_HOME" client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.AlarmWidgetSCloudBackupRestore" contents_id="I6IHHRg397" name="ALARMWIDGET" quick_backup="true" />
+    <backup_item category="APPLICATIONS_HOME" client_impl_class="com.sec.android.widgetapp.dualclockdigital.DualClockDigitalBackupRestoreReceiver" contents_id="ZCms5GaCFo" name="DUALCLOCKWIDGET" quick_backup="true" />
+    <backup_item category="APPLICATIONS_HOME" client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.AlarmWidgetSCloudBackupRestore" contents_id="Hb1oqbRzVm" name="FrontHomeAlarmWidget" quick_backup="true" />
+    <backup_item category="APPLICATIONS_HOME" client_impl_class="com.sec.android.widgetapp.dualclockdigital.DualClockDigitalBackupRestoreReceiver" contents_id="z0gZaNgiE8" name="FrontHomeDualClock" quick_backup="true" />
+    <backup_item client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.ClockSettingsSCloudBackupRestore" contents_id="qgrBQo879G" interface="IRecordDataClient" name="clock_settings" />
+    <backup_item category="APPLICATIONS_HOME" client_impl_class="com.sec.android.app.clockpackage.backuprestore.scloud.WidgetSCloudBackupRestore" contents_id="bi96EzjlE0" interface="IRecordDataClient" name="clock_widget_setting" />
+</backup_items>

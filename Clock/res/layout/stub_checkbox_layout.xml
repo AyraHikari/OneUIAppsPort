@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox android:theme="@style/ClockListCheckBoxTheme" android:gravity="center" android:id="@id/checkbox" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/alarm_list_checkbox_margin" android:paddingEnd="@dimen/alarm_list_checkbox_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Сігнал праз %d дзён</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сігнал праз %d дзень</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Сігнал праз %d дні</item>
+        <item quantity="many">Сігнал праз %d дзён</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Сігнал праз %d гадзін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сігнал праз %d гадзіну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Сігнал праз %d гадзіны</item>
+        <item quantity="many">Сігнал праз %d гадзін</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Будзільнік спрацуе праз %d гадзін 1 хвіліну</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Будзільнік спрацуе праз %d гадзіну 1 хвіліну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Будзільнік спрацуе праз %d гадзіны 1 хвіліну</item>
+        <item quantity="many">Будзільнік спрацуе праз %d гадзін 1 хвіліну</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Сігнал праз %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сігнал праз %d хвіліну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Сігнал праз %d хвіліны</item>
+        <item quantity="many">Сігнал праз %d хвілін</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Праз %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Праз %d хвіліну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Праз %d хвіліны</item>
+        <item quantity="many">Праз %d хвілін</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Немагчыма дадаць больш %d сігналаў.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Немагчыма дадаць больш %d сігналу.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Немагчыма дадаць больш %d сігналаў.</item>
+        <item quantity="many">Немагчыма дадаць больш %d сігналаў.</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хвіліна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d хвіліны</item>
+        <item quantity="many">%d хвілін</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Выдаліць %d фонаў?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Выдаліць %d фон?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Выдаліць %d фоны?</item>
+        <item quantity="many">Выдаліць %d фонаў?</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">Выбрана: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Выбрана: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Выбрана: %d</item>
+        <item quantity="many">Выбрана: %d</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">За %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">За %d хвіліну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">За %d хвіліны</item>
+        <item quantity="many">За %d хвілін</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s і яшчэ %3$d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s і яшчэ %3$d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s, %2$s і яшчэ %3$d</item>
+        <item quantity="many">%1$s, %2$s і яшчэ %3$d</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Час сну: %d гадзін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Час сну: %d гадзіна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Час сну: %d гадзіны</item>
+        <item quantity="many">Час сну: %d гадзін</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Час сну: %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Час сну: %d хвіліна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Час сну: %d хвіліны</item>
+        <item quantity="many">Час сну: %d хвілін</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Адкласці на %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Адкласці на %d хвіліну</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Адкласці на %d хвіліны</item>
+        <item quantity="many">Адкласці на %d хвілін</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Мінус %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Мінус %d хвіліна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Мінус %d хвіліны</item>
+        <item quantity="many">Мінус %d хвілін</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Плюс %d хвілін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Плюс %d хвіліна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Плюс %d хвіліны</item>
+        <item quantity="many">Плюс %d хвілін</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Немагчыма дадаць больш за %d перадвызначаных таймераў.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Немагчыма дадаць больш за %d перадвызначаны таймер.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Немагчыма дадаць больш за %d перадвызначаныя таймеры.</item>
+        <item quantity="many">Немагчыма дадаць больш за %d перадвызначаных таймераў.</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Немагчыма дадаць больш за %d гарадоў.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Немагчыма дадаць больш за %d горад.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Немагчыма дадаць больш за %d гарады.</item>
+        <item quantity="many">Немагчыма дадаць больш за %d гарадоў.</item>
+    </plurals>
+</resources>

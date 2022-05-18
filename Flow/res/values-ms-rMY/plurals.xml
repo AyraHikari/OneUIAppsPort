@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d fail ditambahkan kepada senarai pemindahan fail.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Daftar dan urus sehingga %d komputer atau tablet dalam Samsung Flow.
+
+Hanya satu komputer atau tablet boleh disambungkan kepada tablet anda pada masa yang sama. Anda perlu memilih salah satu apabila kedua-dua komputer atau tablet disambungkan cuba menyambung kepada telefon anda."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

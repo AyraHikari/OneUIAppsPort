@@ -1,0 +1,86 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.sec.android.app.clockpackage_12.1.15.12-1211512000_minAPI28(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk
+compressionType: false
+doNotCompress:
+- arsc
+- ogg
+- png
+- res/09.9.png
+- res/29.9.png
+- res/2V.9.png
+- PNG
+- res/4E.9.png
+- res/7S.9.png
+- res/8V.9.png
+- res/9-.9.png
+- res/93.9.png
+- res/9a.9.png
+- res/AF.9.png
+- res/C5.9.png
+- res/Ho.9.png
+- res/Jg.9.png
+- res/Li.9.png
+- res/O3.9.png
+- res/PC.9.png
+- res/PR.9.png
+- res/Pq.9.png
+- res/QF.9.png
+- res/Qh.9.png
+- res/Sc.9.png
+- res/T2.9.png
+- res/TR.9.png
+- res/Xs.9.png
+- webp
+- res/bc.9.png
+- res/dH.9.png
+- res/dz.9.png
+- res/eK.9.png
+- res/hj.9.png
+- res/i4.9.png
+- res/jK.9.png
+- res/l9.9.png
+- res/mg.9.png
+- res/qN.9.png
+- res/tR.9.png
+- res/tr.9.png
+- res/u6.9.png
+- res/x0.9.png
+- res/zp.9.png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '28'
+  targetSdkVersion: '31'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  SEC-INF/buildConfirm.crt: '8'
+  SEC-INF/buildinfo.xml: '8'
+  com/samsung/android/sdk/healthdata/HealthData.aidl: '8'
+  com/samsung/android/sdk/healthdata/HealthDataResolver.aidl: '8'
+  com/samsung/android/sdk/healthdata/HealthDevice.aidl: '8'
+  com/samsung/android/sdk/healthdata/HealthPermissionManager.aidl: '8'
+  com/samsung/android/sdk/healthdata/HealthResultHolder.aidl: '8'
+  com/samsung/android/sdk/healthdata/IDataResolver.aidl: '8'
+  com/samsung/android/sdk/healthdata/IDataWatcher.aidl: '8'
+  com/samsung/android/sdk/healthdata/IDeviceManager.aidl: '8'
+  com/samsung/android/sdk/healthdata/IHealth.aidl: '8'
+  com/samsung/android/sdk/healthdata/IHealthDataObserver.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/AggregateRequestImpl.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/DeleteRequestImpl.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/HealthResultReceiver.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/ICallbackRegister.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/IHealthResultReceiver.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/InsertRequestImpl.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/ReadRequestImpl.aidl: '8'
+  com/samsung/android/sdk/internal/healthdata/UpdateRequestImpl.aidl: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.0-dirty
+versionInfo:
+  versionCode: '1211512000'
+  versionName: 12.1.15.12

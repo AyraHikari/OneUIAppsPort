@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/tw_ic_ab_app_info_mtrl_img" android:tint="@color/about_app_info_button_color" android:tintMode="src_in"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

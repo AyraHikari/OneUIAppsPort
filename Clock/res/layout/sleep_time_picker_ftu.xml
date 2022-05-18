@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sleep_time_picker_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/basic_guideline" android:focusable="false" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.5" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bedtime_wakeuptime_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ftu_bedtime_icon_top_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/sleep_track_bedimage" android:layout_width="@dimen/ftu_bedtime_icon_size" android:layout_height="@dimen/ftu_bedtime_icon_size" android:src="@drawable/clock_bedtime" />
+            <ImageView android:id="@id/sleep_track_wakeupimage" android:layout_width="@dimen/ftu_bedtime_icon_size" android:layout_height="@dimen/ftu_bedtime_icon_size" android:src="@drawable/clock_wakeup" />
+        </LinearLayout>
+        <TextView android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ftu_title_margin_top" android:text="@string/set_your_sleep_schedule" android:layout_marginStart="@dimen/ftu_horizontal_padding" android:layout_marginEnd="@dimen/ftu_horizontal_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/bedtime_wakeuptime_image" style="@style/BedTimeFTU_TitleStyle" />
+        <androidx.core.widget.NestedScrollView android:id="@id/sleep_time_picker_bottom_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/sleepTimePicker" android:layout_width="fill_parent" android:layout_height="@dimen/sleep_visual_edit_outer_circle_size">
+                    <include android:layout_gravity="center" android:id="@id/circular_seekbar_id" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/sleep_time_picker_layout" />
+                    <include layout="@layout/bed_time_wakeup_time_top_bottom_layout" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/sleep_time_duration_text_size" android:textColor="@color/sleep_duration_text_color" android:id="@id/sleep_duration_text_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sleep time: 9 hours" android:textAlignment="center" style="@style/RobotoRegular" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

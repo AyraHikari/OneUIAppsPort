@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">Der er blevet føjet %d filer til filoverførselslisten.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Der er blevet føjet %d fil til filoverførselslisten.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Registrer og administrer op til %d computere eller tablets i Samsung Flow.
+
+Der kan kun være forbundet én computer eller tablet til din telefon ad gangen. Du skal vælge én, når begge registrerede computere eller tablets prøver at oprette forbindelse til din telefon."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Registrer og administrer op til %d computer eller tablet i Samsung Flow.
+
+Der kan kun være forbundet én computer eller tablet til din telefon ad gangen. Du skal vælge én, når begge registrerede computere eller tablets prøver at oprette forbindelse til din telefon."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

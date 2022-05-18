@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="113" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_hurricane__19" android:duration="997" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_hurricane__20" android:duration="847" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="113" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_hurricane__21" android:duration="997" android:valueFrom="1" android:valueTo="0.8" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_hurricane__22" android:duration="847" android:valueFrom="0.8" android:valueTo="1" android:propertyName="scaleY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="59" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_hurricane__23" android:duration="1845" android:valueFrom="0" android:valueTo="720" android:propertyName="rotation" />
+    </set>
+</set>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preview_image" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/bixby" android:layout_marginStart="@dimen/alarm_detail_item_textview_margin_start" />
+    <TextView android:textSize="@dimen/default_list_item_size" android:typeface="normal" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/content_name" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="5" android:includeFontPadding="true" android:layout_weight="1.0" android:fontFamily="@string/roboto_regular" android:layout_marginStart="@dimen/alarm_detail_item_textview_margin_start" />
+    <ImageView android:id="@id/check_image" android:visibility="gone" style="@style/AlarmSoundSelectionImage" />
+</LinearLayout>

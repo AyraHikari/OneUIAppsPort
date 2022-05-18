@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/tncpanel" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+            <TextView android:textSize="40.0dip" android:textColor="@color/app_color_primary" android:id="@id/welcome_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="136.0dip" android:fontFamily="sec-roboto-light" android:textAlignment="center" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_dream_description_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="15.0dip" android:text="@string/welcome_phone_desc" android:layout_below="@id/welcome_title" android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/tncpanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/welcome_desc_text_color" android:id="@id/button_check_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_tab_desc2" />
+        <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/button_agree" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:layout_marginBottom="26.0dip" android:minHeight="36.0dip" android:text="@string/welcome_button_start" android:fontFamily="sec-roboto-light" android:backgroundTint="@color/app_color_primary" />
+    </LinearLayout>
+</RelativeLayout>

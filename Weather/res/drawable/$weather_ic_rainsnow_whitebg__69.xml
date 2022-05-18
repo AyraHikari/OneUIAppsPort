@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1066" android:valueFrom="181.11761" android:valueTo="181.11761" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__70" android:duration="1016" android:valueFrom="181.11761" android:valueTo="40.736595" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1066" android:valueFrom="100.92058" android:valueTo="100.92058" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__71" android:duration="1016" android:valueFrom="100.92058" android:valueTo="241.59135" android:propertyName="translateY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1066" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__72" android:duration="1016" android:valueFrom="1" android:valueTo="0.7" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1066" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__73" android:duration="1016" android:valueFrom="1" android:valueTo="0.7" android:propertyName="scaleY" />
+    </set>
+</set>

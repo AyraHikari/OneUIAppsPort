@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/timer_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Direction_LTR"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/timer_hour_text" android:text="@string/timer_hr" style="@style/RoutineTimerTitleViewStyle" />
+    <TextView android:id="@id/timer_min_text" android:text="@string/timer_min" android:layout_toEndOf="@id/timer_hour_text" style="@style/RoutineTimerTitleViewStyle" />
+    <TextView android:ellipsize="end" android:id="@id/timer_sec_text" android:text="@string/timer_sec" android:maxLines="1" android:layout_toEndOf="@id/timer_min_text" style="@style/RoutineTimerTitleViewStyle" />
+</RelativeLayout>

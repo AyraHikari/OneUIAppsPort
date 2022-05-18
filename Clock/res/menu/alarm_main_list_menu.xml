@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_bed_time_alarm" android:visible="false" android:title="@string/bedtime" android:showAsAction="never" />
+    <item android:id="@id/menu_alarm_edit" android:visible="false" android:title="@string/edit" android:showAsAction="never" />
+    <item android:id="@id/menu_alarm_prepower_onoff" android:visible="false" android:title="@string/menu_pre_alarm_power_on" android:showAsAction="never" />
+    <item android:icon="@drawable/tw_fab_add_mtrl" android:id="@id/menu_alarm_add" android:title="@string/add_alarm" android:showAsAction="always" />
+    <item android:id="@id/menu_sort" android:title="@string/alarm_sort" android:showAsAction="never" />
+</menu>

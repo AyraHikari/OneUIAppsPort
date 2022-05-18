@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/blur_background_image_view" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:tint="#b2000000" />
+    <FrameLayout android:id="@id/top_layout_container" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_layout_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/preview" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="@dimen/alert_bg_edit_preview_corner_radius" app:cardElevation="0.0dip" app:cardMaxElevation="0.0dip">
+            <com.sec.android.app.clockpackage.alertbackground.view.CropSurfaceView android:layout_gravity="center" android:id="@id/preview_video" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/alarm_preview_layout_margin_horizontal" android:layout_marginVertical="@dimen/alarm_preview_layout_margin_vertical" layout="@layout/alert_bg_edit_alarm_preview" />
+            <ImageButton android:layout_gravity="start|bottom|center" android:id="@id/btn_volume" android:background="@drawable/video_edit_btn_background" android:layout_width="@dimen/video_edit_volume_btn_size" android:layout_height="@dimen/video_edit_volume_btn_size" android:src="@drawable/clock_ic_mute" android:layout_marginHorizontal="@dimen/video_edit_volume_btn_margin_horizontal" android:layout_marginVertical="@dimen/video_edit_volume_btn_margin_vertical" />
+            <ImageButton android:layout_gravity="center" android:id="@id/btn_trim" android:background="@drawable/video_edit_btn_background" android:layout_width="@dimen/video_edit_trim_btn_size" android:layout_height="@dimen/video_edit_trim_btn_size" android:src="@drawable/clock_ic_trim" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <include android:id="@id/bottom_layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/top_layout_container" layout="@layout/alert_bg_edit_bottom_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/alert_bg_edit_loading_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

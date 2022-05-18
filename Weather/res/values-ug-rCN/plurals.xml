@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">‏%d دىن كۆپ ئورۇن قوشۇلمايدۇ. بىر قىسىمىنى ئۆچۈرۈپ ئاندىن قوشۇڭ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ ئورۇن قوشۇلمايدۇ. بىر قىسىمىنى ئۆچۈرۈپ ئاندىن قوشۇڭ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">‏%d دىن كۆپ ھەرپ-بەلگە پاتمايدۇ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d دىن كۆپ ھەرپ-بەلگە پاتمايدۇ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d تاللاندى</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d تاللاندى</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">‏%d كۈن</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d كۈن</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">‏%d سائەت</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">‏%d سائەت</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

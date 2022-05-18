@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d file ang idinagdag sa lista ng mga file na ililipat.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d file ang idinagdag sa lista ng ililipat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Magrehistro at pamahalaan ang hanggang %d computer o tablet sa Samsung Flow.
+
+Isang computer o tablet lang ang maaaring ikonekta sa telepono mo sa bawat pagkakataon. Kailangan mong pumili ng isa kapag sinusubok kumonekta ng dalawang nakarehistrong computer o tablet sa telepono mo."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Magrehistro at pamahalaan ang hanggang %d computer o tablet sa Samsung Flow.
+
+Isang computer o tablet lang ang maaaring ikonekta sa telepono mo sa bawat pagkakataon. Kailangan mong pumili ng isa kapag sinusubok kumonekta ng dalawang nakarehistrong computer o tablet sa telepono mo."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

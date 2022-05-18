@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activity_main_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_alignParentStart="false">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?actionBarSize">
+            <ScrollView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="34.0dip" android:textColor="@color/setup_title_text_color" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:maxWidth="400.0dip" android:text="@string/setup_tab_complete_title" android:textAlignment="center" />
+                    <TextView android:textSize="18.0dip" android:textColor="@color/setup_desc_text_color" android:layout_gravity="center_horizontal" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:maxWidth="400.0dip" android:text="@string/setup_completed" />
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/help_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:layout_marginBottom="70.0dip" android:src="@drawable/welcome_image_tablet" android:adjustViewBounds="true" android:maxWidth="400.0dip" android:maxHeight="236.0dip" android:contentDescription="@null" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/bottomMenuBar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="false" android:layout_alignParentEnd="true">
+            <RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_alignParentBottom="true">
+                <Button android:enabled="false" android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/app_color_primary" android:id="@id/button_next" android:background="@drawable/ripple_round_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0.0dip" android:text="@string/setup_complete_done" android:layout_centerVertical="true" android:fontFamily="sec-roboto-condensed" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginEnd="14.0dip" android:layout_alignParentEnd="true" android:backgroundTint="@color/background_round_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

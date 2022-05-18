@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/search_list_item_layout" android:tag="layout/search_location_list_item_0" android:background="?android:selectableItemBackground" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="start" android:orientation="vertical" android:paddingTop="@dimen/list_padding_top_bottom" android:paddingBottom="@dimen/list_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:textColor="@color/description_text_color" android:ellipsize="end" android:id="@id/search_list_item_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textAppearance="@style/Weather.TextAppearance.ListItemSecondary" android:ellipsize="end" android:id="@id/search_list_item_state" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

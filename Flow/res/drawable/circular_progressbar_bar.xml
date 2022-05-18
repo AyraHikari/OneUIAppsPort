@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate android:fromDegrees="270.0" android:toDegrees="270.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="ring" android:innerRadiusRatio="2.2" android:useLevel="true" android:thickness="2.5dip">
+        <gradient android:startColor="@color/progress_circle_ring_color" android:endColor="@color/progress_circle_ring_color" android:useLevel="false" android:angle="0.0" android:type="sweep" />
+    </shape>
+</rotate>

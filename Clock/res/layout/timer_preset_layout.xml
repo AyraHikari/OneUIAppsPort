@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.clockpackage.timer.viewmodel.TimerPresetViewModel android:gravity="center" android:id="@id/timer_preset_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:defaultFocusHighlightEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="outsideOverlay" android:gravity="center" android:orientation="horizontal" android:id="@id/timer_preset_list" android:nextFocusUp="@id/timer_time_layout" android:nextFocusDown="@id/timer_start_button" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</com.sec.android.app.clockpackage.timer.viewmodel.TimerPresetViewModel>

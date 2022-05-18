@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Aláram i gceann %d lá</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aláram i gceann %d lae</item>
+        <item quantity="two">Aláram i gceann %d lá</item>
+        <item quantity="few">Aláram i gceann %d lá</item>
+        <item quantity="many">Aláram i gceann %d lá</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Aláram i gceann %d uair an chloig</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aláram i gceann %d uair an chloig</item>
+        <item quantity="two">Aláram i gceann %d uair an chloig</item>
+        <item quantity="few">Aláram i gceann %d uair an chloig</item>
+        <item quantity="many">Aláram i gceann %d n-uair an chloig</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Aláram i gceann %d uair an chloig 1 nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aláram i gceann %d uair an chloig 1 nóiméad</item>
+        <item quantity="two">Aláram i gceann %d uair an chloig 1 nóiméad</item>
+        <item quantity="few">Aláram i gceann %d uair an chloig 1 nóiméad</item>
+        <item quantity="many">Aláram i gceann %d n-uair an chloig 1 nóiméad</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Aláram i gceann %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Aláram i gceann %d nóiméid</item>
+        <item quantity="two">Aláram i gceann %d nóiméad</item>
+        <item quantity="few">Aláram i gceann %d nóiméad</item>
+        <item quantity="many">Aláram i gceann %d nóiméad</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">I gceann %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">I gceann %d nóiméad</item>
+        <item quantity="two">I gceann %d nóiméad</item>
+        <item quantity="few">I gceann %d nóiméad</item>
+        <item quantity="many">I gceann %d nóiméad</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Ní féidir níos mó ná %d aláram a chur leis.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d aláram a chur leis.</item>
+        <item quantity="two">Ní féidir níos mó ná %d aláram a chur leis.</item>
+        <item quantity="few">Ní féidir níos mó ná %d aláram a chur leis.</item>
+        <item quantity="many">Ní féidir níos mó ná %d n-aláram a chur leis.</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nóiméad</item>
+        <item quantity="two">%d nóiméad</item>
+        <item quantity="few">%d nóiméad</item>
+        <item quantity="many">%d nóiméad</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Scrios %d cúlra?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Scrios %d chúlra?</item>
+        <item quantity="two">Scrios %d chúlra?</item>
+        <item quantity="few">Scrios %d chúlra?</item>
+        <item quantity="many">Scrios %d gcúlra?</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d roghnaithe</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d roghnaithe</item>
+        <item quantity="two">%d roghnaithe</item>
+        <item quantity="few">%d roghnaithe</item>
+        <item quantity="many">%d roghnaithe</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d nóiméad roimhe</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d nóiméad roimhe</item>
+        <item quantity="two">%d nóiméad roimhe</item>
+        <item quantity="few">%d nóiméad roimhe</item>
+        <item quantity="many">%d nóiméad roimhe</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, agus %3$d eile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, agus %3$d eile</item>
+        <item quantity="two">%1$s, %2$s, agus %3$d eile</item>
+        <item quantity="few">%1$s, %2$s, agus %3$d eile</item>
+        <item quantity="many">%1$s, %2$s, agus %3$d eile</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Am codlata: %d uair an chloig</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Am codlata: %d uair an chloig</item>
+        <item quantity="two">Am codlata: %d uair an chloig</item>
+        <item quantity="few">Am codlata: %d uair an chloig</item>
+        <item quantity="many">Am codlata: %d n-uair an chloig</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Am codlata: %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Am codlata: %d nóiméad</item>
+        <item quantity="two">Am codlata: %d nóiméad</item>
+        <item quantity="few">Am codlata: %d nóiméad</item>
+        <item quantity="many">Am codlata: %d nóiméad</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Néal codlata %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Néal codlata %d nóiméad</item>
+        <item quantity="two">Néal codlata %d nóiméad</item>
+        <item quantity="few">Néal codlata %d nóiméad</item>
+        <item quantity="many">Néal codlata %d nóiméad</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Lúide %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Lúide %d nóiméad</item>
+        <item quantity="two">Lúide %d nóiméad</item>
+        <item quantity="few">Lúide %d nóiméad</item>
+        <item quantity="many">Lúide %d nóiméad</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Móide %d nóiméad</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Móide %d nóiméad</item>
+        <item quantity="two">Móide %d nóiméad</item>
+        <item quantity="few">Móide %d nóiméad</item>
+        <item quantity="many">Móide %d nóiméad</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Ní féidir níos mó ná %d amadóir réamhshocraithe a chur leis.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d amadóir réamhshocraithe a chur leis.</item>
+        <item quantity="two">Ní féidir níos mó ná %d amadóir réamhshocraithe a chur leis.</item>
+        <item quantity="few">Ní féidir níos mó ná %d amadóir réamhshocraithe a chur leis.</item>
+        <item quantity="many">Ní féidir níos mó ná %d n-amadóir réamhshocraithe a chur leis.</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Ní féidir níos mó ná %d cathair a chur leis.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d chathair a chur leis.</item>
+        <item quantity="two">Ní féidir níos mó ná %d chathair a chur leis.</item>
+        <item quantity="few">Ní féidir níos mó ná %d chathair a chur leis.</item>
+        <item quantity="many">Ní féidir níos mó ná %d gcathair a chur leis.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/temp_unit_entries" android:title="@string/menu_settings_unit" android:key="UNIT" android:entryValues="@array/temp_unit_entry_values" />
+    <com.samsung.android.weather.app.common.view.CustomPreference android:persistent="false" android:title="@string/menu_current_city_show" android:key="USE_CURRENT_LOCATION" />
+    <com.samsung.android.weather.app.common.view.CustomDropDownPreference android:persistent="false" android:entries="@array/auto_refresh_period_entries" android:title="@string/menu_settings_update" android:key="AUTO_REFRESH" android:entryValues="@array/auto_refresh_period_entry_values" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="@string/refresh_when_app_opens" android:key="AUTO_REFRESH_ON_OPENING" />
+    <com.samsung.android.weather.app.common.view.CustomPreference android:persistent="false" android:title="@string/notifications" android:key="NOTIFICATION" />
+    <com.samsung.android.weather.app.common.view.CustomPreference android:persistent="false" android:title="@string/menusetting_view_in_widget" android:key="SHOW_ON_WIDGET" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="@string/st_app_name" android:key="ST_SETTING_STATE" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:title="@string/show_weather_alert" android:key="SHOW_ALERT" />
+    <androidx.preference.SwitchPreferenceCompat android:persistent="false" android:key="APP_ICON" />
+    <com.samsung.android.weather.app.common.view.CustomPreference android:persistent="false" android:title="@string/widget_settings" android:key="WIDGET_SETTING" />
+    <com.samsung.android.weather.app.common.view.CustomPreference android:persistent="false" android:title="@string/customization_service" android:key="CUSTOMIZATION_SERVICE" android:summary="@string/get_personalized_content_based_on_how_you_use_your_phone" />
+    <androidx.preference.PreferenceCategory android:title="@string/general" android:key="GENERAL">
+        <com.samsung.android.weather.app.common.view.CustomPreference android:persistent="false" android:title="@string/about_weather" android:key="ABOUT_WEATHER" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory android:title="" />
+</androidx.preference.PreferenceScreen>

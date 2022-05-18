@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/auth_screen_common_padding" android:paddingEnd="@dimen/auth_screen_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    <TextView android:textSize="@dimen/auth_verify_text_size" android:textColor="@color/auth_text_color" android:gravity="center" android:id="@id/verify_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/auth_verify_text_marginTop" android:text="@string/biometric_authentification" />
+</LinearLayout>

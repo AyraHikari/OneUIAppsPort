@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_list_alert_repeat_days_dot_margin">5.0sp</dimen>
+</resources>

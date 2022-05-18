@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill_horizontal|center" android:id="@id/background" android:height="4.0dip">
+        <nine-patch android:src="@drawable/widget_setting_seek_bar_progress_bg" android:tint="@color/widget_setting_seek_bar_progress_solid_color" />
+    </item>
+</layer-list>

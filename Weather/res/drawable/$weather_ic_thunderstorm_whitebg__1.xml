@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="166" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_thunderstorm_whitebg__2" android:duration="450" android:valueFrom="1" android:valueTo="1.05" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_thunderstorm_whitebg__3" android:duration="400" android:valueFrom="1.05" android:valueTo="1" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="166" android:valueFrom="1" android:valueTo="1" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_thunderstorm_whitebg__4" android:duration="450" android:valueFrom="1" android:valueTo="1.05" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_thunderstorm_whitebg__5" android:duration="400" android:valueFrom="1.05" android:valueTo="1" android:propertyName="scaleY" />
+    </set>
+</set>

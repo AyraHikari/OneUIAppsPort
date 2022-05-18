@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/clock_alert_cover_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/clearcover_color_bg" android:layout_width="@dimen/clock_alert_cover_width" android:layout_height="@dimen/clock_alert_cover_height" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/alarm_cover_view" android:visibility="gone" android:layout_width="@dimen/clock_alert_cover_width" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/timer_cover_view" android:visibility="gone" android:layout_width="@dimen/clock_alert_cover_width" android:layout_height="wrap_content" />
+</RelativeLayout>

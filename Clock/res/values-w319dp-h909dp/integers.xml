@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="alarm_timepicker_ampm_text_size">42</integer>
+    <integer name="alarm_timepicker_main_text_size">66</integer>
+    <integer name="timer_common_timepicker_time_textsize">66</integer>
+</resources>

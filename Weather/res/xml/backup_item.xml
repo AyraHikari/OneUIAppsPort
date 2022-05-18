@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backup_items>
+    <backup_item category="WEATHERWIDGET" client_impl_class="com.samsung.android.weather.bnr.BNRTask" contents_id="oo2JSUuSBb" name="WEATHERWIDGET" quick_backup="true" />
+</backup_items>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="@dimen/hun_popup_icon_height" android:width="@dimen/hun_popup_icon_width" android:drawable="@drawable/clock_noti_ic_timer" />
+</layer-list>

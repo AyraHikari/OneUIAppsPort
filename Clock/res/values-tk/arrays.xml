@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Ortaýol</item>
+        <item>Ganalulu</item>
+        <item>Gawai</item>
+        <item>Alaska</item>
+        <item>Ankorej</item>
+        <item>San Fransisko</item>
+        <item>Wankuver</item>
+        <item>Seattle</item>
+        <item>Los Anjeles</item>
+        <item>Tihuana</item>
+        <item>Kalgari</item>
+        <item>Foniks</item>
+        <item>Masatlan</item>
+        <item>Denwer</item>
+        <item>Meksiko şäheri</item>
+        <item>Winnipeg</item>
+        <item>Diego Garcia</item>
+        <item>Dallas</item>
+        <item>Çikago</item>
+        <item>Toronto</item>
+        <item>Maýami</item>
+        <item>Lima</item>
+        <item>Kito</item>
+        <item>Waşington DC</item>
+        <item>Ottawa</item>
+        <item>Nýu Ýork</item>
+        <item>Bogota</item>
+        <item>Santýago</item>
+        <item>La Paz</item>
+        <item>Karacas</item>
+        <item>Buenos Aýres</item>
+        <item>Nýufaundlend</item>
+        <item>Sent - Djon</item>
+        <item>San-Paulu</item>
+        <item>Braziliýa</item>
+        <item>Rio de Janeýro</item>
+        <item>Fernando de Noronýa</item>
+        <item>Azorlar</item>
+        <item>Lissabon</item>
+        <item>Kasablanka</item>
+        <item>Dublin</item>
+        <item>Rabat</item>
+        <item>Madrid</item>
+        <item>Çözgüt</item>
+        <item>London</item>
+        <item>Patyşalyk</item>
+        <item>Barselona</item>
+        <item>Pariž</item>
+        <item>Alžir</item>
+        <item>Tunis</item>
+        <item>Tripoli</item>
+        <item>Berlin</item>
+        <item>Rim</item>
+        <item>Praga</item>
+        <item>Kinşasa</item>
+        <item>Stokgolm</item>
+        <item>Bratislawa</item>
+        <item>Keýptaun</item>
+        <item>Budapeşt</item>
+        <item>Warşawa</item>
+        <item>Kaliningrad</item>
+        <item>Sofiýa</item>
+        <item>Afinlar</item>
+        <item>Lvov</item>
+        <item>Helsinkiý</item>
+        <item>Riga</item>
+        <item>Tallin</item>
+        <item>Buharest</item>
+        <item>Wilnýus</item>
+        <item>Lýubumbaşi</item>
+        <item>Minsk</item>
+        <item>Sankt-Peterburg</item>
+        <item>Stambul</item>
+        <item>Kamçatka</item>
+        <item>Kiýew</item>
+        <item>Ierusalim</item>
+        <item>Moskwa</item>
+        <item>Harkow</item>
+        <item>Naýrobi</item>
+        <item>Jidda</item>
+        <item>Wolgograd</item>
+        <item>Ýerewan</item>
+        <item>Tbilisi</item>
+        <item>Baku</item>
+        <item>Çita</item>
+        <item>Samara</item>
+        <item>Tähran</item>
+        <item>Ižewsk</item>
+        <item>Abu Dabi</item>
+        <item>Dubaý</item>
+        <item>Ufa</item>
+        <item>Ýekaterinburg</item>
+        <item>Çelýabinsk</item>
+        <item>Karaçi</item>
+        <item>Kabul</item>
+        <item>Daşkent</item>
+        <item>Islamabad</item>
+        <item>Mumbaý</item>
+        <item>Omsk</item>
+        <item>Almata</item>
+        <item>Bangalor</item>
+        <item>Gyderabat</item>
+        <item>Nýu Deli</item>
+        <item>Kolombo</item>
+        <item>Çennaý</item>
+        <item>Nowosibirsk</item>
+        <item>Katmandu</item>
+        <item>Novokuznesk</item>
+        <item>Kolkata</item>
+        <item>Dakka</item>
+        <item>Howd</item>
+        <item>Krasnoýarsk</item>
+        <item>Bangkok</item>
+        <item>Kuala Lumpur</item>
+        <item>Singapur</item>
+        <item>Irkutsk</item>
+        <item>Phnom Penh</item>
+        <item>Hanoý</item>
+        <item>Jakarta</item>
+        <item>Ulan-Bator</item>
+        <item>Gonkong</item>
+        <item>Pert</item>
+        <item>Pekin</item>
+        <item>Manila</item>
+        <item>Taýbeý</item>
+        <item>Seul</item>
+        <item>Ambon</item>
+        <item>Wladiwostok</item>
+        <item>Ýakutsk</item>
+        <item>Habarowsk</item>
+        <item>Adelaida</item>
+        <item>Tokýo</item>
+        <item>GO-Sahalinsk</item>
+        <item>Galifaks</item>
+        <item>Guam</item>
+        <item>Kanbera</item>
+        <item>Magadan</item>
+        <item>Sidneý</item>
+        <item>Petropawlowsk-Kamçat dili</item>
+        <item>Tarawa</item>
+        <item>Oklend</item>
+        <item>Wellington</item>
+        <item>Pago Pago</item>
+        <item>Denpazar</item>
+        <item>Bon</item>
+        <item>Sýurih</item>
+        <item>Kair</item>
+        <item>Abijan</item>
+        <item>Accra</item>
+        <item>Addis-Abeba</item>
+        <item>Amman</item>
+        <item>Amsterdam</item>
+        <item>Anadyr</item>
+        <item>Ankara</item>
+        <item>Antananariwo</item>
+        <item>Aşgabat</item>
+        <item>Asmara</item>
+        <item>Astana</item>
+        <item>Asunsýon</item>
+        <item>Ostin</item>
+        <item>Bagdad</item>
+        <item>Baltimor</item>
+        <item>Bamako</item>
+        <item>Bangi</item>
+        <item>Bari</item>
+        <item>Bas-Ter</item>
+        <item>Beýrut</item>
+        <item>Belgrad</item>
+        <item>Beliz</item>
+        <item>Bişkek</item>
+        <item>Bisau</item>
+        <item>Bolonýa</item>
+        <item>Boston</item>
+        <item>Bridžtaun</item>
+        <item>Brizban</item>
+        <item>Brusel</item>
+        <item>Kanar Adalary</item>
+        <item>Katandzaro</item>
+        <item>Kaýenna</item>
+        <item>Şarlotta</item>
+        <item>Çisinau</item>
+        <item>Klewland</item>
+        <item>Kolumbiýa</item>
+        <item>Konakry</item>
+        <item>Kopengagen</item>
+        <item>Kork</item>
+        <item>Krotone</item>
+        <item>Dakar</item>
+        <item>Damask</item>
+        <item>Dar es Salaam</item>
+        <item>Darwin</item>
+        <item>Detroýt</item>
+        <item>Djibuti</item>
+        <item>Doha</item>
+        <item>Duala</item>
+        <item>Duşanbe</item>
+        <item>Pasha adasy</item>
+        <item>Edinburg</item>
+        <item>El Paso</item>
+        <item>Florensiýa</item>
+        <item>For-de-Frans</item>
+        <item>Fritaun</item>
+        <item>Gaboron</item>
+        <item>Galapagos Adalary</item>
+        <item>Ženewa</item>
+        <item>Genuýa</item>
+        <item>Djordjtaun</item>
+        <item>Grýutwiken</item>
+        <item>Gwatemala şäheri</item>
+        <item>Gustawiýa</item>
+        <item>Hamburg</item>
+        <item>Harare</item>
+        <item>Gawana</item>
+        <item>Gobart</item>
+        <item>Hýuston</item>
+        <item>Indianapolis</item>
+        <item>Ýohannesburg</item>
+        <item>Kampala</item>
+        <item>Hartum</item>
+        <item>Patyşalyk</item>
+        <item>Küweýt Şäheri</item>
+        <item>Lagos</item>
+        <item>Las Wegas</item>
+        <item>Lýublýana</item>
+        <item>Haýkou</item>
+        <item>Luiswil</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Lýuksemburg</item>
+        <item>Makau</item>
+        <item>Malebu</item>
+        <item>Erkek</item>
+        <item>Managua</item>
+        <item>Manama</item>
+        <item>Maputo</item>
+        <item>Marigot</item>
+        <item>Mekke</item>
+        <item>Melburn</item>
+        <item>Memfis</item>
+        <item>Messina</item>
+        <item>Milan</item>
+        <item>Milwoke</item>
+        <item>Magadişu</item>
+        <item>Monrowia</item>
+        <item>Montewideo</item>
+        <item>Monreal</item>
+        <item>Mýunhen</item>
+        <item>Maskat</item>
+        <item>Napoli</item>
+        <item>Naters</item>
+        <item>Njamena</item>
+        <item>Niameý</item>
+        <item>Nokhot</item>
+        <item>Numea</item>
+        <item>Nukualofa</item>
+        <item>Nuk</item>
+        <item>Osaka</item>
+        <item>Oagadugu</item>
+        <item>Palermo</item>
+        <item>Panama Şäheri</item>
+        <item>Paramaribo</item>
+        <item>Perm</item>
+        <item>Filadelfiýa</item>
+        <item>Podgorisa</item>
+        <item>Ponta Delgada</item>
+        <item>Port Lui</item>
+        <item>Port-o-Prens</item>
+        <item>Portland, Oregon</item>
+        <item>Pýonýang</item>
+        <item>Ýangon</item>
+        <item>Resifi</item>
+        <item>Reýkýawik</item>
+        <item>Er-Riyad</item>
+        <item>Sen-Deni</item>
+        <item>San Antonio</item>
+        <item>San Diego</item>
+        <item>San-Hose</item>
+        <item>San Jos</item>
+        <item>San-Huan</item>
+        <item>San Marino</item>
+        <item>San-Salwador</item>
+        <item>"Sana'a"</item>
+        <item>Santo-Domingo</item>
+        <item>Şanhaý</item>
+        <item>Şenzen</item>
+        <item>Skopýe</item>
+        <item>Sent - Djon</item>
+        <item>Suwa</item>
+        <item>Taiti</item>
+        <item>Tegusigalpa</item>
+        <item>Ho Şi Min Şäheri</item>
+        <item>Týanjin</item>
+        <item>Torino</item>
+        <item>Wadus</item>
+        <item>Walletta</item>
+        <item>Verona</item>
+        <item>Wiktoriýa</item>
+        <item>Wena</item>
+        <item>Ýamusukro</item>
+        <item>Yaond</item>
+        <item>Zagreb</item>
+        <item>Guanžou</item>
+        <item>Kardiff</item>
+        <item>Redjaýna</item>
+        <item>Şarlotta-Amaliýa</item>
+        <item>Atlanta</item>
+        <item>Maýotta</item>
+        <item>Sent-Pýer we Mikelon</item>
+        <item>Oslo</item>
+        <item>Srednekolymsk</item>
+        <item>Demirgazyk Kurilsk</item>
+        <item>Wuhan</item>
+        <item>Çendu</item>
+        <item>Sian</item>
+        <item>Port-Morsbi</item>
+        <item>Dawao</item>
+        <item>Çunsin</item>
+        <item>Şenýan</item>
+        <item>Nankin</item>
+        <item>Harbin</item>
+        <item>Szinan</item>
+        <item>Çžençžou</item>
+        <item>Kunmin</item>
+        <item>Çançun</item>
+        <item>Fuçžou</item>
+        <item>Kuçing</item>
+        <item>Makasar</item>
+        <item>Hançžou</item>
+        <item>Sindao</item>
+        <item>Nankin</item>
+        <item>Urumçi</item>
+        <item>Nassau</item>
+        <item>Nikosiýa</item>
+        <item>Dili</item>
+        <item>Rod-Taun</item>
+        <item>Lome</item>
+        <item>Rozo</item>
+        <item>Librewil</item>
+        <item>Marsel</item>
+        <item>Maseru</item>
+        <item>Majuro</item>
+        <item>Monako</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Banžul</item>
+        <item>Busan</item>
+        <item>Bužumbura</item>
+        <item>Brazzawil</item>
+        <item>Wýentýan</item>
+        <item>Windhuk</item>
+        <item>Saraýewo</item>
+        <item>Saýpan</item>
+        <item>San-Tome</item>
+        <item>St. Jorj</item>
+        <item>Stenli</item>
+        <item>Aden</item>
+        <item>Apiýa</item>
+        <item>Andorra-la-Welýa</item>
+        <item>Laaýun</item>
+        <item>Willemştad</item>
+        <item>Mbabane</item>
+        <item>Kastri</item>
+        <item>Koror</item>
+        <item>Kankun</item>
+        <item>Kigali</item>
+        <item>Kingstown</item>
+        <item>Tel-Awiw</item>
+        <item>Torshawn</item>
+        <item>Tirana</item>
+        <item>Thimphu</item>
+        <item>Porto-Nowo</item>
+        <item>Praýa</item>
+        <item>Frankfurt</item>
+        <item>Priştina</item>
+        <item>Hamilton</item>
+        <item>Honiara</item>
+        <item>Port-of-Speýn</item>
+        <item>Minneapolis</item>
+        <item>Hilo</item>
+        <item>Orlando</item>
+        <item>Kanzas-Siti</item>
+        <item>Täze Orlean</item>
+        <item>Nashwill</item>
+        <item>Tuson</item>
+        <item>Tampa</item>
+        <item>Jeksonwill</item>
+        <item>Oklahoma</item>
+        <item>Albukerke</item>
+        <item>Omaha</item>
+        <item>Wirjiniýa-Biç</item>
+        <item>Boýse</item>
+        <item>De-Moin</item>
+        <item>Birmingem</item>
+        <item>Solt-Leýk-Siti</item>
+        <item>Litl-Rok</item>
+        <item>Su-Fols</item>
+        <item>Jekson</item>
+        <item>Çarlston, Günorta Karolina</item>
+        <item>Fargo</item>
+        <item>Billings</item>
+        <item>Portland, Meýn</item>
+        <item>Şaýýenn</item>
+        <item>Çarlston, Günbatar Wirjiniýa</item>
+        <item>Pittsburg</item>
+        <item>Grin-Beý</item>
+        <item>Sent- Luis</item>
+        <item>Walli</item>
+        <item>UTC (Bütindünýä utgaşdyrylan wagty)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Owganystan</item>
+        <item>Alžir</item>
+        <item>Samoa</item>
+        <item>Antigua we Barbuda</item>
+        <item>Argentina</item>
+        <item>Armeniýa</item>
+        <item>Awstraliýa</item>
+        <item>Azerbaýjan</item>
+        <item>Bangladeş</item>
+        <item>Başgyrdystan Respublikasy</item>
+        <item>Belarus</item>
+        <item>Boliwiýa</item>
+        <item>Braziliýa</item>
+        <item>Bolgariýa</item>
+        <item>Kamboja</item>
+        <item>Kanada</item>
+        <item>Çili</item>
+        <item>Hytaý</item>
+        <item>Kolumbiýa</item>
+        <item>Çehiýa</item>
+        <item>Kongo Respublikasy</item>
+        <item>Ekwador</item>
+        <item>Estoniýa</item>
+        <item>Finlýandiýa</item>
+        <item>Fransiýa</item>
+        <item>Gruziýa</item>
+        <item>Germaniýa</item>
+        <item>Gresiýa</item>
+        <item>Wengriýa</item>
+        <item>Hindistan</item>
+        <item>Indoneziýa</item>
+        <item>Eýran</item>
+        <item>Irlandiýa</item>
+        <item>Ysraýyl</item>
+        <item>Italiýa</item>
+        <item>Ýaponiýa</item>
+        <item>Gazagystan</item>
+        <item>Keniýa</item>
+        <item>Kiribati</item>
+        <item>Latwiýa</item>
+        <item>Litwa</item>
+        <item>Malaýziýa</item>
+        <item>Meksika</item>
+        <item>Mongoliýa</item>
+        <item>Marokko</item>
+        <item>Nepal</item>
+        <item>Täze Zelandiýa</item>
+        <item>Pakistan</item>
+        <item>Peru</item>
+        <item>Filippinler</item>
+        <item>Polşa</item>
+        <item>Portugaliýa</item>
+        <item>Karta</item>
+        <item>Günorta Koreýa</item>
+        <item>Singapur Respublikasy</item>
+        <item>Liwiýa</item>
+        <item>Rumyniýa</item>
+        <item>Orsýet</item>
+        <item>Saud Arabystany</item>
+        <item>Slowakiýa</item>
+        <item>Günorta Afrika Respublikasy</item>
+        <item>Ispaniýa</item>
+        <item>Şri Lanka</item>
+        <item>Şwesiýa</item>
+        <item>Taýwan</item>
+        <item>Taýland</item>
+        <item>Tunis</item>
+        <item>Türkiýe</item>
+        <item>BAE</item>
+        <item>BP</item>
+        <item>Ukraina</item>
+        <item>ABŞ</item>
+        <item>Özbekistan</item>
+        <item>Wenesuela</item>
+        <item>Výetnam</item>
+        <item>BB Wirginiýa adalary</item>
+        <item>Şweýsariýa</item>
+        <item>Müsür</item>
+        <item>Kot d’Iwuar</item>
+        <item>Gana</item>
+        <item>Efiopiýa</item>
+        <item>Iordaniýa</item>
+        <item>Niderlendlar</item>
+        <item>Madagaskar</item>
+        <item>Türkmenistan</item>
+        <item>Eritreýa</item>
+        <item>Paragwaý</item>
+        <item>Yrak</item>
+        <item>Mali</item>
+        <item>Merkezi Afrika Respublikasy</item>
+        <item>Gwadelupa</item>
+        <item>Liwan</item>
+        <item>Serbiýa</item>
+        <item>Beliz</item>
+        <item>Gyrgyzystan</item>
+        <item>Gwineýa Bisau</item>
+        <item>Barbados</item>
+        <item>Belgiýa</item>
+        <item>Fransuz Gwianasy</item>
+        <item>Moldowa</item>
+        <item>Gwineýa</item>
+        <item>Daniýa</item>
+        <item>Senegal</item>
+        <item>Siriýa</item>
+        <item>Tanzaniýa</item>
+        <item>Jibuti</item>
+        <item>Katar</item>
+        <item>Kamerun</item>
+        <item>Täjigistan</item>
+        <item>Şotlandiýa</item>
+        <item>Martinika</item>
+        <item>Sýerra Leone</item>
+        <item>Botswana</item>
+        <item>Gaýana</item>
+        <item>Günorta Georgiýa adasy</item>
+        <item>Gwatemala</item>
+        <item>Sen-Bartelmi</item>
+        <item>Zimbabwe</item>
+        <item>Kuba</item>
+        <item>Uganda</item>
+        <item>Sudan</item>
+        <item>Ýamaýka</item>
+        <item>Kuweýt</item>
+        <item>Nigeriýa</item>
+        <item>Angola</item>
+        <item>Zambiýa</item>
+        <item>Lýuksemburg</item>
+        <item>Ekwatorial Gwineýa</item>
+        <item>Maldiwler</item>
+        <item>Nikaragua</item>
+        <item>Bahreýn</item>
+        <item>Mozambik</item>
+        <item>Sen-Marten</item>
+        <item>Somali</item>
+        <item>Liberiýa</item>
+        <item>Urugwaý</item>
+        <item>Oman</item>
+        <item>Çad</item>
+        <item>Niger</item>
+        <item>Mawritaniýa</item>
+        <item>Täze Kaledoniýa</item>
+        <item>Tonga</item>
+        <item>Grenlandiýa</item>
+        <item>Burkina-Faso</item>
+        <item>Panama</item>
+        <item>Surinam</item>
+        <item>Çernogoriýa</item>
+        <item>Mawrikiý</item>
+        <item>Gaiti</item>
+        <item>Koreýa Demokratik Halk Respublikasy</item>
+        <item>Mýanma</item>
+        <item>Islandiýa</item>
+        <item>Reýunýon adasy</item>
+        <item>Kosta-Rika</item>
+        <item>Puerto-Riko</item>
+        <item>Salwador</item>
+        <item>Ýemen</item>
+        <item>Dominikan Respublikasy</item>
+        <item>Makedoniýa</item>
+        <item>Fiji</item>
+        <item>Fransuz Polineziýa</item>
+        <item>Gonduras</item>
+        <item>Lihtenşteýn</item>
+        <item>Malta</item>
+        <item>Seýşeller</item>
+        <item>Awstriýa</item>
+        <item>Horwatiýa</item>
+        <item>Uels</item>
+        <item>ABD Wirginiýa adasy</item>
+        <item>Sloweniýa</item>
+        <item>San Marino</item>
+        <item>Norwegiýa</item>
+        <item>Papua - Täze Gwineýa</item>
+        <item>Bagamalar</item>
+        <item>Kipr</item>
+        <item>Timor-Leşti</item>
+        <item>Togo</item>
+        <item>Dominika</item>
+        <item>Gabon</item>
+        <item>Lesoto</item>
+        <item>Marşal adalary</item>
+        <item>Monako</item>
+        <item>Bruneý</item>
+        <item>Gambiýa</item>
+        <item>Burundi</item>
+        <item>Kongo Demokratik Respublikasy</item>
+        <item>Laos</item>
+        <item>Namibiýa</item>
+        <item>Bosniýa we Gersegowina</item>
+        <item>Saýpan</item>
+        <item>San-Tome we Prinsipi</item>
+        <item>Grenada</item>
+        <item>Folklend adalary</item>
+        <item>Amerikan Samoasy</item>
+        <item>Andorra</item>
+        <item>Sahara Respublikasy</item>
+        <item>Kýurasao</item>
+        <item>Eswatini</item>
+        <item>Sent-Lýusiýa</item>
+        <item>Palau</item>
+        <item>Ruanda</item>
+        <item>Sen-Winsent we Grenadinler</item>
+        <item>Farer adalary</item>
+        <item>Albaniýa</item>
+        <item>Butan</item>
+        <item>Benin</item>
+        <item>Kabo-Werde</item>
+        <item>Kosowo</item>
+        <item>Bermud adalary</item>
+        <item>Solomon adalary</item>
+        <item>Taýwan, Hytaý</item>
+        <item>Trinidad we Tobago</item>
+        <item>Angilýa</item>
+        <item>UTC (Bütindünýä utgaşdyrylan wagty)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Budilnik şu wagtdan 1 minut soňa düzülen.</item>
+        <item>Budilnik şu wagtdan %1$s gurulan</item>
+        <item>Budilnik şu wagtdan %2$s-a gurulan</item>
+        <item>Budilnik şu wagtdan %1$s we %2$s -a gurulan</item>
+        <item>Budilnik şu wagtdan %3$s-a gurulan</item>
+        <item>Budilnik şu wagtdan %1$s we %3$s -a gurulan</item>
+        <item>Budilnik şu wagtdan %2$s, we %3$s -a gurulan</item>
+        <item>Budilnik şu wagtdan %1$s we %2$s, we %3$s -a gurulan</item>
+        <item>Oýaryjy ýene %s wagtdan işlär.</item>
+        <item>Oýaryjy ýene %1$s we %2$s wagtdan işlär.</item>
+        <item>Budilnik şu wagtdan %1$s we %3$s -a gurulan</item>
+        <item>Budilnik şu wagtdan %1$s we %2$s, we %3$s -a gurulan</item>
+        <item>Oýaryjy ýene %1$s we %2$s wagtdan işlär.</item>
+        <item>Budilnik şu wagtdan %1$s we %2$s, we %3$s -a gurulan</item>
+        <item>Budilnik şu wagtdan %1$s we %2$s, we %3$s -a gurulan</item>
+        <item>Oýaryjy ýene %1$s, %2$s, %3$s we %4$s wagtdan işlär.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

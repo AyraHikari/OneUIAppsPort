@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Ezin dira gehitu %d kokapen baino gehiago. Ezabatu kokapen batzuk hau gehitzeko.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ezin dira gehitu %d kokapen baino gehiago. Ezabatu kokapen batzuk hau gehitzeko.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Gehienez ere %d karaktere idatz daitezke.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Gehienez ere %d karaktere idatz daiteke.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d hautatu dira</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hautatu da</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d egun</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d egun</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d ordu</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ordu</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

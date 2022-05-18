@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">%d ଦିନରେ ଆଲରାମ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଦିନରେ ଆଲରାମ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">%d ଘଣ୍ଟାରେ ଆଲରାମ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଘଣ୍ଟାରେ ଆଲରାମ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">%d ଘଣ୍ଟା 1 ମିନିଟରେ ଆଲରାମ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ଘଣ୍ଟା 1 ମିନିଟରେ ଆଲରାମ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">%d ମିନିଟରେ ଆଲରାମ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟରେ ଆଲରାମ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d ମିନିଟରେ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟରେ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%dଟି ରୁ ଅଧିକ ଆଲରାମ୍‌ ଯୋଡି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ରୁ ଅଧିକ ଆଲରାମ୍‌ ଯୋଡି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d ମିନିଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟ୍‌</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%dଟି ପୃଷ୍ଠପଟ ବିଲୋପ କରିବେ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ପୃଷ୍ଠପଟ ବିଲୋପ କରିବେ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%dଟି ଚୟନିତ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ଚୟନିତ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d ମିନିଟ୍ ପୂର୍ବରୁ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ମିନିଟ୍ ପୂର୍ବରୁ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, ଏବଂ %3$dଟି ଅନ୍ୟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, ଏବଂ %3$dଟି ଅନ୍ୟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">ଶୟନ ସମୟ: %d ଘଣ୍ଟା</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଶୟନ ସମୟ: %d ଘଣ୍ଟା</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">ଶୟନ ସମୟ: %d ମିନିଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଶୟନ ସମୟ: %d ମିନିଟ୍</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">ସ୍ନୁଜ୍ %d ମିନଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ସ୍ନୁଜ୍ %d ମି</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">ବିଯୁକ୍ତ %d ମିନିଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ବିଯୁକ୍ତ %d ମିନିଟ୍‌</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">ଯୁକ୍ତ %d ମିନିଟ୍</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ଯୁକ୍ତ %d ମିନିଟ୍‌</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%dଟି ରୁ ଅଧିକ ପ୍ରିସେଟ୍ ଟାଇମର୍ ଯୋଡି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ରୁ ଅଧିକ ପ୍ରିସେଟ୍ ଟାଇମର୍ ଯୋଡି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%dଟି ରୁ ଅଧିକ ସହର ଯୋଡି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dଟି ରୁ ଅଧିକ ସହର ଯୋଡି ପାରିବେ ନାହିଁ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

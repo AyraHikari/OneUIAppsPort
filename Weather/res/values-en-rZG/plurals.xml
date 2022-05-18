@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">"Can't add more than %d locations. Delete some locations to add this one."</item>
+        <item quantity="zero">"Can't add more than %d locations. Delete some locations to add this one."</item>
+        <item quantity="one">"Can't add more than %d location. Delete some locations to add this one."</item>
+        <item quantity="two">"Can't add more than %d locations. Delete some locations to add this one."</item>
+        <item quantity="few">"Can't add more than %d locations. Delete some locations to add this one."</item>
+        <item quantity="many">"Can't add more than %d locations. Delete some locations to add this one."</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">"Can't enter more than %d characters."</item>
+        <item quantity="zero">"Can't enter more than %d characters."</item>
+        <item quantity="one">"Can't enter more than %d character."</item>
+        <item quantity="two">"Can't enter more than %d characters."</item>
+        <item quantity="few">"Can't enter more than %d characters."</item>
+        <item quantity="many">"Can't enter more than %d characters."</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d selected</item>
+        <item quantity="zero">%d selected</item>
+        <item quantity="one">%d selected</item>
+        <item quantity="two">%d selected</item>
+        <item quantity="few">%d selected</item>
+        <item quantity="many">%d selected</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d days</item>
+        <item quantity="zero">%d days</item>
+        <item quantity="one">%d day</item>
+        <item quantity="two">%d days</item>
+        <item quantity="few">%d days</item>
+        <item quantity="many">%d days</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d hours</item>
+        <item quantity="zero">%d hours</item>
+        <item quantity="one">%d hour</item>
+        <item quantity="two">%d hours</item>
+        <item quantity="few">%d hours</item>
+        <item quantity="many">%d hours</item>
+    </plurals>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:title="@string/clock_settings" app:toolbarId="@id/toolbar" style="@style/ClockCollapsingToolbarLayoutStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/ClockThemeAppCompat" app:title="@string/clock_settings" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedscrollview" android:background="@color/window_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="always" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clock_settings_list_margin_bottom">
+            <TextView android:id="@id/tv_alert_clock_settings" android:text="@string/alert" style="@style/ClockSettingGroupLabel" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_alert_settings" style="@style/ClockSettingListViewStyle">
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_alert_bg" android:background="@drawable/clock_setting_item_ripple_top" android:focusable="true" android:clickable="true" android:layout_margin="@dimen/clock_settings_ripple_margin" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/alert_bg_title" android:text="@string/alert_background" style="@style/ClockSettingTitle" />
+                </LinearLayout>
+                <View android:id="@id/divider_alert_settings" style="@style/ClockSettingDivider" />
+                <RelativeLayout android:id="@id/alarm_and_vib_layout" android:background="@drawable/clock_setting_item_ripple_bottom" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/general_vibration" android:text="@string/alarm_sound_mode_jpn" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/alarm_and_vib_switch" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <TextView android:id="@id/general_vibration_description" android:text="@string/alarm_sound_mode_sub_title_jpn" android:layout_below="@id/general_vibration" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/alarm_and_vib_switch" android:layout_alignParentStart="true" style="@style/ClockSettingDescription" />
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/alarm_and_vib_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@id/tv_alarm_clock_settings" android:visibility="visible" android:text="@string/alarm" style="@style/ClockSettingGroupLabel" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_alarm_pre_power" android:visibility="visible" style="@style/ClockSettingListViewStyle">
+                <RelativeLayout android:id="@id/rl_alarm_pre_power" android:background="@drawable/clock_setting_item_ripple_top" android:visibility="gone" android:layout_margin="@dimen/clock_settings_ripple_margin" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/alarm_title" android:text="@string/pre_alarm_power_switch_phone" android:layout_toStartOf="@id/alarm_pre_power_switch" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <TextView android:id="@id/alarm_description" android:text="@string/pre_alarm_power_desc_phone" android:layout_below="@id/alarm_title" android:layout_toStartOf="@id/alarm_pre_power_switch" android:layout_alignParentStart="true" style="@style/ClockSettingDescription" />
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/alarm_pre_power_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:id="@id/divider_alarm_settings" android:visibility="gone" style="@style/ClockSettingDivider" />
+                <RelativeLayout android:id="@id/rl_include_news" android:background="@drawable/clock_setting_item_ripple_middle" android:visibility="gone" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/include_news_title" android:text="@string/include_news_in_bixby_alarm" android:layout_toStartOf="@id/include_news_switch" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/include_news_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:id="@id/divider_alarm_settings_upcoming_noti" android:visibility="gone" style="@style/ClockSettingDivider" />
+                <RelativeLayout android:id="@id/rl_upcoming_alarm_noti" android:background="@drawable/clock_setting_item_ripple_bottom" android:visibility="visible" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/upcoming_alarm_noti_title" android:text="@string/upcoming_alarm_notification" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <TextView android:textColor="@color/primary_dark_color" android:id="@id/upcoming_alarm_noti_description" android:layout_below="@id/upcoming_alarm_noti_title" android:layout_alignParentStart="true" style="@style/ClockSettingDescription" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@id/tv_weather_clock_settings" android:text="@string/clock_settings_world_clock_label" style="@style/ClockSettingGroupLabel" />
+            <com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout android:id="@id/ll_world_clock" style="@style/ClockSettingListViewStyle">
+                <RelativeLayout android:id="@id/rl_show_weather" android:background="@drawable/clock_setting_item_ripple_top" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/weather_title" android:text="@string/show_weather_info" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/weather_switch" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <TextView android:id="@id/weather_description" android:visibility="gone" android:text="@string/weather_info_on_the_world_clock" android:layout_below="@id/weather_title" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/weather_switch" android:layout_alignParentStart="true" style="@style/ClockSettingDescription" />
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/weather_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:id="@id/divider_world_clock_settings" style="@style/ClockSettingDivider" />
+                <LinearLayout android:orientation="vertical" android:id="@id/unit_layout" android:background="@drawable/clock_setting_item_ripple_bottom" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/unit_title" android:text="@string/weather_unit" style="@style/ClockSettingTitle" />
+                    <TextView android:textColor="@color/primary_dark_color" android:id="@id/unit_secondary_text" style="@style/ClockSettingDescription" />
+                </LinearLayout>
+            </com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout>
+            <TextView android:id="@id/timer_setting" android:text="@string/timer" style="@style/ClockSettingGroupLabel" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_timer_setting" style="@style/ClockSettingListViewStyle">
+                <RelativeLayout android:id="@id/timer_sound" android:background="@drawable/clock_setting_item_ripple_top" android:padding="0.0dip" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/rl_timer_sound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/clock_settings_group_margin_horizontal" android:layout_toStartOf="@id/timer_sound_switch" android:layout_alignParentStart="true" android:paddingVertical="@dimen/clock_settings_group_margin_vertical">
+                        <TextView android:id="@id/label_sound" android:text="@string/clock_settings_timer_label" style="@style/ClockSettingTitle" />
+                        <TextView android:textColor="@color/primary_dark_color" android:id="@id/timer_tone" android:layout_below="@id/label_sound" style="@style/ClockSettingDescription" />
+                    </RelativeLayout>
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/timer_sound_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:drawablePadding="@dimen/common_setting_switch_drawable_padding" android:contentDescription="@string/clock_settings_timer_label" android:drawableStart="@drawable/alarm_option_line" android:paddingEnd="@dimen/clock_settings_group_margin_horizontal" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/clock_settings_group_margin_vertical" />
+                </RelativeLayout>
+                <View android:id="@id/divider_timer_setting" style="@style/ClockSettingDivider" />
+                <RelativeLayout android:id="@id/timer_vib_layout" android:background="@drawable/clock_setting_item_ripple_bottom" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/timer_vibration" android:text="@string/alarmvibration" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/timer_vib_switch" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/timer_vib_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <View android:id="@id/divider_timer_allow_pip_setting" android:visibility="gone" style="@style/ClockSettingDivider" />
+                <RelativeLayout android:id="@id/timer_allow_pip_layout" android:background="@drawable/clock_setting_item_ripple_bottom" android:visibility="gone" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/timer_allow_pip" android:text="@string/show_mini_timer" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/timer_allow_pip_switch" android:layout_alignParentStart="true" style="@style/ClockSettingTitle" />
+                    <Switch android:theme="@style/SwitchStyle" android:id="@id/timer_allow_pip_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:id="@id/privacy_setting" android:text="@string/clock_settings_privacy_label" style="@style/ClockSettingGroupLabel" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_privacy_setting" style="@style/ClockSettingListViewStyle">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/permissions" android:background="@drawable/clock_setting_item_ripple_top" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/permission_title" android:text="@string/permissions" android:textDirection="locale" android:textAlignment="gravity" style="@style/ClockSettingTitle" />
+                </LinearLayout>
+                <View android:id="@id/divider_privacy_settings" style="@style/ClockSettingDivider" />
+                <LinearLayout android:orientation="vertical" android:id="@id/customisation_service_layout" android:background="@drawable/clock_setting_item_ripple_bottom" android:focusable="true" android:clickable="true" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/customization_service" android:text="@string/menu_customization_service" style="@style/ClockSettingTitle" />
+                    <TextView android:textSize="@dimen/clock_description_textview_textsize" android:textColor="@color/primary_dark_color" android:id="@id/customizationServiceStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/general_setting" android:text="@string/clock_settings_general_label" style="@style/ClockSettingGroupLabel" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_general_setting" style="@style/ClockSettingListViewStyle">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contact_us" android:background="@drawable/clock_setting_item_ripple_top" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/contact_us_title" android:text="@string/contact_us" android:textDirection="locale" android:textAlignment="gravity" style="@style/ClockSettingTitle" />
+                </LinearLayout>
+                <View android:id="@id/divider_about_clock_contact_us" style="@style/ClockSettingDivider" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/about_clock" android:background="@drawable/clock_setting_item_ripple_bottom" android:layout_margin="@dimen/clock_settings_ripple_margin" android:minHeight="@dimen/clock_setting_first_list_item_height" android:onClick="optionClicked" style="@style/ClockSettingListItemViewStyle">
+                    <TextView android:id="@id/about_clock_title" android:text="@string/about_clock" android:textDirection="locale" android:textAlignment="gravity" style="@style/ClockSettingTitle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

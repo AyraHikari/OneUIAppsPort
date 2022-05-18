@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_main_layout" android:tag="layout/setting_clock_preview_0" android:padding="@dimen/setting_preview_inner_padding" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_preview_container" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/preview_background" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" />
+        <include android:layout_gravity="center_vertical" android:id="@id/widget_preview_area" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" layout="@layout/widget_main_clock_4x1" />
+        <include android:layout_gravity="center_vertical" android:id="@id/empty_area" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" layout="@layout/widget_main_clock_4x1_empty" />
+        <include android:layout_gravity="center_vertical" android:id="@id/restore_area" android:layout_width="fill_parent" android:layout_height="@dimen/setting_preview_xx1_bg_height" layout="@layout/widget_main_clock_4x1_restore" />
+    </FrameLayout>
+</FrameLayout>

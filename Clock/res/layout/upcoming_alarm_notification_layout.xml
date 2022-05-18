@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:title="@string/upcoming_alarm_notification" app:toolbarId="@id/toolbar" style="@style/ClockCollapsingToolbarLayoutStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/ClockThemeAppCompat" app:title="@string/upcoming_alarm_notification" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedscrollview" android:background="@color/window_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="always" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ScrollView android:id="@id/scrollView" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListCategoryText">
+                    <TextView android:id="@id/upcoming_alarm_noti_info_tv" android:background="@color/window_background_color" android:paddingTop="@dimen/upcoming_alarm_noti_duration_tv_padding" android:paddingBottom="@dimen/upcoming_alarm_noti_duration_tv_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/upcoming_alarm_noti_info_text" style="@style/DescriptionStyle" />
+                    <LinearLayout android:theme="@style/RadioStyle" android:orientation="vertical" android:id="@id/upcoming_alarm_noti_items" android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_5mins" style="@style/CustomCheckBox" />
+                        <View android:id="@id/line_separator_1" style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_15mins" style="@style/CustomCheckBox" />
+                        <View android:id="@id/line_separator_2" style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_30mins" style="@style/CustomCheckBox" />
+                        <View android:id="@id/line_separator_3" style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_no_alerts" android:text="@string/switch_off" style="@style/CustomCheckBox" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <View android:id="@id/dummy" android:background="@color/alarm_dummy_background_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

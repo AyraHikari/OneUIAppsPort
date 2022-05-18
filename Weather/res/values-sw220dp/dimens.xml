@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_indicator_height">36.669983dip</dimen>
+    <dimen name="status_indicator_logo_height">9.779999dip</dimen>
+    <dimen name="status_indicator_logo_jp_height">14.669983dip</dimen>
+    <dimen name="status_indicator_logo_margin_end">2.439972dip</dimen>
+    <dimen name="status_indicator_logo_margin_start">14.669983dip</dimen>
+    <dimen name="status_indicator_logo_width">72.109985dip</dimen>
+    <dimen name="status_indicator_progress_button_height">9.779999dip</dimen>
+    <dimen name="status_indicator_progress_button_width">9.779999dip</dimen>
+    <dimen name="status_indicator_progress_layout_height">14.059998dip</dimen>
+    <dimen name="status_indicator_progress_layout_margin_end">14.669983dip</dimen>
+    <dimen name="status_indicator_progress_layout_width">14.059998dip</dimen>
+    <dimen name="status_indicator_progressbar_height">9.779999dip</dimen>
+    <dimen name="status_indicator_progressbar_width">9.779999dip</dimen>
+    <dimen name="status_indicator_text_margin_end">1.2199707dip</dimen>
+    <dimen name="status_indicator_text_size">6.7199707sp</dimen>
+    <dimen name="status_indicator_update_area_height">27.5dip</dimen>
+    <dimen name="status_indicator_update_area_margin_end">7.3299866dip</dimen>
+    <dimen name="status_indicator_update_area_width">27.5dip</dimen>
+</resources>

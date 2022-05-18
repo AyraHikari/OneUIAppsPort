@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_HEADER_ALARM_IN_PD_DAYS %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_HEADER_ALARM_IN_PD_DAYS %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_HEADER_ALARM_IN_PD_DAYS %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_HEADER_ALARM_IN_PD_DAYS %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_HEADER_ALARM_IN_PD_DAYS %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_HEADER_ALARM_IN_PD_DAYS %d</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_HEADER_ALARM_IN_PD_HOURS %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_HEADER_ALARM_IN_PD_HOURS %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_HEADER_ALARM_IN_PD_HOURS %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_HEADER_ALARM_IN_PD_HOURS %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_HEADER_ALARM_IN_PD_HOURS %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_HEADER_ALARM_IN_PD_HOURS %d</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_HEADER_ALARM_IN_PD_HOURS_1_MINUTE %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_HEADER_ALARM_IN_PD_HOURS_1_MINUTE %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_HEADER_ALARM_IN_PD_HOURS_1_MINUTE %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_HEADER_ALARM_IN_PD_HOURS_1_MINUTE %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_HEADER_ALARM_IN_PD_HOURS_1_MINUTE %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_HEADER_ALARM_IN_PD_HOURS_1_MINUTE %d</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_HEADER_ALARM_IN_PD_MINUTES %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_HEADER_ALARM_IN_PD_MINUTES %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_HEADER_ALARM_IN_PD_MINUTES %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_HEADER_ALARM_IN_PD_MINUTES %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_HEADER_ALARM_IN_PD_MINUTES %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_HEADER_ALARM_IN_PD_MINUTES %d</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_NPBODY_IN_PD_MINUTES %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_NPBODY_IN_PD_MINUTES %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_NPBODY_IN_PD_MINUTES %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_NPBODY_IN_PD_MINUTES %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_NPBODY_IN_PD_MINUTES %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_NPBODY_IN_PD_MINUTES %d</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">PLURAL_OTHER_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_ALARMS %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_ALARMS %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_ALARMS %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_ALARMS %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_ALARMS %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_ALARMS %d</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">PLURAL_OTHER_QP_OPT_PD_MINUTES %d</item>
+        <item quantity="zero">PLURAL_ZERO_QP_OPT_PD_MINUTES %d</item>
+        <item quantity="one">PLURAL_ONE_QP_OPT_PD_MINUTES %d</item>
+        <item quantity="two">PLURAL_TWO_QP_OPT_PD_MINUTES %d</item>
+        <item quantity="few">PLURAL_FEW_QP_OPT_PD_MINUTES %d</item>
+        <item quantity="many">PLURAL_MANY_QP_OPT_PD_MINUTES %d</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">PLURAL_OTHER_CLOCK_BODY_DELETE_PD_BACKGROUNDS_Q</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_BODY_DELETE_PD_BACKGROUNDS_Q</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_BODY_DELETE_PD_BACKGROUNDS_Q</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_BODY_DELETE_PD_BACKGROUNDS_Q</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_BODY_DELETE_PD_BACKGROUNDS_Q</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_BODY_DELETE_PD_BACKGROUNDS_Q</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">PLURAL_OTHER_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="zero">PLURAL_ZERO_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="one">PLURAL_ONE_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="two">PLURAL_TWO_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="few">PLURAL_FEW_IDLE_HEADER_PD_SELECTED %d</item>
+        <item quantity="many">PLURAL_MANY_IDLE_HEADER_PD_SELECTED %d</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_OPT_PD_MINUTES_BEFORE %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_OPT_PD_MINUTES_BEFORE %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_OPT_PD_MINUTES_BEFORE %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_OPT_PD_MINUTES_BEFORE %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_OPT_PD_MINUTES_BEFORE %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_OPT_PD_MINUTES_BEFORE %d</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">PLURAL_OTHER_ROUTINES_SBODY_P1SS_P2SS_AND_P3SD_OTHERS %1$s %2$s %3$d</item>
+        <item quantity="zero">PLURAL_ZERO_ROUTINES_SBODY_P1SS_P2SS_AND_P3SD_OTHERS %1$s %2$s %3$d</item>
+        <item quantity="one">PLURAL_ONE_ROUTINES_SBODY_P1SS_P2SS_AND_P3SD_OTHERS %1$s %2$s %3$d</item>
+        <item quantity="two">PLURAL_TWO_ROUTINES_SBODY_P1SS_P2SS_AND_P3SD_OTHERS %1$s %2$s %3$d</item>
+        <item quantity="few">PLURAL_FEW_ROUTINES_SBODY_P1SS_P2SS_AND_P3SD_OTHERS %1$s %2$s %3$d</item>
+        <item quantity="many">PLURAL_MANY_ROUTINES_SBODY_P1SS_P2SS_AND_P3SD_OTHERS %1$s %2$s %3$d</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_OPT_SLEEP_TIME_C_PD_HOURS %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_OPT_SLEEP_TIME_C_PD_HOURS %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_OPT_SLEEP_TIME_C_PD_HOURS %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_OPT_SLEEP_TIME_C_PD_HOURS %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_OPT_SLEEP_TIME_C_PD_HOURS %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_OPT_SLEEP_TIME_C_PD_HOURS %d</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">PLURAL_OTHER_CLOCK_OPT_SLEEP_TIME_C_PD_MINUTES %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_OPT_SLEEP_TIME_C_PD_MINUTES %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_OPT_SLEEP_TIME_C_PD_MINUTES %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_OPT_SLEEP_TIME_C_PD_MINUTES %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_OPT_SLEEP_TIME_C_PD_MINUTES %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_OPT_SLEEP_TIME_C_PD_MINUTES %d</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">PLURAL_OTHER_CLOCK_BUTTON_SNOOZE_PD_MINS %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_BUTTON_SNOOZE_PD_MINS %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_BUTTON_SNOOZE_PD_MINS %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_BUTTON_SNOOZE_PD_MINS %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_BUTTON_SNOOZE_PD_MINS %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_BUTTON_SNOOZE_PD_MINS %d</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">PLURAL_OTHER_CLOCK_TBOPT_MINUS_PD_MINUTES %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_TBOPT_MINUS_PD_MINUTES %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_TBOPT_MINUS_PD_MINUTES %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_TBOPT_MINUS_PD_MINUTES %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_TBOPT_MINUS_PD_MINUTES %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_TBOPT_MINUS_PD_MINUTES %d</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">PLURAL_OTHER_CLOCK_TBOPT_PLUS_PD_MINUTES %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_TBOPT_PLUS_PD_MINUTES %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_TBOPT_PLUS_PD_MINUTES %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_TBOPT_PLUS_PD_MINUTES %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_TBOPT_PLUS_PD_MINUTES %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_TBOPT_PLUS_PD_MINUTES %d</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">PLURAL_OTHER_CLOCK_BODY_CANT_ADD_MORE_THAN_PD_PRESET_TIMERS %d</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_BODY_CANT_ADD_MORE_THAN_PD_PRESET_TIMERS %d</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_BODY_CANT_ADD_MORE_THAN_PD_PRESET_TIMERS %d</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_BODY_CANT_ADD_MORE_THAN_PD_PRESET_TIMERS %d</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_BODY_CANT_ADD_MORE_THAN_PD_PRESET_TIMERS %d</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_BODY_CANT_ADD_MORE_THAN_PD_PRESET_TIMERS %d</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">PLURAL_OTHER_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_CITIES</item>
+        <item quantity="zero">PLURAL_ZERO_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_CITIES</item>
+        <item quantity="one">PLURAL_ONE_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_CITIES</item>
+        <item quantity="two">PLURAL_TWO_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_CITIES</item>
+        <item quantity="few">PLURAL_FEW_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_CITIES</item>
+        <item quantity="many">PLURAL_MANY_CLOCK_TPOP_CANT_ADD_MORE_THAN_PD_CITIES</item>
+    </plurals>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d ფაილი დაემატა გადასაცემი ფაილების სიაში.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ფაილი დაემატა გადასაცემი ფაილების სიაში.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow-ში დაარეგისტრირეთ და მართეთ მაქსიმუმ %d კომპიუტერი ან პლანშეტი.
+
+ერთ ჯერზე მხოლოდ ერთი კომპიუტერის ან პლანშეტის დაკავშირება შეიძლება ტელეფონთან. უნდა აირჩიოთ რომელიმე, როდესაც ორივე რეგისტრირებული კომპიუტერი ან პლანშეტი ცდილობს დაკავშირებას ტელეფონთან."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Flow-ში დაარეგისტრირეთ და მართეთ მაქსიმუმ %d კომპიუტერი ან პლანშეტი.
+
+ერთ ჯერზე მხოლოდ ერთი კომპიუტერის ან პლანშეტის დაკავშირება შეიძლება ტელეფონთან. უნდა აირჩიოთ რომელიმე, როდესაც ორივე რეგისტრირებული კომპიუტერი ან პლანშეტი ცდილობს დაკავშირებას ტელეფონთან."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

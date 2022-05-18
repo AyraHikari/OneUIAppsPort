@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>മിഡ്‌വേ</item>
+        <item>ഹോണലൂലു</item>
+        <item>ഹവായ്</item>
+        <item>അലാസ്‌ക</item>
+        <item>ആന്‍‌കൊറേജ്</item>
+        <item>സാന്‍‌ ഫ്രാന്‍‌സിസ്‌കോ</item>
+        <item>വാന്‍‌കുവര്‍</item>
+        <item>സിയാറ്റില്‍</item>
+        <item>ലോസ് ആഞ്ചല്‍‌സ്</item>
+        <item>ടിജുവാന</item>
+        <item>കാള്‍‌ഗ്രേ</item>
+        <item>ഫിനിക്സ്</item>
+        <item>മസാത്തലന്‍‌</item>
+        <item>ഡെന്‍‌വര്‍</item>
+        <item>മെക്സിക്കോ സിറ്റി</item>
+        <item>വിന്നിപെഗ്</item>
+        <item>ഡീഗോ ഗാര്‍ഷിയ</item>
+        <item>ഡാലസ്</item>
+        <item>ചിക്കാഗോ</item>
+        <item>ടൊറണ്‍ടോ</item>
+        <item>മിയാമി</item>
+        <item>ലിമ</item>
+        <item>ക്വിറ്റോ</item>
+        <item>വാഷിംഗ്‌ടണ്‍ DC</item>
+        <item>ഒട്ടാവ</item>
+        <item>ന്യൂ യോര്‍‌ക്ക്</item>
+        <item>ബൊഗോട്ട</item>
+        <item>സാന്‍റിയാഗോ</item>
+        <item>ലാ പാസ്</item>
+        <item>കാരക്കാസ്</item>
+        <item>ബ്യൂണസ് ഐറിസ്</item>
+        <item>ന്യൂഫൗണ്ട്‌ലാന്‍ഡ്</item>
+        <item>സെന്‍റ് ജോണ്‍സ്</item>
+        <item>സാവോ പോളോ</item>
+        <item>ബ്രസിലിയ</item>
+        <item>റിയൊ ഡി ജെനീറോ</item>
+        <item>ഫെര്‍ണാണ്ടോ ഡി നൊരോഹാ</item>
+        <item>അസോറസ്</item>
+        <item>ലിസ്‌ബണ്‍‌</item>
+        <item>കാസാബ്ലാങ്ക</item>
+        <item>ഡബ്ലിന്‍</item>
+        <item>റാബറ്റ്</item>
+        <item>മാഡ്രിഡ്</item>
+        <item>ദി സെറ്റില്‍മെന്‍റ്</item>
+        <item>ലണ്ടന്‍</item>
+        <item>കിംഗ്‌സ്‌ടണ്‍</item>
+        <item>ബാര്‍സിലോണ</item>
+        <item>പാരീസ്</item>
+        <item>അള്‍ജിയേഴ്‌സ്</item>
+        <item>ടുണിസ്</item>
+        <item>ട്രിപ്പോളി</item>
+        <item>ബര്‍ലിന്‍</item>
+        <item>റോം</item>
+        <item>പ്രാഗ്</item>
+        <item>കിന്‍‌ഷാസ</item>
+        <item>സ്റ്റോക്ക്‌ഹോം</item>
+        <item>ബ്രാറ്റിസ്ലവ</item>
+        <item>കേപ് ടൗണ്‍</item>
+        <item>ബുഡാപെസ്റ്റ്</item>
+        <item>വൊർസോ</item>
+        <item>കാളിനിന്‍‌ഗ്രാദ്</item>
+        <item>സോഫിയ</item>
+        <item>ഏഥന്‍സ്</item>
+        <item>ല്വിവ്‌</item>
+        <item>ഹെല്‍‌സിങ്കി</item>
+        <item>റിഗാ</item>
+        <item>റ്റാലിന്‍</item>
+        <item>ബുക്കാറസ്റ്റ്</item>
+        <item>വില്‍‌നിയസ്</item>
+        <item>ലുബുംബാഷി</item>
+        <item>മിന്‍‌സ്‌ക്</item>
+        <item>സെന്‍റ്. പീറ്റേഴ്സ്ബര്‍ഗ്</item>
+        <item>ഇസ്താംബുള്‍</item>
+        <item>കാംചാദ്ക</item>
+        <item>കയിവ്</item>
+        <item>ജെറുസലേം</item>
+        <item>മോസ്‌കോ</item>
+        <item>ഖാര്‍കിവ്</item>
+        <item>നെയ്‌റോബി</item>
+        <item>ജെദ്ദ</item>
+        <item>വോള്‍‌ഗോഗ്രാഡ്</item>
+        <item>യെരേവന്‍</item>
+        <item>ടിബിലിസി</item>
+        <item>ബാക്കു</item>
+        <item>ചിറ്റ</item>
+        <item>സമാറ</item>
+        <item>തെഹ്‌റാന്‍</item>
+        <item>ഷെവാസ്ക്</item>
+        <item>അബുദാബി</item>
+        <item>ദുബായ്</item>
+        <item>ഉഫ</item>
+        <item>ഏകത്രിന്‍ബര്‍‌ഗ്‌</item>
+        <item>ചെല്യാബിന്‍സ്‌ക്</item>
+        <item>കറാച്ചി</item>
+        <item>കാബൂള്‍</item>
+        <item>താഷ്‌കന്‍റ്</item>
+        <item>ഇസ്ലാമാബാദ്</item>
+        <item>മുംബൈ</item>
+        <item>ഒം‌സ്‌ക്</item>
+        <item>അല്‍മാട്ടി</item>
+        <item>ബാംഗ്ലൂര്‍</item>
+        <item>ഹൈദ്രാബാദ്</item>
+        <item>ന്യൂ ഡല്‍ഹി</item>
+        <item>കൊളംബോ</item>
+        <item>ചെന്നൈ</item>
+        <item>നൊവൊസിബിസ്‌ക്</item>
+        <item>കാഠ്‌മണ്ടു</item>
+        <item>നൊവൊകുസ്‌നെസ്ക്ക്</item>
+        <item>കൊല്‍ക്കത്ത</item>
+        <item>ധാക്ക</item>
+        <item>ഹോവ്ദ്‌</item>
+        <item>ക്രാ‌സ്‌നോയാര്‍സ്‌ക്</item>
+        <item>ബാങ്കോക്ക്</item>
+        <item>ക്വലാലം‌പൂര്‍</item>
+        <item>സിംഗപ്പൂര്‍</item>
+        <item>ഇര്‍ക്കുദ്ഷ്</item>
+        <item>പെനം പെന്‍</item>
+        <item>ഹാനോയി</item>
+        <item>ജക്കാര്‍ത്ത</item>
+        <item>ഉലന്‍ ‌ബറ്റര്‍</item>
+        <item>ഹോങ്കോങ്</item>
+        <item>പെര്‍ത്ത്</item>
+        <item>ബീജിംഗ്</item>
+        <item>മനില</item>
+        <item>തായ്‌പെയ്</item>
+        <item>സിയോള്‍</item>
+        <item>അംബോണ്‍</item>
+        <item>വ്ലാഡിവോസ്റ്റോക്ക്</item>
+        <item>യാകുട്സ്ക്</item>
+        <item>കബാറോവസ്‌ക്</item>
+        <item>അ‌ഡ്‌ലെയ്‌ഡ്</item>
+        <item>ടോക്കിയോ</item>
+        <item>യുസ്നോ-സകാലിന്‍സ്ക്</item>
+        <item>ഹാലിഫാക്സ്</item>
+        <item>ഗുവാം</item>
+        <item>കാന്‍ബറ</item>
+        <item>മഗദന്‍‌</item>
+        <item>സിഡ്‌നി</item>
+        <item>പെട്രോപാവ്‌ലോസ്ക്-കാംചാട്സ്‌കി</item>
+        <item>ടറാവ</item>
+        <item>ഓക്ക്‌ലാന്‍ഡ്</item>
+        <item>വിലിംഗ്‌ടണ്‍</item>
+        <item>പാഗോ പാഗോ</item>
+        <item>ഡെന്‍പാസര്‍</item>
+        <item>ബെണ്‍</item>
+        <item>സുറിക്</item>
+        <item>കെയ്‌റോ</item>
+        <item>ആബിദ്ജാന്‍</item>
+        <item>അക്രാ</item>
+        <item>ആഡിസ് അബാബ</item>
+        <item>അമ്മാന്‍</item>
+        <item>ആംസ്റ്റര്‍ഡാം</item>
+        <item>അനാഡിര്‍</item>
+        <item>അങ്കാര</item>
+        <item>ആന്‍റിനാനെറിവോ</item>
+        <item>അഷ്‌ഗബത്</item>
+        <item>അസ്മിറ</item>
+        <item>അസ്തന</item>
+        <item>അസന്‍ഷന്‍</item>
+        <item>ഓസ്റ്റിന്‍</item>
+        <item>ബാഗ്ദാദ്</item>
+        <item>ബാള്‍ട്ടിമോര്‍</item>
+        <item>ബമാകോ</item>
+        <item>ബാന്‍ഗി</item>
+        <item>ബാരി</item>
+        <item>ബാസ്സെ-ടെറി</item>
+        <item>ബെയ്റൂട്ട്</item>
+        <item>ബെല്‍ഗ്രേഡ്</item>
+        <item>ബെലിസ് സിറ്റി</item>
+        <item>ബിഷ്കെക്</item>
+        <item>ബിസൗ</item>
+        <item>ബലോണ്യ</item>
+        <item>ബോസ്റ്റണ്‍</item>
+        <item>ബ്രിഡ്ജ്ടൗണ്‍</item>
+        <item>ബ്രിസ്‌ബെന്‍</item>
+        <item>ബ്രസ്സല്‍‌സ്</item>
+        <item>കാനറി ഐലന്‍ഡ്സ്</item>
+        <item>കാറ്റന്‍സറൊ</item>
+        <item>കായെന്നി</item>
+        <item>ഷാര്‍ലോട്ട്</item>
+        <item>ഷിസിനോ</item>
+        <item>ക്ലെവ്‍ലാന്‍ഡ്</item>
+        <item>കൊളംബസ്</item>
+        <item>കൊണെക്രി</item>
+        <item>കോപ്പന്‍ഹാഗന്‍</item>
+        <item>കോര്‍ക്ക്</item>
+        <item>ക്രോട്ടോണ്‍</item>
+        <item>ഡാക്കര്‍</item>
+        <item>ദമാസ്‌കസ്</item>
+        <item>ദാര്‍ ഇ സ്സലാം</item>
+        <item>ഡാര്‍വിന്‍‌</item>
+        <item>ഡിട്രോയിറ്റ്</item>
+        <item>ജിബൗട്ടി</item>
+        <item>ദോഹ</item>
+        <item>ദുവാലാ</item>
+        <item>ദുഷാന്‍ബെ</item>
+        <item>ഈസ്റ്റര്‍ ഐലന്‍ഡ്</item>
+        <item>എഡിന്‍ബര്‍ഗ്</item>
+        <item>എല്‍ പാസോ</item>
+        <item>ഫ്ലോറന്‍സ്</item>
+        <item>ഫോര്‍ട്ട്-ഡി-ഫ്രാന്‍സ്</item>
+        <item>ഫ്രീടൗണ്‍</item>
+        <item>ഗാബൊറോണ്‍</item>
+        <item>ഗാലെപാഗോസ് ഐലന്‍ഡ്സ്</item>
+        <item>ജനീവ</item>
+        <item>ജിനോവ</item>
+        <item>ജോര്‍ജ്ടൌണ്‍</item>
+        <item>ഗ്രൈറ്റ്വികെന്‍</item>
+        <item>ഗ്വാട്ടിമല സിറ്റി</item>
+        <item>ഗുസ്താവിയ</item>
+        <item>ഹാംബര്‍ഗ്</item>
+        <item>ഹരാരെ</item>
+        <item>ഹവാന</item>
+        <item>ഹോബര്‍ട്ട്</item>
+        <item>ഹൗസ്റ്റണ്‍</item>
+        <item>ഇന്ത്യാനപോളിസ്</item>
+        <item>ജോഹന്നസ്ബര്‍ഗ്</item>
+        <item>കംപാല</item>
+        <item>ഖാര്‍ത്തൂം</item>
+        <item>കിംഗ്‌സ്‌ടണ്‍</item>
+        <item>കുവൈറ്റ് സിറ്റി</item>
+        <item>ലാഗോസ്</item>
+        <item>ലാസ് വേഗാസ്</item>
+        <item>ലുബ്‍ലിയാന</item>
+        <item>ഹിക്കൗ</item>
+        <item>ലൂയിസ്‍വില്‍</item>
+        <item>ലുവാണ്ട</item>
+        <item>ലുസാക്ക</item>
+        <item>ലക്സംബര്‍ഗ്</item>
+        <item>മകാവു</item>
+        <item>മലാബോ</item>
+        <item>മാലി</item>
+        <item>മനഗ്വ</item>
+        <item>മനാമ</item>
+        <item>മാപുട്ടോ</item>
+        <item>മാരിഗോട്ട്</item>
+        <item>മക്ക</item>
+        <item>മെല്‍‌ബണ്‍‌</item>
+        <item>മെംഫിസ്</item>
+        <item>മെസ്സിന</item>
+        <item>മിലാന്‍</item>
+        <item>മില്‍വോക്കീ</item>
+        <item>മൊഗാദിശു</item>
+        <item>മൊണ്‍റോവീ</item>
+        <item>മോണ്ടിവീഡിയോ</item>
+        <item>മോന്‍‌ട്രില്‍</item>
+        <item>മ്യൂണിച്ച്</item>
+        <item>മസ്‌ക്കറ്റ്</item>
+        <item>നാപ്പിള്‍സ്</item>
+        <item>നാറ്റേര്‍സ്</item>
+        <item>"എൻ'ജമെന"</item>
+        <item>നിയാമി</item>
+        <item>ന്വോക്ഷോട്ട്</item>
+        <item>നൗമീ</item>
+        <item>നുകൂഅലോഫ</item>
+        <item>ന്യൂക്</item>
+        <item>ഒസാക്ക</item>
+        <item>ഔഗഡൊഗൊ</item>
+        <item>പെലെര്‍മോ</item>
+        <item>പനാമ സിറ്റി</item>
+        <item>പാരാമാരിബോ</item>
+        <item>പേം</item>
+        <item>ഫിലാഡെല്‍ഫിയ</item>
+        <item>പോഡ്ഗൊറിക്ക</item>
+        <item>പോണ്ട ഡെല്‍ഗാഡ</item>
+        <item>പോര്‍ട്ട് ലൂയിസ്</item>
+        <item>പോര്‍ട്ട്-ഓ-പ്രിന്‍സ്</item>
+        <item>പോർട്ട്‌ലൻഡ്, ഒറിഗൻ</item>
+        <item>പ്യോംഗ്‌യാംഗ്</item>
+        <item>യാംഗോന്‍</item>
+        <item>റസീഫ്</item>
+        <item>രാക്യവെക്</item>
+        <item>റിയാദ്</item>
+        <item>സെയ്ന്‍റ്-ഡെനിസ്</item>
+        <item>സാന്‍ ആന്‍റോണിയോ</item>
+        <item>സാന്‍‌ ഡിയാഗോ</item>
+        <item>സാന്‍ ജോസ്</item>
+        <item>സാന്‍ ജോസ്</item>
+        <item>സാൻ ജുവാൻ</item>
+        <item>സാന്‍ മരീനോ</item>
+        <item>സാന്‍‌ സല്‍‌വദോര്‍‌</item>
+        <item>സനാഅ</item>
+        <item>സോന്‍റോ ഡോമിംഗോ</item>
+        <item>ഷാങ്‌ഹായി</item>
+        <item>ഷെന്‍ജുന്‍</item>
+        <item>സ്കോപ്യ</item>
+        <item>സെന്‍റ് ജോണ്‍സ്</item>
+        <item>സുവ</item>
+        <item>താഹിത്തി</item>
+        <item>ടെഗുസിഗാല്‍പ</item>
+        <item>ഹോ ചി മിന്‍ സിറ്റി</item>
+        <item>ട്യാന്‍ജിന്‍</item>
+        <item>ടുറിന്‍</item>
+        <item>വഡുസ്</item>
+        <item>വാളെറ്റ</item>
+        <item>വെറോണ</item>
+        <item>വിക്ടോറിയ</item>
+        <item>വിയന്ന</item>
+        <item>യമുസോക്രൊ</item>
+        <item>യാഉണ്ഡ</item>
+        <item>സഗ്‌രെബ്</item>
+        <item>ഗുവാങ്ജോ</item>
+        <item>കാര്‍ഡിഫ്</item>
+        <item>റെജിന</item>
+        <item>ഷാര്‍ലൊട്ടെ അമാലീ</item>
+        <item>അറ്റ്‌ലാന്‍റ</item>
+        <item>മയോട്ടെ</item>
+        <item>സെന്‍റ് പെയ്ർ ആന്‍റ് മിഖെലോൺ</item>
+        <item>ഓസ്‍ലോ</item>
+        <item>സ്രെഡ്നെകോലിംസ്ക്</item>
+        <item>സെവിറോ-കുരിൽസ്ക്</item>
+        <item>വുഹാന്‍</item>
+        <item>ചെങ്ഡു</item>
+        <item>ഷിയാൻ</item>
+        <item>പോർട്ട് മോർസെബി</item>
+        <item>ഡാവോ നഗരം</item>
+        <item>ചോംഗ്‌ക്വിംഗ്</item>
+        <item>ഷെന്യാംഗ്</item>
+        <item>നാന്‍ജിങ്</item>
+        <item>ഹാർബീൻ</item>
+        <item>ജിനാന്‍</item>
+        <item>ജുംഗ്ജോ</item>
+        <item>കുണ്‍മിങ്</item>
+        <item>ചാങ്‌ചുൻ</item>
+        <item>ഫുശൌ</item>
+        <item>കുചിംഗ്</item>
+        <item>മക്കാസ്സര്‍</item>
+        <item>ഹാങ്‌സോ</item>
+        <item>ക്വിംഗ്‌ഡാവോ</item>
+        <item>നാന്നിങ്</item>
+        <item>ഉറും‌മ്കി</item>
+        <item>നസോ</item>
+        <item>നിക്കോസിയ</item>
+        <item>ദിലി</item>
+        <item>റോഡ് ടൗണ്‍</item>
+        <item>ലോം</item>
+        <item>റൊസിയു</item>
+        <item>ലിബ്രിവില്ലെ</item>
+        <item>മാർസീല്ലെ</item>
+        <item>മാസറൂ</item>
+        <item>മജുറോ</item>
+        <item>മൊണാക്കോ</item>
+        <item>ബാന്ദർ സേരി ബെഗാവാൻ</item>
+        <item>ബഞ്ചുൽ</item>
+        <item>ബുസാൻ</item>
+        <item>ബുജുബുറ</item>
+        <item>ബ്രസവില്ലെ</item>
+        <item>വിയന്‍റിയെൻ</item>
+        <item>വിൻഡ്‌ഹോയെക്</item>
+        <item>സരജെവോ</item>
+        <item>സായ്പാൻ</item>
+        <item>സാവോ തോം</item>
+        <item>സെന്‍റ്. ജോർജസ്</item>
+        <item>സ്റ്റാൻലി</item>
+        <item>ഏഥൻ</item>
+        <item>അപിയ</item>
+        <item>അൻഡോറ ലാ വെല്ല</item>
+        <item>ലായോൺ</item>
+        <item>വില്ലെംസ്റ്റാൻഡ്</item>
+        <item>എംബബേൻ</item>
+        <item>കാസ്ട്രീസ്</item>
+        <item>കൊറോർ</item>
+        <item>കാൻകൺ</item>
+        <item>കിഗാലി</item>
+        <item>കിംഗ്സ്ടൗൺ</item>
+        <item>ടെൽ അവീവ്</item>
+        <item>ടോർസ്ഹാൻ</item>
+        <item>ടിരാന</item>
+        <item>തിംഫു</item>
+        <item>പോർട്ടോ നോവോ</item>
+        <item>പ്രായിയ</item>
+        <item>ഫ്രാങ്ക്ഫർട്ട്</item>
+        <item>പ്രിസ്റ്റീന</item>
+        <item>ഹാമിൽട്ടൺ</item>
+        <item>ഹോണിയാര</item>
+        <item>പോര്‍ട്ട് ഓഫ് സ്പെയിന്‍</item>
+        <item>മിന്നിയപൊലിസ്</item>
+        <item>ഹിലോ</item>
+        <item>ഒർലാൻഡോ</item>
+        <item>കൻസസ് സിറ്റി</item>
+        <item>ന്യൂ ഒർലിൻസ്</item>
+        <item>നാഷ്‌വിൽ</item>
+        <item>ടൂസൻ</item>
+        <item>ടാമ്പ</item>
+        <item>ജാക്സൺവിൽ</item>
+        <item>ഒക്‌ലഹോമ സിറ്റി</item>
+        <item>അൽബുക്വെർക്വി</item>
+        <item>ഒമഹാ</item>
+        <item>വെർജീനിയ ബീച്ച്</item>
+        <item>ബൊയ്സീ</item>
+        <item>ഡെമോയിൻസ്</item>
+        <item>ബർമിംഗ്ഹം</item>
+        <item>സാൾട്ട് ലേക്ക് സിറ്റി</item>
+        <item>ലിറ്റിൽ റോക്ക്</item>
+        <item>സ്യൂ ഫാൾസ്</item>
+        <item>ജാക്സൺ</item>
+        <item>ചാൾസ്ടൺ, സൗത്ത് കരോലിന</item>
+        <item>ഫർഗോ</item>
+        <item>ബില്ലിംഗ്സ്</item>
+        <item>പോർട്ട്‌ലൻഡ്, മെയിൻ</item>
+        <item>ഷൈയെൻ</item>
+        <item>ചാൾസ്ടൺ, വെസ്റ്റ് വെർജിനിയ</item>
+        <item>പിറ്റ്‌സ്‌ബർഗ്</item>
+        <item>ഗ്രീൻ ബേ</item>
+        <item>സെന്‍റ്. ലൂയിസ്</item>
+        <item>ദി വാലി</item>
+        <item>UTC (കോർഡിനേറ്റഡ് യൂണിവേഴ്സൽ ടൈം)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>അഫ്‌ഗാനിസ്ഥാന്‍</item>
+        <item>അള്‍ജീരിയ</item>
+        <item>സമോവ</item>
+        <item>ആന്‍റിഗ്വെ ആന്‍റ് ബര്‍ബുഡ</item>
+        <item>അര്‍ജന്‍റീന</item>
+        <item>അര്‍മീനിയ</item>
+        <item>ഓസ്ട്രേല്യ</item>
+        <item>അസര്‍ബൈജാന്‍</item>
+        <item>ബംഗ്ലാദേശ്</item>
+        <item>റിപ്പബ്ലിക്ക് ഓഫ് ബാഷ്‍കൊര്‍ട്ടൊസ്താന്‍</item>
+        <item>ബെലാറസ്</item>
+        <item>ബൊളീവിയ</item>
+        <item>ബ്രസീല്‍</item>
+        <item>ബള്‍ഗേറിയ</item>
+        <item>കംബോഡിയ</item>
+        <item>കാനഡ</item>
+        <item>ചിലി</item>
+        <item>ചൈന</item>
+        <item>കൊളംബിയ</item>
+        <item>ചെക് റിപ്പബ്ലിക്ക്</item>
+        <item>റിപ്പബ്ലിക്ക് ഓഫ് ദി കോംഗോ</item>
+        <item>ഇക്വഡോർ</item>
+        <item>എസ്തോണിയ</item>
+        <item>ഫിന്‍ലാന്‍ഡ്</item>
+        <item>ഫ്രാൻസ്</item>
+        <item>ജോര്‍ജ്ജിയ</item>
+        <item>ജർമ്മനി</item>
+        <item>ഗ്രീസ്</item>
+        <item>ഹംഗറി</item>
+        <item>ഇന്ത്യ</item>
+        <item>ഇന്തോനേഷ്യ</item>
+        <item>ഇറാന്‍</item>
+        <item>ഐയര്‍ലന്‍ഡ്</item>
+        <item>ഇസ്രയേൽ</item>
+        <item>ഇറ്റലി</item>
+        <item>ജപ്പാന്‍</item>
+        <item>ഖസക്കിസ്ഥാന്‍</item>
+        <item>കെ‍നിയ</item>
+        <item>കിരിബത്തി</item>
+        <item>ലാത്‍വിയ</item>
+        <item>ലിത്വാനിയ</item>
+        <item>മലേഷ്യ</item>
+        <item>മെക്സിക്കോ</item>
+        <item>മംഗോളിയ</item>
+        <item>മൊറോക്കോ</item>
+        <item>നേപ്പാള്‍</item>
+        <item>ന്യൂസിലാന്‍ഡ്</item>
+        <item>പാകിസ്ഥാൻ</item>
+        <item>പെറു</item>
+        <item>ഫിലിപ്പൈന്‍സ്</item>
+        <item>പോളണ്ട്</item>
+        <item>പോര്‍ച്ചുഗല്‍</item>
+        <item>ഭൂപടം</item>
+        <item>ദക്ഷിണ കൊറിയ</item>
+        <item>റിപ്പബ്ലിക്ക് ഓഫ് സിംഗപ്പൂര്‍</item>
+        <item>ലിബിയ</item>
+        <item>റൊമേനിയ</item>
+        <item>റഷ്യ</item>
+        <item>സൗദി അറേബ്യ</item>
+        <item>സ്ലൊവാക്യ</item>
+        <item>സൗത്ത് ആഫ്രിക്ക</item>
+        <item>സ്പെയിന്‍</item>
+        <item>ശ്രീലങ്ക</item>
+        <item>സ്വീഡന്‍</item>
+        <item>തൈവാന്‍</item>
+        <item>തായ്‍ലാന്‍റ്</item>
+        <item>ടുണീഷ്യ</item>
+        <item>തുര്‍‌ക്കി</item>
+        <item>UAE</item>
+        <item>യുണൈറ്റഡ് കിംഗ്ഡം</item>
+        <item>ഉക്രൈൻ</item>
+        <item>USA</item>
+        <item>ഉസ്ബക്കിസ്ഥാന്‍</item>
+        <item>വെനിസുല</item>
+        <item>വിയറ്റ്നാം</item>
+        <item>GB വിര്‍ജിന്‍ ഐലന്‍ഡ്സ്</item>
+        <item>സ്വിറ്റ്സര്‍ലാന്‍ഡ്</item>
+        <item>ഈജിപ്ത്</item>
+        <item>ഐവറി കോസ്റ്റ്</item>
+        <item>ഘാന</item>
+        <item>എത്യോപ്യ</item>
+        <item>ജോർദാൻ</item>
+        <item>നെതര്‍ലാന്‍ഡ്സ്</item>
+        <item>മഡഗാസ്കര്‍</item>
+        <item>ടർക്ക്മെനിസ്ഥാൻ</item>
+        <item>എറിട്രിയ</item>
+        <item>പരഗ്വേ</item>
+        <item>ഇറാഖ്</item>
+        <item>മാലി</item>
+        <item>സെന്‍ട്രല്‍ ആഫ്രിക്കന്‍ റിപ്പബ്ലിക്ക്</item>
+        <item>ഗ്വാഡെലൂപ്</item>
+        <item>ലെബനന്‍</item>
+        <item>സെര്‍ബിയ</item>
+        <item>ബെലിസ്</item>
+        <item>കിര്‍ഗിസ്ഥാന്‍</item>
+        <item>ഗിനിയ ബിസൗ</item>
+        <item>ബാര്‍ബഡോസ്</item>
+        <item>ബെല്‍ജിയം</item>
+        <item>ഫ്രഞ്ച് ഗയാന</item>
+        <item>മൊൾഡോവ</item>
+        <item>ഗിനിയ</item>
+        <item>ഡെന്‍മാര്‍ക്ക്</item>
+        <item>സെനഗല്‍</item>
+        <item>സിറിയ</item>
+        <item>ടാന്‍സാനിയ</item>
+        <item>ജിബൌട്ടി</item>
+        <item>ഖത്തര്‍</item>
+        <item>കാമറൂണ്‍</item>
+        <item>തജിക്കിസ്ഥാന്‍</item>
+        <item>സ്കോട്‍ലന്‍ഡ്</item>
+        <item>മാര്‍ട്ടിനിക്</item>
+        <item>സിയാറ ലിയോണ്‍</item>
+        <item>ബോട്സ്വാന</item>
+        <item>ഗയാന</item>
+        <item>സൗത്ത് ജോര്‍ജിയ</item>
+        <item>ഗ്വാട്ടിമല</item>
+        <item>സെയ്ന്‍റ് ബാര്‍ത്തെലെമി</item>
+        <item>സിംബാബ്‍വേ</item>
+        <item>ക്യൂബ</item>
+        <item>ഉഗാണ്ട</item>
+        <item>സുഡാന്‍</item>
+        <item>ജമൈക്ക</item>
+        <item>കുവൈറ്റ്</item>
+        <item>നൈജീരിയ</item>
+        <item>അങ്കോള</item>
+        <item>സാംബിയ</item>
+        <item>ലക്സംബര്‍ഗ്</item>
+        <item>ഇക്വറ്റോറിയല്‍ ഗിനിയ</item>
+        <item>മാലിദ്വീപുകള്‍</item>
+        <item>നികാരഗ്വ</item>
+        <item>ബഹറിന്‍</item>
+        <item>മൊസാംബിക്</item>
+        <item>സെയ്ന്‍റ് മാര്‍ട്ടിന്‍</item>
+        <item>സൊമാലിയ</item>
+        <item>ലൈബീരിയ</item>
+        <item>ഉറുഗ്വെ</item>
+        <item>ഒമാന്‍</item>
+        <item>ചാഡ്</item>
+        <item>നൈജര്‍</item>
+        <item>മൗറിത്താനിയ</item>
+        <item>ന്യൂ കാലിഡോണിയ</item>
+        <item>ടോംഗ</item>
+        <item>ഗ്രീന്‍ലാന്‍ഡ്</item>
+        <item>ബുര്‍ക്കിനാ ഫാസോ</item>
+        <item>പനാമ</item>
+        <item>സുരിനയിം</item>
+        <item>മോണ്ടെനെഗ്രോ</item>
+        <item>മൗറീഷ്യസ്</item>
+        <item>ഹെയ്ത്തി</item>
+        <item>ഡെമോക്രാറ്റിക് പീപ്പിള്‍സ് റിപ്പബ്ലിക്ക് ഓഫ് കൊറിയ</item>
+        <item>മ്യാന്‍മാര്‍</item>
+        <item>എസ്‍ലാന്‍ഡ്</item>
+        <item>റീയൂണിയന്‍ ഐലന്‍ഡ്</item>
+        <item>കോസ്റ്ററിക്ക</item>
+        <item>പ്യൂർട്ടോറിക്കോ</item>
+        <item>എല്‍ സാല്‍വഡോര്‍</item>
+        <item>യെമൻ</item>
+        <item>ഡോമിനിക്കൻ റിപ്പബ്ലിക്ക്</item>
+        <item>മാസിഡോണിയ</item>
+        <item>ഫിജി</item>
+        <item>ഫ്രഞ്ച് പോളിനേഷ്യ</item>
+        <item>ഹോണ്ടുറാസ്</item>
+        <item>ലീക്ടെന്‍സ്റ്റീന്‍</item>
+        <item>മാള്‍ട്ട</item>
+        <item>സീഷെല്‍സ്</item>
+        <item>ഓസ്ട്രിയ</item>
+        <item>ക്രൊയേഷ്യ</item>
+        <item>വെയില്‍സ്</item>
+        <item>US വിര്‍ജിന്‍ ഐലന്‍ഡ്സ്</item>
+        <item>സ്ലൊവേനിയ</item>
+        <item>സാന്‍ മരീനോ</item>
+        <item>നോര്‍വെ</item>
+        <item>പാപ്പുവ ന്യൂ ഗിനിയ</item>
+        <item>ബഹാമസ്</item>
+        <item>സൈപ്രസ്</item>
+        <item>തിമോർ ലെസ്തെ</item>
+        <item>ടോഗോ</item>
+        <item>ഡോമിനിക്ക</item>
+        <item>ഗാബോണ്‍</item>
+        <item>ലസോതോ</item>
+        <item>മാർഷൽ ഐലന്‍റ്സ്</item>
+        <item>മൊണാക്കോ</item>
+        <item>ബ്രൂണെ</item>
+        <item>ഗാംബിയ</item>
+        <item>ബറുണ്ടി</item>
+        <item>കോംഗോ ഡെമോക്രാറ്റിക്ക് റിപ്പബ്ലിക്ക്</item>
+        <item>ലാവോസ്</item>
+        <item>നമീബിയ</item>
+        <item>ബോസ്നിയ ആൻഡ് ഹെർസഗോവിന</item>
+        <item>സായ്പാൻ</item>
+        <item>സാവോ ടോം ആന്‍റ് പ്രിൻസിപീ</item>
+        <item>ഗ്രനെയ്ഡ</item>
+        <item>ഫാൾക്ക്‌ലാന്‍റ് ഐലന്‍റ്സ്</item>
+        <item>അമേരിക്കൻ സമോവ</item>
+        <item>എൻഡോറ</item>
+        <item>സഹ്രാവി റിപ്പബ്ലിക്ക്</item>
+        <item>ക്യുറസോ</item>
+        <item>എസ്വാറ്റിനി</item>
+        <item>സെന്‍റ് ലൂസിയ</item>
+        <item>പലാവ്</item>
+        <item>റുവാണ്ട</item>
+        <item>സെന്‍റ് വിൻസന്‍റ് ആന്‍റ് ഗ്രെനഡീൻസ്</item>
+        <item>ഫറോ ഐലന്‍റ്സ്</item>
+        <item>അൽബേനിയ</item>
+        <item>ഭൂട്ടാൻ</item>
+        <item>ബെനിൻ</item>
+        <item>കേപ് വെർദേ</item>
+        <item>കൊസവോ</item>
+        <item>ബർമുഡ</item>
+        <item>സോളമൻ ഐലന്‍റ്സ്</item>
+        <item>തായ്‌വാൻ, ചൈന</item>
+        <item>ട്രിനിഡാഡ് ആന്‍റ് ടൊബാഗോ</item>
+        <item>ആംഗ്വില</item>
+        <item>UTC (കോർഡിനേറ്റഡ് യൂണിവേഴ്സൽ ടൈം)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ 1 മിനിറ്റായി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %2$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s ഉം %2$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %2$s ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s, %2$s, ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>ഇപ്പോൾ മുതൽ %s-ന് ശേഷമായി അലാറം ക്രമീകരിച്ചു.</item>
+        <item>ഇപ്പോള്‍ മുതല്‍ %1$s, %2$s-ന് ശേഷമായി അലാറം ക്രമീകരിച്ചു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s, %2$s, ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>ഇപ്പോള്‍ മുതല്‍ %1$s, %2$s-ന് ശേഷമായി അലാറം ക്രമീകരിച്ചു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s, %2$s, ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>അലാറം ഇപ്പോള്‍ മുതല്‍ %1$s, %2$s, ഉം %3$s ആയി ക്രമീകരിച്ചിരിക്കുന്നു.</item>
+        <item>ഇപ്പോൾ മുതൽ %1$s, %2$s, %3$s, %4$s-ന് ശേഷമായി അലാറം ക്രമീകരിച്ചു.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

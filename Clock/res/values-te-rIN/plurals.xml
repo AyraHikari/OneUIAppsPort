@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">అలారం %d రోజులలో ఉంది</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">అలారం %d రోజులో ఉంది</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">అలారం %d గంటలలో ఉంది</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">అలారం %d గంటలో ఉంది</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">%d గంటల 1 నిమిషంలో అలారం ఉంది</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d గంట 1 నిమిషంలో అలారం ఉంది</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">అలారం %d నిమిషాలలో ఉంది</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">అలారం %d నిమిషంలో ఉంది</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d నిమిషాలలో</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d నిమిషంలో</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%d కంటే ఎక్కువ అలారంలను జోడించలేరు.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d కంటే ఎక్కువ అలారంని జోడించలేరు.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d నిమిషాలు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d నిమిషం</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d నేపథ్యాలను తొలగించాలా?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d నేపథ్యాన్ని తొలగించాలా?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ఎంచుకోబడింది</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ఎంచుకోబడింది</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d నిమిషాల ముందు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d నిమిషం ముందు</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, %3$d ఇతరాలు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, %3$d ఇతరం</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">నిద్ర సమయం: %d గంటలు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">నిద్ర సమయం: %d గంట</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">నిద్ర సమయం: %d నిమిషాలు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">నిద్ర సమయం: %d నిమిషం</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d నిమిషాలు స్నూజ్ చేయి</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d నిమిషం స్నూజ్ చేయి</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">మైనస్ %d నిమిషాలు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">మైనస్ %d నిమిషం</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">ప్లస్ %d నిమిషాలు</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ప్లస్ %d నిమిషం</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%d కంటే ఎక్కువ ప్రీసెట్ టైమర్‌లను జోడించలేరు.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d కంటే ఎక్కువ ప్రీసెట్ టైమర్‌ని జోడించలేరు.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%d కంటే ఎక్కువ నగరాలను జోడించలేరు.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d కంటే ఎక్కువ నగరాన్ని జోడించలేరు.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

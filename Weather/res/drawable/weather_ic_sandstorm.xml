@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_sandstorm__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s9" android:animation="@drawable/$weather_ic_sandstorm__1" />
+    <target android:name="s8" android:animation="@drawable/$weather_ic_sandstorm__6" />
+    <target android:name="s7" android:animation="@drawable/$weather_ic_sandstorm__11" />
+    <target android:name="c2s6" android:animation="@drawable/$weather_ic_sandstorm__16" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$weather_ic_sandstorm__19" />
+    <target android:name="c2s5" android:animation="@drawable/$weather_ic_sandstorm__21" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_sandstorm__24" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_sandstorm__25" />
+    <target android:name="c2s4" android:animation="@drawable/$weather_ic_sandstorm__27" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_sandstorm__30" />
+    <target android:name="c2s3" android:animation="@drawable/$weather_ic_sandstorm__32" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_sandstorm__35" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_sandstorm__36" />
+    <target android:name="c2" android:animation="@drawable/$weather_ic_sandstorm__38" />
+</animated-vector>

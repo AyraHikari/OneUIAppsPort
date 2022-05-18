@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>মিডৱে</item>
+        <item>হোনোলুলু</item>
+        <item>হাৱাই</item>
+        <item>আলাস্কা</item>
+        <item>"এংক'ৰেজ"</item>
+        <item>চান ফ্ৰেনচিছস্কো</item>
+        <item>ভেনকোভেৰ</item>
+        <item>"চিট'ল"</item>
+        <item>লছ এঞ্জেল</item>
+        <item>টিজুৱানা</item>
+        <item>কলগাৰি</item>
+        <item>ফিনিক্স</item>
+        <item>মাজাটলান</item>
+        <item>ডেনভাৰ</item>
+        <item>মেক্সিকো চিটি</item>
+        <item>ৱিনিংপেগ</item>
+        <item>"ডেয়েগ' গাৰচিয়া"</item>
+        <item>ডাল্লাস</item>
+        <item>"চিকাগ'"</item>
+        <item>টোৰোনটো</item>
+        <item>মিয়ামী</item>
+        <item>লীমা</item>
+        <item>কুইটো</item>
+        <item>ৱাচিংটন DC</item>
+        <item>"অ'টোৱা"</item>
+        <item>নিউ ইয়ৰ্ক</item>
+        <item>বোগোটা</item>
+        <item>"চান্টিয়াগ'"</item>
+        <item>লা পাজ</item>
+        <item>কাৰাকাচ</item>
+        <item>বুএনোচ আইৰেচ</item>
+        <item>নিউফাউণ্ডলেণ্ড</item>
+        <item>"চেণ্ট জ'ন্স"</item>
+        <item>চাও পুৱালো</item>
+        <item>ব্ৰাজিলা</item>
+        <item>"ৰিঅ' ডে জানেৰিয়"</item>
+        <item>ফাৰ্নানডু ডে নোৰোনহা</item>
+        <item>"এজ'ৰ্চ্"</item>
+        <item>লিচবন</item>
+        <item>কাছাব্লাঙ্কা</item>
+        <item>ডাবলিন</item>
+        <item>ৰাবাট</item>
+        <item>মাড্ৰিড</item>
+        <item>দি চেটেলমেণ্ট</item>
+        <item>লণ্ডন</item>
+        <item>কিংষ্টন</item>
+        <item>বাৰ্চেলোনা</item>
+        <item>পেৰিচ</item>
+        <item>এলগিয়াৰ্চ</item>
+        <item>টুনিচ</item>
+        <item>ট্ৰিপলি</item>
+        <item>বৰ্লিন</item>
+        <item>ৰোম</item>
+        <item>প্ৰাগ</item>
+        <item>কিনছাছা</item>
+        <item>"ষ্টকহ'ম"</item>
+        <item>ব্ৰাটিছলাভা</item>
+        <item>কেপ টাউন</item>
+        <item>বুডাপেষ্ট</item>
+        <item>"ৱাৰচ'"</item>
+        <item>কলিনইনগ্ৰেড</item>
+        <item>চোফিয়া</item>
+        <item>এথেন্স</item>
+        <item>লভিভ</item>
+        <item>হেলচিংকি</item>
+        <item>ৰিগা</item>
+        <item>টাল্লিন্ন্</item>
+        <item>বুচাৰেষ্ট</item>
+        <item>ভিলনুৱাচ</item>
+        <item>লুবুমভাচি</item>
+        <item>মিনস্ক</item>
+        <item>চেইণ্ট পিটাৰচবাৰ্গ</item>
+        <item>ইষ্টানবুল</item>
+        <item>কামচাটকা</item>
+        <item>কিয়েভ</item>
+        <item>জেৰুজেলাম</item>
+        <item>মোচকাউ</item>
+        <item>খাৰকিভ</item>
+        <item>নাইৰোবি</item>
+        <item>জেধা</item>
+        <item>ভোলগোগ্রাড</item>
+        <item>য়েৰেভান</item>
+        <item>টিবিলিছি</item>
+        <item>বাকু</item>
+        <item>চিটা</item>
+        <item>চামাৰা</item>
+        <item>টেহৰান</item>
+        <item>ইজেভাস্ক</item>
+        <item>আবু ধাবি</item>
+        <item>ডুবাই</item>
+        <item>উফা</item>
+        <item>য়েকাটেৰিনবাৰ্গ</item>
+        <item>চেলিয়াবিন্সক</item>
+        <item>কৰাচী</item>
+        <item>কাবুল</item>
+        <item>টাস্কেণ্ট</item>
+        <item>ইচলামাবাদ</item>
+        <item>মুম্বাই</item>
+        <item>অমেস্ক</item>
+        <item>এলমাটি</item>
+        <item>বাঙ্গালোৰ</item>
+        <item>হাইদৰাবাদ</item>
+        <item>নতুন দিল্লী</item>
+        <item>"কলম্ব'"</item>
+        <item>চেন্নাই</item>
+        <item>নোভোচিব্ৰিস্ক</item>
+        <item>কাঠমাণ্ডু</item>
+        <item>নোভোকুজেনটাক</item>
+        <item>কলকাতা</item>
+        <item>ঢাকা</item>
+        <item>হোভড</item>
+        <item>কাৰ্স্নোযাৰ্স্ক</item>
+        <item>বেংকক</item>
+        <item>কুৱালা লামপুৰ</item>
+        <item>চিঙ্গাপুৰ</item>
+        <item>আৰ্কুটাস্ক</item>
+        <item>ফনোম পেনহ</item>
+        <item>হানোই</item>
+        <item>জাকাৰ্টা</item>
+        <item>উলান বাটোৰ</item>
+        <item>হংকং</item>
+        <item>পাৰ্থ</item>
+        <item>বেইজিং</item>
+        <item>মানিলা</item>
+        <item>টাইপি</item>
+        <item>চিউল</item>
+        <item>"এমব'ন"</item>
+        <item>"ভ্লেডিভ'ষ্টক"</item>
+        <item>য়াকুষ্টক</item>
+        <item>খাবৰোভাস্ক</item>
+        <item>এডিলেট</item>
+        <item>"টকিঅ'"</item>
+        <item>য়ুঝুনো-চাখালিন্সকা</item>
+        <item>হালিফেক্স</item>
+        <item>গুৱাম</item>
+        <item>কেনবেৰা</item>
+        <item>মাগাডন</item>
+        <item>চিডনী</item>
+        <item>পেটৰোপাভলোভাস্কা-কামচাটস্কি</item>
+        <item>টাৰাৱা</item>
+        <item>অউকালেণ্ড</item>
+        <item>"ৱিইলিংট'ন"</item>
+        <item>পাগো পাগো</item>
+        <item>ডেনপাচাৰ</item>
+        <item>বাৰ্ন</item>
+        <item>জুৰিচ</item>
+        <item>"কাইৰ'"</item>
+        <item>আবিডজান</item>
+        <item>আক্রা</item>
+        <item>এদ্দিচ আবাবা</item>
+        <item>আম্মান</item>
+        <item>আমষ্ট্ৰেনডম</item>
+        <item>আনাডেৰ</item>
+        <item>অনকাৰা</item>
+        <item>"আন্টানানাৰিভ'"</item>
+        <item>আচগাবাত</item>
+        <item>আচমাৰা</item>
+        <item>আষ্টনা</item>
+        <item>আচানচিয়ন</item>
+        <item>অষ্টিন</item>
+        <item>বাগদাদ</item>
+        <item>বাল্টিমোৰ</item>
+        <item>বামাকো</item>
+        <item>বেঙ্গুই</item>
+        <item>বাৰি</item>
+        <item>বাছে-টেৰে</item>
+        <item>বেইৰুট</item>
+        <item>বেলগ্ৰেড</item>
+        <item>বেলিজ চহৰ</item>
+        <item>বিচহেক</item>
+        <item>বিচ্ছাউ</item>
+        <item>"ব'লগনা"</item>
+        <item>"ব'ষ্টন"</item>
+        <item>ব্ৰিজটাউন</item>
+        <item>ব্ৰিছবান</item>
+        <item>ব্ৰুছেলচ</item>
+        <item>কেনেৰি আইলেণ্ড</item>
+        <item>কেটানজাৰো</item>
+        <item>কায়ন্নে</item>
+        <item>চাৰ্লোট্টে</item>
+        <item>চিশ্বিনাউ</item>
+        <item>ক্লীভলেণ্ড</item>
+        <item>কলোম্বাছ</item>
+        <item>"ক'নাক্ৰী"</item>
+        <item>কপেনহেগেন</item>
+        <item>কোৰ্ক</item>
+        <item>"ক্ৰোট'ন"</item>
+        <item>ডাকাৰ</item>
+        <item>ডামাচকুচ</item>
+        <item>ডাৰ ইচ ছালাম</item>
+        <item>ডাৰৱিন</item>
+        <item>"ডেট্ৰ'ইট"</item>
+        <item>জিবৌটি</item>
+        <item>ডোহা</item>
+        <item>দৌৱালা</item>
+        <item>ডুচহানবে</item>
+        <item>ইষ্টাৰ দ্বীপ</item>
+        <item>এডিনবাৰ্গ</item>
+        <item>"এল পাচ'"</item>
+        <item>"ফ্ল'ৰেঞ্চ"</item>
+        <item>"ফ'ৰ্ট-ডে-ফ্ৰান্স"</item>
+        <item>ফ্ৰিটাউন</item>
+        <item>গাবোৰোনী</item>
+        <item>গেলাপেগোছ দ্বীপ</item>
+        <item>জেনেভা</item>
+        <item>জেনোৱা</item>
+        <item>জৰ্জটাউন</item>
+        <item>গ্ৰিটভিকেন</item>
+        <item>গুৱাটিমালা চহৰ</item>
+        <item>গুষ্টাভিয়া</item>
+        <item>হামবাৰ্গ</item>
+        <item>হাৰাৰে</item>
+        <item>হাভানা</item>
+        <item>হোবাৰ্ট</item>
+        <item>হাউষ্টন</item>
+        <item>ইণ্ডিয়ানএপোলিচ</item>
+        <item>জোহাঞ্চবাৰ্গ</item>
+        <item>কামপালা</item>
+        <item>খাৰ্টোম</item>
+        <item>কিংষ্টন</item>
+        <item>কুৱেত চহৰ</item>
+        <item>লগোছ</item>
+        <item>লাছ ভেগাছ</item>
+        <item>লজুব্লজনা</item>
+        <item>হাইকু</item>
+        <item>লুইচভিলে</item>
+        <item>লুৱানডা</item>
+        <item>লুচাকা</item>
+        <item>লুক্সামবাৰ্গ</item>
+        <item>মাকাউ</item>
+        <item>মালাবো</item>
+        <item>মেল</item>
+        <item>মানাগু</item>
+        <item>মানামা</item>
+        <item>মেপুটো</item>
+        <item>মাৰিগোট</item>
+        <item>মেকা</item>
+        <item>মেলবাৰ্ণ</item>
+        <item>মেমফিচ</item>
+        <item>মেচিনা</item>
+        <item>মিলান</item>
+        <item>মিলৱাউকী</item>
+        <item>মোগাডিচু</item>
+        <item>"মনৰ'ভিয়া"</item>
+        <item>"মোন্টেভিডিঅ'"</item>
+        <item>মনট্ৰিয়েল</item>
+        <item>মিউনিখ</item>
+        <item>মুচকেট</item>
+        <item>নেপ্লচ</item>
+        <item>নাটেৰ্চ</item>
+        <item>এনডিজামেনা</item>
+        <item>নিয়ামি</item>
+        <item>নৌকচোট্ট</item>
+        <item>নৌমেয়া</item>
+        <item>"নুকু'আলোফা"</item>
+        <item>নুক</item>
+        <item>অচাকা</item>
+        <item>ঔয়াগাডৌগৌ</item>
+        <item>পালেৰমো</item>
+        <item>পানামা চিটি</item>
+        <item>পেৰামাৰিবো</item>
+        <item>পেৰ্ম</item>
+        <item>ফিলাডেলফিয়া</item>
+        <item>পোডগোৰিকা</item>
+        <item>পোণ্টা ডেলগাডা</item>
+        <item>"প'ৰ্ট লোইচ"</item>
+        <item>"প'ৰ্ট-অ-প্ৰিন্স"</item>
+        <item>"পোৰ্টলেণ্ড, ওৰেগ'ন"</item>
+        <item>পিয়ংইয়াং</item>
+        <item>যানগোন</item>
+        <item>ৰেচিফে</item>
+        <item>ৰেইকজাভিক</item>
+        <item>ৰীয়াধ</item>
+        <item>চেইণ্ট-ডেনিচ</item>
+        <item>"ছান এণ্টনিঅ'"</item>
+        <item>"চান ডিয়েগ'"</item>
+        <item>"ছান জ'ছ"</item>
+        <item>"ছান জ'ছ"</item>
+        <item>চেন জোৱান</item>
+        <item>চান মাৰিনো</item>
+        <item>চান চাল্বাডোৰ</item>
+        <item>চানা</item>
+        <item>চাণ্টো ডোমিঙ্গো</item>
+        <item>চাংঘাই</item>
+        <item>চেনজান</item>
+        <item>স্কোপজে</item>
+        <item>"চেণ্ট জ'ন্স"</item>
+        <item>চুভা</item>
+        <item>টাহিটি</item>
+        <item>টেগুচিগাল্পা</item>
+        <item>হো চি মিন চহৰ</item>
+        <item>টিয়ানজিন</item>
+        <item>"টৰিন'"</item>
+        <item>ভাদুজ</item>
+        <item>ভাল্লেট্টা</item>
+        <item>ভেৰোনা</item>
+        <item>ভিক্টোৰিয়া</item>
+        <item>ভিয়েনা</item>
+        <item>যামোচকৰো</item>
+        <item>য়াওউণ্ডে</item>
+        <item>জাগাৰ্ব</item>
+        <item>গুৱাংঝৌ</item>
+        <item>কাৰ্ডিফ</item>
+        <item>ৰেজিনা</item>
+        <item>"চ'ৰলোটে আমালী"</item>
+        <item>আটলাণ্টা</item>
+        <item>"মায়'টে"</item>
+        <item>ছেইণ্ট পিয়েৰ আৰু মেকুয়েলিন</item>
+        <item>ওস্লো</item>
+        <item>"স্ৰেডনেক'লিমস্ক"</item>
+        <item>"চেভৰ'-কুৰিস্ক"</item>
+        <item>ৱুহান</item>
+        <item>চেনগডু</item>
+        <item>"ছি'য়ান"</item>
+        <item>"পৰ্ট ম'ৰেছবাই"</item>
+        <item>ডাভাও চিটি</item>
+        <item>চংকুইং</item>
+        <item>শ্বেনয়াং</item>
+        <item>ননজিং</item>
+        <item>হাৰবিন</item>
+        <item>জিনান</item>
+        <item>জেনঘৌ</item>
+        <item>কুনমিং</item>
+        <item>চাংচুন</item>
+        <item>ফুঝো</item>
+        <item>কুচিং</item>
+        <item>মাকাচাৰ</item>
+        <item>হাংজউ</item>
+        <item>কুইংডাও</item>
+        <item>নানিং</item>
+        <item>উৰুমকি</item>
+        <item>নাচাও</item>
+        <item>নিকোচিয়া</item>
+        <item>দিলি</item>
+        <item>ৰোড টাউন</item>
+        <item>লোম</item>
+        <item>"ৰ'চিউ"</item>
+        <item>লাইব্ৰেভিল</item>
+        <item>মাৰ্চিল</item>
+        <item>মাচেৰু</item>
+        <item>মাজুৰো</item>
+        <item>"ম'নাকো"</item>
+        <item>বন্দৰ চেৰি বেগাৱান</item>
+        <item>বঞ্জুল</item>
+        <item>বুচান</item>
+        <item>বুজুমবোৰা</item>
+        <item>ব্ৰাজাভিল</item>
+        <item>ভিয়েনতিয়ান</item>
+        <item>ৱীণ্ডহুক</item>
+        <item>চাৰাজেভো</item>
+        <item>চাইপান</item>
+        <item>"চাও ট'ম"</item>
+        <item>চেইণ্ট জৰ্জ</item>
+        <item>ষ্টেনলি</item>
+        <item>এডেন</item>
+        <item>এপিয়া</item>
+        <item>অণ্ডোৰা লা ভেলা</item>
+        <item>লাউন</item>
+        <item>ৱীলেমষ্টেড</item>
+        <item>এমবাবানে</item>
+        <item>কাষ্ট্ৰিচ</item>
+        <item>"ক'ৰ'ৰ"</item>
+        <item>কানকুন</item>
+        <item>কিগালি</item>
+        <item>কিংচটাউন</item>
+        <item>টেল এভিভ</item>
+        <item>টৰ্চাভান</item>
+        <item>তিৰানা</item>
+        <item>থীম্ফু</item>
+        <item>পৰ্টো-নোভো</item>
+        <item>প্ৰাইয়া</item>
+        <item>ফ্ৰেংফাৰ্ট</item>
+        <item>প্ৰিষ্টিনা</item>
+        <item>হেমিল্টন</item>
+        <item>হোনিয়াৰা</item>
+        <item>পৰ্ট অৱ স্পেইন</item>
+        <item>মিনিয়াপোলিচ</item>
+        <item>হিলো</item>
+        <item>ওৰলান্দো</item>
+        <item>কানচাচ চিটি</item>
+        <item>নিউ ওৰলিয়ানচ</item>
+        <item>নাচভিল্লে</item>
+        <item>টুকচোন</item>
+        <item>টাম্পা</item>
+        <item>"জেকচ'নভিল্লে"</item>
+        <item>অকলাহোমা চিটি</item>
+        <item>অলবুকুয়েৰকুই</item>
+        <item>ওমাহা</item>
+        <item>ভাৰ্জিনিয়া বিচ</item>
+        <item>বোইচ</item>
+        <item>ডেচ মোইন্চ</item>
+        <item>বিৰমিঙ্গহাম</item>
+        <item>চল্ট লেক চিটি</item>
+        <item>লিটিল ৰোক</item>
+        <item>চিওক্স ফল্চ</item>
+        <item>"জেকচ'ন"</item>
+        <item>"চাৰ্লেষ্ট'ন, দক্ষিণ কেৰোলিনা"</item>
+        <item>"ফাৰ্গ'"</item>
+        <item>বিলিংচ্‌</item>
+        <item>পোৰ্টলেণ্ড, মাইন</item>
+        <item>চেয়েনী</item>
+        <item>"চাৰ্লেষ্ট'ন, পশ্চিম ভাৰ্জিনিয়া"</item>
+        <item>পিট্চবাৰ্ঘ</item>
+        <item>গ্ৰীণ বেয়</item>
+        <item>চেইণ্ট লুইচ</item>
+        <item>দ্যা ভেলী</item>
+        <item>UTC (সমন্বিত ইউনিভাৰ্চেল সময়)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>আফগানিস্তান</item>
+        <item>আলজেৰিয়া</item>
+        <item>চামোৱা</item>
+        <item>এন্টিগুৱা আৰু বাৰ্বুডা</item>
+        <item>আৰ্জেনণ্টিনা</item>
+        <item>আৰমেনিয়া</item>
+        <item>অষ্ট্ৰেলিয়া</item>
+        <item>আজাৰবাইজান</item>
+        <item>বাংলাদেশ</item>
+        <item>ৰিপাব্লিক অফ বাচকোৰ্টোস্থান</item>
+        <item>বেলাৰুছ</item>
+        <item>বলিভিয়া</item>
+        <item>ব্ৰাজিল</item>
+        <item>বুলগেৰিয়া</item>
+        <item>"কেম্ব'ডিয়া"</item>
+        <item>কানাডা</item>
+        <item>চাইল</item>
+        <item>চীন</item>
+        <item>"কল'ম্বিয়া"</item>
+        <item>জেক গণৰাজ্য</item>
+        <item>কংগো গণতন্ত্ৰ</item>
+        <item>ইকুৱেডৰ</item>
+        <item>ইষ্টোনিয়া</item>
+        <item>ফিনলেণ্ড</item>
+        <item>ফ্ৰান্স</item>
+        <item>জৰ্জিয়া</item>
+        <item>জাৰ্মানী</item>
+        <item>গ্ৰীচ</item>
+        <item>হাঙ্গাৰী</item>
+        <item>ভাৰত</item>
+        <item>ইণ্ডোনেচিয়া</item>
+        <item>ইৰান</item>
+        <item>আয়ৰলেণ্ড</item>
+        <item>ইজৰাইল</item>
+        <item>ইটালী</item>
+        <item>জাপান</item>
+        <item>কাজাখাস্তান</item>
+        <item>কেনিয়া</item>
+        <item>কিৰিবাটি</item>
+        <item>লাটভিয়া</item>
+        <item>লিথিওনিয়া</item>
+        <item>মালয়েচিয়া</item>
+        <item>মেক্সিকো</item>
+        <item>মঙ্গোলিয়া</item>
+        <item>মৰক্কো</item>
+        <item>নেপাল</item>
+        <item>নিউজিলেণ্ড</item>
+        <item>পাকিস্তান</item>
+        <item>পেৰু</item>
+        <item>ফিলিপিন্স</item>
+        <item>পোলেণ্ড</item>
+        <item>পৰ্তুগাল</item>
+        <item>মেপ</item>
+        <item>দক্ষিণ কোৰিয়া</item>
+        <item>ছিঙ্গাপুৰ গণৰাজ্য</item>
+        <item>লিবিয়া</item>
+        <item>ৰোমানিয়া</item>
+        <item>ৰাছিয়া</item>
+        <item>চৌদি আৰৱ</item>
+        <item>শ্লোভাকীয়া</item>
+        <item>দক্ষিন আফ্ৰিকা</item>
+        <item>স্পেইন</item>
+        <item>শ্ৰী লংকা</item>
+        <item>চুইডেন</item>
+        <item>তাইৱান</item>
+        <item>থাইলেণ্ড</item>
+        <item>টুনিচিয়া</item>
+        <item>তুৰ্কী</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>ইউক্ৰেইন</item>
+        <item>USA</item>
+        <item>উজবেকিস্থান</item>
+        <item>ভেনেজুৱেলা</item>
+        <item>ভিয়েতনাম</item>
+        <item>GB ভাৰ্জিন দ্বীপ</item>
+        <item>চুইজাৰলেণ্ড</item>
+        <item>ইজিপ্ট</item>
+        <item>"ক'টে ডি-ইভইৰে"</item>
+        <item>ঘানা</item>
+        <item>ইথিওপিয়া</item>
+        <item>জৰ্ডান</item>
+        <item>নেডাৰলেণ্ডছ</item>
+        <item>মাডাগাস্কাৰ</item>
+        <item>তুৰ্কমেনিস্তান</item>
+        <item>এৰিটেৰা</item>
+        <item>পাৰাগুৱাহ</item>
+        <item>ইৰাক</item>
+        <item>মালি</item>
+        <item>চেন্ট্ৰেল আফ্ৰিকান ৰিপাব্লিক</item>
+        <item>গুৱাডেলুপি</item>
+        <item>লেবানন</item>
+        <item>চেৰবাই</item>
+        <item>বেলিজ</item>
+        <item>কিৰগিস্তান</item>
+        <item>জিনিয়া বিচ্চু</item>
+        <item>"বাৰ্বাড'চ"</item>
+        <item>বেলজিয়াম</item>
+        <item>ফ্ৰান্স গুৱেনা</item>
+        <item>"ম'লড'ভা"</item>
+        <item>জিনিয়া</item>
+        <item>ডেনমাৰ্ক</item>
+        <item>চেনেগাল</item>
+        <item>চাইৰিয়া</item>
+        <item>টানজানিয়া</item>
+        <item>জিবৌটি</item>
+        <item>কুৱাটাৰ</item>
+        <item>কেমৰোন</item>
+        <item>টাজিকিস্তান</item>
+        <item>"স্ক'টলেণ্ড"</item>
+        <item>মাৰ্টিনিক</item>
+        <item>চায়েৰা লিয়নী</item>
+        <item>বোটছোৱানা</item>
+        <item>গুৱানা</item>
+        <item>দক্ষিণ জৰ্জিয়া</item>
+        <item>গুৱাটিমালা</item>
+        <item>চেইণ্ট বাৰ্থেলেমি</item>
+        <item>জিম্বাবুৱে</item>
+        <item>কুবা</item>
+        <item>ইউগাণ্ডা</item>
+        <item>চুডান</item>
+        <item>জেমাইকা</item>
+        <item>কুৱেইট</item>
+        <item>নাইজেৰিয়া</item>
+        <item>এঙ্গোলা</item>
+        <item>জাম্বিয়া</item>
+        <item>লুক্সামবাৰ্গ</item>
+        <item>ইকুএৰিয়েল জিনিয়া</item>
+        <item>মালদীভ</item>
+        <item>নিকাৰাগুৱা</item>
+        <item>বাহৰেইন</item>
+        <item>মোজামবিকু</item>
+        <item>চেইণ্ট মাৰ্টিন</item>
+        <item>চুমালিয়া</item>
+        <item>লিবেৰিয়া</item>
+        <item>ইউৰুগুৱা</item>
+        <item>ওমান</item>
+        <item>চাড</item>
+        <item>নিজাৰ</item>
+        <item>মাউৰিটানিয়া</item>
+        <item>নিউ কালেডোনিয়া</item>
+        <item>টোঙ্গা</item>
+        <item>গ্ৰীণলেণ্ড</item>
+        <item>বুৰ্কিনা ফেচো</item>
+        <item>পানামা</item>
+        <item>চুৰিনেম</item>
+        <item>মণ্টেনগ্ৰো</item>
+        <item>মোৰিছাচ</item>
+        <item>হাইটি</item>
+        <item>"ড'মেষ্ট্ৰিক পিউপ'লচ ৰিপ্লাৱিক অফ কোৰিয়া"</item>
+        <item>মায়ানমাৰ</item>
+        <item>আইচলেণ্ড</item>
+        <item>ৰিউনিয়ন দ্বীপ</item>
+        <item>কষ্টা ৰিকা</item>
+        <item>পুৱেৰ্টো ৰিকো</item>
+        <item>এল চালভাডোৰ</item>
+        <item>য়ামেন</item>
+        <item>"ড'মিনিকান গণৰাজ্য"</item>
+        <item>মেছডনিয়া</item>
+        <item>ফিজি</item>
+        <item>ফ্ৰান্স পলিনেচিয়া</item>
+        <item>হণ্ডাৰাচ</item>
+        <item>লিচটেনষ্টেন</item>
+        <item>মালটা</item>
+        <item>চেচিল্লেচ</item>
+        <item>অষ্ট্ৰিয়া</item>
+        <item>ক্ৰোৱেচিয়া</item>
+        <item>ৱেলচ</item>
+        <item>US ভাৰ্জিন দ্বীপ</item>
+        <item>"শ্ল'ভেনিয়া"</item>
+        <item>চান মাৰিনো</item>
+        <item>"নৰৱে'"</item>
+        <item>পাপুৱা নিউ জিনিয়া</item>
+        <item>বাহামাচ</item>
+        <item>চাইপ্ৰাছ</item>
+        <item>"টিম'ৰ-লেষ্টে"</item>
+        <item>টোগো</item>
+        <item>ডোমিনিকা</item>
+        <item>গাবোন</item>
+        <item>"লেছ'থ'"</item>
+        <item>মাৰ্ছেল দ্বীপপুঞ্জ</item>
+        <item>"ম'নাকো"</item>
+        <item>ব্ৰুনেই</item>
+        <item>গাম্বিয়া</item>
+        <item>বুৰুণ্ডি</item>
+        <item>কংগোৰ ডেমোক্ৰেটিক গণতান্ত্ৰিক</item>
+        <item>লাওচ</item>
+        <item>নামিবিয়া</item>
+        <item>"ব'ছনিয়া আৰু হাৰ্জেগ'ভিনা"</item>
+        <item>চাইপান</item>
+        <item>চাও থোম আৰু প্ৰিন্সিপে</item>
+        <item>গ্ৰেনাডা</item>
+        <item>ফকলেণ্ড দ্বীপপুঞ্জ</item>
+        <item>আমেৰিকান চামোৱা</item>
+        <item>"এণ্ড'ৰা"</item>
+        <item>চাহৰাৱি ৰিপাব্লিক</item>
+        <item>কুৰাকাও</item>
+        <item>এছৱাটিনি</item>
+        <item>চেইণ্ট লুচিয়া</item>
+        <item>পালাউ</item>
+        <item>ৰৱানডা</item>
+        <item>চেণ্ট ভিনচেণ্ট আৰু গ্ৰেনাডিনেচ</item>
+        <item>ফৰোৱে আইলেণ্ড</item>
+        <item>আলবানিয়া</item>
+        <item>ভুটান</item>
+        <item>বেনিন</item>
+        <item>কেপ ভাৰডে</item>
+        <item>"কচ'ভ"</item>
+        <item>বাৰ্মুডা</item>
+        <item>"চ'ল'মন দ্বীপপুঞ্জ"</item>
+        <item>টাইৱান, চীন</item>
+        <item>"ত্ৰিনিডাড আৰু ট'বেগো"</item>
+        <item>এঙ্গিলা</item>
+        <item>UTC (সমন্বিত ইউনিভাৰ্চেল সময়)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>এলাৰ্ম এতিয়াৰ পৰা 1 মিনিটৰ পিছত ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %1$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %2$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %1$s আৰু %2$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %1$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %2$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %1$s, %2$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰ পৰা %s-ৰ বাবে এলাৰ্ম ছেট হৈছে।</item>
+        <item>এতিয়াৰ পৰা %1$s আৰু %2$s-ৰ বাবে এলাৰ্ম ছেট হৈছে।</item>
+        <item>এতিয়াৰে পৰা %1$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %1$s, %2$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰ পৰা %1$s আৰু %2$s-ৰ বাবে এলাৰ্ম ছেট হৈছে।</item>
+        <item>এতিয়াৰে পৰা %1$s, %2$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰে পৰা %1$s, %2$s আৰু %3$s ৰ কাৰণে এলাৰ্ম ছেট কৰা হৈছে৷</item>
+        <item>এতিয়াৰ পৰা %1$s, %2$s, %3$s, আৰু %4$s-ৰ বাবে এলাৰ্ম ছেট হৈছে।</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">%d நாட்களில் அலாரம்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நாளில் அலாரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">%d மணிநேரங்களில் அலாரம்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d மணிநேரத்தில் அலாரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">%d மணிநேரங்கள் 1 நிமிடத்தில் அலாரம் ஒலிக்கும்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d மணிநேரம் 1 நிமிடத்தில் அலாரம் ஒலிக்கும்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">%d நிமிடங்களில் அலாரம்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடத்தில் அலாரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d நிமிடங்களில்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடத்தில்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%d அலாரங்களை விட அதிகமாக சேர்க்க இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d அலாரத்தை விட அதிகமாக சேர்க்க இயலாது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d நிமிடங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d பின்னணிகளை நீக்கவா?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d பின்னணியை நீக்கவா?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d தேர்வுசெய்யப்பட்டுள்ளது</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d தேர்வுசெய்யப்பட்டுள்ளது</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d நிமிடங்களுக்கு முன்பு</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடத்திற்கு முன்பு</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, மற்றும் %3$d மற்றவை</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, மற்றும் %3$d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">உறக்க நேரம்: %d மணிநேரங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உறக்க நேரம்: %d மணிநேரம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">உறக்க நேரம்: %d நிமிடங்கள்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">உறக்க நேரம்: %d நிமிடம்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d நிமிடங்கள் ஸ்னூஸ் செய்க</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடம் ஸ்னூஸ் செய்க</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">%d நிமிடங்கள் குறைக்கவும்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடம் குறைக்கவும்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">%d நிமிடங்கள் அதிகரிக்கவும்</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நிமிடம் அதிகரிக்கவும்</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%d முன்னமைவு டைமர்களை விட அதிகமாக சேர்க்க இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d முன்னமைவு டைமரை விட அதிகமாக சேர்க்க இயலாது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%d நகரங்களை விட அதிகமாக சேர்க்க இயலாது.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d நகரத்தை விட அதிகமாக சேர்க்க இயலாது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

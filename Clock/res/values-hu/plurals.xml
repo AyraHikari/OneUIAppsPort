@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Jelzés %d nap múlva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jelzés %d nap múlva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Jelzés %d óra múlva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jelzés %d óra múlva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Jelzés %d óra 1 perc múlva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jelzés %d óra 1 perc múlva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Jelzés %d perc múlva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Jelzés %d perc múlva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d perc múlva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perc múlva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Legfeljebb %d jelzést lehet hozzáadni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d jelzést lehet hozzáadni.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d perc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Töröl %d hátteret?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Töröl %d hátteret?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d új értesítés</item>
+        <item quantity="one">%d új értesítés</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d kijelölve</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d kijelölve</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d perccel előtte</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perccel előtte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s és %3$d további</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s és %3$d további</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Alvásidő: %d óra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alvásidő: %d óra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Alvásidő: %d perc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alvásidő: %d perc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d perccel elhalasztva</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d perccel elhalasztva</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Mínusz %d perc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Mínusz %d perc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plusz %d perc</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plusz %d perc</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Legfeljebb %d előre beállított időzítőt lehet hozzáadni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d előre beállított időzítőt lehet hozzáadni.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Legfeljebb %d várost lehet felvenni.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Legfeljebb %d várost lehet felvenni.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

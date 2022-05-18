@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/AppTheme" android:orientation="horizontal" android:id="@id/filterItem" android:tag="layout/notification_filter_item_0" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/list_dummy" android:layout_width="16.0dip" android:layout_height="54.0dip" />
+    <ImageView android:id="@id/appIcon" android:tag="binding_1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/list_dummy" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/text_list_item_title" android:ellipsize="end" android:id="@id/appName" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/filterSwitch" android:layout_toEndOf="@id/appIcon" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/filterSwitch" android:tag="binding_3" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" style="@android:style/Widget.DeviceDefault" />
+</RelativeLayout>

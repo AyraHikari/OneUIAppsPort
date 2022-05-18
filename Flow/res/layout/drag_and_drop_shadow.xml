@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="72.25dip" android:layout_height="72.25dip" android:layout_marginTop="1.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="13.0dip">
+        <ImageView android:id="@id/thumbnail_last" android:background="@drawable/drag_and_drop_shadow_bg" android:layout_width="66.25dip" android:layout_height="66.25dip" android:scaleType="center" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/thumbnail_second" android:background="@drawable/drag_and_drop_shadow_bg" android:layout_width="66.25dip" android:layout_height="66.25dip" android:layout_centerInParent="true" android:importantForAccessibility="no" />
+        <ImageView android:layout_gravity="center" android:id="@id/thumbnail" android:background="@drawable/drag_and_drop_shadow_bg" android:layout_width="66.25dip" android:layout_height="66.25dip" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:importantForAccessibility="no" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="26.0dip" android:layout_height="18.0dip" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+        <TextView android:textSize="11.0dip" android:textColor="#fffafafa" android:gravity="center" android:id="@id/item_count" android:background="@drawable/drag_and_drop_badge" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="18.0dip" android:layout_centerInParent="true" android:fontFamily="sans-serif" />
+    </RelativeLayout>
+</RelativeLayout>

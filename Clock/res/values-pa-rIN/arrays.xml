@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>ਮਿਡਵੇ</item>
+        <item>ਹੋਨੋਲੁਲੂ</item>
+        <item>ਹਵਾਈ</item>
+        <item>ਅਲਾਸਕਾ</item>
+        <item>ਐਨਕੋਰੇਜ</item>
+        <item>ਸਾਨ ਫ੍ਰਾਂਸਿਸਕੋ</item>
+        <item>ਵੈਨਕੁਵਰ</item>
+        <item>ਸੀਏਟਲ</item>
+        <item>ਲਾਸ ਐਂਜਿਲਸ</item>
+        <item>ਤਿਜੁਆਨਾ</item>
+        <item>ਕੈਲਗਰੀ</item>
+        <item>ਫ਼ੋਨਿਕਸ</item>
+        <item>ਮਜ਼ਤਲਾਨ</item>
+        <item>ਡੇਨਵਰ</item>
+        <item>ਮੈਕਸੀਕੋ ਸ਼ਹਿਰ</item>
+        <item>ਵਿਨੀਪੇਗ</item>
+        <item>ਡੀਏਗੋ ਗਾਰਸਿਆ</item>
+        <item>ਡੱਲਾਸ</item>
+        <item>ਸ਼ਿਕਾਗੋ</item>
+        <item>ਟੋਰੋੰਟੋ</item>
+        <item>ਮਿਆਮੀ</item>
+        <item>ਲੀਮਾ</item>
+        <item>ਕੁਇਟੋ</item>
+        <item>ਵਾਸ਼ਿੰਗਟਨ DC</item>
+        <item>ਉੱਟਾਵਾ</item>
+        <item>ਨਿਉ ਯਾਰਕ</item>
+        <item>ਬੋਗੋਟਾ</item>
+        <item>ਸੈਂਟਿਆਗੋ</item>
+        <item>ਲਾ ਪਾਜ</item>
+        <item>ਕੈਰਾਕਸ</item>
+        <item>ਬਿਉਨਿਸ ਆਇਰਸ</item>
+        <item>ਨਿਉਫਾਉਂਡਲੈਂਡ</item>
+        <item>"ਸੇਂਟ ਜੌਨ'ਸ"</item>
+        <item>ਸਾਓ ਪਾਲੋ</item>
+        <item>ਬ੍ਰਾਜ਼ੀਲੀਆ</item>
+        <item>ਰਿਓ ਡੀ ਜੇਨਿਰੋ</item>
+        <item>ਫਰਨੈਂਡੋ ਡੀ ਨੋਰੋਨ੍ਹਾ</item>
+        <item>ਐਜ਼ੋਰਸ</item>
+        <item>ਲਿਸਬਨ</item>
+        <item>ਕਾਸਾਬਲਾਂਕਾ</item>
+        <item>ਡਬਲਿਨ</item>
+        <item>ਰਾਬਤ</item>
+        <item>ਮੈਡਰਿਡ</item>
+        <item>ਦ ਸੈੱਟਲਮੈਂਟ</item>
+        <item>ਲੰਡਨ</item>
+        <item>ਕਿੰਗਸਟਨ</item>
+        <item>ਬਾਰਸੀਲੋਨਾ</item>
+        <item>ਪੈਰਿਸ</item>
+        <item>ਅਲਜੀਅਰਸ</item>
+        <item>ਟਿਊਨਿਸ</item>
+        <item>ਤ੍ਰਿਪੋਲੀ</item>
+        <item>ਬਰਲਿਨ</item>
+        <item>ਰੋਮ</item>
+        <item>ਪੈਰਾਗੁਏ</item>
+        <item>ਕਿਨਸ਼ਾਸਾ</item>
+        <item>ਸਟੌਕਹੋਲਮ</item>
+        <item>ਬ੍ਰਾਟੀਸਲਾਵਾ</item>
+        <item>ਕੇਪ ਟਾਊਨ</item>
+        <item>ਬੂਡਾਪੈਸਟ</item>
+        <item>ਵਾਰਸਾਵ</item>
+        <item>ਕੈਲੀਨਿਨਗ੍ਰਾਡ</item>
+        <item>ਸੋਫੀਆ</item>
+        <item>ਐਥਨਸ</item>
+        <item>ਲਵੀਵ</item>
+        <item>ਹੈਲਸਿੰਕੀ</item>
+        <item>ਰਿਗਾ</item>
+        <item>ਤਾਲਿਨ</item>
+        <item>ਬੁਚਾਰੈਸਟ</item>
+        <item>ਵਿਲਨੀਅਸ</item>
+        <item>ਲੁਬੁਮਬਾਸ਼ੀ</item>
+        <item>ਮਿਨਸਕ</item>
+        <item>ਸੇਂਟ ਪੀਟਰਸਬਰਗ</item>
+        <item>ਇਸਤਾਂਬੁਲ</item>
+        <item>ਕਾਮਚਾਤਕਾ</item>
+        <item>ਕੀਵ</item>
+        <item>ਜੇਰੂਸਲੇਮ</item>
+        <item>ਮਾਸਕੋ</item>
+        <item>ਖਾਰਕਿਵ</item>
+        <item>ਨੈਰੋਬੀ</item>
+        <item>ਜੇੱਦਾਹ</item>
+        <item>ਵੋਲਗੋਗ੍ਰਾਡ</item>
+        <item>ਯੇਰੇਵਨ</item>
+        <item>ਤਬਿਲਸੀ</item>
+        <item>ਬਾਕੂ</item>
+        <item>ਚਿਤਾ</item>
+        <item>ਸਮਾਰਾ</item>
+        <item>ਤੇਹਰਾਨ</item>
+        <item>ਇਜ੍ਹੇਵਸਕ</item>
+        <item>ਆਬੂ ਧਾਬੀ</item>
+        <item>ਦੁਬਈ</item>
+        <item>ਉਫਾ</item>
+        <item>ਯਕੇਤਰਿਨਬਰਗ</item>
+        <item>ਚੈਲਿਆਬਿੰਸਕ</item>
+        <item>ਕਰਾਚੀ</item>
+        <item>ਕਾਬੁਲ</item>
+        <item>ਤਾਸ਼ਕੰਤ</item>
+        <item>ਇਸਲਾਮਾਬਾਦ</item>
+        <item>ਮੁੰਬਈ</item>
+        <item>ਓਮਸਕ</item>
+        <item>ਅਲਮਾਟੀ</item>
+        <item>ਬੰਗਲੋਰ</item>
+        <item>ਹੈਦਰਾਬਾਦ</item>
+        <item>ਨਵੀਂ ਦਿੱਲੀ</item>
+        <item>ਕੋਲੰਬੋ</item>
+        <item>ਚੇਨੰਈ</item>
+        <item>ਨੋਵੋਸੀਬੀਰਸਕ</item>
+        <item>ਕਾਠਮੰਡੂ</item>
+        <item>ਨੌਵੋਕੁਜ਼ਨਤਸਕ</item>
+        <item>ਕੋਲਕਾਤਾ</item>
+        <item>ਢਾਕਾ</item>
+        <item>ਹੋਵਡ</item>
+        <item>ਕ੍ਰਾਸਨੋਯਾਰਸਕ</item>
+        <item>ਬੈਂਗਕੌਕ</item>
+        <item>ਕੁਆਲਾ ਲੰਪੁਰ</item>
+        <item>ਸਿੰਗਾਪੁਰ</item>
+        <item>ਇਰਕੁਤਸਕ</item>
+        <item>ਫਨੋਮ ਪੇੱਨ੍ਹ</item>
+        <item>ਹਨੋਈ</item>
+        <item>ਜਕਾਰਤਾ</item>
+        <item>ਉਲਾਨਬਾਟਰ</item>
+        <item>ਹਾਂਗ ਕਾਂਗ</item>
+        <item>ਪਰਥ</item>
+        <item>ਬੀਜਿੰਗ</item>
+        <item>ਮਨੀਲਾ</item>
+        <item>ਤਾਈਪੇਈ</item>
+        <item>ਸਿਉਲ</item>
+        <item>ਅਮਬਨ</item>
+        <item>ਵਲਾਦੀਵੋਸਤੋਕ</item>
+        <item>ਯਾਕੁਤਸਕ</item>
+        <item>ਖਬਰੋਵਸਕ</item>
+        <item>ਐਡੀਲੇਡ</item>
+        <item>ਟੋਕਿਓ</item>
+        <item>ਯੂਜਨੋ-ਸਖਾਲਿੰਸਕ</item>
+        <item>ਹੈਲੀਫੈਕਸ</item>
+        <item>ਗੁਆਮ</item>
+        <item>ਕੈਨਬੇਰਾ</item>
+        <item>ਮੈਗਾਡਨ</item>
+        <item>ਸਿਡਨੀ</item>
+        <item>ਪੈਟਰੋਪਾਵਲੋਵਸਕ-ਕਾਮਚਾਤਸਕੀ</item>
+        <item>ਤਾਰਾਵਾ</item>
+        <item>ਆਕਲੈਂਡ</item>
+        <item>ਵੈਲਿੰਗਟਨ</item>
+        <item>ਪਾਗੋ ਪਾਗੋ</item>
+        <item>ਡੇਨਪਸਾਰ</item>
+        <item>ਬਰਨ</item>
+        <item>ਜਿਊਰਿਕ</item>
+        <item>ਕਾਇਰੋ</item>
+        <item>ਅਬਿਦਜਾਨ</item>
+        <item>ਅੱਕਰਾ</item>
+        <item>ਅਡਿੱਸ ਅਬਾਬਾ</item>
+        <item>ਅੱਮਾਨ</item>
+        <item>ਐਮਸਟਰਡਮ</item>
+        <item>ਅਨਾਡਿਯਰ</item>
+        <item>ਅੰਕਾਰਾ</item>
+        <item>ਐਂਟਾਨਾਨਾਰੀਵੋ</item>
+        <item>ਅਸ਼ਗਬਾਟ</item>
+        <item>ਅਸਮਾਰਾ</item>
+        <item>ਅਸਤਾਨਾ</item>
+        <item>ਅਸੰਸਿਓਨ</item>
+        <item>ਆਸਟਿਨ</item>
+        <item>ਬਗਦਾਦ</item>
+        <item>ਬਾਲਟੀਮੋਰ</item>
+        <item>ਬਮਾਕੋ</item>
+        <item>ਬੈਂਗੁਈ</item>
+        <item>ਬਾਰੀ</item>
+        <item>ਬੈਸੇ-ਟੇਰੇ</item>
+        <item>ਬੈਰੂਤ</item>
+        <item>ਬੈਲਗਰੇਡ</item>
+        <item>ਬੈਲਾਈਜ਼ ਸ਼ਹਿਰ</item>
+        <item>ਬਿਸ਼ਕੇਕ</item>
+        <item>ਬਿਸਾਉ</item>
+        <item>ਬੋਲੋਗਨਾ</item>
+        <item>ਬਾੱਸਟਨ</item>
+        <item>ਬ੍ਰਿਜਟਾਊਨ</item>
+        <item>ਬ੍ਰਿਸਬੇਨ</item>
+        <item>ਬ੍ਰਸੇਲਸ</item>
+        <item>ਕੈਨੇਰੀ ਦੀਪ</item>
+        <item>ਕੇਟਨਜ਼ਾਰੋ</item>
+        <item>ਕੇਯੇਨੇ</item>
+        <item>ਚਾਰਲੋਟ</item>
+        <item>ਕਿਸ਼ਨਾਓ</item>
+        <item>ਕਲੀਵਲੈਂਡ</item>
+        <item>ਕੋਲੰਬਸ</item>
+        <item>ਕੋਨਾਕਰੀ</item>
+        <item>ਕੋਪਨਹੇਗਨ</item>
+        <item>ਕਾਰਕ</item>
+        <item>ਕ੍ਰੋਟੋਨ</item>
+        <item>ਡਕਾਰ</item>
+        <item>ਦਮਾਸਕਸ</item>
+        <item>ਦਾਰ ਏਸ ਸਲਾਮ</item>
+        <item>ਡਾਰਵਿਨ</item>
+        <item>ਡੈਟ੍ਰੋਇਟ</item>
+        <item>ਜੀਬੌਟੀ</item>
+        <item>ਦੋਹਾ</item>
+        <item>ਡੋਆਲਾ</item>
+        <item>ਦੁਸ਼ਾਂਬੇ</item>
+        <item>ਈਸਟਰ ਦੀਪ</item>
+        <item>ਏਡਿਨਬਰਗ</item>
+        <item>ਏਲ ਪਾਸੋ</item>
+        <item>ਫਲੌਰੈਂਸ</item>
+        <item>ਫੋਰਟ-ਡੀ-ਫ੍ਰਾਂਸ</item>
+        <item>ਫ੍ਰੀਟਾਊਨ</item>
+        <item>ਗਾਬੋਰੋਨ</item>
+        <item>ਗਾਲਾਪਾਗੋਸ ਦੀਪ</item>
+        <item>ਜਿਨੇਵਾ</item>
+        <item>ਜੇਨੋਆ</item>
+        <item>ਜੌਰਜਟਾਉਨ</item>
+        <item>ਗ੍ਰਾਈਟਵੀਕੇਨ</item>
+        <item>ਗੁਆਟੇਮਾਲਾ ਸ਼ਹਿਰ</item>
+        <item>ਗੁਸਤਾਵੀਆ</item>
+        <item>ਹੈਮਬਰਗ</item>
+        <item>ਹਰਾਰੇ</item>
+        <item>ਹਵਾਨਾ</item>
+        <item>ਹੋਬਾਰਟ</item>
+        <item>ਹਾਉਸਟਨ</item>
+        <item>ਇੰਡੀਆਨਾਪੋਲਿਸ</item>
+        <item>ਜੋਹਾਨੱਸਬਰਗ</item>
+        <item>ਕੰਪਾਲਾ</item>
+        <item>ਖਾਰਟੋਮ</item>
+        <item>ਕਿੰਗਸਟਨ</item>
+        <item>ਕੂਵੈਤ ਸ਼ਹਿਰ</item>
+        <item>ਲਾਗੋਸ</item>
+        <item>ਲਾਸ ਵੇਗਾਸ</item>
+        <item>ਜੁਬਲਜਾਨਾ</item>
+        <item>ਹਾਇਕੋ</item>
+        <item>ਲੁਈਸਵਿਲ</item>
+        <item>ਲੁਆਂਡਾ</item>
+        <item>ਲੁਸਾਕਾ</item>
+        <item>ਲਕਜ਼ਮਬਰਗ</item>
+        <item>ਮਕਾਉ</item>
+        <item>ਮਲਾਬੋ</item>
+        <item>ਮਾਲੇ</item>
+        <item>ਮੈਨਾਗੁਆ</item>
+        <item>ਮਨਾਮਾ</item>
+        <item>ਮਾਪੂਟੋ</item>
+        <item>ਮੈਰੀਗੋਟ</item>
+        <item>ਮੱਕਾ</item>
+        <item>ਮੈਲਬੋਰਨ</item>
+        <item>ਮੈਮਫਿਸ</item>
+        <item>ਮੇਸੀਨਾ</item>
+        <item>ਮਿਲਾਨੋ</item>
+        <item>ਮਿਲਵਾਓਕੀ</item>
+        <item>ਮੋਗਾਦਿਸ਼ੂ</item>
+        <item>ਮੋਨਰੋਵੀਆ</item>
+        <item>ਮੋਂਟੇਵੀਡਿਓ</item>
+        <item>ਮੌਨਟ੍ਰੀਅਲ</item>
+        <item>ਮਿਉਨਿਕ</item>
+        <item>ਮਸਕਟ</item>
+        <item>ਨੇਪੋਲੀ</item>
+        <item>ਨਟੇਰਸ</item>
+        <item>"ਨ'ਦਜਾਮੇਨਾ"</item>
+        <item>ਨਿਆਮੇ</item>
+        <item>ਨੋਉਆਕਚੋਟ</item>
+        <item>ਨਾਓਮੀਆ</item>
+        <item>"ਨੁਕੂ'ਅਲੋਫਾ"</item>
+        <item>ਨੂਕ</item>
+        <item>ਓਸਾਕਾ</item>
+        <item>ਓਆਗਾਡੋਗਾਓ</item>
+        <item>ਪਲੇਰਮੋ</item>
+        <item>ਪਨਾਮਾ ਸ਼ਹਿਰ</item>
+        <item>ਪੈਰਾਮਰੀਬੋ</item>
+        <item>ਪਰਮ</item>
+        <item>ਫਿਲਾਡੈਲਫੀਆ</item>
+        <item>ਪੋਡਗੋਰੀਕਾ</item>
+        <item>ਪੋਂਟਾ ਡੈਲਗਾਡਾ</item>
+        <item>ਪੋਰਟ ਲੁਈਸ</item>
+        <item>ਪੋਰਟ-ਔ-ਪ੍ਰਿੰਸ</item>
+        <item>ਪੋਰਟਲੈਂਡ, ਓਰੇਗਨ</item>
+        <item>ਪਯੋਂਗਯਾਂਗ</item>
+        <item>ਯਾਂਗੋਨ</item>
+        <item>ਰਿਸਾਈਫ</item>
+        <item>ਰੇਕਜਾਵਿਕ</item>
+        <item>ਰਿਆਧ</item>
+        <item>ਸੇਂਟ-ਡੈਨਿਸ</item>
+        <item>ਸਾਨ ਐਨਟੋਨੀਓ</item>
+        <item>ਸੈਨ ਡਿਏਗੋ</item>
+        <item>ਸਾਨ ਜੋਸ</item>
+        <item>ਸਾਨ ਜੋਸ</item>
+        <item>ਸਾਨ ਜੁਆਨ</item>
+        <item>ਸੈਨ ਮੈਰੀਨੋ</item>
+        <item>ਸਾਨ ਸਲਵਾਡੋਰ</item>
+        <item>"ਸਾਨਾ'ਅ"</item>
+        <item>ਸੈਂਟੋ ਡੋਮਿੰਗੋ</item>
+        <item>ਸ਼ੰਘਾਈ</item>
+        <item>ਸ਼ੇਨਜ਼ੇਨ</item>
+        <item>ਸਕੋਪਜੇ</item>
+        <item>"ਸੇਂਟ ਜੌਨ'ਸ"</item>
+        <item>ਸੁਵਾ</item>
+        <item>ਤਾਹਿਤੀ</item>
+        <item>ਟੇਗੁਸੀਗਾਲਪਾ</item>
+        <item>ਹੋ ਚੀ ਮਿਨ੍ਹ ਸ਼ਹਿਰ</item>
+        <item>ਤਿਆਨਜਿਨ</item>
+        <item>ਟੋਰਿਨੋ</item>
+        <item>ਵਾਡੁਜ਼</item>
+        <item>ਵਾਲੇੱਟਾ</item>
+        <item>ਵੇਰੋਨਾ</item>
+        <item>ਵਿਕਟੋਰੀਆ</item>
+        <item>ਵਿਆਨਾ</item>
+        <item>ਯਾਮਾਓਸਾਓਕ੍ਰੋ</item>
+        <item>ਯਾਓਂਡੇ</item>
+        <item>ਜ਼ਗਰੇਬ</item>
+        <item>ਗੁਆਂਗਜ਼ੋਉ</item>
+        <item>ਕਾਰਡਿੱਫ</item>
+        <item>ਰੇਜੀਨਾ</item>
+        <item>ਚਾਰਲੋਟੇ ਅਮੇਲੀ</item>
+        <item>ਅਟਲਾਂਟਾ</item>
+        <item>ਮਯੋੱਟੇ</item>
+        <item>ਸੈਂਟ ਪਿਅਰ ਅਤੇ ਮਿਕਿਯੁਲਨ</item>
+        <item>ਓਸਲੋ</item>
+        <item>ਸ੍ਰੇਡਨੇਕੋਲਾਇਮਸਕ</item>
+        <item>ਸੇਵੇਰੋ-ਕੁਰਿਲਸਕ</item>
+        <item>ਵੂਹਾਨ</item>
+        <item>ਚੈਂਗਡੂ</item>
+        <item>"ਜ਼ੀ'ਆਨ"</item>
+        <item>ਪੋਰਟ ਮੋਰੇਸਬੀ</item>
+        <item>ਦਾਵਓ ਸਿਟੀ</item>
+        <item>ਚੌਂਗਕੁਇੰਗ</item>
+        <item>ਸ਼ੇਨਯਾਂਗ</item>
+        <item>ਨਾਨਜਿੰਗ</item>
+        <item>ਹਾਰਬਿਨ</item>
+        <item>ਜਿਨਾਨ</item>
+        <item>ਜ਼ਹੈਂਗਜ਼ਹਾਓ</item>
+        <item>ਕੁਨਮਿੰਗ</item>
+        <item>ਚਾਂਗਚੁੰਨ</item>
+        <item>ਫਿਉਜ਼ਹਾਉ</item>
+        <item>ਕੁਚਿੰਗ</item>
+        <item>ਮਕਾੱਸਰ</item>
+        <item>ਹਾਂਗਜ਼ੌ</item>
+        <item>ਕਿੰਗਦਾਓ</item>
+        <item>ਨਾਨਿੰਗ</item>
+        <item>ਉਰੂਮਚੀ</item>
+        <item>ਨਸਾਉ</item>
+        <item>ਨਿਕੋਸੀਆ</item>
+        <item>ਦੀਲੀ</item>
+        <item>ਰੋਡ ਟਾਊਨ</item>
+        <item>ਲੋਮ</item>
+        <item>ਰੋਸ਼ਾਉ</item>
+        <item>ਲਿਬ੍ਰੇਵਿਲ</item>
+        <item>ਮਾਰਸੇਲ</item>
+        <item>ਮਾਸੇਰੂ</item>
+        <item>ਮਾਜੂਰੋ</item>
+        <item>ਮੋਨਾਕੋ</item>
+        <item>ਬਾਂਦਰ ਸੇਰੀ ਬੇਗਾਵਨ</item>
+        <item>ਬਨਜੂਲ</item>
+        <item>ਬੁਸਾਨ</item>
+        <item>ਬੁਜੰਬੁਰਾ</item>
+        <item>ਬ੍ਰੈਜ਼ਾਵਿਲ</item>
+        <item>ਵਿਏਨਤਿਆਨ</item>
+        <item>ਵਿੰਡਹੋਇਕ</item>
+        <item>ਸਾਰਾਜੇਵੋ</item>
+        <item>ਸਾਈਪਨ</item>
+        <item>ਸਾਓ ਟੋਮ</item>
+        <item>ਸੈਂਟ. ਜੌਰਜ</item>
+        <item>ਸਟੈਨਲੀ</item>
+        <item>ਏਡਨ</item>
+        <item>ਅਪਿਆ</item>
+        <item>ਅੰਡੋਰਾ ਲਾ ਵੇਲਾ</item>
+        <item>ਲਾਯੂਨ</item>
+        <item>ਵਿਲੀਮਾਸਟਾਡ</item>
+        <item>ਮਬਾਬੇਨ</item>
+        <item>ਕਾਸਟ੍ਰੀਸ</item>
+        <item>ਕੋਰੋਰ</item>
+        <item>ਕੈਨਕੁਨ</item>
+        <item>ਕਿਗਾਲੀ</item>
+        <item>ਕਿੰਗਸਟਾਊਨ</item>
+        <item>ਤੇਲ ਅਵੀਵ</item>
+        <item>ਤੋਰਸ਼ਾਵਨ</item>
+        <item>ਟਿਰਾਨਾ</item>
+        <item>ਥਿਮਪੁ</item>
+        <item>ਪੋਰਟੋ-ਨੋਵੋ</item>
+        <item>ਪਰਾਇਆ</item>
+        <item>ਫ੍ਰੈਂਕਫਰਟ</item>
+        <item>ਪ੍ਰਿਸਟੀਨਾ</item>
+        <item>ਹੈਮਿਲਟਨ</item>
+        <item>ਹੁਨਿਆਰਾ</item>
+        <item>ਪੋਰਟ ਨੁੰ ਸਪੇਨ</item>
+        <item>ਮਿਨੀਐਪੋਲਿਸ</item>
+        <item>ਹਿਲੋ</item>
+        <item>ਓਰਲੈਂਡੋ</item>
+        <item>ਕੰਸਾਸ ਸਿਟੀ</item>
+        <item>ਨਿ ਓਰਲੀਨਜ਼</item>
+        <item>ਨੈਸ਼ਵਿਲ</item>
+        <item>ਟਕਸਨ</item>
+        <item>ਟੈਂਪਾ</item>
+        <item>ਜੈਕਸਨਵਿਲ</item>
+        <item>ਓਕਲਾਹੋਮਾ ਸਿਟੀ</item>
+        <item>ਅਲਬੂਕਰਕੀ</item>
+        <item>ਓਮਹਾ</item>
+        <item>ਵਰਜੀਨੀਆ ਬੀਚ</item>
+        <item>ਬੋਇਸ</item>
+        <item>ਡੇਸ ਮੋਇੰਸ</item>
+        <item>ਬਰਮਿੰਘਮ</item>
+        <item>ਸਾਲਟ ਲੇਕ ਸਿਟੀ</item>
+        <item>ਲਿਟਲ ਰਾਕ</item>
+        <item>ਸਿਉਕਸ ਫਾਲਸ</item>
+        <item>ਜੈਕਸਨ</item>
+        <item>ਚਾਰਲਸਟਨ, ਦੱਖਣੀ ਕੈਰੋਲੀਨਾ</item>
+        <item>ਫਾਰਗੋ</item>
+        <item>ਬਿਲਿੰਗਸ</item>
+        <item>ਪੋਰਟਲੈਂਡ, ਮੇਨ</item>
+        <item>ਚੀਯਨੇ</item>
+        <item>ਚਾਰਲਸਟਨ, ਪੱਛਮੀ ਵਰਜਿਨੀਆ</item>
+        <item>ਪਿਟਸਬਰਗ</item>
+        <item>ਗ੍ਰੀਨ ਬੇ</item>
+        <item>ਸੈਂਟ. ਲੂਈ</item>
+        <item>ਵਾਦੀ</item>
+        <item>UTC (ਕੋਆਰਡੀਨੇਟਡ ਯੂਨੀਵਰਸਲ ਟਾਈਮ)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>ਅਫ਼ਗਾਨਿਸਤਾਨ</item>
+        <item>ਅਲਜੀਰੀਆ</item>
+        <item>ਸਾਮੋਆ</item>
+        <item>ਐਂਟੀਗੁਆ ਅਤੇ ਬਾਰਬੁਡਾ</item>
+        <item>ਅਰਜਨਟੀਨਾ</item>
+        <item>ਅਰਮੇਨੀਆ</item>
+        <item>ਆਸਟ੍ਰੇਲਿਆ</item>
+        <item>ਅਜ਼ਰਬਾਇਜਾਨ</item>
+        <item>ਬੰਗਲਾਦੇਸ਼</item>
+        <item>ਬਸ਼ਕੌਰਤੋਸਤਾਨ ਦਾ ਗਣਰਾਜ</item>
+        <item>ਬੇਲਾਰੂਸ</item>
+        <item>ਬੋਲੀਵੀਆ</item>
+        <item>ਬ੍ਰਾਜ਼ੀਲ</item>
+        <item>ਬੁਲਗਾਰੀਆ</item>
+        <item>ਕੰਬੋਡੀਆ</item>
+        <item>ਕੈਨੇਡਾ</item>
+        <item>ਚਿਲੀ</item>
+        <item>ਚੀਨ</item>
+        <item>ਕੋਲੰਬੀਆ</item>
+        <item>ਚੈਕ ਗਣਰਾਜ</item>
+        <item>ਕੌਂਗੋ ਗਣਰਾਜ</item>
+        <item>ਇਕੁਆਡੋਰ</item>
+        <item>ਇਸਟੋਨੀਆ</item>
+        <item>ਫਿਨਲੈਂਡ</item>
+        <item>ਫ੍ਰਾਂਸ</item>
+        <item>ਜੌਰਜੀਆ</item>
+        <item>ਜਰਮਨੀ</item>
+        <item>ਗਰੀਸ</item>
+        <item>ਹੰਗਰੀ</item>
+        <item>ਭਾਰਤ</item>
+        <item>ਇੰਡੋਨੇਸ਼ੀਆ</item>
+        <item>ਇਰਾਨ</item>
+        <item>ਆਇਰਲੈਂਡ</item>
+        <item>ਇਜ਼ਰਾਈਲ</item>
+        <item>ਇਟਲੀ</item>
+        <item>ਜਪਾਨ</item>
+        <item>ਕਜ਼ਾਕਿਸਤਾਨ</item>
+        <item>ਕੀਨਿਆ</item>
+        <item>ਕਿਰੀਬਾਤੀ</item>
+        <item>ਲਾਤਵੀਆ</item>
+        <item>ਲਿਥੁਆਨੀਆ</item>
+        <item>ਮਲੇਸ਼ੀਆ</item>
+        <item>ਮੈਕਸੀਕੋ</item>
+        <item>ਮੰਗੋਲੀਆ</item>
+        <item>ਮੋਰੱਕੋ</item>
+        <item>ਨੇਪਾਲ</item>
+        <item>ਨਿਉ ਜ਼ੀਲੈਂਡ</item>
+        <item>ਪਾਕਿਸਤਾਨ</item>
+        <item>ਪੇਰੂ</item>
+        <item>ਫ਼ਿਲੀਪੀਨਸ</item>
+        <item>ਪੋਲੈਂਡ</item>
+        <item>ਪੁਰਤਗਾਲ</item>
+        <item>ਮੈਪ</item>
+        <item>ਦੱਖਣੀ ਕੋਰਿਆ</item>
+        <item>ਸਿੰਗਾਪੁਰ ਦਾ ਗਣਰਾਜ</item>
+        <item>ਲਿਬੀਆ</item>
+        <item>ਰੋਮਾਨੀਆ</item>
+        <item>ਰੂਸ</item>
+        <item>ਸਾਉਦੀ ਅਰਬ</item>
+        <item>ਸਲੋਵਾਕੀਆ</item>
+        <item>ਦੱਖਣੀ ਅਫ਼ਰੀਕਾ</item>
+        <item>ਸਪੇਨ</item>
+        <item>ਸ਼੍ਰੀ ਲੰਕਾ</item>
+        <item>ਸਵੀਡਨ</item>
+        <item>ਤਾਇਵਾਨ</item>
+        <item>ਥਾਈਲੈਂਡ</item>
+        <item>ਟੁਨੀਸਿਆ</item>
+        <item>ਤੁਰਕੀ</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>ਯੂਕਰੇਨ</item>
+        <item>USA</item>
+        <item>ਉਜ਼ਬੇਕਿਸਤਾਨ</item>
+        <item>ਵੈਨੀਜ਼ੁਏਲਾ</item>
+        <item>ਵੀਅਤਨਾਮ</item>
+        <item>GB Vrgn Islds</item>
+        <item>ਸਵਿਟਜ਼ਰਲੈਂਡ</item>
+        <item>ਮਿਸਰ</item>
+        <item>ਕੋਟ ਡੀ’ਆਈਵਰੀ</item>
+        <item>ਘਾਨਾ</item>
+        <item>ਇਥੀਓਪੀਆ</item>
+        <item>ਜਾਰਡਨ</item>
+        <item>ਨੀਦਰਲੈਂਡ</item>
+        <item>ਮਾਡਾਗਾਸਕਰ</item>
+        <item>ਤੁਰਕਮੇਨਿਸਤਾਨ</item>
+        <item>ਇਰੀਟ੍ਰੀਆ</item>
+        <item>ਪੈਰਾਗੁਏ</item>
+        <item>ਇਰਾਕ</item>
+        <item>ਮਾਲੀ</item>
+        <item>ਮੱਧ ਅਫਰੀਕਨ ਗਣਰਾਜ</item>
+        <item>ਗੁਆਡੇਲੂਪ</item>
+        <item>ਲੈਬਨਾਨ</item>
+        <item>ਸਰਬੀਆ</item>
+        <item>ਬੈਲਿਜ਼</item>
+        <item>ਕਿਰਗਿਜ਼ਤਾਨ</item>
+        <item>ਗੁਏਨਿਆ ਬਿਸਾਉ</item>
+        <item>ਬਾਰਬਾਡੋਸ</item>
+        <item>ਬੇਲਜਿਅਮ</item>
+        <item>ਫ੍ਰੈਂਚ ਗੁਈਆਨਾ</item>
+        <item>ਮੋਲਡੋਵਾ</item>
+        <item>ਗੁਈਨੀਆ</item>
+        <item>ਡੈਨਮਾਰਕ</item>
+        <item>ਸੈਨੇਗਲ</item>
+        <item>ਸੀਰੀਆ</item>
+        <item>ਤਨਜ਼ਾਨੀਆ</item>
+        <item>ਡਜੀਬੌਟੀ</item>
+        <item>ਕਤਰ</item>
+        <item>ਕੈਮਰੂਨ</item>
+        <item>ਤਾਜਿਕਿਸਤਾਨ</item>
+        <item>ਸਕਾੱਟਲੈਂਡ</item>
+        <item>ਮਾਰਟੀਨੀਕੁ</item>
+        <item>ਸਿਏਰਾ ਲਿਓਨ</item>
+        <item>ਬੋਤਸਵਾਨਾ</item>
+        <item>ਗੁਇਆਨਾ</item>
+        <item>ਦੱਖਣੀ ਜੌਰਜੀਆ</item>
+        <item>ਗੁਆਟੇਮਾਲਾ</item>
+        <item>ਸੇਂਟ ਬਾਰਥੇਲੇਮੀ</item>
+        <item>ਜ਼ਿੰਬਾਬਵੇ</item>
+        <item>ਕਿਉਬਾ</item>
+        <item>ਯੁਗਾਂਡਾ</item>
+        <item>ਸੁਡਾਨ</item>
+        <item>ਜਮਾਇਕਾ</item>
+        <item>ਕੁਵੈਤ</item>
+        <item>ਨਾਇਜੀਰਿਆ</item>
+        <item>ਅੰਗੋਲਾ</item>
+        <item>ਜ਼ਾਂਬੀਆ</item>
+        <item>ਲਕਜ਼ਮਬਰਗ</item>
+        <item>ਇਕੁਓਰੀਅਲ ਗੁਏਨਿਆ</item>
+        <item>ਮਾਲਦੀਵ</item>
+        <item>ਨਿਕਾਰਾਗੁਆ</item>
+        <item>ਬੈਹਰਾਨ</item>
+        <item>ਮੋਜ਼ਾਂਬਿਕ</item>
+        <item>ਸੇਂਟ ਮਾਰਟਿਨ</item>
+        <item>ਸੋਮਾਲੀਆ</item>
+        <item>ਲਾਇਬੇਰੀਆ</item>
+        <item>ਉਰੂਗੁਆਏ</item>
+        <item>ਓਮਾਨ</item>
+        <item>ਚਡ</item>
+        <item>ਨਾਈਜਰ</item>
+        <item>ਮੌਰੀਟਾਨੀਆ</item>
+        <item>ਨਿਉ ਕੈਲੇਡੋਨੀਆ</item>
+        <item>ਟੋਂਗਾ</item>
+        <item>ਗ੍ਰੀਨਲੈਂਡ</item>
+        <item>ਬੁਰਕੀਨਾ ਫਾਸੋ</item>
+        <item>ਪਨਾਮਾ</item>
+        <item>ਸੁਰੀਨਾਮ</item>
+        <item>ਮੋਂਟੇਨੇਗਰੋ</item>
+        <item>ਮੌਰੀਸ਼ੀਅਸ</item>
+        <item>ਹਾਇਟੀ</item>
+        <item>ਡੈਮੋਕ੍ਰੈਟਿਕ ਪੀਪਲਜ਼ ਰਿਪਬਲਿਕ ਔਫ ਕੋਰੀਆ</item>
+        <item>ਮਿਯਾਂਮਾਰ</item>
+        <item>ਆਈਸਲੈਂਡ</item>
+        <item>ਰੀਯੁਨੀਅਨ ਦੀਪ</item>
+        <item>ਕੋਸਟਾ ਰੀਕਾ</item>
+        <item>ਪਿਅਰਟੋ ਰਿਕੋ</item>
+        <item>ਐਲ ਸਲਵਾਡੋਰ</item>
+        <item>ਯਮਨ</item>
+        <item>ਡੌਮਿਨੀਸ਼ਨ ਗਣਰਾਜ</item>
+        <item>ਮੈਸੀਡੋਨੀਆ</item>
+        <item>ਫਿਜੀ</item>
+        <item>ਫ੍ਰੈਂਚ ਪੌਲੀਨੇਸ਼ੀਆ</item>
+        <item>ਹੋਂਡੁਰਸ</item>
+        <item>ਲੀਚਟੇੱਨਸਟਨ</item>
+        <item>ਮਾਲਟਾ</item>
+        <item>ਸੀਏਚਲਸ</item>
+        <item>ਆਸਟ੍ਰੀਆ</item>
+        <item>ਕ੍ਰੋਏਸ਼ੀਆ</item>
+        <item>ਵੇਲਸ</item>
+        <item>US Vrgn Is.</item>
+        <item>ਸਲੋਵੇਨੀਆ</item>
+        <item>ਸੈਨ ਮੈਰੀਨੋ</item>
+        <item>ਨੌਰਵੇ</item>
+        <item>ਪਾਪੁਆ ਨਿਉ ਗੁਨੀਆ</item>
+        <item>ਬਾਹਮਾਸ</item>
+        <item>ਸਾਈਪ੍ਰਸ</item>
+        <item>ਤਿਮੋਰ-ਲੇਸਟ</item>
+        <item>ਟੋਗੋ</item>
+        <item>ਡੋਮਿਨਿਕਾ</item>
+        <item>ਗਾਬੋਨ</item>
+        <item>ਲਿਸੋਥੋ</item>
+        <item>ਮਾਰਸ਼ਲ ਟਾਪੂ</item>
+        <item>ਮੋਨਾਕੋ</item>
+        <item>ਬ੍ਰੂਨੇਈ</item>
+        <item>ਗਾਮਬਿਆ</item>
+        <item>ਬੁਰੂੰਡੀ</item>
+        <item>ਕੌਂਗੋ ਲੋਕਤੰਤਰੀ ਗਣਰਾਜ</item>
+        <item>ਲਾਓਸ</item>
+        <item>ਨਾਮੀਬੀਆ</item>
+        <item>ਬੋਸਨੀਆ ਅਤੇ ਹਰਜ਼ੇਗੋਵਿਨਾ</item>
+        <item>ਸਾਈਪਨ</item>
+        <item>ਸਾਓ ਟੋਮ ਅਤੇ ਪ੍ਰਿੰਸੀਪੀ</item>
+        <item>ਗ੍ਰੇਨਾਡਾ</item>
+        <item>ਫਾਕਲੈਂਡ ਟਾਪੂ</item>
+        <item>ਅਮਰੀਕਨ ਸਾਮੋਆ</item>
+        <item>ਅੰਡੋਰਾ</item>
+        <item>ਸਾਹਰਾਵੀ ਗਣਰਾਜ</item>
+        <item>ਕੁਰਾਕਾਓ</item>
+        <item>ਈਸਵਾਤਿਨੀ</item>
+        <item>ਸੈਂਟ ਲੁਸੀਆ</item>
+        <item>ਪਾਲਾਉ</item>
+        <item>ਰਵਾਂਡਾ</item>
+        <item>ਸੈਂਟ ਵਿਨਸੈਂਟ ਅਤੇ ਗ੍ਰੇਨੇਡਾਇਨਜ਼</item>
+        <item>ਫੈਰੋ ਟਾਪੂ</item>
+        <item>ਅਲਬਾਨੀਆ</item>
+        <item>ਭੂਟਾਨ</item>
+        <item>ਬੇਨਿਨ</item>
+        <item>ਕੇਪ ਵੇਰਡ</item>
+        <item>ਕੋਸੋਵੋ</item>
+        <item>ਬਰਮੁਡਾ</item>
+        <item>ਸੋਲੋਮੋਨ ਟਾਪੂ</item>
+        <item>ਤਾਈਵਾਨ, ਚੀਨ</item>
+        <item>ਟ੍ਰਿਨਿਡਾਡ ਅਤੇ ਟੋਬੈਗੋ</item>
+        <item>ਅੰਗੁਇਲਾ</item>
+        <item>UTC (ਕੋਆਰਡੀਨੇਟਡ ਯੂਨੀਵਰਸਲ ਟਾਈਮ)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ 1 ਮਿੰਟ ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %2$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s ਅਤੇ %2$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %2$s ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s, %2$s, ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s ਅਤੇ %2$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s, %2$s, ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s ਅਤੇ %2$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s, %2$s, ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s, %2$s, ਅਤੇ %3$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+        <item>ਅਲਾਰਮ ਹੁਣ ਤੋਂ %1$s, %2$s, %3$s ਅਤੇ %4$s ਲਈ ਸੈੱਟ ਕੀਤਾ ਗਿਆ।</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

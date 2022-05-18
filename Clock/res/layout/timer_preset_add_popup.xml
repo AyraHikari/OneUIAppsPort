@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/add_preset_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/preset_time_input_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/timer_common_preset_popup_time_margin_top" android:layout_marginStart="@dimen/alarm_popup_name_edittext_margin_left" android:layout_marginEnd="@dimen/alarm_popup_name_edittext_margin_right" style="@style/Direction_LTR">
+            <EditText android:id="@id/hour" style="@style/TimerAddPopupNumberStyle" />
+            <TextView android:id="@id/hms_colon" android:layout_toEndOf="@id/hour" style="@style/TimerAddPopupColonStyle" />
+            <EditText android:id="@id/minute" android:layout_toEndOf="@id/hms_colon" style="@style/TimerAddPopupNumberStyle" />
+            <TextView android:id="@id/ms_colon" android:layout_toEndOf="@id/minute" style="@style/TimerAddPopupColonStyle" />
+            <EditText android:id="@id/second" android:layout_toEndOf="@id/ms_colon" style="@style/TimerAddPopupNumberStyle" />
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/CustomTextInputLayoutStyle" android:id="@id/preset_name_input_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/timer_common_preset_popup_name_margin_top" android:layout_marginBottom="@dimen/alarm_popup_name_edittext_margin_bottom" android:layout_marginStart="@dimen/alarm_popup_name_edittext_margin_left" android:layout_marginEnd="@dimen/alarm_popup_name_edittext_margin_right">
+            <EditText android:textSize="@dimen/timer_common_preset_popup_name_textsize" android:ellipsize="end" android:id="@id/preset_name" style="@style/NameEditTextStyle" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

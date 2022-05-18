@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.sec.android.app.clockpackage" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.samsung.sea.retailagent.permission.RETAILMODE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.sec.android.app.voicenote.Controller"/>
+    <uses-permission android:name="com.wssnps.permission.COM_WSSNPS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="com.samsung.android.chinaholiday.permission.READ_CHINA_HOLIDAY"/>
+    <uses-permission android:name="com.samsung.permission.PALM_MOTION"/>
+    <uses-permission android:name="com.sec.android.inputmethod.permission.KEYBOARD_SETTING"/>
+    <uses-permission android:name="com.samsung.android.honeyboard.permission.KEYBOARD_SETTING"/>
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS"/>
+    <uses-permission android:name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.permission.CHANGE_DISPLAY_COLOR"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_1f7e38c534a95db5907c769e2087a0cb9ee2c6a89f3118d0fa22f80d3c767b82e2c85bf34ecb32947cdd64e51fe617186db8dd1d95c73e55d1b688c8b07498f83a6bcc2207d69798ca975f2495439628e68d56557b08514ea9fec6d894be804ed8c85b998be802a76782c1edca3587212d46d35a128502a385da2bc8b266f6c7"/>
+    <uses-permission android:name="com.sec.android.app.calendar.permission.OPEN_CALENDAR_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.bixby.agent.permission.BIXBY_ALARM"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="com.samsung.android.bixby.agent.permission.READ_LANGUAGE"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.NOTIFY_ALARM_ALERT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
+    <uses-permission android:name="com.samsung.sea.retailagent.permission.RETAILMODE"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission android:description="@string/permission_read_alarm" android:label="@string/permission_label_read_alarm" android:name="com.sec.android.app.clockpackage.permission.READ_ALARM" android:protectionLevel="normal"/>
+    <permission android:description="@string/permission_write_alarm" android:label="@string/permission_label_write_alarm" android:name="com.sec.android.app.clockpackage.permission.WRITE_ALARM" android:protectionLevel="normal"/>
+    <permission android:label="BACKUP_ALARM" android:name="com.sec.android.app.clockpackage.permission.BACKUP_RESTORE_ALARM" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="NOTIFY_ALARM_ALERT" android:name="com.sec.android.app.clockpackage.permission.NOTIFY_ALARM_ALERT" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="BACKUP_WORLDCLOCK" android:name="com.sec.android.app.clockpackage.permission.BACKUP_RESTORE_WORLDCLOCK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="OPEN_CLOCK_SETTINGS_ACTIVITY" android:name="com.sec.android.app.clockpackage.permission.OPEN_CLOCK_SETTINGS_ACTIVITY" android:protectionLevel="signature"/>
+    <permission android:name="com.sec.android.app.clockpackage.permission.RECEIVE_GEAR_DATA" android:protectionLevel="signature"/>
+    <permission android:label="READ_DATA" android:name="com.sec.android.dualclockdigital.permission.READ_DATA" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="WRITE_DATA" android:name="com.sec.android.dualclockdigital.permission.WRITE_DATA" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="@string/permission_access_clock_package" android:name="com.sec.android.app.clockpackage.permission.ACCESS_CLOCK_TAB" android:protectionLevel="normal"/>
+    <uses-feature android:name="com.samsung.android.feature.resopt" android:required="false"/>
+    <uses-feature android:name="com.samsung.android.api.version.2801"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_DREAM_STATE"/>
+    <uses-permission android:name="android.permission.READ_DREAM_STATE"/>
+    <uses-permission android:name="com.samsung.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.app.spage.permission.WRITE_CARD_DATA"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.READ_ALARM"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.WRITE_ALARM"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.samsung.permission.READ_DW_DATA"/>
+    <uses-permission android:name="com.samsung.permission.WRITE_DW_DATA"/>
+    <uses-permission android:name="com.samsung.android.permission.SEM_APP_RESTRICTION"/>
+    <permission android:label="@string/permission_access_bedtime_edit" android:name="com.sec.android.app.clockpackage.ACCESS_BEDTIME_EDIT" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <permission android:label="ACCESS_WCRECEIVER" android:name="com.sec.android.app.clockpackage.permission.ACCESS_WCRECEIVER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="READ_WCCONTENT" android:name="com.sec.android.app.clockpackage.permission.READ_WCCONTENT" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="WRITE_WCCONTENT" android:name="com.sec.android.app.clockpackage.permission.WRITE_WCCONTENT" android:protectionLevel="signatureOrSystem"/>
+    <permission android:description="@string/permission_access_worldclock" android:label="@string/permission_label_access_worldclock" android:name="com.sec.android.app.clockpackage.permission.ACCESS_WCCITY" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.RECEIVE_GEAR_DATA"/>
+    <permission android:label="READ_TIMER" android:name="com.sec.android.app.clockpackage.permission.READ_TIMER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:label="WRITE_TIMER" android:name="com.sec.android.app.clockpackage.permission.WRITE_TIMER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.sec.android.diagmonagent.permission.DIAGMON"/>
+    <uses-permission android:name="com.sec.android.diagmonagent.permission.PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.rubin.persona.permission.READ_PERSONA_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.context.permission.READ_CONTEXT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.rubin.app.ui.permission.LAUNCH_RUBIN_SETTING"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_clock" android:label="@string/app_name" android:manageSpaceActivity="com.sec.android.app.clockpackage.ClockPackageManageSpaceActivity" android:name="com.sec.android.app.clockpackage.ClockPackageApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true">
+        <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <meta-data android:name="backup_name" android:resource="@xml/backup_item"/>
+        <meta-data android:name="backup_content_uri" android:value="content://com.sec.android.app.clockpackage"/>
+        <meta-data android:name="LiveIconSupport" android:value="true"/>
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="com.samsung.android.bixby.pathRuleAppName" android:value="Clock"/>
+        <meta-data android:name="com.samsung.android.notification.blockable" android:value="true"/>
+        <meta-data android:name="com.samsung.android.multidisplay.keep_process_alive" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.companionApp" android:value="true"/>
+        <meta-data android:name="com.samsung.android.health.permission.read" android:value="com.samsung.shealth.sleep_goal"/>
+        <meta-data android:name="com.samsung.android.health.permission.write" android:value="com.samsung.shealth.sleep_goal"/>
+        <meta-data android:name="com.samsung.android.bixby.agent.support_bixby_wakeupless_command" android:value="true"/>
+        <meta-data android:name="com.samsung.android.rubin.runestone_enabled" android:value="true"/>
+        <meta-data android:name="android.supports_size_changes" android:value="true"/>
+        <meta-data android:name="theming-meta" android:value="meta_014_clock_package"/>
+        <meta-data android:name="theming-meta-xml" android:value="@xml/meta_014_clock_package"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.sec.android.app.clockpackage.alarmwidget.AlarmonoffSnackbarActivity" android:showOnLockScreen="true" android:showWhenLocked="true" android:taskAffinity="com.samsung.android.app.reminder.action.REGISTER" android:theme="@style/Snackbar_Transparent" android:turnScreenOn="true">
+            <meta-data android:name="com.samsung.android.dex.launchwidth" android:value="0"/>
+            <meta-data android:name="com.samsung.android.dex.launchheight" android:value="0"/>
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_ONOFF"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.sec.android.app.clockpackage.ClockPackage" android:theme="@style/ClockThemeMain" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <meta-data android:name="com.samsung.android.disableSnapshot" android:value="true"/>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+            <intent-filter>
+                <action android:name="com.samsung.android.support.REMOTE_ACTION"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.support.REMOTE_ACTION" android:resource="@xml/remote_action"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="ClockMain" android:scheme="clockpackage"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.launcher.icon_theme" android:value="themeColor"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.sec.android.app.clockpackage.ClockPackageExecutable" android:permission="com.sec.android.app.clockpackage.permission.ACCESS_WCCITY" android:theme="@style/ClockThemeMain" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.samsung.android.support.executable"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.INTENT_WORLDCLOCK"/>
+                <action android:name="com.sec.android.app.clockpackage.INTENT_STOPWATCH"/>
+                <action android:name="com.sec.android.app.clockpackage.INTENT_TIMER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.samsung.android.support.executable" android:resource="@xml/executable"/>
+        <receiver android:exported="false" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.alarmwidget.ClockAlarmWidgetProvider">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/clock_alarmwidget_appwidget_info"/>
+            <meta-data android:name="UpdateForScreenSizeChange" android:value="true"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/clock_alarmwidget_provider_info"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.sec.android.app.clockpackage.alarmwidget.ClockAlarmWidgetSettingActivity"/>
+            <intent-filter android:priority="100">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_SELECT"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.NOTIFY_ALARM_CHANGE_WIDGET"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_ONOFF"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_ADDNEW"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_EDIT"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_SETTING"/>
+                <action android:name="com.sec.android.widgetapp.alarmclock.ALARM_APPWIDGET_SETTING_CHANGED"/>
+                <action android:name="com.sec.android.app.launcher.intent.action.UPDATE_SYNC_MODE"/>
+                <action android:name="com.sec.android.intent.action.LAUNCHER_CHANGED"/>
+                <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
+                <action android:name="com.samsung.launcher.action.EASY_MODE_CHANGE"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_CLOCK_WIDGET_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/timer" android:name="com.sec.android.app.clockpackage.timerwidget.TimerWidgetProvider" android:permission="com.sec.android.app.clockpackage.permission.READ_TIMER">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="action.timer.widget_PRESET_MODIFIED"/>
+                <action android:name="action.timer.widget.UPDATE_CLICK_START"/>
+                <action android:name="action.timer.widget.UPDATE_CLICK_PAUSE"/>
+                <action android:name="action.timer.widget.UPDATE_CLICK_RESUME"/>
+                <action android:name="action.timer.widget.UPDATE_CLICK_CANCEL"/>
+                <action android:name="action_timer_widget_folder_closed"/>
+                <action android:name="com.samsung.intent.action.EMERGENCY_STATE_CHANGED"/>
+                <action android:name="action.timer.widget.UPDATE_TIME"/>
+                <action android:name="action.timer_widget_application_data_cleared"/>
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED"/>
+                <action android:name="com.samsung.android.theme.themecenter.THEME_APPLY"/>
+                <action android:name="action.timer.widget.OPEN_PHONE_CLICK"/>
+                <action android:name="com.samsung.sea.rm.DEMO_RESET_STARTED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/timer_appwidget_info"/>
+            <meta-data android:name="com.samsung.android.appwidget.PRIVACY_WIDGET" android:value="false"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.backuprestore.receiver.AlarmBackupRestoreReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.REQUEST_BACKUP_ALARM"/>
+                <action android:name="com.sec.android.intent.action.REQUEST_RESTORE_ALARM"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.backuprestore.receiver.ClockBackupRestoreReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.REQUEST_BACKUP_WORLDCLOCK"/>
+                <action android:name="com.sec.android.intent.action.REQUEST_RESTORE_WORLDCLOCK"/>
+                <action android:name="com.sec.android.intent.action.REQUEST_RESTORE_WORLDCLOCK_V2"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="false" android:name="com.sec.android.app.clockpackage.receivers.SystemBroadcastReceiver" android:permission="com.sec.android.settings.permission.SOFT_RESET">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="com.samsung.intent.action.SETTINGS_SOFT_RESET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.receivers.ClocksDemoReceiver" android:permission="com.samsung.sea.retailagent.permission.RETAILMODE">
+            <intent-filter>
+                <action android:name="com.samsung.sea.rm.DEMO_RESET_STARTED"/>
+                <action android:name="com.samsung.sea.rm.DEMO_RESET_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:allowTaskReparenting="true" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.sec.android.widgetapp.digitalclock.DigitalClockSettingActivity" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.sec.android.widgetapp.analogclock.AnalogClockSettingActivity" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.sec.android.widgetapp.dualclockdigital.DualClockDigitalSettingActivity" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="true" android:exported="true" android:name="com.sec.android.app.clockpackage.ClockSetupWizardWelcomeActivity" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.sec.android.app.secsetupwizard.APP_PERMISSIONS_FOR_CHINA"/>
+                <action android:name="com.samsung.android.spv.ACTION_VIEW_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.sec.android.app.clockpackage.alarmwidget.ClockAlarmWidgetSettingActivity" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.sec.android.app.clockpackage.alarmwidget.ClockAlarmWidgetConfigureActivity" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/digital_clock" android:name="com.sec.android.widgetapp.digitalclock.DigitalClockWidgetProvider">
+            <intent-filter android:priority="100">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.sec.android.widgetapp.digitalclock.SHOW_CLOCKPACKAGE"/>
+                <action android:name="com.sec.android.widgetapp.digitalclock.ACTION_DIGITAL_CLOCK_SETTING_CHANGED"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_CLOCK_WIDGET_UPDATE"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_MIDNIGHT_DATE_CHANGED"/>
+                <action android:name="com.sec.android.app.launcher.intent.action.UPDATE_SYNC_MODE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/digitalclock_appwidget_info"/>
+            <meta-data android:name="UpdateForScreenSizeChange" android:value="true"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/digitalclock_provider_info"/>
+        </receiver>
+        <receiver android:configChanges="orientation|screenSize" android:enabled="true" android:exported="false" android:label="@string/dual_clock" android:name="com.sec.android.widgetapp.dualclockdigital.DualClockDigitalWidgetProvider">
+            <intent-filter android:priority="100">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.app.clockpackage.dualclockdigital.CHANGE_CITY_FIRST"/>
+                <action android:name="com.sec.android.app.clockpackage.dualclockdigital.CHANGE_CITY_SECOND"/>
+                <action android:name="com.sec.android.app.clockpackage.dualclockdigital.ADD_CITY"/>
+                <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.sec.android.widgetapp.dualclockdigital.ACTION_DUAL_CLOCK_DIGITAL_SETTING_CHANGED"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_CLOCK_WIDGET_UPDATE"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_MIDNIGHT_DATE_CHANGED"/>
+                <action android:name="com.sec.android.app.launcher.intent.action.UPDATE_SYNC_MODE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/dualclockdigital_appwidget_info"/>
+            <meta-data android:name="UpdateForScreenSizeChange" android:value="true"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/dualclockdigital_provider_info"/>
+        </receiver>
+        <provider android:authorities="com.sec.android.provider.clockpackage.dualclockdigital" android:enabled="true" android:name="com.sec.android.widgetapp.dualclockdigital.DualClockDigitalDataContentProvider" android:readPermission="com.sec.android.dualclockdigital.permission.READ_DATA" android:writePermission="com.sec.android.dualclockdigital.permission.WRITE_DATA"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.sec.android.widgetapp.dualclockdigital.DualClockDigitalBackupRestoreReceiver" android:permission="com.wssnps.permission.COM_WSSNPS">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.REQUEST_BACKUP_DUALCLOCK_WIDGET"/>
+                <action android:name="com.samsung.android.intent.action.REQUEST_RESTORE_DUALCLOCK_WIDGET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/analog_clock" android:name="com.sec.android.widgetapp.analogclock.AnalogClockWidgetProvider">
+            <intent-filter android:priority="100">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.sec.android.intent.action.WALLPAPER_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="com.sec.android.widgetapp.analogclock.SHOW_CLOCKPACKAGE"/>
+                <action android:name="com.sec.android.widgetapp.analogclock.ACTION_ANALOG_CLOCK_SETTING_CHANGED"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_ANALOG_WIDGET_UPDATE"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_CLOCK_WIDGET_UPDATE"/>
+                <action android:name="com.sec.android.app.clockpackage.ACTION_MIDNIGHT_DATE_CHANGED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/analogclock_appwidget_info"/>
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/analogclock_provider_info"/>
+        </receiver>
+        <provider android:authorities="com.sec.android.app.clockpackage" android:enabled="true" android:exported="true" android:label="sCloud Test Provider" android:name="com.samsung.android.scloud.oem.lib.ClientProvider" android:readPermission="com.samsung.android.scloud.backup.lib.read" android:syncable="false" android:writePermission="com.samsung.android.scloud.backup.lib.write"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.search" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.sec.android.app.clockpackage.search.ClockSettingsSearchProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.settings.require_settings_key" android:value="top_level_clock_settings_main_screen"/>
+            <meta-data android:name="com.samsung.android.settings.require_settings_title" android:value="@string/clock_settings"/>
+            <meta-data android:name="com.android.settings.require_config_info" android:value="true"/>
+            <meta-data android:name="com.android.settings.require_partial_index" android:value="true"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/clock_settings" android:name="com.sec.android.app.clockpackage.ClockSettingsActivity" android:taskAffinity="" android:theme="@style/ClockTheme">
+            <intent-filter>
+                <action android:name="com.sec.android.intent.action.SEC_APPLICATION_SETTINGS"/>
+                <category android:name="com.sec.android.intent.category.SEC_APPLICATION_SETTINGS"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.contact.VIEW_CLOCK_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.sec.android.app.clockpackage.ClockPackageManageSpaceActivity" android:taskAffinity="" android:theme="@style/ClockThemeTranslucent"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.provider.spagecardprovider" android:exported="true" android:name="com.sec.android.app.clockpackage.bixbyhomecard.alarmminicard.AlarmMiniCardProvider"/>
+        <meta-data android:name="com.samsung.android.sdk.spage.card.info" android:resource="@xml/cards"/>
+        <receiver android:exported="false" android:name="com.sec.android.app.clockpackage.bixbyhomecard.alarmminicard.AlarmMiniCardReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.sec.android.widgetapp.alarmclock.NOTIFY_ALARM_CHANGE_WIDGET"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.bixbyroutine.activity.BixbyRoutineAlarmActivity" android:taskAffinity="" android:theme="@style/Routine_AlarmEditTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="com.sec.android.app.clockpackage.bixbyroutine.activity.BixbyRoutineTimerActivity" android:taskAffinity="" android:theme="@style/TimerDialogTheme"/>
+        <activity android:exported="true" android:name="com.sec.android.app.clockpackage.bixbyroutine.activity.BixbyRoutineStopwatchActivity" android:taskAffinity="" android:theme="@style/RoutineTimerTheme"/>
+        <meta-data android:name="com.samsung.android.sdk.routines.v3.meta.ACTION" android:resource="@xml/bixby_routines_action_meta"/>
+        <meta-data android:name="com.samsung.android.sdk.routines.v3.meta.CONDITION" android:resource="@xml/bixby_routines_condition_meta"/>
+        <activity android:configChanges="density|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:label="@string/upcoming_alarm_notification" android:name="com.sec.android.app.clockpackage.alarm.activity.UpcomingAlarmNotificationActivity" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit_Base"/>
+        <activity android:configChanges="density|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmEditActivity" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.alarm.activity.BedTimeEditActivity" android:permission="com.sec.android.app.clockpackage.ACCESS_BEDTIME_EDIT" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.INTENT_ALARM_EDIT_FROM_BEDTIME"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.INTENT_ALARM_EDIT_FROM_SMARTTHINGS"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.alarm.activity.BedTimeFTUActivity" android:taskAffinity="" android:theme="@style/ClockTheme_BedTimeFTU" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmStkConfigActivity" android:taskAffinity=".executable" android:theme="@style/ClockTheme_AlarmEdit" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="clock" android:scheme="deeplink"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:label="@string/alarm" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmAddExecutable" android:taskAffinity=".executable" android:theme="@style/ClockTheme_AlarmEdit" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.android.support.executable"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.INTENT_ALARM_ADD"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:directBootAware="true" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:label="@string/alarm" android:launchMode="singleInstance" android:maxAspectRatio="2.7688" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmAlertActivity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+            <meta-data android:name="com.samsung.android.foldable.keep_screen_when_folding" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:directBootAware="true" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/alarm" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmAlertSubScreenB2Activity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:directBootAware="true" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/alarm" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmCameraCoverAlertActivity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:directBootAware="true" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/alarm" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmAlertSubScreenB1Activity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:label="@string/alarm_Spotify_selected" android:name="com.sec.android.app.clockpackage.alarm.activity.SpotifyActivity" android:taskAffinity="" android:theme="@style/ClockThemeMain"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.sec.android.app.clockpackage.alarm.activity.SpotifySearchActivity" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_include_voice"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmCTSHandleActivity" android:permission="com.android.alarm.permission.SET_ALARM" android:taskAffinity="" android:theme="@style/ClockThemeTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_ALARMS"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DISMISS_ALARM"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SNOOZE_ALARM"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="false" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmHandleActivity" android:taskAffinity="" android:theme="@style/ClockThemeTranslucent">
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.alarm.ACTION_ALARM_NOTIFICATION_CHINA_DB_NO_UPDATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.alarm.ACTION_ALARM_NOTIFICATION_CHINA_DB_UPDATE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_NOTIFICATION_CLEAR"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_NOTIFICATION_CLEAR_SNOOZE_ALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_NOTIFICATION_DISMISS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_VIEWALARM"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="density|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:label="@string/snooze" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmSnoozeActivity" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit_Base"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/alarm_sound" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmSoundMainActivity" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit_Base"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/alarmvibration" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmVibPatternActivity" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit_Base"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/alarm_holiday" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmHolidayActivity" android:taskAffinity="" android:theme="@style/ClockTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/select_alarm" android:name="com.sec.android.app.clockpackage.alarm.activity.AlarmWidgetListActivity" android:taskAffinity="" android:theme="@style/AlarmWidgetActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.sec.android.app.clockpackage" android:path="/alarmlist/" android:scheme="alarm"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <receiver android:directBootAware="true" android:exported="false" android:name="com.sec.android.app.clockpackage.alarm.receiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.samsung.intent.action.BCS_REQUEST"/>
+                <action android:name="com.samsung.intent.action.EMERGENCY_STATE_CHANGED"/>
+                <action android:name="com.samsung.android.theme.themecenter.THEME_APPLY"/>
+                <action android:name="com.sec.android.clockpackage.SCLOUD_RESTORE_ALARM"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.alarm.receiver.BedTimeModeReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.forest.BEDTIME_MODE_SCHEDULE_SWITCH_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.alarm.receiver.SamsungHealthDataChangeReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.app.shealth.intent.action.DATA_CHANGED"/>
+                <action android:name="com.samsung.android.app.shealth.intent.action.SLEEP_DETECTION_START"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.sec.android.app.clockpackage.alarm.receiver.AlarmSecurityReceiver" android:permission="com.android.alarm.permission.SET_ALARM">
+            <intent-filter android:priority="100">
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.EXPLICIT_ALARM_ALERT"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.UPCOMING_ALERT"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.UPCOMING_BIXBY_BRIEFING_ALERT"/>
+                <action android:name="com.sec.android.app.clockpackage.alarm.REMOVE_PRE_DISMISSED_ALARMS"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_NOTIFICATION_CLEAR_SNOOZE_ALL_COVERSTATE"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_NOTIFICATION_DISMISS_COVERSTATE"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ALARM_NOTIFICATION_DISMISS_ALL_COVERSTATE"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.BEDTIME_ALARM_NOTIFICATION_CLEAR"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.BEDTIME_ALARM_NOTIFICATION_CLEAR_AFTER_1HR"/>
+                <action android:name="com.sec.android.app.clockpackage.intent.action.RESPONSE_BIXBY_ALARM"/>
+                <action android:name="com.samsung.sec.android.clockpacakge.alarm.ALARM_EDIT_MESSAGE"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.ACTION_HANDLE_SMARTTHINGS"/>
+                <action android:name="com.sec.android.app.clockpackage.alarm.REQUEST_SORT_ORDER_TYPE"/>
+                <action android:name="com.sec.android.app.clockpackage.alarm.SYNC_WATCH_INFO"/>
+                <action android:name="com.sec.android.app.clockpackage.alarm.FORWARD_TO_CLOCK"/>
+                <action android:name="com.sec.android.app.clockpackage.alarm.FORWARD_TO_WATCH_LAUNCH_PERMISSION"/>
+                <action android:name="com.sec.android.app.clockpackage.alarm.FORWARD_TO_WATCH_REFRESH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.clockpackage.ADD_ALARM"/>
+                <action android:name="com.sec.android.clockpackage.DIRECT_EDIT_ALARM"/>
+                <action android:name="com.sec.android.clockpackage.DELETE_ALARM"/>
+                <action android:name="com.samsung.sec.android.clockpackage.alarm.NOTIFY_ALARM_DIRECTSAVED"/>
+                <action android:name="com.sec.android.clockpackage.EDIT_ALARM"/>
+                <action android:name="com.samsung.sec.android.clockpackage.DIRECT_ALARM_STOP"/>
+                <action android:name="com.sec.android.clockpackage.SET_ALARM"/>
+                <action android:name="com.sec.android.clockpackage.REQUEST_ALARM_BACKUPVERSION"/>
+                <action android:name="com.samsung.android.calendar.UPDATE_CHINA_HOLIDAY_DATA_REMINDER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.sec.android.app.clockpackage.alarm.receiver.TpoContextProviderChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:host="com.samsung.android.rubin.context.sleepevent" android:pathPattern="/wakeupevent.*" android:scheme="content"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.sec.android.clockpackage" android:directBootAware="true" android:exported="true" android:name="com.sec.android.app.clockpackage.alarm.model.AlarmProvider" android:readPermission="com.sec.android.app.clockpackage.permission.READ_ALARM" android:writePermission="com.sec.android.app.clockpackage.permission.WRITE_ALARM"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.watchinfo" android:exported="true" android:name="com.sec.android.app.clockpackage.alarm.model.WatchInfoProvider" android:readPermission="com.sec.android.app.clockpackage.permission.READ_ALARM" android:writePermission="com.sec.android.app.clockpackage.permission.WRITE_ALARM"/>
+        <service android:enabled="true" android:exported="false" android:name="com.sec.android.app.clockpackage.alarm.service.AlarmAlertPopupService"/>
+        <service android:directBootAware="true" android:enabled="true" android:exported="false" android:name="com.sec.android.app.clockpackage.alarm.service.AlarmService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.sec.android.app.clockpackage.alarm.service.AlarmEcbmService"/>
+        <meta-data android:name="smartthings_config" android:resource="@xml/smartthings_config"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/time_zone_converter" android:name="com.sec.android.app.clockpackage.worldclock.viewmodel.TimeZoneConvertorActivity" android:taskAffinity="" android:theme="@style/ClockTheme_WC" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/worldclock" android:launchMode="singleTop" android:name="com.sec.android.app.clockpackage.worldclock.viewmodel.WorldclockGlobeMain" android:permission="com.sec.android.app.clockpackage.permission.ACCESS_WCCITY" android:screenOrientation="user" android:taskAffinity="" android:theme="@style/ClockTheme_WC" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <meta-data android:name="com.samsung.android.supports_pop_over" android:value="false"/>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_include_voice"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:name="com.sec.android.app.clockpackage.worldclock.viewmodel.WorldclockCityListActivity" android:permission="com.sec.android.app.clockpackage.permission.ACCESS_WCCITY" android:taskAffinity="" android:theme="@style/ClockTheme_WC" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity-alias android:exported="true" android:name="com.sec.android.app.clockpackage.worldclock.WCCities" android:permission="com.sec.android.app.clockpackage.permission.ACCESS_WCCITY" android:targetActivity="com.sec.android.app.clockpackage.worldclock.viewmodel.WorldclockCityListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity-alias>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.worldclock.receiver.ToWorldclockReceiver" android:permission="com.sec.android.app.clockpackage.permission.ACCESS_WCRECEIVER">
+            <intent-filter>
+                <action android:name="watchdualclock.request.CITYINFO"/>
+                <action android:name="worldclock.add.CITYINFO"/>
+                <action android:name="com.sec.android.app.clockpackage.worldclock.model.GET_WEATHER_SWICTH_STATE"/>
+                <action android:name="com.sec.android.app.clockpackage.worldclock.receiver.GET_WORLDCLOCK_PRESET_STATE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.sec.android.provider.stri_s1_worldclock" android:exported="true" android:name="com.sec.android.app.clockpackage.worldclock.model.WorldclockDataContentProvider" android:readPermission="com.sec.android.app.clockpackage.permission.READ_WCCONTENT" android:writePermission="com.sec.android.app.clockpackage.permission.WRITE_WCCONTENT"/>
+        <receiver android:exported="false" android:name="com.sec.android.app.clockpackage.stopwatch.receiver.StopwatchReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.EMERGENCY_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.sec.android.app.clockpackage.stopwatch.viewmodel.StopwatchNotificationService"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.timer.viewmodel.TimerCTSHandleActivity" android:permission="com.android.alarm.permission.SET_ALARM" android:taskAffinity="" android:theme="@style/ClockThemeTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_TIMER"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_TIMERS"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DISMISS_TIMER"/>
+                <category android:name="android.intent.category.VOICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/timer_times_out" android:launchMode="singleInstance" android:maxAspectRatio="2.7688" android:name="com.sec.android.app.clockpackage.timer.viewmodel.TimerAlarmActivity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+            <meta-data android:name="com.samsung.android.foldable.keep_screen_when_folding" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/timer" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.timer.activity.TimerSubScreenB2AlertActivity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/timer" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.timer.activity.TimerSubScreenB1AlertActivity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:label="@string/timer" android:launchMode="singleInstance" android:name="com.sec.android.app.clockpackage.timer.activity.TimerCameraCoverAlertActivity" android:resizeableActivity="false" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@style/AlertActivityTheme">
+            <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="1"/>
+            <meta-data android:name="com.samsung.android.edge.hide_edge_screen_handle" android:value="true"/>
+        </activity>
+        <service android:exported="false" android:name="com.sec.android.app.clockpackage.timer.viewmodel.TimerService"/>
+        <service android:name="com.sec.android.app.clockpackage.timer.viewmodel.TimerWidgetAdapterService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:enabled="true" android:exported="false" android:name="com.sec.android.app.clockpackage.timer.viewmodel.TimerAlarmPopupService"/>
+        <service android:exported="false" android:name="com.sec.android.app.clockpackage.timer.viewmodel.TimerNotificationService"/>
+        <service android:exported="false" android:name="com.sec.android.app.clockpackage.timer.popuppip.PipTimerService"/>
+        <receiver android:exported="true" android:name="com.sec.android.app.clockpackage.timer.receiver.TimerSecurityReceiver" android:permission="com.android.alarm.permission.SET_ALARM">
+            <intent-filter android:priority="100">
+                <action android:name="com.sec.android.app.clockpackage.timer.playsound"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_SET_TIME"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_START"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_STOP"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_RESET"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_RESTART"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_RESTART_NEW"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_NOTIFICATION_SERVICE_START"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_NOTIFICATION_SERVICE_STOP"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.SHOW_PIP"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.TIMER_UPDATE_ACTION"/>
+                <action android:name="com.sec.android.app.clockpackage.timer.HIDE_PIP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.android.app.clockpackage.timer.receiver.TimerReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.EMERGENCY_STATE_CHANGED"/>
+                <action android:name="com.samsung.intent.action.BCS_REQUEST"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.samsung.sec.android.clockpackage.timer" android:exported="true" android:name="com.sec.android.app.clockpackage.timer.model.TimerProvider" android:writePermission="com.sec.android.app.clockpackage.permission.WRITE_TIMER"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/permissions" android:name="com.sec.android.app.clockpackage.aboutpage.activity.PermissionActivity" android:taskAffinity="" android:theme="@style/ClockThemeMain"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/open_source_licences" android:launchMode="singleTop" android:name="com.sec.android.app.clockpackage.aboutpage.activity.OpenSourceLicenseActivity" android:theme="@style/OpenSourceTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.sec.android.app.clockpackage.aboutpage.activity.AboutClockActivity" android:taskAffinity="" android:theme="@style/AboutClockTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/setting" android:name="com.sec.android.app.clockpackage.commonalert.activity.AlertSettingActivity" android:taskAffinity="" android:theme="@style/AppPreferenceTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:label="@string/selected_ringtone" android:name="com.sec.android.app.clockpackage.ringtonepicker.viewmodel.RingtonePickerActivity" android:taskAffinity="" android:theme="@style/ClockTheme_AlarmEdit_Base"/>
+        <activity android:configChanges="keyboardHidden|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.sec.android.app.clockpackage.alertbackground.activity.AlertBgMainActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/ClockTheme"/>
+        <activity android:configChanges="keyboardHidden" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.sec.android.app.clockpackage.alertbackground.activity.ImageEditActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/AlertBgEditActivityTheme"/>
+        <activity android:configChanges="keyboardHidden" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.sec.android.app.clockpackage.alertbackground.activity.VideoEditActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/AlertBgEditActivityTheme"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.alertbgprovider" android:exported="false" android:name="com.sec.android.app.clockpackage.alertbackground.model.AlertBgProvider"/>
+        <provider android:authorities="com.sec.android.log.clj47h9zhd" android:exported="true" android:name="com.sec.android.diagmonagent.log.provider.DiagMonProvider" android:permission="com.sec.android.diagmonagent.permission.PROVIDER"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/menu_customization_service" android:name="com.sec.android.app.clockpackage.common.activity.CustomizationServiceOnActivity" android:taskAffinity="" android:theme="@style/ClockTheme"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.provider.routines.v3" android:exported="true" android:name="com.samsung.android.sdk.routines.v3.internal.RoutineSdkContentProvider" android:permission="com.samsung.android.permission.sdk.routines.v3.ACCESS_ROUTINES">
+            <intent-filter>
+                <action android:name="com.samsung.android.sdk.routines.v3.ROUTINE_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.sdk.routines.v3.version" android:value="3.0.0"/>
+            <meta-data android:name="com.samsung.android.sdk.routines.v3.version_code" android:value="3"/>
+        </provider>
+        <service android:name="com.sec.android.diagmonagent.log.ged.scheduler.GEDJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.sec.android.app.clockpackage.CapsuleProvider" android:exported="true" android:name="com.samsung.android.sdk.bixby2.provider.CapsuleProvider"/>
+        <meta-data android:name="com.samsung.android.sdk.spage.version" android:value="1.3.01.0"/>
+        <meta-data android:name="com.samsung.android.sdk.spage.version_code" android:value="130100000"/>
+        <meta-data android:name="SPDE.build.signature" android:value="9fb9a6cc8d9e93e41aab6c283bb442d52de86d79/95628211/release/Clock-1212000-12.1.15"/>
+        <meta-data android:name="SPDE.env.version" android:value="4.2.1/L31.1.15/0.9.31"/>
+    </application>
+</manifest>

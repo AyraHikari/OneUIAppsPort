@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">PLURAL_OTHER_AW_TPOP_CANT_ADD_MORE_THAN_PD_LOCATIONS_DELETE_SOME_LOCATIONS_TO_ADD_THIS_ONE</item>
+        <item quantity="zero">PLURAL_ZERO_AW_TPOP_CANT_ADD_MORE_THAN_PD_LOCATIONS_DELETE_SOME_LOCATIONS_TO_ADD_THIS_ONE</item>
+        <item quantity="one">PLURAL_ONE_AW_TPOP_CANT_ADD_MORE_THAN_PD_LOCATIONS_DELETE_SOME_LOCATIONS_TO_ADD_THIS_ONE</item>
+        <item quantity="two">PLURAL_TWO_AW_TPOP_CANT_ADD_MORE_THAN_PD_LOCATIONS_DELETE_SOME_LOCATIONS_TO_ADD_THIS_ONE</item>
+        <item quantity="few">PLURAL_FEW_AW_TPOP_CANT_ADD_MORE_THAN_PD_LOCATIONS_DELETE_SOME_LOCATIONS_TO_ADD_THIS_ONE</item>
+        <item quantity="many">PLURAL_MANY_AW_TPOP_CANT_ADD_MORE_THAN_PD_LOCATIONS_DELETE_SOME_LOCATIONS_TO_ADD_THIS_ONE</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">PLURAL_OTHER_AW_TPOP_CANT_ENTER_MORE_THAN_PD_CHARACTERS</item>
+        <item quantity="zero">PLURAL_ZERO_AW_TPOP_CANT_ENTER_MORE_THAN_PD_CHARACTERS</item>
+        <item quantity="one">PLURAL_ONE_AW_TPOP_CANT_ENTER_MORE_THAN_PD_CHARACTERS</item>
+        <item quantity="two">PLURAL_TWO_AW_TPOP_CANT_ENTER_MORE_THAN_PD_CHARACTERS</item>
+        <item quantity="few">PLURAL_FEW_AW_TPOP_CANT_ENTER_MORE_THAN_PD_CHARACTERS</item>
+        <item quantity="many">PLURAL_MANY_AW_TPOP_CANT_ENTER_MORE_THAN_PD_CHARACTERS</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">PLURAL_OTHER_IDLE_HEADER_PD_SELECTED</item>
+        <item quantity="zero">PLURAL_ZERO_IDLE_HEADER_PD_SELECTED</item>
+        <item quantity="one">PLURAL_ONE_IDLE_HEADER_PD_SELECTED</item>
+        <item quantity="two">PLURAL_TWO_IDLE_HEADER_PD_SELECTED</item>
+        <item quantity="few">PLURAL_FEW_IDLE_HEADER_PD_SELECTED</item>
+        <item quantity="many">PLURAL_MANY_IDLE_HEADER_PD_SELECTED</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">PLURAL_OTHER_AW_BUTTON_PD_DAYS</item>
+        <item quantity="zero">PLURAL_ZERO_AW_BUTTON_PD_DAYS</item>
+        <item quantity="one">PLURAL_ONE_AW_BUTTON_PD_DAYS</item>
+        <item quantity="two">PLURAL_TWO_AW_BUTTON_PD_DAYS</item>
+        <item quantity="few">PLURAL_FEW_AW_BUTTON_PD_DAYS</item>
+        <item quantity="many">PLURAL_MANY_AW_BUTTON_PD_DAYS</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">PLURAL_OTHER_AW_BUTTON_PD_HOURS</item>
+        <item quantity="zero">PLURAL_ZERO_AW_BUTTON_PD_HOURS</item>
+        <item quantity="one">PLURAL_ONE_AW_BUTTON_PD_HOURS</item>
+        <item quantity="two">PLURAL_TWO_AW_BUTTON_PD_HOURS</item>
+        <item quantity="few">PLURAL_FEW_AW_BUTTON_PD_HOURS</item>
+        <item quantity="many">PLURAL_MANY_AW_BUTTON_PD_HOURS</item>
+    </plurals>
+</resources>

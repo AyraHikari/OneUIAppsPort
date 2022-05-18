@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WeatherWidget.TextAppearance.Clock" parent="@style/WeatherWidget.TextAppearance">
+        <item name="android:fontFamily">@string/font_roboto_light</item>
+    </style>
+    <style name="WeatherWidget.TextAppearance.Temperature" parent="@style/WeatherWidget.TextAppearance">
+        <item name="android:fontFamily">@string/font_roboto_regular</item>
+    </style>
+</resources>

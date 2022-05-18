@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">"Alarma d'aquí a %d dies"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Alarma d'aquí a %d dia"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">"Alarma d'aquí a %d hores"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Alarma d'aquí a %d hora"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">"Alarma d'aquí a %d hores i 1 minut"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Alarma d'aquí a %d hora i 1 minut"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">"Alarma d'aquí a %d minuts"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Alarma d'aquí a %d minut"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">"D'aquí a %d minuts"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"D'aquí a %d minut"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">No es poden afegir més de %d alarmes.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"No es pot afegir més d'%d alarma."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Vols esborrar %d fons?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vols esborrar %d fons?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notificacions noves</item>
+        <item quantity="one">%d notificació nova</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">Seleccionats: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Seleccionat: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d minuts abans</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut abans</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s i %3$d més</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s i %3$d més</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Temps de repòs: %d hores</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Temps de repòs: %d hora</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Temps de repòs: %d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Temps de repòs: %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Repetir %d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Repetir %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Menys %d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Menys %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Més %d minuts</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Més %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">No es poden afegir més de %d temporitzadors predefinits.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"No es pot afegir més d'%d temporitzador predefinit."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">No es poden afegir més de %d ciutats.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"No es pot afegir més d'%d ciutat."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

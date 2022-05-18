@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_rainsnow_whitebg__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s19" android:animation="@drawable/$weather_ic_rainsnow_whitebg__1" />
+    <target android:name="s19pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__4" />
+    <target android:name="s19pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__6" />
+    <target android:name="s18" android:animation="@drawable/$weather_ic_rainsnow_whitebg__8" />
+    <target android:name="s18pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__13" />
+    <target android:name="s17" android:animation="@drawable/$weather_ic_rainsnow_whitebg__15" />
+    <target android:name="s17pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__18" />
+    <target android:name="s17pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__21" />
+    <target android:name="s16" android:animation="@drawable/$weather_ic_rainsnow_whitebg__23" />
+    <target android:name="s16pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__28" />
+    <target android:name="s15" android:animation="@drawable/$weather_ic_rainsnow_whitebg__31" />
+    <target android:name="s15pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__34" />
+    <target android:name="s15pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__36" />
+    <target android:name="s14" android:animation="@drawable/$weather_ic_rainsnow_whitebg__38" />
+    <target android:name="s14pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__43" />
+    <target android:name="s12s13" android:animation="@drawable/$weather_ic_rainsnow_whitebg__46" />
+    <target android:name="s13" android:animation="@drawable/$weather_ic_rainsnow_whitebg__49" />
+    <target android:name="s13pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__52" />
+    <target android:name="s12" android:animation="@drawable/$weather_ic_rainsnow_whitebg__54" />
+    <target android:name="s12pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__57" />
+    <target android:name="s12pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__59" />
+    <target android:name="s11" android:animation="@drawable/$weather_ic_rainsnow_whitebg__61" />
+    <target android:name="s11pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__64" />
+    <target android:name="s11pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__67" />
+    <target android:name="s10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__69" />
+    <target android:name="s10pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__74" />
+    <target android:name="s9" android:animation="@drawable/$weather_ic_rainsnow_whitebg__77" />
+    <target android:name="s9pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__80" />
+    <target android:name="s9pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__82" />
+    <target android:name="s12s8" android:animation="@drawable/$weather_ic_rainsnow_whitebg__84" />
+    <target android:name="s8" android:animation="@drawable/$weather_ic_rainsnow_whitebg__87" />
+    <target android:name="s8pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__92" />
+    <target android:name="s7" android:animation="@drawable/$weather_ic_rainsnow_whitebg__94" />
+    <target android:name="s7pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__97" />
+    <target android:name="s7pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__99" />
+    <target android:name="s6" android:animation="@drawable/$weather_ic_rainsnow_whitebg__101" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__104" />
+    <target android:name="s6pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__107" />
+    <target android:name="s5" android:animation="@drawable/$weather_ic_rainsnow_whitebg__109" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__112" />
+    <target android:name="s5pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__114" />
+    <target android:name="s4" android:animation="@drawable/$weather_ic_rainsnow_whitebg__116" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__119" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__122" />
+    <target android:name="s3" android:animation="@drawable/$weather_ic_rainsnow_whitebg__124" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__127" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__130" />
+    <target android:name="s2" android:animation="@drawable/$weather_ic_rainsnow_whitebg__132" />
+    <target android:name="s2pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__135" />
+    <target android:name="s2pg1p10" android:animation="@drawable/$weather_ic_rainsnow_whitebg__137" />
+</animated-vector>

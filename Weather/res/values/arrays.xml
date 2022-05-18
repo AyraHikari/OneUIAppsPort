@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_value">
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+    </string-array>
+    <string-array name="android_version">
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>N_MR1</item>
+        <item>O</item>
+        <item>O_MR1</item>
+        <item>P</item>
+        <item>Q</item>
+    </string-array>
+    <string-array name="auto_refresh_period_entries">
+        <item>@string/refresh_time_none</item>
+        <item>@string/refresh_time_hour</item>
+        <item>@string/refresh_time_3h</item>
+        <item>@string/refresh_time_6h</item>
+        <item>@string/refresh_time_12h</item>
+        <item>@string/refresh_time_24h</item>
+    </string-array>
+    <string-array name="auto_refresh_period_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="forced_restricted_csc_list">
+        <item>XXV</item>
+        <item>XEV</item>
+    </string-array>
+    <string-array name="forecast_provider_values">
+        <item></item>
+        <item>TWC</item>
+        <item>ACC</item>
+        <item>HUA</item>
+        <item>KOR</item>
+        <item>JPN_V4</item>
+        <item>WCN</item>
+    </string-array>
+    <string-array name="forecast_providers">
+        <item>Default</item>
+        <item>The Weather Channel</item>
+        <item>AccuWeather</item>
+        <item>Huafeng-Accu</item>
+        <item>WeatherNews Korea</item>
+        <item>WeatherNews Japan</item>
+        <item>WeatherNews China</item>
+    </string-array>
+    <string-array name="gear_mode">
+        <item>stand alone</item>
+        <item>deep link - 1</item>
+        <item>deep link - 3</item>
+    </string-array>
+    <string-array name="gear_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="gear_provider_values">
+        <item>com.samsung.android.gearoplugin</item>
+        <item>com.samsung.android.gearpplugin</item>
+        <item>com.samsung.android.geargplugin</item>
+        <item>com.samsung.android.gearrplugin</item>
+        <item>com.samsung.android.modenplugin</item>
+        <item>com.samsung.android.gearfit2plugin</item>
+        <item>com.samsung.accessory.goproviders</item>
+    </string-array>
+    <string-array name="gear_providers">
+        <item>O</item>
+        <item>P</item>
+        <item>G</item>
+        <item>R</item>
+        <item>Moden</item>
+        <item>Fit</item>
+        <item>S2</item>
+    </string-array>
+    <string-array name="lib_ver">
+        <item>150312.01</item>
+        <item>150313.01</item>
+        <item>150316.01</item>
+    </string-array>
+    <string-array name="members_banner_server">
+        <item>Stg</item>
+        <item>Prd</item>
+    </string-array>
+    <string-array name="members_banner_server_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="remote_config">
+        <item>None</item>
+        <item>Dev</item>
+        <item>Prd</item>
+    </string-array>
+    <string-array name="remote_config_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="resolutionInfo">
+        <item>2016 PHONE PORT</item>
+    </string-array>
+    <string-array name="restricted_csc_list">
+        <item>CDR</item>
+        <item>CHL</item>
+        <item>CHH</item>
+        <item>COM</item>
+        <item>CPA</item>
+        <item>ZTA</item>
+        <item>CRC</item>
+        <item>CTI</item>
+        <item>CTP</item>
+        <item>CTU</item>
+        <item>ECO</item>
+        <item>TCE</item>
+        <item>HME</item>
+        <item>PCT</item>
+        <item>PET</item>
+        <item>PER</item>
+        <item>PGU</item>
+        <item>NEN</item>
+    </string-array>
+    <string-array name="sep_value">
+        <item>2402</item>
+        <item>2403</item>
+        <item>2501</item>
+        <item>2502</item>
+        <item>2601</item>
+        <item>2701</item>
+        <item>2800</item>
+        <item>2801</item>
+        <item>2802</item>
+        <item>2803</item>
+        <item>2901</item>
+        <item>2902</item>
+        <item>2903</item>
+    </string-array>
+    <string-array name="sep_version">
+        <item>8.0</item>
+        <item>8.1</item>
+        <item>8.2</item>
+        <item>8.5</item>
+        <item>9.0</item>
+        <item>9.5</item>
+        <item>10.0</item>
+        <item>10.1</item>
+        <item>10.2</item>
+        <item>10.5</item>
+        <item>11.0</item>
+        <item>11.1</item>
+        <item>11.5</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_aesthetic">
+        <item>2x1</item>
+        <item>2x2</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_clock">
+        <item>4x1</item>
+        <item>4x2</item>
+        <item>5x1</item>
+        <item>5x2</item>
+        <item>6x1</item>
+        <item>6x2</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_clock_tablet">
+        <item>4x1</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_forecast">
+        <item>3x1</item>
+        <item>3x2</item>
+        <item>3x3</item>
+        <item>4x1</item>
+        <item>4x2</item>
+        <item>4x3</item>
+        <item>5x1</item>
+        <item>5x2</item>
+        <item>5x3</item>
+        <item>6x1</item>
+        <item>6x2</item>
+        <item>6x3</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_forecast_tablet">
+        <item>4x1</item>
+        <item>4x2</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_weather">
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>2x3</item>
+        <item>3x1</item>
+        <item>3x2</item>
+        <item>3x3</item>
+        <item>4x1</item>
+        <item>4x2</item>
+        <item>4x3</item>
+        <item>5x1</item>
+        <item>5x2</item>
+        <item>5x3</item>
+    </string-array>
+    <string-array name="supportCellSizeArray_weather_tablet">
+        <item>2x1</item>
+        <item>2x2</item>
+    </string-array>
+    <string-array name="temp_unit_entries">
+        <item>@string/centigrade</item>
+        <item>@string/farenheit</item>
+    </string-array>
+    <string-array name="temp_unit_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <array name="wcn_recommend">
+        <item>@array/wcn_recommend_01</item>
+        <item>@array/wcn_recommend_02</item>
+        <item>@array/wcn_recommend_03</item>
+        <item>@array/wcn_recommend_04</item>
+        <item>@array/wcn_recommend_05</item>
+        <item>@array/wcn_recommend_06</item>
+        <item>@array/wcn_recommend_07</item>
+        <item>@array/wcn_recommend_08</item>
+        <item>@array/wcn_recommend_09</item>
+        <item>@array/wcn_recommend_10</item>
+        <item>@array/wcn_recommend_11</item>
+        <item>@array/wcn_recommend_12</item>
+        <item>@array/wcn_recommend_13</item>
+        <item>@array/wcn_recommend_14</item>
+        <item>@array/wcn_recommend_15</item>
+        <item>@array/wcn_recommend_16</item>
+        <item>@array/wcn_recommend_17</item>
+        <item>@array/wcn_recommend_18</item>
+    </array>
+    <string-array name="wcn_recommend_01">
+        <item>101010100</item>
+        <item>Beijing</item>
+        <item>北京</item>
+    </string-array>
+    <string-array name="wcn_recommend_02">
+        <item>101020100</item>
+        <item>Shanghai</item>
+        <item>上海</item>
+    </string-array>
+    <string-array name="wcn_recommend_03">
+        <item>101030100</item>
+        <item>Tianjin</item>
+        <item>天津</item>
+    </string-array>
+    <string-array name="wcn_recommend_04">
+        <item>101040100</item>
+        <item>Chongqing</item>
+        <item>重庆</item>
+    </string-array>
+    <string-array name="wcn_recommend_05">
+        <item>101320101</item>
+        <item>Hongkong</item>
+        <item>香港</item>
+    </string-array>
+    <string-array name="wcn_recommend_06">
+        <item>101330101</item>
+        <item>Macao</item>
+        <item>澳门</item>
+    </string-array>
+    <string-array name="wcn_recommend_07">
+        <item>101050101</item>
+        <item>Haerbin</item>
+        <item>哈尔滨</item>
+    </string-array>
+    <string-array name="wcn_recommend_08">
+        <item>101130101</item>
+        <item>Wulumuqi</item>
+        <item>乌鲁木齐</item>
+    </string-array>
+    <string-array name="wcn_recommend_09">
+        <item>101150101</item>
+        <item>Xining</item>
+        <item>西宁</item>
+    </string-array>
+    <string-array name="wcn_recommend_10">
+        <item>101160101</item>
+        <item>Lanzhou</item>
+        <item>兰州</item>
+    </string-array>
+    <string-array name="wcn_recommend_11">
+        <item>101080101</item>
+        <item>Huhehaote</item>
+        <item>呼和浩特</item>
+    </string-array>
+    <string-array name="wcn_recommend_12">
+        <item>101170101</item>
+        <item>Yinchuan</item>
+        <item>银川</item>
+    </string-array>
+    <string-array name="wcn_recommend_13">
+        <item>101090101</item>
+        <item>Shijiazhuang</item>
+        <item>石家庄</item>
+    </string-array>
+    <string-array name="wcn_recommend_14">
+        <item>101100101</item>
+        <item>Taiyuan</item>
+        <item>太原</item>
+    </string-array>
+    <string-array name="wcn_recommend_15">
+        <item>101060101</item>
+        <item>Changchun</item>
+        <item>长春</item>
+    </string-array>
+    <string-array name="wcn_recommend_16">
+        <item>101070101</item>
+        <item>Shenyang</item>
+        <item>沈阳</item>
+    </string-array>
+    <string-array name="wcn_recommend_17">
+        <item>101120101</item>
+        <item>Jinan</item>
+        <item>济南</item>
+    </string-array>
+    <string-array name="wcn_recommend_18">
+        <item>101140101</item>
+        <item>Lasa</item>
+        <item>拉萨</item>
+    </string-array>
+    <string-array name="weather_codes_names">
+        <item>NONE</item>
+        <item>SUNNY</item>
+        <item>PARTLY_SUNNY</item>
+        <item>CLOUDY</item>
+        <item>FOG</item>
+        <item>RAIN</item>
+        <item>SHOWER</item>
+        <item>MOSTLY_CLOUDY_W_SHOWER</item>
+        <item>PARTLY_SUNNY_W_SHOWER</item>
+        <item>THUNDER</item>
+        <item>PARTLY_SUNNY_W_THUNDER</item>
+        <item>FLURRIES</item>
+        <item>MOSTLY_CLOUDY_W_FLURRIES</item>
+        <item>PARTLY_SUNNY_W_FLURRIES</item>
+        <item>SNOW</item>
+        <item>MOSTLY_CLOUDY_W_SNOW</item>
+        <item>RAIN_AND_SNOW</item>
+        <item>ICE</item>
+        <item>HOT</item>
+        <item>COLD</item>
+        <item>WINDY</item>
+        <item>RAIN_W_THUNDER</item>
+        <item>HEAVY_RAIN</item>
+        <item>DUST</item>
+        <item>HURRICANE</item>
+    </string-array>
+    <string-array name="weather_codes_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+    <array name="wjp_recommend">
+        <item>@array/wjp_recommend_01</item>
+        <item>@array/wjp_recommend_02</item>
+        <item>@array/wjp_recommend_03</item>
+        <item>@array/wjp_recommend_04</item>
+        <item>@array/wjp_recommend_05</item>
+        <item>@array/wjp_recommend_06</item>
+        <item>@array/wjp_recommend_07</item>
+        <item>@array/wjp_recommend_08</item>
+        <item>@array/wjp_recommend_09</item>
+        <item>@array/wjp_recommend_10</item>
+        <item>@array/wjp_recommend_11</item>
+        <item>@array/wjp_recommend_12</item>
+    </array>
+    <string-array name="wjp_recommend_01">
+        <item>JP_002386</item>
+        <item>Tokyo</item>
+        <item>東京</item>
+    </string-array>
+    <string-array name="wjp_recommend_02">
+        <item>JP_000400</item>
+        <item>Osaka</item>
+        <item>大阪市</item>
+    </string-array>
+    <string-array name="wjp_recommend_03">
+        <item>JP_001835</item>
+        <item>Sapporo</item>
+        <item>札幌市</item>
+    </string-array>
+    <string-array name="wjp_recommend_04">
+        <item>JP_001148</item>
+        <item>Sendai</item>
+        <item>仙台市</item>
+    </string-array>
+    <string-array name="wjp_recommend_05">
+        <item>JP_001254</item>
+        <item>Niigata</item>
+        <item>新潟市</item>
+    </string-array>
+    <string-array name="wjp_recommend_06">
+        <item>JP_000233</item>
+        <item>Kanazawa</item>
+        <item>金沢市</item>
+    </string-array>
+    <string-array name="wjp_recommend_07">
+        <item>JP_000613</item>
+        <item>Nagoya</item>
+        <item>名古屋市</item>
+    </string-array>
+    <string-array name="wjp_recommend_08">
+        <item>JP_002285</item>
+        <item>Hiroshima</item>
+        <item>広島市</item>
+    </string-array>
+    <string-array name="wjp_recommend_09">
+        <item>JP_000121</item>
+        <item>Kochi</item>
+        <item>高知市</item>
+    </string-array>
+    <string-array name="wjp_recommend_10">
+        <item>JP_000738</item>
+        <item>Fukuoka</item>
+        <item>福岡市</item>
+    </string-array>
+    <string-array name="wjp_recommend_11">
+        <item>JP_001935</item>
+        <item>Okinawa</item>
+        <item>沖縄市</item>
+    </string-array>
+    <string-array name="wjp_recommend_12">
+        <item>JP_002371</item>
+        <item>Aomori</item>
+        <item>青森市</item>
+    </string-array>
+    <array name="wni_recommend">
+        <item>@array/wni_recommend_01</item>
+        <item>@array/wni_recommend_02</item>
+        <item>@array/wni_recommend_03</item>
+        <item>@array/wni_recommend_04</item>
+        <item>@array/wni_recommend_05</item>
+        <item>@array/wni_recommend_06</item>
+        <item>@array/wni_recommend_07</item>
+        <item>@array/wni_recommend_08</item>
+        <item>@array/wni_recommend_09</item>
+    </array>
+    <string-array name="wni_recommend_01">
+        <item>1100000000</item>
+        <item>Seoul</item>
+        <item>서울</item>
+    </string-array>
+    <string-array name="wni_recommend_02">
+        <item>3600000000</item>
+        <item>Sejong</item>
+        <item>세종시</item>
+    </string-array>
+    <string-array name="wni_recommend_03">
+        <item>2900000000</item>
+        <item>Gwangju</item>
+        <item>광주</item>
+    </string-array>
+    <string-array name="wni_recommend_04">
+        <item>2700000000</item>
+        <item>Daegu</item>
+        <item>대구</item>
+    </string-array>
+    <string-array name="wni_recommend_05">
+        <item>2600000000</item>
+        <item>Busan</item>
+        <item>부산</item>
+    </string-array>
+    <string-array name="wni_recommend_06">
+        <item>3100000000</item>
+        <item>Ulsan</item>
+        <item>울산</item>
+    </string-array>
+    <string-array name="wni_recommend_07">
+        <item>2800000000</item>
+        <item>Incheon</item>
+        <item>인천</item>
+    </string-array>
+    <string-array name="wni_recommend_08">
+        <item>3000000000</item>
+        <item>Daejeon</item>
+        <item>대전</item>
+    </string-array>
+    <string-array name="wni_recommend_09">
+        <item>5011000000</item>
+        <item>Jeju</item>
+        <item>제주시</item>
+    </string-array>
+</resources>

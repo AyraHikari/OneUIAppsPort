@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Տագնապը՝ %d օրից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Տագնապը՝ %d օրից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Տագնապը՝ %d ժամից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Տագնապը՝ %d ժամից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Տագնապ %d ժամ 1 րոպեից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Տագնապ %d ժամ 1 րոպեից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Տագնապը՝ %d րոպեից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Տագնապը՝ %d րոպեից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d րոպեից</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d րոպեից</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Հնարավոր չէ ավելացնել %d-ից ավելի տագնապներ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ավելացնել %d-ից ավելի տագնապ:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Վերացնե՞լ %d ֆոն:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Վերացնե՞լ %d ֆոն:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ընտրված</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ընտրված</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d րոպե առաջ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d րոպե առաջ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s ու ևս %3$d այլ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s ու ևս %3$d այլ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Քնի տևողությունը՝ %d ժամ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Քնի տևողությունը՝ %d ժամ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Քնի տևողությունը՝ %d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Քնի տևողությունը՝ %d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Նիրհում %d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Նիրհում %d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Մինուս %d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Մինուս %d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Պլյուս %d րոպե</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Պլյուս %d րոպե</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Հնարավոր չէ ավելացնել %d նախադրված ժամաչափից ավելի:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ավելացնել %d նախադրված ժամաչափից ավելի:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Հնարավոր չէ ավելացնել %d-ից ավելի քաղաքներ:</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Հնարավոր չէ ավելացնել %d-ից ավելի քաղաք:</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

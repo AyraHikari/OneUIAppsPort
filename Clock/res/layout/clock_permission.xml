@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:title="@string/permissions" app:toolbarId="@id/toolbar_permission" style="@style/ClockCollapsingToolbarLayoutStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar_permission" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/ClockThemeAppCompat" app:title="@string/permissions" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedscrollview" android:background="@color/window_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="always" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/optional_permissions" android:textFontWeight="400" style="@style/PPOptionalPermissionStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/about_clock_permission_margin_bottom">
+                <ImageView android:id="@id/permission_icon" android:src="@drawable/ic_storage" android:contentDescription="@string/storage" style="@style/PermissionIconStyle" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/about_clock_permission_description_margin_top_bottom" android:layout_marginBottom="@dimen/about_clock_permission_description_margin_top_bottom" android:layout_marginEnd="@dimen/about_clock_permission_title_margin_top">
+                    <TextView android:id="@id/permission_description_title" android:textFontWeight="400" style="@style/PPDescriptionNameStyle" />
+                    <TextView android:id="@id/permission_description_detail" android:textFontWeight="400" style="@style/PPDescriptionDetailStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

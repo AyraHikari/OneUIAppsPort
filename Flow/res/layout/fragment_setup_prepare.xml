@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="65.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/setup_title_text_size" android:textColor="@color/setup_title_text_color" android:id="@id/preparing" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setup_preparing" android:textAlignment="center" android:layout_marginStart="@dimen/setup_panel_start_margin" android:layout_marginEnd="@dimen/setup_panel_end_margin" />
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="312.0dip" android:layout_height="184.0dip" android:layout_marginTop="45.0dip" android:src="@drawable/welcome_image_tablet_phone_pc" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

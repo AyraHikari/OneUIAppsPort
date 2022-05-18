@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Midway</item>
+        <item>Honolulu</item>
+        <item>Haváí</item>
+        <item>Alasca</item>
+        <item>Anchorage</item>
+        <item>San Francisco</item>
+        <item>Vancouver</item>
+        <item>Seattle</item>
+        <item>Los Angeles</item>
+        <item>Tijuana</item>
+        <item>Calgary</item>
+        <item>Féinics</item>
+        <item>Mazaltan</item>
+        <item>Denver</item>
+        <item>Cathair Mheicsiceo</item>
+        <item>Winnipeg</item>
+        <item>Diego Garcia</item>
+        <item>Dallas</item>
+        <item>Chicago</item>
+        <item>Toronto</item>
+        <item>Miami</item>
+        <item>Líoma</item>
+        <item>Quito</item>
+        <item>Washington DC</item>
+        <item>Ottawa</item>
+        <item>Nua-Eabhrac</item>
+        <item>Bogatá</item>
+        <item>Santiago</item>
+        <item>La Paz</item>
+        <item>Caracas</item>
+        <item>Buenos Aires</item>
+        <item>Talamh an Éisc</item>
+        <item>St. John’s</item>
+        <item>Sao Paulo</item>
+        <item>Brasília</item>
+        <item>Rio de Janeiro</item>
+        <item>Fernando de Noronha</item>
+        <item>na hAsóir</item>
+        <item>Liospóin</item>
+        <item>Casablanca</item>
+        <item>Baile Átha Cliath</item>
+        <item>Rabat</item>
+        <item>Madrid</item>
+        <item>The Settlement</item>
+        <item>Londain</item>
+        <item>Kingston</item>
+        <item>Barcelona</item>
+        <item>Páras</item>
+        <item>Cathair na hAilgéire</item>
+        <item>Túinis</item>
+        <item>Tripilí</item>
+        <item>Beirlín</item>
+        <item>An Róimh</item>
+        <item>Prág</item>
+        <item>Kinshasa</item>
+        <item>Stócólm</item>
+        <item>An Bhratasláiv</item>
+        <item>Cape Town</item>
+        <item>Búdaipeist</item>
+        <item>Vársá</item>
+        <item>Kaliningrad</item>
+        <item>Sóifia</item>
+        <item>an Aithin</item>
+        <item>Lviv</item>
+        <item>Heilsincí</item>
+        <item>Ríge</item>
+        <item>Tallinn</item>
+        <item>Búcairist</item>
+        <item>Vilnius</item>
+        <item>Lubumbashi</item>
+        <item>Minsc</item>
+        <item>St. Petersburg</item>
+        <item>Iostanbúl</item>
+        <item>Kamchatka</item>
+        <item>Cív</item>
+        <item>Iarúsailéim</item>
+        <item>Moscó</item>
+        <item>Kharkiv</item>
+        <item>Nairobi</item>
+        <item>Jeddah</item>
+        <item>Volgograd</item>
+        <item>Yerevan</item>
+        <item>Tbilisi</item>
+        <item>Baku</item>
+        <item>Chita</item>
+        <item>Samár</item>
+        <item>Tehran</item>
+        <item>Izhevsk</item>
+        <item>Abú Daibí</item>
+        <item>Dubai</item>
+        <item>Ufa</item>
+        <item>Yekaterinburg</item>
+        <item>Chelyabinsk</item>
+        <item>Karachi</item>
+        <item>Cabúl</item>
+        <item>Taiscint</item>
+        <item>Islamabad</item>
+        <item>Mumbai</item>
+        <item>Omsk</item>
+        <item>Almaty</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Deilí Nua</item>
+        <item>Colombo</item>
+        <item>Chennai</item>
+        <item>Novosibirsk</item>
+        <item>Kathmandu</item>
+        <item>Novokuznetsk</item>
+        <item>Kolkata</item>
+        <item>Dhaka</item>
+        <item>Hovd</item>
+        <item>Krasnoyarsk</item>
+        <item>Bancác</item>
+        <item>Kuala Lumpur</item>
+        <item>Singeapór</item>
+        <item>Irkutsk</item>
+        <item>Phnom Penh</item>
+        <item>Hanaí</item>
+        <item>Iacárta</item>
+        <item>Ulan Bator</item>
+        <item>Hong Cong</item>
+        <item>Perth</item>
+        <item>Béising</item>
+        <item>Mainile</item>
+        <item>Taipei</item>
+        <item>Súl</item>
+        <item>Ambon</item>
+        <item>Vladivostok</item>
+        <item>Yakutsk</item>
+        <item>Khabarovsk</item>
+        <item>Adelaide</item>
+        <item>Tóiceo</item>
+        <item>Yuzhno-Sakhalinsk</item>
+        <item>Halifax</item>
+        <item>Guam</item>
+        <item>Canberra</item>
+        <item>Magadan</item>
+        <item>Sydney</item>
+        <item>Petropavlovsk-Kamchatskiy</item>
+        <item>Tarawa</item>
+        <item>Auckland</item>
+        <item>Wellington</item>
+        <item>Pago Pago</item>
+        <item>Denpasar</item>
+        <item>Bern</item>
+        <item>Zurich</item>
+        <item>Caireo</item>
+        <item>Abidjan</item>
+        <item>Accra</item>
+        <item>Addis Ababa</item>
+        <item>Amman</item>
+        <item>Amstardam</item>
+        <item>Anadyr</item>
+        <item>Ankara</item>
+        <item>Antananairíveo</item>
+        <item>Ashgabat</item>
+        <item>Asmara</item>
+        <item>Astana</item>
+        <item>Asuncion</item>
+        <item>Austin</item>
+        <item>Bagdad</item>
+        <item>Baltimore</item>
+        <item>Bamako</item>
+        <item>Bangui</item>
+        <item>Bari</item>
+        <item>Basse-Terre</item>
+        <item>Béiriút</item>
+        <item>Béalgrád</item>
+        <item>Cathair na Beilíse</item>
+        <item>Bishkek</item>
+        <item>Bissau</item>
+        <item>Bologna</item>
+        <item>Bostún</item>
+        <item>Bridgetown</item>
+        <item>Brisbane</item>
+        <item>An Bhruiséil</item>
+        <item>Na hOileáin Chanáracha</item>
+        <item>Catanzaro</item>
+        <item>Cayenne</item>
+        <item>Charlotte</item>
+        <item>Císineá</item>
+        <item>Cleveland</item>
+        <item>Columbas</item>
+        <item>Conakry</item>
+        <item>Cóbanhávan</item>
+        <item>Corcaigh</item>
+        <item>Crotone</item>
+        <item>Dacár</item>
+        <item>An Damaisc</item>
+        <item>Dar es Salaam</item>
+        <item>Darwin</item>
+        <item>Detroit</item>
+        <item>Djibouti</item>
+        <item>Ad Dawhah</item>
+        <item>Douala</item>
+        <item>Dushanbe</item>
+        <item>Oileán na Cásca</item>
+        <item>Dún Éideann</item>
+        <item>El Paso</item>
+        <item>Flórans</item>
+        <item>Fort-de-France</item>
+        <item>Freetown</item>
+        <item>Gaborone</item>
+        <item>Oileáin Galápagos</item>
+        <item>an Ghinéiv</item>
+        <item>Genoa</item>
+        <item>Georgetown</item>
+        <item>Grytviken</item>
+        <item>Cathair Ghuatamala</item>
+        <item>Gustavia</item>
+        <item>Hamburg</item>
+        <item>Harare</item>
+        <item>La Habana</item>
+        <item>Hobart</item>
+        <item>Houston</item>
+        <item>Indianapolis</item>
+        <item>Johannesburg</item>
+        <item>Kampala</item>
+        <item>Cartúm</item>
+        <item>Kingston</item>
+        <item>Cathair Chuáit</item>
+        <item>Lagos</item>
+        <item>Las Vegas</item>
+        <item>Ljubljana</item>
+        <item>Haikou</item>
+        <item>Louisville</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Lucsamburg</item>
+        <item>Macau</item>
+        <item>Malabo</item>
+        <item>Male</item>
+        <item>Managua</item>
+        <item>Al-Manāmah</item>
+        <item>Mapútó</item>
+        <item>Marigot</item>
+        <item>Meice</item>
+        <item>Melbourne</item>
+        <item>Meimfís</item>
+        <item>Messina</item>
+        <item>Milano</item>
+        <item>Milwaukee</item>
+        <item>Mogaidisiú</item>
+        <item>Monrovia</item>
+        <item>Montevideo</item>
+        <item>Montreal</item>
+        <item>Munich</item>
+        <item>Muscat</item>
+        <item>Naples</item>
+        <item>Naters</item>
+        <item>"N'Djamena"</item>
+        <item>Niamey</item>
+        <item>Nouakchott</item>
+        <item>Nouméa</item>
+        <item>"Nuku'alofa"</item>
+        <item>Nuuk</item>
+        <item>Osaka</item>
+        <item>Ouagadougou</item>
+        <item>Palermo</item>
+        <item>Cathair Panama</item>
+        <item>Paramaribo</item>
+        <item>Perm</item>
+        <item>Philadelphia</item>
+        <item>Podgairítse</item>
+        <item>Ponta Delgada</item>
+        <item>Port Louis</item>
+        <item>Port-au-Prince</item>
+        <item>Portland, Oregon</item>
+        <item>Pyongyang</item>
+        <item>Rangún</item>
+        <item>Recife</item>
+        <item>Réicivíc</item>
+        <item>Riyadh</item>
+        <item>Saint-Denis</item>
+        <item>San Antonio</item>
+        <item>San Diego</item>
+        <item>San Jose</item>
+        <item>San Jose</item>
+        <item>San Juan</item>
+        <item>San Mairíne</item>
+        <item>San Salvador</item>
+        <item>"Sana'a"</item>
+        <item>Santo Domingo</item>
+        <item>Shanghai</item>
+        <item>Shenzhen</item>
+        <item>Skopje</item>
+        <item>St. John’s</item>
+        <item>Suva</item>
+        <item>Taihítí</item>
+        <item>Tegucigalpa</item>
+        <item>Cathair Ho Chi Minh</item>
+        <item>Tianjin</item>
+        <item>Turin</item>
+        <item>Vadús</item>
+        <item>Vaileite</item>
+        <item>Verona</item>
+        <item>Victoria</item>
+        <item>Vín</item>
+        <item>Yamoussoukro</item>
+        <item>Yaounde</item>
+        <item>Ságrab</item>
+        <item>Guangzhou</item>
+        <item>Caerdydd</item>
+        <item>Regina</item>
+        <item>Charlotte Amalie</item>
+        <item>Atlanta</item>
+        <item>Mayotte</item>
+        <item>St Pierre agus Miquelon</item>
+        <item>Osló</item>
+        <item>Srednekolymsk</item>
+        <item>Severo-Kurilsk</item>
+        <item>Wuhan</item>
+        <item>Chengdu</item>
+        <item>"Xi'an"</item>
+        <item>Port Moresby</item>
+        <item>Cathair Davao</item>
+        <item>Chongqing</item>
+        <item>Shenyang</item>
+        <item>Nanjing</item>
+        <item>Harbin</item>
+        <item>Jinan</item>
+        <item>Zhengzhou</item>
+        <item>Kunming</item>
+        <item>Changchun</item>
+        <item>Fuzhou</item>
+        <item>Kuching</item>
+        <item>Makassar</item>
+        <item>Hangzhou</item>
+        <item>Qingdao</item>
+        <item>Nanning</item>
+        <item>Urumqi</item>
+        <item>Nassau</item>
+        <item>An Niocóis</item>
+        <item>Dili</item>
+        <item>Road Town</item>
+        <item>Lome</item>
+        <item>Roseau</item>
+        <item>Libreville</item>
+        <item>Marseille</item>
+        <item>Maseru</item>
+        <item>Majuro</item>
+        <item>Monacó</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Banjul</item>
+        <item>Busan</item>
+        <item>Bujumbura</item>
+        <item>Brazzaville</item>
+        <item>Vientiane</item>
+        <item>Windhoek</item>
+        <item>Sairéavó</item>
+        <item>Saipan</item>
+        <item>São Tomé</item>
+        <item>"St. George's"</item>
+        <item>Stanley</item>
+        <item>Áidin</item>
+        <item>Apia</item>
+        <item>Andorra la Vella</item>
+        <item>Laayoune</item>
+        <item>Willemstad</item>
+        <item>Mbabane</item>
+        <item>Castries</item>
+        <item>Koror</item>
+        <item>Cancun</item>
+        <item>Kigali</item>
+        <item>Kingstown</item>
+        <item>Tel Aviv</item>
+        <item>Torshavn</item>
+        <item>Tirana</item>
+        <item>Thimphu</item>
+        <item>Porto-Novo</item>
+        <item>Praia</item>
+        <item>Frankfurt</item>
+        <item>Pristina</item>
+        <item>Hamilton</item>
+        <item>Honiara</item>
+        <item>Port of Spain</item>
+        <item>Minneapolis</item>
+        <item>Hilo</item>
+        <item>Orlando</item>
+        <item>Cathair Kansas</item>
+        <item>New Orleans</item>
+        <item>Nashville</item>
+        <item>Tucson</item>
+        <item>Tampa</item>
+        <item>Jacksonville</item>
+        <item>Cathair Oklahoma</item>
+        <item>Albuquerque</item>
+        <item>Omaha</item>
+        <item>Virginia Beach</item>
+        <item>Boise</item>
+        <item>Des Moines</item>
+        <item>Birmingham</item>
+        <item>Salt Lake City</item>
+        <item>Little Rock</item>
+        <item>Sioux Falls</item>
+        <item>Jackson</item>
+        <item>Charleston, South Carolina</item>
+        <item>Fargo</item>
+        <item>Billings</item>
+        <item>Portland, Maine</item>
+        <item>Cheyenne</item>
+        <item>Charleston, West Virginia</item>
+        <item>Pittsburgh</item>
+        <item>Green Bay</item>
+        <item>St. Louis</item>
+        <item>The Valley</item>
+        <item>UTC (Am Uilíoch Lárnach)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>an Afganastáin</item>
+        <item>an Ailgéir</item>
+        <item>Samó</item>
+        <item>Antigua agus Barbúda</item>
+        <item>an Airgintín</item>
+        <item>An Airméin</item>
+        <item>An Astráil</item>
+        <item>an Asarbaiseáin</item>
+        <item>an Bhanglaidéis</item>
+        <item>Poblacht na Baisceartastáine</item>
+        <item>an Bhealarúis</item>
+        <item>an Bholaiv</item>
+        <item>an Bhrasaíl</item>
+        <item>an Bhulgáir</item>
+        <item>an Chambóid</item>
+        <item>Ceanada</item>
+        <item>an tSile</item>
+        <item>an tSín</item>
+        <item>an Cholóim</item>
+        <item>Poblacht na Seice</item>
+        <item>Poblacht an Chongó</item>
+        <item>Eacuadór</item>
+        <item>an Eastóin</item>
+        <item>an Fhionlainn</item>
+        <item>an Fhrainc</item>
+        <item>an tSeorsia</item>
+        <item>an Ghearmáin</item>
+        <item>an Ghréig</item>
+        <item>An Ungáir</item>
+        <item>an India</item>
+        <item>an Indinéis</item>
+        <item>an Iaráin</item>
+        <item>Éire</item>
+        <item>Iosrael</item>
+        <item>an Iodáil</item>
+        <item>an tSeapáin</item>
+        <item>an Chasacstáin</item>
+        <item>an Chéinia</item>
+        <item>Cireabaití</item>
+        <item>an Laitvia</item>
+        <item>an Liotuáin</item>
+        <item>an Mhalaeisia</item>
+        <item>Meicsiceo</item>
+        <item>an Mhongóil</item>
+        <item>Maracó</item>
+        <item>Neipeal</item>
+        <item>an Nua Shéalainn</item>
+        <item>an Phacastáin</item>
+        <item>Peiriú</item>
+        <item>Na hOileáin Fhilipíneacha</item>
+        <item>an Pholainn</item>
+        <item>an Phortaingéil</item>
+        <item>Léarscáil</item>
+        <item>an Chóiré Theas</item>
+        <item>Poblacht Shingeapór</item>
+        <item>an Libia</item>
+        <item>an Rómáin</item>
+        <item>an Rúis</item>
+        <item>an Araib Shádach</item>
+        <item>an tSlóvaic</item>
+        <item>an Afraic Theas</item>
+        <item>An Spáinn</item>
+        <item>Srí Lanca</item>
+        <item>An tSualainn</item>
+        <item>an Téaváin</item>
+        <item>an Téalainn</item>
+        <item>an Túinéis</item>
+        <item>an Tuirc</item>
+        <item>UAE</item>
+        <item>RA</item>
+        <item>an Úcráin</item>
+        <item>SAM</item>
+        <item>an Úisbéiceastáin</item>
+        <item>Veiniséala</item>
+        <item>Vítneam</item>
+        <item>Oileáin B. na Maighdean</item>
+        <item>an Eilvéis</item>
+        <item>an Éigipt</item>
+        <item>an Cósta Eabhair</item>
+        <item>Gána</item>
+        <item>an Aetóip</item>
+        <item>An Iordáin</item>
+        <item>an Ísiltír</item>
+        <item>Madagascar</item>
+        <item>an Tuircméanastáin</item>
+        <item>an Eiritré</item>
+        <item>Paragua</item>
+        <item>an Iaráic</item>
+        <item>Mailí</item>
+        <item>Poblacht na hAfraice Láir</item>
+        <item>Guadalúip</item>
+        <item>an Liobáin</item>
+        <item>An tSeirbia</item>
+        <item>an Bheilís</item>
+        <item>an Chirgeastáin</item>
+        <item>Guine Bissau</item>
+        <item>Barbadós</item>
+        <item>An Bheilg</item>
+        <item>Guáin na Fraince</item>
+        <item>an Mholdóiv</item>
+        <item>an Ghuine</item>
+        <item>An Danmhairg</item>
+        <item>an tSeineagáil</item>
+        <item>an tSiria</item>
+        <item>an Tansáin</item>
+        <item>Djibouti</item>
+        <item>Catar</item>
+        <item>Camarún</item>
+        <item>an Táidsíceastáin</item>
+        <item>Albain</item>
+        <item>Martinique</item>
+        <item>Siarra Leon</item>
+        <item>an Bhotsuáin</item>
+        <item>an Ghuáin</item>
+        <item>An tSeoirsia Theas</item>
+        <item>Guatamala</item>
+        <item>Saint Barthélemy</item>
+        <item>an tSiombáib</item>
+        <item>Cúba</item>
+        <item>Uganda</item>
+        <item>an tSúdáin</item>
+        <item>Iamáice</item>
+        <item>Cuáit</item>
+        <item>an Nigéir</item>
+        <item>Angóla</item>
+        <item>an tSaimbia</item>
+        <item>Lucsamburg</item>
+        <item>An Ghuine Mheánchiorclach</item>
+        <item>Oileáin Mhaildíve</item>
+        <item>Nicearagua</item>
+        <item>Bairéin</item>
+        <item>Mósaimbíc</item>
+        <item>Saint Martin</item>
+        <item>an tSomáil</item>
+        <item>an Libéir</item>
+        <item>Uragua</item>
+        <item>Óman</item>
+        <item>Sead</item>
+        <item>Niger</item>
+        <item>an Mháratáin</item>
+        <item>An Nua-Chaladóin</item>
+        <item>Tonga</item>
+        <item>An Ghraonlainn</item>
+        <item>Burkina Faso</item>
+        <item>Panama</item>
+        <item>Suriname</item>
+        <item>Montainéagró</item>
+        <item>Oileán Mhuirís</item>
+        <item>Háítí</item>
+        <item>Daon-Phoblacht Dhaonlathach na Cóiré</item>
+        <item>Maenmar</item>
+        <item>an Íoslainn</item>
+        <item>Oileán Reunion</item>
+        <item>Cósta Ríce</item>
+        <item>Pórtó Ríce</item>
+        <item>an tSalvadóir</item>
+        <item>Éimin</item>
+        <item>An Phoblacht Dhoiminiceach</item>
+        <item>an Mhacadóin</item>
+        <item>Fidsí</item>
+        <item>Polainéis na Fraince</item>
+        <item>Hondúras</item>
+        <item>Lichtinstéin</item>
+        <item>Málta</item>
+        <item>Na Séiséil</item>
+        <item>an Ostair</item>
+        <item>an Chróit</item>
+        <item>An Bhreatain Bheag</item>
+        <item>O. SAM na M</item>
+        <item>an tSlóivéin</item>
+        <item>San Mairíne</item>
+        <item>an Iorua</item>
+        <item>Nua-Ghuine Phapua</item>
+        <item>na Bahámaí</item>
+        <item>an Chipir</item>
+        <item>an Tíomóir Thoir</item>
+        <item>Tóga</item>
+        <item>Doiminice</item>
+        <item>an Ghabúin</item>
+        <item>Leosóta</item>
+        <item>Oileáin Marshall</item>
+        <item>Monacó</item>
+        <item>Brúiné</item>
+        <item>an Ghaimbia</item>
+        <item>an Bhurúin</item>
+        <item>Poblacht Dhaonlathach an Chongó</item>
+        <item>Laos</item>
+        <item>an Namaib</item>
+        <item>an Bhoisnia &amp; an Heirseagaivéin</item>
+        <item>Saipan</item>
+        <item>São Tomé agus Príncipe</item>
+        <item>Greanáda</item>
+        <item>Oileáin Fháclainne</item>
+        <item>Samó Mheiriceá</item>
+        <item>Andóra</item>
+        <item>Poblacht Sahrawi</item>
+        <item>Cúrasó</item>
+        <item>Ríocht eSuaitíní</item>
+        <item>Saint Lucia</item>
+        <item>Palau</item>
+        <item>Ruanda</item>
+        <item>San Uinseann agus na Greanáidíní</item>
+        <item>Oileáin Fharó</item>
+        <item>an Albáin</item>
+        <item>an Bhútáin</item>
+        <item>Beinin</item>
+        <item>Rinn Verde</item>
+        <item>an Chosaiv</item>
+        <item>Beirmiúda</item>
+        <item>Oileáin Sholomón</item>
+        <item>Téaváin, an tSín</item>
+        <item>Oileán na Tríonóide agus Tobága</item>
+        <item>Angaíle</item>
+        <item>UTC (Am Uilíoch Lárnach)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Aláram socraithe i gcionn 1 nóiméad amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %1$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %2$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %1$s agus %2$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %3$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %1$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %2$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %1$s, %2$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe le bualadh i gceann %s.</item>
+        <item>Aláram socraithe le bualadh i gceann %1$s agus %2$s.</item>
+        <item>Aláram socraithe i gcomhair %1$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %1$s, %2$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe le bualadh i gceann %1$s agus %2$s.</item>
+        <item>Aláram socraithe i gcomhair %1$s, %2$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe i gcomhair %1$s, %2$s agus %3$s amach anseo.</item>
+        <item>Aláram socraithe le bualadh i gceann %1$s, %2$s, %3$s, agus %4$s.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

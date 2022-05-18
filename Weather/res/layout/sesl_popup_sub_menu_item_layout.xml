@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.view.menu.ListMenuItemView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.SeslDropDownItemTextView android:ellipsize="marquee" android:id="@id/sub_menu_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="?dropdownListPreferredItemHeight" android:singleLine="true" style="?spinnerDropDownItemStyle"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</androidx.appcompat.view.menu.ListMenuItemView>

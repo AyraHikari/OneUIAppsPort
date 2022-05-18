@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">%dಕ್ಕಿಂತ ಹೆಚ್ಚು ಸ್ಥಳಗಳನ್ನು ಸೇರಿಸಲಾಗುವುದಿಲ್ಲ. ಇದನ್ನು ಸೇರಿಸುವುದಕ್ಕಾಗಿ ಕೆಲವು ಸ್ಥಳಗಳನ್ನು ಅಳಿಸಿ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dಕ್ಕಿಂತ ಹೆಚ್ಚು ಸ್ಥಳವನ್ನು ಸೇರಿಸಲಾಗುವುದಿಲ್ಲ. ಇದನ್ನು ಸೇರಿಸಲು ಕೆಲವು ಸ್ಥಳಗಳನ್ನು ಅಳಿಸಿ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಅಕ್ಷರಗಳನ್ನು ನಮೂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dಕ್ಕೂ ಹೆಚ್ಚಿನ ಅಕ್ಷರವನ್ನು ನಮೂದಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d ಆಯ್ಕೆಯಾಗಿದೆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಆಯ್ಕೆ ಆಗಿದೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d ದಿನಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ದಿನ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d ಗಂಟೆಗಳು</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ಗಂಟೆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

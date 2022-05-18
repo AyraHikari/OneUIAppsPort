@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.samsung.android.galaxycontinuity" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <permission android:name="com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.android.galaxycontinuity.permission.SAMSUNGFLOW" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.permission.READ_KNOX_NOTIFICATION" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.sec.android.permission.SIDESYNC_RECEIVER_PERMISSION" android:protectionLevel="signatureOrSystem"/>
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="com.samsung.android.api.version.2601" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_CLIPBOARD_IN_BACKGROUND"/>
+    <uses-permission android:name="com.samsung.permission.READ_SM_DATA"/>
+    <uses-permission android:name="com.samsung.permission.WRITE_SM_DATA"/>
+    <uses-permission android:name="com.samsung.android.permission.SEM_APP_RESTRICTION"/>
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.sec.spp.permission.SEND"/>
+    <uses-permission android:name="com.samsung.permission.READ_KNOX_NOTIFICATION"/>
+    <uses-permission android:name="com.samsung.clipboardsaveservice.CLIPBOARDSAVESERVICE_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.pass.permissions.MANAGE_PASS_SERVICE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="com.system.permission.READ_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="sec.android.permission.READ_MSG_PREF"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.NETWORK_STACK"/>
+    <uses-permission android:name="android.permission.MAINLINE_NETWORK_STACK"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.READ_ALARM"/>
+    <uses-permission android:name="android.permission.PEERS_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="com.samsung.android.permission.REQUEST_PROCESS_FIDO"/>
+    <uses-permission android:name="com.samsung.android.authservice.permission.REQUEST_AUTH_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.sec.android.permission.SAMSUNG_FLOW_RECEIVER_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.pass.permissions.USE_PASS_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.camera.iris.permission.USE_IRIS"/>
+    <uses-permission android:name="android.permission.MANAGE_NETWORK_POLICY"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_801d432af1f4ffe2b99cb64d3daf0c450384f107b3373eab0813f9868c8c3b67b0e5a404ddc213f8be95d28614429ee224ce7724a76fb6e402d98580916467bbb85ff90a213b08ee5c3bdfb6f5b5942906296029a8ba16516726f95caa02bc1013eafb9461dd9bf392f57c26ac4b2e687e5a9c238d9ad3f3b5f9622475cbaa4f"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="com.sec.android.permission.SIDESYNC_SOURCE_PSS"/>
+    <uses-permission android:name="com.sec.android.permission.SIDESYNC_SINK_PSS"/>
+    <uses-permission android:name="com.sec.android.permission.SIDESYNC_RECEIVER_PERMISSION"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.permission.BIOMETRICS_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_STACK"/>
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MANAGE_USB"/>
+    <uses-permission android:name="com.samsung.android.galaxycontinuity.permission.SAMSUNGFLOW"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <queries>
+        <package android:name="com.sec.spp.push"/>
+    </queries>
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.samsung.android.scs.permission.SUPPORTED_FEATURE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.suggestion.permission.SUGGESTION_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.image.permission.BIND_IMAGE_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.image.permission.IMAGE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.text.permission.TEXT_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.scs.ai.asr.permission.BIND_SPEECH_RECOGNITION_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_samsungflow" android:label="@string/app_name" android:largeHeap="true" android:name="com.samsung.android.galaxycontinuity.SamsungFlowApplication" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <uses-library android:name="com.samsung.device" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:name="com.samsung.android.galaxycontinuity.activities.phone.MirroringUserConsentActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.phone.FlowMainActivity" android:theme="@style/ActionBarAppTheme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/about_terms_and_conditions" android:name="com.samsung.android.galaxycontinuity.activities.TermsActivity"/>
+        <activity android:label="@string/settings" android:name="com.samsung.android.galaxycontinuity.activities.SettingsActivity"/>
+        <activity android:label="@string/menu_title_connection_method" android:name="com.samsung.android.galaxycontinuity.activities.phone.ConnectionMethodsActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/about" android:name="com.samsung.android.galaxycontinuity.activities.AboutActivity"/>
+        <activity android:label="@string/about_open_source_licences" android:name="com.samsung.android.galaxycontinuity.activities.AboutDetailActivity"/>
+        <activity android:label="@string/help" android:name="com.samsung.android.galaxycontinuity.activities.phone.HelpActivity"/>
+        <activity android:label="@string/help" android:name="com.samsung.android.galaxycontinuity.activities.phone.HelpDetailActivity"/>
+        <activity android:label="@string/notices" android:name="com.samsung.android.galaxycontinuity.activities.phone.NoticeActivity"/>
+        <activity android:label="@string/notices" android:name="com.samsung.android.galaxycontinuity.activities.phone.NoticeDetailActivity"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.WakeupActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/manage_pcs_title" android:name="com.samsung.android.galaxycontinuity.activities.phone.DeviceManagementActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.samsung.android.galaxycontinuity.activities.phone.FlowDeviceDetailActivity"/>
+        <activity android:excludeFromRecents="true" android:name="com.samsung.android.galaxycontinuity.activities.tablet.ShortcutActivity" android:noHistory="true" android:taskAffinity="mirroring.smartview" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.samsung.android.galaxycontinuity.action.ACTION_SMARTVIEW_FROM_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.samsung.android.galaxycontinuity.activities.tablet.ShortcutHandlerActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.ShareActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/*"/>
+                <data android:mimeType="image/*"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.ChooserDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.tablet.FavoriteAppPickerActivity" android:noHistory="true"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.AttachSheetActivity" android:noHistory="true"/>
+        <activity android:name="com.samsung.android.galaxycontinuity.activities.UpdateDialogActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:name="com.samsung.android.galaxycontinuity.SplashActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="ext" android:pathPrefix="/android.com:pkg" android:scheme="vnd.android.nfc"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.samsung.android.galaxycontinuity.activities.tablet.NotificationsActivity" android:permission="com.samsung.android.galaxycontinuity.permission.SAMSUNGFLOW" android:theme="@style/ActionBarAppTheme">
+            <intent-filter>
+                <action android:name="com.samsung.android.galaxycontinuity.common.ACTION_TAB_ONGOING_CLICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.samsung.android.galaxycontinuity.activities.tablet.ChatActivity" android:theme="@style/ActionBarAppTheme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.tablet.ConnectionActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.samsung.android.galaxycontinuity.activities.tablet.IntroActivity"/>
+        <activity android:excludeFromRecents="true" android:name="com.samsung.android.galaxycontinuity.activities.MessageDialogActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.phone.CustomDialogActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.tablet.AuthActivity"/>
+        <activity android:name="com.samsung.android.galaxycontinuity.activities.tablet.IncomingCallActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:enabled="true" android:exported="true" android:name="com.samsung.android.galaxycontinuity.activities.SetupWizardWelcomeActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle">
+            <intent-filter>
+                <action android:name="com.samsung.android.spv.ACTION_VIEW_DETAIL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.phone.SamsungPassAuthActivity" android:resizeableActivity="false" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:label="@string/notification_filter_title" android:name="com.samsung.android.galaxycontinuity.activities.phone.NotificationFilterActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.phone.SetupEnrollmentActivity"/>
+        <activity android:name="com.samsung.android.galaxycontinuity.activities.tablet.NotificationDetailActivity" android:theme="@style/ActionBarAppTheme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.BioAuthActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:name="com.samsung.android.galaxycontinuity.activities.WelcomeActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:label="@string/menu_smart_view" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.tablet.MirroringActivity" android:theme="@style/ActionBarAppTheme">
+            <layout android:defaultHeight="500.0dip" android:defaultWidth="600.0dip" android:gravity="end|center|top" android:minHeight="450.0dip" android:minWidth="300.0dip"/>
+            <layout android:defaultHeight="500.0dip" android:defaultWidth="600.0dip" android:gravity="end|center|top" android:minHeight="450.0dip" android:minWidth="300.0dip"/>
+        </activity>
+        <activity android:label="@string/add_app_from_phone" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.tablet.ShortcutListActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.samsung.android.galaxycontinuity.activities.PermissionRequestActivity" android:theme="@style/Theme.AppTheme.Transparent.NoTitle"/>
+        <activity android:name="com.samsung.android.galaxycontinuity.activities.PermissionsActivity"/>
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="com.samsung.android.icon_container.feature_appicon" android:value="ADAPTIVEICON_SHADOW"/>
+        <meta-data android:name="SamsungBasicInteraction" android:value="SEP10"/>
+        <meta-data android:name="DisplayCutoutBackground" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.samsung.android.multiuser.disable_sub_user" android:value="true"/>
+        <provider android:authorities="com.samsung.android.galaxycontinuity.drag.provider" android:enabled="true" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.android.galaxycontinuity.share.DragDropContentProvider"/>
+        <provider android:authorities="com.samsung.android.galaxycontinuity.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.galaxycontinuity.MirroringStateProvider" android:exported="true" android:name="com.samsung.android.galaxycontinuity.manager.ExportedMirroringStateProvider"/>
+        <receiver android:name="com.samsung.android.galaxycontinuity.manager.GlobalBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.samsung.intent.action.LAZY_BOOT_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.samsung.android.galaxycontinuity.notification.NotificationListener" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:configChanges="keyboardHidden|orientation|screenSize" android:enabled="true" android:exported="false" android:foregroundServiceType="0x00000088" android:label="Rotation Service" android:name="com.samsung.android.galaxycontinuity.services.SamsungFlowPhoneService" android:permission="com.samsung.android.galaxycontinuity.permission.SAMSUNGFLOW">
+            <intent-filter>
+                <action android:name="com.samsung.android.galaxycontinuity.services.intent.SAMSUNGFLOW_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="0x00000088" android:name="com.samsung.android.galaxycontinuity.services.SamsungFlowTabletService" android:permission="com.samsung.android.galaxycontinuity.permission.SAMSUNGFLOW">
+            <intent-filter>
+                <action android:name="com.samsung.android.galaxycontinuity.services.intent.SAMSUNGFLOW_TABLETSERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.samsung.android.galaxycontinuity.services.subfeature.SMPSppReceiver" android:permission="com.sec.spp.permission.SEND">
+            <intent-filter>
+                <action android:name="8bf1f59dc1d6217c"/>
+                <action android:name="com.sec.spp.RegistrationChangedAction"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.sdk.smp.SmpReceiver"/>
+        <service android:foregroundServiceType="0x00000088" android:name="com.samsung.android.sdk.smp.SmpService"/>
+        <service android:foregroundServiceType="0x00000088" android:name="com.samsung.android.sdk.smp.SmpJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:foregroundServiceType="0x00000088" android:name="com.samsung.android.galaxycontinuity.services.subfeature.SMPFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.samsung.android.galaxycontinuity.smp.provider" android:exported="false" android:name="com.samsung.android.sdk.smp.SmpPrefProvider"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.samsung.android.galaxycontinuity.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="SPDE.build.signature" android:value="33a2177e7cffbb4926aeaac4ef296f0cfab8323c/86591700/sep-release/SamsungFlow-405000-4.8.03"/>
+        <meta-data android:name="SPDE.env.version" android:value="4.0.0/G30.1.18/0.9.27"/>
+    </application>
+</manifest>

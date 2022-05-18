@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/analog_clock" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/llAnalogClockTopView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+        <LinearLayout android:gravity="center|top" android:layout_gravity="center|top" android:orientation="vertical" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="8.5">
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/analog_widget_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_widget" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/analogclock_widget_padding_date_text">
+                <TextClock android:id="@id/week_text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="@string/analog_clock_widget_week_text_12h_mini" android:format24Hour="@string/analog_clock_widget_week_text_12h_mini" style="@style/DateTextStyleHorizontal" />
+                <TextView android:id="@id/hijri_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DateTextStyleHorizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llAnalogClockBottomView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.weather.app.common.view.KeyPadListenerLinearLayout android:orientation="vertical" android:id="@id/location_fragment" android:tag="layout/locations_fragment_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/locations_coordinator_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/Weather.Style.ActionBar.NoCloseButton" android:id="@id/locations_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Weather.Style.Appbar">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" style="@style/Weather.Style.CollapsingToolbar">
+                <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar.NoCloseButton" android:layout_gravity="bottom" android:id="@id/locations_toolbar" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" />
+                <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar.NoCloseButton" android:layout_gravity="bottom" android:id="@id/locations_actionmode_toolbar" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin">
+                    <include android:id="@id/locations_action_container" layout="@layout/locations_select_all" />
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/locations_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.samsung.android.weather.app.common.location.fragment.LocationsRecyclerView android:id="@id/locations_list" android:tag="binding_4" android:focusable="true" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/locations_bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/locations_status_indicator_container" android:layout_width="fill_parent" android:layout_height="@dimen/status_indicator_height" app:layout_constraintBottom_toBottomOf="parent" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/locations_action_menu" android:background="@drawable/common_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_with_icon_height" app:layout_constraintBottom_toBottomOf="parent" app:menu="@menu/menu_locations_navigation" style="@style/Weather.Style.BottomBar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.samsung.android.weather.app.common.view.KeyPadListenerLinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/terms_web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/terms_web_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.DeviceDefault.ProgressBar" />
+        </FrameLayout>
+        <ScrollView android:id="@id/terms_desc_layout_korean" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/layout_desc_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/LayoutDesc">
+                <TextView android:id="@id/terms_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextViewDesc" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/agreePanel" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <CheckBox android:gravity="center_vertical" android:id="@id/terms_agree_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_agree" android:layout_centerVertical="true" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/CheckBox" />
+        <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/nextPanel" android:background="@color/bottom_bar" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height">
+        <Button android:textColor="@color/btn_bottom_text_color" android:id="@id/terms_prev_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:minWidth="1.0dip" android:text="@string/connection_button_previous" android:drawablePadding="8.0dip" android:drawableStart="@drawable/tw_btn_icon_previous" android:paddingStart="8.0dip" android:layout_marginEnd="24.0dip" android:layout_alignParentStart="true" style="@style/ButtonBottomBar" />
+        <Button android:textColor="@drawable/bottom_text_color" android:id="@id/terms_next_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:minWidth="1.0dip" android:text="@string/terms_next" android:drawablePadding="8.0dip" android:drawableEnd="@drawable/tw_btn_icon_next" android:paddingStart="8.0dip" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" style="@style/ButtonBottomBar" />
+        <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider" />
+    </RelativeLayout>
+</LinearLayout>

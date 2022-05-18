@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowapp="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/smart_view_ic_favorites_off" android:id="@id/menu_favorite" android:title="@string/menu_favorites" flowapp:showAsAction="always" />
+    <item android:icon="@drawable/smart_view_ic_disturb_off" android:id="@id/menu_donotdisturb" android:title="@string/menu_do_not_disturb" flowapp:showAsAction="always" />
+    <item android:icon="@drawable/smart_view_ic_rotation_off" android:id="@id/menu_rotate" android:title="@string/menu_rotate_screen" flowapp:showAsAction="always" />
+    <item android:icon="@drawable/smart_view_ic_full_view_off" android:id="@id/menu_fullscreen" android:title="@string/menu_full_screen" flowapp:showAsAction="always" />
+    <item android:icon="@drawable/smart_view_ic_phone_screen_off" android:id="@id/menu_blackscreen" android:title="@string/menu_black_screen" flowapp:showAsAction="always" />
+    <item android:icon="@drawable/smart_view_ic_screen_capture" android:id="@id/menu_capture" android:title="@string/menu_screen_capture" flowapp:showAsAction="always" />
+    <item android:icon="@drawable/smart_view_ic_settings" android:id="@id/menu_settings" android:title="@string/menu_resolution" flowapp:showAsAction="always" />
+</menu>

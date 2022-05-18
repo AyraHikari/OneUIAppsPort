@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>ميدواي</item>
+        <item>هونولولو</item>
+        <item>هاواي</item>
+        <item>ألاسكا</item>
+        <item>آنكورايج</item>
+        <item>سان فرنسيسكو</item>
+        <item>فانكوفر</item>
+        <item>سياتل</item>
+        <item>لوس أنجلوس</item>
+        <item>تيخوانا</item>
+        <item>كالجاري</item>
+        <item>فينكس</item>
+        <item>مازاتلان</item>
+        <item>دنفر</item>
+        <item>ميكسيكو سيتي</item>
+        <item>وينبج</item>
+        <item>دياجو جاراسيا</item>
+        <item>دالاس</item>
+        <item>شيكاغو</item>
+        <item>تورونتو</item>
+        <item>ميامي</item>
+        <item>ليما</item>
+        <item>كيتو</item>
+        <item>واشنطن</item>
+        <item>أوتاوا</item>
+        <item>نيو يورك</item>
+        <item>بوجوتا</item>
+        <item>سانتياجو</item>
+        <item>لاباز</item>
+        <item>كراكاس</item>
+        <item>بوينس آيرس</item>
+        <item>نيوفاوندلاند</item>
+        <item>سانت جونز</item>
+        <item>ساو باولو</item>
+        <item>برازيليا</item>
+        <item>ريو دي جانيرو</item>
+        <item>فرناندو دي نورونا</item>
+        <item>أزور</item>
+        <item>لشبونة</item>
+        <item>الدار البيضاء</item>
+        <item>دبلن</item>
+        <item>الرباط</item>
+        <item>مدريد</item>
+        <item>المستعمرة</item>
+        <item>لندن</item>
+        <item>كينجستون</item>
+        <item>برشلونة</item>
+        <item>باريس</item>
+        <item>الجزائر</item>
+        <item>تونس</item>
+        <item>طرابلس</item>
+        <item>برلين</item>
+        <item>روما</item>
+        <item>براغ</item>
+        <item>كينشاسا</item>
+        <item>ستوكهولم</item>
+        <item>براتيسلافا</item>
+        <item>كيب تاون</item>
+        <item>بودابست</item>
+        <item>وارسو</item>
+        <item>كالينينجراد</item>
+        <item>صوفيا</item>
+        <item>أثينا</item>
+        <item>لفيف</item>
+        <item>هلسنكي</item>
+        <item>ريجا</item>
+        <item>تالين</item>
+        <item>بوخارست</item>
+        <item>فيلنيوس</item>
+        <item>لوبومباشي</item>
+        <item>مينسك</item>
+        <item>سانت بيترسبرج</item>
+        <item>إسطنبول</item>
+        <item>كامشاتكا</item>
+        <item>كييف</item>
+        <item>القدس</item>
+        <item>موسكو</item>
+        <item>خاريكف</item>
+        <item>نيروبي</item>
+        <item>جدة</item>
+        <item>فولجوجراد</item>
+        <item>يريفان</item>
+        <item>تبليسي</item>
+        <item>باكو</item>
+        <item>تشيتا</item>
+        <item>سامارا</item>
+        <item>طهران</item>
+        <item>ازهيفسك</item>
+        <item>أبوظبي</item>
+        <item>دبي</item>
+        <item>أوفا</item>
+        <item>يكاترينبورج</item>
+        <item>تشيليابينسك</item>
+        <item>كراتشي</item>
+        <item>كابول</item>
+        <item>تشقند</item>
+        <item>إسلام آباد</item>
+        <item>مومباي</item>
+        <item>أومسك</item>
+        <item>ألماتي</item>
+        <item>بنجالور</item>
+        <item>حيدر أباد</item>
+        <item>نيو دلهي</item>
+        <item>كولومبو</item>
+        <item>تشيناي</item>
+        <item>نوفوسيبيرسك</item>
+        <item>كاثماندو</item>
+        <item>نوفوكيزنتسك</item>
+        <item>كولكاتا</item>
+        <item>دكا</item>
+        <item>هوفد</item>
+        <item>كراسنويارسك</item>
+        <item>بانكوك</item>
+        <item>كوالالمبور</item>
+        <item>سنغافورة</item>
+        <item>إيركوتسك</item>
+        <item>بنوم بنه</item>
+        <item>هانوي</item>
+        <item>جاكارتا</item>
+        <item>أولان باتور</item>
+        <item>هونج كونج</item>
+        <item>بيرث</item>
+        <item>بكين</item>
+        <item>مانيلا</item>
+        <item>تايبيه</item>
+        <item>سيول</item>
+        <item>أمبون</item>
+        <item>فلاديفوستوك</item>
+        <item>ياكوتسك</item>
+        <item>خاباروفسك</item>
+        <item>اديلايد</item>
+        <item>طوكيو</item>
+        <item>يوزنو - سخالينيسك</item>
+        <item>هاليفاكس</item>
+        <item>غوام</item>
+        <item>كانبيرا</item>
+        <item>ماجادان</item>
+        <item>سيدني</item>
+        <item>بيتروبافلوفسك-كامتشاتسكي</item>
+        <item>تاراوا</item>
+        <item>أوكلاند</item>
+        <item>ولينجتون</item>
+        <item>باجو باجو</item>
+        <item>دنباسر</item>
+        <item>برن</item>
+        <item>زيورخ</item>
+        <item>القاهرة</item>
+        <item>أبيدجان</item>
+        <item>أكرا</item>
+        <item>أديس أبابا</item>
+        <item>عمان</item>
+        <item>امستردام</item>
+        <item>أنادير</item>
+        <item>أنقرة</item>
+        <item>أنتاناناريفو</item>
+        <item>عشق آباد</item>
+        <item>أسمرا</item>
+        <item>أستانا</item>
+        <item>أسونسيون</item>
+        <item>أوستن</item>
+        <item>بغداد</item>
+        <item>بالتيمور</item>
+        <item>باماكو</item>
+        <item>بانجي</item>
+        <item>باري</item>
+        <item>باس تير</item>
+        <item>بيروت</item>
+        <item>بلجراد</item>
+        <item>مدينة بيليز</item>
+        <item>بشكيك</item>
+        <item>بيساو</item>
+        <item>بولونيا</item>
+        <item>بوسطن</item>
+        <item>بريدج تاون</item>
+        <item>بريسبان</item>
+        <item>بروكسل</item>
+        <item>جزر الكناري</item>
+        <item>كاتانزارو</item>
+        <item>كايين</item>
+        <item>شارلوت</item>
+        <item>كيشيناو</item>
+        <item>كليفلاند</item>
+        <item>كولومبوس</item>
+        <item>كوناكري</item>
+        <item>كوبنهاجن</item>
+        <item>كورك</item>
+        <item>كروتون</item>
+        <item>داكار</item>
+        <item>دمشق</item>
+        <item>دار السلام</item>
+        <item>داروين</item>
+        <item>ديترويت</item>
+        <item>جيبوتي</item>
+        <item>الدوحة</item>
+        <item>دوالا</item>
+        <item>دوشنبه</item>
+        <item>جزيرة إيستر</item>
+        <item>إدنبره</item>
+        <item>إل باسو</item>
+        <item>فلورنسا</item>
+        <item>فور دو فرانس</item>
+        <item>فري تاون</item>
+        <item>جابورون</item>
+        <item>جزر جالاباجوس</item>
+        <item>جنيف</item>
+        <item>جينوا</item>
+        <item>جورج تاون</item>
+        <item>جريتفيكين</item>
+        <item>مدينة جواتيمالا</item>
+        <item>جوستافيا</item>
+        <item>هامبورج</item>
+        <item>هراري</item>
+        <item>هافانا</item>
+        <item>هوبارت</item>
+        <item>هيوستن</item>
+        <item>إنديانابوليس</item>
+        <item>جوهانسبرج</item>
+        <item>كمبالا</item>
+        <item>الخرطوم</item>
+        <item>كينجستون</item>
+        <item>مدينة الكويت</item>
+        <item>لاجوس</item>
+        <item>لاس فيجاس</item>
+        <item>ليوبليانا</item>
+        <item>هايكو</item>
+        <item>لويسفيل</item>
+        <item>لواندا</item>
+        <item>لوساكا</item>
+        <item>لكسمبورج</item>
+        <item>ماكاو</item>
+        <item>مالابو</item>
+        <item>ماليه</item>
+        <item>ماناجوا</item>
+        <item>المنامة</item>
+        <item>مابوتو</item>
+        <item>ماريجوت</item>
+        <item>مكة</item>
+        <item>ملبورن</item>
+        <item>ميمفيس</item>
+        <item>ميسينا</item>
+        <item>ميلان</item>
+        <item>ميلووكي</item>
+        <item>مقديشيو</item>
+        <item>مونوروفيا</item>
+        <item>مونتفيديو</item>
+        <item>مونتريال</item>
+        <item>ميونخ</item>
+        <item>مسقط</item>
+        <item>نابلس</item>
+        <item>ناتيرز</item>
+        <item>أنجمينا</item>
+        <item>نيامي</item>
+        <item>نواكشوط</item>
+        <item>نوميا</item>
+        <item>نوكو ألوفا</item>
+        <item>نووك</item>
+        <item>أوزاكا</item>
+        <item>جوادوجو</item>
+        <item>باليرمو</item>
+        <item>بنما سيتي</item>
+        <item>باراماريبو</item>
+        <item>برن</item>
+        <item>فلاديلفيا</item>
+        <item>بودجوريتشا</item>
+        <item>بونتا ديلجادو</item>
+        <item>بورت لويس</item>
+        <item>بورت أو برنس</item>
+        <item>بورتلاند، أوريغون</item>
+        <item>بيونج يانج</item>
+        <item>يانجون</item>
+        <item>ريسايفي</item>
+        <item>ريكيافيك</item>
+        <item>الرياض</item>
+        <item>سانت دينيس</item>
+        <item>سان أنطونيو</item>
+        <item>سان دييجو</item>
+        <item>سان خوسيه</item>
+        <item>سان خوسيه</item>
+        <item>سان خوان</item>
+        <item>سان مارينو</item>
+        <item>سان سالفادور</item>
+        <item>صنعاء</item>
+        <item>سانتو دومينجو</item>
+        <item>شنغهاي</item>
+        <item>شينزين</item>
+        <item>سكوبي</item>
+        <item>سانت جونز</item>
+        <item>سوفا</item>
+        <item>تاهيتي</item>
+        <item>تيجوسيجالبا</item>
+        <item>هو شي مينه سيتي</item>
+        <item>تيانجين</item>
+        <item>تورين</item>
+        <item>فادوز</item>
+        <item>فاليتا</item>
+        <item>فيرونا</item>
+        <item>فيكتوريا</item>
+        <item>فيينا</item>
+        <item>ياموسوكورو</item>
+        <item>ياوندي</item>
+        <item>زغرب</item>
+        <item>جوانجزو</item>
+        <item>كارديف</item>
+        <item>ريجينا</item>
+        <item>شارلوت أمالي</item>
+        <item>أتلانتا</item>
+        <item>مايوتي</item>
+        <item>سان بيار وميكلون</item>
+        <item>أوسلو</item>
+        <item>سريدنكوليمسك</item>
+        <item>سفيرو-كوريلسك</item>
+        <item>ووهان</item>
+        <item>تشنغدو</item>
+        <item>شيان</item>
+        <item>بورت موريسباي</item>
+        <item>مدينة دافاو</item>
+        <item>تشونغتشينغ</item>
+        <item>شنيانغ</item>
+        <item>نانجينج</item>
+        <item>هاربن</item>
+        <item>جينان</item>
+        <item>تشنجتشو</item>
+        <item>كونمينج</item>
+        <item>تشانغتشون</item>
+        <item>فوزهو</item>
+        <item>كوتشينج</item>
+        <item>ماكاسار</item>
+        <item>هانغتشو</item>
+        <item>تشينغداو</item>
+        <item>ناننينج</item>
+        <item>أورومتشي</item>
+        <item>ناسو</item>
+        <item>نيقوسيا</item>
+        <item>ديلي</item>
+        <item>رود تاون</item>
+        <item>لومي</item>
+        <item>روسو</item>
+        <item>ليبرفيل</item>
+        <item>مارسيليا</item>
+        <item>ماسيرو</item>
+        <item>ماجورو</item>
+        <item>موناكو</item>
+        <item>بندر سري بكاوان</item>
+        <item>بانجول</item>
+        <item>بوسان</item>
+        <item>بوجومبورا</item>
+        <item>برازافيل</item>
+        <item>فينتيان</item>
+        <item>ويندهوك</item>
+        <item>سراييفو</item>
+        <item>سايبان</item>
+        <item>ساو تومي</item>
+        <item>سان جورج</item>
+        <item>ستانلي</item>
+        <item>عدن</item>
+        <item>أبيا</item>
+        <item>أندورا لا فيلا</item>
+        <item>العيون</item>
+        <item>كوراكاو</item>
+        <item>مبابان</item>
+        <item>كاستريس</item>
+        <item>كورور</item>
+        <item>كانكون</item>
+        <item>كيغالي</item>
+        <item>كينغستاون</item>
+        <item>تل أبيب</item>
+        <item>تورشافن</item>
+        <item>تيرانا</item>
+        <item>تيمفو</item>
+        <item>بورتو نوفو</item>
+        <item>برايا</item>
+        <item>فرانكفورت</item>
+        <item>بريشتينا</item>
+        <item>هاميلتون</item>
+        <item>هونيارا</item>
+        <item>بورت أوف سبين</item>
+        <item>منيابولس</item>
+        <item>هيلو</item>
+        <item>أورلاندو</item>
+        <item>كانزاس سيتي</item>
+        <item>نيو أورلينز</item>
+        <item>ناشفيل</item>
+        <item>توسان</item>
+        <item>تامبا</item>
+        <item>جاكسونفيل</item>
+        <item>أوكلاهوما سيتي</item>
+        <item>ألباكركي</item>
+        <item>أوماها</item>
+        <item>فرجينيا بيتش</item>
+        <item>بويسي</item>
+        <item>دي موين</item>
+        <item>برمنغهام</item>
+        <item>مدينة سولت ليك</item>
+        <item>ليتل روك</item>
+        <item>سو فولز</item>
+        <item>جاكسون</item>
+        <item>تشارلستون، كارولينا الجنوبية</item>
+        <item>فارغو</item>
+        <item>بيلينغز</item>
+        <item>بورتلاند، مين</item>
+        <item>شايان</item>
+        <item>تشارلستون، فيرجينيا الغربية</item>
+        <item>بيتسبرغ</item>
+        <item>غرين باي</item>
+        <item>سانت لويس</item>
+        <item>ذا فالي</item>
+        <item>‏UTC (التوقيت العالمي المنسّق)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>أفغانستان</item>
+        <item>الجزائر</item>
+        <item>ساموا</item>
+        <item>أنتيجوا وباربودا</item>
+        <item>الأرجنتين</item>
+        <item>أرمينيا</item>
+        <item>أستراليا</item>
+        <item>أذربيجان</item>
+        <item>بنجلاديش</item>
+        <item>جمهورية باشقورتوستان</item>
+        <item>بلاروسيا</item>
+        <item>بوليفيا</item>
+        <item>البرازيل</item>
+        <item>بلغاريا</item>
+        <item>كمبوديا</item>
+        <item>كندا</item>
+        <item>تشيلي</item>
+        <item>الصين</item>
+        <item>كولومبيا</item>
+        <item>جمهورية التشيك</item>
+        <item>جمهورية الكونغو</item>
+        <item>إكوادور</item>
+        <item>إستونيا</item>
+        <item>فنلندا</item>
+        <item>فرنسا</item>
+        <item>جورجيا</item>
+        <item>ألمانيا</item>
+        <item>اليونان</item>
+        <item>المجر</item>
+        <item>الهند</item>
+        <item>إندونيسيا</item>
+        <item>إيران</item>
+        <item>أيرلندا</item>
+        <item>إسرائيل</item>
+        <item>إيطاليا</item>
+        <item>اليابان</item>
+        <item>كازاخستان</item>
+        <item>كينيا</item>
+        <item>كريباتي</item>
+        <item>لاتفيا</item>
+        <item>ليتوانيا</item>
+        <item>ماليزيا</item>
+        <item>المكسيك</item>
+        <item>منغوليا</item>
+        <item>المغرب</item>
+        <item>نيبال</item>
+        <item>نيوزيلندا</item>
+        <item>باكستان</item>
+        <item>بيرو</item>
+        <item>الفلبين</item>
+        <item>بولندا</item>
+        <item>البرتغال</item>
+        <item>خريطة</item>
+        <item>كوريا الجنوبية</item>
+        <item>جمهورية سنغافورة</item>
+        <item>ليبيا</item>
+        <item>رومانيا</item>
+        <item>روسيا</item>
+        <item>السعودية</item>
+        <item>سلوفاكيا</item>
+        <item>جنوب أفريقيا</item>
+        <item>أسبانيا</item>
+        <item>سري لانكا</item>
+        <item>السويد</item>
+        <item>تايوان</item>
+        <item>تايلاند</item>
+        <item>تونس</item>
+        <item>تركيا</item>
+        <item>الإمارات</item>
+        <item>المملكة المتحدة</item>
+        <item>أوكرانيا</item>
+        <item>الولايات المتحدة الأمريكية</item>
+        <item>أوزبكستان</item>
+        <item>فنزويلا</item>
+        <item>فييتنام</item>
+        <item>جزر فرجن البريطانية</item>
+        <item>سويسرا</item>
+        <item>مصر</item>
+        <item>كوت ديفوار</item>
+        <item>غانا</item>
+        <item>إثيوبيا</item>
+        <item>الأردن</item>
+        <item>هولندا</item>
+        <item>مدغشقر</item>
+        <item>تركمانستان</item>
+        <item>إريتريا</item>
+        <item>باراغواي</item>
+        <item>العراق</item>
+        <item>مالي</item>
+        <item>جمهورية أفريقيا الوسطى</item>
+        <item>جوادلوب</item>
+        <item>لبنان</item>
+        <item>صربيا</item>
+        <item>بيليز</item>
+        <item>قرغيزستان</item>
+        <item>غينيا بيساو</item>
+        <item>باربادوسا</item>
+        <item>بلجيكا</item>
+        <item>غويانا الفرنسية</item>
+        <item>مولدافيا</item>
+        <item>غينيا</item>
+        <item>الدنمارك</item>
+        <item>السنغال</item>
+        <item>سوريا</item>
+        <item>تنزانيا</item>
+        <item>جيبوتي</item>
+        <item>قطر</item>
+        <item>الكاميرون</item>
+        <item>طاجيكستان</item>
+        <item>اسكتلندا</item>
+        <item>المارتينيك</item>
+        <item>سيراليون</item>
+        <item>بوتسوانا</item>
+        <item>جويانا</item>
+        <item>جورجيا الجنوبية</item>
+        <item>جواتيمالا</item>
+        <item>سان بارتيليمي</item>
+        <item>زيمبابوي</item>
+        <item>كوبا</item>
+        <item>أوغندا</item>
+        <item>السودان</item>
+        <item>جامايكا</item>
+        <item>الكويت</item>
+        <item>نيجيريا</item>
+        <item>أنجولا</item>
+        <item>زامبيا</item>
+        <item>لوكسمبورج</item>
+        <item>غينيا الاستوائية</item>
+        <item>المالديف</item>
+        <item>نيكاراجوا</item>
+        <item>البحرين</item>
+        <item>موزامبيق</item>
+        <item>سان مارتن</item>
+        <item>الصومال</item>
+        <item>ليبيريا</item>
+        <item>أورجواي</item>
+        <item>عمان</item>
+        <item>تشاد</item>
+        <item>النيجر</item>
+        <item>موريتانيا</item>
+        <item>كاليدونيا الجديدة</item>
+        <item>تونجا</item>
+        <item>جرينلاند</item>
+        <item>بوركينافاسو</item>
+        <item>بنما</item>
+        <item>سورينام</item>
+        <item>الجبل الأسود</item>
+        <item>موريشيوس</item>
+        <item>هاييتي</item>
+        <item>جمهورية كوريا الديمقراطية الشعبية</item>
+        <item>ميانمار</item>
+        <item>أيسلندا</item>
+        <item>جزر ريونيون</item>
+        <item>كوستاريكا</item>
+        <item>بورتوريكو</item>
+        <item>السلفادور</item>
+        <item>اليمن</item>
+        <item>جمهورية الدومينيكان</item>
+        <item>مقدونيا</item>
+        <item>فيجي</item>
+        <item>بولينزيا الفرنسية</item>
+        <item>هندوراس</item>
+        <item>ليختنشتين</item>
+        <item>مالطا</item>
+        <item>سيشيل</item>
+        <item>النمسا</item>
+        <item>كرواتيا</item>
+        <item>ويلز</item>
+        <item>جزر فيرجن</item>
+        <item>سلوفينيا</item>
+        <item>سان مارينو</item>
+        <item>النرويج</item>
+        <item>بابوا غينيا الجديدة</item>
+        <item>باهاماس</item>
+        <item>قبرص</item>
+        <item>تيمور الشرقية</item>
+        <item>توغو</item>
+        <item>دومينيكا</item>
+        <item>الغابون</item>
+        <item>ليسوتو</item>
+        <item>جزر مارشال</item>
+        <item>موناكو</item>
+        <item>بروناي</item>
+        <item>غامبيا</item>
+        <item>بوروندي</item>
+        <item>جمهورية الكونغو الديمقراطية</item>
+        <item>لاوس</item>
+        <item>ناميبيا</item>
+        <item>البوسنة والهرسك</item>
+        <item>سايبان</item>
+        <item>ساو تومي وبرينسيب</item>
+        <item>غرينادا</item>
+        <item>جزر فوكلاند</item>
+        <item>ساموا الأمريكية</item>
+        <item>أندورا</item>
+        <item>الجمهورية الصحراوية</item>
+        <item>كوراكاو</item>
+        <item>إسواتيني</item>
+        <item>سانت لوسيا</item>
+        <item>بالاو</item>
+        <item>رواندا</item>
+        <item>سانت فينسنت والغرينادين</item>
+        <item>جزر فارو</item>
+        <item>ألبانيا</item>
+        <item>بوتان</item>
+        <item>بنين</item>
+        <item>جمهورية الرأس الأخضر</item>
+        <item>كوسوفو</item>
+        <item>برمودا</item>
+        <item>جزر سولومون</item>
+        <item>تايوان، الصين</item>
+        <item>ترينداد وتوباجو</item>
+        <item>أنجويلا</item>
+        <item>‏UTC (التوقيت العالمي المنسّق)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>تم ضبط المنبه بعد دقيقة واحدة من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %2$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %2$s و%3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s و%3$s من الآن.</item>
+        <item>تم ضبط المنبه بعد %s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s و%3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s و%3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s و%3$s من الآن.</item>
+        <item>تم ضبط التنبيه بعد %1$s و%2$s و%3$s و%4$s من الآن.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°م</item>
+        <item>°ف</item>
+    </string-array>
+</resources>

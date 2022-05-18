@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/biometric_auth_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_upper" android:background="@drawable/auth_dialog_bg_rectangle_upper" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/samsung_pass_auth_dialog_margin_bottom" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/auth_dialog_bg_rectangle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/iris_auth_preview_height">
+                <View android:id="@id/biometric_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:id="@id/verify_loading_layout" android:visibility="gone" layout="@layout/fragment_verify_loading" />
+                <include android:gravity="center" android:id="@id/verify_success_layout" android:visibility="gone" layout="@layout/fragment_verify_success" />
+                <LinearLayout android:orientation="vertical" android:id="@id/retry_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/guide_text_panel" android:layout_width="fill_parent" android:layout_height="34.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="@color/auth_text_color" android:id="@id/iris_guide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No match. Tap icon to try iris recognition again." android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:lineSpacingExtra="4.0dip" android:textAlignment="center" />
+                    </RelativeLayout>
+                    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/retry_button" android:background="@drawable/button_retry_iris_auth_background" android:layout_width="58.0dip" android:layout_height="58.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/samsung_pass_auth_dialog_margin_top">
+                <ImageView android:id="@id/flow_icon" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/logo_samsung_flow_partner" />
+                <View android:layout_gravity="center_vertical" android:id="@id/icon_divider" android:background="@color/samsung_pass_companion_divider_color" android:layout_width="@dimen/samsung_pass_companion_divider_width" android:layout_height="17.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/samsung_pass_icon" android:layout_width="wrap_content" android:layout_height="17.0dip" android:src="@drawable/logo_samsung_pass" android:tint="@color/auth_icon_color" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/samsung_pass_auth_dialog_margin_top" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/biometric_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/ic_multi_recognize" android:tint="@color/auth_icon_color" android:layout_marginStart="?android:listPreferredItemPaddingStart" android:layout_marginEnd="?android:listPreferredItemPaddingEnd" />
+            <TextView android:textSize="@dimen/auth_guide_text_size" android:textColor="@color/auth_desc_color" android:gravity="center" android:id="@id/biometric_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/biometric_auth_guide" android:layout_marginStart="?android:listPreferredItemPaddingStart" android:layout_marginEnd="?android:listPreferredItemPaddingEnd" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/samsung_pass_auth_dialog_button_area_height" android:layout_marginBottom="@dimen/samsung_pass_auth_dialog_margin_bottom">
+                <Button android:textSize="@dimen/dialog_button_text_size" android:textStyle="bold" android:textColor="@color/app_color_primary" android:layout_gravity="center_vertical" android:id="@id/cancel_button" android:background="@drawable/ripple_round_rect" android:layout_width="fill_parent" android:layout_height="36.0dip" android:text="@string/dialog_cancel" android:textAllCaps="true" android:fontFamily="sec-roboto-condensed" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" android:backgroundTint="@color/background_color" style="?borderlessButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/finger_auth_panel" android:background="@drawable/finger_auth_dialog_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="120.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+            <include layout="@layout/dialog_finger_auth" />
+        </LinearLayout>
+        <Button android:textColor="@color/app_color_primary" android:id="@id/finger_cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/dialog_cancel" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" android:backgroundTint="@color/background_color" />
+    </LinearLayout>
+</RelativeLayout>

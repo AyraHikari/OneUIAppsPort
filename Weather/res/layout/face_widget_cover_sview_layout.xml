@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/face_widget_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/facewidget_sview_cover_min_width" android:minHeight="@dimen/facewidget_sview_cover_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/face_widget_content_area" android:background="@drawable/facewidget_background_ripple_white_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/face_widget_weather_info_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/face_widget_current_weather_icon" android:layout_width="@dimen/facewidget_sview_cover_icon_size" android:layout_height="@dimen/facewidget_sview_cover_icon_size" android:alpha="0.8" />
+            <TextView android:textSize="@dimen/facewidget_sview_cover_temp_text_size" android:id="@id/face_widget_temp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_clock_2021" android:layout_marginStart="@dimen/facewidget_sview_cover_margin_between_icon_temp" android:layout_marginEnd="@dimen/facewidget_sview_cover_margin_between_temp_location" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/face_widget_city_name_updated_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/face_widget_location_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/facewidget_sview_cover_location_text_size" android:ellipsize="end" android:id="@id/face_widget_city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/font_roboto_medium" android:layout_marginStart="@dimen/facewidget_sview_cover_margin_between_location_icon_location" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/face_widget_updated_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/facewidget_sview_cover_updated_area_marginTop" android:layout_below="@id/face_widget_location_area" android:paddingStart="@dimen/facewidget_sview_cover_updated_area_marginStart" android:layout_alignParentStart="true">
+                    <TextView android:textSize="@dimen/facewidget_sview_cover_last_update_text_size" android:ellipsize="end" android:id="@id/face_widget_updated_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/font_roboto_regular" android:layout_marginEnd="@dimen/facewidget_sview_cover_refresh_icon_margin" />
+                    <RelativeLayout android:gravity="center_vertical" android:id="@id/face_widget_refresh_area" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/facewidget_sview_cover_refresh_icon_touch_area_padding">
+                        <ImageView android:id="@id/face_widget_refresh_icon" android:visibility="gone" android:layout_width="@dimen/facewidget_sview_cover_refresh_icon_size" android:layout_height="@dimen/facewidget_sview_cover_refresh_icon_size" android:alpha="0.8" />
+                        <ProgressBar android:theme="@style/WeatherWidget.Progress.Theme.White.FaceWidget" android:id="@id/face_widget_refresh_progress" android:visibility="gone" android:layout_width="@dimen/facewidget_sview_cover_refresh_icon_size" android:layout_height="@dimen/facewidget_sview_cover_refresh_icon_size" style="@style/WeatherWidget.Progress" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/widget_refresh_icon_touch_area" android:layout_width="@dimen/facewidget_sview_cover_refresh_icon_touch_area_size" android:layout_height="fill_parent" android:layout_alignBottom="@id/face_widget_updated_area" android:layout_alignEnd="@id/face_widget_updated_area" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

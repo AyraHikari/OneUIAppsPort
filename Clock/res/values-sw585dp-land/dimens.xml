@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_popup_name_edittext_margin_bottom">20.0dip</dimen>
+    <dimen name="timer_circle_bg_height">280.0dip</dimen>
+    <dimen name="timer_circle_bg_min_width">250.0dip</dimen>
+    <dimen name="timer_circle_bg_width">280.0dip</dimen>
+    <dimen name="timer_circle_bg_width_flex">390.0dip</dimen>
+    <dimen name="timer_circle_bg_width_non_flex">352.0dip</dimen>
+    <item type="dimen" name="timer_common_circle_vertical_bias">0.011</item>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">88.0dip</dimen>
+    <dimen name="timer_common_hms_textview_colon_width_flex">20.0dip</dimen>
+    <dimen name="timer_common_hms_textview_time_textsize_flex">75.0dip</dimen>
+    <dimen name="timer_common_hms_textview_time_textsize_fragment">53.0dip</dimen>
+    <dimen name="timer_common_hms_textview_time_width_flex">42.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">88.0dip</dimen>
+    <dimen name="timer_common_name_width">185.0dip</dimen>
+    <item type="dimen" name="timer_common_picker_vertical_bias">0.505</item>
+    <item type="dimen" name="timer_common_preset_popup_margin_top_flex">130.0</item>
+    <dimen name="timer_common_preset_popup_name_margin_top">10.0dip</dimen>
+    <dimen name="timer_common_preset_popup_time_margin_top">22.0dip</dimen>
+    <dimen name="timer_common_timepicker_bg_width">280.0dip</dimen>
+    <dimen name="timer_common_timepicker_margin_horizontal">20.0dip</dimen>
+    <item type="dimen" name="timer_common_title_vertical_bias">0.625</item>
+    <dimen name="timer_end_time_bottom_margin_flex">110.0dip</dimen>
+    <dimen name="timer_progress_bar_top_margin">262.0dip</dimen>
+    <dimen name="timer_progress_bar_top_margin_end">370.0dip</dimen>
+    <dimen name="timer_title_height">60.0dip</dimen>
+</resources>

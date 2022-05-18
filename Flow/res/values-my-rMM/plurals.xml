@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">ဖိုင် %d ဖိုင်ကို ဖိုင်လွှဲပြောင်းမှု စာရင်းသို့ ထည့်ထားပါသည်။</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow ထဲတွင် ကွန်ပျူတာ သို့မဟုတ် တက်ဘလက် %d လုံးအထိ မှတ်ပုံတင်ပြီး စီမံပါ။
+
+တစ်ကြိမ်လျှင် သင့်ဖုန်းနှင့် ကွန်ပျူတာ သို့မဟုတ် တက်ဘလက် တစ်လုံးကိုသာ ချိတ်ဆက်နိုင်သည်။ မှတ်ပုံတင်ထားသော ကွန်ပျူတာ သို့မဟုတ် တက်ဘလက်နှစ်ခုစလုံးက သင့်ဖုန်းနှင့် ချိတ်ဆက်ရန် ကြိုးစားသည့်အခါ သင်က တစ်ခုကို ရွေးချယ်ရမည်။"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">N/A</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

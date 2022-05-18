@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="280.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="280.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="s1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="Fill 1">
+        <group android:name="s1pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Fill 1">
+            <path android:name="s1pg1p10" android:fillColor="#ffffc729" android:pathData="M -0.1 0.1 C -6.71 -6.51 -8.46 -16.24 -5.51 -25 C -16.68 -22.36 -25 -12.32 -25 -0.34 C -25 13.65 -13.65 25 0.34 25 C 12.32 25 22.36 16.69 25 5.51 C 16.24 8.46 6.51 6.71 -0.1 0.1 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+</vector>

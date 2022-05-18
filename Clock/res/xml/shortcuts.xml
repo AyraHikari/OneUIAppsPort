@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/clock_task_shortcut_add" android:enabled="true" android:shortcutId="compose" android:shortcutShortLabel="@string/add_alarm" android:shortcutLongLabel="@string/add_alarm">
+        <intent android:targetPackage="com.sec.android.app.clockpackage" android:action="com.sec.android.app.clockpackage.INTENT_ALARM_ADD" android:targetClass="com.sec.android.app.clockpackage.alarm.activity.AlarmAddExecutable" />
+    </shortcut>
+</shortcuts>

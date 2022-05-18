@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.galaxycontinuity.activities.tablet.ChatListItem android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/date_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:minHeight="16.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <View android:layout_gravity="center_vertical" android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff858585" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/date" android:background="@color/background_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="15.0dip" android:layout_centerHorizontal="true" android:fontFamily="sec-roboto-light" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <LinearLayout android:id="@id/single_left_icons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/chat_message_linear">
+            <TextView android:textSize="12.0sp" android:textColor="@color/share_bubble_time_text_color" android:id="@id/postTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAllCaps="true" android:fontFamily="sec-roboto-light" android:layout_marginEnd="3.0dip" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/failIcon" android:background="@drawable/messages_bubble_ic_btn_bg" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/messages_bubble_ic_btn_failed" android:contentDescription="@string/sending_failed" />
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/chat_message_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_centerVertical="true" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_toEndOf="@id/single_left_icons">
+            <TextView android:textSize="16.0sp" android:textColor="@color/sent_bubble_text_color" android:textColorLink="@color/sent_bubble_text_color" android:ellipsize="end" android:id="@id/chatMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:bufferType="spannable" android:text="blabla" android:layout_centerInParent="true" android:textIsSelectable="true" android:fontFamily="sec-roboto-light" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.samsung.android.galaxycontinuity.activities.tablet.ChatListItem>

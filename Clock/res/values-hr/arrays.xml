@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Midway</item>
+        <item>Honolulu</item>
+        <item>Hawaii</item>
+        <item>Aljaska</item>
+        <item>Anchorage</item>
+        <item>San Francisco</item>
+        <item>Vancouver</item>
+        <item>Seattle</item>
+        <item>Los Angeles</item>
+        <item>Tijuana</item>
+        <item>Calgary</item>
+        <item>Phoenix</item>
+        <item>Mazatlan</item>
+        <item>Denver</item>
+        <item>Mexico City</item>
+        <item>Winnipeg</item>
+        <item>Diego Garcia</item>
+        <item>Dallas</item>
+        <item>Chicago</item>
+        <item>Toronto</item>
+        <item>Miami</item>
+        <item>Lima</item>
+        <item>Quito</item>
+        <item>Washington DC</item>
+        <item>Ottawa</item>
+        <item>New York</item>
+        <item>Bogota</item>
+        <item>Santiago</item>
+        <item>La Paz</item>
+        <item>Caracas</item>
+        <item>Buenos Aires</item>
+        <item>Newfoundland</item>
+        <item>"St. John's"</item>
+        <item>Sao Paulo</item>
+        <item>Brasilia</item>
+        <item>Rio de Janeiro</item>
+        <item>Fernando de Noronha</item>
+        <item>Azori</item>
+        <item>Lisabon</item>
+        <item>Casablanca</item>
+        <item>Dublin</item>
+        <item>Rabat</item>
+        <item>Madrid</item>
+        <item>The Settlement</item>
+        <item>London</item>
+        <item>Kingston</item>
+        <item>Barcelona</item>
+        <item>Pariz</item>
+        <item>Alžir</item>
+        <item>Tunis</item>
+        <item>Tripoli</item>
+        <item>Berlin</item>
+        <item>Rim</item>
+        <item>Prag</item>
+        <item>Kinšasa</item>
+        <item>Stockholm</item>
+        <item>Bratislava</item>
+        <item>Cape Town</item>
+        <item>Budimpešta</item>
+        <item>Varšava</item>
+        <item>Kalinjingrad</item>
+        <item>Sofija</item>
+        <item>Athens</item>
+        <item>Lviv</item>
+        <item>Helsinki</item>
+        <item>Riga</item>
+        <item>Tallin</item>
+        <item>Bukurešt</item>
+        <item>Vilnius</item>
+        <item>Lubumbashi</item>
+        <item>Minsk</item>
+        <item>St. Petersburg</item>
+        <item>Istanbul</item>
+        <item>Kamčatka</item>
+        <item>Kijev</item>
+        <item>Jeruzalem</item>
+        <item>Moskva</item>
+        <item>Kharkiv</item>
+        <item>Nairobi</item>
+        <item>Džeda</item>
+        <item>Volgograd</item>
+        <item>Yerevan</item>
+        <item>Tbilisi</item>
+        <item>Baku</item>
+        <item>Chita</item>
+        <item>Samara</item>
+        <item>Tehran</item>
+        <item>Izhevsk</item>
+        <item>Abu Dhabi</item>
+        <item>Dubai</item>
+        <item>Ufa</item>
+        <item>Yekaterinburg</item>
+        <item>Čeljabinsk</item>
+        <item>Karachi</item>
+        <item>Kabul</item>
+        <item>Taškent</item>
+        <item>Islamabad</item>
+        <item>Mumbai</item>
+        <item>Omsk</item>
+        <item>Almaty</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>New Delhi</item>
+        <item>Colombo</item>
+        <item>Chennai</item>
+        <item>Novosibirsk</item>
+        <item>Katmandu</item>
+        <item>Novokuznetsk</item>
+        <item>Kolkata</item>
+        <item>Daka</item>
+        <item>Hovd</item>
+        <item>Krasnojarsk</item>
+        <item>Bangkok</item>
+        <item>Kuala Lumpur</item>
+        <item>Singapur</item>
+        <item>Irkutsk</item>
+        <item>Phnom Penh</item>
+        <item>Hanoi</item>
+        <item>Jakarta</item>
+        <item>Ulan Bator</item>
+        <item>Hong Kong</item>
+        <item>Perth</item>
+        <item>Peking</item>
+        <item>Manila</item>
+        <item>Taipei</item>
+        <item>Seoul</item>
+        <item>Ambon</item>
+        <item>Vladivostok</item>
+        <item>Yakutsk</item>
+        <item>Habarovski</item>
+        <item>Adelaide</item>
+        <item>Tokio</item>
+        <item>Yuzhno-Sakhalinsk</item>
+        <item>Halifax</item>
+        <item>Guam</item>
+        <item>Canberra</item>
+        <item>Magadan</item>
+        <item>Sydney</item>
+        <item>Petropavlovsk-Kamchatskiy</item>
+        <item>Tarawa</item>
+        <item>Auckland</item>
+        <item>Wellington</item>
+        <item>Pago Pago</item>
+        <item>Denpasar</item>
+        <item>Bern</item>
+        <item>Zürich</item>
+        <item>Kairo</item>
+        <item>Abidjan</item>
+        <item>Accra</item>
+        <item>Addis Ababa</item>
+        <item>Amman</item>
+        <item>Amsterdam</item>
+        <item>Anadyr</item>
+        <item>Ankara</item>
+        <item>Antananarivo</item>
+        <item>Ašgabat</item>
+        <item>Asmara</item>
+        <item>Astana</item>
+        <item>Asuncion</item>
+        <item>Austin</item>
+        <item>Bagdad</item>
+        <item>Baltimore</item>
+        <item>Bamako</item>
+        <item>Bangui</item>
+        <item>Bari</item>
+        <item>Basse-Terre</item>
+        <item>Beirut</item>
+        <item>Beograd</item>
+        <item>Belize City</item>
+        <item>Biškek</item>
+        <item>Bissau</item>
+        <item>Bologna</item>
+        <item>Boston</item>
+        <item>Bridgetown</item>
+        <item>Brisbane</item>
+        <item>Brisel</item>
+        <item>Kanarski otoci</item>
+        <item>Catanzaro</item>
+        <item>Cayenne</item>
+        <item>Charlotte</item>
+        <item>Kišinjev</item>
+        <item>Cleveland</item>
+        <item>Columbus</item>
+        <item>Conakry</item>
+        <item>Copenhagen</item>
+        <item>Cork</item>
+        <item>Crotone</item>
+        <item>Dakar</item>
+        <item>Damask</item>
+        <item>Dar es Salaam</item>
+        <item>Darwin</item>
+        <item>Detroit</item>
+        <item>Džibuti</item>
+        <item>Doha</item>
+        <item>Douala</item>
+        <item>Dushanbe</item>
+        <item>Easter Island</item>
+        <item>Edinburgh</item>
+        <item>El Paso</item>
+        <item>Firenca</item>
+        <item>Fort-de-France</item>
+        <item>Freetown</item>
+        <item>Gaborone</item>
+        <item>Galápagos Islands</item>
+        <item>Geneva</item>
+        <item>Genoa</item>
+        <item>Georgetown</item>
+        <item>Grytviken</item>
+        <item>Grad Guatemala</item>
+        <item>Gustavia</item>
+        <item>Hamburg</item>
+        <item>Harare</item>
+        <item>Havana</item>
+        <item>Hobart</item>
+        <item>Houston</item>
+        <item>Indianapolis</item>
+        <item>Johannesburg</item>
+        <item>Kampala</item>
+        <item>Khartoum</item>
+        <item>Kingston</item>
+        <item>Kuwait city</item>
+        <item>Lagos</item>
+        <item>Las Vegas</item>
+        <item>Ljubljana</item>
+        <item>Haikou</item>
+        <item>Louisville</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Malabo</item>
+        <item>Male</item>
+        <item>Managua</item>
+        <item>Manama</item>
+        <item>Maputo</item>
+        <item>Marigot</item>
+        <item>Mecca</item>
+        <item>Melbourne</item>
+        <item>Memphis</item>
+        <item>Messina</item>
+        <item>Milan</item>
+        <item>Milwaukee</item>
+        <item>Mogadishu</item>
+        <item>Monrovia</item>
+        <item>Montevideo</item>
+        <item>Montreal</item>
+        <item>Minhen</item>
+        <item>Muscat</item>
+        <item>Naples</item>
+        <item>Naters</item>
+        <item>"N'Djamena"</item>
+        <item>Niamey</item>
+        <item>Nouakchott</item>
+        <item>Nouméa</item>
+        <item>"Nuku'alofa"</item>
+        <item>Nuuk</item>
+        <item>Osaka</item>
+        <item>Ouagadougou</item>
+        <item>Palermo</item>
+        <item>Panama City</item>
+        <item>Paramaribo</item>
+        <item>Perm</item>
+        <item>Philadelphia</item>
+        <item>Podgorica</item>
+        <item>Ponta Delgada</item>
+        <item>Port Louis</item>
+        <item>Port-au-Prince</item>
+        <item>Portland, Oregon</item>
+        <item>Pjongjang</item>
+        <item>Yangon</item>
+        <item>Recife</item>
+        <item>Reykjavik</item>
+        <item>Riyadh</item>
+        <item>Saint-Denis</item>
+        <item>San Antonio</item>
+        <item>San Diego</item>
+        <item>San Jose</item>
+        <item>San Jose</item>
+        <item>San Juan</item>
+        <item>San Marino</item>
+        <item>San Salvador</item>
+        <item>"Sana'a"</item>
+        <item>Santo Domingo</item>
+        <item>Šangaj</item>
+        <item>Shenzhen</item>
+        <item>Skopje</item>
+        <item>"St. John's"</item>
+        <item>Suva</item>
+        <item>Tahiti</item>
+        <item>Tegucigalpa</item>
+        <item>Ho Chi Minh City</item>
+        <item>Tianjin</item>
+        <item>Turin</item>
+        <item>Vaduz</item>
+        <item>Valletta</item>
+        <item>Verona</item>
+        <item>Victoria</item>
+        <item>Beč</item>
+        <item>Yamoussoukro</item>
+        <item>Yaounde</item>
+        <item>Zagreb</item>
+        <item>Guangzhou</item>
+        <item>Cardiff</item>
+        <item>Regina</item>
+        <item>Charlotte Amalie</item>
+        <item>Atlanta</item>
+        <item>Mayotte</item>
+        <item>St Pierre i Miquelon</item>
+        <item>Oslo</item>
+        <item>Srednekolimsk</item>
+        <item>Severo-Kurilsk</item>
+        <item>Wuhan</item>
+        <item>Chengdu</item>
+        <item>"Xi'an"</item>
+        <item>Port Moresby</item>
+        <item>Davao City</item>
+        <item>Chongqing</item>
+        <item>Shenyang</item>
+        <item>Nanjing</item>
+        <item>Harbin</item>
+        <item>Jinan</item>
+        <item>Zhengzhou</item>
+        <item>Kunming</item>
+        <item>Changchun</item>
+        <item>Fuzhou</item>
+        <item>Kuching</item>
+        <item>Makassar</item>
+        <item>Hangzhou</item>
+        <item>Qingdao</item>
+        <item>Nanning</item>
+        <item>Urumqi</item>
+        <item>Nassau</item>
+        <item>Nikozija</item>
+        <item>Dili</item>
+        <item>Road Town</item>
+        <item>Lomé</item>
+        <item>Roseau</item>
+        <item>Libreville</item>
+        <item>Marseille</item>
+        <item>Maseru</item>
+        <item>Majuro</item>
+        <item>Monako</item>
+        <item>Bandar Seri Begawan</item>
+        <item>Banjul</item>
+        <item>Busan</item>
+        <item>Bujumbura</item>
+        <item>Brazzaville</item>
+        <item>Vientiane</item>
+        <item>Windhoek</item>
+        <item>Sarajevo</item>
+        <item>Saipan</item>
+        <item>Sao Tome</item>
+        <item>"St. George's"</item>
+        <item>Stanley</item>
+        <item>Aden</item>
+        <item>Apia</item>
+        <item>Andorra la Vella</item>
+        <item>El-Aaiún</item>
+        <item>Willemstad</item>
+        <item>Mbabane</item>
+        <item>Castries</item>
+        <item>Koror</item>
+        <item>Cancun</item>
+        <item>Kigali</item>
+        <item>Kingstown</item>
+        <item>Tel Aviv</item>
+        <item>Torshavn</item>
+        <item>Tirana</item>
+        <item>Thimphu</item>
+        <item>Porto-Novo</item>
+        <item>Praia</item>
+        <item>Frankfurt</item>
+        <item>Priština</item>
+        <item>Hamilton</item>
+        <item>Honiara</item>
+        <item>Port of Spain</item>
+        <item>Minneapolis</item>
+        <item>Hilo</item>
+        <item>Orlando</item>
+        <item>Kansas City</item>
+        <item>New Orleans</item>
+        <item>Nashville</item>
+        <item>Tucson</item>
+        <item>Tampa</item>
+        <item>Jacksonville</item>
+        <item>Oklahoma City</item>
+        <item>Albuquerque</item>
+        <item>Omaha</item>
+        <item>Virginia Beach</item>
+        <item>Boise</item>
+        <item>Des Moines</item>
+        <item>Birmingham</item>
+        <item>Salt Lake City</item>
+        <item>Little Rock</item>
+        <item>Sioux Falls</item>
+        <item>Jackson</item>
+        <item>Charleston, Južna Karolina</item>
+        <item>Fargo</item>
+        <item>Billings</item>
+        <item>Portland, Maine</item>
+        <item>Cheyenne</item>
+        <item>Charleston, Zapadna Virginia</item>
+        <item>Pittsburgh</item>
+        <item>Green Bay</item>
+        <item>St. Louis</item>
+        <item>The Valley</item>
+        <item>UTC (koordinirano svjetsko vrijeme)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Afganistan</item>
+        <item>Algerija</item>
+        <item>Samoa</item>
+        <item>Antigua i Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenija</item>
+        <item>Australija</item>
+        <item>Azerbejdžan</item>
+        <item>Bangladeš</item>
+        <item>Republika Baškortostan</item>
+        <item>Bjelorusija</item>
+        <item>Bolivija</item>
+        <item>Brazil</item>
+        <item>Bugarska</item>
+        <item>Kambodža</item>
+        <item>Kanada</item>
+        <item>Čile</item>
+        <item>Kina</item>
+        <item>Kolumbija</item>
+        <item>Češka</item>
+        <item>Republika Kongo</item>
+        <item>Ekvador</item>
+        <item>Estonija</item>
+        <item>Finska</item>
+        <item>Francuska</item>
+        <item>Gruzija</item>
+        <item>Njemačka</item>
+        <item>Grčka</item>
+        <item>Mađarska</item>
+        <item>Indija</item>
+        <item>Indonezija</item>
+        <item>Iran</item>
+        <item>Irska</item>
+        <item>Izrael</item>
+        <item>Italija</item>
+        <item>Japan</item>
+        <item>Kazahstan</item>
+        <item>Kenija</item>
+        <item>Kiribati</item>
+        <item>Latvija</item>
+        <item>Litvanija</item>
+        <item>Malezija</item>
+        <item>Meksiko</item>
+        <item>Mongolija</item>
+        <item>Maroko</item>
+        <item>Nepal</item>
+        <item>Novi Zeland</item>
+        <item>Pakistan</item>
+        <item>Peru</item>
+        <item>Filipini</item>
+        <item>Poljska</item>
+        <item>Portugal</item>
+        <item>Karta</item>
+        <item>Južna Koreja</item>
+        <item>Republika Singapur</item>
+        <item>Libija</item>
+        <item>Rumunjska</item>
+        <item>Rusija</item>
+        <item>Saudijska Arabija</item>
+        <item>Slovačka</item>
+        <item>Južna Afrika</item>
+        <item>Španjolska</item>
+        <item>Sri Lanka</item>
+        <item>Švedska</item>
+        <item>Tajvan</item>
+        <item>Tajland</item>
+        <item>Tunis</item>
+        <item>Turska</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>Ukrajina</item>
+        <item>SAD</item>
+        <item>Uzbekistan</item>
+        <item>Venecuela</item>
+        <item>Vijetnam</item>
+        <item>UK Vrgn Islds</item>
+        <item>Švicarska</item>
+        <item>Egipat</item>
+        <item>Côte d’Ivoire</item>
+        <item>Ghana</item>
+        <item>Etiopija</item>
+        <item>Jordan</item>
+        <item>Nizozemska</item>
+        <item>Madagaskar</item>
+        <item>Turkmenistan</item>
+        <item>Eritrea</item>
+        <item>Paragvaj</item>
+        <item>Irak</item>
+        <item>Mali</item>
+        <item>Središnja Afrička Republika</item>
+        <item>Guadeloupe</item>
+        <item>Lebanon</item>
+        <item>Srbija</item>
+        <item>Belize</item>
+        <item>Kirgistan</item>
+        <item>Guinea Bissau</item>
+        <item>Barbados</item>
+        <item>Belgija</item>
+        <item>Francuska Gvajana</item>
+        <item>Moldova</item>
+        <item>Guinea</item>
+        <item>Danska</item>
+        <item>Senegal</item>
+        <item>Sirija</item>
+        <item>Tanzania</item>
+        <item>Džibuti</item>
+        <item>Katar</item>
+        <item>Kamerun</item>
+        <item>Tadžikistan</item>
+        <item>Škotska</item>
+        <item>Martinique</item>
+        <item>Sierra Leone</item>
+        <item>Botswana</item>
+        <item>Gvajana</item>
+        <item>Južna Georgia</item>
+        <item>Guatemala</item>
+        <item>Saint Barthélemy</item>
+        <item>Zimbabve</item>
+        <item>Cuba</item>
+        <item>Uganda</item>
+        <item>Sudan</item>
+        <item>Jamajka</item>
+        <item>Kuvajt</item>
+        <item>Nigeria</item>
+        <item>Angola</item>
+        <item>Zambia</item>
+        <item>Luksemburg</item>
+        <item>Equaorial Guinea</item>
+        <item>Maldives</item>
+        <item>Nikaragva</item>
+        <item>Bahrain</item>
+        <item>Mozambique</item>
+        <item>Saint Martin</item>
+        <item>Somalia</item>
+        <item>Liberia</item>
+        <item>Urugvaj</item>
+        <item>Oman</item>
+        <item>Čad</item>
+        <item>Niger</item>
+        <item>Mauritanija</item>
+        <item>Nova Kaledonija</item>
+        <item>Tonga</item>
+        <item>Greenland</item>
+        <item>Burkina Faso</item>
+        <item>Panama</item>
+        <item>Suriname</item>
+        <item>Crna Gora</item>
+        <item>Mauricijus</item>
+        <item>Haiti</item>
+        <item>Demokratska Narodna Republika Koreja</item>
+        <item>Myanmar</item>
+        <item>Island</item>
+        <item>Otok Reunion</item>
+        <item>Kostarika</item>
+        <item>Portoriko</item>
+        <item>El Salvador</item>
+        <item>Jemen</item>
+        <item>Dominikanska Republika</item>
+        <item>Makedonija</item>
+        <item>Fiji</item>
+        <item>Francuska Polinezija</item>
+        <item>Honduras</item>
+        <item>Lihenštajn</item>
+        <item>Malta</item>
+        <item>Seychelles</item>
+        <item>Austrija</item>
+        <item>Hrvatska</item>
+        <item>Wales</item>
+        <item>Djev. otoci</item>
+        <item>Slovenija</item>
+        <item>San Marino</item>
+        <item>Norway</item>
+        <item>Papua New Guinea</item>
+        <item>Bahami</item>
+        <item>Cipar</item>
+        <item>Timor-Leste</item>
+        <item>Togo</item>
+        <item>Dominika</item>
+        <item>Gabon</item>
+        <item>Lesoto</item>
+        <item>Maršalovi Otoci</item>
+        <item>Monako</item>
+        <item>Brunej</item>
+        <item>Gambija</item>
+        <item>Burundi</item>
+        <item>Demokratska Republika Kongo</item>
+        <item>Laos</item>
+        <item>Namibija</item>
+        <item>Bosna i Hercegovina</item>
+        <item>Saipan</item>
+        <item>Sveti Toma i Prinsipe</item>
+        <item>Grenada</item>
+        <item>Falklandski Otoci</item>
+        <item>Američka Samoa</item>
+        <item>Andora</item>
+        <item>Saharska Republika</item>
+        <item>Curacao</item>
+        <item>Esvatini</item>
+        <item>Sveta Lucija</item>
+        <item>Palau</item>
+        <item>Ruanda</item>
+        <item>Sveti Vincent i Grenadini</item>
+        <item>Farski otoci</item>
+        <item>Albanija</item>
+        <item>Butan</item>
+        <item>Benin</item>
+        <item>Kabo Verde</item>
+        <item>Kosovo</item>
+        <item>Bermudi</item>
+        <item>Salomonovi Otoci</item>
+        <item>Tajvan, Kina</item>
+        <item>Trinidad i Tobago</item>
+        <item>Angvila</item>
+        <item>UTC (koordinirano svjetsko vrijeme)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Alarm će se uključiti za 1 min.</item>
+        <item>Alarm će se uključiti za %1$s.</item>
+        <item>Alarm će se uključiti za %2$s od sada.</item>
+        <item>Alarm će se uključiti za %1$s i %2$s.</item>
+        <item>Alarm će se uključiti za %3$s.</item>
+        <item>Alarm će se uključiti za %1$s i %3$s.</item>
+        <item>Alarm će se uključiti za %2$s i %3$s.</item>
+        <item>Alarm će se uključiti za %1$s, %2$s i %3$s.</item>
+        <item>Alarm će se uključiti za %s.</item>
+        <item>Alarm će se uključiti za %1$s i %2$s.</item>
+        <item>Alarm će se uključiti za %1$s i %3$s.</item>
+        <item>Alarm će se uključiti za %1$s, %2$s i %3$s.</item>
+        <item>Alarm će se uključiti za %1$s i %2$s.</item>
+        <item>Alarm će se uključiti za %1$s, %2$s i %3$s.</item>
+        <item>Alarm će se uključiti za %1$s, %2$s i %3$s.</item>
+        <item>Alarm će se uključiti za %1$s, %2$s, %3$s i %4$s.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

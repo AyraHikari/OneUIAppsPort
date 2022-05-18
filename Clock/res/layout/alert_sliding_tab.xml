@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/targetCircle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/movingCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sec.android.app.clockpackage.commonalert.view.AlertClearCircleImageView android:layout_gravity="center" android:id="@id/clearTargetCircle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sec.android.app.clockpackage.commonalert.view.AlertClearCircleImageView android:layout_gravity="center" android:id="@id/animTargetCircle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/tabCircle" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/dismiss" />
+    <TextView android:textSize="@dimen/alarm_snooze_text_size" android:textStyle="normal" android:textColor="@color/alert_snooze_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/handleImageView" android:layout_width="@dimen/alarm_tap_circle_size" android:layout_height="@dimen/alarm_tap_circle_size" android:text="@string/dismiss" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@string/roboto_regular" android:paddingHorizontal="@dimen/alarm_margin_dismiss_btn_left" />
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/dismissImage" android:background="@drawable/ic_clock_alert_dismiss_ic" android:visibility="invisible" android:layout_width="@dimen/alarm_tap_circle_size_full_alert" android:layout_height="@dimen/alarm_tap_circle_size_full_alert" />
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/dismissClearCoverImage" android:background="@drawable/ic_clock_dismiss_clear_cover" android:visibility="invisible" android:layout_width="@dimen/alarm_tap_circle_size_full_alert" android:layout_height="@dimen/alarm_tap_circle_size_full_alert" />
+</merge>

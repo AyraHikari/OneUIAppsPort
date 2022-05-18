@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="end" android:id="@id/weather_icon_animation_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_size" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_partly_sunny" android:scaleType="fitStart" android:adjustViewBounds="true" />
+    <FrameLayout android:id="@id/widget_current_weather_icon_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/guide_size" android:layout_alignBottom="@id/guide_size" android:layout_alignStart="@id/guide_size" android:layout_alignEnd="@id/guide_size" />
+</RelativeLayout>

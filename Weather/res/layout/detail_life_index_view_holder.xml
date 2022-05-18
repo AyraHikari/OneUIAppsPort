@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout android:tag="layout/detail_life_index_view_holder_0" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/life_index_layout" android:paddingTop="@dimen/life_index_layout_padding_top_bottom" android:paddingBottom="@dimen/life_index_layout_padding_top_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:paddingStart="@dimen/life_index_layout_margin_start" android:paddingEnd="@dimen/life_index_layout_margin_end" />
+</com.sec.android.daemonapp.detail.view.DetailCardConstraintLayout>

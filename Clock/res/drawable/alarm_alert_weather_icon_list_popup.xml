@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/weather_ic_73_sunny_whitebg_mtrl" android:maxLevel="101" />
+    <item android:drawable="@drawable/weather_ic_73_snow_whitebg_mtrl" android:maxLevel="102" />
+    <item android:drawable="@drawable/weather_ic_73_cold_whitebg_mtrl" android:maxLevel="103" />
+    <item android:drawable="@drawable/weather_ic_73_hot_whitebg_mtrl" android:maxLevel="104" />
+    <item android:drawable="@drawable/weather_ic_73_fog_whitebg_mtrl" android:maxLevel="106" />
+    <item android:drawable="@drawable/weather_ic_73_sunny_whitebg_mtrl" android:maxLevel="107" />
+    <item android:drawable="@drawable/weather_ic_73_cloudy_whitebg_mtrl" android:maxLevel="108" />
+    <item android:drawable="@drawable/weather_ic_73_rain_whitebg_mtrl" android:maxLevel="109" />
+    <item android:drawable="@drawable/weather_ic_73_thunderstorm_whitebg_mtrl" android:maxLevel="110" />
+    <item android:drawable="@drawable/weather_ic_73_windy_whitebg_mtrl" android:maxLevel="111" />
+</level-list>

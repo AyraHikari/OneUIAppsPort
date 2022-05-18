@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/noti_alarm_time_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_noti_alarm_time_margin_start" android:layout_marginEnd="@dimen/alarm_noti_alarm_time_margin_end">
+        <TextView android:textSize="@dimen/alarm_noti_alarm_time_text_size" android:textStyle="normal" android:textColor="@color/alarm_noti_time_color" android:ellipsize="end" android:id="@id/noti_alarm_time" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:minWidth="@dimen/alarm_noti_alarm_time_min_width" android:maxLines="1" android:includeFontPadding="true" android:layout_weight="1.0" android:importantForAccessibility="yes" android:fontFamily="@string/roboto_regular" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/alarm_datepicker" android:background="@drawable/common_action_btn_bg" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clock_alarm_ic_date" android:tint="@color/alarm_date_text_color" android:tintMode="src_in" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

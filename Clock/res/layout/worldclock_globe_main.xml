@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.clockpackage.worldclock.viewmodel.GlobeViewModel android:id="@id/worldclock_globe_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pupup_view_layout_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.sec.android.app.clockpackage.worldclock.viewmodel.GlobeViewModel>
+    <include android:id="@id/globe_common_toolbar" layout="@layout/common_toolbar" />
+    <FrameLayout android:id="@id/search_bar_layout_id" android:background="@color/window_background_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/globe_common_toolbar" />
+</RelativeLayout>

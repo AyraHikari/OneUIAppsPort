@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">%dটি অবস্থানের চেয়ে বেশি যোগ করা যাচ্ছে না। এই অবস্থানটি যোগ করতে কিছু অবস্থান মুছুন।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটি অবস্থানের চেয়ে বেশি যোগ করা যাচ্ছে না। এই অবস্থানটি যোগ করতে কিছু অবস্থান মুছুন।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">%dটির চেয়ে বেশি অক্ষর লেখা যাচ্ছে না।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটির চেয়ে বেশি অক্ষর লেখা যাচ্ছে না।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%dটি নির্বাচিত</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটি নির্বাচিত</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d দিন</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d দিন</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d ঘন্টা</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ঘন্টা</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

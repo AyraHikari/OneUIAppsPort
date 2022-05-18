@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="alarm_edit_dim_background_alpha">0.65</item>
+    <item type="dimen" name="alarm_edit_tablet_window_alpha">0.8</item>
+    <dimen name="contents_area_stroke">3.0px</dimen>
+    <item type="dimen" name="stopwatch_button_lap_disabled_opacity">0.4</item>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d faýl faýl geçiriş sanawyna goşuldy.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d faýl faýl geçiriş sanawyna goşuldy.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow-da bellige alnyp, %d kompýutere ýa-da planşete çenli dolandyryň.
+
+Telefonyňyza bir gezekde diňe bir kompýuter ýa-da planşet birikdirip bolýar. Bellige alnan kompýuterleriň ýa-da planşetleriň ikisem telefonyňyza birikjek bolanda, olaryň birini saýlamaly bolarsyňyz."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Flow-da bellige alnyp, %d kompýutere ýa-da planşete çenli dolandyryň.
+
+Telefonyňyza bir gezekde diňe bir kompýuter ýa-da planşet birikdirip bolýar. Bellige alnan kompýuterleriň ýa-da planşetleriň ikisem telefonyňyza birikjek bolanda, olaryň birini saýlamaly bolarsyňyz."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

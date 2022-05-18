@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/edit_app_bar_group">
+        <item android:id="@id/menu_cancel" android:title="@string/cancel" app:contentDescription="@string/cancel" app:showAsAction="ifRoom" />
+        <item android:id="@id/menu_done" android:title="@string/action_bar_save" app:contentDescription="@string/action_bar_save" app:showAsAction="ifRoom" />
+    </group>
+</menu>

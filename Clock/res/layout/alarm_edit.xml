@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ClockActionBarTheme" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_edit_bottom_bar_height" android:layout_alignParentTop="true" app:background="@color/actionbar_bg" />
+    <ScrollView android:id="@id/nestedscrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/cancel_and_done_layout" android:layout_below="@id/toolbar" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/timepicker_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sec.android.app.clockpackage.alarm.ui.view.AlarmTimePickerLayout android:gravity="center" android:layout_gravity="center" android:id="@id/alarm_time_picker" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <include android:id="@id/alarm_time_picker_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/alarm_time_repeat_detail" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/cancel_and_done_layout" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_edit_bottom_bar_height" android:layout_alignParentBottom="true" app:menu="@menu/alarm_edit_bottom_menu" style="@style/BottomBarStyle" />
+</RelativeLayout>

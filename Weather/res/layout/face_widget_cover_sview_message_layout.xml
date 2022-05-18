@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/face_widget_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/facewidget_sview_cover_widget_width" android:minHeight="@dimen/facewidget_sview_cover_widget_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/face_widget_common_text_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/facewidget_sview_cover_no_item_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/face_widget_common_text" android:background="@drawable/facewidget_background_ripple_white_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_roboto_regular" android:paddingHorizontal="@dimen/facewidget_sview_cover_additional_padding_left_right" android:paddingVertical="@dimen/facewidget_sview_cover_additional_padding_top_bottom" />
+    </LinearLayout>
+</LinearLayout>

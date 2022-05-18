@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="21.0dip" android:width="21.0dip" android:viewportWidth="21.0" android:viewportHeight="21.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/timer_button_pause_textcolor" android:pathData="M7.0213,3.9734L7.1621,3.9797C7.9507,4.0514 8.5727,4.719 8.5727,5.5247L8.5727,5.5247L8.5727,15.4744C8.5727,16.3284 7.8753,17.0266 7.0213,17.0266C6.1665,17.0266 5.4691,16.3284 5.4691,15.4744L5.4691,15.4744L5.4691,5.5247C5.4691,4.6716 6.1665,3.9734 7.0213,3.9734L7.0213,3.9734ZM13.9787,3.9734L14.1194,3.9797C14.9081,4.0514 15.5309,4.719 15.5309,5.5247L15.5309,5.5247L15.5309,15.4744C15.5309,16.3284 14.8327,17.0266 13.9787,17.0266C13.1247,17.0266 12.4273,16.3284 12.4273,15.4744L12.4273,15.4744L12.4273,5.5247C12.4273,4.6716 13.1247,3.9734 13.9787,3.9734L13.9787,3.9734Z" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

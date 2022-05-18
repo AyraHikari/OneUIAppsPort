@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_clock_stopwatch_ic_copy" android:id="@id/menu_copy_items" android:title="@string/stopwatch_copy_button" android:showAsAction="ifRoom" />
+    <item android:id="@id/menu_lap_history" android:title="@string/stopwatch_menu_recent_lap_history" android:showAsAction="never" />
+</menu>

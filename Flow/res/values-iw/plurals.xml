@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d קבצים נוספו לרשימת העברת הקבצים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d קובץ נוסף לרשימת העברת הקבצים.</item>
+        <item quantity="two">%d קבצים נוספו לרשימת העברת הקבצים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d קבצים נוספו לרשימת העברת הקבצים.</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"רשום ונהל עד %d מחשבים או מכשירי טאבלט ב-Samsung Flow‏.
+
+ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"רשום ונהל עד %d מחשב או טאבלט ב-Samsung Flow‏.
+
+ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
+        <item quantity="two">"רשום ונהל עד %d מחשבים או מכשירי טאבלט ב-Samsung Flow‏.
+
+ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">"רשום ונהל עד %d מחשבים או מכשירי טאבלט ב-Samsung Flow‏.
+
+ניתן לחבר לטלפון שלך רק מחשב או טאבלט אחד בכל פעם. אם שני מחשבים או מכשירי טאבלט רשומים מנסים להתחבר לטלפון באותה עת, עליך לבחור אחד מהם."</item>
+    </plurals>
+</resources>

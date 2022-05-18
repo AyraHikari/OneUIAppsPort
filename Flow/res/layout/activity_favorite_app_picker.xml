@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/favoritePickerRoot" android:background="@drawable/favorite_picker_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/titleView" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="67.0dip">
+            <TextView android:gravity="top" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="19.0dip" android:layout_marginBottom="13.0dip" android:text="@string/select_apps_for_shortcuts" android:layout_marginStart="22.0dip" android:layout_marginEnd="19.0dip" style="@style/TextViewSubheaderText" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btnView" android:layout_below="@id/titleView">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="53.0dip" android:layout_marginEnd="53.0dip" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/circleProgress" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="72.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/btnView" android:background="@drawable/favorite_picker_bottom_bg" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/custom_dialog_btn_color" android:gravity="center" android:id="@id/negative" android:layout_width="0.0dip" android:layout_height="59.0dip" android:text="Cancel" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@color/list_divider_color" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/custom_dialog_btn_color" android:gravity="center" android:id="@id/positive" android:layout_width="0.0dip" android:layout_height="59.0dip" android:text="Done" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

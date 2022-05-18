@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip">
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_list_phone" android:tint="@color/app_color_primary" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/dialog_title_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_title_connection_method" android:fontFamily="sec-roboto-condensed" android:paddingStart="16.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/wifiButton" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="52.25dip" android:layout_marginTop="18.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/option_connection_type_wifi" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" android:backgroundTint="@color/background_color" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bluetoothButton" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="52.25dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bluetooth" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" android:backgroundTint="@color/background_color" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

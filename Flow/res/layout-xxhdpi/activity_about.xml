@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/landscape_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/activity_main_panel" android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:backgroundTint="@color/background_round_color" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/upper_margin_view" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/versionInfoPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+                    <TextView android:textSize="40.0sp" android:textColor="@color/primary_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:fontFamily="sans-serif-light" android:textAlignment="center" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/about_version_color" android:layout_gravity="center_horizontal" android:id="@id/about_version_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="v3.7.14" android:fontFamily="sec-roboto-condensed" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/about_version_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/about_latest_version_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/latest_version_installed" android:fontFamily="sec-roboto-light" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/about_update_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="@string/update" android:maxLines="1" android:fontFamily="sec-roboto-light" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:backgroundTint="@color/app_color_primary" />
+                    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_update_check" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="7.0dip" style="?android:progressBarStyleLarge" />
+                    <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/about_permissions_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="@string/permissions" android:maxLines="1" android:fontFamily="sec-roboto-light" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:backgroundTint="@color/app_color_primary" />
+                </LinearLayout>
+                <View android:id="@id/bottom_margin_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/terms_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="15.0sp" android:textColor="@color/about_terms_button_text_color" android:layout_gravity="center_horizontal" android:id="@id/about_terms_and_conditions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip" android:text="@string/about_terms_and_conditions" android:backgroundTint="@color/about_terms_button_bg_color" />
+                    <Button android:textSize="15.0sp" android:textColor="@color/about_terms_button_text_color" android:layout_gravity="center_horizontal" android:id="@id/about_open_source_licenses" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:minHeight="36.0dip" android:text="@string/about_open_source_licences" android:backgroundTint="@color/about_terms_button_bg_color" />
+                    <View android:id="@id/license_bottom_space" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:title="@string/snooze" app:toolbarId="@id/toolbar" style="@style/ClockCollapsingToolbarLayoutStyle">
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/ClockThemeAppCompat" app:title="@string/snooze" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedscrollview" android:background="@color/window_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="always" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.sec.android.app.clockpackage.common.view.ClockSubAppBar android:id="@id/sub_appbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ScrollView android:id="@id/scrollView" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListCategoryText">
+                    <TextView android:id="@id/snooze_layout1" android:background="@color/window_background_color" android:text="@string/alarm_snooze_duration" style="@style/ListDataSubHeaderStyle" />
+                    <LinearLayout android:theme="@style/RadioStyle" android:orientation="vertical" android:id="@id/snooze_duration_items" android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:ellipsize="marquee" android:id="@id/duration_layout0" android:visibility="gone" style="@style/CustomCheckBox" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_layout1" android:text="@string/alarm_snooze_5min" style="@style/CustomCheckBox" />
+                        <View style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_layout2" android:text="@string/alarm_snooze_10min" style="@style/CustomCheckBox" />
+                        <View style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_layout3" android:text="@string/alarm_snooze_15min" style="@style/CustomCheckBox" />
+                        <View style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_layout4" android:text="@string/alarm_snooze_30min" style="@style/CustomCheckBox" />
+                        <View style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/duration_layout5" android:text="@string/alarm_custom_snooze_box" style="@style/CustomCheckBox" />
+                        <include android:id="@id/timePicker" android:visibility="gone" layout="@layout/custom_snooze_time_picker" />
+                    </LinearLayout>
+                    <TextView android:id="@id/snooze_layout2" android:background="@color/window_background_color" android:text="@string/alarm_snooze_repeat" style="@style/ListDataSubHeaderStyle" />
+                    <CheckedTextView android:id="@id/repeat_layout" android:visibility="gone" style="@style/CustomCheckBox" />
+                    <LinearLayout android:theme="@style/RadioStyle" android:orientation="vertical" android:id="@id/snooze_repeat_items" android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_view_bottom_margin">
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/repeat_layout0" android:visibility="gone" style="@style/CustomCheckBox" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/repeat_layout1" android:text="@string/alarm_snooze_3times" style="@style/CustomCheckBox" />
+                        <View style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/repeat_layout2" android:text="@string/alarm_snooze_5times" style="@style/CustomCheckBox" />
+                        <View style="@style/CheckBoxLineSeperator" />
+                        <com.sec.android.app.clockpackage.common.view.RadioButtonCheckedTextView android:id="@id/repeat_layout3" android:text="@string/alarm_snooze_infinity" style="@style/CustomCheckBox" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <View android:id="@id/dummy" android:background="@color/alarm_dummy_background_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

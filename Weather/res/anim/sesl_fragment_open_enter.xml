@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:interpolator="@interpolator/sine_out_90" android:duration="100" android:fillBefore="true" android:fillAfter="true" android:fromAlpha="0.0" android:toAlpha="1.0" android:fillEnabled="true" />
+    <translate android:interpolator="@interpolator/i25_5_0_1" android:duration="400" android:fillBefore="true" android:fillAfter="true" android:fromYDelta="18.75%" android:toYDelta="0.0" android:fillEnabled="true" />
+</set>

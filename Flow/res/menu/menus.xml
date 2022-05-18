@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_delete" android:visible="false" android:title="@string/cancel_all" app:showAsAction="always" />
+    <item android:id="@id/menu_connect_to_pc" android:title="@string/connect_to_computer" />
+    <item android:id="@id/menu_connect_to_phone" android:title="@string/connect_to_phone" />
+    <item android:id="@id/menu_managedevice" android:title="@string/manage_pcs_title" />
+    <item android:id="@id/menu_settings" android:title="@string/settings" />
+    <item android:id="@id/menu_help" android:title="@string/help" />
+    <item android:id="@id/menu_notices" android:title="@string/notices" />
+    <item android:id="@id/menu_contact_us" android:title="@string/help_contact_us" />
+</menu>

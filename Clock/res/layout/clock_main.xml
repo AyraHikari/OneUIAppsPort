@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/clock_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/clock_bottom_layout" android:background="@color/tab_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/clock_tab_height">
+        <ViewStub android:id="@id/clock_bottom_navigation_delete_viewstub" android:layout="@layout/clock_bottom_navigation_delete" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/clock_bottom_navigation_edit_delete_viewstub" android:layout="@layout/clock_bottom_navigation_edit_delete" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.sec.android.app.clockpackage.common.view.ClockTabLayout android:layout_gravity="center_horizontal" android:id="@id/tabs" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fontFamily="sec" android:textFontWeight="400" style="@style/ClockTabLayout" />
+    </RelativeLayout>
+</LinearLayout>

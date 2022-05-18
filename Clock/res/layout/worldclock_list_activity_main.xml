@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/worldclock_list_toolbar" layout="@layout/common_toolbar" />
+    <FrameLayout android:id="@id/search_bar_layout_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/worldclock_list_toolbar" />
+</RelativeLayout>

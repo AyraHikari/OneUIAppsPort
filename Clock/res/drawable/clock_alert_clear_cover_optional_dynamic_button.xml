@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/alarm_alert_snooze_btn_color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@color/alarm_cancel_tap_circle_color_clear_cover" />
+            <corners android:radius="@dimen/alarm_snooze_button_radius_size" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/clock_alert_clear_cover_optional_button_bg" />
+</ripple>

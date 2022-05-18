@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d fayl köçürmə siyahısına əlavə edildi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fayl köçürmə siyahısına əlavə edildi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow proqramında ən çoxu %d kompüter və ya tablet qeydiyyatdan keçirə və idarə edə bilərsiniz.
+
+Telefonunuza eyni anda yalnız bir kompüter və ya tablet qoşula bilər. Qeydiyyatdan keçirilmiş hər iki kompüter və ya tablet telefonunuza qoşulmağa çalışdıqda yalnız birini seçməli olacaqsınız."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Flow proqramında ən çoxu %d kompüter və ya tablet qeydiyyatdan keçirə və idarə edə bilərsiniz.
+
+Telefonunuza eyni anda yalnız bir kompüter və ya tablet qoşula bilər. Qeydiyyatdan keçirilmiş hər iki kompüter və ya tablet telefonunuza qoşulmağa çalışdıqda yalnız birini seçməli olacaqsınız."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

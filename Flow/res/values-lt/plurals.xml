@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">Prie failų perkėlimo sąrašo pridėta failų: %d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Prie failų perkėlimo sąrašo pridėtas %d failas.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Prie failų perkėlimo sąrašo pridėta failų: %d.</item>
+        <item quantity="many">Prie failų perkėlimo sąrašo pridėta failų: %d.</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Registruokite ir tvarkykite iki %d kompiuterių ar planšetinių kompiuterių „Samsung Flow“.
+
+Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Registruokite ir tvarkykite iki %d kompiuterio ar planšetinio kompiuterio „Samsung Flow“.
+
+Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">"Registruokite ir tvarkykite iki %d kompiuterių ar planšetinių kompiuterių „Samsung Flow“.
+
+Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
+        <item quantity="many">"Registruokite ir tvarkykite iki %d kompiuterio ar planšetinio kompiuterio „Samsung Flow“.
+
+Tik vienas kompiuteris ar planšetinis kompiuteris gali būti prijungtas prie jūsų telefono vienu metu. Jūs turėsite pasirinkti vieną, kai abu registruoti kompiuteriai ar planšetiniai kompiuteriai bando prisijungti prie jūsų telefono."</item>
+    </plurals>
+</resources>

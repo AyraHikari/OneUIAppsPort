@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Signal %d kundan keyin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Signal %d kundan keyin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Signal %d soatdan keyin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Signal %d soatdan keyin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Uyg‘otgich %d soat va 1 daqiqadan keyin chalinadi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uyg‘otgich %d soat va 1 daqiqadan keyin chalinadi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Signal %d daqiqadan keyin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Signal %d daqiqadan keyin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d daqiqada</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d daqiqada</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%d tadan ortiq budilnik qo‘shib bo‘lmaydi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tadan ortiq budilnik qo‘shib bo‘lmaydi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d daqiqa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d daqiqa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d ta fon o‘chirib tashlansinmi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta fon o‘chirib tashlansinmi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ta tanlandi</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ta tanlandi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d daqiqa oldin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d daqiqa oldin</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, va %3$d boshqa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, va %3$d boshqa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Uxlash vaqti: %d soat</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uxlash vaqti: %d soat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Uxlash vaqti: %d daqiqa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uxlash vaqti: %d daqiqa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d daqiqa kechiktirish</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d daqiqa kechiktirish</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d daqiqa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d daqiqa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plyus %d daqiqa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plyus %d daqiqa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%d tadan ortiq oldindan o‘rnatilgan taymer qo‘shib bo‘lmaydi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tadan ortiq oldindan o‘rnatilgan taymer qo‘shib bo‘lmaydi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%d tadan ortiq shahar qo‘shib bo‘lmaydi.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d tadan ortiq shahar qo‘shib bo‘lmaydi.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

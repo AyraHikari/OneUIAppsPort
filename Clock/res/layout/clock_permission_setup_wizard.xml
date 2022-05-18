@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/app_permissions_description" style="@style/SetupWizardPermissionDescriptionStyle" />
+        <TextView android:id="@id/optional_permissions" style="@style/SetupWizardOptionalPermissionStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setup_wizard_permission_description_margin_top" android:layout_marginBottom="@dimen/setup_wizard_permission_description_margin_bottom" android:layout_marginEnd="@dimen/about_clock_permission_title_margin_top">
+            <TextView android:id="@id/list_dot" style="@style/ListDotStyle" />
+            <TextView android:id="@id/permission_description_detail" style="@style/SetupWizardPermissionDetailStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

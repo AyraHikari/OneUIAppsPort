@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:top="0.0dip" android:right="0.0dip">
+                <shape>
+                    <corners android:radius="@dimen/stopwatch_list_copypopup_radius" />
+                    <solid android:color="@color/stopwatch_copypopup_background_color" />
+                </shape>
+            </item>
+            <item android:left="0.0dip" android:bottom="0.0dip">
+                <shape>
+                    <corners android:radius="@dimen/stopwatch_list_copypopup_radius" />
+                    <stroke android:width="0.5dip" android:color="#ffc7c7c7" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

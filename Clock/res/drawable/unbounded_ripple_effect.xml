@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="24.0dip" />
+            <solid android:color="@color/worldclock_current_location_icon_background_color" />
+            <stroke android:width="1.0px" android:color="#ffd9d9d9" />
+        </shape>
+    </item>
+</ripple>

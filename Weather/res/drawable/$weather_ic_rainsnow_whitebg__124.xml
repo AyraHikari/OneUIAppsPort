@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="764" android:valueFrom="360.375" android:valueTo="360.375" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__125" android:duration="902" android:valueFrom="360.375" android:valueTo="304.69046" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="764" android:valueFrom="120.75" android:valueTo="120.75" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__126" android:duration="902" android:valueFrom="120.75" android:valueTo="181.37553" android:propertyName="translateY" />
+    </set>
+</set>

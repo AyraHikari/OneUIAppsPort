@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d fichiers ont été ajoutés à la liste de transfert de fichiers.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fichier a été ajouté à la liste de transfert de fichiers.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Enregistrez et gérez jusqu'à %d ordinateurs ou tablettes dans Samsung Flow.
+
+Vous pouvez connecter un seul ordinateur ou une seule tablette à la fois à votre téléphone. Vous devrez en choisir un(e) lorsque les ordinateurs ou les tablettes enregistrés essaieront de se connecter à votre téléphone."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Enregistrez et gérez %d ordinateur ou tablette dans Samsung Flow.
+
+Vous pouvez connecter un seul ordinateur ou une seule tablette à la fois à votre téléphone. Vous devrez en choisir un(e) lorsque les ordinateurs ou les tablettes enregistrés essaieront de se connecter à votre téléphone."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

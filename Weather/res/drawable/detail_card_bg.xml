@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/detail_card_bg_filled" />
+    <item android:drawable="@drawable/detail_card_bg_transparent" />
+</layer-list>

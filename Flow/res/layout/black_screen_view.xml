@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samsung.android.galaxycontinuity.mirroring.blackscreen.smartview.BlackScreenLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/black_screen_view" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <View android:id="@id/top" android:layout_width="1.0dip" android:layout_height="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_default="percent" app:layout_constraintHeight_percent="0.3" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout android:id="@id/black_screen_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toTopOf="@id/bottom" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/top" app:layout_constraintWidth_default="percent" app:layout_constraintWidth_percent="0.6">
+            <LinearLayout android:orientation="vertical" android:id="@id/black_screen_view_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center" android:layout_width="84.0dip" android:layout_height="84.0dip" android:src="@drawable/ic_smart_view" />
+                <TextView android:textSize="@dimen/black_screen_title_text_size" android:textStyle="bold" android:textColor="@color/black_screen_view_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/black_screen_title" android:fontFamily="sec-roboto-medium" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/swipe_guide_text_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/black_screen_swipe_guide_text_size" android:textColor="@color/black_screen_view_text_color" android:gravity="center" android:id="@id/black_screen_desc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/black_screen_description" android:layout_weight="0.75" android:fontFamily="sec-roboto-regular" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@id/bottom" android:layout_width="1.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_default="percent" app:layout_constraintHeight_percent="0.1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/black_screen_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.samsung.android.galaxycontinuity.mirroring.blackscreen.smartview.BlackScreenLayout>

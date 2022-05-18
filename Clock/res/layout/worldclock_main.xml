@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/worldclock_main_coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/worldclock_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.Design.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar" style="@style/ClockCollapsingToolbarLayoutStyle">
+            <com.sec.android.app.clockpackage.worldclock.viewmodel.WorldclockAppBarContentView android:theme="@style/ClockThemeAppCompat" android:id="@id/worldclock_app_bar_title" android:layout_width="fill_parent" android:layout_height="fill_parent" app:isCustomTitle="true" />
+            <androidx.appcompat.widget.Toolbar android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/ClockThemeAppCompat" app:title="@string/worldclock" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/worldclock_list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <TextView android:textSize="@dimen/no_item_text_size" android:textColor="@color/alarm_list_no_item_text_color" android:layout_gravity="center" android:id="@id/no_cities_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/No_cities" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

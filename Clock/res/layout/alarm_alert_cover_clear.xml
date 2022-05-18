@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/cover_clear_bg_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/clear_cover_top_icon" android:visibility="gone" android:paddingHorizontal="@dimen/full_alert_top_icon_padding_start_clear_cover" app:layout_constraintBottom_toTopOf="@id/clear_cover_top_layout" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FullAlertTopIcon" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/clear_cover_top_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/cc_tab_selector" app:layout_constraintTop_toBottomOf="@id/clear_cover_top_icon" app:layout_constraintVertical_weight="8.0">
+        <RelativeLayout android:id="@id/alarm_cover_clear_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/timer_cover_clear_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/clear_cover_bottom_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/cc_tab_selector" app:layout_constraintVertical_weight="1.0">
+        <RelativeLayout android:id="@id/alarm_weather_cp_logo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/alert_weather_logo_layout_height">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/alarm_powered_by_text_and_cp_logo_layout" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

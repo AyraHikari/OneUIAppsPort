@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Сэрүүлэг %d өдөрт</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сэрүүлэг %d өдөрт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Сэрүүлэг %d цагт</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сэрүүлэг %d цагт</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Сэрүүлэг %d цаг 1 минутыг дараа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сэрүүлэг %d цаг 1 минутыг дараа</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Сэрүүлэг %d минутад</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Сэрүүлэг %d минутад</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d минутын дотор</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минутын дотор</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%d-с их сэрүүлэг нэмэх боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с их сэрүүлэг нэмэх боломжгүй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d дэвсгэрийг устгах уу?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дэвсгэрийг устгах уу?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d сонгогдсон</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d сонгогдсон</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d минутын өмнө</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минутын өмнө</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, ба %3$d бусад</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, ба %3$d бусад</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Унтах цаг: %d цаг</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Унтах цаг: %d цаг</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Унтах цаг: %d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Унтах цаг: %d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Дугхийх %d мин</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Дугхийх %d мин</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Хасах %d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Хасах %d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Нэмэх %d минут</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Нэмэх %d минут</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%d-с илүү урьдчилан тохируулсан таймер нэмэх боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү урьдчилан тохируулсан таймер нэмэх боломжгүй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%d-с илүү хот нэмэх боломжгүй.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d-с илүү хот нэмэх боломжгүй.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

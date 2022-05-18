@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.clockpackage.timer.view.TimerGridItem android:orientation="horizontal" android:id="@id/root_view_timer_preset_item" android:layout_width="@dimen/timer_common_preset_item_width" android:layout_height="@dimen/timer_common_preset_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/preset_circle" android:background="@drawable/timer_preset_item_bg" android:layout_width="@dimen/timer_common_preset_item_background_width" android:layout_height="@dimen/timer_common_preset_item_background_height" android:layout_centerInParent="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/preset_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/timer_common_preset_item_name_textsize" android:textColor="@color/timer_preset_item_default_text_color" android:ellipsize="end" android:layout_gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="true" android:importantForAccessibility="no" android:fontFamily="sec" android:paddingHorizontal="@dimen/timer_common_preset_item_padding" android:textFontWeight="400" />
+            <TextView android:textSize="@dimen/timer_common_preset_item_time_textsize" android:textColor="@color/timer_preset_item_default_text_color" android:ellipsize="none" android:layout_gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:importantForAccessibility="no" android:fontFamily="sec" android:paddingHorizontal="@dimen/timer_common_preset_item_padding" android:textFontWeight="400" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/checkbox_stub" android:visibility="visible" android:layout="@layout/stub_checkbox_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.sec.android.app.clockpackage.timer.view.TimerGridItem>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarm čez %d dni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm čez %d dan</item>
+        <item quantity="two">Alarm čez %d dneva</item>
+        <item quantity="few">Alarm čez %d dni</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarm čez %d ur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm čez %d uro</item>
+        <item quantity="two">Alarm čez %d uri</item>
+        <item quantity="few">Alarm čez %d ure</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Alarm čez %d ur 1 minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm čez %d uro 1 minuto</item>
+        <item quantity="two">Alarm čez %d uri 1 minuto</item>
+        <item quantity="few">Alarm čez %d ure 1 minuto</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarm čez %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm čez %d minuto</item>
+        <item quantity="two">Alarm čez %d minuti</item>
+        <item quantity="few">Alarm čez %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Čez %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Čez %d minuto</item>
+        <item quantity="two">Čez %d minuti</item>
+        <item quantity="few">Čez %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Dodate lahko največ %d alarmov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d alarm.</item>
+        <item quantity="two">Dodate lahko največ %d alarma.</item>
+        <item quantity="few">Dodate lahko največ %d alarme.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="two">%d minuti</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Želite izbrisati %d ozadij?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Želite izbrisati %d ozadje?</item>
+        <item quantity="two">Želite izbrisati %d ozadji?</item>
+        <item quantity="few">Želite izbrisati %d ozadja?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obvestil</item>
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">Izbrano: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Izbrano: %d</item>
+        <item quantity="two">Izbrano: %d</item>
+        <item quantity="few">Izbrano: %d</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d minut prej</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuto prej</item>
+        <item quantity="two">%d minuti prej</item>
+        <item quantity="few">%d minute prej</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s in še %3$d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s in še %3$d</item>
+        <item quantity="two">%1$s, %2$s in še %3$d</item>
+        <item quantity="few">%1$s, %2$s in še %3$d</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Čas spanja: %d ur</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Čas spanja: %d ura</item>
+        <item quantity="two">Čas spanja: %d uri</item>
+        <item quantity="few">Čas spanja: %d ure</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Čas spanja: %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Čas spanja: %d minuta</item>
+        <item quantity="two">Čas spanja: %d minuti</item>
+        <item quantity="few">Čas spanja: %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Dremež za %d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dremež za %d min</item>
+        <item quantity="two">Dremež za %d min</item>
+        <item quantity="few">Dremež za %d min</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d minuta</item>
+        <item quantity="two">Minus %d minuti</item>
+        <item quantity="few">Minus %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plus %d minuta</item>
+        <item quantity="two">Plus %d minuti</item>
+        <item quantity="few">Plus %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Dodate lahko največ %d vnaprej nastavljenih časovnikov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d vnaprej nastavljen časovnik.</item>
+        <item quantity="two">Dodate lahko največ %d vnaprej nastavljena časovnika.</item>
+        <item quantity="few">Dodate lahko največ %d vnaprej nastavljene časovnike.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Dodate lahko največ %d mest.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Dodate lahko največ %d mesto.</item>
+        <item quantity="two">Dodate lahko največ %d mesti.</item>
+        <item quantity="few">Dodate lahko največ %d mesta.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

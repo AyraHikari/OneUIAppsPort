@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/clock_light_weather_ic_30_sunny_mtrl" android:maxLevel="101" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_snow_mtrl" android:maxLevel="102" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_cold_mtrl" android:maxLevel="103" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_hot_mtrl" android:maxLevel="104" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_fog_mtrl" android:maxLevel="106" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_sunny_mtrl" android:maxLevel="107" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_cloudy_mtrl" android:maxLevel="108" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_rain_mtrl" android:maxLevel="109" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_thunderstorm_mtrl" android:maxLevel="110" />
+    <item android:drawable="@drawable/clock_light_weather_ic_30_windy_mtrl" android:maxLevel="111" />
+</level-list>

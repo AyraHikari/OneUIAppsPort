@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="10.0dip" android:top="0.0dip" android:right="10.0dip" android:bottom="0.0dip">
+        <shape android:layout_width="wrap_content" android:layout_height="wrap_content" android:shape="rectangle">
+            <gradient android:startColor="@color/widget_activity_scrollbar_background_color" android:endColor="@color/widget_activity_scrollbar_background_color" android:angle="0.0" />
+            <corners android:radius="3.0dip" />
+            <size android:width="4.0dip" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>மிட்வே</item>
+        <item>ஹொனலூலு</item>
+        <item>ஹவாய்</item>
+        <item>அலாஸ்கா</item>
+        <item>ஆண்கரேஜ்</item>
+        <item>சான் ஃப்ரான்ஸிஸ்கோ</item>
+        <item>வான்கூவர்</item>
+        <item>சட்டில்</item>
+        <item>லாஸ் ஏஞ்சல்ஸ்</item>
+        <item>டிஜுவானா</item>
+        <item>கால்கேரி</item>
+        <item>ஃபோனிக்ஸ்</item>
+        <item>மசத்லான்</item>
+        <item>டென்வர்</item>
+        <item>மெக்ஸிகோ நகரம்</item>
+        <item>வின்னிபெக்</item>
+        <item>டியாகோ கார்சியா</item>
+        <item>டல்லாஸ்</item>
+        <item>சிகாகோ</item>
+        <item>டோரண்டோ</item>
+        <item>மியாமி</item>
+        <item>லிமா</item>
+        <item>க்யுட்டோ</item>
+        <item>வாஷிங்டன் DC</item>
+        <item>ஒட்டாவா</item>
+        <item>நியூயார்க்</item>
+        <item>போகோடா</item>
+        <item>சாண்டியாகோ</item>
+        <item>லா பாஸ்</item>
+        <item>கராக்கஸ்</item>
+        <item>ப்யூனஸ் ஐரீஸ்</item>
+        <item>நியூஃபவுன்ட்லாந்து</item>
+        <item>செயின்ட் ஜான்ஸ்</item>
+        <item>சாவ் பாலோ</item>
+        <item>பிரேசிலியா</item>
+        <item>ரியோ டி ஜெனீரோ</item>
+        <item>ஃபெர்னான்டோ டி நோரோன்ஹா</item>
+        <item>அசோரிஸ்</item>
+        <item>லிஸ்பன்</item>
+        <item>காஸாப்ளான்கா</item>
+        <item>டப்லின்</item>
+        <item>ராபாட்</item>
+        <item>மாட்ரிட்</item>
+        <item>தி செட்டில்மண்ட்</item>
+        <item>லண்டன்</item>
+        <item>கிங்ஸ்டன்</item>
+        <item>பார்ஸிலோனா</item>
+        <item>பாரிஸ்</item>
+        <item>அல்ஜியர்ஸ்</item>
+        <item>ட்யூனிஸ்</item>
+        <item>த்ரிபோலி</item>
+        <item>பெர்லின்</item>
+        <item>ரோம்</item>
+        <item>ப்ராக்</item>
+        <item>கின்ஷசா</item>
+        <item>ஸ்டாக்ஹோம்</item>
+        <item>ப்ராடிஸ்லாவா</item>
+        <item>கேப் டவுண்</item>
+        <item>புடாபெஸ்ட்</item>
+        <item>வார்ஸா</item>
+        <item>காலினின்க்ராட்</item>
+        <item>சோஃபியா</item>
+        <item>ஏதென்ஸ்</item>
+        <item>ல்விவ்</item>
+        <item>ஹெல்சிங்கி</item>
+        <item>ரிகா</item>
+        <item>டாலின்</item>
+        <item>புச்சாரெஸ்ட்</item>
+        <item>வில்னியஸ்</item>
+        <item>லுபும்பாஷி</item>
+        <item>மின்ஸ்க்</item>
+        <item>புனித பீட்டர்ஸ்பர்க்</item>
+        <item>இஸ்தான்புல்</item>
+        <item>காம்சட்கா</item>
+        <item>க்யிவ்</item>
+        <item>ஜெருசலேம்</item>
+        <item>மாஸ்கோ</item>
+        <item>கார்கிவ்</item>
+        <item>நைரோபி</item>
+        <item>ஜெத்தா</item>
+        <item>வோல்கோகிராட்</item>
+        <item>ஏரேவன்</item>
+        <item>ட்பிலிசி</item>
+        <item>பாக்கு</item>
+        <item>சிட்டா</item>
+        <item>சமாரா</item>
+        <item>டெஹ்ரான்</item>
+        <item>இஸெவ்ஸ்க்</item>
+        <item>அபுதாபி</item>
+        <item>துபாய்</item>
+        <item>உஃபா</item>
+        <item>எக்கடரின்பெர்க்</item>
+        <item>செல்யபின்ஸ்க்</item>
+        <item>கராச்சி</item>
+        <item>காபூல்</item>
+        <item>தாஷ்கண்ட்</item>
+        <item>இஸ்லாமாபாத்</item>
+        <item>மும்பை</item>
+        <item>ஓம்ஸ்க்</item>
+        <item>அல்மாட்டி</item>
+        <item>பெங்களூர்</item>
+        <item>ஹைதராபாத்</item>
+        <item>புது தில்லி</item>
+        <item>கொழும்பு</item>
+        <item>சென்னை</item>
+        <item>நோவொஸிபிரிஸ்க்</item>
+        <item>காத்மாண்டு</item>
+        <item>நோவோகஸ்நட்ஸ்க்</item>
+        <item>கொல்கத்தா</item>
+        <item>டாக்கா</item>
+        <item>ஹோவ்த்</item>
+        <item>க்ராஸ்நோயார்ஸ்க்</item>
+        <item>பாங்காக்</item>
+        <item>கோலாலம்பூர்</item>
+        <item>சிங்கப்பூர்</item>
+        <item>இர்குட்ஸ்க்</item>
+        <item>பினோம் பென்</item>
+        <item>ஹனாய்</item>
+        <item>ஜகார்த்தா</item>
+        <item>உலன் பேட்டர்</item>
+        <item>ஹாங்காங்</item>
+        <item>பெர்த்</item>
+        <item>பெய்ஜிங்</item>
+        <item>மணிலா</item>
+        <item>தைபேய்</item>
+        <item>சியோல்</item>
+        <item>அம்போன்</item>
+        <item>விளாடிவொஸ்டாக்</item>
+        <item>யாகுட்ஸ்க்</item>
+        <item>கபாரோவ்ஸ்க்</item>
+        <item>அடிலெய்டு</item>
+        <item>டோக்யோ</item>
+        <item>யூஸ்னோ-சாகாலின்ஸ்க்</item>
+        <item>ஹலிஃபேக்ஸ்</item>
+        <item>குவாம்</item>
+        <item>கேன்பெர்ரா</item>
+        <item>மகடன்</item>
+        <item>சிட்னி</item>
+        <item>பெட்ரோபவ்லோவ்ஸ்க்-காம்சாட்ஸ்கீ</item>
+        <item>தராவா</item>
+        <item>ஆக்லாந்து</item>
+        <item>வெல்லிங்டன்</item>
+        <item>பேகோ பேகோ</item>
+        <item>டென்பஸார்</item>
+        <item>பெர்ன்</item>
+        <item>ஸுரிச்</item>
+        <item>கெய்ரோ</item>
+        <item>அபிட்ஜன்</item>
+        <item>அக்ரா</item>
+        <item>அடிஸ் அபாபா</item>
+        <item>அம்மான்</item>
+        <item>அம்ஸ்டர்டாம்</item>
+        <item>அனடைர்</item>
+        <item>அங்காரா</item>
+        <item>ஆன்டெனானரிவோ</item>
+        <item>அஷ்காபாத்</item>
+        <item>அஸ்மெரா</item>
+        <item>அஸ்தனா</item>
+        <item>அசுன்சியன்</item>
+        <item>அஸ்டின்</item>
+        <item>பாக்தாத்</item>
+        <item>பால்டிமோர்</item>
+        <item>பமாகோ</item>
+        <item>பேங்குய்</item>
+        <item>பாரி</item>
+        <item>பாஸ்- தெரா</item>
+        <item>பெய்ரூட்</item>
+        <item>பெல்கிரேடு</item>
+        <item>பெலீஸ் நகரம்</item>
+        <item>பிஷ்கேக்</item>
+        <item>பிஸ்சௌ</item>
+        <item>போலோக்னா</item>
+        <item>பாஸ்டன்</item>
+        <item>ப்ரிட்ஜ்டவுன்</item>
+        <item>ப்ரிஸ்பேன்</item>
+        <item>ப்ரசல்ஸ்</item>
+        <item>கெனரி தீவுகள்</item>
+        <item>கட்டான்ஸாரோ</item>
+        <item>கயேன்</item>
+        <item>சார்லட்</item>
+        <item>சிஸிநௌ</item>
+        <item>க்ளீவ்லாந்து</item>
+        <item>கொலம்பஸ்</item>
+        <item>கானக்ரை</item>
+        <item>கோபன்ஹேகன்</item>
+        <item>கார்க்</item>
+        <item>க்ரோடோன்</item>
+        <item>டாக்கர்</item>
+        <item>டமாஸ்கஸ்</item>
+        <item>தார் எஸ் சலாம்</item>
+        <item>டார்வின்</item>
+        <item>டெட்ராய்ட்</item>
+        <item>ஜிபூட்டி</item>
+        <item>தோஹா</item>
+        <item>டுவாலா</item>
+        <item>டுஷான்பே</item>
+        <item>ஈஸ்டர் தீவு</item>
+        <item>எடின்பெர்க்</item>
+        <item>எல் பாஸோ</item>
+        <item>ஃப்லோரன்ஸ்</item>
+        <item>ஃபோர்ட்-டீ-ஃப்ரான்ஸ்</item>
+        <item>ஃப்ரீடவுன்</item>
+        <item>கபரோன்</item>
+        <item>கலாபாகஸ் தீவுகள்</item>
+        <item>ஜெனிவா</item>
+        <item>ஜெனோவா</item>
+        <item>ஜார்ஜ்டவுன்</item>
+        <item>க்ரைட்விகென்</item>
+        <item>குவாதமாலா நகரம்</item>
+        <item>கஸ்டாவியா</item>
+        <item>ஹாம்பர்க்</item>
+        <item>ஹராரே</item>
+        <item>ஹவானா</item>
+        <item>ஹோபர்ட்</item>
+        <item>ஹூஸ்டன்</item>
+        <item>இண்டியானாபோலிஸ்</item>
+        <item>ஜோகன்ஸ்பெர்க்</item>
+        <item>கம்பாலா</item>
+        <item>கார்டோம்</item>
+        <item>கிங்ஸ்டன்</item>
+        <item>குவைத் நகரம்</item>
+        <item>லாகோஸ்</item>
+        <item>லாஸ் வேகாஸ்</item>
+        <item>ஜுப்லிஜான்</item>
+        <item>ஹய்கௌ</item>
+        <item>லூயிஸ்வில்லி</item>
+        <item>லுவான்டா</item>
+        <item>லுசாகா</item>
+        <item>லக்ஸம்பெர்க்</item>
+        <item>மகௌ</item>
+        <item>மாலாபோ</item>
+        <item>மேல்</item>
+        <item>மனாகுவே</item>
+        <item>மனாமா</item>
+        <item>மெபுடோ</item>
+        <item>மாரிகோட்</item>
+        <item>மெக்கா</item>
+        <item>மெல்போர்ன்</item>
+        <item>மெம்ஃபிஸ்</item>
+        <item>மெஸ்ஸினா</item>
+        <item>மிலன்</item>
+        <item>மில்வோக்கி</item>
+        <item>மோகடிஸூ</item>
+        <item>மோன்ரோவியா</item>
+        <item>மோன்டிவீடியோ</item>
+        <item>மான்ட்ரியல்</item>
+        <item>முனிச்</item>
+        <item>மஸ்கட்</item>
+        <item>நேபல்ஸ்</item>
+        <item>நாடர்ஸ்</item>
+        <item>"என்'டிஜமெனா"</item>
+        <item>நியாமை</item>
+        <item>நுவாக்சாட்</item>
+        <item>நௌமியா</item>
+        <item>"நுகோ'லோஃபா"</item>
+        <item>நூக்</item>
+        <item>ஒசாகா</item>
+        <item>ஒகோடோகோ</item>
+        <item>பலீர்மோ</item>
+        <item>பனாமா சிட்டி</item>
+        <item>பரமாரிபோ</item>
+        <item>பெர்ம்</item>
+        <item>பிலடெல்பியா</item>
+        <item>போட்கோரிசா</item>
+        <item>போன்டா டெல்கடா</item>
+        <item>போர்ட் லூயிஸ்</item>
+        <item>போர்ட்-ஓ-ப்ரின்ஸ்</item>
+        <item>போர்ட்லாந்து, ஒரெகான்</item>
+        <item>பியோங்கியாங்</item>
+        <item>யாங்கூன்</item>
+        <item>ரீசிஃப்</item>
+        <item>ரெய்க்ஜ்விக்</item>
+        <item>ரியாத்</item>
+        <item>செயின்ட்-டெனிஸ்</item>
+        <item>சான் அன்டோனியோ</item>
+        <item>சான் டியாகோ</item>
+        <item>சான் ஜோஸ்</item>
+        <item>சான் ஜோஸ்</item>
+        <item>சான் ஜோன்</item>
+        <item>சான் மரினோ</item>
+        <item>சான் சால்வெடார்</item>
+        <item>சானா</item>
+        <item>சான்டோ டோமின்கோ</item>
+        <item>ஷாங்காய்</item>
+        <item>ஷென்சென்</item>
+        <item>ஸ்கோப்ஜி</item>
+        <item>செயின்ட் ஜான்ஸ்</item>
+        <item>சுவா</item>
+        <item>தஹிடி</item>
+        <item>தெகுசிகல்பா</item>
+        <item>ஹோ சி மின் நகரம்</item>
+        <item>ட்யான்ஜின்</item>
+        <item>டுரின்</item>
+        <item>வடுஸ்</item>
+        <item>வெலிட்டா</item>
+        <item>வெரோனா</item>
+        <item>விக்டோரியா</item>
+        <item>வியன்னா</item>
+        <item>யமௌஸோக்ரோ</item>
+        <item>யோண்டி</item>
+        <item>ஸாக்ரெப்</item>
+        <item>குங்க்சுலு</item>
+        <item>கார்டிஃப்</item>
+        <item>ரெஜினா</item>
+        <item>சார்லோட் அமேலி</item>
+        <item>அட்லாண்டா</item>
+        <item>மயோட்டி</item>
+        <item>செயின்ட் பியர்ரே மற்றும் மிக்யுலன்</item>
+        <item>ஆஸ்லோ</item>
+        <item>ஸ்ரெட்னேகோலிம்ஸ்க்</item>
+        <item>செவெரோ-குரில்ஸ்க்</item>
+        <item>வுஹன்</item>
+        <item>செங்டு</item>
+        <item>ஜியன்</item>
+        <item>போர்ட் மோர்ஸ்பை</item>
+        <item>டவௌ நகரம்</item>
+        <item>சோங்கிங்</item>
+        <item>ஷென்யாங்</item>
+        <item>நான்ஜிங்</item>
+        <item>ஹார்பின்</item>
+        <item>ஜினன்</item>
+        <item>செங்சௌ</item>
+        <item>குன்மிங்</item>
+        <item>சாங்சுன்</item>
+        <item>ஃபுஸௌ</item>
+        <item>குசிங்</item>
+        <item>மகாஸ்ஸர்</item>
+        <item>ஹாங்ஸௌ</item>
+        <item>கிங்டௌ</item>
+        <item>நானிங்</item>
+        <item>உரும்கி</item>
+        <item>நாஸ்சௌ</item>
+        <item>நிகோஷியா</item>
+        <item>டிலி</item>
+        <item>ரோடு டவுன்</item>
+        <item>லோம்</item>
+        <item>ரோசியோ</item>
+        <item>லைபர்வில்</item>
+        <item>மார்செய்லீ</item>
+        <item>மசெரு</item>
+        <item>மஜுரோ</item>
+        <item>மொனாகோ</item>
+        <item>பந்தர் சீரி பெகவான்</item>
+        <item>பஞ்சுல்</item>
+        <item>புஸான்</item>
+        <item>புஜூம்புரா</item>
+        <item>ப்ராஸாவில்</item>
+        <item>வியான்டியான்</item>
+        <item>விண்ட்ஹாக்</item>
+        <item>செரஜீவோ</item>
+        <item>சாய்பன்</item>
+        <item>சா டோம்</item>
+        <item>செயின்ட் ஜார்ஜ்</item>
+        <item>ஸ்டான்லி</item>
+        <item>ஏடன்</item>
+        <item>அப்யா</item>
+        <item>அன்டோரா லா வெல்லா</item>
+        <item>லாயோன்</item>
+        <item>வில்லியம்ஸ்டேட்</item>
+        <item>பாபானே</item>
+        <item>கேஸ்ட்ரீஸ்</item>
+        <item>கோரோர்</item>
+        <item>கான்கன்</item>
+        <item>கிகாலி</item>
+        <item>கிங்ஸ்டவுன்</item>
+        <item>டெல் அவீவ்</item>
+        <item>டோர்ஷ்வன்</item>
+        <item>டிரானா</item>
+        <item>திம்பு</item>
+        <item>போர்ட்டோ-நோவா</item>
+        <item>ப்ரையா</item>
+        <item>பிராங்ஃபர்ட்</item>
+        <item>பிரிஸ்டினா</item>
+        <item>ஹாமில்டன்</item>
+        <item>ஹோநியரா</item>
+        <item>போர்ட் ஆஃப் ஸ்பெயின்</item>
+        <item>மின்னியாபோலிஸ்</item>
+        <item>ஹிலோ</item>
+        <item>ஆர்லாண்டோ</item>
+        <item>கன்சாஸ் நகரம்</item>
+        <item>நியூ ஆர்லென்ஸ்</item>
+        <item>நாஸ்வில்</item>
+        <item>டஸ்கன்</item>
+        <item>தம்பா</item>
+        <item>ஜாக்ஸன்வில்</item>
+        <item>ஓக்லஹாமா நகரம்</item>
+        <item>ஆல்போக்யூர்கி</item>
+        <item>ஒமஹா</item>
+        <item>வர்ஜீனியா கடற்கரை</item>
+        <item>போய்ஸே</item>
+        <item>டெஸ் மொயின்ஸ்</item>
+        <item>பிர்மிங்ஹாம்</item>
+        <item>சால்ட் லேக் நகரம்</item>
+        <item>லிட்டில் ராக்</item>
+        <item>சியோக்ஸ் ஃபால்ஸ்</item>
+        <item>ஜாக்சன்</item>
+        <item>சார்லஸ்டன், தென் கரோலினா</item>
+        <item>ஃபார்கோ</item>
+        <item>பில்லிங்ஸ்</item>
+        <item>போர்ட்லாந்து, மைனே</item>
+        <item>செயேனி</item>
+        <item>சார்லஸ்டன், மேற்கு வர்ஜீனியா</item>
+        <item>பிட்ஸ்பெர்க்</item>
+        <item>கிரீன் பே</item>
+        <item>செயின்ட் லூயிஸ்</item>
+        <item>பள்ளத்தாக்கு</item>
+        <item>UTC (ஒருங்கிணைந்த உலகளாவிய நேரம்)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>ஆப்கானிஸ்தான்</item>
+        <item>அல்ஜீரியா</item>
+        <item>சமோவா</item>
+        <item>அண்டிகுவா மற்றும் பர்புடா</item>
+        <item>அர்ஜெண்டினா</item>
+        <item>அர்மேனியா</item>
+        <item>ஆஸ்திரேலியா</item>
+        <item>அஸர்பைஜான்</item>
+        <item>வங்கதேசம்</item>
+        <item>பாஷ்கோர்டோஸ்தான் குடியரசு</item>
+        <item>பெலாரஸ்</item>
+        <item>பொலிவியா</item>
+        <item>பிரேசில்</item>
+        <item>பல்கேரியா</item>
+        <item>கம்போடியா</item>
+        <item>கனடா</item>
+        <item>சிலி</item>
+        <item>சீனா</item>
+        <item>கொலாம்பியா</item>
+        <item>செக் குடியரசு</item>
+        <item>காங்கோ குடியரசு</item>
+        <item>ஈகுவாடர்</item>
+        <item>எஸ்டோனியா</item>
+        <item>ஃபின்லாந்து</item>
+        <item>பிரான்சு</item>
+        <item>ஜார்ஜியா</item>
+        <item>ஜெர்மனி</item>
+        <item>கிரீஸ்</item>
+        <item>ஹங்கேரி</item>
+        <item>இந்தியா</item>
+        <item>இந்தோனேஷியா</item>
+        <item>ஈரான்</item>
+        <item>ஐயர்லாந்து</item>
+        <item>இஸ்ரேல்</item>
+        <item>இத்தாலி</item>
+        <item>ஜப்பான்</item>
+        <item>கஜகஸ்தான்</item>
+        <item>கென்யா</item>
+        <item>கிரிபாடி</item>
+        <item>லாட்வியா</item>
+        <item>லிதுவேனியா</item>
+        <item>மலேசியா</item>
+        <item>மெக்ஸிகோ</item>
+        <item>மங்கோலியா</item>
+        <item>மொராக்கோ</item>
+        <item>நேபாளம்</item>
+        <item>நியூஸிலாந்து</item>
+        <item>பாகிஸ்தான்</item>
+        <item>பெரு</item>
+        <item>பிலிப்பைன்ஸ்</item>
+        <item>போலந்து</item>
+        <item>போர்ச்சுகள்</item>
+        <item>வரைபடம்</item>
+        <item>தென் கொரியா</item>
+        <item>சிங்கப்பூர் குடியரசு</item>
+        <item>லிபியா</item>
+        <item>ரோமானியா</item>
+        <item>ரஷ்யா</item>
+        <item>சவுதி அரேபியா</item>
+        <item>ஸ்லோவாக்யா</item>
+        <item>தென் ஆப்ரிக்கா</item>
+        <item>ஸ்பெயின்</item>
+        <item>இலங்கை</item>
+        <item>சுவீடன்</item>
+        <item>தைவான்</item>
+        <item>தாய்லாந்து</item>
+        <item>டுனிஸியா</item>
+        <item>துருக்கி</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>உக்ரைன்</item>
+        <item>USA</item>
+        <item>உஸ்பெகிஸ்தான்</item>
+        <item>வெனிசுலா</item>
+        <item>வியட்நாம்</item>
+        <item>GB வெர்ஜின் தீவு.</item>
+        <item>சுவிட்சர்லாந்து</item>
+        <item>எகிப்து</item>
+        <item>"கோடே டி'ஐவரி"</item>
+        <item>கானா</item>
+        <item>எத்தியோப்பியா</item>
+        <item>ஜோர்டான்</item>
+        <item>நெதர்லாந்து</item>
+        <item>மடகாஸ்கர்</item>
+        <item>துர்மெனிஸ்தான்</item>
+        <item>எரித்ரியா</item>
+        <item>பராகுவே</item>
+        <item>ஈராக்</item>
+        <item>மாலி</item>
+        <item>மத்திய ஆப்ரிக்க குடியரசு</item>
+        <item>குவாதலூப்பே</item>
+        <item>லெபனான்</item>
+        <item>செர்பியா</item>
+        <item>பெலீஸ்</item>
+        <item>கிர்கிஸ்தான்</item>
+        <item>கினியா பிஸ்சௌ</item>
+        <item>பார்படாஸ்</item>
+        <item>பெல்ஜியம்</item>
+        <item>பிரெஞ்சு கியானா</item>
+        <item>மால்டோவா</item>
+        <item>கினியா</item>
+        <item>டென்மார்க்</item>
+        <item>செனகல்</item>
+        <item>சிரியா</item>
+        <item>தான்சானியா</item>
+        <item>ஜிபூட்டி</item>
+        <item>கத்தார்</item>
+        <item>கேம்ரூன்</item>
+        <item>தஜிகிஸ்தான்</item>
+        <item>ஸ்காட்லாந்து</item>
+        <item>மார்டினீக்</item>
+        <item>சியாரா லியோன்</item>
+        <item>போட்ஸ்வானா</item>
+        <item>கயானா</item>
+        <item>தெற்கு ஜார்ஜியா</item>
+        <item>குவாதமாலா</item>
+        <item>செயின்ட் பார்த்தலேமி</item>
+        <item>ஜிம்பாப்வே</item>
+        <item>கியூபா</item>
+        <item>யுகாண்டா</item>
+        <item>சூடான்</item>
+        <item>ஜமைகா</item>
+        <item>குவைத்</item>
+        <item>நைஜீரியா</item>
+        <item>அங்கோலா</item>
+        <item>ஸாம்பியா</item>
+        <item>லக்ஸம்பெர்க்</item>
+        <item>ஈக்வெரியல் கினியா</item>
+        <item>மாலத் தீவு</item>
+        <item>நிகரகுவா</item>
+        <item>பஹ்ரைன்</item>
+        <item>மொசாம்பிக்</item>
+        <item>செயின்ட் மார்ட்டின்</item>
+        <item>சோமாலியா</item>
+        <item>லைபீரியா</item>
+        <item>உருகுவே</item>
+        <item>ஓமான்</item>
+        <item>சாட்</item>
+        <item>நைஜர்</item>
+        <item>மௌரிடேனியா</item>
+        <item>நியூ கலெடோனியா</item>
+        <item>டோங்கா</item>
+        <item>கிரீன்லாந்து</item>
+        <item>புர்கினா ஃபாஸோ</item>
+        <item>பனாமா</item>
+        <item>சூரிநேம்</item>
+        <item>மான்ட்னீக்ரோ</item>
+        <item>மொரிஷியஸ்</item>
+        <item>ஹைதி</item>
+        <item>கொரிய ஜனநாயக மக்கள் குடியரசு</item>
+        <item>மியான்மார்</item>
+        <item>ஐஸ்லாந்து</item>
+        <item>ரீயூனியன் தீவு</item>
+        <item>கோஸ்டா ரிகா</item>
+        <item>போர்டோ ரிகோ</item>
+        <item>எல் சால்வேடார்</item>
+        <item>ஏமன்</item>
+        <item>டொமினிக்கன் குடியரசு</item>
+        <item>மாஸிடோனியா</item>
+        <item>ஃபிஜி</item>
+        <item>பிரெஞ்சு பாலிநேஷியா</item>
+        <item>ஹோண்டுரஸ்</item>
+        <item>லிச்டென்ஸ்டின்</item>
+        <item>மால்டா</item>
+        <item>சீசெல்சு</item>
+        <item>ஆஸ்த்ரியா</item>
+        <item>குரேஷியா</item>
+        <item>வேல்ஸ்</item>
+        <item>US விர்.தீ.</item>
+        <item>ஸ்லோவேனியா</item>
+        <item>சான் மரினோ</item>
+        <item>நார்வே</item>
+        <item>பப்புவா நியூ கினியா</item>
+        <item>பஹாமஸ்</item>
+        <item>சைப்ரஸ்</item>
+        <item>கிழக்குத் திமோர்</item>
+        <item>டோகோ</item>
+        <item>டொமினிகா</item>
+        <item>கபான்</item>
+        <item>லிசோதோ</item>
+        <item>மார்ஷல் தீவுகள்</item>
+        <item>மொனாகோ</item>
+        <item>ப்ருனே</item>
+        <item>காம்பியா</item>
+        <item>புருண்டி</item>
+        <item>காங்கோ ஜனநாயக குடியரசு</item>
+        <item>லாவோஸ்</item>
+        <item>நமீபியா</item>
+        <item>போஸ்னியா மற்றும் ஹெர்ஸகோவினா</item>
+        <item>சைப்பான்</item>
+        <item>சா டோம் மற்றும் ப்ரின்சிபி</item>
+        <item>கிரெணடா</item>
+        <item>ஃபாக்லாந்து தீவுகள்</item>
+        <item>அமெரிக்க சமோவா</item>
+        <item>அன்டோரா</item>
+        <item>சாராவி குடியரசு</item>
+        <item>குராகௌ</item>
+        <item>ஸ்வாசிலாந்து</item>
+        <item>செயிண்ட் லூசியா</item>
+        <item>பலாவு</item>
+        <item>ருவாண்டா</item>
+        <item>செயிண்ட் விண்செண்ட் மற்றும் க்ரிணடின்ஸ்</item>
+        <item>ஃபெரோ தீவுகள்</item>
+        <item>அல்பேனியா</item>
+        <item>பூடான்</item>
+        <item>பெனின்</item>
+        <item>கேப் வெர்டே</item>
+        <item>கொசோவோ</item>
+        <item>பெர்முடா</item>
+        <item>சாலமன் தீவுகள்</item>
+        <item>தைவான், சீனா</item>
+        <item>ட்ரினிடாட் மற்றும் டோபாகோ</item>
+        <item>அங்குய்லா</item>
+        <item>UTC (ஒருங்கிணைந்த உலகளாவிய நேரம்)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>அலாரம் இப்போதிருந்து 1 நிமிடத்திற்கு அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து அலாரம் %1$s-க்காக அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து அலாரம் %2$s என்பதற்கு அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s மற்றும் %2$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து அலாரம் %3$s என்பதற்கு அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %2$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s, %2$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து அலாரம் %s-க்கு அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s மற்றும் %2$s-க்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s, %2$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s மற்றும் %2$s-க்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s, %2$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s, %2$s மற்றும் %3$s என்பதற்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+        <item>இப்போதிலிருந்து %1$s, %2$s, %3$s மற்றும் %4$s-க்கு அலாரம் அமைக்கப்பட்டுள்ளது.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

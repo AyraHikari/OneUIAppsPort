@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/stripe_dismiss_anim_circle_color" />
+    <size android:height="@dimen/stripe_alert_sliding_middle_circle_diameter" android:width="@dimen/stripe_alert_sliding_middle_circle_diameter" />
+</shape>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/widget_setting_seek_bar_tick_mark_solid_color" />
+    <size android:height="@dimen/setting_seek_bar_tick_mark_height" android:width="@dimen/setting_seek_bar_tick_mark_width" />
+</shape>

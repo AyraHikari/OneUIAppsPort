@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/ClockActionBarTheme" android:orientation="vertical" android:id="@id/widget_setting_activity" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/widget_setting_action_bar" layout="@layout/widget_setting_action_bar" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/widget_setting_action_bar">
+        <LinearLayout android:orientation="horizontal" android:id="@id/space_start" android:background="@color/window_background_color" android:visibility="visible" android:layout_width="@dimen/widget_setting_margins_potrait_mode" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/widget_setting_action_button_width" android:layout_toStartOf="@id/space_end" android:layout_toEndOf="@id/space_start">
+            <FrameLayout android:id="@id/widget_preview" android:background="@drawable/transparent_rounded_corner" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/widget_setting_preview_height" android:importantForAccessibility="noHideDescendants" android:paddingHorizontal="@dimen/widget_setting_preview_margin_start" android:paddingVertical="@dimen/widget_setting_preview_margin_top" />
+            <LinearLayout android:background="@color/window_background_color" android:layout_width="fill_parent" android:layout_height="@dimen/widget_setting_alarm_margin" android:layout_below="@id/widget_preview" />
+            <include android:id="@id/widget_bottom_layout" layout="@layout/widget_setting_bottom_layout" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/space_end" android:background="@color/window_background_color" android:visibility="visible" android:layout_width="@dimen/widget_setting_margins_potrait_mode" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:orientation="horizontal" android:id="@id/cancel_and_done_layout" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentBottom="true" app:menu="@menu/widget_setting_menu_layout" style="@style/WidgetBottomBarStyle" />
+</RelativeLayout>

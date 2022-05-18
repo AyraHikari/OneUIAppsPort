@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_indicator_logo_height">24.0dip</dimen>
+    <dimen name="status_indicator_logo_width">177.0dip</dimen>
+    <dimen name="status_indicator_progress_button_height">21.0dip</dimen>
+    <dimen name="status_indicator_progress_button_width">21.0dip</dimen>
+    <dimen name="status_indicator_progressbar_height">21.0dip</dimen>
+    <dimen name="status_indicator_progressbar_width">21.0dip</dimen>
+    <dimen name="status_indicator_text_margin_end">3.0dip</dimen>
+    <dimen name="status_indicator_text_size">16.0sp</dimen>
+</resources>

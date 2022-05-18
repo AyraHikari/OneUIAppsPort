@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.clockpackage.alarm.ui.view.CelebVoiceTipView android:layout_gravity="center|top" android:id="@id/spotify_tip" android:background="@color/window_background_color" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tipDescription="" app:tipOption="@string/spotify_tip_option" app:tipTitle="@string/spotify_tip_description"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

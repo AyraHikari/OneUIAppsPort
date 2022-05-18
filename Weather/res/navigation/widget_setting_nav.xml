@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/widget_setting_nav" app:startDestination="@id/widget_setting_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="WidgetSettingFragment" android:name="com.sec.android.daemonapp.setting.fragment.WidgetSettingFragment" android:id="@id/widget_setting_fragment" />
+</navigation>

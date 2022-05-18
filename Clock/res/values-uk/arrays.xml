@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Мідвей</item>
+        <item>Гонолулу</item>
+        <item>Гаваї</item>
+        <item>Аляска</item>
+        <item>Анкоридж</item>
+        <item>Сан-Франциско</item>
+        <item>Ванкувер</item>
+        <item>Сієтл</item>
+        <item>Лос-Анджелес</item>
+        <item>Тіхуана</item>
+        <item>Калгарі</item>
+        <item>Фінікс</item>
+        <item>Масатлан</item>
+        <item>Денвер</item>
+        <item>Мехіко</item>
+        <item>Вінніпег</item>
+        <item>Дієго-Гарсія</item>
+        <item>Даллас</item>
+        <item>Чикаго</item>
+        <item>Торонто</item>
+        <item>Маямі</item>
+        <item>Ліма</item>
+        <item>Кіто</item>
+        <item>Вашингтон</item>
+        <item>Оттава</item>
+        <item>Нью-Йорк</item>
+        <item>Богота</item>
+        <item>Сантьяго</item>
+        <item>Ла-Пас</item>
+        <item>Каракас</item>
+        <item>Буенос-Айрес</item>
+        <item>Ньюфаундленд</item>
+        <item>Сент-Джонс</item>
+        <item>Сан-Паулу</item>
+        <item>Бразиліа</item>
+        <item>Ріо-де-Жанейро</item>
+        <item>Фернанду-ді-Норон’я</item>
+        <item>Азорські о-ви</item>
+        <item>Лісабон</item>
+        <item>Касабланка</item>
+        <item>Дублін</item>
+        <item>Рабат</item>
+        <item>Мадрид</item>
+        <item>Сеттлмент</item>
+        <item>Лондон</item>
+        <item>Кінгстон</item>
+        <item>Барселона</item>
+        <item>Париж</item>
+        <item>Алжир</item>
+        <item>Туніс</item>
+        <item>Тріполі</item>
+        <item>Берлін</item>
+        <item>Рим</item>
+        <item>Прага</item>
+        <item>Кіншаса</item>
+        <item>Стокгольм</item>
+        <item>Братислава</item>
+        <item>Кейптаун</item>
+        <item>Будапешт</item>
+        <item>Варшава</item>
+        <item>Калінінград</item>
+        <item>Софія</item>
+        <item>Афіни</item>
+        <item>Львів</item>
+        <item>Гельсінкі</item>
+        <item>Рига</item>
+        <item>Таллінн</item>
+        <item>Бухарест</item>
+        <item>Вільнюс</item>
+        <item>Лубумбаші</item>
+        <item>Мінськ</item>
+        <item>Санкт - Петербург</item>
+        <item>Стамбул</item>
+        <item>Камчатка</item>
+        <item>Київ</item>
+        <item>Єрусалим</item>
+        <item>Москва</item>
+        <item>Харків</item>
+        <item>Найробі</item>
+        <item>Джидда</item>
+        <item>Волгоград</item>
+        <item>Єреван</item>
+        <item>Тбілісі</item>
+        <item>Баку</item>
+        <item>Чита</item>
+        <item>Самара</item>
+        <item>Тегеран</item>
+        <item>Іжевськ</item>
+        <item>Абу-Дабі</item>
+        <item>Дубаї</item>
+        <item>Уфа</item>
+        <item>Єкатеринбург</item>
+        <item>Челябінськ</item>
+        <item>Карачі</item>
+        <item>Кабул</item>
+        <item>Ташкент</item>
+        <item>Ісламабад</item>
+        <item>Мумбаї</item>
+        <item>Омськ</item>
+        <item>Алмати</item>
+        <item>Бенґалуру</item>
+        <item>Хайдерабад</item>
+        <item>Нью-Делі</item>
+        <item>Коломбо</item>
+        <item>Ченнаї</item>
+        <item>Новосибірськ</item>
+        <item>Катманду</item>
+        <item>Новокузнецьк</item>
+        <item>Колката</item>
+        <item>Дакка</item>
+        <item>Ховд</item>
+        <item>Красноярськ</item>
+        <item>Бангкок</item>
+        <item>Куала-Лумпур</item>
+        <item>Сінгапур</item>
+        <item>Іркутськ</item>
+        <item>Пномпень</item>
+        <item>Ханой</item>
+        <item>Джакарта</item>
+        <item>Улан-Батор</item>
+        <item>Гонконг</item>
+        <item>Перт</item>
+        <item>Пекін</item>
+        <item>Маніла</item>
+        <item>Тайбей</item>
+        <item>Сеул</item>
+        <item>Амбон</item>
+        <item>Владивосток</item>
+        <item>Якутськ</item>
+        <item>Хабаровськ</item>
+        <item>Аделаїда</item>
+        <item>Токіо</item>
+        <item>Южно-Сахалінськ</item>
+        <item>Галіфакс</item>
+        <item>Гуам</item>
+        <item>Канбера</item>
+        <item>Магадан</item>
+        <item>Сідней</item>
+        <item>Петропавловськ-Камчатський</item>
+        <item>Тарава</item>
+        <item>Окленд</item>
+        <item>Веллінгтон</item>
+        <item>Паго-Паго</item>
+        <item>Денпасар</item>
+        <item>Берн</item>
+        <item>Цюріх</item>
+        <item>Каїр</item>
+        <item>Абіджан</item>
+        <item>Аккра</item>
+        <item>Аддис-Абеба</item>
+        <item>Амман</item>
+        <item>Амстердам</item>
+        <item>Анадир</item>
+        <item>Анкара</item>
+        <item>Антананаріву</item>
+        <item>Ашгабат</item>
+        <item>Асмара</item>
+        <item>Астана</item>
+        <item>Асунсьйон</item>
+        <item>Остін</item>
+        <item>Багдад</item>
+        <item>Балтімор</item>
+        <item>Бамако</item>
+        <item>Бангі</item>
+        <item>Барі</item>
+        <item>Бас-Тер</item>
+        <item>Бейрут</item>
+        <item>Белград</item>
+        <item>Беліз</item>
+        <item>Бішкек</item>
+        <item>Бісау</item>
+        <item>Болонья</item>
+        <item>Бостон</item>
+        <item>Бриджтаун</item>
+        <item>Брісбен</item>
+        <item>Брюссель</item>
+        <item>Канарські острови</item>
+        <item>Катандзаро</item>
+        <item>Кайєнна</item>
+        <item>Шарлотт</item>
+        <item>Кишинів</item>
+        <item>Клівленд</item>
+        <item>Колумбус</item>
+        <item>Конакрі</item>
+        <item>Копенгаген</item>
+        <item>Корк</item>
+        <item>Кротоне</item>
+        <item>Дакар</item>
+        <item>Дамаск</item>
+        <item>Дар-ес-Салам</item>
+        <item>Дарвін</item>
+        <item>Детройт</item>
+        <item>Джибуті</item>
+        <item>Доха</item>
+        <item>Дуала</item>
+        <item>Душанбе</item>
+        <item>Острів Пасхи</item>
+        <item>Единбург</item>
+        <item>Ель-Пасо</item>
+        <item>Флоренція</item>
+        <item>Фор-де-Франс</item>
+        <item>Фрітаун</item>
+        <item>Габороне</item>
+        <item>Галапагоські острови</item>
+        <item>Женева</item>
+        <item>Генуя</item>
+        <item>Джорджтаун</item>
+        <item>Грютвікен</item>
+        <item>Гватемала-Сіті</item>
+        <item>Густавія</item>
+        <item>Гамбург</item>
+        <item>Хараре</item>
+        <item>Гавана</item>
+        <item>Гобарт</item>
+        <item>Х’юстон</item>
+        <item>Індіанаполіс</item>
+        <item>Йоханнесбург</item>
+        <item>Кампала</item>
+        <item>Хартум</item>
+        <item>Кінгстон</item>
+        <item>Ель-Кувейт</item>
+        <item>Лагос</item>
+        <item>Лас-Вегас</item>
+        <item>Любляна</item>
+        <item>Хайкоу</item>
+        <item>Луїсвілл</item>
+        <item>Луанда</item>
+        <item>Лусака</item>
+        <item>Люксембург</item>
+        <item>Макао</item>
+        <item>Малабо</item>
+        <item>Мале</item>
+        <item>Манагуа</item>
+        <item>Манама</item>
+        <item>Мапуту</item>
+        <item>Маріго</item>
+        <item>Мекка</item>
+        <item>Мельбурн</item>
+        <item>Мемфіс</item>
+        <item>Мессіна</item>
+        <item>Мілан</item>
+        <item>Мілуокі</item>
+        <item>Могадишо</item>
+        <item>Монровія</item>
+        <item>Монтевідео</item>
+        <item>Монреаль</item>
+        <item>Мюнхен</item>
+        <item>Маскат</item>
+        <item>Неаполь</item>
+        <item>Натерс</item>
+        <item>Нджамена</item>
+        <item>Ніамей</item>
+        <item>Нуакшот</item>
+        <item>Нумеа</item>
+        <item>Нукуалофа</item>
+        <item>Нуук</item>
+        <item>Осака</item>
+        <item>Уагадугу</item>
+        <item>Палермо</item>
+        <item>Панама-Сіті</item>
+        <item>Парамарибо</item>
+        <item>Перм</item>
+        <item>Філадельфія</item>
+        <item>Подгориця</item>
+        <item>Понта-Дельгада</item>
+        <item>Порт-Луї</item>
+        <item>Порт-о-Пренс</item>
+        <item>Портленд, Орегон</item>
+        <item>Пхеньян</item>
+        <item>Янгон</item>
+        <item>Ресіфі</item>
+        <item>"Рейк'явік"</item>
+        <item>Ер-Ріяд</item>
+        <item>Сен-Дені</item>
+        <item>Сан-Антоніо</item>
+        <item>Сан-Дієго</item>
+        <item>Сан-Хосе</item>
+        <item>Сан-Хосе</item>
+        <item>Сан-Хуан</item>
+        <item>Сан-Марино</item>
+        <item>Сан-Сальвадор</item>
+        <item>Сана</item>
+        <item>Сан-Домінго</item>
+        <item>Шанхай</item>
+        <item>Шеньчжень</item>
+        <item>"Скоп'є"</item>
+        <item>Сент-Джонс</item>
+        <item>Сува</item>
+        <item>Таїті</item>
+        <item>Тегусігальпа</item>
+        <item>Хошимін</item>
+        <item>Тяньцзинь</item>
+        <item>Турин</item>
+        <item>Вадуц</item>
+        <item>Ла-Валлетта</item>
+        <item>Верона</item>
+        <item>Вікторія</item>
+        <item>Відень</item>
+        <item>Ямусукро</item>
+        <item>Яунде</item>
+        <item>Загреб</item>
+        <item>Гуанчжоу</item>
+        <item>Кардіфф</item>
+        <item>Реджайна</item>
+        <item>Шарлотта-Амалія</item>
+        <item>Атланта</item>
+        <item>Майотта</item>
+        <item>Сен-П’єр і Мікелон</item>
+        <item>Осло</item>
+        <item>Середньоколимськ</item>
+        <item>Сєверо-Курильськ</item>
+        <item>Ухань</item>
+        <item>Ченду</item>
+        <item>Сіань</item>
+        <item>Порт-Морсбі</item>
+        <item>Давао-Сіті</item>
+        <item>Чунцін</item>
+        <item>Шеньян</item>
+        <item>Нанкін</item>
+        <item>Харбін</item>
+        <item>Цзінань</item>
+        <item>Чженчжоу</item>
+        <item>Куньмін</item>
+        <item>Чанчунь</item>
+        <item>Фучжоу</item>
+        <item>Кучінг</item>
+        <item>Макассар</item>
+        <item>Ханчжоу</item>
+        <item>Ціндао</item>
+        <item>Наньнін</item>
+        <item>Урумчі</item>
+        <item>Нассау</item>
+        <item>Нікосія</item>
+        <item>Ділі</item>
+        <item>Род-Таун</item>
+        <item>Ломе</item>
+        <item>Розо</item>
+        <item>Лібревіль</item>
+        <item>Марсель</item>
+        <item>Масеру</item>
+        <item>Маджуро</item>
+        <item>Монако</item>
+        <item>Бандар-Сері-Бегаван</item>
+        <item>Банжул</item>
+        <item>Пусан</item>
+        <item>Бужумбура</item>
+        <item>Браззавіль</item>
+        <item>В’єнтьян</item>
+        <item>Віндгук</item>
+        <item>Сараєво</item>
+        <item>Сайпан</item>
+        <item>Сан-Томе</item>
+        <item>Сент-Джордж</item>
+        <item>Порт-Стенлі</item>
+        <item>Аден</item>
+        <item>Апіа</item>
+        <item>Андорра-ла-Велья</item>
+        <item>Ель-Аюн</item>
+        <item>Віллемстад</item>
+        <item>Мбабане</item>
+        <item>Кастрі</item>
+        <item>Корор</item>
+        <item>Канкун</item>
+        <item>Кігалі</item>
+        <item>Кінгстаун</item>
+        <item>Тель-Авів</item>
+        <item>Торсгавн</item>
+        <item>Тірана</item>
+        <item>Тхімпху</item>
+        <item>Порто-Ново</item>
+        <item>Прая</item>
+        <item>Франкфурт</item>
+        <item>Приштина</item>
+        <item>Гамільтон</item>
+        <item>Хоніара</item>
+        <item>Порт-оф-Спейн</item>
+        <item>Міннеаполіс</item>
+        <item>Гіло</item>
+        <item>Орландо</item>
+        <item>Канзас-Сіті</item>
+        <item>Новий Орлеан</item>
+        <item>Нашвілл</item>
+        <item>Тусон</item>
+        <item>Тампа</item>
+        <item>Джексонвіль</item>
+        <item>Оклагома-Сіті</item>
+        <item>Альбукерке</item>
+        <item>Омаха</item>
+        <item>Вірджинія-Біч</item>
+        <item>Бойсі</item>
+        <item>Де-Мойн</item>
+        <item>Бірмінгем</item>
+        <item>Солт-Лейк-Сіті</item>
+        <item>Літл-Рок</item>
+        <item>Су-Фолс</item>
+        <item>Джексон</item>
+        <item>Чарлстон, Південна Кароліна</item>
+        <item>Фарго</item>
+        <item>Біллінгс</item>
+        <item>Портленд, Мен</item>
+        <item>Шаєнн</item>
+        <item>Чарлстон, Західна Вірджинія</item>
+        <item>Піттсбург</item>
+        <item>Грін-Бей</item>
+        <item>Сент-Луїс</item>
+        <item>Валлі</item>
+        <item>UTC (усесвітній координований час)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Афганістан</item>
+        <item>Алжир</item>
+        <item>Самоа</item>
+        <item>Антигуа і Барбуда</item>
+        <item>Аргентина</item>
+        <item>Арменія</item>
+        <item>Австралія</item>
+        <item>Азербайджан</item>
+        <item>Бангладеш</item>
+        <item>Республіка Башкортостан</item>
+        <item>Білорусь</item>
+        <item>Болівія</item>
+        <item>Бразилія</item>
+        <item>Болгарія</item>
+        <item>Камбоджа</item>
+        <item>Канада</item>
+        <item>Чилі</item>
+        <item>Китай</item>
+        <item>Колумбія</item>
+        <item>Чехія</item>
+        <item>Республіка Конго</item>
+        <item>Еквадор</item>
+        <item>Естонія</item>
+        <item>Фінляндія</item>
+        <item>Франція</item>
+        <item>Грузія</item>
+        <item>Німеччина</item>
+        <item>Греція</item>
+        <item>Угорщина</item>
+        <item>Індія</item>
+        <item>Індонезія</item>
+        <item>Іран</item>
+        <item>Ірландія</item>
+        <item>Ізраїль</item>
+        <item>Італія</item>
+        <item>Японія</item>
+        <item>Казахстан</item>
+        <item>Кенія</item>
+        <item>Кірибаті</item>
+        <item>Латвія</item>
+        <item>Литва</item>
+        <item>Малайзія</item>
+        <item>Мексика</item>
+        <item>Монголія</item>
+        <item>Марокко</item>
+        <item>Непал</item>
+        <item>Нова Зеландія</item>
+        <item>Пакистан</item>
+        <item>Перу</item>
+        <item>Філіппіни</item>
+        <item>Польща</item>
+        <item>Португалія</item>
+        <item>Мапа</item>
+        <item>Південна Корея</item>
+        <item>Республіка Сінгапур</item>
+        <item>Лівія</item>
+        <item>Румунія</item>
+        <item>Росія</item>
+        <item>Саудівська Аравія</item>
+        <item>Словаччина</item>
+        <item>Південна Африка</item>
+        <item>Іспанія</item>
+        <item>Шрі-Ланка</item>
+        <item>Швеція</item>
+        <item>Тайвань</item>
+        <item>Таїланд</item>
+        <item>Туніс</item>
+        <item>Туреччина</item>
+        <item>ОАЕ</item>
+        <item>Велика Британія</item>
+        <item>Україна</item>
+        <item>США</item>
+        <item>Узбекистан</item>
+        <item>Венесуела</item>
+        <item>В’єтнам</item>
+        <item>Бр.Вірг. о-ви</item>
+        <item>Швейцарія</item>
+        <item>Єгипет</item>
+        <item>Кот-д’Івуар</item>
+        <item>Гана</item>
+        <item>Ефіопія</item>
+        <item>Йорданія</item>
+        <item>Нідерланди</item>
+        <item>Мадагаскар</item>
+        <item>Туркменістан</item>
+        <item>Еритрея</item>
+        <item>Парагвай</item>
+        <item>Ірак</item>
+        <item>Малі</item>
+        <item>Центральноафриканська Республіка</item>
+        <item>Гваделупа</item>
+        <item>Ліван</item>
+        <item>Сербія</item>
+        <item>Беліз</item>
+        <item>Киргизстан</item>
+        <item>Гвінея-Бісау</item>
+        <item>Барбадос</item>
+        <item>Бельгія</item>
+        <item>Французька Гвіана</item>
+        <item>Молдова</item>
+        <item>Гвінея</item>
+        <item>Данія</item>
+        <item>Сенегал</item>
+        <item>Сирія</item>
+        <item>Танзанія</item>
+        <item>Джибуті</item>
+        <item>Катар</item>
+        <item>Камерун</item>
+        <item>Таджикистан</item>
+        <item>Шотландія</item>
+        <item>Мартиніка</item>
+        <item>Сьєрра-Леоне</item>
+        <item>Ботсвана</item>
+        <item>Гайана</item>
+        <item>Південна Джорджія</item>
+        <item>Гватемала</item>
+        <item>Сен-Бартельмі</item>
+        <item>Зімбабве</item>
+        <item>Куба</item>
+        <item>Уганда</item>
+        <item>Судан</item>
+        <item>Ямайка</item>
+        <item>Кувейт</item>
+        <item>Нігерія</item>
+        <item>Ангола</item>
+        <item>Замбія</item>
+        <item>Люксембург</item>
+        <item>Екваторіальна Гвінея</item>
+        <item>Мальдіви</item>
+        <item>Нікарагуа</item>
+        <item>Бахрейн</item>
+        <item>Мозамбік</item>
+        <item>Сен-Мартен</item>
+        <item>Сомалі</item>
+        <item>Ліберія</item>
+        <item>Уругвай</item>
+        <item>Оман</item>
+        <item>Чад</item>
+        <item>Нігер</item>
+        <item>Мавританія</item>
+        <item>Нова Каледонія</item>
+        <item>Тонга</item>
+        <item>Гренландія</item>
+        <item>Буркіна-Фасо</item>
+        <item>Панама</item>
+        <item>Сурінам</item>
+        <item>Чорногорія</item>
+        <item>Маврікій</item>
+        <item>Гаїті</item>
+        <item>Корейська Народно-Демократична Республіка</item>
+        <item>М’янма</item>
+        <item>Ісландія</item>
+        <item>Острів Реюньйон</item>
+        <item>Коста-Рика</item>
+        <item>Пуерто-Ріко</item>
+        <item>Сальвадор</item>
+        <item>Ємен</item>
+        <item>Домініканська Республіка</item>
+        <item>Македонія</item>
+        <item>Фіджі</item>
+        <item>Французька Полінезія</item>
+        <item>Гондурас</item>
+        <item>Ліхтенштейн</item>
+        <item>Мальта</item>
+        <item>Сейшельські острови</item>
+        <item>Австрія</item>
+        <item>Хорватія</item>
+        <item>Уельс</item>
+        <item>Вірг. о-ви</item>
+        <item>Словенія</item>
+        <item>Сан-Маріно</item>
+        <item>Норвегія</item>
+        <item>Папуа-Нова Гвінея</item>
+        <item>Багамські Острови</item>
+        <item>Кіпр</item>
+        <item>Тімор-Лешті</item>
+        <item>Того</item>
+        <item>Домініка</item>
+        <item>Габон</item>
+        <item>Лесото</item>
+        <item>Маршаллові Острови</item>
+        <item>Монако</item>
+        <item>Бруней</item>
+        <item>Гамбія</item>
+        <item>Бурунді</item>
+        <item>Демократична Республіка Конго</item>
+        <item>Лаос</item>
+        <item>Намібія</item>
+        <item>Боснія і Герцеґовина</item>
+        <item>Сайпан</item>
+        <item>Сан-Томе і Прінсіпі</item>
+        <item>Ґренада</item>
+        <item>Фолклендські Острови</item>
+        <item>Американське Самоа</item>
+        <item>Андорра</item>
+        <item>Сахарська Республіка</item>
+        <item>Кюрасао</item>
+        <item>Есватіні</item>
+        <item>Сент-Люсія</item>
+        <item>Палау</item>
+        <item>Руанда</item>
+        <item>Сент-Вінсент і Ґренадіни</item>
+        <item>Фарерські Острови</item>
+        <item>Албанія</item>
+        <item>Бутан</item>
+        <item>Бенін</item>
+        <item>Кабо-Верде</item>
+        <item>Косово</item>
+        <item>Бермудські Острови</item>
+        <item>Соломонові Острови</item>
+        <item>Тайвань, Китай</item>
+        <item>Тринідад і Тобаго</item>
+        <item>Ангілья</item>
+        <item>UTC (усесвітній координований час)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Будильник спрацює за 1 хвилину.</item>
+        <item>Будильник спрацює через %1$s.</item>
+        <item>Будильник спрацює через %2$s.</item>
+        <item>Будильник спрацює через %1$s і %2$s.</item>
+        <item>Будильник спрацює через %3$s.</item>
+        <item>Будильник спрацює через %1$s і %3$s.</item>
+        <item>Будильник спрацює через %2$s і %3$s.</item>
+        <item>Будильник спрацює через %1$s, %2$s і %3$s.</item>
+        <item>Будильник спрацює через %s.</item>
+        <item>Будильник спрацює через %1$s і %2$s.</item>
+        <item>Будильник спрацює через %1$s і %3$s.</item>
+        <item>Будильник спрацює через %1$s, %2$s і %3$s.</item>
+        <item>Будильник спрацює через %1$s і %2$s.</item>
+        <item>Будильник спрацює через %1$s, %2$s і %3$s.</item>
+        <item>Будильник спрацює через %1$s, %2$s і %3$s.</item>
+        <item>Будильник спрацює через %1$s, %2$s, %3$s і %4$s.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

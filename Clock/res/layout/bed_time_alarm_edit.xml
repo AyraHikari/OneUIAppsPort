@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/window_background_color" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/bedtime_coordinator_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/timepicker_app_bar" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_layout_height" app:expanded="true" app:seslUseCustomHeight="true">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar">
+                <FrameLayout android:id="@id/sleep_time_picker_frame" android:layout_width="fill_parent" android:layout_height="@dimen/sleep_visual_edit_outer_circle_size" android:layout_marginTop="@dimen/sleep_time_picker_frame_top_margin">
+                    <include android:layout_gravity="center" android:id="@id/circular_seekbar_id" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/sleep_time_picker_layout" />
+                    <include android:id="@id/bed_wakeup_time_top_bottom" layout="@layout/bed_time_wakeup_time_top_bottom_layout" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/sleep_time_duration_text_size" android:textColor="@color/sleep_duration_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/sleep_duration_text_id" android:layout_width="fill_parent" android:layout_height="@dimen/sleep_duration_text_height" android:text="Sleep time 9 hrs 30 min" android:maxLines="1" style="@style/RobotoRegular" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/nestedscrollview" android:background="@color/window_background_color" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/cancel_and_done_layout" android:layout_below="@id/alarm_app_bar" android:layout_alignWithParentIfMissing="true" android:overScrollMode="always" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/bed_settings_layout" layout="@layout/bedtime_settings_layout" />
+                <com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout android:orientation="vertical" android:id="@id/wakeup_settings" android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wakeup_settings_margin_top" android:minHeight="@dimen/wakeup_settings_min_height">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/wake_up_settings_padding_top" android:paddingBottom="@dimen/wake_up_settings_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/wakeup_settings_icon" android:layout_width="@dimen/sleep_record_bed_image_icon_size" android:layout_height="@dimen/sleep_record_bed_image_icon_size" android:src="@drawable/clock_wakeup" android:layout_marginStart="@dimen/bedtime_detail_icon_margin_start" />
+                        <TextView android:textSize="@dimen/wakeup_settings_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wake_up_settings" android:layout_marginStart="@dimen/wakeup_settings_text_start_margin" style="@style/RobotoMedium" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/alarm_detail" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.sec.android.app.clockpackage.alarm.ui.view.WakeUpRepeatButton android:layout_gravity="center_horizontal" android:id="@id/custom_alarm_repeat_btn" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_repeat_layout_height" android:layout_marginBottom="@dimen/alarm_repeat_btn_layout_bottom_margin" />
+                        <com.sec.android.app.clockpackage.alarm.ui.view.BedAlarmListDetail android:id="@id/alarm_detail_control" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+                        <View android:id="@id/smart_things_divider_line" android:visibility="gone" style="@style/ListViewLineSeparator" />
+                        <RelativeLayout android:id="@id/smart_things_action" android:background="@drawable/common_detail_list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/smart_things_min_height" android:paddingEnd="@dimen/bedtime_mode_switch_padding_end" android:paddingVertical="@dimen/smart_thing_action_padding_vertical">
+                            <ImageView android:id="@id/smart_things_icon" android:layout_width="@dimen/smart_things_icon_size" android:layout_height="@dimen/smart_things_icon_size" android:src="@drawable/clock_ic_smartthings" android:layout_centerInParent="true" android:layout_marginStart="@dimen/alarm_detail_item_textview_margin_start" android:layout_alignParentStart="true" />
+                            <TextView android:id="@id/smart_things_title" android:text="@string/smart_things_title" android:layout_centerInParent="true" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/smart_thing_text_margin_start" android:layout_toEndOf="@id/smart_things_icon" style="@style/TextStyle_1" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/smart_things_title" android:layout_toEndOf="@id/smart_things_icon">
+                                <TextView android:id="@id/smart_things_subtitle_condition" android:visibility="gone" android:maxLines="3" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/smart_thing_text_margin_start" style="@style/TextStyle_2" />
+                                <TextView android:id="@id/smart_things_subtitle_action" android:visibility="gone" android:maxLines="3" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/smart_thing_text_margin_start" style="@style/TextStyle_2" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:layout_gravity="bottom" android:id="@id/cancel_and_done_layout" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_edit_bottom_bar_height" app:menu="@menu/alarm_edit_bottom_menu" style="@style/BottomBarStyle" />
+</LinearLayout>

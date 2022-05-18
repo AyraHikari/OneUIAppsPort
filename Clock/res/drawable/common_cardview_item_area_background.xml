@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape>
+                    <solid android:color="@color/clock_list_floating_background_color" />
+                    <corners android:radius="@dimen/clock_list_card_conner_radius" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="@color/clock_list_floation_selected_background_color" />
+                    <corners android:radius="@dimen/clock_list_card_conner_radius" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <shape>
+            <solid android:color="@color/clock_list_floating_background_color" />
+            <corners android:radius="@dimen/clock_list_card_conner_radius" />
+        </shape>
+    </item>
+</selector>

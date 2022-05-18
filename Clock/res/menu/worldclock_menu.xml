@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/tw_fab_add_mtrl" android:id="@id/menu_add" android:title="@string/add_city" app:showAsAction="always" />
+    <item android:id="@id/menu_edit" android:visible="false" android:title="@string/edit" app:showAsAction="never" />
+    <item android:id="@id/menu_time_zone_convertor" android:title="@string/time_zone_converter" app:showAsAction="never" />
+</menu>

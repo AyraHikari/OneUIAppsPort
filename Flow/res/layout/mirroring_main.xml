@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="250.0dip" android:minHeight="530.0dip" android:defaultFocusHighlightEnabled="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/parent_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomBars" android:layout_centerInParent="true">
+        <SurfaceView android:id="@id/texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/touch_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <RelativeLayout android:id="@id/mirroring_noti_panel" android:background="#fff2f2f2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="24.0dip" android:textColor="#ff252525" android:id="@id/mirroring_noti_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mirroring_puased_desc_calling" android:layout_centerInParent="true" android:textAlignment="center" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rotation_blick_block_layout" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/bottomBars" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/virtual_hw_button_layout" android:background="@color/background_round_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/menu_button" android:background="@drawable/ripple_round_rect" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/mr_navi_recent" />
+                <ImageButton android:id="@id/home_button" android:background="@drawable/ripple_round_rect" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/mr_navi_home" android:layout_marginStart="53.0dip" />
+                <ImageButton android:id="@id/back_button" android:background="@drawable/ripple_round_rect" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/mr_navi_back" android:layout_marginStart="53.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rotation_ani_panel" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/lock_screen_layout" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lock_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+            <TextView android:textSize="130.0dip" android:textStyle="normal" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:fontFamily="@font/clock2021" />
+            <TextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/text_time_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="MON, AUGUST 19" android:fontFamily="sec-roboto-light" />
+            <ImageView android:textStyle="normal" android:layout_gravity="center_horizontal" android:id="@id/lock_icon" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="125.0dip" android:src="@drawable/smart_view_ic_screen_lock_img" android:tint="#fffafafa" android:fontFamily="sec-roboto-light" />
+            <TextView android:textSize="24.0dip" android:textColor="#fffafafa" android:layout_gravity="center_horizontal" android:id="@id/lock_screen_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/mirroring_lock_screen_help_desc" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/favoriteView" android:background="@drawable/favorite_list_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/selectedFavoriteListView" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="643.0dip" android:layout_centerInParent="true" android:overScrollMode="never" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip" android:layout_alignParentStart="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/loading_screen_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:layout_width="60.0dip" android:layout_height="60.0dip" style="?android:progressBarStyleLarge" />
+            <TextView android:textSize="15.0dip" android:textColor="#fffafafa" android:id="@id/userConsentHelpText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/mirroring_check_user_consent_on_phone" android:textAlignment="center" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/popup_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="aesthetic_horizontal_percent_current_temp_nx1_land">43</integer>
+    <integer name="aesthetic_horizontal_percent_current_temp_nx2_land">43</integer>
+    <integer name="aesthetic_horizontal_percent_info_nx1_land">53</integer>
+    <integer name="aesthetic_horizontal_percent_info_nx2_land">53</integer>
+    <integer name="aesthetic_vertical_percent_city_name_nx1_land">18</integer>
+    <integer name="aesthetic_vertical_percent_city_name_nx2_land">10</integer>
+    <integer name="aesthetic_vertical_percent_current_temp_nx1_land">38</integer>
+    <integer name="aesthetic_vertical_percent_current_temp_nx2_land">18</integer>
+    <integer name="aesthetic_vertical_percent_update_time_nx1_land">16</integer>
+    <integer name="aesthetic_vertical_percent_update_time_nx2_land">8</integer>
+</resources>

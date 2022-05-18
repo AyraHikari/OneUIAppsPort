@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/repeat_btn_group" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_repeat_toggle_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_0" android:textOn="@string/sun1" android:textOff="@string/sun1" android:layout_marginStart="@dimen/alarm_repeat_btn_layout_start_end_margin" style="@style/alarm_repeat_toggle_style" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_1" android:textOn="@string/mon1" android:textOff="@string/mon1" style="@style/alarm_repeat_toggle_style" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_2" android:textOn="@string/tue1" android:textOff="@string/tue1" style="@style/alarm_repeat_toggle_style" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_3" android:textOn="@string/wed1" android:textOff="@string/wed1" style="@style/alarm_repeat_toggle_style" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_4" android:textOn="@string/thu1" android:textOff="@string/thu1" style="@style/alarm_repeat_toggle_style" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_5" android:textOn="@string/fri1" android:textOff="@string/fri1" style="@style/alarm_repeat_toggle_style" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.sec.android.app.clockpackage.common.view.CheckBoxToggleButton android:id="@id/repeat_6" android:textOn="@string/sat1" android:textOff="@string/sat1" android:layout_marginEnd="@dimen/alarm_repeat_btn_layout_start_end_margin" style="@style/alarm_repeat_toggle_style" />
+</LinearLayout>

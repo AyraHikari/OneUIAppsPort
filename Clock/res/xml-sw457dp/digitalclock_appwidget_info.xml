@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/alarm_widget_min_width" android:minHeight="@dimen/alarm_widget_min_height" android:updatePeriodMillis="3600000" android:initialLayout="@layout/clock_widget_transparent_layout" android:configure="com.sec.android.widgetapp.digitalclock.DigitalClockSettingActivity" android:previewImage="@drawable/preview_widget_single_digital_clock" android:resizeMode="horizontal" android:widgetFeatures="0x00000001"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

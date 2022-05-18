@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="cts_except_accounting_dialog">false</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="samsung_font_family">true</bool>
+    <bool name="select_all_spinner">true</bool>
+    <bool name="sesl_action_bar_text_item_mode">false</bool>
+    <bool name="sesl_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="sesl_config_desktop_mode">false</bool>
+    <bool name="sesl_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="sesl_seekbar_sliding_animation">true</bool>
+    <bool name="support_keyboard_cover">true</bool>
+    <bool name="support_realtime_search">true</bool>
+    <bool name="support_rotation">false</bool>
+    <bool name="support_trans_widget">true</bool>
+    <bool name="support_weathersetting_improvement">false</bool>
+    <bool name="trans_widget_set_default_location">false</bool>
+    <bool name="video_play_on_land">true</bool>
+    <bool name="window_light_navigation_bar">true</bool>
+    <bool name="window_light_status_bar">true</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

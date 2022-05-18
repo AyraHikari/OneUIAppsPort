@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@interpolator/interpolator_sine_in_70" android:duration="66" android:valueFrom="M48,31m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0 M41.9,45.4l-14.3,-14.2l4-4l10.3,10.1l21.7-21.5l4,4L41.9,45.4z" android:valueTo="M48,31m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0 M41.9,45.4l-15-14.9l4-4l11,10.9l22.8-22.6l4,4L41.9,45.4z" android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:interpolator="@interpolator/interpolator_sine_in_70" android:duration="133" android:valueFrom="M48,31m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0 M41.9,45.4l-14.3,-14.2l4-4l10.3,10.1l21.7-21.5l4,4L41.9,45.4z" android:valueTo="M48,31m-26,0a26,26 0 1,0 52,0a26,26 0 1,0-52,0 M42.5,42.1l-4.9-4.7l2.4-2.3l2.5,2.4l4.2-3.9l2.4,2.3L42.5,42.1z" android:valueType="pathType" android:propertyName="pathData" />
+        <objectAnimator android:duration="133" android:valueFrom="M48,31m-26,0a26,26 0 1,0 52,0a26,26 0 1,0-52,0 M42.5,42.1l-4.9-4.7l2.4-2.3l2.5,2.4l4.2-3.9l2.4,2.3L42.5,42.1z" android:valueTo="M48,31m-26,0a26,26 0 1,0 52,0a26,26 0 1,0-52,0 M42.5,42.1l-4.9-4.7l2.4-2.3l2.5,2.4l4.2-3.9l2.4,2.3L42.5,42.1z" android:valueType="pathType" android:propertyName="pathData" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="200" android:valueFrom="1.0" android:valueTo="1.0" android:valueType="floatType" android:propertyName="fillAlpha" />
+        <objectAnimator android:duration="2" android:valueFrom="1.0" android:valueTo="0" android:valueType="floatType" android:propertyName="fillAlpha" />
+    </set>
+</set>

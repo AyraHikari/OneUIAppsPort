@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/alarm_holiday_kor_boz" android:onClick="optionClicked" android:paddingVertical="0.0dip" style="@style/ListViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/alarm_holiday_subject" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingVertical="@dimen/alarm_winset_listview_padding_top_bottom">
+        <TextView android:text="@string/alarm_holiday" style="@style/TextStyle_1" />
+        <TextView android:id="@id/alarm_holiday_kor_value" style="@style/TextStyle_2" />
+    </LinearLayout>
+    <Switch android:theme="@style/SwitchStyle" android:gravity="center_vertical" android:id="@id/alarm_holiday_kor_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:drawablePadding="@dimen/common_setting_switch_drawable_padding" android:contentDescription="@string/alarm_holiday" android:drawableStart="@drawable/alarm_option_line" android:paddingEnd="@dimen/alarm_detail_item_textview_margin_end" />
+</LinearLayout>

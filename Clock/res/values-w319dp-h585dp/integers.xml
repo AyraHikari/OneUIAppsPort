@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="alarm_timepicker_ampm_text_size">31</integer>
+    <integer name="alarm_timepicker_main_text_size">53</integer>
+    <integer name="pip_timer_landscape_bottom_gap">200</integer>
+    <integer name="timer_common_timepicker_time_textsize">53</integer>
+</resources>

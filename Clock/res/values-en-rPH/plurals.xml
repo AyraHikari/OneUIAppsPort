@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarm in %d days</item>
+        <item quantity="zero">Alarm in %d days</item>
+        <item quantity="one">Alarm in %d day</item>
+        <item quantity="two">Alarm in %d days</item>
+        <item quantity="few">Alarm in %d days</item>
+        <item quantity="many">Alarm in %d days</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarm in %d hours</item>
+        <item quantity="zero">Alarm in %d hours</item>
+        <item quantity="one">Alarm in %d hour</item>
+        <item quantity="two">Alarm in %d hours</item>
+        <item quantity="few">Alarm in %d hours</item>
+        <item quantity="many">Alarm in %d hours</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Alarm in %d hours 1 minute</item>
+        <item quantity="zero">Alarm in %d hours 1 minute</item>
+        <item quantity="one">Alarm in %d hour 1 minute</item>
+        <item quantity="two">Alarm in %d hours 1 minute</item>
+        <item quantity="few">Alarm in %d hours 1 minute</item>
+        <item quantity="many">Alarm in %d hours 1 minute</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarm in %d minutes</item>
+        <item quantity="zero">Alarm in %d minutes</item>
+        <item quantity="one">Alarm in %d minute</item>
+        <item quantity="two">Alarm in %d minutes</item>
+        <item quantity="few">Alarm in %d minutes</item>
+        <item quantity="many">Alarm in %d minutes</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">In %d minutes</item>
+        <item quantity="zero">In %d minutes</item>
+        <item quantity="one">In %d minute</item>
+        <item quantity="two">In %d minutes</item>
+        <item quantity="few">In %d minutes</item>
+        <item quantity="many">In %d minutes</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">"Can't add more than %d alarms."</item>
+        <item quantity="zero">"Can't add more than %d alarms."</item>
+        <item quantity="one">"Can't add more than %d alarm."</item>
+        <item quantity="two">"Can't add more than %d alarms."</item>
+        <item quantity="few">"Can't add more than %d alarms."</item>
+        <item quantity="many">"Can't add more than %d alarms."</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="zero">%d minutes</item>
+        <item quantity="one">%d minute</item>
+        <item quantity="two">%d minutes</item>
+        <item quantity="few">%d minutes</item>
+        <item quantity="many">%d minutes</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Delete %d backgrounds?</item>
+        <item quantity="zero">Delete %d backgrounds?</item>
+        <item quantity="one">Delete %d background?</item>
+        <item quantity="two">Delete %d backgrounds?</item>
+        <item quantity="few">Delete %d backgrounds?</item>
+        <item quantity="many">Delete %d backgrounds?</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d selected</item>
+        <item quantity="zero">%d selected</item>
+        <item quantity="one">%d selected</item>
+        <item quantity="two">%d selected</item>
+        <item quantity="few">%d selected</item>
+        <item quantity="many">%d selected</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d minutes before</item>
+        <item quantity="zero">%d minutes before</item>
+        <item quantity="one">%d minute before</item>
+        <item quantity="two">%d minutes before</item>
+        <item quantity="few">%d minutes before</item>
+        <item quantity="many">%d minutes before</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, and %3$d others</item>
+        <item quantity="zero">%1$s, %2$s, and %3$d others</item>
+        <item quantity="one">%1$s, %2$s, and %3$d other</item>
+        <item quantity="two">%1$s, %2$s, and %3$d others</item>
+        <item quantity="few">%1$s, %2$s, and %3$d others</item>
+        <item quantity="many">%1$s, %2$s, and %3$d others</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Sleep time: %d hours</item>
+        <item quantity="zero">Sleep time: %d hours</item>
+        <item quantity="one">Sleep time: %d hour</item>
+        <item quantity="two">Sleep time: %d hours</item>
+        <item quantity="few">Sleep time: %d hours</item>
+        <item quantity="many">Sleep time: %d hours</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Sleep time: %d minutes</item>
+        <item quantity="zero">Sleep time: %d minutes</item>
+        <item quantity="one">Sleep time: %d minute</item>
+        <item quantity="two">Sleep time: %d minutes</item>
+        <item quantity="few">Sleep time: %d minutes</item>
+        <item quantity="many">Sleep time: %d minutes</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Snooze %d mins</item>
+        <item quantity="zero">Snooze %d mins</item>
+        <item quantity="one">Snooze %d min</item>
+        <item quantity="two">Snooze %d mins</item>
+        <item quantity="few">Snooze %d mins</item>
+        <item quantity="many">Snooze %d mins</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d minutes</item>
+        <item quantity="zero">Minus %d minutes</item>
+        <item quantity="one">Minus %d minute</item>
+        <item quantity="two">Minus %d minutes</item>
+        <item quantity="few">Minus %d minutes</item>
+        <item quantity="many">Minus %d minutes</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minutes</item>
+        <item quantity="zero">Plus %d minutes</item>
+        <item quantity="one">Plus %d minute</item>
+        <item quantity="two">Plus %d minutes</item>
+        <item quantity="few">Plus %d minutes</item>
+        <item quantity="many">Plus %d minutes</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">"Can't add more than %d preset timers."</item>
+        <item quantity="zero">"Can't add more than %d preset timers."</item>
+        <item quantity="one">"Can't add more than %d preset timer."</item>
+        <item quantity="two">"Can't add more than %d preset timers."</item>
+        <item quantity="few">"Can't add more than %d preset timers."</item>
+        <item quantity="many">"Can't add more than %d preset timers."</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">"Can't add more than %d cities."</item>
+        <item quantity="zero">"Can't add more than %d cities."</item>
+        <item quantity="one">"Can't add more than %d city."</item>
+        <item quantity="two">"Can't add more than %d cities."</item>
+        <item quantity="few">"Can't add more than %d cities."</item>
+        <item quantity="many">"Can't add more than %d cities."</item>
+    </plurals>
+</resources>

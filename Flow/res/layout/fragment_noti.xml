@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/rounded_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/spinnerLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Spinner android:theme="@style/AppTheme" android:id="@id/notiSpinner" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="56.0dip" android:dropDownHorizontalOffset="-11.0dip" android:dropDownVerticalOffset="-6.0dip" android:layout_marginStart="11.0dip" android:overlapAnchor="true" />
+                <View android:background="@color/list_divider_color" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/notiSpinner" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/notifications2" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/spinnerLayout" android:overScrollMode="never" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/no_item_title_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tvNoNotifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_notifications" android:layout_centerInParent="true" android:fontFamily="sec-roboto-light" />
+    </RelativeLayout>
+</RelativeLayout>

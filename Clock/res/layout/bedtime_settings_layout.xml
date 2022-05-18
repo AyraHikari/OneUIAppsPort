@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout android:orientation="vertical" android:id="@id/bedtime_settings" android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bedtime_settings_minimum_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/wakeup_settings_min_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/wake_up_settings_padding_top" android:paddingBottom="@dimen/wake_up_settings_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/bedtime_setting_icon" android:layout_width="@dimen/sleep_record_bed_image_icon_size" android:layout_height="@dimen/sleep_record_bed_image_icon_size" android:src="@drawable/clock_bedtime" android:layout_marginStart="@dimen/bedtime_detail_icon_margin_start" />
+            <TextView android:textSize="@dimen/bedtime_settings_text_size" android:textColor="@color/bed_time_header_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bedtime_settings" android:layout_marginStart="@dimen/bedtime_settings_text_start_margin" style="@style/RobotoMedium" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/reminder_notification" android:background="@drawable/reminder_notification_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/reminder_notification_padding_vertical">
+        <TextView android:id="@id/reminder_notification_tv" android:text="@string/reminder_notification" style="@style/TextStyle_1" />
+        <TextView android:id="@id/reminder_ntoification_time" android:layout_below="@id/reminder_notification_tv" style="@style/TextStyle_2" />
+    </RelativeLayout>
+    <View android:id="@id/divider_line" style="@style/DividerLineStyle" />
+    <RelativeLayout android:id="@id/bedtime_mode" android:background="@drawable/bedtime_reminder_ftu_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/bedtime_mode_switch" android:paddingVertical="@dimen/bedtime_mode_padding_vertical">
+        <TextView android:id="@id/label_bedtime_mode" android:text="@string/bedtime_mode" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/bedtime_mode_switch" android:layout_alignParentStart="true" style="@style/TextStyle_1" />
+        <TextView android:textColor="?android:textColorSecondary" android:id="@id/bedtime_mode_time" android:text="@string/bedtime_mode_action" android:maxLines="3" android:layout_below="@id/label_bedtime_mode" android:textDirection="locale" android:textAlignment="gravity" android:layout_toStartOf="@id/bedtime_mode_switch" android:layout_alignParentStart="true" style="@style/TextStyle_2" />
+        <Switch android:theme="@style/SwitchStyle" android:id="@id/bedtime_mode_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_centerInParent="true" android:paddingEnd="@dimen/bedtime_mode_switch_padding_end" android:layout_alignParentEnd="true" android:paddingVertical="@dimen/bedtime_mode_padding_vertical" />
+    </RelativeLayout>
+    <View android:id="@id/smart_things_bed_divider_line" android:visibility="gone" style="@style/DividerLineStyle" />
+    <RelativeLayout android:id="@id/smart_things_bed_action" android:background="@drawable/common_detail_list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/smart_things_min_height" android:paddingEnd="@dimen/bedtime_mode_switch_padding_end" android:paddingVertical="@dimen/smart_thing_action_padding_vertical">
+        <ImageView android:id="@id/smart_things_icon" android:layout_width="@dimen/smart_things_icon_size" android:layout_height="@dimen/smart_things_icon_size" android:src="@drawable/clock_ic_smartthings" android:layout_centerInParent="true" android:layout_marginStart="@dimen/alarm_detail_item_textview_margin_start" android:layout_alignParentStart="true" />
+        <TextView android:id="@id/smart_things_bed_title" android:text="@string/smart_things_bed_title" android:layout_centerInParent="true" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/smart_thing_text_margin_start" android:layout_toEndOf="@id/smart_things_icon" style="@style/TextStyle_1" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/smart_things_bed_title" android:layout_toEndOf="@id/smart_things_icon">
+            <TextView android:id="@id/smart_things_bed_subtitle_condition" android:visibility="gone" android:maxLines="3" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/smart_thing_text_margin_start" style="@style/TextStyle_2" />
+            <TextView android:id="@id/smart_things_bed_subtitle_action" android:visibility="gone" android:maxLines="3" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/smart_thing_text_margin_start" style="@style/TextStyle_2" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.sec.android.app.clockpackage.alarm.ui.view.RoundedCornerLinearLayout>

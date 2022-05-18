@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="21.0dip" android:width="21.0dip" android:viewportWidth="21.0" android:viewportHeight="21.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/timer_button_resume_textcolor" android:pathData="M7.6667,17.0791L15.7596,11.7915C16.7545,11.2175 16.7545,9.7825 15.7596,9.2085L7.6667,3.9209C6.6727,3.3469 5.4294,4.0644 5.4294,5.2124L5.4294,15.7868C5.4294,16.9356 6.6727,17.6531 7.6667,17.0791" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="nonZero" />
+</vector>

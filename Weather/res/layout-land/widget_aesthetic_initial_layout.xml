@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/widget_bg_gradient_sunny" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/widget_initial_loading_size" android:layout_height="@dimen/widget_initial_loading_size" android:src="@drawable/ic_loading" />
+        <TextView android:textSize="@dimen/widget_initial_text_size" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_message" android:includeFontPadding="true" android:layout_marginStart="@dimen/aesthetic_margin_between_icon_empty_text_land" style="@style/AestheticWidget.TextAppearance" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="timer_circle_bg_height">450.0dip</dimen>
+    <dimen name="timer_circle_bg_width">450.0dip</dimen>
+    <item type="dimen" name="timer_common_circle_vertical_bias">0.021</item>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">360.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">300.0dip</dimen>
+    <item type="dimen" name="timer_common_picker_vertical_bias">0.504</item>
+    <dimen name="timer_common_timepicker_bg_width">450.0dip</dimen>
+    <dimen name="timer_common_timepicker_margin_horizontal">24.0dip</dimen>
+    <item type="dimen" name="timer_common_title_vertical_bias">0.175</item>
+</resources>

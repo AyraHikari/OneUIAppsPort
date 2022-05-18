@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/spotify_placeholder_icon_padding" android:top="@dimen/spotify_placeholder_icon_padding" android:right="@dimen/spotify_placeholder_icon_padding" android:bottom="@dimen/spotify_placeholder_icon_padding" />
+            <solid android:color="@color/spotify_placeholder_icon_background" />
+            <corners android:radius="@dimen/alarm_spotify_data_imageview_radius" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_music_default" />
+</layer-list>

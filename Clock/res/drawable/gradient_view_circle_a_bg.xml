@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/gradient_first_circle_bg" />
+    <size android:height="@dimen/full_alert_bg_animation_circleA_diameter" android:width="@dimen/full_alert_bg_animation_circleA_diameter" />
+</shape>

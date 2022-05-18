@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/permission_popup_margin" android:layout_marginBottom="@dimen/permission_popup_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/permission_popup_margin" android:layout_marginEnd="@dimen/permission_popup_margin">
+            <TextView android:textAppearance="?android:textAppearance" android:textSize="15.0sp" android:ellipsize="end" android:id="@id/permission_message" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/permission_popup_message_bottom_margin" android:lineSpacingExtra="4.0sp" android:fontFamily="@string/font_roboto_regular" />
+            <ListView android:id="@id/permission_popup_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="1.0px" android:minHeight="@dimen/permission_popup_list_item_min_height" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

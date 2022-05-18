@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="68.0dip">
+        <CheckBox android:id="@id/floatableCheckbox" android:background="@android:color/transparent" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/itemPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imgmain" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/txtmain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgmain" style="@style/TextViewListItemTitle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtmain" android:layout_alignLeft="@id/txtmain" style="@style/TextViewListItemDesc" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

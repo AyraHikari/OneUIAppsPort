@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/AppTheme" android:id="@id/rootView" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkBox" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:checked="false" android:layout_centerVertical="true" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/appIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/checkBox" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/text_list_item_title" android:ellipsize="end" android:id="@id/appName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="sec-roboto-light" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/appIcon" />
+</RelativeLayout>

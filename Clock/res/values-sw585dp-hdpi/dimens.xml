@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_widget_ampm_ko_text_size">14.0dip</dimen>
+    <dimen name="alarm_widget_ampm_text_size">14.0dip</dimen>
+    <dimen name="alarm_widget_date_and_onoff_btn_item_margin_pre_full_phone">9.0dip</dimen>
+    <dimen name="alarm_widget_date_text_size">14.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size">13.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size_phone">11.0dip</dimen>
+    <dimen name="alarm_widget_full_vertical_clock_layout_margin_phone">16.0dip</dimen>
+    <dimen name="alarm_widget_item_margin_end_phone">14.0dip</dimen>
+    <dimen name="alarm_widget_item_margin_start_phone">18.0dip</dimen>
+    <dimen name="alarm_widget_mini_next_time_text_size_phone">26.0dip</dimen>
+    <dimen name="alarm_widget_name_text_size">14.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_height">49.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_height_phone">26.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_mini_size">20.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_width">49.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_width_phone">26.0dip</dimen>
+    <dimen name="alarm_widget_pre_full_time_text_size_phone">20.0dip</dimen>
+    <dimen name="alarm_widget_time_text_size">32.0dip</dimen>
+    <dimen name="alarm_widget_time_text_size_phone">28.0dip</dimen>
+    <dimen name="clockwidget_common_date_textview_textsize">14.0dip</dimen>
+    <dimen name="clockwidget_timeview_ampm_textview_textsize">16.0dip</dimen>
+    <dimen name="date_text_first_size">14.0dip</dimen>
+    <dimen name="digitalclock_timeview_number_textview_textsize">50.0dip</dimen>
+    <dimen name="digitalclock_timeview_number_textview_textsize_phone">32.0dip</dimen>
+    <dimen name="dualclock_day_night_icon_size_tablet">23.0dip</dimen>
+    <dimen name="dualclock_layout_margin_start_end_phone">10.0dip</dimen>
+    <dimen name="dualclock_widget_ampm_text_size">15.0dip</dimen>
+    <dimen name="dualclock_widget_city_text_size">16.0dip</dimen>
+    <dimen name="dualclock_widget_date_text_size">15.0dip</dimen>
+    <dimen name="dualclock_widget_time_text_size">40.0dip</dimen>
+    <dimen name="first_city_text_size">14.0dip</dimen>
+    <dimen name="tablet_date_text_first_size">19.0dip</dimen>
+    <dimen name="tablet_first_city_text_size">19.0dip</dimen>
+</resources>

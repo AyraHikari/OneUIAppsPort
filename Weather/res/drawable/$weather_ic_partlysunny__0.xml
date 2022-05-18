@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="280.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="280.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="s3" android:pivotX="-52.0" android:pivotY="52.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="186.8712" android:translateY="107.325" aapt:layer_name="Sun">
+        <group android:name="s3pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Sun">
+            <path android:name="s3pg1p10" android:fillColor="#ffffbc09" android:pathData="M 13 0 C 13 7.18 7.18 13 0 13 C -7.18 13 -13 7.18 -13 0 C -13 -7.18 -7.18 -13 0 -13 C 7.18 -13 13 -7.18 13 0 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s2" android:pivotX="-80.0" android:pivotY="47.5" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="180.0" android:translateY="183.325" aapt:layer_name="Cloudback">
+        <group android:name="s2pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Cloudback">
+            <path android:name="s2pg1p10" android:fillColor="#fff1f1f1" android:pathData="M 8 -12 C 8 -12 -20 -12 -20 -12 C -20 -12 -20 12 -20 12 C -20 12 8 12 8 12 C 14.63 12 20 6.63 20 0 C 20 -6.63 14.63 -12 8 -12 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s1" android:pivotX="0.0" android:pivotY="80.5" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="100.0" android:translateY="151.525" aapt:layer_name="Cloudfront">
+        <group android:name="s1pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Cloudfront">
+            <path android:name="s1pg1p10" android:fillColor="#ffffffff" android:pathData="M 20 0 C 20 11.05 11.05 20 0 20 C -11.05 20 -20 11.05 -20 0 C -20 -11.05 -11.05 -20 0 -20 C 11.05 -20 20 -11.05 20 0 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+</vector>

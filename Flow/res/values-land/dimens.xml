@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="black_screen_bottom_margin">35.0dip</dimen>
+    <dimen name="black_screen_end_margin">95.0dip</dimen>
+    <dimen name="black_screen_start_margin">95.0dip</dimen>
+    <dimen name="black_screen_top_margin">112.0dip</dimen>
+    <dimen name="sesl_dialog_body_text_padding_bottom">12.0dip</dimen>
+    <dimen name="sesl_dialog_button_bar_padding_bottom">4.0dip</dimen>
+    <dimen name="sesl_dialog_title_padding_bottom">8.0dip</dimen>
+    <dimen name="sesl_dialog_title_padding_top">12.0dip</dimen>
+</resources>

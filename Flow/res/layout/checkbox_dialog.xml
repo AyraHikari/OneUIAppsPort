@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/dialog_title_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tablet" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/dialog_desc_color" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/special_sensitive_required_permissions" android:lineSpacingExtra="4.0sp" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/optionLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="24.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="24.0dip">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkBox" android:focusable="false" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginEnd="10.0dip" style="@style/CheckBox" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/dialog_desc_color" android:layout_gravity="center_vertical" android:id="@id/option" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+</LinearLayout>

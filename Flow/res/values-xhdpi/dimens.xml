@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_divider">1.0px</dimen>
+    <dimen name="sesl_list_divider_height">1.0px</dimen>
+    <dimen name="tab_divider_height">1.0px</dimen>
+    <dimen name="flow_history_date_line_divider_height">1.0px</dimen>
+    <dimen name="flow_history_divider_height">2.0px</dimen>
+</resources>

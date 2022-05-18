@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remote-actions enable_key="BF129611" swift_action="true" version="1.2">
+    <action id="start_lap" label="@string/start_lap" priority="1" trigger_key="CTRL_LEFT+SHIFT_LEFT+N">
+        <disable-condition feature="SEC_FLOATING_FEATURE_COMMON_SUPPORT_BLE_SPEN" value="false" />
+        <preference name="button_only" value="true" />
+    </action>
+</remote-actions>

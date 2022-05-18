@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Միդվեյ</item>
+        <item>Հոնոլուլու</item>
+        <item>Հավայի</item>
+        <item>Ալյասկա</item>
+        <item>Անկորիջ</item>
+        <item>Սան-Ֆրանցիսկո</item>
+        <item>Վանկուվեր</item>
+        <item>Սիետլ</item>
+        <item>Լոս-Անջելես</item>
+        <item>Տիխուանա</item>
+        <item>Կալգարի</item>
+        <item>Ֆենիքս</item>
+        <item>Մասատլան</item>
+        <item>Դենվեր</item>
+        <item>Մեխիկո</item>
+        <item>Վինիպեգ</item>
+        <item>Դիեգո Գարսիա</item>
+        <item>Դալլաս</item>
+        <item>Չիկագո</item>
+        <item>Տորոնտո</item>
+        <item>Մայամի</item>
+        <item>Լիմա</item>
+        <item>Կիտո</item>
+        <item>Վաշինգտոն</item>
+        <item>Օտավա</item>
+        <item>Նյու Յորք</item>
+        <item>Բոգոտա</item>
+        <item>Սանտյագո</item>
+        <item>Լա-Պաս</item>
+        <item>Կարակաս</item>
+        <item>Բուենոս Այրես</item>
+        <item>Նյուֆաունդլենդ</item>
+        <item>Սենտ Ջոնս</item>
+        <item>Սան-Պաուլու</item>
+        <item>Բրազիլիա</item>
+        <item>Ռիո դե Ժանեյրո</item>
+        <item>Ֆերնանդո-դի-Նորոնյա</item>
+        <item>Ազորներ</item>
+        <item>Լիսաբոն</item>
+        <item>Կասաբլանկա</item>
+        <item>Դուբլին</item>
+        <item>Ռաբաթ</item>
+        <item>Մադրիդ</item>
+        <item>Սետլմենտ</item>
+        <item>Լոնդոն</item>
+        <item>Կինգստոն</item>
+        <item>Բարսելոն</item>
+        <item>Փարիզ</item>
+        <item>Ալժիր</item>
+        <item>Թունիս</item>
+        <item>Տրիպոլի</item>
+        <item>Բեռլին</item>
+        <item>Հռոմ</item>
+        <item>Պրահա</item>
+        <item>Կինշասա</item>
+        <item>Ստոկհոլմ</item>
+        <item>Բրատիսլավա</item>
+        <item>Քեյփթաուն</item>
+        <item>Բուդապեշտ</item>
+        <item>Վարշավա</item>
+        <item>Կալինինգրադ</item>
+        <item>Սոֆիա</item>
+        <item>Աթենք</item>
+        <item>Լվով</item>
+        <item>Հելսինկի</item>
+        <item>Ռիգա</item>
+        <item>Տալլին</item>
+        <item>Բուխարեստ</item>
+        <item>Վիլնյուս</item>
+        <item>Լուբումբաշի</item>
+        <item>Մինսկ</item>
+        <item>Սանկտ Պետերբուրգ</item>
+        <item>Ստամբուլ</item>
+        <item>Կամչատկա</item>
+        <item>Կիև</item>
+        <item>Երուսաղեմ</item>
+        <item>Մոսկվա</item>
+        <item>Խարկով</item>
+        <item>Նայրոբի</item>
+        <item>Ջեդա</item>
+        <item>Վոլգոգրադ</item>
+        <item>Երևան</item>
+        <item>Թբիլիսի</item>
+        <item>Բաքու</item>
+        <item>Չիտա</item>
+        <item>Սամարա</item>
+        <item>Թեհրան</item>
+        <item>Իժևսկ</item>
+        <item>Աբու-Դաբի</item>
+        <item>Դուբայ</item>
+        <item>Ուֆա</item>
+        <item>Եկատերինբուրգ</item>
+        <item>Չելյաբինսկ</item>
+        <item>Կարաչի</item>
+        <item>Քաբուլ</item>
+        <item>Տաշքենդ</item>
+        <item>Իսլամաբադ</item>
+        <item>Մումբայ</item>
+        <item>Օմսկ</item>
+        <item>Ալմաթի</item>
+        <item>Բանգալոր</item>
+        <item>Խայդարաբադ</item>
+        <item>Նյու-Դելի</item>
+        <item>Կոլոմբո</item>
+        <item>Չեննայ</item>
+        <item>Նովոսիբիրսկ</item>
+        <item>Կատմանդու</item>
+        <item>Նովոկուզնեցկ</item>
+        <item>Կալկաթա</item>
+        <item>Դհակա</item>
+        <item>Հովդ</item>
+        <item>Կրասնոյարսկ</item>
+        <item>Բանգկոկ</item>
+        <item>Կուալա Լումպուր</item>
+        <item>Սինգապուր</item>
+        <item>Իրկուտսկ</item>
+        <item>Պնոմպեն</item>
+        <item>Հանոյ</item>
+        <item>Ջակարտա</item>
+        <item>Ուլան-Բատոր</item>
+        <item>Հոնկոնգ</item>
+        <item>Պերտ</item>
+        <item>Պեկին</item>
+        <item>Մանիլա</item>
+        <item>Թայբեյ</item>
+        <item>Սեուլ</item>
+        <item>Ամբոն</item>
+        <item>Վլադիվոստոկ</item>
+        <item>Յակուտսկ</item>
+        <item>Խաբարովսկ</item>
+        <item>Ադելաիդա</item>
+        <item>Տոկիո</item>
+        <item>Յուժնո-Սախալինսկ</item>
+        <item>Հալիֆաքս</item>
+        <item>Գուամ</item>
+        <item>Կանբերա</item>
+        <item>Մագադան</item>
+        <item>Սիդնեյ</item>
+        <item>Պետրոպավլովսկ-Կամչատսկի</item>
+        <item>Տարավա</item>
+        <item>Օքլենդ</item>
+        <item>Վելինգտոն</item>
+        <item>Պագո Պագո</item>
+        <item>Դենպասար</item>
+        <item>Բեռն</item>
+        <item>Ցյուրիխ</item>
+        <item>Կահիրե</item>
+        <item>Աբիջան</item>
+        <item>Ակկրա</item>
+        <item>Ադիս Աբեբա</item>
+        <item>Ամման</item>
+        <item>Ամստերդամ</item>
+        <item>Անադիր</item>
+        <item>Անկարա</item>
+        <item>Անտանանարիվու</item>
+        <item>Աշխաբադ</item>
+        <item>Ասմարա</item>
+        <item>Աստանա</item>
+        <item>Ասունսյոն</item>
+        <item>Օսթին</item>
+        <item>Բաղդադ</item>
+        <item>Բալթիմոր</item>
+        <item>Բամակո</item>
+        <item>Բանգի</item>
+        <item>Բարի</item>
+        <item>Բաս-Տեր</item>
+        <item>Բեյրութ</item>
+        <item>Բելգրադ</item>
+        <item>Բելիզ քաղաք</item>
+        <item>Բիշքեկ</item>
+        <item>Բիսաու</item>
+        <item>Բոլոնիա</item>
+        <item>Բոսթոն</item>
+        <item>Բրիջթաուն</item>
+        <item>Բրիսբեն</item>
+        <item>Բրյուսել</item>
+        <item>Կանարյան կղզիներ</item>
+        <item>Կատանցարո</item>
+        <item>Կայեննա</item>
+        <item>Շառլոտ</item>
+        <item>Քիշնև</item>
+        <item>Քլիվլենդ</item>
+        <item>Կոլումբուս</item>
+        <item>Կոնակրի</item>
+        <item>Կոպենհագեն</item>
+        <item>Կորկ</item>
+        <item>Կրոտոն</item>
+        <item>Դակար</item>
+        <item>Դամասկոս</item>
+        <item>Դար էս Սալամ</item>
+        <item>Դարվին</item>
+        <item>Դետրոյթ</item>
+        <item>Ջիբութի</item>
+        <item>Դոհա</item>
+        <item>Դուալա</item>
+        <item>Դուշանբե</item>
+        <item>Զատկի կղզի</item>
+        <item>Էդինբուրգ</item>
+        <item>Էլ-Պասո</item>
+        <item>Ֆլորենցիա</item>
+        <item>Ֆորտ դե Ֆրանս</item>
+        <item>Ֆրիթաուն</item>
+        <item>Գաբորոնե</item>
+        <item>Գալապագոսյան կղզիներ</item>
+        <item>Ժնև</item>
+        <item>Գենուա</item>
+        <item>Ջորջթաուն</item>
+        <item>Գրիտվիկեն</item>
+        <item>Գվատեմալա քաղաք</item>
+        <item>Գուստավիա</item>
+        <item>Համբուրգ</item>
+        <item>Հարարե</item>
+        <item>Հավանա</item>
+        <item>Հոբարտ</item>
+        <item>Հյուսթոն</item>
+        <item>Ինդիանապոլիս</item>
+        <item>Յոհանեսբուրգ</item>
+        <item>Կամպալա</item>
+        <item>Խարտում</item>
+        <item>Կինգստոն</item>
+        <item>Քուվեյթ</item>
+        <item>Լագոս</item>
+        <item>Լաս Վեգաս</item>
+        <item>Լյուբլյանա</item>
+        <item>Հայկոու</item>
+        <item>Լուիսվիլ</item>
+        <item>Լուանդա</item>
+        <item>Լուսակա</item>
+        <item>Լյուքսեմբուրգ</item>
+        <item>Մակաու</item>
+        <item>Մալաբո</item>
+        <item>Մալե</item>
+        <item>Մանագուա</item>
+        <item>Մանամա</item>
+        <item>Մապուտու</item>
+        <item>Մարիգո</item>
+        <item>Մեքքա</item>
+        <item>Մելբուրն</item>
+        <item>Մեմֆիս</item>
+        <item>Մեսսինա</item>
+        <item>Միլան</item>
+        <item>Միլուոքի</item>
+        <item>Մոգադիշո</item>
+        <item>Մոնրովիա</item>
+        <item>Մոնտեվիդեո</item>
+        <item>Մոնրեալ</item>
+        <item>Մյունխեն</item>
+        <item>Մասքատ</item>
+        <item>Նեապոլ</item>
+        <item>Նատերս</item>
+        <item>Նջամենա</item>
+        <item>Նիամեյ</item>
+        <item>Նուակշոտ</item>
+        <item>Նումեա</item>
+        <item>Նուկուալոֆա</item>
+        <item>Նուկ</item>
+        <item>Օսակա</item>
+        <item>Ուագադուգու</item>
+        <item>Պալերմո</item>
+        <item>Պանամա քաղաք</item>
+        <item>Պարամարիբո</item>
+        <item>Պերմ</item>
+        <item>Ֆիլադելֆիա</item>
+        <item>Պոդգորիցա</item>
+        <item>Պոնտա Դելգադա</item>
+        <item>Պորտ Լուի</item>
+        <item>Պորտ-օ-Պրենս</item>
+        <item>Փորթլենդ, Օրեգոն</item>
+        <item>Փխենյան</item>
+        <item>Ռանգուն</item>
+        <item>Ռեսիֆի</item>
+        <item>Ռեյկյավիկ</item>
+        <item>Էր Ռիադ</item>
+        <item>Սեն-Դենի</item>
+        <item>Սան Անտոնիո</item>
+        <item>Սան Դիեգո</item>
+        <item>Սան Խոսե</item>
+        <item>Սան Խոսե</item>
+        <item>Սան Խուան</item>
+        <item>Սան Մարինո</item>
+        <item>Սան Սալվադոր</item>
+        <item>Սանա</item>
+        <item>Սանտո Դոմինգո</item>
+        <item>Շանհայ</item>
+        <item>Շենժեն</item>
+        <item>Սկոպյե</item>
+        <item>Սենտ Ջոնս</item>
+        <item>Սուվա</item>
+        <item>Թայիթի</item>
+        <item>Տեգուսիգալպա</item>
+        <item>Հոշիմին քաղաք</item>
+        <item>Տիանժին</item>
+        <item>Տուրին</item>
+        <item>Վադուց</item>
+        <item>Վալետտա</item>
+        <item>Վերոնա</item>
+        <item>Վիկտորիա</item>
+        <item>Վիեննա</item>
+        <item>Յամուսուկրո</item>
+        <item>Յաունդե</item>
+        <item>Զագրեբ</item>
+        <item>Գուանչժոու</item>
+        <item>Կարդիֆ</item>
+        <item>Ռիջայնա</item>
+        <item>Շառլոտտա-Ամալի</item>
+        <item>Աթլանտա</item>
+        <item>Մայոտ</item>
+        <item>Սեն-Պիեռ և Միքելոն</item>
+        <item>Օսլո</item>
+        <item>Սրեդնեկոլիմսկ</item>
+        <item>Սևերո Կուրիլսկ</item>
+        <item>Ուհան</item>
+        <item>Չենդու</item>
+        <item>Սիան</item>
+        <item>Պորտ Մորսբի</item>
+        <item>Դավաո քաղաք</item>
+        <item>Չունցին</item>
+        <item>Շենյան</item>
+        <item>Նանկին</item>
+        <item>Խարբին</item>
+        <item>Խինյան</item>
+        <item>Չժենչժոու</item>
+        <item>Կունմին</item>
+        <item>Չանչուն</item>
+        <item>Ֆուչժոու</item>
+        <item>Կուչինգ</item>
+        <item>Մակասար</item>
+        <item>Հանչժոու</item>
+        <item>Ցինդաո</item>
+        <item>Նաննին</item>
+        <item>Ուռումկի</item>
+        <item>Նասաու</item>
+        <item>Նիկոսիա</item>
+        <item>Դիլի</item>
+        <item>Ռոդ Թաուն</item>
+        <item>Լոմե</item>
+        <item>Ռոզո</item>
+        <item>Լիբրևիլ</item>
+        <item>Մարսել</item>
+        <item>Մասերու</item>
+        <item>Մաջուրո</item>
+        <item>Մոնակո</item>
+        <item>Բանդար Սերի Բեգավան</item>
+        <item>Բանջուլ</item>
+        <item>Պուսան</item>
+        <item>Բուժումբուրա</item>
+        <item>Բրազավիլ</item>
+        <item>Վիենտյան</item>
+        <item>Վինդհուկ</item>
+        <item>Սարաևո</item>
+        <item>Սայպան</item>
+        <item>Սան Տոմե</item>
+        <item>Սենտ Ջորջես</item>
+        <item>Սթենլի</item>
+        <item>Ադեն</item>
+        <item>Ապիա</item>
+        <item>Անդորա-լա-Վիեխա</item>
+        <item>Էլ-Այուն</item>
+        <item>Վիլլեմստադ</item>
+        <item>Մբաբանե</item>
+        <item>Կաստրի</item>
+        <item>Կոռոր</item>
+        <item>Կանկուն</item>
+        <item>Կիգալի</item>
+        <item>Քինգսթաուն</item>
+        <item>Թել Ավիվ</item>
+        <item>Թորսհավն</item>
+        <item>Տիրանա</item>
+        <item>Թհիմփհու</item>
+        <item>Պորտո Նովո</item>
+        <item>Պրայա</item>
+        <item>Ֆրանկֆուրտ</item>
+        <item>Պրիշտինա</item>
+        <item>Համիլտոն</item>
+        <item>Հոնիարա</item>
+        <item>Պորտ-օֆ-Սփեյն</item>
+        <item>Միննեապոլիս</item>
+        <item>Հիլո</item>
+        <item>Օռլանդո</item>
+        <item>Կանզաս Սիթի</item>
+        <item>Նյու Օռլեանս</item>
+        <item>Նաշվիլ</item>
+        <item>Թուսոն</item>
+        <item>Տամպա</item>
+        <item>Ջեքսոնվիլ</item>
+        <item>Օքլահոմա Սիթի</item>
+        <item>Ալբուկերկե</item>
+        <item>Օմահա</item>
+        <item>Վիրջինիա Բիչ</item>
+        <item>Բոյսե</item>
+        <item>Դե Մոյն</item>
+        <item>Բիրմինգհեմ</item>
+        <item>Սոլթ Լեյք Սիթի</item>
+        <item>Լիթլ Ռոք</item>
+        <item>Սու Ֆոլզ</item>
+        <item>Ջեքսոն</item>
+        <item>Չարլստոն, Հարավային Կարոլինա</item>
+        <item>Ֆարգո</item>
+        <item>Բիլլինգս</item>
+        <item>Փորթլենդ, Մեն</item>
+        <item>Շայեն</item>
+        <item>Չարլստոն, Արևմտյան Վիրջինիա</item>
+        <item>Փիթսբուրգ</item>
+        <item>Գրին-Բեյ</item>
+        <item>Սենտ Լյուիս</item>
+        <item>Վալլի</item>
+        <item>UTC (Համաշխարհային կոորդինացված ժամանակ)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Աֆղանիստան</item>
+        <item>Ալժիր</item>
+        <item>Սամոա</item>
+        <item>Անտիգուա և Բարբուդա</item>
+        <item>Արգենտինա</item>
+        <item>Հայաստան</item>
+        <item>Ավստրալիա</item>
+        <item>Ադրբեջան</item>
+        <item>Բանգլադեշ</item>
+        <item>Բաշկորտոստանի Հանրապետություն</item>
+        <item>Բելառուս</item>
+        <item>Բոլիվիա</item>
+        <item>Բրազիլիա</item>
+        <item>Բուլղարիա</item>
+        <item>Կամբոջա</item>
+        <item>Կանադա</item>
+        <item>Չիլի</item>
+        <item>Չինաստան</item>
+        <item>Կոլումբիա</item>
+        <item>Չեխիայի Հանրապետություն</item>
+        <item>Կոնգոյի Հանրապետություն</item>
+        <item>Էկվադոր</item>
+        <item>Էստոնիա</item>
+        <item>Ֆինլանդիա</item>
+        <item>Ֆրանսիա</item>
+        <item>Վրաստան</item>
+        <item>Գերմանիա</item>
+        <item>Հունաստան</item>
+        <item>Հունգարիա</item>
+        <item>Հնդկաստան</item>
+        <item>Ինդոնեզիա</item>
+        <item>Իրան</item>
+        <item>Իռլանդիա</item>
+        <item>Իսրայել</item>
+        <item>Իտալիա</item>
+        <item>Ճապոնիա</item>
+        <item>Ղազախստան</item>
+        <item>Քենիա</item>
+        <item>Կիրիբատի</item>
+        <item>Լատվիա</item>
+        <item>Լիտվա</item>
+        <item>Մալայզիա</item>
+        <item>Մեքսիկա</item>
+        <item>Մոնղոլիա</item>
+        <item>Մարոկկո</item>
+        <item>Նեպալ</item>
+        <item>Նոր Զելանդիա</item>
+        <item>Պակիստան</item>
+        <item>Պերու</item>
+        <item>Ֆիլիպիններ</item>
+        <item>Լեհաստան</item>
+        <item>Պորտուգալիա</item>
+        <item>Քարտեզ</item>
+        <item>Հարավային Կորեա</item>
+        <item>Սինգապուրի Հանրապետություն</item>
+        <item>Լիբիա</item>
+        <item>Ռումինիա</item>
+        <item>Ռուսաստան</item>
+        <item>Սաուդյան Արաբիա</item>
+        <item>Սլովակիա</item>
+        <item>Հարավային Աֆրիկա</item>
+        <item>Իսպանիա</item>
+        <item>Շրի Լանկա</item>
+        <item>Շվեդիա</item>
+        <item>Տայվան</item>
+        <item>Թաիլանդ</item>
+        <item>Թունիս</item>
+        <item>Թուրքիա</item>
+        <item>ՄԱԷ</item>
+        <item>ՄԹ</item>
+        <item>Ուկրաինա</item>
+        <item>ԱՄՆ</item>
+        <item>Ուզբեկստան</item>
+        <item>Վենեսուելա</item>
+        <item>Վիետնամ</item>
+        <item>ՄԲ Վիրջ. կղզ.</item>
+        <item>Շվեյցարիա</item>
+        <item>Եգիպտոս</item>
+        <item>"Կոտ դ'Իվուար"</item>
+        <item>Գանա</item>
+        <item>Եթովպիա</item>
+        <item>Հորդանան</item>
+        <item>Նիդեռլանդներ</item>
+        <item>Մադագասկար</item>
+        <item>Թուրքմենստան</item>
+        <item>Էրիթրեա</item>
+        <item>Պարագվայ</item>
+        <item>Իրաք</item>
+        <item>Մալի</item>
+        <item>Կենտրոնաֆրիկյան Հանրապետություն</item>
+        <item>Գվադելուպա</item>
+        <item>Լիբանան</item>
+        <item>Սերբիա</item>
+        <item>Բելիզ</item>
+        <item>Ղրղզստան</item>
+        <item>Գվինեա-Բիսաու</item>
+        <item>Բարբադոս</item>
+        <item>Բելգիա</item>
+        <item>Ֆրանսիական Գվիանա</item>
+        <item>Մոլդովա</item>
+        <item>Գվինեա</item>
+        <item>Դանիա</item>
+        <item>Սենեգալ</item>
+        <item>Սիրիա</item>
+        <item>Տանզանիա</item>
+        <item>Ջիբութի</item>
+        <item>Կատար</item>
+        <item>Կամերուն</item>
+        <item>Տաջիկստան</item>
+        <item>Շոտլանդիա</item>
+        <item>Մարտինիկա</item>
+        <item>Սիեռա Լեոնե</item>
+        <item>Բոտսվանա</item>
+        <item>Գայանա</item>
+        <item>Հարավային Ջորջիա</item>
+        <item>Գվատեմալա</item>
+        <item>Սուրբ Բարդուղիմեոսի կղզի</item>
+        <item>Զիմբաբվե</item>
+        <item>Կուբա</item>
+        <item>Ուգանդա</item>
+        <item>Սուդան</item>
+        <item>Ջամայկա</item>
+        <item>Քուվեյթ</item>
+        <item>Նիգերիա</item>
+        <item>Անգոլա</item>
+        <item>Զամբիա</item>
+        <item>Լյուքսեմբուրգ</item>
+        <item>Հասարակածային Գվինեա</item>
+        <item>Մալդիվյան կղզիներ</item>
+        <item>Նիկարագուա</item>
+        <item>Բահրեյն</item>
+        <item>Մոզամբիկ</item>
+        <item>Սենտ-Մարտին</item>
+        <item>Սոմալի</item>
+        <item>Լիբերիա</item>
+        <item>Ուրուգվայ</item>
+        <item>Օման</item>
+        <item>Չադ</item>
+        <item>Նիգեր</item>
+        <item>ՄԱՎՐԻՏԱՆԻԱ</item>
+        <item>Նոր Կալեդոնիա</item>
+        <item>Տոնգա</item>
+        <item>Գրենլանդիա</item>
+        <item>Բուրկինա Ֆասո</item>
+        <item>Պանամա</item>
+        <item>Սուրինամ</item>
+        <item>Մոնտենեգրո</item>
+        <item>Մաուրիտիուս</item>
+        <item>Հայիթի</item>
+        <item>Կորեայի Ժողովրդադեմոկրատական Հանրապետություն</item>
+        <item>Մյանմար</item>
+        <item>Իսլանդիա</item>
+        <item>Ռեյունիոն կղզի</item>
+        <item>Կոստա Ռիկա</item>
+        <item>Պուերտո Ռիկո</item>
+        <item>Սալվադոր</item>
+        <item>Եմեն</item>
+        <item>Դոմինիկյան Հանրապետություն</item>
+        <item>ՄԱԿԵԴՈՆԻԱ</item>
+        <item>Ֆիջի</item>
+        <item>Ֆրանսիական Պոլինեզիա</item>
+        <item>Հոնդուրաս</item>
+        <item>Լիխտենշտեյն</item>
+        <item>Մալթա</item>
+        <item>Սեյշելյան կղզիներ</item>
+        <item>Ավստրիա</item>
+        <item>Խորվաթիա</item>
+        <item>Ուելս</item>
+        <item>ԱՄՆ Վրջ. կ.</item>
+        <item>Սլովենիա</item>
+        <item>Սան Մարինո</item>
+        <item>Նորվեգիա</item>
+        <item>Պապուա Նոր Գվինեա</item>
+        <item>Բահամյան կղզիներ</item>
+        <item>Կիպրոս</item>
+        <item>Արևելյան Թիմոր</item>
+        <item>Տոգո</item>
+        <item>Դոմինիկա</item>
+        <item>Գաբոն</item>
+        <item>Լեսոտո</item>
+        <item>Մարշալյան կղզիներ</item>
+        <item>Մոնակո</item>
+        <item>Բրունեյ</item>
+        <item>Գամբիա</item>
+        <item>Բուրունդի</item>
+        <item>Կոնգոյի Ժողովրդ. Հանրապետություն</item>
+        <item>Լաոս</item>
+        <item>Նամիբիա</item>
+        <item>Բոսնիա և Հերցեգովինա</item>
+        <item>Սայպան</item>
+        <item>Սան Տոմե և Պրինսիպի</item>
+        <item>Գրենադա</item>
+        <item>Ֆոլկլենդյան կղզիներ</item>
+        <item>Ամերիկյան Սամոա</item>
+        <item>Անդորա</item>
+        <item>Սահարայի հանրապետություն</item>
+        <item>Կյուրասաո</item>
+        <item>Էսվաթինի</item>
+        <item>Սենտ Լյուսիա</item>
+        <item>Պալաու</item>
+        <item>Ռուանդա</item>
+        <item>Սենտ Վինսենտ և Գրենադիններ</item>
+        <item>Ֆարերյան կղզիներ</item>
+        <item>Ալբանիա</item>
+        <item>Բութան</item>
+        <item>Բենին</item>
+        <item>Կաբո-Վերդե</item>
+        <item>Կոսովո</item>
+        <item>Բերմուդյան կղզիներ</item>
+        <item>Սողոմոնի կղզիներ</item>
+        <item>Թայվան, Չինաստան</item>
+        <item>Տրինիդադ և Տոբագո</item>
+        <item>Անգիլիա</item>
+        <item>UTC (Համաշխարհային կոորդինացված ժամանակ)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Ազդանշանը դրվել է այս պահից սկսած 1 րոպեի համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %2$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s և %2$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %2$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s, %2$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %s:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s և %2$s:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s, %2$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s և %2$s:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s, %2$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s, %2$s և %3$s համար:</item>
+        <item>Ազդանշանը դրվել է այս պահից սկսած %1$s, %2$s, %3$s և %4$s:</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

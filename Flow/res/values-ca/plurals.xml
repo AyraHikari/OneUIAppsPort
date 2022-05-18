@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">"%d fitxers s'han afegit a la llista de transferència de fitxers."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"%d fitxer s'ha afegit a la llista de transferència de fitxers."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Registra i gestiona fins a %d ordinadors o tablets a Samsung Flow.
+
+Només es pot connectar un ordinador o una tablet al teu telèfon simultàniament. Hauràs de triar-ne un quan els ordinadors o les tablets registrats intentin connectar-se al teu telèfon."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Registra i gestiona fins a %d ordinador o tablet a Samsung Flow.
+
+Només es pot connectar un ordinador o una tablet al teu telèfon simultàniament. Hauràs de triar-ne un quan els ordinadors o les tablets registrats intentin connectar-se al teu telèfon."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

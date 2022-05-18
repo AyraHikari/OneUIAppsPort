@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_snooze_btn_horizontal_margin">5.3299866dip</dimen>
+    <dimen name="alert_sliding_tab_dismiss_button_width">21.329987dip</dimen>
+    <dimen name="alert_sliding_tab_stripe_button_diameter">42.659973dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_button_height">38.51999dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_button_margin_top_bottom">33.169983dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_content_area_padding_bottom">25.679993dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_content_area_padding_end">21.399994dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_content_area_padding_top">27.819977dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_content_area_width">533.0dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_control_area_width">308.15625dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_icon_size">42.799988dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_margin_end">13.909973dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_snooze_button_margin_end">17.119995dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_snooze_button_margin_start">6.419983dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_toast_area_width">761.83594dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_toast_text_margin_right">13.909973dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_toast_text_size">16.049988dip</dimen>
+    <dimen name="pebble_stripe_cover_alert_width">104.859985dip</dimen>
+    <dimen name="stripe_alert_sliding_middle_circle_diameter">101.649994dip</dimen>
+    <dimen name="stripe_alert_sliding_outer_circle_diameter">101.649994dip</dimen>
+    <dimen name="stripe_cover_alert_dismiss_size">101.649994dip</dimen>
+    <dimen name="stripe_divider_margin_bottom">12.799988dip</dimen>
+    <dimen name="stripe_view_alarm_ampm_text_size">19.199982dip</dimen>
+    <dimen name="stripe_view_alarm_name_size">19.199982dip</dimen>
+    <dimen name="timer_common_preset_item_name_textsize">13.0sp</dimen>
+    <dimen name="timer_common_preset_item_time_textsize">15.0sp</dimen>
+    <dimen name="timer_common_timepicker_bg_width">329.0dip</dimen>
+    <dimen name="stripe_alert_control_view_right_margin">43.72998dip</dimen>
+    <dimen name="timer_stripe_alert_dismiss_margin_start">5.3299866dip</dimen>
+    <dimen name="stripe_cover_alert_dismiss_padding">11.769989dip</dimen>
+    <dimen name="stripe_cover_alert_dismiss_width_height">42.799988dip</dimen>
+</resources>

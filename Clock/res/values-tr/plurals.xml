@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarm %d gün sonra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm %d gün sonra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarm %d saat sonra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm %d saat sonra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">%d saat 1 dakika içinde alarm</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d saat 1 dakika içinde alarm</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarm %d dakika sonra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm %d dakika sonra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d dakika sonra</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dakika sonra</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">En fazla %d alarm eklenebilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d alarm eklenebilir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d dakika</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dakika</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%d arka plan silinsin mi?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d arka plan silinsin mi?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d yeni bildirim</item>
+        <item quantity="one">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d seçili</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d seçili</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d dakika önce</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dakika önce</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s ve %3$d diğer</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s ve %3$d diğer</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Uyku süresi: %d saat</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uyku süresi: %d saat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Uyku süresi: %d dakika</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Uyku süresi: %d dakika</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d dakika duraklat</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dakika duraklat</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Eksi %d dakika</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Eksi %d dakika</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Artı %d dakika</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Artı %d dakika</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">En fazla %d önayarlı zamanlayıcı eklenebilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d önayarlı zamanlayıcı eklenebilir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">En fazla %d şehir eklenebilir.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">En fazla %d şehir eklenebilir.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

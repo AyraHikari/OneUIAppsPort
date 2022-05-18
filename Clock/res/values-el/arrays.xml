@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Μίντγουεϊ</item>
+        <item>Χονολουλού</item>
+        <item>Χαβάη</item>
+        <item>Αλάσκα</item>
+        <item>Άνκορατζ</item>
+        <item>Σαν Φρανσίσκο</item>
+        <item>Βανκούβερ</item>
+        <item>Σιάτλ</item>
+        <item>Λος Άντζελες</item>
+        <item>Τιχουάνα</item>
+        <item>Κάλγκαρι</item>
+        <item>Φοίνιξ</item>
+        <item>Μαζατλάν</item>
+        <item>Ντένβερ</item>
+        <item>Μεξικό</item>
+        <item>Γουίνιπεγκ</item>
+        <item>Ντιέγκο Γκαρσία</item>
+        <item>Ντάλλας</item>
+        <item>Σικάγο</item>
+        <item>Τορόντο</item>
+        <item>Μαϊάμι</item>
+        <item>Λίμα</item>
+        <item>Κίτο</item>
+        <item>Ουάσινγκτον DC</item>
+        <item>Οτάβα</item>
+        <item>Νέα Υόρκη</item>
+        <item>Μπογκοτά</item>
+        <item>Σαντιάγο</item>
+        <item>Λα Παζ</item>
+        <item>Καράκας</item>
+        <item>Μπουένος Άιρες</item>
+        <item>Νέα Γη</item>
+        <item>Σεντ Τζον</item>
+        <item>Σάο Πάολο</item>
+        <item>Μπραζίλια</item>
+        <item>Ρίο ντε Τζανέιρο</item>
+        <item>Φερνάντο ντε Νορόνια</item>
+        <item>Αζόρες</item>
+        <item>Λισσαβόνα</item>
+        <item>Κασαμπλάνκα</item>
+        <item>Δουβλίνο</item>
+        <item>Ραμπάτ</item>
+        <item>Μαδρίτη</item>
+        <item>The settlement</item>
+        <item>Λονδίνο</item>
+        <item>Κίνγκστον</item>
+        <item>Βαρκελώνη</item>
+        <item>Παρίσι</item>
+        <item>Αλγέρι</item>
+        <item>Τύνιδα</item>
+        <item>Τρίπολη</item>
+        <item>Βερολίνο</item>
+        <item>Ρώμη</item>
+        <item>Πράγα</item>
+        <item>Κινσάσα</item>
+        <item>Στοκχόλμη</item>
+        <item>Μπρατισλάβα</item>
+        <item>Κέιπ Τάουν</item>
+        <item>Βουδαπέστη</item>
+        <item>Βαρσοβία</item>
+        <item>Καλίνινγκραντ</item>
+        <item>Σόφια</item>
+        <item>Αθήνα</item>
+        <item>Λβιβ</item>
+        <item>Ελσίνκι</item>
+        <item>Ρίγα</item>
+        <item>Ταλίν</item>
+        <item>Βουκουρέστι</item>
+        <item>Βίλνιους</item>
+        <item>Λουμπουμπάσι</item>
+        <item>Μίνσκ</item>
+        <item>Αγία Πετρούπολη</item>
+        <item>Κωνσταντινούπολη</item>
+        <item>Καμτσάτκα</item>
+        <item>Κίεβο</item>
+        <item>Ιερουσαλήμ</item>
+        <item>Μόσχα</item>
+        <item>Καρκίβ</item>
+        <item>Ναϊρόμπι</item>
+        <item>Τζέντα</item>
+        <item>Βολγκογκράντ</item>
+        <item>Ερεβάν</item>
+        <item>Τιφλίδα</item>
+        <item>Μπακού</item>
+        <item>Τσιτά</item>
+        <item>Σαμάρα</item>
+        <item>Τεχεράνη</item>
+        <item>Ιζέβσκ</item>
+        <item>Άμπου Ντάμπι</item>
+        <item>Ντουμπάι</item>
+        <item>Ούφα</item>
+        <item>Εκατέρινμπουργκ</item>
+        <item>Τσελιάμπινσκ</item>
+        <item>Καράτσι</item>
+        <item>Καμπούλ</item>
+        <item>Τασκένδη</item>
+        <item>Ισλαμαμπάντ</item>
+        <item>Μουμπάι</item>
+        <item>Ομσκ</item>
+        <item>Άλμα Άτα</item>
+        <item>Μπανγκαλόρ</item>
+        <item>Χιντεραμπάντ</item>
+        <item>Νέο Δελχί</item>
+        <item>Κολόμπο</item>
+        <item>Τσενάι</item>
+        <item>Νοβοσιμπίρσκ</item>
+        <item>Κατμαντού</item>
+        <item>Νοβοκουζνέτσκ</item>
+        <item>Κολκάτα</item>
+        <item>Ντάκα</item>
+        <item>Χοβντ</item>
+        <item>Κρασνογιάρσκ</item>
+        <item>Μπανγκόκ</item>
+        <item>Κουάλα Λουμπούρ</item>
+        <item>Σιγκαπούρη</item>
+        <item>Ιρκούτσκ</item>
+        <item>Πνομ Πενχ</item>
+        <item>Ανόι</item>
+        <item>Τζακάρτα</item>
+        <item>Ουλάν Μπατόρ</item>
+        <item>Χονγκ Κονγκ</item>
+        <item>Περθ</item>
+        <item>Πεκίνο</item>
+        <item>Μανίλα</item>
+        <item>Ταϊπέι</item>
+        <item>Σεούλ</item>
+        <item>Άμπον</item>
+        <item>Βλαδιβοστόκ</item>
+        <item>Γιακούτσκ</item>
+        <item>Χαμπάροβσκ</item>
+        <item>Αδελαΐδα</item>
+        <item>Τόκυο</item>
+        <item>Γιούζνο-Σάκαλινσκ</item>
+        <item>Χάλιφαξ</item>
+        <item>Γκουάμ</item>
+        <item>Καμπέρα</item>
+        <item>Μαγκαντάν</item>
+        <item>Σίδνεϋ</item>
+        <item>Πετροπαβλόσκ-Καμτσατσκί</item>
+        <item>Ταράουα</item>
+        <item>Όκλαντ</item>
+        <item>Ουέλινγκτον</item>
+        <item>Πάγκο Πάγκο</item>
+        <item>Ντενπασάρ</item>
+        <item>Βέρνη</item>
+        <item>Ζυρίχη</item>
+        <item>Κάιρο</item>
+        <item>Αμπιτζάν</item>
+        <item>Άκρα</item>
+        <item>Αντίς Αμπέμπα</item>
+        <item>Αμμάν</item>
+        <item>Άμστερνταμ</item>
+        <item>Ανάντιρ</item>
+        <item>Άγκυρα</item>
+        <item>Ανταναναρίβο</item>
+        <item>Ασγκαμπάτ</item>
+        <item>Ασμάρα</item>
+        <item>Αστάνα</item>
+        <item>Ασουνσιόν</item>
+        <item>Ώστιν</item>
+        <item>Βαγδάτη</item>
+        <item>Βαλτιμόρη</item>
+        <item>Μπαμάκο</item>
+        <item>Μπανγκούι</item>
+        <item>Μπάρι</item>
+        <item>Μπας-Τερ</item>
+        <item>Βηρυτός</item>
+        <item>Βελιγράδι</item>
+        <item>Πόλη Μπελίζε</item>
+        <item>Μπισκέκ</item>
+        <item>Μπισσάου</item>
+        <item>Μπολόνια</item>
+        <item>Βοστώνη</item>
+        <item>Μπρίτζταουν</item>
+        <item>Μπρίσμπεϊν</item>
+        <item>Βρυξέλλες</item>
+        <item>Κανάρια Νησιά</item>
+        <item>Καταντζάρο</item>
+        <item>Καγιέν</item>
+        <item>Σαρλότ</item>
+        <item>Κισινάου</item>
+        <item>Κλήβελαντ</item>
+        <item>Κολόμπους</item>
+        <item>Κονακρί</item>
+        <item>Κοπεγχάγη</item>
+        <item>Κορκ</item>
+        <item>Κρότωνας</item>
+        <item>Ντακάρ</item>
+        <item>Δαμασκός</item>
+        <item>Νταρ Ες Σαλάμ</item>
+        <item>Ντάργουιν</item>
+        <item>Ντιτρόιτ</item>
+        <item>Τζιμπουτί</item>
+        <item>Ντόχα</item>
+        <item>Ντουάλα</item>
+        <item>Ντουσανμπέ</item>
+        <item>Νησί του Πάσχα</item>
+        <item>Εδιμβούργο</item>
+        <item>Ελ Πάσο</item>
+        <item>Φλωρεντία</item>
+        <item>Φορ ντε Φρανς</item>
+        <item>Φριτάουν</item>
+        <item>Καμπορόνε</item>
+        <item>Νησιά Γκαλαπάγκος</item>
+        <item>Γενεύη</item>
+        <item>Γένοβα</item>
+        <item>Τζορτζτάουν</item>
+        <item>Γκρυτβίκεν</item>
+        <item>Γουατεμάλα Σίτυ</item>
+        <item>Γουστάβια</item>
+        <item>Αμβούργο</item>
+        <item>Χαράρε</item>
+        <item>Αβάνα</item>
+        <item>Χόμπαρτ</item>
+        <item>Χιούστον</item>
+        <item>Ιντιανάπολις</item>
+        <item>Γιοχάνεσμπουργκ</item>
+        <item>Καμπάλα</item>
+        <item>Χαρτούμ</item>
+        <item>Κίνγκστον</item>
+        <item>Πόλη του Κουβέιτ</item>
+        <item>Λάγος</item>
+        <item>Λας Βέγκας</item>
+        <item>Λουμπλιάνα</item>
+        <item>Χαϊκού</item>
+        <item>Λούισβιλ</item>
+        <item>Λουάντα</item>
+        <item>Λουσάκα</item>
+        <item>Λουξεμβούργο</item>
+        <item>Μακάο</item>
+        <item>Μαλάμπο</item>
+        <item>Μαλέ</item>
+        <item>Μανάγκουα</item>
+        <item>Μανάμα</item>
+        <item>Μαπούτο</item>
+        <item>Μαριγκότ</item>
+        <item>Μέκκα</item>
+        <item>Μελβούρνη</item>
+        <item>Μέμφις</item>
+        <item>Μεσίνα</item>
+        <item>Μιλάνο</item>
+        <item>Μιλγουόκι</item>
+        <item>Μογκαντίσου</item>
+        <item>Μονρόβια</item>
+        <item>Μοντεβιδέο</item>
+        <item>Μόντρεαλ</item>
+        <item>Μόναχο</item>
+        <item>Μουσκάτ</item>
+        <item>Νάπολη</item>
+        <item>Νάτερς</item>
+        <item>Ντζαμένα</item>
+        <item>Νιαμέι</item>
+        <item>Νουακτσότ</item>
+        <item>Νουμέα</item>
+        <item>Νουκουαλόφα</item>
+        <item>Νουούκ</item>
+        <item>Οσάκα</item>
+        <item>Ουαγκαντουγκού</item>
+        <item>Παλέρμο</item>
+        <item>Πόλη του Παναμά</item>
+        <item>Παραμαρίμπο</item>
+        <item>Περμ</item>
+        <item>Φιλαδέλφεια</item>
+        <item>Ποντγκόριτσα</item>
+        <item>Πόντα Ντελγάδα</item>
+        <item>Πορ Λουί</item>
+        <item>Πορτ-ο-Πρενς</item>
+        <item>Πόρτλαντ, Όρεγκον</item>
+        <item>Πιονγκγιάνγκ</item>
+        <item>Γιανγκόν</item>
+        <item>Ρεσίφε</item>
+        <item>Ρέυκιαβικ</item>
+        <item>Ριάντ</item>
+        <item>Σαιν Ντενί</item>
+        <item>Σαν Αντόνιο</item>
+        <item>Σαν Ντιέγκο</item>
+        <item>Σαν Χοσέ</item>
+        <item>Σαν Χοσέ</item>
+        <item>Σαν Χουάν</item>
+        <item>Άγιος Μαρίνος</item>
+        <item>Σαν Σαλβαδόρ</item>
+        <item>Σανάα</item>
+        <item>Άγιος Δομίνικος</item>
+        <item>Σαγκάη</item>
+        <item>Σεντσέν</item>
+        <item>Σκόπια</item>
+        <item>Σεντ Τζον</item>
+        <item>Σούβα</item>
+        <item>Ταϊτή</item>
+        <item>Τεγκουσιγκάλπα</item>
+        <item>Πόλη Χο Τσι Μινχ</item>
+        <item>Τιενζίν</item>
+        <item>Τορίνο</item>
+        <item>Βαντούζ</item>
+        <item>Βαλέτα</item>
+        <item>Βερόνα</item>
+        <item>Βικτόρια</item>
+        <item>Βιέννη</item>
+        <item>Γιαμουσσούκρο</item>
+        <item>Γιαουντέ</item>
+        <item>Ζάγκρεμπ</item>
+        <item>Γκουανγκζού</item>
+        <item>Κάρντιφ</item>
+        <item>Ρετζίνα</item>
+        <item>Σαρλότ Αμαλί</item>
+        <item>Ατλάντα</item>
+        <item>Μαγιότ</item>
+        <item>Σεν Πιερ και Μικελόν</item>
+        <item>Όσλο</item>
+        <item>Srednekolymsk</item>
+        <item>Severo-Kurilsk</item>
+        <item>Γιουχάν</item>
+        <item>Τσενγκντού</item>
+        <item>Ξιάν</item>
+        <item>Πορτ Μόρεσμπι</item>
+        <item>Νταβάο Σίτυ</item>
+        <item>Τσονγκίνγκ</item>
+        <item>Σενγιάνγκ</item>
+        <item>Ναντζίνγκ</item>
+        <item>Χάρμπιν</item>
+        <item>Τζιϊνάν</item>
+        <item>Ζενγκζού</item>
+        <item>Κουνμίνγκ</item>
+        <item>Τσανγκτσούν</item>
+        <item>Φουζού</item>
+        <item>Κουτσίνγκ</item>
+        <item>Μακάσαρ</item>
+        <item>Χανγκζού</item>
+        <item>Κινγκντάο</item>
+        <item>Νανίνγκ</item>
+        <item>Ουρούμτσι</item>
+        <item>Νασσάου</item>
+        <item>Λευκωσία</item>
+        <item>Ντίλι</item>
+        <item>Ρόουντ Τάουν</item>
+        <item>Λομέ</item>
+        <item>Ροσώ</item>
+        <item>Λιμπρεβίλ</item>
+        <item>Μασσαλία</item>
+        <item>Μασερού</item>
+        <item>Ματζούρο</item>
+        <item>Μονακό</item>
+        <item>Μπαντάρ Σερί Μπεγκαγουάν</item>
+        <item>Μπανζούλ</item>
+        <item>Μπουσάν</item>
+        <item>Μπουζουμπούρα</item>
+        <item>Μπραζαβίλ</item>
+        <item>Βιεντιάνε</item>
+        <item>Γουίντχουκ</item>
+        <item>Σεράγεβο</item>
+        <item>Σαϊπάν</item>
+        <item>Σάο Τομέ</item>
+        <item>Άγ. Γεώργιος</item>
+        <item>Στάνλεϊ</item>
+        <item>Άντεν</item>
+        <item>Άπια</item>
+        <item>Ανδόρρα λα Βέγια</item>
+        <item>Λααγιούνε</item>
+        <item>Βίλλεμσταντ</item>
+        <item>Μπαμπάνε</item>
+        <item>Κάστρις</item>
+        <item>Κορόρ</item>
+        <item>Κανκούν</item>
+        <item>Κιγκάλι</item>
+        <item>Κίνγκσταουν</item>
+        <item>Τελ Αβίβ</item>
+        <item>Τόρσχαβν</item>
+        <item>Τίρανα</item>
+        <item>Θίμφου</item>
+        <item>Πόρτο-Νόβο</item>
+        <item>Πράια</item>
+        <item>Φρανκφούρτη</item>
+        <item>Πρίστινα</item>
+        <item>Χάμιλτον</item>
+        <item>Ονιάρα</item>
+        <item>Πορτ οφ Σπέιν</item>
+        <item>Μινεάπολις</item>
+        <item>Χίλο</item>
+        <item>Ορλάντο</item>
+        <item>Κάνσας Σίτυ</item>
+        <item>Νέα Ορλεάνη</item>
+        <item>Νάσβιλ</item>
+        <item>Τουσόν</item>
+        <item>Τάμπα</item>
+        <item>Τζάκσονβιλ</item>
+        <item>Οκλαχόμα Σίτι</item>
+        <item>Αλμπουκέρκι</item>
+        <item>Ομάχα</item>
+        <item>Βιρτζίνια Μπιτς</item>
+        <item>Μπόιζ</item>
+        <item>Ντε Μόιν</item>
+        <item>Μπέρμινχαμ</item>
+        <item>Σολτ Λέικ Σίτι</item>
+        <item>Λιτλ Ροκ</item>
+        <item>Σιου Φολς</item>
+        <item>Τζάκσον</item>
+        <item>Τσάρλεστον, Νότια Καρολίνα</item>
+        <item>Φάργκο</item>
+        <item>Μπίλινγκς</item>
+        <item>Πόρτλαντ, Μέιν</item>
+        <item>Σεγιέν</item>
+        <item>Τσάρλεστον, Δυτική Βιρτζίνια</item>
+        <item>Πίτσμπουργκ</item>
+        <item>Γκριν Μπέι</item>
+        <item>Σεντ Λούις</item>
+        <item>Δε Βάλεϊ</item>
+        <item>UTC (Συντονισμένη Παγκόσμια Ώρα)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Αφγανιστάν</item>
+        <item>Αλγερία</item>
+        <item>Σαμόα</item>
+        <item>Αντίγκουα και Μπαρμπούντα</item>
+        <item>Αργεντινή</item>
+        <item>Αρμενία</item>
+        <item>Αυστραλία</item>
+        <item>Αζερμπαϊτζάν</item>
+        <item>Μπανγκλαντές</item>
+        <item>Δημοκρατία του Μπασκορτοστάν</item>
+        <item>Λευκορωσία</item>
+        <item>Βολιβία</item>
+        <item>Βραζιλία</item>
+        <item>Βουλγαρία</item>
+        <item>Καμπότζη</item>
+        <item>Καναδάς</item>
+        <item>Χιλή</item>
+        <item>Κίνα</item>
+        <item>Κολομβία</item>
+        <item>Δημοκρατία της Τσεχίας</item>
+        <item>Δημοκρατία του Κονγκό</item>
+        <item>Ισημερινός</item>
+        <item>Εσθονία</item>
+        <item>Φινλανδία</item>
+        <item>Γαλλία</item>
+        <item>Γεωργία</item>
+        <item>Γερμανία</item>
+        <item>Ελλάδα</item>
+        <item>Ουγγαρία</item>
+        <item>Ινδία</item>
+        <item>Ινδονησία</item>
+        <item>Ιράν</item>
+        <item>Ιρλανδία</item>
+        <item>Ισραήλ</item>
+        <item>Ιταλία</item>
+        <item>Ιαπωνία</item>
+        <item>Καζακστάν</item>
+        <item>Κένυα</item>
+        <item>Κιριμπάτι</item>
+        <item>Λετονία</item>
+        <item>Λιθουανία</item>
+        <item>Μαλαισία</item>
+        <item>Μεξικό</item>
+        <item>Μογγολία</item>
+        <item>Μαρόκο</item>
+        <item>Νεπάλ</item>
+        <item>Νέα Ζηλανδία</item>
+        <item>Πακιστάν</item>
+        <item>Περού</item>
+        <item>Φιλιππίνες</item>
+        <item>Πολωνία</item>
+        <item>Πορτογαλία</item>
+        <item>Χάρτης</item>
+        <item>Νότια Κορέα</item>
+        <item>Δημοκρατία της Σιγκαπούρης</item>
+        <item>Λιβύη</item>
+        <item>Ρουμανία</item>
+        <item>Ρωσία</item>
+        <item>Σαουδική Αραβία</item>
+        <item>Σλοβακία</item>
+        <item>Νότια Αφρική</item>
+        <item>Ισπανία</item>
+        <item>Σρι Λάνκα</item>
+        <item>Σουηδία</item>
+        <item>Ταϊβάν</item>
+        <item>Ταϊλάνδη</item>
+        <item>Τυνησία</item>
+        <item>Τουρκία</item>
+        <item>UAE</item>
+        <item>ΗΒ</item>
+        <item>Ουκρανία</item>
+        <item>Η.Π.Α.</item>
+        <item>Ουζμπεκιστάν</item>
+        <item>Βενεζουέλα</item>
+        <item>Βιετνάμ</item>
+        <item>Παρθ. Νήσοι</item>
+        <item>Ελβετία</item>
+        <item>Αίγυπτος</item>
+        <item>Ακτή Ελεφαντοστού</item>
+        <item>Γκάνα</item>
+        <item>Αιθιοπία</item>
+        <item>Ιορδανία</item>
+        <item>Ολλανδία</item>
+        <item>Μαγαδασκάρη</item>
+        <item>Τουρκμενιστάν</item>
+        <item>Ερυθραία</item>
+        <item>Παραγουάη</item>
+        <item>Ιράκ</item>
+        <item>Μάλι</item>
+        <item>Κεντροαφρικανική Δημοκρατία</item>
+        <item>Γουαδελούπη</item>
+        <item>Λίβανος</item>
+        <item>Σερβία</item>
+        <item>Μπελίζ</item>
+        <item>Κιργκιστάν</item>
+        <item>Γουινέα Μπισσάου</item>
+        <item>Μπαρμπέιντος</item>
+        <item>Βέλγιο</item>
+        <item>Γαλλική Γουιάνα</item>
+        <item>Μολδαβία</item>
+        <item>Γουϊνέα</item>
+        <item>Δανία</item>
+        <item>Σενεγάλη</item>
+        <item>Συρία</item>
+        <item>Τανζανία</item>
+        <item>Τζιμπουτί</item>
+        <item>Κατάρ</item>
+        <item>Καμερούν</item>
+        <item>Τατζικιστάν</item>
+        <item>Σκωτία</item>
+        <item>Μαρτινίκα</item>
+        <item>Σιέρρα Λεόνε</item>
+        <item>Μποτσουάνα</item>
+        <item>Γουιάνα</item>
+        <item>Νότια Γεωργία</item>
+        <item>Γουατεμάλα</item>
+        <item>Άγιος Βαρθολομαίος</item>
+        <item>Ζιμπάμπουε</item>
+        <item>Κούβα</item>
+        <item>Ουγκάντα</item>
+        <item>Σουδάν</item>
+        <item>Τζαμάικα</item>
+        <item>Κουβέιτ</item>
+        <item>Νιγηρία</item>
+        <item>Αγκόλα</item>
+        <item>Ζάμπια</item>
+        <item>Λουξεμβούργο</item>
+        <item>Ισημερινή Γουινέα</item>
+        <item>Μαλβίδες</item>
+        <item>Νικαράγουα</item>
+        <item>Μπαχρέιν</item>
+        <item>Μοζαμβίκη</item>
+        <item>Άγιος Μαρτίνος</item>
+        <item>Σομαλία</item>
+        <item>Λιβερία</item>
+        <item>Ουρουγουάη</item>
+        <item>Ομάν</item>
+        <item>Τσαντ</item>
+        <item>Νίγηρας</item>
+        <item>Μαυριτανία</item>
+        <item>Νέα Καληδονία</item>
+        <item>Τόνγκα</item>
+        <item>Γροιλανδία</item>
+        <item>Μπουργκίνα Φάσο</item>
+        <item>Παναμάς</item>
+        <item>Σουρινάμ</item>
+        <item>Μαυροβούνιο</item>
+        <item>Μαυρίκιος</item>
+        <item>Αϊτή</item>
+        <item>Λαϊκή Δημοκρατία της Κορέας</item>
+        <item>Μιανμάρ</item>
+        <item>Ισλανδία</item>
+        <item>Ρεϊνιόν</item>
+        <item>Κόστα Ρίκα</item>
+        <item>Πουέρτο Ρίκο</item>
+        <item>Ελ Σαλβαδόρ</item>
+        <item>Υεμένη</item>
+        <item>Δομινικανή Δημοκρατία</item>
+        <item>ΠΓΔΜ</item>
+        <item>Φίτζι</item>
+        <item>Γαλλική Πολυνησία</item>
+        <item>Ονδούρα</item>
+        <item>Λιχτενστάιν</item>
+        <item>Μάλτα</item>
+        <item>Σεϋχέλλες</item>
+        <item>Αυστρία</item>
+        <item>Κροατία</item>
+        <item>Ουαλία</item>
+        <item>US Vrgn Is.</item>
+        <item>Σλοβενία</item>
+        <item>Άγιος Μαρίνος</item>
+        <item>Νορβηγία</item>
+        <item>Παπούα Νέα Γουινέα</item>
+        <item>Μπαχάμες</item>
+        <item>Κύπρος</item>
+        <item>Τιμόρ-Λέστε</item>
+        <item>Τόγκο</item>
+        <item>Ντομίνικα</item>
+        <item>Γκαμπόν</item>
+        <item>Λεσόθο</item>
+        <item>Νήσοι Μάρσαλ</item>
+        <item>Μονακό</item>
+        <item>Μπρουνέι</item>
+        <item>Γκάμπια</item>
+        <item>Μπουρούντι</item>
+        <item>Λαϊκή Δημοκρατία του Κονγκό</item>
+        <item>Λάος</item>
+        <item>Ναμίμπια</item>
+        <item>Βοσνία και Ερζεγοβίνη</item>
+        <item>Σαϊπάν</item>
+        <item>Σάο Τομέ και Πρίνσιπε</item>
+        <item>Γρενάδα</item>
+        <item>Νήσοι Φώλκλαντ</item>
+        <item>Αμερικανική Σαμόα</item>
+        <item>Ανδόρα</item>
+        <item>Δημοκρατία του Σαχράουι</item>
+        <item>Κουρασάο</item>
+        <item>Εσουατίνι</item>
+        <item>Αγία Λουκία</item>
+        <item>Παλάου</item>
+        <item>Ρουάντα</item>
+        <item>Άγιος Βικέντιος και Γρεναδίνες</item>
+        <item>Νήσοι Φερόε</item>
+        <item>Αλβανία</item>
+        <item>Μπουτάν</item>
+        <item>Μπενίν</item>
+        <item>Πράσινο Ακρωτήριο</item>
+        <item>Κόσοβο</item>
+        <item>Βερμούδες</item>
+        <item>Νήσοι Σολομώντα</item>
+        <item>Ταϊβάν, Κίνα</item>
+        <item>Τρινιντάντ και Τομπάγκο</item>
+        <item>Ανγκουίλα</item>
+        <item>UTC (Συντονισμένη Παγκόσμια Ώρα)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Το ξυπνητήρι ορίστηκε σε 1 λεπτό από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %2$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s και %2$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %2$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s, %2$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s και %2$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s, %2$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s και %2$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s, %2$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s, %2$s και %3$s από τώρα.</item>
+        <item>Το ξυπνητήρι ορίστηκε σε %1$s, %2$s, %3$s και %4$s από τώρα.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

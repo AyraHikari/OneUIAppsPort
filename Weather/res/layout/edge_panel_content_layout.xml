@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/edge_over_loading" android:tag="layout/edge_panel_content_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/edge_panel" android:tag="binding_1" android:background="@color/col_def_edge_panel_bg_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/edge_weather_panel_side_padding" android:paddingEnd="@dimen/edge_weather_panel_side_padding">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="binding_2" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/bottom_area" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="@integer/edge_content_area_bias">
+            <include layout="@layout/edge_panel_weather_area" />
+            <include layout="@layout/edge_panel_temp_area" />
+            <include layout="@layout/edge_panel_alert_area" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bottom_area" android:tag="binding_3" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <include layout="@layout/edge_panel_index_area" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

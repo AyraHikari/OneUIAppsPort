@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:maxWidth="@dimen/edge_weather_current_location_icon_size" android:maxHeight="@dimen/edge_weather_current_location_icon_size">
+            <bitmap android:src="@drawable/weather_detail_ic_location_mtrl" android:tint="@color/col_edge_help_item_text_color" android:autoMirrored="true" />
+        </rotate>
+    </item>
+</layer-list>

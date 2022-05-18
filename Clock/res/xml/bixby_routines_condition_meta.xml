@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conditions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <condition category="clock" icon="@drawable/ic_routines_ic_dismissed_alarm" label="@string/bixby_routine_selected_alarms_dismissed" tag="alarms_dismissed" triggerType="event">
+        <configuration targetUi="com.sec.android.app.clockpackage/.bixbyroutine.activity.BixbyRoutineAlarmActivity">
+            <parameters>
+                <parameter key="alarm_uuids" name="routine.alarm.uuids" type="STRING" />
+            </parameters>
+        </configuration>
+    </condition>
+</conditions>

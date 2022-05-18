@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flowapp="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_ab_clipboard_off" android:id="@id/menu_clipboard" android:visible="false" android:title="@string/clipboard_on" flowapp:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_ab_hotspot_off" android:id="@id/menu_enableHotspot" android:visible="true" android:title="@string/menu_enable_hotspot" flowapp:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_ab_smartview" android:id="@id/menu_smart_view" android:title="@string/menu_smart_view" flowapp:showAsAction="always" />
+    <item android:id="@id/menu_delete" android:visible="false" android:title="@string/cancel_all" flowapp:showAsAction="ifRoom" />
+    <item android:id="@id/menu_connect_to_pc" android:title="@string/connect_to_computer" />
+    <item android:id="@id/menu_connect_to_new_phone" android:title="@string/connect_to_new_phone" />
+    <item android:id="@id/menu_add_app_from_phone" android:visible="false" android:title="@string/add_app_from_phone" />
+    <item android:id="@id/menu_settings" android:title="@string/settings" />
+    <item android:id="@id/menu_contact_us" android:title="@string/help_contact_us" />
+</menu>

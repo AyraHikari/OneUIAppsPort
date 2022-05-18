@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/common_spinner_text_size" android:textColor="@color/primary_menu_color" android:ellipsize="end" android:id="@id/timezone_convertor_spinner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/worldclock_timezone_convertor_spinner_header_padding_start" style="?android:spinnerItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

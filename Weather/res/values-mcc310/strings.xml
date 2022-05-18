@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_cp_type">TWC</string>
+    <string name="refresh_period">2</string>
+    <string name="temp_unit">0</string>
+    <string name="us_vendor">1</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/AppTheme" android:orientation="vertical" android:id="@id/mainPanel" android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/disconnectMessageLayout" android:background="?roundedCornerColor" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+        <TextView android:textSize="16.0sp" android:textColor="@color/basic_dream_descritpion_main_color" android:ellipsize="end" android:id="@id/disconnectMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxLines="1" android:fontFamily="sec-roboto-light" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/flow_history" android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="36.0dip" android:layout_below="@id/disconnectMessageLayout">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/subheader_text_color" android:ellipsize="end" android:gravity="start|bottom|center" android:id="@id/flow_history_textview" android:paddingTop="11.75dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sharePanel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/flow_history" />
+</RelativeLayout>

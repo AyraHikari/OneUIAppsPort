@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Немагчыма дадаць больш %d месцаў. Выдаліце некалькі месцаў, каб дадаць гэта.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Немагчыма дадаць больш %d месца. Выдаліце некалькі месцаў, каб дадаць гэта.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Немагчыма дадаць больш %d месцаў. Выдаліце некалькі месцаў, каб дадаць гэта.</item>
+        <item quantity="many">Немагчыма дадаць больш %d месцаў. Выдаліце некалькі месцаў, каб дадаць гэта.</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Немагчыма ўвесці больш за наступную колькасць сімвалаў: %d.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Немагчыма ўвесці больш за наступную колькасць сімвалаў: %d.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Немагчыма ўвесці больш за наступную колькасць сімвалаў: %d.</item>
+        <item quantity="many">Немагчыма ўвесці больш за наступную колькасць сімвалаў: %d.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">Выбрана: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Выбрана: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Выбрана: %d</item>
+        <item quantity="many">Выбрана: %d</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d дзён</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d дзень</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d дні</item>
+        <item quantity="many">%d дзён</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d гадзін</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d гадзіна</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d гадзіны</item>
+        <item quantity="many">%d гадзін</item>
+    </plurals>
+</resources>

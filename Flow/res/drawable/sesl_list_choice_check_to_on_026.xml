@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="20.699982dip" android:width="32.0dip" android:viewportWidth="96.0" android:viewportHeight="62.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="checkbox" android:pivotX="48.0" android:pivotY="31.0">
+        <path android:name="circle_outline" android:pathData="M48,31m-29.5,0a29.5,29.5 0 1,0 59,0a29.5,29.5 0 1,0-59,0" android:strokeColor="?colorControlNormal" android:strokeWidth="3.0" android:strokeAlpha="0.0" />
+        <path android:name="circle_fill" android:fillColor="?colorControlActivated" android:pathData="M48,31m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0" android:fillAlpha="0.0" />
+        <path android:name="check_mark" android:fillColor="?colorControlActivated" android:pathData="M48,31m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0 M41.9,45.4l-14.3,-14.2l4-4l10.3,10.1l21.7-21.5l4,4L41.9,45.4z" />
+    </group>
+</vector>

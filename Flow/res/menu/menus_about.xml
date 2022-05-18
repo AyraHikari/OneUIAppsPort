@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/tw_ic_ab_app_info_mtrl" android:id="@id/menu_app_info" android:visible="true" android:title="" app:showAsAction="always" />
+</menu>

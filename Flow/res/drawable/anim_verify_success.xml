@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_01" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_02" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_03" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_04" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_05" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_06" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_07" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_08" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_09" />
+    <item android:duration="33" android:drawable="@drawable/merged_verify_success_10" />
+</animation-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="day_night_icon_rotation">180</integer>
+</resources>

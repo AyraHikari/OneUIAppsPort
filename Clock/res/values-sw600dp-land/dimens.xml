@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_alert_alarm_time_layout_margin_top">100.0dip</dimen>
+    <dimen name="alarm_alert_snooze_layout_margin_botttom">56.0dip</dimen>
+    <dimen name="alarm_alert_tab_layout_margin_botttom">93.0dip</dimen>
+    <dimen name="alarm_dismiss_textview_margin_bottom">177.0dip</dimen>
+    <item type="dimen" name="alarm_snooze_btn_weight">0.9</item>
+    <item type="dimen" name="alarm_weather_cplogo_weight">0.5</item>
+    <dimen name="stopwatch_common_timeview_layout_expand_height">269.0dip</dimen>
+    <dimen name="stopwatch_laptime_margin_top">15.0dip</dimen>
+    <dimen name="timer_circle_bg_width_flex">380.0dip</dimen>
+    <dimen name="timer_circle_bg_width_non_flex">362.0dip</dimen>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">96.0dip</dimen>
+    <dimen name="timer_common_hms_textview_colon_width_flex">21.0dip</dimen>
+    <dimen name="timer_common_hms_textview_textsize">12.0sp</dimen>
+    <dimen name="timer_common_hms_textview_time_textsize_flex">77.0dip</dimen>
+    <dimen name="timer_common_hms_textview_time_width_flex">43.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">96.0dip</dimen>
+    <item type="dimen" name="timer_common_preset_popup_margin_top_flex">170.0</item>
+    <dimen name="timer_dismiss_textview_margin_bottom">177.0dip</dimen>
+    <dimen name="timer_end_time_bottom_margin_flex">115.0dip</dimen>
+    <dimen name="timer_name_margin_top">24.0dip</dimen>
+    <dimen name="timer_progress_bar_top_margin">305.0dip</dimen>
+    <dimen name="timer_progress_bar_top_margin_end">400.0dip</dimen>
+    <dimen name="timer_restart_button_bottom_margin">56.0dip</dimen>
+    <dimen name="timer_title_height_flex">50.0dip</dimen>
+    <dimen name="timer_top_layout_margin">100.0dip</dimen>
+    <dimen name="widget_setting_preview_height">274.0dip</dimen>
+    <dimen name="widget_setting_seek_bar_height">49.0dip</dimen>
+    <item type="dimen" name="full_alert_top_layout_height_percent_tablet">0.43</item>
+    <item type="dimen" name="full_alert_top_layout_width_percent_tablet">0.64</item>
+    <dimen name="alarm_alert_sliding_tab_height">240.0dip</dimen>
+    <dimen name="timer_alert_sliding_tab_height">240.0dip</dimen>
+</resources>

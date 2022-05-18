@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Signāls pēc %d dienām</item>
+        <item quantity="zero">Signāls pēc %d dienām</item>
+        <item quantity="one">Signāls pēc %d dienas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Signāls pēc %d stundām</item>
+        <item quantity="zero">Signāls pēc %d stundām</item>
+        <item quantity="one">Signāls pēc %d stundas</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Signāls pēc %d stundām, 1 minūtes</item>
+        <item quantity="zero">Signāls pēc %d stundām, 1 minūtes</item>
+        <item quantity="one">Signāls pēc %d stundas, 1 minūtes</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Signāls pēc %d minūtēm</item>
+        <item quantity="zero">Signāls pēc %d minūtēm</item>
+        <item quantity="one">Signāls pēc %d minūtes</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Pēc %d minūtēm</item>
+        <item quantity="zero">Pēc %d minūtēm</item>
+        <item quantity="one">Pēc %d minūtes</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Var pievienot ne vairāk kā %d modinātājus.</item>
+        <item quantity="zero">Var pievienot ne vairāk kā %d modinātājus.</item>
+        <item quantity="one">Var pievienot ne vairāk kā %d modinātāju.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minūtes</item>
+        <item quantity="zero">%d minūtes</item>
+        <item quantity="one">%d minūte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Vai izdzēst %d fonus?</item>
+        <item quantity="zero">Vai izdzēst %d fonus?</item>
+        <item quantity="one">Vai izdzēst %d fonu?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d jauni paziņojumi</item>
+        <item quantity="zero">%d jaunu paziņojumu</item>
+        <item quantity="one">%d jauns paziņojums</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">Izvēlēti %d vienumi</item>
+        <item quantity="zero">Izvēlēti %d</item>
+        <item quantity="one">Izvēlēts %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d minūtes pirms</item>
+        <item quantity="zero">%d minūtes pirms</item>
+        <item quantity="one">%d minūte pirms</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s un vēl %3$d citas</item>
+        <item quantity="zero">%1$s, %2$s un vēl %3$d citas</item>
+        <item quantity="one">%1$s, %2$s un vēl %3$d cita</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Miega ilgums: %d stundas</item>
+        <item quantity="zero">Miega ilgums: %d stundas</item>
+        <item quantity="one">Miega ilgums: %d stunda</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Miega ilgums: %d minūtes</item>
+        <item quantity="zero">Miega ilgums: %d minūtes</item>
+        <item quantity="one">Miega ilgums: %d minūte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Atlikt uz %d minūtēm</item>
+        <item quantity="zero">Atlikt uz %d minūtēm</item>
+        <item quantity="one">Atlikt uz %d minūti</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Mīnus %d minūtes</item>
+        <item quantity="zero">Mīnus %d minūtes</item>
+        <item quantity="one">Mīnus %d minūte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minūtes</item>
+        <item quantity="zero">Plus %d minūtes</item>
+        <item quantity="one">Plus %d minūte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Var pievienot ne vairāk kā %d priekšiestatītus taimerus.</item>
+        <item quantity="zero">Var pievienot ne vairāk kā %d priekšiestatītus taimerus.</item>
+        <item quantity="one">Var pievienot ne vairāk kā %d priekšiestatītu taimeri.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Var pievienot ne vairāk kā %d pilsētas.</item>
+        <item quantity="zero">Var pievienot ne vairāk kā %d pilsētas.</item>
+        <item quantity="one">Var pievienot ne vairāk kā %d pilsētu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

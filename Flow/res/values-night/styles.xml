@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarAppTheme" parent="@style/Theme.AppCompat.DayNight">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/DropDownItem.Spinner</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:actionModeStyle">@style/AppTheme.ActionMode</item>
+        <item name="android:colorPrimary">@color/app_color_primary</item>
+        <item name="android:statusBarColor">@color/background_round_color</item>
+        <item name="android:navigationBarColor">@color/background_round_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="actionModeCloseButtonStyle">@style/NoClose</item>
+    </style>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/DropDownItem.Spinner</item>
+        <item name="android:textSelectHandleLeft">@drawable/editor_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/editor_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/editor_text_select_handle_middle</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:actionBarSize">@dimen/action_bar_height</item>
+        <item name="android:actionModeStyle">@style/AppTheme.ActionMode</item>
+        <item name="android:textAlignment">gravity</item>
+        <item name="android:colorPrimary">@color/app_color_primary</item>
+        <item name="android:colorPrimaryDark">@color/app_color_primary</item>
+        <item name="android:statusBarColor">@color/background_round_color</item>
+        <item name="android:navigationBarColor">@color/background_round_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="actionModeCloseButtonStyle">@style/NoClose</item>
+    </style>
+    <style name="CollapsingToolbarStyle" parent="@style/Widget.Material.CollapsingToolbar" />
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+</resources>

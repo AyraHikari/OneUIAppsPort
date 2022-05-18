@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/clock_list_divider_inset_start_end" android:insetRight="@dimen/clock_list_divider_inset_start_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="#26d4d4d4" />
+        <size android:height="1.0px" />
+    </shape>
+</inset>

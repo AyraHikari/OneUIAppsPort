@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_clock_alarm_ic_edit" android:id="@id/edit" android:title="@string/edit" app:contentDescription="@string/edit" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_clock_alarm_ic_delete" android:id="@id/delete" android:title="@string/delete" app:contentDescription="@string/delete" app:showAsAction="ifRoom" />
+</menu>

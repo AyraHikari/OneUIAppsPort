@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape android:shape="oval">
+            <stroke android:width="2.0dip" android:color="#ff47c987" />
+            <size android:height="@dimen/auth_success_ring_size" android:width="@dimen/auth_success_ring_size" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/auth_success_icon_size" android:width="@dimen/auth_success_icon_size" android:drawable="@drawable/ic_success_04" />
+</layer-list>

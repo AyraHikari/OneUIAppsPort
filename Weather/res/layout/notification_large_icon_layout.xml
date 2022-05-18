@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="35.0dip" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/weather_shape" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+    <ImageView android:id="@id/weather_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

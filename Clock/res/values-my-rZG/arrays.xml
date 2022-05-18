@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>မစ္ဒ္ေဝး</item>
+        <item>ဟုိႏုိလူလူ</item>
+        <item>ဟာဝုိင္ယီ</item>
+        <item>အလာစတာ</item>
+        <item>အန္ကားေရ ႔ခ်္</item>
+        <item>ဆန္ဖရန္စစၥကုိ</item>
+        <item>ဗန္ကူဗာ</item>
+        <item>ဆီယာတယ္လ္</item>
+        <item>ေလာ့အိန္ဂ်ယ္လိစ္</item>
+        <item>Tijuana</item>
+        <item>ကယ္လ္ဂါရီ</item>
+        <item>ဖီးနစ္စ္</item>
+        <item>မာဇက္တ္လန္</item>
+        <item>ဒန္ဗာ</item>
+        <item>Mexico City</item>
+        <item>ဝင္နီပယ္ဂ္</item>
+        <item>ဒီေရဂုိ ဂါစီယာ</item>
+        <item>ဒါးလပ္စ္</item>
+        <item>ခ်ီကာဂုိ</item>
+        <item>ကုိရန္တုိ</item>
+        <item>မီယာမီ</item>
+        <item>လီမာ</item>
+        <item>ကြီတုိ</item>
+        <item>ဝါရွင္တန္ DC</item>
+        <item>အုိတဝါ</item>
+        <item>နယူေယာက္</item>
+        <item>ဘိုဂိုတာ</item>
+        <item>ဆန္တီေယဂို</item>
+        <item>လာပက္ဇ္</item>
+        <item>ကာရာကတ္စ္</item>
+        <item>ဘြန္ႏိုဇိုင္းရပ္စ္</item>
+        <item>နယူေဖာင္လန္</item>
+        <item>စိန္႔ ဂြ်န္</item>
+        <item>ေဆာင္ဝ္ေပါလို</item>
+        <item>ဘရာဆီးလီးယား</item>
+        <item>ရီယို ဒီ ဂ်ေနးရိုး</item>
+        <item>ဖာနန္ဒုိ ဒီႏုိရြန္ဟာ</item>
+        <item>Azores</item>
+        <item>လစၥဘြန္း</item>
+        <item>Casablanca</item>
+        <item>ဒပ္ဘလင္</item>
+        <item>ရာဘက္တ္</item>
+        <item>မက္ဒရစ္</item>
+        <item>အေျခခ်မႈ</item>
+        <item>လန္ဒန္</item>
+        <item>ကင္းစ္တန္</item>
+        <item>ဘာစီလုိနာ</item>
+        <item>ပါရီ</item>
+        <item>အယ္လ္ဂ်ီးယားစ္</item>
+        <item>တူးနစ္</item>
+        <item>ထရီပိုလီ</item>
+        <item>ဘာလင္</item>
+        <item>ေရာမ</item>
+        <item>ပါရာေဂြး</item>
+        <item>ကင္ရွားစာ</item>
+        <item>စေတာ့ခ္ဟုမ္း</item>
+        <item>ဘရာတီစလာဗာ</item>
+        <item>ေက့ပ္ေတာင္း</item>
+        <item>ဘူဒါပက္စ္</item>
+        <item>ဝါေဆာ</item>
+        <item>ကာလီနင္ဂရက္ဒ္</item>
+        <item>ဆိုဖီယာ</item>
+        <item>ေအသင္</item>
+        <item>လဗစ္ဗ္</item>
+        <item>Helsinki</item>
+        <item>ရီဂါ</item>
+        <item>တာလင္းန္</item>
+        <item>ဘူခါရက္စ္</item>
+        <item>ဗီလ္နီးယပ္စ္</item>
+        <item>လူဘမ္ဘာရွီ</item>
+        <item>မင့္စ္ခ္</item>
+        <item>စိန္႔ပီတာစ္ဘာဂ္</item>
+        <item>အစၥတန္ဘူ</item>
+        <item>ကမ္ခ်က္ကာ</item>
+        <item>က်ိဗ္</item>
+        <item>ေဂ်ရုစလင္</item>
+        <item>ေမာ္စကို</item>
+        <item>ကာကိဗ္</item>
+        <item>ႏိုင္ရိုဘီ</item>
+        <item>ဂ်ီဒါး</item>
+        <item>ဗိုလ္ဂိုဂရက္ဒ္</item>
+        <item>ယီရီဗန္</item>
+        <item>တဘီလီဆီ</item>
+        <item>ဘာကု</item>
+        <item>ခ်ီတာ</item>
+        <item>ဆမားရား</item>
+        <item>Tehran</item>
+        <item>အစ္ဇ္ ဟက္ဗ္စ္ခ္</item>
+        <item>အဘူဒါဘီ</item>
+        <item>ဒူဘိုင္း</item>
+        <item>ယူဖါ</item>
+        <item>Yekaterinburg</item>
+        <item>ခ်ီလီယာဘင့္စ္ခ္</item>
+        <item>ကရာခ်ိ</item>
+        <item>ကာဘူးလ္</item>
+        <item>တက္ရွ္ကတ္</item>
+        <item>အစၥလန္မာဘက္</item>
+        <item>မြန္ဘုိင္း</item>
+        <item>အုမ္စ္ခ္</item>
+        <item>အယ္လ္မတီ</item>
+        <item>ဘန္ဂလုိ</item>
+        <item>ဟုိက္ျဒာဘတ္</item>
+        <item>နယူးေဒလီ</item>
+        <item>ကုိလန္ဘုိ</item>
+        <item>ခ်န္ႏိုင္း</item>
+        <item>ႏိုဗိုဆီဘာ့စ္ခ္</item>
+        <item>ခတၱမႏၵဴ</item>
+        <item>ႏုိဗုိကူနက္တ္စ္ခ္</item>
+        <item>ကိုလ္ကတား</item>
+        <item>ဒါကာ</item>
+        <item>ကုိ႔ဗ္ဒ္</item>
+        <item>ကရက္စ္ႏိုရာ့စ္ခ္</item>
+        <item>ဘန္ေကာက္</item>
+        <item>ကြာလာလမ္ပူ</item>
+        <item>စကၤာပူ</item>
+        <item>အီရ္ကြတ္စ္ခ္</item>
+        <item>ဖႏြမ္းပင္</item>
+        <item>ဟႏြိဳင္း</item>
+        <item>ဂ်ကာတာ</item>
+        <item>အူလန္ဘာတာ</item>
+        <item>ေဟာင္ေကာင္</item>
+        <item>Perth</item>
+        <item>ေဘဂ်င္း</item>
+        <item>မနီလာ</item>
+        <item>တုိင္ေပ</item>
+        <item>Seoul</item>
+        <item>အမ္ဘြန္း</item>
+        <item>ဗာလဒီဗို႔ေတာ့</item>
+        <item>Yakutsk</item>
+        <item>ကာဗာေရာ့ဗ္စ္</item>
+        <item>Adelaide</item>
+        <item>တုိက်ဳိ</item>
+        <item>ယူဇႏုိ ဆာခါလင့္စ္ခ္</item>
+        <item>ေဟလီဖက္စ္</item>
+        <item>ဂြမ္</item>
+        <item>ကန္ဘာရာ</item>
+        <item>မာဂါဒန္</item>
+        <item>ဆစ္ဒနီ</item>
+        <item>ပက္ထ႐ုိ ပတ္ဗေလာ့စ္ခ္ ကမ္ခ်က္တ္စကီး</item>
+        <item>တာရာဝါ</item>
+        <item>ေအာ္ကလန္</item>
+        <item>ဝယ္လင္တန္</item>
+        <item>ပါဂုိ ပါဂုိ</item>
+        <item>ဒန္ပါဆာ</item>
+        <item>ဘန္း</item>
+        <item>ဇူးရစ္</item>
+        <item>ကိုင္ရို</item>
+        <item>အဘီဂ်န္း</item>
+        <item>အကၠရာ</item>
+        <item>အဒစ္စ္အဘာဘာ</item>
+        <item>အာမန္</item>
+        <item>အမ္စတာဒမ္</item>
+        <item>အနာဒီး</item>
+        <item>အန္ကာရာ</item>
+        <item>အန္တာနာနာရီဗို</item>
+        <item>အက္ရွိဂါဘတ္တ္</item>
+        <item>အကစ္မာရာ</item>
+        <item>Astana</item>
+        <item>အဆန္ဆီယြန္</item>
+        <item>ေအာ္စတင္</item>
+        <item>ဘကၠဒက္</item>
+        <item>ဘယ္လ္တီေမာ</item>
+        <item>ဘာမာကုိ</item>
+        <item>ဘန္ဂိြဳင္း</item>
+        <item>ဘာရီ</item>
+        <item>ေဘ့စ္တီရီ</item>
+        <item>ေဘရြတ္</item>
+        <item>ဘဲလ္ဂရိတ္ဒ္</item>
+        <item>ဘဲလိစ္ စီးတီး</item>
+        <item>ဘိရွ္ကက္က္</item>
+        <item>ဘီေစာ</item>
+        <item>ဘုိေလာ့ဂ္နာ</item>
+        <item>ေဘာ့စတြန္</item>
+        <item>ဘရင့္ဂ်္ေတာင္း</item>
+        <item>Brisbane</item>
+        <item>Brussels</item>
+        <item>ကာနာရီကြ်န္း</item>
+        <item>ကာတန္ဇာရို</item>
+        <item>ေကရန္း</item>
+        <item>ွရွားလက္</item>
+        <item>ခ်ီစီေနာ</item>
+        <item>ကလိဗ္လန္းဒ္</item>
+        <item>ကုိလမ္ဘတ္စ္</item>
+        <item>ကုိနာကရီ</item>
+        <item>ကုိပင္ေဟဂင္</item>
+        <item>ေကာ့ခ္</item>
+        <item>ခရိုတုန္း</item>
+        <item>ဒါကာ</item>
+        <item>ဒမတ္စ္ကတ္စ္</item>
+        <item>ဒါေအဆလမ္</item>
+        <item>Darwin</item>
+        <item>ဒီႀထိဳက္</item>
+        <item>ဂ်ီဘူးတီ</item>
+        <item>ဒိုဟာ</item>
+        <item>ဒူ၀ါးလား</item>
+        <item>ဒူရွန္ဘီ</item>
+        <item>အီစတာ အိုင္လန္</item>
+        <item>အီဒင္ဘတ္ဂ်္</item>
+        <item>အယ္လ္ ပါဆုိ</item>
+        <item>ဖေလာရန္႔စ္</item>
+        <item>ေဖါ့တ္ ဒီဖရန္႔စ္</item>
+        <item>ဖရီးေတာင္း</item>
+        <item>ဂါဘုိ႐ုန္း</item>
+        <item>ဂလားပဂို႔စ္ ကၽြန္းမ်ား</item>
+        <item>ဂ်နီဗာ</item>
+        <item>ဂ်ီႏုိအာ</item>
+        <item>ေဂ်ာ့ေတာင္း</item>
+        <item>ဂရိုင္ဗီကန္</item>
+        <item>ဂြါတီမာလာျမိဳ႕</item>
+        <item>ဂူစတာဗီးယား</item>
+        <item>ဟမ္းဘက္</item>
+        <item>ဟာရာရီ</item>
+        <item>ဟာဗားနား</item>
+        <item>Hobart</item>
+        <item>ဟူစတန္</item>
+        <item>အင္ဒီယာနာပုိလိစ္</item>
+        <item>ဂ်ဳိဟန္းနက္စ္ဘာ့ဂ္</item>
+        <item>ကမ္ပါလာ</item>
+        <item>ခါတိုရမ္</item>
+        <item>ကင္းစ္တန္</item>
+        <item>ကူဝိတ္စီးတီး</item>
+        <item>လာေဂါ့စ္</item>
+        <item>လပ္စ္ေဗးဂတ္စ္</item>
+        <item>ယူဘလီယားနား</item>
+        <item>ဟိုင္ကူ</item>
+        <item>လူ၀ိဗီးလ္</item>
+        <item>လူအန္ဒါ</item>
+        <item>လူဆာကာ</item>
+        <item>လူဇင္ဘာ့ဂ္</item>
+        <item>မကာအို</item>
+        <item>မာလဘို</item>
+        <item>မာလီ</item>
+        <item>မနာဂြါ</item>
+        <item>မာနားမား</item>
+        <item>မာပူတုိ</item>
+        <item>မာရီေဂါ့တ္</item>
+        <item>မကၠာ</item>
+        <item>မဲလ္ဘုန္း</item>
+        <item>မန္းဖစ္စ္</item>
+        <item>မဆီးနာ</item>
+        <item>မီလာႏုိ</item>
+        <item>မီလ္ေဝၚကီး</item>
+        <item>မိုဂါဒီရွဴး</item>
+        <item>မြန္႐ုိဗီးယား</item>
+        <item>မြန္တီဗီြဒီယို</item>
+        <item>မြန္ထရီယယ္လ္</item>
+        <item>ျမဴးနစ္</item>
+        <item>မူစကတ္</item>
+        <item>နပုိလီ</item>
+        <item>ေနတားစ္</item>
+        <item>နက္ဂ္ဂ်ီမီနာ</item>
+        <item>ႏိုင္ယာမီ</item>
+        <item>ေနာင္းေအေခ်ာ့</item>
+        <item>ေနာ္မီးယား</item>
+        <item>ႏူကူအာလိုေဖါ</item>
+        <item>ျႏဴ႔ခ္</item>
+        <item>အိုဆာကာ</item>
+        <item>အိုအာဂေဒါင္းဂူး</item>
+        <item>ပါလာမုိ</item>
+        <item>ပနားမား ျမိဳ႕ေတာ္</item>
+        <item>ပါရာမရီဘို</item>
+        <item>ပမ္း</item>
+        <item>ဖီလာဒဲလ္ဖီးယား</item>
+        <item>ေပါ့ဂိုရီကာ</item>
+        <item>ပြန္တာ ဒယ္ဂါဒါ</item>
+        <item>လူး၀စ္ ဆိပ္ကမ္း</item>
+        <item>ေပါ့တ္အိုပရင့္စ္</item>
+        <item>ပို႔လန္း၊ ေအာ္ရီဂြန္</item>
+        <item>ၿပဳံယန္း</item>
+        <item>Yangon</item>
+        <item>ရစီဖါ</item>
+        <item>ေရ႕ဂ္ဂ်ားဗစ္</item>
+        <item>ရီယတ္ဒ္</item>
+        <item>စိန္႔တ္ ဒနီးစ္</item>
+        <item>ဆန္ အန္တိုနီယို</item>
+        <item>စင္ ဒီယာဂို</item>
+        <item>ဆန္ဟိုေဆး</item>
+        <item>ဆန္ဟုိေဆး</item>
+        <item>ဆန္ဂ်ဴဝန္</item>
+        <item>ဆန္မာရီႏို</item>
+        <item>စန္ တယ္လ္ဗာဒို</item>
+        <item>ဆာနာရာ</item>
+        <item>ဆန္တို ဒိုမင္ဂို</item>
+        <item>ရွန္ဟုိင္း</item>
+        <item>က်န္ဇင္း</item>
+        <item>စကာပ္ဂ်္</item>
+        <item>စိန္႔ ဂြ်န္</item>
+        <item>ဆူးဗား</item>
+        <item>တဟီတီ</item>
+        <item>တီဂူစီဂါလ္ပါ</item>
+        <item>ဟုိခ်ီမင္းစီးတီး</item>
+        <item>တီယန္ဂ်င္း</item>
+        <item>တုိရီႏုိ</item>
+        <item>ဗားဒုဇ္</item>
+        <item>ဗလက္တာ</item>
+        <item>ဗီ႐ုိနာ</item>
+        <item>ဗစ္တိုးရီးယား</item>
+        <item>ဗီယင္နာ</item>
+        <item>ယာမူဆြတ္ကရို</item>
+        <item>ယာ၀န္ဒီ</item>
+        <item>ဇာဂရက္</item>
+        <item>ကြမ္က်ိဳ</item>
+        <item>ကာဒိဖ္</item>
+        <item>ရဂ်ီးနာ</item>
+        <item>ရွားလက္တ္ အမာလီ</item>
+        <item>အကၠလန္တာ</item>
+        <item>ေမယုတ္</item>
+        <item>St Pierre ႏွင့္ Miquelon</item>
+        <item>ေအာ္စလို</item>
+        <item>ဆရီနီေကာ့မက္စ္ခ္</item>
+        <item>ဆီးဗရိုး-ကူးရစ္စ္ခ္</item>
+        <item>ဝူဟန္</item>
+        <item>ခ်န္ဒူး</item>
+        <item>ရွန္</item>
+        <item>ေပါ့ ေမာရက္စ္ဘီ</item>
+        <item>ဒဗာအို ၿမိဳ႕</item>
+        <item>ေခ်ာင္ကင္း</item>
+        <item>ရွန္ယန္း</item>
+        <item>နန္႔က်င္း</item>
+        <item>ဟာဘင္</item>
+        <item>ဂ်ီနန္</item>
+        <item>ဇန္ေဇာ္အို</item>
+        <item>ကူမင္း</item>
+        <item>ခ်န္ခြ်န္း</item>
+        <item>ဖူဇိုး</item>
+        <item>ကူခ်င္း</item>
+        <item>မာကာဆာ</item>
+        <item>ဟန္ဇူး</item>
+        <item>ကင္ေဒါင္း</item>
+        <item>နန္နင္း</item>
+        <item>ဥဴရမ္ကီ</item>
+        <item>နက္စ္စာယူ</item>
+        <item>နီကိုစီးယား</item>
+        <item>ဒီလီ</item>
+        <item>လမ္း ျမိဳ႕</item>
+        <item>လုံးမ္</item>
+        <item>ရိုဆယ္အူ</item>
+        <item>လစ္ဗရယ္ဗာလ္</item>
+        <item>မာဆယ္လီ</item>
+        <item>မဲဆရူး</item>
+        <item>မာဂ်ဴရို</item>
+        <item>မိုနာကို</item>
+        <item>ဘန္ဒါ ဆာရီ ဘက္ဂဝမ္</item>
+        <item>ဘန္ဂ်ဴးလ္</item>
+        <item>ဘူဆန္</item>
+        <item>ဘူဂ်မ္ဘူရ</item>
+        <item>ဘရာဇာဗစ္လီ</item>
+        <item>ဗီယန္က်င္း</item>
+        <item>ဝင္းဟုက္</item>
+        <item>ဆာရာေဂ်ဗို</item>
+        <item>ဆိုင္ပန္</item>
+        <item>ေဆာင္ တုမ္း</item>
+        <item>စိန္႔ ေဂ်ာ့ခ်္စ္</item>
+        <item>စတန္ေလ</item>
+        <item>ေအဒင္</item>
+        <item>အပီယား</item>
+        <item>အန္ေဒၚရာ လာ ဗဲလာ</item>
+        <item>လယူးန္</item>
+        <item>ယီလ်မ္စတဂ္</item>
+        <item>မဘာဘာနီ</item>
+        <item>ကက္ထရီးစ္</item>
+        <item>ကိုရို</item>
+        <item>ကန္ခမ္း</item>
+        <item>ကီဂါလီ</item>
+        <item>ကင္းစေတာင္း</item>
+        <item>တဲလ္အဗစ္</item>
+        <item>ေတာ္ရွာဗန္</item>
+        <item>တီရာနာ</item>
+        <item>သင္ဖူး</item>
+        <item>ေပၚတို-ႏိုဗို</item>
+        <item>ပရာရီးယား</item>
+        <item>ဖရန္႔ဖက္</item>
+        <item>ပရစ္စတီနာ</item>
+        <item>ဟမ္မစ္တန္</item>
+        <item>ဟုိနီယာရာ</item>
+        <item>ပို႔တ္ ေအာ့္ဖ္ စပိန္</item>
+        <item>မင္းနီယားပိုးလစ္</item>
+        <item>ဟီလို</item>
+        <item>အိုလန္ဒို</item>
+        <item>ကန္းဆက္စ္ၿမိဳ ႔႔</item>
+        <item>နယူးေအာ္လန္</item>
+        <item>နက္ရွ္ဗီလီ</item>
+        <item>တူးဆန္</item>
+        <item>တင္မ္ပါ</item>
+        <item>ဂ်က္ဆင္ဗီလီ</item>
+        <item>အို႔ကလာဟိုးမာၿမိဳ ႔႔</item>
+        <item>ေအာဘကြာကြီ</item>
+        <item>အိုမဟာ</item>
+        <item>ဗာဂ်ီးနီးယား ကမ္းေျခ</item>
+        <item>ေဘြဆီ</item>
+        <item>ဒက္စ္မိြဳင္း</item>
+        <item>ဘာမင္ဟမ္</item>
+        <item>ေဆာ့လိတ္ခ္ၿမိဳ ႔႔</item>
+        <item>လစ္တဲလ္ေက်ာက္ေဆာင္</item>
+        <item>ဆီေအာက္ ေဖါလ္စ္</item>
+        <item>ဂ်က္ခ္ဆန္</item>
+        <item>ခ်ားလ္စတန္၊ ေတာင္ကယ္ရိုလိုင္းနား</item>
+        <item>ဖာဂို</item>
+        <item>ေဘးလင္းစ္</item>
+        <item>ပို႔လန္း၊ မိန္း</item>
+        <item>ခ်ီယန္နီ</item>
+        <item>ခ်ားလ္စတန္၊ ေျမာက္ဗာဂ်ီးနီးယား</item>
+        <item>ပစ္စဘတ္</item>
+        <item>ဂရင္းေဘး</item>
+        <item>စိန္႔ လူးဝစ္</item>
+        <item>ေတာင္ၾကား</item>
+        <item>UTC (ညႇိႏႈိင္းထားေသာ ကမ႓ာအဝွမ္းစံေတာ္ခ်ိန္)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>အာဖဂန္ နစၥတန္</item>
+        <item>အယ္လ္ဂ်ီးရီးယား</item>
+        <item>စမိုအာ</item>
+        <item>အန္တီဂူဝါႏွင့္ ဘာဘူဒါ</item>
+        <item>အာဂ်င္တီးနား</item>
+        <item>အာမီးနီးယား</item>
+        <item>ၾသစေၾတးလ်</item>
+        <item>အဇာဘိုင္ဂ်န္</item>
+        <item>ဘန္ဂလာဒက္ရွ္</item>
+        <item>ဘက္ရွ္ေကာ္တုိစတန္ သမၼတႏုိင္ငံ</item>
+        <item>ဘီလာရုစ္</item>
+        <item>ဘိုလီဗီယား</item>
+        <item>ဘရာဇီးလ္</item>
+        <item>ဘူေဂးရီးယား</item>
+        <item>ကေမၻာဒီးယား</item>
+        <item>ကေနဒါ</item>
+        <item>ခ်ီလီ</item>
+        <item>တရုတ္ႏိုင္ငံ</item>
+        <item>ကိုလန္ဘီယာ</item>
+        <item>ခ်က္ သမၼတ ႏုိင္ငံ</item>
+        <item>ကြန္ဂို ရီပက္ပလစ္</item>
+        <item>အီေကြေဒါ</item>
+        <item>အက္စ္တိုးနီးယား</item>
+        <item>ဖင္လန္</item>
+        <item>ျပင္သစ္</item>
+        <item>ေဂ်ာ္ဂ်ီယာ</item>
+        <item>ဂ်ာမနီ</item>
+        <item>ဂရိ</item>
+        <item>ဟန္ေဂရီ</item>
+        <item>အိႏၵိယ</item>
+        <item>အင္ဒိုနီးရွား</item>
+        <item>အီရန္</item>
+        <item>အိုက္ယာလန္</item>
+        <item>အစၥေရး</item>
+        <item>အီတလီ</item>
+        <item>ဂ်ပန္</item>
+        <item>ကာဇက္စတန္</item>
+        <item>ကင္ညာ</item>
+        <item>ကီရီဘာတီ</item>
+        <item>လတ္ဗီယာ</item>
+        <item>လစ္သူေရးနီးယား</item>
+        <item>မေလးရွား</item>
+        <item>မကၠဆီကို</item>
+        <item>မြန္ဂိုးလီးယား</item>
+        <item>ေမာ္ရိုကို</item>
+        <item>နီေပါလ္</item>
+        <item>နယူးဇီလန္</item>
+        <item>ပါကစၥတန္</item>
+        <item>ပီရူး</item>
+        <item>ဖိလစ္ပိုင္</item>
+        <item>ပိုလန္</item>
+        <item>ေပၚတူဂီ</item>
+        <item>ေျမပုံ</item>
+        <item>ေတာင္ကိုရီးယား</item>
+        <item>စကၤာပူ သမၼတႏုိင္ငံ</item>
+        <item>လစ္ဗ်ား</item>
+        <item>ရိုေမနီးယား</item>
+        <item>႐ုရွား</item>
+        <item>ေဆာ္ဒီ အာေရဗ်</item>
+        <item>ဆလိုဗားကီးယား</item>
+        <item>ေတာင္အာဖရိက</item>
+        <item>စပိန္</item>
+        <item>သီရိလကၤာ</item>
+        <item>ဆြီဒင္</item>
+        <item>ထိုင္ဝန္</item>
+        <item>ထိုင္းႏိုင္ငံ</item>
+        <item>တူနီးရွား</item>
+        <item>တူရကီ</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>ယူကရိန္း</item>
+        <item>ယူအက္စ္ေအ</item>
+        <item>ဥစၥဘက္ကစၥတန္</item>
+        <item>Venezuela</item>
+        <item>ဗီယက္နမ္</item>
+        <item>GB ျဗိတိန္ဗာဂ်င္အုိင္လန္</item>
+        <item>ဆြစ္ဇာလန္</item>
+        <item>အီဂ်စ္</item>
+        <item>ကုိ႕ဒီဗြား</item>
+        <item>ဂါနာ</item>
+        <item>အီသီယုိးပီးယား</item>
+        <item>ေဂ်ာ္ဒန္</item>
+        <item>နယ္သာလန္</item>
+        <item>မဒါဂက္စ္ကာ</item>
+        <item>တပ္မင္နစၥတန္</item>
+        <item>အီရစ္တ္ရီးယား</item>
+        <item>ပါရာေဂြး</item>
+        <item>အီရတ္</item>
+        <item>မာလီ</item>
+        <item>ဗဟို အာဖရိက သမၼတႏိုင္ငံ</item>
+        <item>ဂြါဒီလု</item>
+        <item>လက္ဘႏြန္</item>
+        <item>ဆားဗီးယား</item>
+        <item>ဘယ္လိစ္</item>
+        <item>ကီယာဂစၥတန္</item>
+        <item>ဂီနီယာဘစ္ေဆာ</item>
+        <item>ဘာဘာဒိုစ္</item>
+        <item>ဘယ္လ္ဂ်ီယမ္</item>
+        <item>ျပင္သစ္ ဂိုင္ယာနာ</item>
+        <item>မုိလ္ဒုိဗာ</item>
+        <item>ဂြီနီယာ</item>
+        <item>ဒိန္းမတ္</item>
+        <item>ဆီနီေဂါ</item>
+        <item>ဆီးရီးယား</item>
+        <item>တန္ဇန္းနီးယား</item>
+        <item>ဂ်ီေဘာင္းတီး</item>
+        <item>ကာတာ</item>
+        <item>ကင္မရြန္း</item>
+        <item>တာဂ်ီကစၥတန္</item>
+        <item>စေကာ့တလန္</item>
+        <item>မာတိနိခ္</item>
+        <item>ဆီယာရာလီယုန္</item>
+        <item>ေဘာစ္ဝါနာ</item>
+        <item>ဂိုင္ယာနာ</item>
+        <item>ေတာင္ေဂ်ာ္ဂ်ီယာ</item>
+        <item>ဂြာတီမာလာ</item>
+        <item>စိန္႔ဘာသီလီမိုင္</item>
+        <item>ဇင္ဘာေဘြ</item>
+        <item>က်ဴးဘား</item>
+        <item>ယူဂန္ဒါ</item>
+        <item>ဆူဒန္</item>
+        <item>ဂ်ေမကာ</item>
+        <item>Kuwait</item>
+        <item>ႏုိင္ဂ်ီးရီးယား</item>
+        <item>အန္ဂုိလာ</item>
+        <item>ဇမ္ဘီယာ</item>
+        <item>လူဇင္ဘာ့ဂ္</item>
+        <item>အီေကြတိုးရီရယ္လ္ ဂီနီယာ</item>
+        <item>ေမာ္လ္ဒိဗ္စ္</item>
+        <item>နီကာရာဂြါ</item>
+        <item>ဘာရိန္း</item>
+        <item>မုိဇမ္ဘိခ္</item>
+        <item>စိန္႔မာတင္</item>
+        <item>ဆုိမားလီးယား</item>
+        <item>လုိင္ဘီးရီးယား</item>
+        <item>ဥရုေဂြး</item>
+        <item>အိုမန္</item>
+        <item>ခ်ဒ္</item>
+        <item>ႏိုင္ဂ်ာ</item>
+        <item>ေမာ္ရီေတနီးယား</item>
+        <item>နယူးကာလီဒိုနီးယား</item>
+        <item>တုန္ဂါ</item>
+        <item>Greenland</item>
+        <item>ဘာကီနာဖာဆုိ</item>
+        <item>အနားမား</item>
+        <item>ဆူရီနိမ္း</item>
+        <item>မြန္တီနီးဂရိုး</item>
+        <item>ေမာ္ရီတီးရပ္စ္</item>
+        <item>ေဟတီ</item>
+        <item>ဒီမိုကရက္တစ္ ကိုရီးယား ျပည္သူ႔သမတႏိုင္ငံ</item>
+        <item>ျမန္မာ</item>
+        <item>အုိက္စ္လန္</item>
+        <item>ရီယူနီယန္ အိုင္လန္</item>
+        <item>ကုိစတာရီကာ</item>
+        <item>ပ်ဴအာတိုရီကို</item>
+        <item>အယ္လ္ဆာဗာေဒါ</item>
+        <item>ယီမင္</item>
+        <item>ဒိုမီနီကန္သမၼတႏိုင္ငံ</item>
+        <item>မက္စီဒုိးနီးယား</item>
+        <item>Fiji</item>
+        <item>ျပင္သစ္ပိုလီနီးရွား</item>
+        <item>ဟြန္ဒူးရပ္စ္</item>
+        <item>လီခ်္တန္စတိန္း</item>
+        <item>ေမာလ္တာ</item>
+        <item>ေစးရွယ္ဇ္</item>
+        <item>ၾသစႀတီးယား</item>
+        <item>ခ႐ုိေအးရွား</item>
+        <item>ေဝးလ္စ္</item>
+        <item>US ဗာဂ်င္ကၽြန္းမ်ား။</item>
+        <item>ဆလိုဗီးနီးယား</item>
+        <item>ဆန္မာရီႏို</item>
+        <item>ေနာ္ေဝ</item>
+        <item>ပါပူအာ နယူး ဂီနိ</item>
+        <item>ဘဟားမား</item>
+        <item>ဆိုက္ပရပ္စ္</item>
+        <item>တီေမာ-လက္ဆီ</item>
+        <item>တိုဂို</item>
+        <item>ဒိုမီနီကာ</item>
+        <item>ဂိုဘြန္</item>
+        <item>လီဆိုသို</item>
+        <item>မာ႐ွယ္ကၽြန္းစုမ်ား</item>
+        <item>မိုနာကို</item>
+        <item>ဘ႐ူႏုိင္း</item>
+        <item>ဂမ္ဘီယာ</item>
+        <item>ဘူ႐ြန္ဒီ</item>
+        <item>ဒီမိုကရက္တစ္ ရီပက္ဘလစ္ ကြန္ဂို သမၼတႏိုင္ငံ</item>
+        <item>လာအို</item>
+        <item>နမ္းဘီးယား</item>
+        <item>ေဘာ့စနီးယား ဟက္ဇဂိုဗီနား</item>
+        <item>ဆိုင္ပန္</item>
+        <item>ဆာအိုတိုမိႏွင့္ ပရင္းစပီ</item>
+        <item>ဂရိနေဒါ</item>
+        <item>ေဖာ့ကလန္ ကၽြန္းမ်ား</item>
+        <item>အေမရိကန္ဆာမိုအာ</item>
+        <item>အင္ဒိုရာ</item>
+        <item>အေနာက္ဆာဟာရ ယူပက္ပလစ္</item>
+        <item>ခယူရာစာ</item>
+        <item>ဆြာဇီလန္</item>
+        <item>စိန္႔လူစီယာ</item>
+        <item>ပါလို</item>
+        <item>ရဝမ္ဒါ</item>
+        <item>စိန္႔ဖင္းဆင့္ ႏွင့္ ဂရင္ေနဒိုင္</item>
+        <item>ဖါးရိုး ကြ်န္းမ်ား</item>
+        <item>အယ္ေဘးနီးယား</item>
+        <item>ဘူတန္</item>
+        <item>ဘီနင္</item>
+        <item>ကိတ္ဗာဒီ</item>
+        <item>ကိုဆိုဗို</item>
+        <item>ဘာမ်ဴဒါ</item>
+        <item>ဆယ္လမြန္ကၽြန္းစု</item>
+        <item>ထိုင္ဝမ္၊ တ႐ုတ္</item>
+        <item>ထရီနီဒက္ႏွင့္ တုိဘက္ဂို</item>
+        <item>အန္ဂြီလာ</item>
+        <item>UTC (ညႇိႏႈိင္းထားေသာ ကမ႓ာအဝွမ္းစံေတာ္ခ်ိန္)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>ယခုမွစ၍ သတိေပးခ်က္ 1 မိနစ္ သတ္မွတ္ထားသည္။</item>
+        <item>ယခုမွစ၍ %1$s အတြက္ သတိေပးခ်က္ သတ္မွတ္ထားသည္။</item>
+        <item>သတိေပးခ်က္ကို ယခုမွစ၍ %2$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s ႏွင့္ %2$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ကို ယခုမွစ၍ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %2$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s, %2$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>ယခုမွစ၍ %s အတြက္ ႏႈိးစက္သတ္မွတ္ထားသည္။</item>
+        <item>ယခုမွစ၍ %1$s ႏွင့္ %2$s အတြက္ ႏႈိးစက္သတ္မွတ္ထားသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s, %2$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>ယခုမွစ၍ %1$s ႏွင့္ %2$s အတြက္ ႏႈိးစက္သတ္မွတ္ထားသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s, %2$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>သတိေပးခ်က္ ယခုမွစ၍ %1$s, %2$s ႏွင့္ %3$s အတြက္ သတ္မွတ္ထားပါသည္။</item>
+        <item>ယခုမွစ၍ %1$s၊ %2$s၊ %3$s ႏွင့္ %4$s အတြက္ ႏႈိးစက္သတ္မွတ္ထားသည္။</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

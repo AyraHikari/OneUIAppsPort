@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="280.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="280.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="c1s7" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="line31 ParentLink">
+        <group android:name="s7" android:pivotX="0.25" android:pivotY="50.200703" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="line31">
+            <group android:name="s7pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+                <path android:name="s7pg1p10" android:pathData="M -60 22 C -60 22 31.609 22 31.609 22 C 31.609 22 61.706 23.527 60.5 50.5 C 59.5 72.875 37.25 77.5 37.25 77.5 C 37.25 77.5 16.375 81.875 6.75 61.75 " android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1s6" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="line32 ParentLink">
+        <group android:name="s6" android:pivotX="0.25" android:pivotY="50.200703" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="line32">
+            <group android:name="s6pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+                <path android:name="s6pg1p10" android:pathData="M -60 22 C -60 22 31.609 22 31.609 22 C 31.609 22 61.706 23.527 60.5 50.5 C 59.5 72.875 37.25 77.5 37.25 77.5 C 37.25 77.5 16.375 81.875 6.75 61.75 " android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="0.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1s5" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="line21 ParentLink">
+        <group android:name="s5" android:pivotX="43.6875" android:pivotY="50.000164" android:scaleX="1.0" android:scaleY="-1.0" android:rotation="0.0" android:translateX="-43.25" android:translateY="-99.72392" aapt:layer_name="line21">
+            <group android:name="s5pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+                <path android:name="s5pg1p10" android:pathData="M -60 22 C -60 22 119.859 22.099 119.859 22.099 C 119.859 22.099 147.375 23.546 147.375 50.546 C 147.375 73.421 125.5 77.599 125.5 77.599 C 125.5 77.599 104.625 81.974 95 61.849 " android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1s4" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="line22 ParentLink">
+        <group android:name="s4" android:pivotX="43.6875" android:pivotY="50.000164" android:scaleX="1.0" android:scaleY="-1.0" android:rotation="0.0" android:translateX="-43.25" android:translateY="-99.72392" aapt:layer_name="line22">
+            <group android:name="s4pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+                <path android:name="s4pg1p10" android:pathData="M -60 22 C -60 22 119.859 22.099 119.859 22.099 C 119.859 22.099 147.375 23.546 147.375 50.546 C 147.375 73.421 125.5 77.599 125.5 77.599 C 125.5 77.599 104.625 81.974 95 61.849 " android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="0.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1s3" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="line11 ParentLink">
+        <group android:name="s3" android:pivotX="-40.75" android:pivotY="-65.75" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="1.125" android:translateY="0.0" aapt:layer_name="line11">
+            <group android:name="s3pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+                <path android:name="s3pg1p10" android:pathData="M -65.125 -65.75 C -65.125 -65.75 -17.375 -65.75 -17.375 -65.75 " android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="line12 ParentLink">
+        <group android:name="s2" android:pivotX="-40.75" android:pivotY="-65.75" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="1.125" android:translateY="0.0" aapt:layer_name="line12">
+            <group android:name="s2pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+                <path android:name="s2pg1p10" android:pathData="M -65.125 -65.75 C -65.125 -65.75 -17.375 -65.75 -17.375 -65.75 " android:strokeColor="#ffffffff" android:strokeWidth="20.0" android:trimPathStart="0.0" android:trimPathEnd="0.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="0.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="Null 150">
+        <path android:name="c1sld" android:fillColor="#ffffffff" android:pathData="M 0 0 H 100 V 100H 0 V 0 Z" android:fillAlpha="0.0" aapt:layer_name="Null 150" />
+    </group>
+</vector>

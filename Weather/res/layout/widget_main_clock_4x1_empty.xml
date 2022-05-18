@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/widget_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/widget_clock_4x1_main_paddingHorizontal">
+        <RelativeLayout android:id="@id/time_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <FrameLayout android:id="@id/widget_date_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Date.BlackShadow" android:textSize="@dimen/widget_clock_4x1_date_size" android:id="@id/widget_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Date" android:textSize="@dimen/widget_clock_4x1_date_size" android:id="@id/widget_date_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_clock_4x1_time_marginTop" android:layout_below="@id/widget_date_layout" android:layoutDirection="@integer/widget_text_direction" android:layout_alignStart="@id/widget_date_layout">
+                <FrameLayout android:id="@id/widget_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Clock.BlackShadow" android:textSize="@dimen/widget_clock_4x1_time_size" android:id="@id/widget_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="@null" />
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Clock" android:textSize="@dimen/widget_clock_4x1_time_size" android:id="@id/widget_time_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="@null" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/widget_am_pm_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/widget_clock_4x1_am_pm_marginBottom" android:layout_alignBottom="@id/widget_time_layout" android:layout_marginStart="@dimen/widget_clock_4x1_am_pm_marginStart" android:layout_toEndOf="@id/widget_time_layout">
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.AmPm.BlackShadow" android:textSize="@dimen/widget_clock_4x1_am_pm_size" android:id="@id/widget_am_pm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="a" android:format24Hour="" />
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.AmPm" android:textSize="@dimen/widget_clock_4x1_am_pm_size" android:id="@id/widget_am_pm_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="a" android:format24Hour="" />
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/widget_empty_icon" android:layout_width="@dimen/widget_empty_icon_size" android:layout_height="@dimen/widget_empty_icon_size" android:layout_alignBottom="@id/time_area" android:layout_alignParentEnd="true" />
+        <RelativeLayout android:id="@id/widget_empty_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/time_area" android:layout_alignParentEnd="true">
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Date.BlackShadow" android:textSize="@dimen/widget_clock_empty_text_size" android:ellipsize="end" android:id="@id/widget_empty_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_empty_text" android:maxLines="2" android:textAlignment="viewEnd" />
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Date" android:textSize="@dimen/widget_clock_empty_text_size" android:ellipsize="end" android:id="@id/widget_empty_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_empty_text" android:maxLines="2" android:textAlignment="viewEnd" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

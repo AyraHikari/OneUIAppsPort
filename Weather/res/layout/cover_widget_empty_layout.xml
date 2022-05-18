@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/widget_empty_layout" android:paddingBottom="@dimen/widget_cover_layout_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/cover_widget_title_layout" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_cover_layout_margin_width">
+        <TextView android:id="@id/cover_widget_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="59.0dip" android:text="@string/no_weather_information" android:includeFontPadding="false" style="@style/CoverWidget.TextAppearance.ripple" />
+    </FrameLayout>
+</LinearLayout>

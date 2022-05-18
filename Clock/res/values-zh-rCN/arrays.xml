@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>中途岛</item>
+        <item>檀香山</item>
+        <item>夏威夷</item>
+        <item>阿拉斯加</item>
+        <item>安克雷奇</item>
+        <item>旧金山</item>
+        <item>温哥华</item>
+        <item>西雅图</item>
+        <item>洛杉矶</item>
+        <item>蒂华纳</item>
+        <item>卡尔加里</item>
+        <item>菲尼克斯</item>
+        <item>马萨特兰</item>
+        <item>丹佛</item>
+        <item>墨西哥城</item>
+        <item>温尼伯湖</item>
+        <item>迪戈加西亚岛</item>
+        <item>达拉斯</item>
+        <item>芝加哥</item>
+        <item>多伦多</item>
+        <item>迈阿密</item>
+        <item>利马</item>
+        <item>基多</item>
+        <item>华盛顿特区</item>
+        <item>渥太华</item>
+        <item>纽约</item>
+        <item>波哥大</item>
+        <item>圣地亚哥</item>
+        <item>拉巴斯</item>
+        <item>加拉加斯</item>
+        <item>布宜诺斯艾利斯</item>
+        <item>纽芬兰</item>
+        <item>圣约翰斯</item>
+        <item>圣保罗</item>
+        <item>巴西利亚</item>
+        <item>里约热内卢</item>
+        <item>费尔南多-迪诺罗尼亚岛</item>
+        <item>亚速尔群岛</item>
+        <item>里斯本</item>
+        <item>卡萨布兰卡</item>
+        <item>都柏林</item>
+        <item>拉巴特</item>
+        <item>马德里</item>
+        <item>塞特尔门特</item>
+        <item>伦敦</item>
+        <item>金斯敦</item>
+        <item>巴塞罗那</item>
+        <item>巴黎</item>
+        <item>阿尔及尔</item>
+        <item>突尼斯</item>
+        <item>的黎波里</item>
+        <item>柏林</item>
+        <item>罗马</item>
+        <item>布拉格</item>
+        <item>金沙萨</item>
+        <item>斯德哥尔摩</item>
+        <item>布拉迪斯拉发</item>
+        <item>开普敦</item>
+        <item>布达佩斯</item>
+        <item>华沙</item>
+        <item>加里宁格勒</item>
+        <item>索非亚</item>
+        <item>雅典</item>
+        <item>利沃夫</item>
+        <item>赫尔辛基</item>
+        <item>里加</item>
+        <item>塔林</item>
+        <item>布加勒斯特</item>
+        <item>维尔纽斯</item>
+        <item>卢本巴希</item>
+        <item>明斯克</item>
+        <item>圣彼得堡</item>
+        <item>伊斯坦布尔</item>
+        <item>堪察加半岛</item>
+        <item>基辅</item>
+        <item>耶路撒冷</item>
+        <item>莫斯科</item>
+        <item>哈尔科夫</item>
+        <item>内罗毕</item>
+        <item>吉达</item>
+        <item>伏尔加格勒</item>
+        <item>埃里温</item>
+        <item>第比利斯</item>
+        <item>巴库</item>
+        <item>赤塔</item>
+        <item>萨马拉</item>
+        <item>德黑兰</item>
+        <item>伊热夫斯克</item>
+        <item>阿布扎比</item>
+        <item>迪拜</item>
+        <item>乌法</item>
+        <item>叶卡捷琳堡</item>
+        <item>车里雅宾斯克</item>
+        <item>卡拉奇</item>
+        <item>喀布尔</item>
+        <item>塔什干</item>
+        <item>伊斯兰堡</item>
+        <item>孟买</item>
+        <item>鄂木斯克</item>
+        <item>阿拉木图</item>
+        <item>班加罗尔</item>
+        <item>海得拉巴</item>
+        <item>新德里</item>
+        <item>科伦坡</item>
+        <item>金奈</item>
+        <item>新西伯利亚</item>
+        <item>加德满都</item>
+        <item>新库兹涅茨克</item>
+        <item>加尔各答</item>
+        <item>达卡</item>
+        <item>科布多</item>
+        <item>克拉斯诺亚尔斯克</item>
+        <item>曼谷</item>
+        <item>吉隆坡</item>
+        <item>新加坡</item>
+        <item>伊尔库茨克</item>
+        <item>金边</item>
+        <item>河内</item>
+        <item>雅加达</item>
+        <item>乌兰巴托</item>
+        <item>香港特别行政区</item>
+        <item>珀斯</item>
+        <item>北京</item>
+        <item>马尼拉</item>
+        <item>台北</item>
+        <item>首尔</item>
+        <item>安汶</item>
+        <item>符拉迪沃斯托克</item>
+        <item>雅库茨克</item>
+        <item>哈巴罗夫斯克</item>
+        <item>阿德莱德</item>
+        <item>东京</item>
+        <item>南萨哈林斯克</item>
+        <item>哈利法克斯</item>
+        <item>关岛</item>
+        <item>堪培拉</item>
+        <item>马加丹</item>
+        <item>悉尼</item>
+        <item>彼得罗巴甫洛夫斯克</item>
+        <item>塔拉瓦岛</item>
+        <item>奥克兰</item>
+        <item>惠灵顿</item>
+        <item>帕果-帕果</item>
+        <item>登巴萨</item>
+        <item>伯尔尼</item>
+        <item>苏黎世</item>
+        <item>开罗</item>
+        <item>阿比让</item>
+        <item>阿克拉</item>
+        <item>亚的斯亚贝巴</item>
+        <item>安曼</item>
+        <item>阿姆斯特丹</item>
+        <item>阿纳德尔河</item>
+        <item>安卡拉</item>
+        <item>安塔那利佛</item>
+        <item>阿什哈巴德</item>
+        <item>阿斯马拉</item>
+        <item>阿斯坦纳</item>
+        <item>亚松森</item>
+        <item>奥斯汀</item>
+        <item>巴格达</item>
+        <item>巴尔的摩</item>
+        <item>巴马科</item>
+        <item>班吉</item>
+        <item>巴里</item>
+        <item>巴斯特尔</item>
+        <item>贝鲁特</item>
+        <item>贝尔格莱德</item>
+        <item>伯利兹城</item>
+        <item>比什凯克</item>
+        <item>比绍</item>
+        <item>博洛尼亚</item>
+        <item>波士顿</item>
+        <item>布里奇顿</item>
+        <item>布里斯班</item>
+        <item>布鲁塞尔</item>
+        <item>加那利群岛</item>
+        <item>卡坦扎罗</item>
+        <item>卡宴</item>
+        <item>夏洛特市</item>
+        <item>基希讷乌</item>
+        <item>克里夫兰</item>
+        <item>哥伦布</item>
+        <item>科纳克里</item>
+        <item>哥本哈根</item>
+        <item>科克</item>
+        <item>克努托内意大利</item>
+        <item>达喀尔</item>
+        <item>大马士革</item>
+        <item>达累斯萨拉姆</item>
+        <item>达尔文</item>
+        <item>底特律</item>
+        <item>吉布提</item>
+        <item>多哈</item>
+        <item>杜阿拉</item>
+        <item>杜尚别</item>
+        <item>复活节岛</item>
+        <item>爱丁堡</item>
+        <item>艾尔帕索</item>
+        <item>佛罗伦萨</item>
+        <item>法兰西堡</item>
+        <item>弗里敦</item>
+        <item>哈博罗内</item>
+        <item>加拉帕戈斯群岛</item>
+        <item>日内瓦</item>
+        <item>热那亚</item>
+        <item>乔治敦</item>
+        <item>格雷特维根</item>
+        <item>危地马拉市</item>
+        <item>古斯塔维亚</item>
+        <item>汉堡</item>
+        <item>哈拉雷</item>
+        <item>哈瓦那</item>
+        <item>霍巴特</item>
+        <item>休斯顿</item>
+        <item>印第安纳波利斯</item>
+        <item>约翰内斯堡</item>
+        <item>坎帕拉</item>
+        <item>喀土穆</item>
+        <item>金斯敦</item>
+        <item>科威特</item>
+        <item>拉多斯</item>
+        <item>拉斯维加斯</item>
+        <item>卢布尔雅那</item>
+        <item>海口</item>
+        <item>路易斯维尔</item>
+        <item>罗安达</item>
+        <item>卢萨卡</item>
+        <item>卢森堡</item>
+        <item>澳门特别行政区</item>
+        <item>马拉博</item>
+        <item>马累</item>
+        <item>马那瓜</item>
+        <item>麦纳麦</item>
+        <item>马普托</item>
+        <item>马里戈特</item>
+        <item>麦加</item>
+        <item>墨尔本</item>
+        <item>孟菲斯</item>
+        <item>墨西拿</item>
+        <item>米兰</item>
+        <item>密尔沃基</item>
+        <item>摩加迪沙</item>
+        <item>蒙罗维亚</item>
+        <item>蒙得维的亚</item>
+        <item>蒙特利尔</item>
+        <item>慕尼黑</item>
+        <item>马斯喀特</item>
+        <item>那不勒斯</item>
+        <item>那特斯</item>
+        <item>恩贾梅纳</item>
+        <item>尼亚美</item>
+        <item>努瓦克肖特</item>
+        <item>努美阿</item>
+        <item>努库阿洛法</item>
+        <item>努克</item>
+        <item>大阪</item>
+        <item>瓦加杜古</item>
+        <item>巴勒莫</item>
+        <item>巴拿马城</item>
+        <item>帕拉马里博</item>
+        <item>彼尔姆</item>
+        <item>费城</item>
+        <item>波德戈里察</item>
+        <item>蓬塔德尔加达</item>
+        <item>路易港</item>
+        <item>太子港</item>
+        <item>波特兰 (俄勒冈州)</item>
+        <item>平壤</item>
+        <item>仰光</item>
+        <item>累西腓</item>
+        <item>雷克雅未克</item>
+        <item>利雅得</item>
+        <item>圣但尼</item>
+        <item>圣安东尼奥</item>
+        <item>圣迭戈</item>
+        <item>圣何塞</item>
+        <item>圣何塞</item>
+        <item>圣胡安</item>
+        <item>圣马力诺</item>
+        <item>圣萨尔瓦多</item>
+        <item>萨拉</item>
+        <item>圣多明各</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>斯科普里</item>
+        <item>圣约翰斯</item>
+        <item>苏瓦</item>
+        <item>大溪地</item>
+        <item>特古西加尔巴</item>
+        <item>胡志明市</item>
+        <item>天津</item>
+        <item>都灵</item>
+        <item>瓦杜兹</item>
+        <item>瓦莱塔</item>
+        <item>维罗纳</item>
+        <item>维多利亚</item>
+        <item>维也纳</item>
+        <item>亚穆苏克罗</item>
+        <item>雅温德</item>
+        <item>萨格勒布</item>
+        <item>广州</item>
+        <item>加的夫</item>
+        <item>里贾纳</item>
+        <item>夏洛特阿马利亚</item>
+        <item>亚特兰大</item>
+        <item>马约特</item>
+        <item>圣皮埃尔和密克隆岛</item>
+        <item>奥斯陆</item>
+        <item>中科雷姆斯克</item>
+        <item>大洋城</item>
+        <item>武汉</item>
+        <item>成都</item>
+        <item>西安</item>
+        <item>莫尔兹比港</item>
+        <item>达沃市</item>
+        <item>重庆</item>
+        <item>沈阳</item>
+        <item>南京</item>
+        <item>哈尔滨</item>
+        <item>济南</item>
+        <item>郑州</item>
+        <item>昆明</item>
+        <item>长春</item>
+        <item>福州</item>
+        <item>古晋市</item>
+        <item>孟加锡</item>
+        <item>杭州</item>
+        <item>青岛</item>
+        <item>南宁</item>
+        <item>乌鲁木齐</item>
+        <item>拿索</item>
+        <item>尼科西亚</item>
+        <item>帝力</item>
+        <item>罗德城</item>
+        <item>洛美</item>
+        <item>罗索</item>
+        <item>利伯维尔</item>
+        <item>马赛</item>
+        <item>马塞鲁</item>
+        <item>马朱罗</item>
+        <item>摩纳哥</item>
+        <item>斯里巴加湾市</item>
+        <item>班珠尔</item>
+        <item>釜山</item>
+        <item>布琼布拉</item>
+        <item>布拉柴维尔</item>
+        <item>万象</item>
+        <item>温特和克</item>
+        <item>萨拉热窝</item>
+        <item>塞班岛</item>
+        <item>圣多美</item>
+        <item>圣乔治</item>
+        <item>斯坦利</item>
+        <item>亚丁</item>
+        <item>阿皮亚</item>
+        <item>安道尔城</item>
+        <item>欧云</item>
+        <item>威廉斯塔德</item>
+        <item>姆巴巴纳</item>
+        <item>卡斯特里</item>
+        <item>科罗尔</item>
+        <item>坎昆</item>
+        <item>基加利</item>
+        <item>金斯敦</item>
+        <item>特拉维夫</item>
+        <item>法罗群岛</item>
+        <item>地拉那</item>
+        <item>廷布</item>
+        <item>波多诺伏</item>
+        <item>普拉亚</item>
+        <item>法兰克福</item>
+        <item>普里什蒂纳</item>
+        <item>哈密尔顿</item>
+        <item>霍尼亚拉</item>
+        <item>西班牙港</item>
+        <item>明尼阿波利斯</item>
+        <item>希洛</item>
+        <item>奥兰多</item>
+        <item>堪萨斯城</item>
+        <item>新奥尔良</item>
+        <item>纳什维尔</item>
+        <item>图森</item>
+        <item>坦帕</item>
+        <item>杰克逊维尔</item>
+        <item>俄克拉何马城</item>
+        <item>阿尔伯克基</item>
+        <item>奥马哈</item>
+        <item>弗吉尼亚海滩</item>
+        <item>博伊西</item>
+        <item>得梅因</item>
+        <item>伯明翰</item>
+        <item>盐湖城</item>
+        <item>小石城</item>
+        <item>苏福尔斯</item>
+        <item>杰克逊</item>
+        <item>查尔斯顿 (南卡罗来纳州)</item>
+        <item>法戈</item>
+        <item>比林斯</item>
+        <item>波特兰 (缅因州)</item>
+        <item>夏延</item>
+        <item>查尔斯顿 (西弗吉尼亚州)</item>
+        <item>匹兹堡</item>
+        <item>格林贝</item>
+        <item>圣路易斯</item>
+        <item>瓦利</item>
+        <item>UTC (协调通用时间)</item>
+    </string-array>
+    <string-array name="CitiesPinyin">
+        <item>zhong 中 tu 途 dao 岛</item>
+        <item>tan 檀 xiang 香 shan 山</item>
+        <item>xia 夏 wei 威 yi 夷</item>
+        <item>a 阿 la 拉 si 斯 jia 加</item>
+        <item>an 安 ke 克 lei 雷 qi 奇</item>
+        <item>jiu 旧 jin 金 shan 山</item>
+        <item>wen 温 ge 哥 hua 华</item>
+        <item>xi 西 ya 雅 tu 图</item>
+        <item>luo 洛 shan 杉 ji 矶</item>
+        <item>di 蒂 hua 华 na 纳</item>
+        <item>ka 卡 er 尔 jia 加 li 里</item>
+        <item>fei 菲 ni 尼 ke 克 si 斯</item>
+        <item>ma 马 sa 萨 te 特 lan 兰</item>
+        <item>dan 丹 fo 佛</item>
+        <item>mo 墨 xi 西 ge 哥 cheng 城</item>
+        <item>wen 温 ni 尼 bo 伯 hu 湖</item>
+        <item>di 迪 ge 戈 jia 加 xi 西 ya 亚 dao 岛</item>
+        <item>da 达 la 拉 si 斯</item>
+        <item>zhi 芝 jia 加 ge 哥</item>
+        <item>duo 多 lun 伦 duo 多</item>
+        <item>mai 迈 a 阿 mi 密</item>
+        <item>li 利 ma 马</item>
+        <item>ji 基 duo 多</item>
+        <item>hua 华 sheng 盛 dun 顿 te 特 qu 区</item>
+        <item>wo 渥 tai 太 hua 华</item>
+        <item>niu 纽 yue 约</item>
+        <item>bo 波 ge 哥 da 大</item>
+        <item>sheng 圣 di 地 ya 亚 ge 哥</item>
+        <item>la 拉 ba 巴 si 斯</item>
+        <item>jia 加 la 拉 jia 加 si 斯</item>
+        <item>bu 布 yi 宜 nuo 诺 si 斯 ai 艾 li 利 si 斯</item>
+        <item>niu 纽 fen 芬 lan 兰</item>
+        <item>sheng 圣 yue 约 han 翰 si 斯</item>
+        <item>sheng 圣 bao 保 luo 罗</item>
+        <item>ba 巴 xi 西 li 利 ya 亚</item>
+        <item>li 里 yue 约 re 热 nei 内 lu 卢</item>
+        <item>fei 费 er 尔 nan 南 duo 多 di 迪 nuo 诺 luo 罗 ni 尼 ya 亚 dao 岛</item>
+        <item>ya 亚 su 速 er 尔 qun 群 dao 岛</item>
+        <item>li 里 si 斯 ben 本</item>
+        <item>ka 卡 sa 萨 bu 布 lan 兰 ka 卡</item>
+        <item>du 都 bo 柏 lin 林</item>
+        <item>la 拉 ba 巴 te 特</item>
+        <item>ma 马 de 德 li 里</item>
+        <item>sai 塞 te 特 er 尔 men 门 te 特</item>
+        <item>lun 伦 dun 敦</item>
+        <item>jin 金 si 斯 dun 敦</item>
+        <item>ba 巴 sai 塞 luo 罗 na 那</item>
+        <item>ba 巴 li 黎</item>
+        <item>a 阿 er 尔 ji 及 er 尔</item>
+        <item>tu 突 ni 尼 si 斯</item>
+        <item>de 的 li 黎 bo 波 li 里</item>
+        <item>bo 柏 lin 林</item>
+        <item>luo 罗 ma 马</item>
+        <item>bu 布 la 拉 ge 格</item>
+        <item>jin 金 sha 沙 sa 萨</item>
+        <item>si 斯 de 德 ge 哥 er 尔 mo 摩</item>
+        <item>bu 布 la 拉 di 迪 si 斯 la 拉 fa 发</item>
+        <item>kai 开 pu 普 dun 敦</item>
+        <item>bu 布 da 达 pei 佩 si 斯</item>
+        <item>hua 华 sha 沙</item>
+        <item>jia 加 li 里 ning 宁 ge 格 le 勒</item>
+        <item>suo 索 fei 非 ya 亚</item>
+        <item>ya 雅 dian 典</item>
+        <item>li 利 wo 沃 fu 夫</item>
+        <item>he 赫 er 尔 xin 辛 ji 基</item>
+        <item>li 里 jia 加</item>
+        <item>ta 塔 lin 林</item>
+        <item>bu 布 jia 加 le 勒 si 斯 te 特</item>
+        <item>wei 维 er 尔 niu 纽 si 斯</item>
+        <item>lu 卢 ben 本 ba 巴 xi 希</item>
+        <item>ming 明 si 斯 ke 克</item>
+        <item>sheng 圣 bi 彼 de 得 bao 堡</item>
+        <item>yi 伊 si 斯 tan 坦 bu 布 er 尔</item>
+        <item>kan 堪 cha 察 jia 加 ban 半 dao 岛</item>
+        <item>ji 基 fu 辅</item>
+        <item>ye 耶 lu 路 sa 撒 leng 冷</item>
+        <item>mo 莫 si 斯 ke 科</item>
+        <item>ha 哈 er 尔 ke 科 fu 夫</item>
+        <item>nai 内 luo 罗 bi 毕</item>
+        <item>ji 吉 da 达</item>
+        <item>fu 伏 er 尔 jia 加 ge 格 le 勒</item>
+        <item>ai 埃 li 里 wen 温</item>
+        <item>di 第 bi 比 li 利 si 斯</item>
+        <item>ba 巴 ku 库</item>
+        <item>chi 赤 ta 塔</item>
+        <item>sa 萨 ma 马 la 拉</item>
+        <item>de 德 hei 黑 lan 兰</item>
+        <item>yi 伊 re 热 fu 夫 si 斯 ke 克</item>
+        <item>a 阿 bu 布 zha 扎 bi 比</item>
+        <item>di 迪 bai 拜</item>
+        <item>wu 乌 fa 法</item>
+        <item>ye 叶 ka 卡 te 捷 lin 琳 bao 堡</item>
+        <item>che 车 li 里 ya 雅 bin 宾 si 斯 ke 克</item>
+        <item>ka 卡 la 拉 qi 奇</item>
+        <item>ka 喀 bu 布 er 尔</item>
+        <item>ta 塔 shi 什 gan 干</item>
+        <item>yi 伊 si 斯 lan 兰 bao 堡</item>
+        <item>meng 孟 mai 买</item>
+        <item>e 鄂 mu 木 si 斯 ke 克</item>
+        <item>a 阿 la 拉 mu 木 tu 图</item>
+        <item>ban 班 jia 加 luo 罗 er 尔</item>
+        <item>hai 海 de 得 la 拉 ba 巴</item>
+        <item>xin 新 de 德 li 里</item>
+        <item>ke 科 lun 伦 po 坡</item>
+        <item>jin 金 nai 奈</item>
+        <item>xin 新 xi 西 bo 伯 li 利 ya 亚</item>
+        <item>jia 加 de 德 man 满 du 都</item>
+        <item>xin 新 ku 库 zi 兹 nie 涅 ci 茨 ke 克</item>
+        <item>jia 加 er 尔 ge 各 da 答</item>
+        <item>da 达 ka 卡</item>
+        <item>ke 科 bu 布 duo 多</item>
+        <item>ke 克 la 拉 si 斯 nuo 诺 ya 亚 er 尔 si 斯 ke 克</item>
+        <item>man 曼 gu 谷</item>
+        <item>ji 吉 long 隆 po 坡</item>
+        <item>xin 新 jia 加 po 坡</item>
+        <item>yi 伊 er 尔 ku 库 ci 茨 ke 克</item>
+        <item>jin 金 bian 边</item>
+        <item>he 河 nei 内</item>
+        <item>ya 雅 jia 加 da 达</item>
+        <item>wu 乌 lan 兰 ba 巴 tuo 托</item>
+        <item>xiang 香 gang 港 te 特 bie 别 xing 行 zheng 政 qu 区</item>
+        <item>po 珀 si 斯</item>
+        <item>bei 北 jing 京</item>
+        <item>ma 马 ni 尼 la 拉</item>
+        <item>tai 台 bei 北</item>
+        <item>shou 首 er 尔</item>
+        <item>an 安 wen 汶</item>
+        <item>fu 符 la 拉 di 迪 wo 沃 si 斯 tuo 托 ke 克</item>
+        <item>ya 雅 ku 库 ci 茨 ke 克</item>
+        <item>ha 哈 ba 巴 luo 罗 fu 夫 si 斯 ke 克</item>
+        <item>a 阿 de 德 lai 莱 de 德</item>
+        <item>dong 东 jing 京</item>
+        <item>nan 南 sa 萨 ha 哈 lin 林 si 斯 ke 克</item>
+        <item>ha 哈 li 利 fa 法 ke 克 si 斯</item>
+        <item>guan 关 dao 岛</item>
+        <item>kan 堪 pei 培 la 拉</item>
+        <item>ma 马 jia 加 dan 丹</item>
+        <item>xi 悉 ni 尼</item>
+        <item>bi 彼 de 得 luo 罗 ba 巴 fu 甫 luo 洛 fu 夫 si 斯 ke 克</item>
+        <item>ta 塔 la 拉 wa 瓦 dao 岛</item>
+        <item>ao 奥 ke 克 lan 兰</item>
+        <item>hui 惠 ling 灵 dun 顿</item>
+        <item>pa 帕 guo 果 pa 帕 guo 果</item>
+        <item>deng 登 ba 巴 sa 萨</item>
+        <item>bo 伯 er 尔 ni 尼</item>
+        <item>su 苏 li 黎 shi 世</item>
+        <item>kai 开 luo 罗</item>
+        <item>a 阿 bi 比 rang 让</item>
+        <item>a 阿 ke 克 la 拉</item>
+        <item>ya 亚 de 的 si 斯 ya 亚 bei 贝 ba 巴</item>
+        <item>an 安 man 曼</item>
+        <item>a 阿 mu 姆 si 斯 te 特 dan 丹</item>
+        <item>a 阿 na 纳 de 德 er 尔 he 河</item>
+        <item>an 安 ka 卡 la 拉</item>
+        <item>an 安 ta 塔 na 那 li 利 fo 佛</item>
+        <item>a 阿 shi 什 ha 哈 ba 巴 de 德</item>
+        <item>a 阿 si 斯 ma 马 la 拉</item>
+        <item>a 阿 si 斯 tan 坦 na 纳</item>
+        <item>ya 亚 song 松 sen 森</item>
+        <item>ao 奥 si 斯 ting 汀</item>
+        <item>ba 巴 ge 格 da 达</item>
+        <item>ba 巴 er 尔 de 的 mo 摩</item>
+        <item>ba 巴 ma 马 ke 科</item>
+        <item>ban 班 ji 吉</item>
+        <item>ba 巴 li 里</item>
+        <item>ba 巴 si 斯 te 特 er 尔</item>
+        <item>bei 贝 lu 鲁 te 特</item>
+        <item>bei 贝 er 尔 ge 格 lai 莱 de 德</item>
+        <item>bo 伯 li 利 zi 兹 cheng 城</item>
+        <item>bi 比 shi 什 kai 凯 ke 克</item>
+        <item>bi 比 shao 绍</item>
+        <item>bo 博 luo 洛 ni 尼 ya 亚</item>
+        <item>bo 波 shi 士 dun 顿</item>
+        <item>bu 布 li 里 qi 奇 dun 顿</item>
+        <item>bu 布 li 里 si 斯 ban 班</item>
+        <item>bu 布 lu 鲁 sai 塞 er 尔</item>
+        <item>jia 加 na 那 li 利 qun 群 dao 岛</item>
+        <item>ka 卡 tan 坦 zha 扎 luo 罗</item>
+        <item>ka 卡 yan 宴</item>
+        <item>xia 夏 luo 洛 te 特 shi 市</item>
+        <item>ji 基 xi 希 ne 讷 wu 乌</item>
+        <item>ke 克 li 里 fu 夫 lan 兰</item>
+        <item>ge 哥 lun 伦 bu 布</item>
+        <item>ke 科 na 纳 ke 克 li 里</item>
+        <item>ge 哥 ben 本 ha 哈 gen 根</item>
+        <item>ke 科 ke 克</item>
+        <item>ke 克 nu 努 tuo 托 nei 内 yi 意 da 大 li 利</item>
+        <item>da 达 ka 喀 er 尔</item>
+        <item>da 大 ma 马 shi 士 ge 革</item>
+        <item>da 达 lei 累 si 斯 sa 萨 la 拉 mu 姆</item>
+        <item>da 达 er 尔 wen 文</item>
+        <item>di 底 te 特 lu 律</item>
+        <item>ji 吉 bu 布 ti 提</item>
+        <item>duo 多 ha 哈</item>
+        <item>du 杜 a 阿 la 拉</item>
+        <item>du 杜 shang 尚 bie 别</item>
+        <item>fu 复 huo 活 jie 节 dao 岛</item>
+        <item>ai 爱 ding 丁 bao 堡</item>
+        <item>ai 艾 er 尔 pa 帕 suo 索</item>
+        <item>fo 佛 luo 罗 lun 伦 sa 萨</item>
+        <item>fa 法 lan 兰 xi 西 bao 堡</item>
+        <item>fu 弗 li 里 dun 敦</item>
+        <item>ha 哈 bo 博 luo 罗 nei 内</item>
+        <item>jia 加 la 拉 pa 帕 ge 戈 si 斯 qun 群 dao 岛</item>
+        <item>ri 日 nei 内 wa 瓦</item>
+        <item>re 热 na 那 ya 亚</item>
+        <item>qiao 乔 zhi 治 dun 敦</item>
+        <item>ge 格 lei 雷 te 特 wei 维 gen 根</item>
+        <item>wei 危 di 地 ma 马 la 拉 shi 市</item>
+        <item>gu 古 si 斯 ta 塔 wei 维 ya 亚</item>
+        <item>han 汉 bao 堡</item>
+        <item>ha 哈 la 拉 lei 雷</item>
+        <item>ha 哈 wa 瓦 na 那</item>
+        <item>huo 霍 ba 巴 te 特</item>
+        <item>xiu 休 si 斯 dun 顿</item>
+        <item>yin 印 di 第 an 安 na 纳 bo 波 li 利 si 斯</item>
+        <item>yue 约 han 翰 nei 内 si 斯 bao 堡</item>
+        <item>kan 坎 pa 帕 la 拉</item>
+        <item>ka 喀 tu 土 mu 穆</item>
+        <item>jin 金 si 斯 dun 敦</item>
+        <item>ke 科 wei 威 te 特</item>
+        <item>la 拉 duo 多 si 斯</item>
+        <item>la 拉 si 斯 wei 维 jia 加 si 斯</item>
+        <item>lu 卢 bu 布 er 尔 ya 雅 na 那</item>
+        <item>hai 海 kou 口</item>
+        <item>lu 路 yi 易 si 斯 wei 维 er 尔</item>
+        <item>luo 罗 an 安 da 达</item>
+        <item>lu 卢 sa 萨 ka 卡</item>
+        <item>lu 卢 sen 森 bao 堡</item>
+        <item>ao 澳 men 门 te 特 bie 别 xing 行 zheng 政 qu 区</item>
+        <item>ma 马 la 拉 bo 博</item>
+        <item>ma 马 lei 累</item>
+        <item>ma 马 na 那 gu 瓜</item>
+        <item>mai 麦 na 纳 mai 麦</item>
+        <item>ma 马 pu 普 tuo 托</item>
+        <item>ma 马 li 里 ge 戈 te 特</item>
+        <item>mai 麦 jia 加</item>
+        <item>mo 墨 er 尔 ben 本</item>
+        <item>meng 孟 fei 菲 si 斯</item>
+        <item>mo 墨 xi 西 na 拿</item>
+        <item>mi 米 lan 兰</item>
+        <item>mi 密 er 尔 wo 沃 ji 基</item>
+        <item>mo 摩 jia 加 di 迪 sha 沙</item>
+        <item>meng 蒙 luo 罗 wei 维 ya 亚</item>
+        <item>meng 蒙 de 得 wei 维 de 的 ya 亚</item>
+        <item>meng 蒙 te 特 li 利 er 尔</item>
+        <item>mu 慕 ni 尼 hei 黑</item>
+        <item>ma 马 si 斯 ka 喀 te 特</item>
+        <item>na 那 bu 不 le 勒 si 斯</item>
+        <item>na 那 te 特 si 斯</item>
+        <item>en 恩 jia 贾 mei 梅 na 纳</item>
+        <item>ni 尼 ya 亚 mei 美</item>
+        <item>nu 努 wa 瓦 ke 克 xiao 肖 te 特</item>
+        <item>nu 努 mei 美 a 阿</item>
+        <item>nu 努 ku 库 a 阿 luo 洛 fa 法</item>
+        <item>nu 努 ke 克</item>
+        <item>da 大 ban 阪</item>
+        <item>wa 瓦 jia 加 du 杜 gu 古</item>
+        <item>ba 巴 le 勒 mo 莫</item>
+        <item>ba 巴 na 拿 ma 马 cheng 城</item>
+        <item>pa 帕 la 拉 ma 马 li 里 bo 博</item>
+        <item>bi 彼 er 尔 mu 姆</item>
+        <item>fei 费 cheng 城</item>
+        <item>bo 波 de 德 ge 戈 li 里 cha 察</item>
+        <item>peng 蓬 ta 塔 de 德 er 尔 jia 加 da 达</item>
+        <item>lu 路 yi 易 gang 港</item>
+        <item>tai 太 zi 子 gang 港</item>
+        <item>bo 波 te 特 lan 兰</item>
+        <item>ping 平 rang 壤</item>
+        <item>yang 仰 guang 光</item>
+        <item>lei 累 xi 西 fei 腓</item>
+        <item>lei 雷 ke 克 ya 雅 wei 未 ke 克</item>
+        <item>li 利 ya 雅 de 得</item>
+        <item>sheng 圣 dan 但 ni 尼</item>
+        <item>sheng 圣 an 安 dong 东 ni 尼 ao 奥</item>
+        <item>sheng 圣 die 迭 ge 戈</item>
+        <item>sheng 圣 he 何 sai 塞</item>
+        <item>sheng 圣 he 何 sai 塞</item>
+        <item>sheng 圣 hu 胡 an 安</item>
+        <item>sheng 圣 ma 马 li 力 nuo 诺</item>
+        <item>sheng 圣 sa 萨 er 尔 wa 瓦 duo 多</item>
+        <item>sa 萨 la 拉</item>
+        <item>sheng 圣 duo 多 ming 明 ge 各</item>
+        <item>shang 上 hai 海</item>
+        <item>shen 深 zhen 圳</item>
+        <item>si 斯 ke 科 pu 普 li 里</item>
+        <item>sheng 圣 yue 约 han 翰 si 斯</item>
+        <item>su 苏 wa 瓦</item>
+        <item>da 大 xi 溪 di 地</item>
+        <item>te 特 gu 古 xi 西 jia 加 er 尔 ba 巴</item>
+        <item>hu 胡 zhi 志 ming 明 shi 市</item>
+        <item>tian 天 jin 津</item>
+        <item>dou 都 ling 灵</item>
+        <item>wa 瓦 du 杜 zi 兹</item>
+        <item>wa 瓦 lai 莱 ta 塔</item>
+        <item>wei 维 luo 罗 na 纳</item>
+        <item>wei 维 duo 多 li 利 ya 亚</item>
+        <item>wei 维 ye 也 na 纳</item>
+        <item>ya 亚 mu 穆 su 苏 ke 克 luo 罗</item>
+        <item>ya 雅 wen 温 de 德</item>
+        <item>sa 萨 ge 格 le 勒 bu 布</item>
+        <item>guang 广 zhou 州</item>
+        <item>jia 加 de 的 fu 夫</item>
+        <item>li 里 jia 贾 na 纳</item>
+        <item>xia 夏 luo 洛 te 特 a 阿 ma 马 li 利 ya 亚</item>
+        <item>ya 亚 te 特 lan 兰 da 大</item>
+        <item>ma 马 yue 约 te 特</item>
+        <item>sheng 圣 pi 皮 ai 埃 er 尔 he 和 mi 密 ke 克 long 隆 dao 岛</item>
+        <item>ao 奥 si 斯 lu 陆</item>
+        <item>zhong 中 ke 科 lei 雷 mu 姆 si 斯 ke 克</item>
+        <item>da 大 yang 洋 cheng 城</item>
+        <item>wu 武 han 汉</item>
+        <item>cheng 成 du 都</item>
+        <item>xi 西 an 安</item>
+        <item>mo 莫 er 尔 zi 兹 bi 比 gang 港</item>
+        <item>da 达 wo 沃 shi 市</item>
+        <item>chong 重 qing 庆</item>
+        <item>shen 沈 yang 阳</item>
+        <item>nan 南 jing 京</item>
+        <item>ha 哈 er 尔 bin 滨</item>
+        <item>ji 济 nan 南</item>
+        <item>zheng 郑 zhou 州</item>
+        <item>kun 昆 ming 明</item>
+        <item>chang 长 chun 春</item>
+        <item>fu 福 zhou 州</item>
+        <item>gu 古 jin 晋 shi 市</item>
+        <item>meng 孟 jia 加 xi 锡</item>
+        <item>hang 杭 zhou 州</item>
+        <item>qing 青 dao 岛</item>
+        <item>nan 南 ning 宁</item>
+        <item>wu 乌 lu 鲁 mu 木 qi 齐</item>
+        <item>na 拿 suo 索</item>
+        <item>ni 尼 ke 科 xi 西 ya 亚</item>
+        <item>di 帝 li 力</item>
+        <item>luo 罗 de 德 cheng 城</item>
+        <item>luo 洛 mei 美</item>
+        <item>luo 罗 suo 索</item>
+        <item>li 利 bo 伯 wei 维 er 尔</item>
+        <item>ma 马 sai 赛</item>
+        <item>ma 马 sai 塞 lu 鲁</item>
+        <item>ma 马 zhu 朱 luo 罗</item>
+        <item>mo 摩 na 纳 ge 哥</item>
+        <item>si 斯 li 里 ba 巴 jia 加 wan 湾 shi 市</item>
+        <item>ban 班 zhu 珠 er 尔</item>
+        <item>fu 釜 shan 山</item>
+        <item>bu 布 qiong 琼 bu 布 la 拉</item>
+        <item>bu 布 la 拉 chai 柴 wei 维 er 尔</item>
+        <item>wan 万 xiang 象</item>
+        <item>wen 温 te 特 he 和 ke 克</item>
+        <item>sa 萨 la 拉 re 热 wo 窝</item>
+        <item>sai 塞 ban 班 dao 岛</item>
+        <item>sheng 圣 duo 多 mei 美</item>
+        <item>sheng 圣 qiao 乔 zhi 治</item>
+        <item>si 斯 tan 坦 li 利</item>
+        <item>ya 亚 ding 丁</item>
+        <item>a 阿 pi 皮 ya 亚</item>
+        <item>an 安 dao 道 er 尔 cheng 城</item>
+        <item>ou 欧 yun 云</item>
+        <item>wei 威 lian 廉 si 斯 ta 塔 de 德</item>
+        <item>mu 姆 ba 巴 ba 巴 na 纳</item>
+        <item>ka 卡 si 斯 te 特 li 里</item>
+        <item>ke 科 luo 罗 er 尔</item>
+        <item>kan 坎 kun 昆</item>
+        <item>ji 基 jia 加 li 利</item>
+        <item>jin 金 si 斯 dun 敦</item>
+        <item>te 特 la 拉 wei 维 fu 夫</item>
+        <item>fa 法 luo 罗 qun 群 dao 岛</item>
+        <item>di 地 la 拉 na 那</item>
+        <item>ting 廷 bu 布</item>
+        <item>bo 波 duo 多 nuo 诺 fu 伏</item>
+        <item>pu 普 la 拉 ya 亚</item>
+        <item>fa 法 lan 兰 ke 克 fu 福</item>
+        <item>pu 普 li 里 shi 什 di 蒂 na 纳</item>
+        <item>ha 哈 mi 密 er 尔 dun 顿</item>
+        <item>huo 霍 ni 尼 ya 亚 la 拉</item>
+        <item>xi 西 ban 班 ya 牙 gang 港</item>
+        <item>ming 明 ni 尼 a 阿 bo 波 li 利 si 斯</item>
+        <item>xi 希 luo 洛</item>
+        <item>ao 奥 lan 兰 duo 多</item>
+        <item>kan 堪 sa 萨 si 斯 cheng 城</item>
+        <item>xin 新 ao 奥 er 尔 liang 良</item>
+        <item>na 纳 shen 什 wei 维 er 尔</item>
+        <item>tu 图 sen 森</item>
+        <item>tan 坦 pa 帕</item>
+        <item>jie 杰 ke 克 xun 逊 wei 维 er 尔</item>
+        <item>e 俄 ke 克 la 拉 he 何 ma 马 cheng 城</item>
+        <item>a 阿 er 尔 bo 伯 ke 克 ji 基</item>
+        <item>ao 奥 ma 马 ha 哈</item>
+        <item>fu 弗 ji 吉 ni 尼 ya 亚 hai 海 tan 滩</item>
+        <item>bo 博 yi 伊 xi 西</item>
+        <item>de 得 mei 梅 yin 因</item>
+        <item>bo 伯 ming 明 han 翰</item>
+        <item>yan 盐 hu 湖 cheng 城</item>
+        <item>xiao 小 shi 石 cheng 城</item>
+        <item>su 苏 fu 福 er 尔 si 斯</item>
+        <item>jie 杰 ke 克 xun 逊</item>
+        <item>cha 查 er 尔 si 斯 dun 顿 (nan 南 ka 卡 luo 罗 lai 来 na 纳 zhou 州)</item>
+        <item>fa 法 ge 戈</item>
+        <item>bi 比 lin 林 si 斯</item>
+        <item>bo 波 te 特 lan 兰 (mian 缅 yin 因 zhou 州)</item>
+        <item>xia 夏 yan 延</item>
+        <item>cha 查 er 尔 si 斯 dun 顿 (xi 西 fu 弗 ji 吉 ni 尼 ya 亚 zhou 州)</item>
+        <item>pi 匹 zi 兹 bao 堡</item>
+        <item>ge 格 lin 林 bei 贝</item>
+        <item>sheng 圣 lu 路 li 易 si 斯</item>
+        <item>wa 瓦 li 利</item>
+        <item>xie 协 tiao 调 tong 通 yong 用 shi 时 jian 间</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>阿富汗</item>
+        <item>阿尔及利亚</item>
+        <item>萨摩亚</item>
+        <item>安提瓜和巴布达</item>
+        <item>阿根廷</item>
+        <item>亚美尼亚</item>
+        <item>澳大利亚</item>
+        <item>阿塞拜疆</item>
+        <item>孟加拉国</item>
+        <item>巴什科尔托斯坦共和国</item>
+        <item>白俄罗斯</item>
+        <item>玻利维亚</item>
+        <item>巴西</item>
+        <item>保加利亚</item>
+        <item>柬埔寨</item>
+        <item>加拿大</item>
+        <item>智利</item>
+        <item>中国</item>
+        <item>哥伦比亚</item>
+        <item>捷克共和国</item>
+        <item>刚果共和国</item>
+        <item>厄瓜多尔</item>
+        <item>爱沙尼亚</item>
+        <item>芬兰</item>
+        <item>法国</item>
+        <item>格鲁吉亚</item>
+        <item>德国</item>
+        <item>希腊</item>
+        <item>匈牙利</item>
+        <item>印度</item>
+        <item>印度尼西亚</item>
+        <item>伊朗</item>
+        <item>爱尔兰</item>
+        <item>以色列</item>
+        <item>意大利</item>
+        <item>日本</item>
+        <item>哈萨克斯坦</item>
+        <item>肯尼亚</item>
+        <item>基里巴斯</item>
+        <item>拉脱维亚</item>
+        <item>立陶宛</item>
+        <item>马来西亚</item>
+        <item>墨西哥</item>
+        <item>蒙古</item>
+        <item>摩洛哥</item>
+        <item>尼泊尔</item>
+        <item>新西兰</item>
+        <item>巴基斯坦</item>
+        <item>秘鲁</item>
+        <item>菲律宾</item>
+        <item>波兰</item>
+        <item>葡萄牙</item>
+        <item>地图</item>
+        <item>韩国</item>
+        <item>新加坡共和国</item>
+        <item>利比亚</item>
+        <item>罗马尼亚</item>
+        <item>俄罗斯</item>
+        <item>沙特阿拉伯</item>
+        <item>斯洛伐克</item>
+        <item>南非</item>
+        <item>西班牙</item>
+        <item>斯里兰卡</item>
+        <item>瑞典</item>
+        <item>台湾</item>
+        <item>泰国</item>
+        <item>突尼斯</item>
+        <item>土耳其</item>
+        <item>阿联酋</item>
+        <item>英国</item>
+        <item>乌克兰</item>
+        <item>美国</item>
+        <item>乌兹别克斯坦</item>
+        <item>委内瑞拉</item>
+        <item>越南</item>
+        <item>英属维尔京群岛</item>
+        <item>瑞士</item>
+        <item>埃及</item>
+        <item>科特迪瓦</item>
+        <item>加纳</item>
+        <item>埃塞俄比亚</item>
+        <item>约旦</item>
+        <item>荷兰</item>
+        <item>马达加斯加</item>
+        <item>土库曼斯坦</item>
+        <item>厄立特里亚</item>
+        <item>巴拉圭</item>
+        <item>伊拉克</item>
+        <item>马里</item>
+        <item>中非共和国</item>
+        <item>瓜德罗普岛</item>
+        <item>黎巴嫩</item>
+        <item>塞尔维亚</item>
+        <item>伯利兹</item>
+        <item>吉尔吉斯斯坦</item>
+        <item>几内亚比绍</item>
+        <item>巴巴多斯</item>
+        <item>比利时</item>
+        <item>法属圭亚那</item>
+        <item>摩尔多瓦</item>
+        <item>几内亚</item>
+        <item>丹麦</item>
+        <item>塞内加尔</item>
+        <item>叙利亚</item>
+        <item>坦桑尼亚</item>
+        <item>吉布提</item>
+        <item>卡塔尔</item>
+        <item>喀麦隆</item>
+        <item>塔吉克斯坦</item>
+        <item>苏格兰</item>
+        <item>马提尼克</item>
+        <item>塞拉利昂</item>
+        <item>博茨瓦纳</item>
+        <item>圭亚那</item>
+        <item>南佐治亚</item>
+        <item>危地马拉</item>
+        <item>圣巴泰勒米岛</item>
+        <item>津巴布韦</item>
+        <item>古巴</item>
+        <item>乌干达</item>
+        <item>苏丹</item>
+        <item>牙买加</item>
+        <item>科威特</item>
+        <item>尼日利亚</item>
+        <item>安哥拉</item>
+        <item>赞比亚</item>
+        <item>卢森堡</item>
+        <item>赤道几内亚</item>
+        <item>马尔代夫</item>
+        <item>尼加拉瓜</item>
+        <item>巴林</item>
+        <item>莫桑比克</item>
+        <item>圣马丁</item>
+        <item>索马里</item>
+        <item>利比里亚</item>
+        <item>乌拉圭</item>
+        <item>阿曼</item>
+        <item>乍得</item>
+        <item>尼日尔</item>
+        <item>毛里塔尼亚</item>
+        <item>新喀里多尼亚岛</item>
+        <item>汤加</item>
+        <item>格陵兰岛</item>
+        <item>布基纳法索</item>
+        <item>巴拿马</item>
+        <item>苏里南</item>
+        <item>黑山共和国</item>
+        <item>毛里求斯</item>
+        <item>海地</item>
+        <item>朝鲜人民民主共和国</item>
+        <item>缅甸</item>
+        <item>冰岛</item>
+        <item>留尼汪岛</item>
+        <item>哥斯达黎加</item>
+        <item>波多黎各</item>
+        <item>萨尔瓦多</item>
+        <item>也门</item>
+        <item>多米尼加共和国</item>
+        <item>马其顿</item>
+        <item>斐济</item>
+        <item>法属波利尼西亚</item>
+        <item>洪都拉斯</item>
+        <item>列支敦士登</item>
+        <item>马耳他</item>
+        <item>塞舌尔</item>
+        <item>奥地利</item>
+        <item>克罗地亚</item>
+        <item>威尔士</item>
+        <item>美属维尔京群岛</item>
+        <item>斯洛文尼亚</item>
+        <item>圣马力诺</item>
+        <item>挪威</item>
+        <item>巴布亚新几内亚</item>
+        <item>巴哈马群岛</item>
+        <item>塞浦路斯</item>
+        <item>东帝汶</item>
+        <item>多哥</item>
+        <item>多米尼加</item>
+        <item>加蓬</item>
+        <item>莱索托</item>
+        <item>马绍尔群岛</item>
+        <item>摩纳哥</item>
+        <item>文莱</item>
+        <item>冈比亚</item>
+        <item>布隆迪</item>
+        <item>刚果民主共和国</item>
+        <item>老挝</item>
+        <item>纳米比亚</item>
+        <item>波斯尼亚和黑塞哥维那</item>
+        <item>塞班岛</item>
+        <item>圣多美与普林希比共和国</item>
+        <item>格林纳达</item>
+        <item>福克兰群岛</item>
+        <item>美属萨摩亚</item>
+        <item>安道尔</item>
+        <item>撒拉威阿拉伯民主共和国</item>
+        <item>库拉索</item>
+        <item>史瓦帝尼</item>
+        <item>圣卢西亚</item>
+        <item>帕劳</item>
+        <item>卢旺达</item>
+        <item>圣文森特和格林纳丁斯</item>
+        <item>法罗群岛</item>
+        <item>阿尔巴尼亚</item>
+        <item>不丹</item>
+        <item>贝宁</item>
+        <item>佛得角</item>
+        <item>科索沃</item>
+        <item>百慕大</item>
+        <item>所罗门群岛</item>
+        <item>中国台湾</item>
+        <item>特立尼达和多巴哥</item>
+        <item>安圭拉</item>
+        <item>UTC (协调通用时间)</item>
+    </string-array>
+    <string-array name="CountriesPinyin">
+        <item>a 阿 fu 富 han 汗</item>
+        <item>a 阿 er 尔 ji 及 li 利 ya 亚</item>
+        <item>mei 美 shu 属 sa 萨 mo 摩 ya 亚</item>
+        <item>an 安 ti 提 gua 瓜 he 和 ba 巴 bu 布 da 达</item>
+        <item>a 阿 gen 根 ting 廷</item>
+        <item>ya 亚 mei 美 ni 尼 ya 亚</item>
+        <item>ao 澳 da 大 li 利 ya 亚</item>
+        <item>a 阿 sai 塞 bai 拜 jiang 疆</item>
+        <item>meng 孟 jia 加 la 拉 guo 国</item>
+        <item>ba 巴 shi 什 ke 科 er 尔 tuo 托 si 斯 tan 坦 gong 共 he 和 guo 国</item>
+        <item>bai 白 e 俄 luo 罗 si 斯</item>
+        <item>bo 玻 li 利 wei 维 ya 亚</item>
+        <item>ba 巴 xi 西</item>
+        <item>bao 保 jia 加 li 利 ya 亚</item>
+        <item>jian 柬 pu 埔 zhai 寨</item>
+        <item>jia 加 na 拿 da 大</item>
+        <item>zhi 智 li 利</item>
+        <item>zhong 中 guo 国</item>
+        <item>ge 哥 lun 伦 bi 比 ya 亚</item>
+        <item>jie 捷 ke 克</item>
+        <item>gang 刚 guo 果 min 民 zhu 主 gong 共 he 和 guo 国</item>
+        <item>e 厄 gua 瓜 duo 多 er 尔</item>
+        <item>ai 爱 sha 沙 ni 尼 ya 亚</item>
+        <item>fen 芬 lan 兰</item>
+        <item>fa 法 guo 国</item>
+        <item>ge 格 lu 鲁 ji 吉 ya 亚</item>
+        <item>de 德 guo 国</item>
+        <item>xi 希 la 腊</item>
+        <item>xiong 匈 ya 牙 li 利</item>
+        <item>yin 印 du 度</item>
+        <item>yin 印 du 度 ni 尼 xi 西 ya 亚</item>
+        <item>yi 伊 lang 朗</item>
+        <item>ai 爱 er 尔 lan 兰</item>
+        <item>yi 以 se 色 lie 列</item>
+        <item>yi 意 da 大 li 利</item>
+        <item>ri 日 ben 本</item>
+        <item>ha 哈 sa 萨 ke 克 si 斯 tan 坦</item>
+        <item>ken 肯 ni 尼 ya 亚</item>
+        <item>ji 基 li 里 ba 巴 si 斯</item>
+        <item>la 拉 tuo 脱 wei 维 ya 亚</item>
+        <item>li 立 tao 陶 wan 宛</item>
+        <item>ma 马 lai 来 xi 西 ya 亚</item>
+        <item>mo 墨 xi 西 ge 哥</item>
+        <item>meng 蒙 gu 古</item>
+        <item>mo 摩 luo 洛 ge 哥</item>
+        <item>ni 尼 bo 泊 er 尔</item>
+        <item>xin 新 xi 西 lan 兰</item>
+        <item>ba 巴 ji 基 si 斯 tan 坦</item>
+        <item>bi 秘 lu 鲁</item>
+        <item>fei 菲 lu 律 bin 宾</item>
+        <item>bo 波 lan 兰</item>
+        <item>pu 葡 tao 萄 ya 牙</item>
+        <item>di 地 tu 图</item>
+        <item>han 韩 guo 国</item>
+        <item>xin 新 jia 加 po 坡 gong 共 he 和 guo 国</item>
+        <item>li 利 bi 比 ya 亚</item>
+        <item>luo 罗 ma 马 ni 尼 ya 亚</item>
+        <item>e 俄 luo 罗 si 斯</item>
+        <item>sha 沙 te 特 a 阿 la 拉 bo 伯</item>
+        <item>si 斯 luo 洛 fa 伐 ke 克</item>
+        <item>nan 南 fei 非</item>
+        <item>xi 西 ban 班 ya 牙</item>
+        <item>si 斯 li 里 lan 兰 ka 卡</item>
+        <item>rui 瑞 dian 典</item>
+        <item>zhong 台 guo 湾</item>
+        <item>tai 泰 guo 国</item>
+        <item>tu 突 ni 尼 si 斯</item>
+        <item>tu 土 er 耳 qi 其</item>
+        <item>a 阿 lian 联 qiu 酋</item>
+        <item>ying 英 guo 国</item>
+        <item>wu 乌 ke 克 lan 兰</item>
+        <item>mei 美 guo 国</item>
+        <item>wu 乌 zi 兹 bie 别 ke 克 si 斯 tan 坦</item>
+        <item>wei 委 nei 内 rui 瑞 la 拉</item>
+        <item>yue 越 nan 南</item>
+        <item>ying 英 shu 属 wei 维 er 尔 jing 京 qun 群 dao 岛</item>
+        <item>rui 瑞 shi 士</item>
+        <item>ai 埃 ji 及</item>
+        <item>ke 科 te 特 di 迪 wa 瓦</item>
+        <item>jia 加 na 纳</item>
+        <item>ai 埃 sai 塞 e 俄 bi 比 ya 亚</item>
+        <item>yue 约 dan 旦</item>
+        <item>he 荷 lan 兰</item>
+        <item>ma 马 da 达 jia 加 si 斯 jia 加</item>
+        <item>tu 土 ku 库 man 曼 si 斯 tan 坦</item>
+        <item>e 厄 li 立 te 特 li 里 ya 亚</item>
+        <item>ba 巴 la 拉 gui 圭</item>
+        <item>yi 伊 la 拉 ke 克</item>
+        <item>ma 马 li 里</item>
+        <item>zhong 中 fei 非 gong 共 he 和 guo 国</item>
+        <item>gua 瓜 de 德 luo 罗 pu 普 dao 岛</item>
+        <item>li 黎 ba 巴 nen 嫩</item>
+        <item>sai 塞 er 尔 wei 维 ya 亚</item>
+        <item>bo 伯 li 利 zi 兹</item>
+        <item>ji 吉 er 尔 ji 吉 si 斯 si 斯 tan 坦</item>
+        <item>ji 几 nei 内 ya 亚 bi 比 shao 绍</item>
+        <item>ba 巴 ba 巴 duo 多 si 斯</item>
+        <item>bi 比 li 利 shi 时</item>
+        <item>fa 法 shu 属 gui 圭 ya 亚 na 那</item>
+        <item>mo 摩 er 尔 duo 多 wa 瓦</item>
+        <item>ji 几 nei 内 ya 亚</item>
+        <item>dan 丹 mai 麦</item>
+        <item>sai 塞 nei 内 jia 加 er 尔</item>
+        <item>xu 叙 li 利 ya 亚</item>
+        <item>tan 坦 sang 桑 ni 尼 ya 亚</item>
+        <item>ji 吉 bu 布 ti 提</item>
+        <item>ka 卡 ta 塔 er 尔</item>
+        <item>ka 喀 mai 麦 long 隆</item>
+        <item>ta 塔 ji 吉 ke 克 si 斯 tan 坦</item>
+        <item>su 苏 ge 格 lan 兰</item>
+        <item>ma 马 ti 提 ni 尼 ke 克</item>
+        <item>sai 塞 la 拉 li 利 ang 昂</item>
+        <item>bo 博 ci 茨 wa 瓦 na 纳</item>
+        <item>gui 圭 ya 亚 na 那</item>
+        <item>nan 南 zuo 佐 zhi 治 ya 亚</item>
+        <item>wei 危 di 地 ma 马 la 拉</item>
+        <item>sheng 圣 ba 巴 tai 泰 le 勒 mi 米 dao 岛</item>
+        <item>jin 津 ba 巴 bu 布 wei 韦</item>
+        <item>gu 古 ba 巴</item>
+        <item>wu 乌 gan 干 da 达</item>
+        <item>su 苏 dan 丹</item>
+        <item>ya 牙 mai 买 jia 加</item>
+        <item>ke 科 wei 威 te 特</item>
+        <item>ni 尼 ri 日 li 利 ya 亚</item>
+        <item>an 安 ge 哥 la 拉</item>
+        <item>zan 赞 bi 比 ya 亚</item>
+        <item>lu 卢 sen 森 bao 堡</item>
+        <item>chi 赤 dao 道 ji 几 nei 内 ya 亚</item>
+        <item>ma 马 er 尔 dai 代 fu 夫</item>
+        <item>ni 尼 jia 加 la 拉 gu 瓜</item>
+        <item>ba 巴 lin 林</item>
+        <item>mo 莫 sang 桑 bi 比 ke 克</item>
+        <item>sheng 圣 ma 马 ding 丁</item>
+        <item>suo 索 ma 马 li 里</item>
+        <item>li 利 bi 比 li 里 ya 亚</item>
+        <item>wu 乌 la 拉 gui 圭</item>
+        <item>a 阿 man 曼</item>
+        <item>zha 乍 de 得</item>
+        <item>ni 尼 ri 日 li 尔</item>
+        <item>mao 毛 li 里 ta 塔 ni 尼 ya 亚</item>
+        <item>xin 新 ka 喀 li 里 duo 多 ni 尼 ya 亚 dao 岛</item>
+        <item>tang 汤 jia 加</item>
+        <item>ge 格 ling 陵 lan 兰 dao 岛</item>
+        <item>bu 布 ji 基 na 纳 fa 法 suo 索</item>
+        <item>ba 巴 na 拿 ma 马</item>
+        <item>su 苏 li 里 nan 南</item>
+        <item>hei 黑 shan 山 gong 共 he 和 guo 国</item>
+        <item>mao 毛 li 里 qiu 求 si 斯</item>
+        <item>hai 海 di 地</item>
+        <item>chao 朝 xian 鲜 ren 人 min 民 min 民 zhu 主 gong 共 he 和 guo 国</item>
+        <item>mian 缅 dian 甸</item>
+        <item>bing 冰 dao 岛</item>
+        <item>liu 留 ni 尼 wang 汪 dao 岛</item>
+        <item>ge 哥 si 斯 da 达 li 黎 jia 加</item>
+        <item>bo 波 duo 多 li 黎 ge 各</item>
+        <item>sa 萨 er 尔 wa 瓦 duo 多</item>
+        <item>ye 也 men 门</item>
+        <item>duo 多 mi 米 ni 尼 jia 加 gong 共 he 和 guo 国</item>
+        <item>ma 马 qi 其 dun 顿</item>
+        <item>fei 斐 ji 济</item>
+        <item>fa 法 shu 属 bo 波 li 利 ni 尼 xi 西 ya 亚</item>
+        <item>hong 洪 dou 都 la 拉 si 斯</item>
+        <item>lie 列 zhi 支 dun 敦 shi 士 deng 登</item>
+        <item>ma 马 er 耳 ta 他</item>
+        <item>sai 塞 she 舌 er 尔</item>
+        <item>ao 奥 di 地 li 利</item>
+        <item>ke 克 luo 罗 di 地 ya 亚</item>
+        <item>wei 威 er 尔 shi 士</item>
+        <item>mei 美 shu 属 wei 维 er 尔 jing 京 qun 群 dao 岛</item>
+        <item>si 斯 luo 洛 wen 文 ni 尼 ya 亚</item>
+        <item>sheng 圣 ma 马 li 力 nuo 诺</item>
+        <item>nuo 挪 wei 威</item>
+        <item>ba 巴 bu 布 ya 亚 xin 新 ji 几 nei 内 ya 亚</item>
+        <item>ba 巴 ha 哈 ma 马 qun 群 dao 岛</item>
+        <item>sai 塞 pu 浦 lu 路 si 斯</item>
+        <item>dong 东 di 帝 wen 汶</item>
+        <item>duo 多 ge 哥</item>
+        <item>duo 多 mi 米 ni 尼 jia 加</item>
+        <item>jia 加 peng 蓬</item>
+        <item>lai 莱 suo 索 tuo 托</item>
+        <item>ma 马 shao 绍 er 尔 qun 群 dao 岛</item>
+        <item>mo 摩 na 纳 ge 哥</item>
+        <item>wen 文 lai 莱</item>
+        <item>gang 冈 bi 比 ya 亚</item>
+        <item>bu 布 long 隆 di 迪</item>
+        <item>gang 刚 guo 果 min 民 zhu 主 gong 共 he 和 guo 国</item>
+        <item>lao 老 wo 挝</item>
+        <item>na 纳 mi 米 bi 比 ya 亚</item>
+        <item>bo 波 si 斯 ni 尼 ya 亚 he 和 hei 黑 sai 塞 ge 哥 wei 维 na 那</item>
+        <item>sai 塞 ban 班 dao 岛</item>
+        <item>sheng 圣 duo 多 mei 美 yu 与 pu 普 lin 林 xi 希 bi 比 gong 共 he 和 guo 国</item>
+        <item>ge 格 lin 林 na 纳 da 达</item>
+        <item>fu 福 ke 克 lan 兰 qun 群 dao 岛</item>
+        <item>mei 美 shu 属 sa 萨 mo 摩 ya 亚</item>
+        <item>an 安 dao 道 er 尔</item>
+        <item>sa 撒 la 拉 wei 威 a 阿 la 拉 bo 伯 min 民 zhu 主 gong 共 he 和 guo 国</item>
+        <item>ku 库 la 拉 suo 索</item>
+        <item>si 斯 wei 威 shi 士 lan 兰</item>
+        <item>sheng 圣 lu 卢 xi 西 ya 亚</item>
+        <item>pa 帕 lao 劳</item>
+        <item>lu 卢 wang 旺 da 达</item>
+        <item>sheng 圣 wen 文 sen 森 te 特 he 和 ge 格 lin 林 na 纳 ding 丁 si 斯</item>
+        <item>fa 法 luo 罗 qun 群 dao 岛</item>
+        <item>a 阿 er 尔 ba 巴 ni 尼 ya 亚</item>
+        <item>bu 不 dan 丹</item>
+        <item>bei 贝 ning 宁</item>
+        <item>fo 佛 de 得 jiao 角</item>
+        <item>ke 科 suo 索 wo 沃</item>
+        <item>bai 百 mu 慕 da 大</item>
+        <item>suo 所 luo 罗 men 门 qun 群 dao 岛</item>
+        <item></item>
+        <item>te 特 li 立 ni 尼 da 达 he 和 duo 多 ba 巴 ge 哥</item>
+        <item>an 安 gui 圭 la 拉</item>
+        <item></item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>闹钟已设置为1分钟后</item>
+        <item>闹钟已设置为 %1$s 后</item>
+        <item>闹钟已设置为 %2$s 后</item>
+        <item>闹钟已设置为 %1$s%2$s 后</item>
+        <item>闹钟已设置为 %3$s 后</item>
+        <item>闹钟已设置为 %1$s %3$s 后</item>
+        <item>闹钟已设置为 %2$s %3$s 后</item>
+        <item>闹钟已设置为 %1$s %2$s %3$s 后</item>
+        <item>闹钟设置在 %s 后</item>
+        <item>闹钟设置在 %1$s 零 %2$s 后</item>
+        <item>闹钟已设置为 %1$s %3$s 后</item>
+        <item>闹钟已设置为 %1$s %2$s %3$s 后</item>
+        <item>闹钟设置在 %1$s 零 %2$s 后</item>
+        <item>闹钟已设置为 %1$s %2$s %3$s 后</item>
+        <item>闹钟已设置为 %1$s %2$s %3$s 后</item>
+        <item>闹钟已设置为%1$s零%2$s%3$s%4$s后</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

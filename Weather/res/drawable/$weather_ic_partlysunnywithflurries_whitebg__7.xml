@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="149" android:pathData="M 139.999908447266,220.000186920166 C139.999908447266,220.000186920166 148.249816894531,212.500370025635 139.999908447266,220.000186920166" android:propertyXName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__8" android:duration="1347" android:pathData="M 139.999908447266,220.000186920166 C131.75,227.500003814697 154.749908447266,238.629817962646 139.999908447266,255.555744171143" android:propertyXName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@android:anim/linear_interpolator" android:duration="149" android:pathData="M 139.999908447266,220.000186920166 C139.999908447266,220.000186920166 148.249816894531,212.500370025635 139.999908447266,220.000186920166" android:propertyYName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__9" android:duration="1347" android:pathData="M 139.999908447266,220.000186920166 C131.75,227.500003814697 154.749908447266,238.629817962646 139.999908447266,255.555744171143" android:propertyYName="translateY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="149" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__10" android:duration="1347" android:valueFrom="0" android:valueTo="-48" android:propertyName="rotation" />
+    </set>
+</set>

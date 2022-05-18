@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/widget_bg_gradient_sunny" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/widget_initial_text_size" android:gravity="center" android:layout_gravity="center" android:id="@id/widget_restore_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_weather_data" android:maxLines="3" style="@style/AestheticWidget.TextAppearance" />
+</FrameLayout>

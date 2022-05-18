@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tw_fab_add_mtrl" android:id="@id/menu_alert_bg_add" android:title="@string/add_alert_background" android:showAsAction="always" />
+    <item android:id="@id/menu_alert_bg_delete" android:title="@string/delete" android:showAsAction="never" />
+</menu>

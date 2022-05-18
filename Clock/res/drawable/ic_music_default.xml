@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="14.0dip" android:width="14.0dip" android:viewportWidth="14.0" android:viewportHeight="14.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/alarm_spotify_music_default_color" android:pathData="M4.9949,11.2408C4.2985,11.2408 3.734,10.6761 3.734,9.9796C3.734,9.283 4.2985,8.7187 4.9949,8.7187C5.6866,8.7187 6.248,9.2757 6.2553,9.9659L6.2553,9.974L6.2558,9.974C6.2558,9.9759 6.256,9.9777 6.256,9.9796C6.256,10.6761 5.6914,11.2408 4.9949,11.2408M8.0343,1L6.2553,1L6.2553,7.2666C5.8715,7.0876 5.4456,6.9848 4.9949,6.9848C3.3432,6.9848 2,8.328 2,9.9796C2,11.6311 3.3432,12.9746 4.9949,12.9746C6.6465,12.9746 7.9902,11.6311 7.9902,9.9796C7.9902,9.975 7.9894,9.9705 7.9894,9.9659L7.9894,2.7338L8.0343,2.7338C10.2387,2.7338 11.2659,4.4725 11.2659,5.6473L11.2659,7.3802L13,7.3802L13,5.6473C13,3.4124 11.1015,1 8.0343,1" android:strokeColor="#00000000" android:strokeWidth="1.0" android:fillType="evenOdd" />
+</vector>

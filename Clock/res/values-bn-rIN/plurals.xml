@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">অ্যালার্ম %d দিন পরে</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">অ্যালার্ম %d দিন পরে</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">অ্যালার্ম %d ঘন্টা পরে</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">অ্যালার্ম %d ঘন্টা পরে</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">অ্যালার্ম %d ঘন্টা 1 মিনিট পরে বাজবে</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">অ্যালার্ম %d ঘন্টা 1 মিনিট পরে বাজবে</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">অ্যালার্ম %d মিনিট পরে</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">অ্যালার্ম %d মিনিট পরে</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d মিনিট পরে</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d মিনিট পরে</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%dটির বেশি অ্যালার্ম যোগ করা যাচ্ছে না।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটির বেশি অ্যালার্ম যোগ করা যাচ্ছে না।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d মিনিট</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d মিনিট</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">%dটি ব্যাকগ্রাউন্ড মুছবেন?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটি ব্যাকগ্রাউন্ড মুছবেন?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%dটি নির্বাচিত</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটি নির্বাচিত</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d মিনিট আগে</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d মিনিট আগে</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s এবং অন্য %3$dটি</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s এবং অন্য %3$dটি</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">নিদ্রার সময়: %d ঘন্টা</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">নিদ্রার সময়: %d ঘন্টা</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">নিদ্রার সময়: %d মিনিট</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">নিদ্রার সময়: %d মিনিট</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d মিনিট তন্দ্রাচ্ছন্ন করুন</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d মিনিট তন্দ্রাচ্ছন্ন করুন</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">%d মিনিটের কম</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d মিনিটের কম</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">%d মিনিটের বেশি</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d মিনিটের বেশি</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%dটির বেশি প্রিসেট টাইমার যোগ করা যাচ্ছে না।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটির বেশি প্রিসেট টাইমার যোগ করা যাচ্ছে না।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%dটির বেশি শহর যোগ করা যাচ্ছে না।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dটির বেশি শহর যোগ করা যাচ্ছে না।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

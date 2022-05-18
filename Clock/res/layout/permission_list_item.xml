@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/permission_icon_layout_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/perm_icon_layout" android:layout_width="@dimen/permission_icon_layout_size" android:layout_height="@dimen/permission_icon_layout_size" android:layout_marginEnd="@dimen/permission_gap" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/permission_icon_size" android:layout_height="@dimen/permission_icon_size" android:tint="#ff86898b" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/permission_name_font_size" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/perm_icon_layout" style="@android:style/TextAppearance.DeviceDefault" />
+</RelativeLayout>

@@ -1,0 +1,194 @@
+.class public final Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;
+.super Ljava/lang/Object;
+.source "BackupReceiver.kt"
+
+# interfaces
+.implements Lcom/samsung/android/weather/bnr/helper/BackupNRestore$IDecryptData;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/samsung/android/weather/bnr/BackupReceiver;-><init>()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0013\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0003H\u0016\u00a8\u0006\u0005"
+    }
+    d2 = {
+        "com/samsung/android/weather/bnr/BackupReceiver$decryptStream$1",
+        "Lcom/samsung/android/weather/bnr/helper/BackupNRestore$IDecryptData;",
+        "decrypt",
+        "Ljava/io/InputStream;",
+        "stream",
+        "weather-bnr_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x5,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+
+# direct methods
+.method constructor <init>(Lcom/samsung/android/weather/bnr/BackupReceiver;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    .line 179
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public decrypt(Ljava/io/InputStream;)Ljava/io/InputStream;
+    .locals 5
+
+    const-string v0, "stream"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "AES/CBC/PKCS5Padding"
+
+    .line 181
+    invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+
+    move-result-object v0
+
+    .line 183
+    invoke-virtual {v0}, Ljavax/crypto/Cipher;->getBlockSize()I
+
+    move-result v1
+
+    new-array v1, v1, [B
+
+    .line 184
+    invoke-virtual {p1, v1}, Ljava/io/InputStream;->read([B)I
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    const-string v2, ""
+
+    const-string v3, "No data from input stream!"
+
+    .line 186
+    invoke-static {v2, v3}, Lcom/samsung/android/weather/infrastructure/debug/SLog;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 188
+    :cond_0
+    new-instance v2, Ljavax/crypto/spec/IvParameterSpec;
+
+    invoke-direct {v2, v1}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
+
+    check-cast v2, Ljava/security/spec/AlgorithmParameterSpec;
+
+    .line 190
+    iget-object v1, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    invoke-static {v1}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$isSecurityPassword$p(Lcom/samsung/android/weather/bnr/BackupReceiver;)Z
+
+    move-result v1
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_2
+
+    .line 191
+    iget-object v1, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    const/16 v4, 0x10
+
+    new-array v4, v4, [B
+
+    invoke-static {v1, v4}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$setSalt$p(Lcom/samsung/android/weather/bnr/BackupReceiver;[B)V
+
+    .line 192
+    iget-object v1, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    invoke-static {v1}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$getSalt$p(Lcom/samsung/android/weather/bnr/BackupReceiver;)[B
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {p1, v1}, Ljava/io/InputStream;->read([B)I
+
+    .line 193
+    iget-object v1, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    invoke-static {v1}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$generatePBKDF2SecretKey(Lcom/samsung/android/weather/bnr/BackupReceiver;)Ljavax/crypto/spec/SecretKeySpec;
+
+    move-result-object v4
+
+    invoke-static {v1, v4}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$setSecretKeySpec$p(Lcom/samsung/android/weather/bnr/BackupReceiver;Ljavax/crypto/spec/SecretKeySpec;)V
+
+    goto :goto_0
+
+    :cond_1
+    const-string p1, "salt"
+
+    .line 192
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 195
+    :cond_2
+    iget-object v1, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    invoke-static {v1}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$generateSHA256SecretKey(Lcom/samsung/android/weather/bnr/BackupReceiver;)Ljavax/crypto/spec/SecretKeySpec;
+
+    move-result-object v4
+
+    invoke-static {v1, v4}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$setSecretKeySpec$p(Lcom/samsung/android/weather/bnr/BackupReceiver;Ljavax/crypto/spec/SecretKeySpec;)V
+
+    :goto_0
+    const/4 v1, 0x2
+
+    .line 198
+    iget-object v4, p0, Lcom/samsung/android/weather/bnr/BackupReceiver$decryptStream$1;->this$0:Lcom/samsung/android/weather/bnr/BackupReceiver;
+
+    invoke-static {v4}, Lcom/samsung/android/weather/bnr/BackupReceiver;->access$getSecretKeySpec$p(Lcom/samsung/android/weather/bnr/BackupReceiver;)Ljavax/crypto/spec/SecretKeySpec;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_3
+
+    check-cast v4, Ljava/security/Key;
+
+    invoke-virtual {v0, v1, v4, v2}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
+
+    .line 199
+    new-instance v1, Ljavax/crypto/CipherInputStream;
+
+    invoke-direct {v1, p1, v0}, Ljavax/crypto/CipherInputStream;-><init>(Ljava/io/InputStream;Ljavax/crypto/Cipher;)V
+
+    check-cast v1, Ljava/io/InputStream;
+
+    return-object v1
+
+    :cond_3
+    const-string p1, "secretKeySpec"
+
+    .line 198
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    throw v3
+.end method

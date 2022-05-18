@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="worldclock_city_textsize">11.0sp</dimen>
+    <dimen name="worldclock_city_timesize">9.0sp</dimen>
+    <dimen name="worldclock_current_location_icon_width">16.0dip</dimen>
+    <dimen name="worldclock_normal_icon_width">6.0dip</dimen>
+    <dimen name="worldclock_selected_icon_width">7.0dip</dimen>
+    <dimen name="worldclock_start_earth_size">374.0dip</dimen>
+    <dimen name="worldclock_under_selection_icon_width">16.0dip</dimen>
+    <dimen name="worldclock_under_selection_textsize">12.0sp</dimen>
+    <item type="dimen" name="worldclock_zoom_multiplier">1.2</item>
+</resources>

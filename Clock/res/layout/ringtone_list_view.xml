@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:scrollbarStyle="outsideOverlay" android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:smoothScrollbar="true" android:nestedScrollingEnabled="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

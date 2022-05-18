@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarm za %d dni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm za %d dziyń</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarm za %d dni</item>
+        <item quantity="many">Alarm za %d dni</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarm za %d godzin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm za %d godzina</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarm za %d godziny</item>
+        <item quantity="many">Alarm za %d godzin</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Alarm za %d godz. 1 min.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm za %d godz. 1 min.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarm za %d godz. 1 min.</item>
+        <item quantity="many">Alarm za %d godz. 1 min.</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarm za %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarm za %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarm za %d minuty</item>
+        <item quantity="many">Alarm za %d minut</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Za %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Za %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Za %d minuty</item>
+        <item quantity="many">Za %d minut</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Niy idzie przidać wiyncyj co %d alarmōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie przidać wiyncyj co %d alarmu.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie przidać wiyncyj co %d alarmōw.</item>
+        <item quantity="many">Niy idzie przidać wiyncyj co %d alarmōw.</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minut</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Wyciepnōńć %d tłōw?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Wyciepnōńć %d tło?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Wyciepnōńć %d tła?</item>
+        <item quantity="many">Wyciepnōńć %d tłōw?</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ôbranych</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrane</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane</item>
+        <item quantity="many">%d ôbranych</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d minuty przed</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuta przed</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minuty przed</item>
+        <item quantity="many">%d minut przed</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s i %3$d inkszych</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s i %3$d inkszy</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s, %2$s i %3$d inksze</item>
+        <item quantity="many">%1$s, %2$s i %3$d inkszych</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Czŏs spaniŏ: %d godziny</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Czŏs spaniŏ: %d godzina</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Czŏs spaniŏ: %d godziny</item>
+        <item quantity="many">Czŏs spaniŏ: %d godzin</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Czŏs spaniŏ: %d minuty</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Czŏs spaniŏ: %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Czŏs spaniŏ: %d minuty</item>
+        <item quantity="many">Czŏs spaniŏ: %d minut</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Drzimoty bez %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Drzimoty bez %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Drzimoty bez %d minuty</item>
+        <item quantity="many">Drzimoty bez %d minut</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Minus %d minuty</item>
+        <item quantity="many">Minus %d minut</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plus %d minuta</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Plus %d minuty</item>
+        <item quantity="many">Plus %d minut</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Nie można dodać więcej niż %d zaprogramowanego czasomierza.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie można dodać więcej niż %d zaprogramowany czasomierz.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nie można dodać więcej niż %d zaprogramowane czasomierze.</item>
+        <item quantity="many">Nie można dodać więcej niż %d zaprogramowanych czasomierzy.</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Niy idzie dodać wiyncyj jak %d miast.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nie idzie dodać wiyncyj jak %d miasto.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie dodać wiyncyj jak %d miast.</item>
+        <item quantity="many">Niy idzie dodać wiyncyj jak %d miast.</item>
+    </plurals>
+</resources>

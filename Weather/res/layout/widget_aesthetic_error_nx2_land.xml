@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_error_msg_margin_horizontal">
+        <TextView android:textSize="@dimen/widget_error_msg_text_size" android:gravity="center" android:id="@id/widget_error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" style="@style/AestheticWidget.TextAppearance" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/widget_settings_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_error_setting_icon_marginTop_land">
+            <TextView android:textSize="@dimen/widget_error_setting_text_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/widget_setting" android:layout_weight="1.0" android:textAlignment="center" style="@style/AestheticWidget.TextAppearance" />
+            <ImageView android:id="@id/widget_setting_icon" android:layout_width="@dimen/widget_error_setting_icon_size" android:layout_height="@dimen/widget_error_setting_icon_size" android:src="@drawable/weather_widget_4x5_ic_settings_noshadow_mtrl" android:layout_marginStart="@dimen/widget_error_setting_icon_marginStart" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

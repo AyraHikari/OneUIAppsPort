@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Мидвеј</item>
+        <item>Хонолулу</item>
+        <item>Хаваи</item>
+        <item>Алјаска</item>
+        <item>Анкориџ</item>
+        <item>Сан Франциско</item>
+        <item>Ванкувер</item>
+        <item>Сиетл</item>
+        <item>Лос Анѓелес</item>
+        <item>Тихуана</item>
+        <item>Калгари</item>
+        <item>Феникс</item>
+        <item>Мацатлан</item>
+        <item>Денвер</item>
+        <item>Мексико Сити</item>
+        <item>Винипег</item>
+        <item>Диего Гарсија</item>
+        <item>Далас</item>
+        <item>Чикаго</item>
+        <item>Торонто</item>
+        <item>Мајами</item>
+        <item>Лима</item>
+        <item>Кито</item>
+        <item>Вашингтон</item>
+        <item>Отава</item>
+        <item>Њујорк</item>
+        <item>Богота</item>
+        <item>Сантјаго</item>
+        <item>Ла Паз</item>
+        <item>Каракас</item>
+        <item>Буенос Аирес</item>
+        <item>Њуфаундленд</item>
+        <item>Сент Џонс</item>
+        <item>Сао Пауло</item>
+        <item>Бразилија</item>
+        <item>Рио де Жанеиро</item>
+        <item>Фернандо де Нороња</item>
+        <item>Азури</item>
+        <item>Лисабон</item>
+        <item>Казабланка</item>
+        <item>Даблин</item>
+        <item>Рабат</item>
+        <item>Мадрид</item>
+        <item>Сетлмент</item>
+        <item>Лондон</item>
+        <item>Кингстон</item>
+        <item>Барселона</item>
+        <item>Париз</item>
+        <item>Алжир</item>
+        <item>Тунис</item>
+        <item>Триполи</item>
+        <item>Берлин</item>
+        <item>Рим</item>
+        <item>Прага</item>
+        <item>Киншаса</item>
+        <item>Стокхолм</item>
+        <item>Братислава</item>
+        <item>Кејптаун</item>
+        <item>Будимпешта</item>
+        <item>Варшава</item>
+        <item>Калининград</item>
+        <item>Софија</item>
+        <item>Атина</item>
+        <item>Л’вов</item>
+        <item>Хелсинки</item>
+        <item>Рига</item>
+        <item>Талин</item>
+        <item>Букурешт</item>
+        <item>Вилнус</item>
+        <item>Лубумбаши</item>
+        <item>Минск</item>
+        <item>Санкт Петерсбург</item>
+        <item>Истанбул</item>
+        <item>Камчатка</item>
+        <item>Киев</item>
+        <item>Ерусалим</item>
+        <item>Москва</item>
+        <item>Харков</item>
+        <item>Најроби</item>
+        <item>Џеда</item>
+        <item>Волгоград</item>
+        <item>Ереван</item>
+        <item>Тбилиси</item>
+        <item>Баку</item>
+        <item>Чита</item>
+        <item>Самара</item>
+        <item>Техеран</item>
+        <item>Ижевск</item>
+        <item>Абу Даби</item>
+        <item>Дубај</item>
+        <item>Уфа</item>
+        <item>Екатеринбург</item>
+        <item>Чељабинск</item>
+        <item>Карачи</item>
+        <item>Кабул</item>
+        <item>Ташкент</item>
+        <item>Исламабад</item>
+        <item>Бомбај</item>
+        <item>Омск</item>
+        <item>Алмати</item>
+        <item>Бангалор</item>
+        <item>Хидерабад</item>
+        <item>Њу Делхи</item>
+        <item>Коломбо</item>
+        <item>Ченај</item>
+        <item>Новосибирск</item>
+        <item>Катманду</item>
+        <item>Новокузњецк</item>
+        <item>Калкута</item>
+        <item>Дака</item>
+        <item>Ховд</item>
+        <item>Краснојарск</item>
+        <item>Банкок</item>
+        <item>Куала Лумпур</item>
+        <item>Сингапур</item>
+        <item>Иркутск</item>
+        <item>Пном Пен</item>
+        <item>Ханој</item>
+        <item>Џакарта</item>
+        <item>Улан Батор</item>
+        <item>Хонгконг</item>
+        <item>Перт</item>
+        <item>Пекинг</item>
+        <item>Манила</item>
+        <item>Тајпеј</item>
+        <item>Сеул</item>
+        <item>Амбон</item>
+        <item>Владивосток</item>
+        <item>Јакутск</item>
+        <item>Хабаровск</item>
+        <item>Аделаида</item>
+        <item>Токио</item>
+        <item>Јужно Сахалинск</item>
+        <item>Халифакс</item>
+        <item>Гвам</item>
+        <item>Канбера</item>
+        <item>Магадан</item>
+        <item>Сиднеј</item>
+        <item>Петропавловск-Камчатскиј</item>
+        <item>Тарава</item>
+        <item>Окленд</item>
+        <item>Велингтон</item>
+        <item>Паго Паго</item>
+        <item>Денпасар</item>
+        <item>Берн</item>
+        <item>Цирих</item>
+        <item>Каиро</item>
+        <item>Абиџан</item>
+        <item>Акра</item>
+        <item>Адис Абеба</item>
+        <item>Аман</item>
+        <item>Амстердам</item>
+        <item>Анадир</item>
+        <item>Анкара</item>
+        <item>Антананариво</item>
+        <item>Ашхабад</item>
+        <item>Асмара</item>
+        <item>Астана</item>
+        <item>Асунсион</item>
+        <item>Остин</item>
+        <item>Багдад</item>
+        <item>Балтимор</item>
+        <item>Бамако</item>
+        <item>Банги</item>
+        <item>Бари</item>
+        <item>Бастер</item>
+        <item>Бејрут</item>
+        <item>Белград</item>
+        <item>Белизе Сити</item>
+        <item>Бишкек</item>
+        <item>Бисао</item>
+        <item>Болоња</item>
+        <item>Бостон</item>
+        <item>Бриџтаун</item>
+        <item>Бризбејн</item>
+        <item>Брисел</item>
+        <item>Канарски Острови</item>
+        <item>Катанѕаро</item>
+        <item>Кејен</item>
+        <item>Шарлот</item>
+        <item>Кишинев</item>
+        <item>Кливленд</item>
+        <item>Коламбас</item>
+        <item>Конакри</item>
+        <item>Копенхаген</item>
+        <item>Корк</item>
+        <item>Кротоне</item>
+        <item>Дакар</item>
+        <item>Дамаск</item>
+        <item>Дар ес Салам</item>
+        <item>Дарвин</item>
+        <item>Детроит</item>
+        <item>Џибути</item>
+        <item>Доха</item>
+        <item>Дуала</item>
+        <item>Душанбе</item>
+        <item>Велигденски острови</item>
+        <item>Единбург</item>
+        <item>Ел Пасо</item>
+        <item>Фиренца</item>
+        <item>Форт д Франс</item>
+        <item>Фритаун</item>
+        <item>Габеронес</item>
+        <item>Галапагоски острови</item>
+        <item>Женева</item>
+        <item>Ѓенова</item>
+        <item>Џорџтаун</item>
+        <item>Гритвикен</item>
+        <item>Гватемала Сити</item>
+        <item>Густавија</item>
+        <item>Хамбург</item>
+        <item>Хараре</item>
+        <item>Хавана</item>
+        <item>Хобарт</item>
+        <item>Хјустон</item>
+        <item>Индијанаполис</item>
+        <item>Јоханесбург</item>
+        <item>Кампала</item>
+        <item>Картум</item>
+        <item>Кингстон</item>
+        <item>Кувајт</item>
+        <item>Лагос</item>
+        <item>Лас Вегас</item>
+        <item>Љубљана</item>
+        <item>Хајку</item>
+        <item>Луизвил</item>
+        <item>Луанда</item>
+        <item>Лусака</item>
+        <item>Луксембург</item>
+        <item>Макао</item>
+        <item>Малабо</item>
+        <item>Мале</item>
+        <item>Манагва</item>
+        <item>Манама</item>
+        <item>Мапуто</item>
+        <item>Маригот</item>
+        <item>Мека</item>
+        <item>Мелбурн</item>
+        <item>Мемфис</item>
+        <item>Месина</item>
+        <item>Милано</item>
+        <item>Милвоки</item>
+        <item>Могадиш</item>
+        <item>Монровија</item>
+        <item>Монтевидео</item>
+        <item>Монтреал</item>
+        <item>Минхен</item>
+        <item>Мускат</item>
+        <item>Неапол</item>
+        <item>Натерс</item>
+        <item>Нџамена</item>
+        <item>Ниамеј</item>
+        <item>Нуакчот</item>
+        <item>Нумеја</item>
+        <item>Нукуалофа</item>
+        <item>Нук</item>
+        <item>Осака</item>
+        <item>Уагадугу</item>
+        <item>Палермо</item>
+        <item>Панама Сити</item>
+        <item>Парамарибо</item>
+        <item>Перм</item>
+        <item>Филаделфија</item>
+        <item>Подгорица</item>
+        <item>Понта Делгада</item>
+        <item>Порт Луи</item>
+        <item>Портопренс</item>
+        <item>Портланд, Орегон</item>
+        <item>Пјонгјанг</item>
+        <item>Јангон</item>
+        <item>Ресифе</item>
+        <item>Рејкјавик</item>
+        <item>Ријад</item>
+        <item>Сен Дени</item>
+        <item>Сан Антонио</item>
+        <item>Сан Диего</item>
+        <item>Сан Хозе</item>
+        <item>Сан Хозе</item>
+        <item>Сан Хуан</item>
+        <item>Сан Марино</item>
+        <item>Сан Салвадор</item>
+        <item>Сана</item>
+        <item>Санто Доминго</item>
+        <item>Шангај</item>
+        <item>Шенжен</item>
+        <item>Скопје</item>
+        <item>Сент Џонс</item>
+        <item>Сува</item>
+        <item>Тахити</item>
+        <item>Тегусигалпа</item>
+        <item>Хо Ши Мин Сити</item>
+        <item>Тијанџин</item>
+        <item>Торино</item>
+        <item>Вадуз</item>
+        <item>Валета</item>
+        <item>Верона</item>
+        <item>Викторија</item>
+        <item>Виена</item>
+        <item>Јамусукро</item>
+        <item>Јаунде</item>
+        <item>Загреб</item>
+        <item>Гуангжу</item>
+        <item>Кардиф</item>
+        <item>Регина</item>
+        <item>Шарлот Амали</item>
+        <item>Атланта</item>
+        <item>Мајоте</item>
+        <item>Сан Пјер и Микелон</item>
+        <item>Осло</item>
+        <item>Среднеколимск</item>
+        <item>Северо Курилск</item>
+        <item>Вухан</item>
+        <item>Ченгду</item>
+        <item>Ксијан</item>
+        <item>Порт Морезби</item>
+        <item>Давао Сити</item>
+        <item>Чонгќинг</item>
+        <item>Шенјанг</item>
+        <item>Нанџинг</item>
+        <item>Харбин</item>
+        <item>Џинан</item>
+        <item>Џенгџу</item>
+        <item>Кунминг</item>
+        <item>Чангчун</item>
+        <item>Фужу</item>
+        <item>Кучинг</item>
+        <item>Макасар</item>
+        <item>Хангжу</item>
+        <item>Чингдао</item>
+        <item>Нанинг</item>
+        <item>Урумки</item>
+        <item>Насау</item>
+        <item>Никозија</item>
+        <item>Дили</item>
+        <item>Роуд Таун</item>
+        <item>Ломе</item>
+        <item>Розо</item>
+        <item>Либрвил</item>
+        <item>Марсеј</item>
+        <item>Масеру</item>
+        <item>Маџуро</item>
+        <item>Монако</item>
+        <item>Бандар Сери Бегаван</item>
+        <item>Банџул</item>
+        <item>Бусан</item>
+        <item>Буџумбура</item>
+        <item>Бразавил</item>
+        <item>Виентијан</item>
+        <item>Виндхук</item>
+        <item>Сараево</item>
+        <item>Сајпан</item>
+        <item>Сао Томе</item>
+        <item>Сент Џорџис</item>
+        <item>Стенли</item>
+        <item>Аден</item>
+        <item>Апија</item>
+        <item>Андора ла Веља</item>
+        <item>Ел-Ајун</item>
+        <item>Вилемстад</item>
+        <item>Мбабане</item>
+        <item>Кастрис</item>
+        <item>Корор</item>
+        <item>Канкун</item>
+        <item>Кигали</item>
+        <item>Кингстаун</item>
+        <item>Тел Авив</item>
+        <item>Торсхавн</item>
+        <item>Тирана</item>
+        <item>Тимфу</item>
+        <item>Порто Ново</item>
+        <item>Праја</item>
+        <item>Франкфурт</item>
+        <item>Приштина</item>
+        <item>Хамилтон</item>
+        <item>Хонијара</item>
+        <item>Порт оф Спејн</item>
+        <item>Минеаполис</item>
+        <item>Хајло</item>
+        <item>Орландо</item>
+        <item>Канзас Сити</item>
+        <item>Њу Орлеанс</item>
+        <item>Нешвил</item>
+        <item>Тусон</item>
+        <item>Тампа</item>
+        <item>Џексонвил</item>
+        <item>Оклахома Сити</item>
+        <item>Албакерки</item>
+        <item>Омаха</item>
+        <item>Вирџинија Бич</item>
+        <item>Бојс</item>
+        <item>Демојн</item>
+        <item>Бирмингем</item>
+        <item>Солт Лејк Сити</item>
+        <item>Литл Рок</item>
+        <item>Сју Фолс</item>
+        <item>Џексон</item>
+        <item>Чарлстон, Јужна Каролина</item>
+        <item>Фарго</item>
+        <item>Билингс</item>
+        <item>Портланд, Мејн</item>
+        <item>Шаен</item>
+        <item>Чарлсон, Западна Вирџинија</item>
+        <item>Питсбург</item>
+        <item>Грин Беј</item>
+        <item>Сент Луис</item>
+        <item>Вали</item>
+        <item>UTC (Координирано универзално време)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Авганистан</item>
+        <item>Алжир</item>
+        <item>Самоа</item>
+        <item>Антигва и Барбуда</item>
+        <item>Аргентина</item>
+        <item>Арменија</item>
+        <item>Австралија</item>
+        <item>Азербејџан</item>
+        <item>Бангладеш</item>
+        <item>Република Башкортостан</item>
+        <item>Белорусија</item>
+        <item>Боливија</item>
+        <item>Бразил</item>
+        <item>Бугарија</item>
+        <item>Камбоџа</item>
+        <item>Канада</item>
+        <item>Чиле</item>
+        <item>Кина</item>
+        <item>Колумбија</item>
+        <item>Чешка Република</item>
+        <item>Република Конго</item>
+        <item>Еквадор</item>
+        <item>Естонија</item>
+        <item>Финска</item>
+        <item>Франција</item>
+        <item>Џорџија</item>
+        <item>Германија</item>
+        <item>Грција</item>
+        <item>Унгарија</item>
+        <item>Индија</item>
+        <item>Индонезија</item>
+        <item>Иран</item>
+        <item>Ирска</item>
+        <item>Израел</item>
+        <item>Италија</item>
+        <item>Јапонија</item>
+        <item>Казахстан</item>
+        <item>Кенија</item>
+        <item>Кирибати</item>
+        <item>Летонија</item>
+        <item>Литванија</item>
+        <item>Малезија</item>
+        <item>Мексико</item>
+        <item>Монголија</item>
+        <item>Мароко</item>
+        <item>Непал</item>
+        <item>Нов Зеланд</item>
+        <item>Пакистан</item>
+        <item>Перу</item>
+        <item>Филипини</item>
+        <item>Полска</item>
+        <item>Португалија</item>
+        <item>Карта</item>
+        <item>Јужна Кореја</item>
+        <item>Република Сингапур</item>
+        <item>Либија</item>
+        <item>Романија</item>
+        <item>Русија</item>
+        <item>Саудиска Арабија</item>
+        <item>Словачка</item>
+        <item>Јужна Африка</item>
+        <item>Шпанија</item>
+        <item>Шри Ланка</item>
+        <item>Шведска</item>
+        <item>Тајван</item>
+        <item>Тајланд</item>
+        <item>Тунис</item>
+        <item>Турција</item>
+        <item>ОАЕ</item>
+        <item>Велика Британија</item>
+        <item>Украина</item>
+        <item>САД</item>
+        <item>Узбекистан</item>
+        <item>Венецуела</item>
+        <item>Виетнам</item>
+        <item>Брит. Дев. О.</item>
+        <item>Швајцарија</item>
+        <item>Египет</item>
+        <item>Брег на Слоновата Коска</item>
+        <item>Гана</item>
+        <item>Етиопија</item>
+        <item>Јордан</item>
+        <item>Холандија</item>
+        <item>Мадагаскар</item>
+        <item>Туркменистан</item>
+        <item>Еритреја</item>
+        <item>Парагвај</item>
+        <item>Ирак</item>
+        <item>Мали</item>
+        <item>Централно-африканска Република</item>
+        <item>Гвадалупе</item>
+        <item>Либан</item>
+        <item>Србија</item>
+        <item>Белизе</item>
+        <item>Киргистан</item>
+        <item>Гвинеја Бисао</item>
+        <item>Барбадос</item>
+        <item>Белгија</item>
+        <item>Француска Гвајана</item>
+        <item>Молдавија</item>
+        <item>Гвинеја</item>
+        <item>Данска</item>
+        <item>Сенегал</item>
+        <item>Сирија</item>
+        <item>Танзанија</item>
+        <item>Џибути</item>
+        <item>Катар</item>
+        <item>Камерун</item>
+        <item>Таџикистан</item>
+        <item>Шкотска</item>
+        <item>Мартиник</item>
+        <item>Сиера Леоне</item>
+        <item>Боцвана</item>
+        <item>Гвајана</item>
+        <item>Јужна Џорџија</item>
+        <item>Гватемала</item>
+        <item>Сен Бертелеми</item>
+        <item>Зимбабве</item>
+        <item>Куба</item>
+        <item>Уганда</item>
+        <item>Судан</item>
+        <item>Јамајка</item>
+        <item>Кувајт</item>
+        <item>Нигерија</item>
+        <item>Ангола</item>
+        <item>Замбија</item>
+        <item>Луксембург</item>
+        <item>Екваторијална Гвинеја</item>
+        <item>Малдиви</item>
+        <item>Никарагва</item>
+        <item>Бахрејн</item>
+        <item>Мозамбик</item>
+        <item>Сан Мартин</item>
+        <item>Сомалија</item>
+        <item>Либерија</item>
+        <item>Уругвај</item>
+        <item>Оман</item>
+        <item>Чад</item>
+        <item>Нигер</item>
+        <item>Мавританија</item>
+        <item>Нова Каледонија</item>
+        <item>Тонга</item>
+        <item>Гренланд</item>
+        <item>Буркина Фасо</item>
+        <item>Панама</item>
+        <item>Суринам</item>
+        <item>Црна Гора</item>
+        <item>Маврициус</item>
+        <item>Хаити</item>
+        <item>Демократска Народна Република Кореја</item>
+        <item>Мијанмар</item>
+        <item>Исланд</item>
+        <item>Остров Рејунион</item>
+        <item>Костарика</item>
+        <item>Порторико</item>
+        <item>Ел Салвадор</item>
+        <item>Јемен</item>
+        <item>Доминиканска Република</item>
+        <item>Македонија</item>
+        <item>Фиџи</item>
+        <item>Француска Полинезија</item>
+        <item>Хондурас</item>
+        <item>Лихтенштајн</item>
+        <item>Малта</item>
+        <item>Сејшелски острови</item>
+        <item>Австрија</item>
+        <item>Хрватска</item>
+        <item>Велс</item>
+        <item>Дев. О. САД</item>
+        <item>Словенија</item>
+        <item>Сан Марино</item>
+        <item>Норвешка</item>
+        <item>Папуа Нова Гвинеја</item>
+        <item>Бахами</item>
+        <item>Кипар</item>
+        <item>Источен Тимор</item>
+        <item>Того</item>
+        <item>Доминика</item>
+        <item>Габон</item>
+        <item>Лесото</item>
+        <item>Маршалски Острови</item>
+        <item>Монако</item>
+        <item>Брунеј</item>
+        <item>Гамбија</item>
+        <item>Бурунди</item>
+        <item>Демократска Република Конго</item>
+        <item>Лаос</item>
+        <item>Намибија</item>
+        <item>Босна и Херцеговина</item>
+        <item>Сајпан</item>
+        <item>Сао Томе и Принсипе</item>
+        <item>Гренада</item>
+        <item>Фолкландски Острови</item>
+        <item>Американска Самоа</item>
+        <item>Андора</item>
+        <item>САДР</item>
+        <item>Курасао</item>
+        <item>Есватини</item>
+        <item>Света Луција</item>
+        <item>Палау</item>
+        <item>Руанда</item>
+        <item>Свети Винцент и Гренадини</item>
+        <item>Фарски Острови</item>
+        <item>Албанија</item>
+        <item>Бутан</item>
+        <item>Бенин</item>
+        <item>Зелен `рт</item>
+        <item>Косово</item>
+        <item>Бермуда</item>
+        <item>Соломонови Острови</item>
+        <item>Тајван, Кина</item>
+        <item>Тринидад и Тобаго</item>
+        <item>Ангвила</item>
+        <item>UTC (Координирано универзално време)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Алармот е поставен за 1 минута од сега.</item>
+        <item>Алармот е поставен за %1$s отсега.</item>
+        <item>Алармот е поставен за %2$s отсега.</item>
+        <item>Алармот е поставен за %1$s и %2$s отсега.</item>
+        <item>Алармот е поставен за %3$s отсега.</item>
+        <item>Алармот е поставен за %1$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %2$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %1$s, %2$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %s отсега.</item>
+        <item>Алармот е поставен за %1$s и %2$s отсега.</item>
+        <item>Алармот е поставен за %1$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %1$s, %2$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %1$s и %2$s отсега.</item>
+        <item>Алармот е поставен за %1$s, %2$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %1$s, %2$s и %3$s отсега.</item>
+        <item>Алармот е поставен за %1$s, %2$s, %3$s и %4$s отсега.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

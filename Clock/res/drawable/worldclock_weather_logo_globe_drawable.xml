@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:gravity="fill_horizontal" android:src="@drawable/weather_detail_ic_twc_mtrl" android:tint="@color/worldclock_cp_color_in_globe" android:tintMode="src_in"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

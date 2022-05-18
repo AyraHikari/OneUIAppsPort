@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="analog_widget_setting_preview_height">265.0dip</dimen>
+    <dimen name="dualclock_widget_setting_preview_height">265.0dip</dimen>
+    <dimen name="widget_setting_margins_potrait_mode">29.0dip</dimen>
+    <dimen name="widget_setting_preview_bottom_layout_margin_start">18.0dip</dimen>
+    <dimen name="widget_setting_preview_height">265.0dip</dimen>
+    <dimen name="widget_setting_preview_margin_start">18.0dip</dimen>
+    <dimen name="widget_setting_preview_margin_top">17.0dip</dimen>
+    <dimen name="widget_setting_seek_bar_height">54.0dip</dimen>
+    <dimen name="widget_setting_seek_bar_progress_margin_start">15.0dip</dimen>
+</resources>

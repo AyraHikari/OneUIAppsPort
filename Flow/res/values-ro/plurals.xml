@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d fișiere adăugate în lista fișierelor transferate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fișier adăugat în lista fișierelor transferate.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d fișiere adăugate în lista fișierelor transferate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Înregistrați și gestionați până la %d computere sau tablete în serviciul Samsung Flow.
+
+La telefonul dvs. se poate conecta doar un computer sau o tabletă concomitent. Va trebui să alegeți unul dintre dispozitive atunci când ambele computere sau tablete înregistrate încearcă să se conecteze la telefon."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Înregistrați și gestionați până la %d computer sau tabletă în serviciul Samsung Flow.
+
+La telefonul dvs. se poate conecta doar un computer sau o tabletă concomitent. Va trebui să alegeți unul dintre dispozitive atunci când ambele computere sau tablete înregistrate încearcă să se conecteze la telefon."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">"Înregistrați și gestionați până la %d computere sau tablete în serviciul Samsung Flow.
+
+La telefonul dvs. se poate conecta doar un computer sau o tabletă concomitent. Va trebui să alegeți unul dintre dispozitive atunci când ambele computere sau tablete înregistrate încearcă să se conecteze la telefon."</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_layout_height">278.0dip</dimen>
+    <dimen name="horizontal_margin_time_toolbar">188.0dip</dimen>
+    <dimen name="margin_between_time">8.0dip</dimen>
+    <dimen name="sesl_date_picker_calendar_day_height">28.0dip</dimen>
+    <dimen name="sesl_date_picker_calendar_header_button_height">32.0dip</dimen>
+    <dimen name="sesl_date_picker_calendar_header_button_width">32.0dip</dimen>
+    <dimen name="sesl_date_picker_calendar_header_height">32.0dip</dimen>
+    <dimen name="sesl_date_picker_calendar_view_height">168.0dip</dimen>
+    <dimen name="sesl_date_picker_calendar_week_height">28.0dip</dimen>
+    <dimen name="sesl_date_picker_gap_between_header_and_weekend">9.0dip</dimen>
+    <dimen name="sesl_date_picker_gap_between_weekend_and_calender">7.0dip</dimen>
+    <dimen name="sesl_date_picker_selected_day_circle_radius">12.0dip</dimen>
+    <dimen name="sesl_spinning_date_picker_height">244.0dip</dimen>
+    <dimen name="sesl_spinning_date_picker_height_dialog">244.0dip</dimen>
+    <dimen name="sleep_duration_text_height">31.0dip</dimen>
+    <dimen name="sleep_record_bed_image_icon_size">24.0dip</dimen>
+    <dimen name="sleep_visual_edit_inner_circle_dimens">191.0dip</dimen>
+    <dimen name="sleep_visual_edit_outer_circle_size">243.0dip</dimen>
+    <dimen name="sleep_visual_edit_outer_circle_top_margin">30.0dip</dimen>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">28.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">28.0dip</dimen>
+    <dimen name="timer_common_timepicker_layout_min_height">146.0dip</dimen>
+    <dimen name="toolbar_height">100.0dip</dimen>
+    <dimen name="top_margin_time_toolbar">12.0dip</dimen>
+    <dimen name="widget_setting_preview_height">240.5dip</dimen>
+    <dimen name="widget_setting_preview_margin_bottom">27.5dip</dimen>
+    <dimen name="widget_setting_preview_margin_start">24.0dip</dimen>
+    <dimen name="widget_setting_preview_margin_top">12.0dip</dimen>
+    <dimen name="widget_setting_bottom_right_width">360.0dip</dimen>
+    <dimen name="widget_setting_preview_width">288.0dip</dimen>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Будильник спрацює через %d дня</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Будильник спрацює через %d день</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Будильник спрацює через %d дні</item>
+        <item quantity="many">Будильник спрацює через %d днів</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Будильник спрацює через %d години</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Будильник спрацює через %d годину</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Будильник спрацює через %d години</item>
+        <item quantity="many">Будильник спрацює через %d годин</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Будильник спрацює через %d години 1 хвилину</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Будильник спрацює через %d годину 1 хвилину</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Будильник спрацює через %d години 1 хвилину</item>
+        <item quantity="many">Будильник спрацює через %d годин 1 хвилину</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Будильник спрацює через %d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Будильник спрацює через %d хвилину</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Будильник спрацює через %d хвилини</item>
+        <item quantity="many">Будильник спрацює через %d хвилин</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Через %d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Через %d хвилину</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Через %d хвилини</item>
+        <item quantity="many">Через %d хвилин</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Неможливо додати більше %d будильника.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо додати більше %d будильника.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо додати більше %d будильників.</item>
+        <item quantity="many">Неможливо додати більше %d будильників.</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d хвилина</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d хвилини</item>
+        <item quantity="many">%d хвилин</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Видалити %d об’єкта фону?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Видалити %d об’єкт фону?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Видалити %d об’єкти фону?</item>
+        <item quantity="many">Видалити %d об’єктів фону?</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового сповіщення</item>
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">Вибрано: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Вибрано: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Вибрано: %d</item>
+        <item quantity="many">Вибрано: %d</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">За %d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">За %d хвилину</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">За %d хвилини</item>
+        <item quantity="many">За %d хвилин</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s і ще %3$d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s і ще %3$d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s, %2$s і ще %3$d</item>
+        <item quantity="many">%1$s, %2$s і ще %3$d</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Час сну: %d години</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Час сну: %d година</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Час сну: %d години</item>
+        <item quantity="many">Час сну: %d годин</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Час сну: %d хвилини</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Час сну: %d хвилина</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Час сну: %d хвилини</item>
+        <item quantity="many">Час сну: %d хвилин</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Повторити за %d хв</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Повторити за %d хв</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Повторити за %d хв</item>
+        <item quantity="many">Повторити за %d хв</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">На %d хвилини раніше</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">На %d хвилину раніше</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">На %d хвилини раніше</item>
+        <item quantity="many">На %d хвилин раніше</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">На %d хвилини пізніше</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">На %d хвилину пізніше</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">На %d хвилини пізніше</item>
+        <item quantity="many">На %d хвилин пізніше</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Неможливо додати більше ніж %d попередньо встановленого таймера.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо додати більше ніж %d попередньо встановлений таймер.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо додати більше ніж %d попередньо встановлені таймери.</item>
+        <item quantity="many">Неможливо додати більше ніж %d попередньо встановлених таймерів.</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Неможливо додати більше %d міста.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Неможливо додати більше %d міста.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Неможливо додати більше %d міст.</item>
+        <item quantity="many">Неможливо додати більше %d міст.</item>
+    </plurals>
+</resources>

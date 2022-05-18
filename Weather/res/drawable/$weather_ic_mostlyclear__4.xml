@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_mostlyclear__5" android:duration="1000" android:valueFrom="80.0002" android:valueTo="68.1239" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_mostlyclear__6" android:duration="1000" android:valueFrom="68.1239" android:valueTo="80.0002" android:propertyName="translateX" />
+    </set>
+</set>

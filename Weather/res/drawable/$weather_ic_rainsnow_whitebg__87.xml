@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1716" android:valueFrom="33.518948" android:valueTo="33.518948" android:propertyName="translateX" />
+        <objectAnimator android:duration="4" android:valueFrom="33.518948" android:valueTo="33.518948" android:propertyName="translateX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__88" android:duration="745" android:valueFrom="33.518948" android:valueTo="-62.11207" android:propertyName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1716" android:valueFrom="-168.84535" android:valueTo="-168.84535" android:propertyName="translateY" />
+        <objectAnimator android:duration="4" android:valueFrom="-168.84535" android:valueTo="-168.84535" android:propertyName="translateY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__89" android:duration="745" android:valueFrom="-168.84535" android:valueTo="-74.17457" android:propertyName="translateY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1716" android:valueFrom="0.7" android:valueTo="0.7" android:propertyName="scaleX" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__90" android:duration="750" android:valueFrom="0.7" android:valueTo="1" android:propertyName="scaleX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="1716" android:valueFrom="0.7" android:valueTo="0.7" android:propertyName="scaleY" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_rainsnow_whitebg__91" android:duration="750" android:valueFrom="0.7" android:valueTo="1" android:propertyName="scaleY" />
+    </set>
+</set>

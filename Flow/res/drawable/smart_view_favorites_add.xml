@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/smart_view_button_favorites_add" android:tint="@color/favorite_add_color" android:tintMode="src_in"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

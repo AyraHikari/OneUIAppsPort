@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d فایل به لیست انتقال فایل اضافه شد.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d فایل به لیست انتقال فایل اضافه شد.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"در Samsung Flow می‌توانید تا %d رایانه یا تبلت را ثبت و مدیریت کنید.
+
+هر بار فقط یک رایانه یا تبلت را می‌توان به تلفن متصل نمود. وقتی هم رایانه‌ها و هم تبلت‌های ثبت‌شده سعی در اتصال به تلفن شما داشته باشند، باید یکی را انتخاب کنید."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"در Samsung Flow می‌توانید تا %d رایانه یا تبلت را ثبت و مدیریت کنید.
+
+هر بار فقط یک رایانه یا تبلت را می‌توان به تلفن متصل نمود. وقتی هم رایانه‌ها و هم تبلت‌های ثبت‌شده سعی در اتصال به تلفن شما داشته باشند، باید یکی را انتخاب کنید."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

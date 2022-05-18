@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/timer_alert_top_layout" android:paddingTop="@dimen/timer_top_layout_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/timer_name_margin_top" android:layout_below="@id/timer_cover_time_view" android:paddingStart="@dimen/timer_alert_timeout_textview_padding_end" android:paddingEnd="@dimen/timer_alert_timeout_textview_padding_end">
+            <TextView android:textColor="@color/alert_clear_cover_text_color" android:id="@id/timer_name" style="@style/TimerFullAlertTimerNameStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@id/timer_cover_time_view" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:paddingStart="@dimen/timer_alert_hms_textview_padding_end" android:paddingEnd="@dimen/timer_alert_hms_textview_padding_end" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/timer_alert_mid_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0">
+        <LinearLayout android:gravity="center" android:id="@id/timer_restart_btn" android:background="@drawable/clock_alert_clear_cover_optional_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/clear_cover_snooze_restart_bottom_margin" android:minWidth="@dimen/timer_alert_time_layout_restartbtn_width" android:minHeight="@dimen/timer_alert_time_layout_restartbtn_height" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+            <TextView android:textColor="@color/cover_clear_bg_black" android:layout_gravity="center" android:id="@id/restartBtn_textview" style="@style/TimerFullAlertRestartBtnStyle" />
+        </LinearLayout>
+        <com.sec.android.app.clockpackage.commonalert.view.AlertSlidingTab android:orientation="horizontal" android:id="@id/cc_tab_selector" android:tag="clear_cover_alert" android:layout_width="fill_parent" android:layout_height="@dimen/clear_cover_alert_sliding_tab_height" android:layout_marginBottom="@dimen/clear_cover_sliding_tab_bottom_margin" android:layout_above="@id/timer_restart_btn" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

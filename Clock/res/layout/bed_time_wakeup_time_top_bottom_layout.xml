@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sleep_center_duration_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sleep_record_top_bed_time_layout" android:background="@drawable/bottom_bedtime_layout_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_between_time">
+        <ImageView android:id="@id/sleep_top_center_duration_bedimage" android:visibility="gone" android:layout_width="@dimen/sleep_record_bed_image_icon_size" android:layout_height="@dimen/sleep_record_bed_image_icon_size" android:layout_marginRight="@dimen/sleep_record_bed_image_margin_right" android:src="@drawable/clock_bedtime" />
+        <TextView android:id="@id/bedtime_am_pm_left" android:visibility="gone" style="@style/BedTimePicker_AMPM" />
+        <TextView android:textSize="@dimen/sleep_time_text_size" android:textColor="@color/bed_wakeup_time_color" android:id="@id/sleep_top_center_duration_bedtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="roboto-num3L" />
+        <TextView android:id="@id/bedtime_am_pm_right" android:visibility="gone" style="@style/BedTimePicker_AMPM" />
+        <ImageView android:id="@id/sleep_top_center_duration_bedimage_right" android:visibility="gone" android:layout_width="@dimen/sleep_record_bed_image_icon_size" android:layout_height="@dimen/sleep_record_bed_image_icon_size" android:layout_marginLeft="@dimen/sleep_record_bed_image_margin_right" android:src="@drawable/clock_bedtime" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/sleep_record_bottom_wakeup_time_layout" android:background="@drawable/bottom_bedtime_layout_ripple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_between_time">
+        <ImageView android:id="@id/sleep_bottom_center_duration_wakeupimage" android:visibility="gone" android:layout_width="@dimen/sleep_record_bed_image_icon_size" android:layout_height="@dimen/sleep_record_bed_image_icon_size" android:layout_marginRight="@dimen/sleep_record_bed_image_margin_right" android:src="@drawable/clock_wakeup" />
+        <TextView android:id="@id/wakeuptime_am_pm_left" android:visibility="gone" android:text="am" style="@style/WakeUpTimePicker_AMPM" />
+        <TextView android:textSize="@dimen/sleep_time_text_size" android:textColor="@color/bed_wakeup_time_color" android:id="@id/sleep_bottom_center_duration_wakeuptime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:00 PM" android:fontFamily="roboto-num3L" />
+        <TextView android:id="@id/wakeuptime_am_pm_right" android:visibility="gone" android:text="am" style="@style/WakeUpTimePicker_AMPM" />
+        <ImageView android:id="@id/sleep_bottom_center_duration_wakeupimage_right" android:visibility="gone" android:layout_width="@dimen/sleep_record_bed_image_icon_size" android:layout_height="@dimen/sleep_record_bed_image_icon_size" android:layout_marginLeft="@dimen/sleep_record_bed_image_margin_right" android:src="@drawable/clock_wakeup" />
+    </LinearLayout>
+</LinearLayout>

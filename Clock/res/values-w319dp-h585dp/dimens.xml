@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_timepicker_max_height">286.0dip</dimen>
+    <dimen name="alarm_timepicker_max_width">480.0dip</dimen>
+    <dimen name="timer_common_timepicker_colon_textsize">50.0dip</dimen>
+    <dimen name="timer_common_timepicker_layout_max_height">286.0dip</dimen>
+    <dimen name="timer_common_timepicker_layout_max_width">480.0dip</dimen>
+</resources>

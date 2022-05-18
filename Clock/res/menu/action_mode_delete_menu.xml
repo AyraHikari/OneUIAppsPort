@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_clock_ic_turn_on_all_alarm" android:id="@id/turn_on" android:visible="false" android:title="@string/turn_on" app:contentDescription="@string/turn_on" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_clock_ic_turn_off_all_alarm" android:id="@id/turn_off" android:visible="false" android:title="@string/turn_off" app:contentDescription="@string/turn_off" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_clock_alarm_ic_delete" android:id="@id/delete" android:title="@string/delete" app:contentDescription="@string/delete" app:showAsAction="ifRoom" />
+</menu>

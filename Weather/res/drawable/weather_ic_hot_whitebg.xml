@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_hot_whitebg__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="c1s4" android:animation="@drawable/$weather_ic_hot_whitebg__1" />
+    <target android:name="s4pg1p10" android:animation="@drawable/$weather_ic_hot_whitebg__6" />
+    <target android:name="trk_darkgraysolid1" android:animation="@drawable/$weather_ic_hot_whitebg__11" />
+    <target android:name="c1s3" android:animation="@drawable/$weather_ic_hot_whitebg__16" />
+    <target android:name="s3pg1p10" android:animation="@drawable/$weather_ic_hot_whitebg__21" />
+    <target android:name="c1" android:animation="@drawable/$weather_ic_hot_whitebg__26" />
+</animated-vector>

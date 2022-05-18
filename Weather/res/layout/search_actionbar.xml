@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/search_actionbar_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samsung.android.weather.app.common.view.SizeLimitedTextView android:textAppearance="@style/Weather.TextAppearance.ActionBar.Title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/search_actionbar_title" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" app:textSizeLimit="large" />
+    <androidx.appcompat.widget.SearchView android:id="@id/search_search_view" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inputType="textFilter" android:iconifiedByDefault="false" android:queryHint="@string/hint_search_cities" />
+</RelativeLayout>

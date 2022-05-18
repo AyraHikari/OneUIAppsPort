@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/alarm_widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/widget_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+        <include layout="@layout/clockalarmwidget_noitem" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/alarm_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/alarm_widget_full_item_margin_start" android:layout_marginEnd="@dimen/alarm_widget_full_item_margin_end">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/alarm_end_layout" android:layout_alignParentStart="true">
+                <TextView android:textSize="@dimen/digitalclock_ampm_textsize_tablet" android:layout_gravity="center_vertical" android:id="@id/alarm_name" android:maxWidth="@dimen/alarm_name_landscape_full_max_width" android:layout_marginEnd="10.0dip" style="@style/AlarmWidget_AlarmName_full" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/alarm_time" android:layout_toEndOf="@id/alarm_ampm_kor" style="@style/AlarmWidget_Time_full_tablet" />
+                    <TextView android:id="@id/alarm_ampm_kor" android:visibility="visible" android:layout_alignBaseline="@id/alarm_time" style="@style/AlarmWidget_Time_AMPM_Kor_full_tablet" />
+                    <TextView android:id="@id/alarm_ampm" android:visibility="visible" android:layout_alignBaseline="@id/alarm_time" android:layout_toEndOf="@id/alarm_time" style="@style/AlarmWidget_Time_AMPM_full_tablet" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/alarm_end_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/alarm_widget_alarm_time_item_margin" android:layout_alignParentEnd="true">
+                <TextView android:textSize="@dimen/digitalclock_ampm_textsize_tablet" android:id="@id/alarm_date" android:visibility="gone" android:includeFontPadding="true" style="@style/AlarmListText.Date" />
+                <LinearLayout android:gravity="start" android:orientation="horizontal" android:id="@id/alarm_repeat_days" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_sunday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_sunday" android:text="@string/sun1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_monday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_monday" android:text="@string/mon1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_tuesday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_tuesday" android:text="@string/tue1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_wednesday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_wednesday" android:text="@string/wed1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_thursday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_thursday" android:text="@string/thu1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_friday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_friday" android:text="@string/fri1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/alarm_widget_repeat_day_double_space">
+                        <LinearLayout android:id="@id/dot_saturday" style="@style/AlarmWidget_Repeat_Day_Dot" />
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/letter_saturday" android:text="@string/sat1" style="@style/AlarmWidget_Repeat_Day_tablet" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/alarm_onoff_btn" android:background="@android:color/transparent" android:layout_width="@dimen/alarm_widget_onoff_btn_width_tablet" android:layout_height="@dimen/alarm_widget_onoff_btn_width_tablet" android:scaleType="fitCenter" android:layout_marginStart="@dimen/alarm_widget_date_and_onoff_btn_item_margin" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

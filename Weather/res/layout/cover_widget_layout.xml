@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/widget_cover_layout_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/cover_widget_title_layout" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_cover_layout_margin_width">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/weather_area" android:background="@drawable/coverwidget_ripple" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/widget_current_weather_icon" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+            <TextView android:textSize="68.0dip" android:textColor="@color/col_FAFAFA" android:id="@id/widget_current_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_clock_2021" android:layout_marginStart="3.0dip" />
+            <TextView android:textSize="68.0dip" android:textColor="@color/col_FAFAFA" android:id="@id/widget_current_temp_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@string/font_clock_2021" android:layout_marginStart="3.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="16.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/city_name_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                    <TextView android:ellipsize="end" android:gravity="start" android:id="@id/widget_current_city_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/font_roboto_medium" style="@style/CoverWidget.TextAppearance" />
+                    <TextView android:ellipsize="end" android:gravity="start" android:id="@id/widget_current_city_name_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/font_roboto_medium" style="@style/CoverWidget.TextAppearance" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/widget_update_area" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/city_name_area" android:layout_alignStart="@id/city_name_area">
+                    <TextView android:textSize="21.0dip" android:textColor="@color/col_FAFAFA" android:ellipsize="end" android:id="@id/widget_update_text" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@string/font_roboto_regular" android:layout_marginEnd="3.0dip" />
+                    <TextView android:textSize="21.0dip" android:textColor="@color/col_FAFAFA" android:ellipsize="end" android:id="@id/widget_update_text_bg" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="@string/font_roboto_regular" android:layout_marginEnd="3.0dip" />
+                    <ProgressBar android:theme="@style/WeatherWidget.Progress.Theme.NoTheme" android:id="@id/widget_refresh_progress" android:layout_width="25.0dip" android:layout_height="25.0dip" style="@style/WeatherWidget.Progress" />
+                    <ProgressBar android:theme="@style/WeatherWidget.Progress.Theme.NoTheme" android:id="@id/widget_refresh_progress_wallpaper" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" style="@style/WeatherWidget.Progress" />
+                    <ImageView android:id="@id/widget_refresh_icon" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:cropToPadding="false" />
+                </LinearLayout>
+                <ImageView android:id="@id/widget_refresh_icon_touch_area" android:layout_width="100.0dip" android:layout_height="80.0dip" android:layout_marginBottom="-12.0dip" android:layout_alignBottom="@id/widget_update_area" android:layout_marginEnd="-12.0dip" android:layout_alignEnd="@id/widget_update_area" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

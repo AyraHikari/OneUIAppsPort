@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/alarm_cancel_circle_color" />
+    <size android:height="@dimen/alert_sliding_tab_stripe_button_diameter" android:width="@dimen/alert_sliding_tab_stripe_button_diameter" />
+    <stroke android:width="@dimen/timer_alert_restart_stroke" android:color="@color/stripe_dismiss_stroke_color" />
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="widget_grid_height">120</integer>
+    <integer name="widget_grid_width">130</integer>
+    <integer name="widget_grid_height_tablet">107</integer>
+    <integer name="widget_grid_width_tablet">84</integer>
+</resources>

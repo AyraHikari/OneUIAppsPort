@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/edge_air_icon">
+        <shape android:shape="rectangle">
+            <corners android:radius="7.0dip" />
+            <solid android:color="#ff2ab5e2" />
+            <stroke android:width="2.0px" android:color="@color/col_60_FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

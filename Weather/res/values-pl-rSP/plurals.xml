@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Idzie dodać co nojwyżyj %d lokalizacyjōw. Coby dodać ta lokalizacyjŏ, wyciep inksze.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Idzie dodać co nojwyżyj %d lokalizacyjŏ. Coby dodać ta lokalizacyjŏ, wyciep inksze.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Idzie dodać co nojwyżyj %d lokalizacyje. Coby dodać ta lokalizacyjŏ, wyciep inksze.</item>
+        <item quantity="many">Idzie dodać co nojwyżyj %d lokalizacyjōw. Coby dodać ta lokalizacyjŏ, wyciep inksze.</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Niy idzie podać wiyncyj jak %d znakōw.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Niy idzie podać wiyncyj jak %d znaku.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Niy idzie podać wiyncyj jak %d znakōw.</item>
+        <item quantity="many">Niy idzie podać wiyncyj jak %d znakōw.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d ôbranych</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ôbrane</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d ôbrane</item>
+        <item quantity="many">%d ôbranych</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d dni</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d dziyń</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dni</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d godzin</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d godzina</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d godziny</item>
+        <item quantity="many">%d godzin</item>
+    </plurals>
+</resources>

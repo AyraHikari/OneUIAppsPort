@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:duration="2616" android:valueFrom="1" android:valueTo="1" android:propertyName="fillAlpha" />
+        <objectAnimator android:interpolator="@drawable/$weather_ic_sunny__208" android:duration="166" android:valueFrom="1" android:valueTo="0" android:propertyName="fillAlpha" />
+        <objectAnimator android:duration="100" android:valueFrom="0" android:valueTo="0" android:propertyName="fillAlpha" />
+        <objectAnimator android:duration="1133" android:valueFrom="0" android:valueTo="0" android:propertyName="fillAlpha" />
+    </set>
+</set>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d датотеки се додадени на списокот за пренесување датотеки.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d датотека е додадена на списокот за пренесување датотеки.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Регистрирајте и управувајте до %d компјутера или таблета во Samsung Flow.
+
+Само еден компјутер или таблет може да биде поврзан со телефонот одеднаш. Ќе морате да изберете еден кога и двата регистрирани компјутери или таблети се обидуваат да се поврзат на Вашиот телефон."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Регистрирајте и управувајте со до %d компјутер или таблет во Samsung Flow.
+
+Само еден компјутер или таблет може да биде поврзан со телефонот одеднаш. Ќе морате да изберете еден кога и двата регистрирани компјутери или таблети се обидуваат да се поврзат на Вашиот телефон."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_repeat_btn_select_circle_stroke">1.0px</dimen>
+</resources>

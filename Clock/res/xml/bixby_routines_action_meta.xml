@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action category="apps" icon="@drawable/ic_routines_ic_turn_on_alarms" label="@string/bixby_routine_turn_on" reversible="true" tag="turn_on">
+        <configuration targetUi="com.sec.android.app.clockpackage/.bixbyroutine.activity.BixbyRoutineAlarmActivity">
+            <parameters>
+                <parameter key="alarm_uuids" name="routine.alarm.uuids" type="STRING" />
+            </parameters>
+        </configuration>
+    </action>
+    <action category="apps" icon="@drawable/ic_routines_ic_turn_off_alarms" label="@string/bixby_routine_turn_off" reversible="true" tag="turn_off">
+        <configuration targetUi="com.sec.android.app.clockpackage/.bixbyroutine.activity.BixbyRoutineAlarmActivity">
+            <parameters>
+                <parameter key="alarm_uuids" name="routine.alarm.uuids" type="STRING" />
+            </parameters>
+        </configuration>
+    </action>
+    <action category="apps" icon="@drawable/ic_routines_ic_start_a_timer" label="@string/bixby_routine_start_timer" reversible="false" tag="start_timer">
+        <configuration targetUi="com.sec.android.app.clockpackage/.bixbyroutine.activity.BixbyRoutineTimerActivity">
+            <parameters>
+                <parameter key="timer_ids" name="routine.timer.ids" type="STRING" />
+            </parameters>
+        </configuration>
+    </action>
+    <action category="apps" icon="@drawable/ic_routines_ic_start_stopwatch" label="@string/bixby_routine_start_stopwatch" reversible="false" tag="start_stopwatch" />
+</actions>

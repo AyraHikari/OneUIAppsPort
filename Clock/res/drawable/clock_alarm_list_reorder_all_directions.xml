@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000" android:pathData="M18.6054,15.0889L20.4464,13.2479C20.8514,12.8429 20.8514,12.1869 20.4464,11.7809L18.5754,9.9109M5.3945,15.0889L3.5535,13.2479C3.1485,12.8429 3.1485,12.1869 3.5535,11.7809L5.4245,9.9109M9.4111,18.8385L11.2521,20.6795C11.6571,21.0845 12.3131,21.0845 12.7191,20.6795L14.5891,18.8095M9.4111,5.8946L11.2521,4.0536C11.6571,3.6486 12.3131,3.6486 12.7191,4.0536L14.5891,5.9246" android:strokeColor="@color/worldclock_list_reorder_icon_color" android:strokeWidth="1.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillType="evenOdd" />
+</vector>

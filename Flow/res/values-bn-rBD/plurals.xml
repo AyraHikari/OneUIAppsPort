@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">ফাইল স্থানান্তরের তালিকায় %dটি ফাইল যোগ করা হয়েছে৷</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ফাইল স্থানান্তরের তালিকায় %dটি ফাইল যোগ করা হয়েছে৷</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow-তে %dটি পর্যন্ত কম্পিউটার বা ট্যাবলেট নিবন্ধন ও ব্যবস্থাপনা করুন।
+
+আপনার ফোনের সাথে একবারে শুধু একটি কম্পিউটার বা ট্যাবলেট সংযুক্ত করা যাবে। নিবন্ধিত উভয় কম্পিউটার বা ট্যাবলেট আপনার ফোনের সাথে সংযোগের চেষ্টা করলে আপনাকে একটি বেছে নিতে হবে।"</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Flow-তে %dটি পর্যন্ত কম্পিউটার বা ট্যাবলেট নিবন্ধন ও ব্যবস্থাপনা করুন।
+
+আপনার ফোনের সাথে একবারে শুধু একটি কম্পিউটার বা ট্যাবলেট সংযুক্ত করা যাবে। নিবন্ধিত উভয় কম্পিউটার বা ট্যাবলেট আপনার ফোনের সাথে সংযোগের চেষ্টা করলে আপনাকে একটি বেছে নিতে হবে।"</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

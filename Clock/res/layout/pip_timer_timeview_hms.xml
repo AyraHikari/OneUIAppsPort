@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/pip_timer_timeview_linear_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Direction_LTR"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/pip_timer_timeview_layout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/pip_timer_hour_bg" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_centerVertical="true">
+            <TextView android:gravity="end" android:id="@id/pip_timer_hour_prefix" style="@style/TimerPipTimeViewNumberStyle" />
+            <TextView android:gravity="start" android:id="@id/pip_timer_hour_postfix" android:layout_centerInParent="true" android:layout_centerVertical="true" android:layout_toEndOf="@id/pip_timer_hour_prefix" style="@style/TimerPipTimeViewNumberStyle" />
+        </RelativeLayout>
+        <TextView android:id="@id/pip_timer_hms_colon" android:layout_toEndOf="@id/pip_timer_hour_bg" style="@style/TimerPipTimeViewColonStyle" />
+        <RelativeLayout android:gravity="center" android:id="@id/pip_timer_minute_bg" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/pip_timer_hms_colon">
+            <TextView android:gravity="end" android:id="@id/pip_timer_minute_prefix" style="@style/TimerPipTimeViewNumberStyle" />
+            <TextView android:gravity="start" android:id="@id/pip_timer_minute_postfix" android:layout_toEndOf="@id/pip_timer_minute_prefix" style="@style/TimerPipTimeViewNumberStyle" />
+        </RelativeLayout>
+        <TextView android:id="@id/pip_timer_ms_colon" android:layout_toEndOf="@id/pip_timer_minute_bg" style="@style/TimerPipTimeViewColonStyle" />
+        <RelativeLayout android:gravity="center" android:id="@id/pip_timer_second_bg" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/pip_timer_ms_colon">
+            <TextView android:gravity="end" android:id="@id/pip_timer_second_prefix" style="@style/TimerPipTimeViewNumberStyle" />
+            <TextView android:gravity="start" android:id="@id/pip_timer_second_postfix" android:layout_toEndOf="@id/pip_timer_second_prefix" style="@style/TimerPipTimeViewNumberStyle" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

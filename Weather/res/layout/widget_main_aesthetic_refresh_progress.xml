@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="@dimen/aesthetic_weather_update_icon_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/widget_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/guide_size" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/weather_widget_4x4_ic_updated_noshadow_mtrl" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+        <ProgressBar android:theme="@style/WeatherWidget.Progress.Theme.NoTheme" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/guide_size" android:layout_alignBottom="@id/guide_size" android:layout_alignStart="@id/guide_size" android:layout_alignEnd="@id/guide_size" style="@style/WeatherWidget.Progress" />
+    </RelativeLayout>
+    <ImageView android:id="@id/widget_refresh_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/weather_widget_4x4_ic_updated_noshadow_mtrl" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+</FrameLayout>

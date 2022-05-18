@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="gradient_bg_first_circle_center_x">110</integer>
+    <integer name="gradient_bg_first_circle_center_y">710</integer>
+    <integer name="gradient_bg_first_circle_rotation_pivot_y">3</integer>
+    <integer name="gradient_bg_second_circle_center_x">240</integer>
+    <integer name="gradient_bg_second_circle_center_y">-40</integer>
+    <integer name="gradient_bg_second_circle_rotation_pivot_x">5</integer>
+</resources>

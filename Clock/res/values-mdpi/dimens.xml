@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="clock_tab_divider_height">1.0px</dimen>
+    <dimen name="divider_height">1.0px</dimen>
+</resources>

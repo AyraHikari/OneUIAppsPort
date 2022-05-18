@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?android:activatedBackgroundIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/itemPanel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="false" android:layout_marginStart="@dimen/activity_horizontal_ss_margin" android:layout_marginEnd="@dimen/activity_horizontal_ss_margin">
+        <RelativeLayout android:id="@id/defaultPhoneIconLayout" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="false" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/deviceIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deviceNameStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toStartOf="@id/usableConnectMethod" android:layout_toEndOf="@id/defaultPhoneIconLayout"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="18.0sp" android:textColor="@color/text_list_item_title" android:ellipsize="end" android:id="@id/txtDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/app_color_primary" android:ellipsize="end" android:id="@id/txtConnected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_status_registered" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/usableConnectMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/wifiIcon" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_list_wifi" android:tint="@color/list_subicon_color" android:layout_marginEnd="10.0dip" />
+            <ImageView android:id="@id/bluetoothIcon" android:visibility="invisible" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/ic_list_bluetooth" android:tint="@color/list_subicon_color" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/search_fragment_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar" android:id="@id/search_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_constraintTop_toTopOf="parent" app:title="@string/menu_search_title" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/search_content_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/search_actionbar_search_view_margin_bottom" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/search_toolbar" app:layout_constraintVertical_weight="1.0">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/search_pager" android:focusable="false" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/search_tab" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_weight="1.0" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/search_tab" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/search_tab_height" android:layout_marginStart="@dimen/search_tab_padding_side" android:layout_marginEnd="@dimen/search_tab_padding_side" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

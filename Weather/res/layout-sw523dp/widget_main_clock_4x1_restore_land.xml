@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_restore_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/widget_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/widget_clock_4x1_main_marginHorizontal_land_scaledown">
+        <RelativeLayout android:id="@id/time_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layoutDirection="@integer/widget_text_direction" android:layout_alignParentStart="true">
+            <FrameLayout android:id="@id/widget_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Clock.BlackShadow" android:textSize="@dimen/widget_clock_4x1_time_size_land_scaledown" android:id="@id/widget_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="@null" />
+                <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Clock" android:textSize="@dimen/widget_clock_4x1_time_size_land_scaledown" android:id="@id/widget_time_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="@null" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/widget_clock_4x1_date_marginStart_land_scaledown" android:layout_toEndOf="@id/widget_time_layout">
+                <FrameLayout android:id="@id/widget_date_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Date.BlackShadow" android:textSize="@dimen/widget_clock_4x1_date_size_land_scaledown" android:id="@id/widget_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.Date" android:textSize="@dimen/widget_clock_4x1_date_size_land_scaledown" android:id="@id/widget_date_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/widget_am_pm_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.AmPm.BlackShadow" android:textSize="@dimen/widget_clock_4x1_am_pm_size_land_scaledown" android:id="@id/widget_am_pm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="a" android:format24Hour="" />
+                    <TextClock android:textAppearance="@style/WeatherWidget.TextAppearance.AmPm" android:textSize="@dimen/widget_clock_4x1_am_pm_size_land_scaledown" android:id="@id/widget_am_pm_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="a" android:format24Hour="" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:gravity="end|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/widget_clock_empty_icon_marginStart_land_scaledown" android:layout_toEndOf="@id/time_area" android:layout_alignParentEnd="true">
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:textSize="@dimen/widget_restore_text_size_scaledown" android:layout_gravity="end|center" android:id="@id/widget_restore_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_weather_data" />
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error" android:textSize="@dimen/widget_restore_text_size_scaledown" android:layout_gravity="end|center" android:id="@id/widget_restore_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_weather_data" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

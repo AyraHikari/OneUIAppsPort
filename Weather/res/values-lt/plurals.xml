@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Negalima pridėti daugiau nei %d vietų. Ištrinkite kelias vietas, kad galėtumėte pridėti šią.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Negalima pridėti daugiau nei %d vietos. Ištrinkite kelias vietas, kad galėtumėte pridėti šią.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Negalima pridėti daugiau nei %d vietų. Ištrinkite kelias vietas, kad galėtumėte pridėti šią.</item>
+        <item quantity="many">Negalima pridėti daugiau nei %d vietų. Ištrinkite kelias vietas, kad galėtumėte pridėti šią.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d naujų pranešimų</item>
+        <item quantity="one">%d naujas pranešimas</item>
+        <item quantity="few">%d nauji pranešimai</item>
+        <item quantity="many">%d naujo pranešimo</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Negalima įvesti daugiau nei %d simbolių.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Negalima įvesti daugiau nei %d simbolį.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Negalima įvesti daugiau nei %d simbolių.</item>
+        <item quantity="many">Negalima įvesti daugiau nei %d simbolių.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">Parinkta: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Parinkta: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Parinkta: %d</item>
+        <item quantity="many">Parinkta: %d</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d dienų</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d diena</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dienos</item>
+        <item quantity="many">%d dienos</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d val.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d val.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d val.</item>
+        <item quantity="many">%d val.</item>
+    </plurals>
+</resources>

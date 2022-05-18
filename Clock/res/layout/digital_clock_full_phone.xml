@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/digital_clock" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/day_and_date_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/digital_clock_horizontal_right_layout_margin_start_phone" android:layout_toStartOf="@id/clock_layout">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextClock android:id="@id/week_text_portrait_full" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="@string/digital_clock_widget_week_text_12h_full" android:format24Hour="@string/digital_clock_widget_week_text_24h_full" style="@style/DateTextStyleHorizontal" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/day_night_icon_layout" android:layout_width="@dimen/digitalclock_day_night_icon_size" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:rotationY="@integer/day_night_icon_rotation" android:layout_marginStart="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextClock android:id="@id/date_text_large_full" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="@string/digital_clock_widget_date_text_full" android:format24Hour="@string/digital_clock_widget_date_text_full" style="@style/DateTextStyleHorizontal" />
+                    <TextView android:id="@id/hijri_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/DateTextStyleHorizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextClock android:id="@id/date_text_large_persian" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="d MMMM per" android:format24Hour="d MMMM per" style="@style/DateTextStyleHorizontal" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/clock_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/digitalclock_horizontal_clock_layout_margin_start" android:layout_marginEnd="@dimen/digitalclock_horizontal_clock_layout_margin_end_phone" android:layout_alignParentEnd="true">
+            <TextClock android:textSize="@dimen/digitalclock_full_ampm_textsize_phone" android:id="@id/ampm_text_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/digital_clock_ampm_text_left_margin_bottom" android:layout_marginEnd="@dimen/digital_clock_timeview_ampm_textview_margin_right" android:format12Hour="a" android:format24Hour="" style="@style/AmPmTextStyle" />
+            <TextClock android:textSize="@dimen/digitalclock_full_timeview_number_textview_textsize_phone" android:id="@id/clock_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="@string/main_widget_12_hours_format" android:format24Hour="@string/clock_24_hours_format" style="@style/NumberStyleHorizontal" />
+            <TextClock android:textSize="@dimen/digitalclock_full_ampm_textsize_phone" android:id="@id/ampm_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/digital_clock_ampm_text_margin_bottom" android:layout_marginStart="@dimen/digital_clock_timeview_ampm_textview_margin_right" android:format12Hour="a" android:format24Hour="" style="@style/AmPmTextStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

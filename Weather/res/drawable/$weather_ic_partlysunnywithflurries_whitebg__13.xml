@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__14" android:duration="1347" android:pathData="M 196.000442504883,220.000186920166 C191.5,234.500003814697 206.250442504883,242.879817962646 196.000442504883,255.555744171143" android:propertyXName="translateX" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__15" android:duration="1347" android:pathData="M 196.000442504883,220.000186920166 C191.5,234.500003814697 206.250442504883,242.879817962646 196.000442504883,255.555744171143" android:propertyYName="translateY" />
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator android:interpolator="@drawable/$weather_ic_partlysunnywithflurries_whitebg__16" android:duration="1347" android:valueFrom="0" android:valueTo="22" android:propertyName="rotation" />
+    </set>
+</set>

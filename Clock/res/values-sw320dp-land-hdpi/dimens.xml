@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_name_landscape_full_max_width">290.0dip</dimen>
+    <dimen name="alarm_name_landscape_max_width">200.0dip</dimen>
+    <dimen name="alarm_name_landscape_pre_full_max_width_phone">150.0dip</dimen>
+    <dimen name="alarm_widget_alarm_time_item_margin">12.0dip</dimen>
+    <dimen name="alarm_widget_date_and_onoff_btn_item_margin">6.0dip</dimen>
+    <dimen name="alarm_widget_date_and_onoff_btn_item_margin_land_phone">6.0dip</dimen>
+    <dimen name="alarm_widget_date_and_onoff_btn_item_margin_pre_full_mode">6.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size">11.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size_full_phone">11.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size_mini_phone">9.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size_phone">9.0dip</dimen>
+    <dimen name="alarm_widget_full_ampm_ko_text_size">10.0dip</dimen>
+    <dimen name="alarm_widget_full_date_text_size">11.0dip</dimen>
+    <dimen name="alarm_widget_full_horizontal_clock_layout_margin_end">10.0dip</dimen>
+    <dimen name="alarm_widget_full_item_margin_start">14.0dip</dimen>
+    <dimen name="alarm_widget_full_name_text_size">11.0dip</dimen>
+    <dimen name="alarm_widget_full_time_text_size">25.0dip</dimen>
+    <dimen name="alarm_widget_full_time_text_size_phone">25.0dip</dimen>
+    <dimen name="alarm_widget_full_time_text_size_phone_land">20.0dip</dimen>
+    <dimen name="alarm_widget_full_vertical_clock_layout_margin">5.0dip</dimen>
+    <dimen name="alarm_widget_item_margin_end">14.0dip</dimen>
+    <dimen name="alarm_widget_item_margin_start">14.0dip</dimen>
+    <dimen name="alarm_widget_name_text_size">11.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_height_phone">21.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_width_phone">21.0dip</dimen>
+    <dimen name="alarm_widget_time_text_size_phone">18.0dip</dimen>
+    <dimen name="digitalclock_day_night_icon_size">17.0dip</dimen>
+    <dimen name="digitalclock_timeview_number_textview_textsize_horizontal">32.0dip</dimen>
+    <dimen name="dualclock_common_city_textview_textsize">10.0dip</dimen>
+    <dimen name="dualclock_date_textview_textsize">10.0dip</dimen>
+    <dimen name="dualclock_day_night_icon_size">15.0dip</dimen>
+    <dimen name="dualclock_layout_margin_start_end">12.0dip</dimen>
+</resources>

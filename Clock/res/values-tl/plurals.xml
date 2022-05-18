@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarma sa %d araw</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarma sa %d araw</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarma sa %d oras</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarma sa %d oras</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Alarma sa loob ng %d oras 1 minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarma sa loob ng %d oras 1 minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarma sa %d minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarma sa %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Sa loob ng %d minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Sa loob ng %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Hindi makadagdag ng higit sa %d alarma.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi makadagdag ng higit sa %d alarma.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Tanggalin ang %d background?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Tanggalin ang %d background?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d na bagong notification</item>
+        <item quantity="one">%d bagong notification</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ang napili</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ang napili</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d minuto bago</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minuto bago</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s at %3$d iba pa</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s at %3$d iba pa</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Oras ng tulog: %d oras</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oras ng tulog: %d oras</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Oras ng tulog: %d minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Oras ng tulog: %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">I-snooze nang %d min</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">I-snooze nang %d min</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minuto</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plus %d minuto</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Hindi makadagdag ng higit sa %d preset timer.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi makadagdag ng higit sa %d preset timer.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Hindi makadagdag ng higit sa %d lungsod.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Hindi makadagdag ng higit sa %d lungsod.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

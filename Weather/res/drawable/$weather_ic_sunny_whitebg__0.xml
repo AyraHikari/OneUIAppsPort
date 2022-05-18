@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="280.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="280.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="s18" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-22.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 16">
+        <group android:name="s18pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s18pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s18pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s17" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-45.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 15">
+        <group android:name="s17pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s17pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s17pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s16" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-67.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 14">
+        <group android:name="s16pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s16pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s16pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s15" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-90.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 13">
+        <group android:name="s15pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s15pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s15pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s14" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-112.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 12">
+        <group android:name="s14pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s14pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s14pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s13" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-135.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 11">
+        <group android:name="s13pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s13pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s13pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s12" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-157.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 10">
+        <group android:name="s12pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s12pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s12pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s11" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-180.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 9">
+        <group android:name="s11pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s11pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s11pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s10" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-202.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 8">
+        <group android:name="s10pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s10pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s10pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s9" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-225.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 7">
+        <group android:name="s9pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s9pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s9pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s8" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-247.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 6">
+        <group android:name="s8pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s8pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s8pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s7" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-270.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 5">
+        <group android:name="s7pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s7pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s7pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s6" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-292.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 4">
+        <group android:name="s6pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s6pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s6pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s5" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-315.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 3">
+        <group android:name="s5pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s5pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s5pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s4" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="-337.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 2">
+        <group android:name="s4pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s4pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s4pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s3" android:pivotX="12.5" android:pivotY="-0.15625" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="127.75" android:translateY="141.25" aapt:layer_name="Light chip 1">
+        <group android:name="s3pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Shape 1">
+            <path android:name="s3pg1p10" android:fillColor="#ff000000" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            <path android:name="s3pg1p11" android:pathData="M 12.5 -75.875 C 12.5 -75.875 12.5 -84.438 12.5 -84.438 " android:strokeColor="#ffffbb09" android:strokeWidth="9.0" android:trimPathStart="0.0" android:trimPathEnd="1.0" android:trimPathOffset="0.0" android:strokeLineCap="round" android:strokeLineJoin="miter" android:strokeMiterLimit="4.0" android:strokeAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+    <group android:name="s1s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.00002" android:translateY="140.0" aapt:layer_name="Clip 2 ParentLink">
+        <group android:name="s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="-4.272461E-4" android:translateY="0.0" aapt:layer_name="Clip 2">
+            <group android:name="s2pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Clip 2" />
+        </group>
+    </group>
+    <group android:name="s1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.00002" android:translateY="140.0" aapt:layer_name="Fill 1">
+        <group android:name="s1pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Fill 1">
+            <path android:name="s1pg1p10" android:fillColor="#ffffbc09" android:pathData="M 24 0 C 24 13.26 13.26 24 0 24 C -13.26 24 -24 13.26 -24 0 C -24 -13.26 -13.26 -24 0 -24 C 13.26 -24 24 -13.26 24 0 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+        </group>
+    </group>
+</vector>

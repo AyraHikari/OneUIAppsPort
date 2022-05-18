@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/auto_list_city_divider" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:gravity="start|center" android:id="@id/item_subheader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/worldclock_auto_list_padding_start" style="@style/Base.Widget.AppCompat.TextView.ListSeparator" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/clock_winset_listview_padding_top_bottom">
+        <TextView android:textColor="@color/worldclock_list_text_color" android:ellipsize="end" android:gravity="start|center" android:id="@id/auto_list_city_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="sec-roboto-light" android:paddingStart="@dimen/worldclock_auto_list_padding_start" android:paddingEnd="?android:listPreferredItemPaddingEnd" style="?android:textAppearanceListItem" />
+        <TextView android:gravity="center_vertical" android:id="@id/auto_list_city_gmt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" android:paddingEnd="@dimen/worldclock_autocompletelistitem_cityname_textview_padding_end" style="?android:textAppearanceListItemSecondary" />
+    </LinearLayout>
+</LinearLayout>

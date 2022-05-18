@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>ಮಿದ್ವಾಯ್</item>
+        <item>ಹೊನೊಲುಲು</item>
+        <item>ಹವಾಯಿ</item>
+        <item>ಅಲಾಸ್ಕಾ</item>
+        <item>ಆಂಕೋರೇಜ್</item>
+        <item>ಸ್ಯಾನ್ ಫ್ರಾಂನ್ಸಿಸ್ಕೊ</item>
+        <item>ವ್ಯಾನ್ಕುವರ್</item>
+        <item>ಸಿಯಾಟಲ್</item>
+        <item>ಲಾಸ್ ಆಂಜೆಲೀಸ್</item>
+        <item>ತಿಜುಯಾನಾ</item>
+        <item>ಕ್ಯಾಲ್ಗರಿ</item>
+        <item>ಫೊಯೆನಿಕ್ಸ್</item>
+        <item>ಮಝಾಟ್ಲಾನ್</item>
+        <item>ಡೆನ್ವೆರ್</item>
+        <item>ಮೆಕ್ಸಿಕೊ ನಗರ</item>
+        <item>ವಿನ್ನಿಪೆಗ್</item>
+        <item>ಡಿಯೊಗೊ ಗಾರ್ಸಿಯಾ</item>
+        <item>ಡಲ್ಲಾಸ್</item>
+        <item>ಚಿಕಾಗೊ</item>
+        <item>ಟೊರಾಂಟೋ</item>
+        <item>ಮಿಯಾಮಿ</item>
+        <item>ಲಿಮಾ</item>
+        <item>ಕ್ವಿಟೊ</item>
+        <item>ವಾಷಿಂಗ್ಟನ್ DC</item>
+        <item>ಒಟ್ಟಾವ</item>
+        <item>ನ್ಯೂಯಾರ್ಕ್</item>
+        <item>ಬಗೊಟಾ</item>
+        <item>ಸ್ಯಾಂಟಿಯಾಗೋ</item>
+        <item>ಲಾ ಪಜ್</item>
+        <item>ಕಾರಕಾಸ್</item>
+        <item>ಬೋನಸ್ ಎರೀಸ್</item>
+        <item>ನ್ಯೂಫೌಂಡ್‌ಲ್ಯಾಂಡ್</item>
+        <item>ಸೇಂಟ್ ಜಾನ್ಸ್</item>
+        <item>ಸಾವ್ ಪಾಲೊ</item>
+        <item>ಬ್ರಸಿಲಿಯಾ</item>
+        <item>ರಿಯೊ ಡಿ ಜನೇರೊ</item>
+        <item>ಫರ್ನ್ಯಾಂಡೊ ಡಿ ನೊರೊನ್ಹ</item>
+        <item>ಅಜೋರ್ಸ್</item>
+        <item>ಲಿಸ್ಬನ್</item>
+        <item>ಕಾಸಾಬ್ಲಂಕಾ</item>
+        <item>ಡಬ್ಲಿನ್</item>
+        <item>ರಾಬಟ್</item>
+        <item>ಮ್ಯಾಡ್ರಿಡ್</item>
+        <item>ದಿ ಸೆಟಲ್‌ಮೆಂಟ್</item>
+        <item>ಲಂಡನ್</item>
+        <item>ಕಿಂಗ್‌ಸ್ಟನ್</item>
+        <item>ಬಾರ್ಸಿಲೋನಾ</item>
+        <item>ಪ್ಯಾರಿಸ್</item>
+        <item>ಅಲೆಜರ್ಸ್</item>
+        <item>ಟ್ಯೂನಿಸ್</item>
+        <item>ಟ್ರಿಪೊಲಿ</item>
+        <item>ಬರ್ಲಿನ್</item>
+        <item>ರೋಮ್</item>
+        <item>ಪ್ರಾಗುಯೆ</item>
+        <item>ಕಿಂಶಾಸ</item>
+        <item>ಸ್ಟಾಕ್‌ಹೋಮ್</item>
+        <item>ಬ್ರಾಡಿಸ್ಲಾವಾ</item>
+        <item>ಕೇಪ್ ಟೌನ್</item>
+        <item>ಬುಡಾಪೆಸ್ಟ್</item>
+        <item>ವಾರ್ಸಾ</item>
+        <item>ಕಾಲಿನಿಂಗ್ರಾಡ್</item>
+        <item>ಸೋಫಿಯಾ</item>
+        <item>ಅಥೆನ್ಸ್</item>
+        <item>ಲವಿವ್</item>
+        <item>ಹೆಲ್ಸಿಂಕಿ</item>
+        <item>ರಿಗಾ</item>
+        <item>ಟಾಲ್ಲಿನ್</item>
+        <item>ಬ್ರೂಚಾರೆಸ್ಟ್</item>
+        <item>ವಿನಿಯಸ್</item>
+        <item>ಲುಂಬುಂಬಾಶಿ</item>
+        <item>ಮಿನ್‌ಸ್ಕ್</item>
+        <item>ಸೇಂಟ್ ಪೀಟರ್ಸ್‌ಬರ್ಗ್</item>
+        <item>ಇಸ್ತಾನ್ ಬುಲ್</item>
+        <item>ಕಂಚಟ್ಕಾ</item>
+        <item>ಕೀವ್</item>
+        <item>ಜೆರೂಸ್ಲೇಮ್</item>
+        <item>ಮಾಸ್ಕೊ</item>
+        <item>ಖಾರ್ಕಿವ್</item>
+        <item>ನೈರೋಬಿ</item>
+        <item>ಜೆಡ್ಡಾ</item>
+        <item>ವೊಲ್ಗೋಗ್ರಾಡ್</item>
+        <item>ಯೆರೆವಾನ್</item>
+        <item>ಬಿಲಿಸಿ</item>
+        <item>ಬಕು</item>
+        <item>ಚಿತಾ</item>
+        <item>ಸಮಾರಾ</item>
+        <item>ಟೆಹ್‍ರಾನ್</item>
+        <item>ಐಜಾಕ್</item>
+        <item>ಅಬು ಧಾಬಿ</item>
+        <item>ದುಬೈ</item>
+        <item>ಉಫಾ</item>
+        <item>ಯೆಕ್ಟರಿನ್‌ಬರ್ಗ್</item>
+        <item>ಚೆಲ್ಯಾಬಿಸ್ಕ್</item>
+        <item>ಕರಾಚಿ</item>
+        <item>ಕಾಬುಲ್</item>
+        <item>ತಾಷ್ಕೆಂಟ್</item>
+        <item>ಇಸ್ಲಾಮಾಬಾದ್</item>
+        <item>ಮುಂಬೈ</item>
+        <item>ಓಮಸ್ಕ್</item>
+        <item>ಅಲ್ಮಾಟಿ</item>
+        <item>ಬೆಂಗಳೂರು</item>
+        <item>ಹೈದರಾಬಾದ್</item>
+        <item>ಹೊಸ ದೆಹಲಿ</item>
+        <item>ಕೊಲಂಬೊ</item>
+        <item>ಚೆನ್ನೈ</item>
+        <item>ನೋವೋಸಿಬಿರಿಸ್ಕ್</item>
+        <item>ಖಟ್ಮಾಂಡು</item>
+        <item>ನೋವೋಕುಜ್‌ನೆಟ್ಸ್ಕ್</item>
+        <item>ಕೊಲ್ಕತ್ತಾ</item>
+        <item>ಡಾಕಾ</item>
+        <item>ಹೋಡ್</item>
+        <item>ಕ್ರಾಸ್ನೋಯರ್ಸ್ಕ್</item>
+        <item>ಬ್ಯಾಂಕಾಕ್</item>
+        <item>ಕ್ವಾಲಾ ಲಂಪುರ್</item>
+        <item>ಸಿಂಗಾಪುರ</item>
+        <item>ಇರ್ಕಟಸ್ಕ್</item>
+        <item>ಫೊನಾಮ್ ಪೆನ್ಹ್</item>
+        <item>ಹನೋಯ್</item>
+        <item>ಜಕಾರ್ತಾ</item>
+        <item>ಉಲನ್ ಬಾಟರ್</item>
+        <item>ಹಾಂಗ್‌ಕಾಂಗ್</item>
+        <item>ಪರ್ಥ್</item>
+        <item>ಬೀಜಿಂಗ್</item>
+        <item>ಮನಿಲಾ</item>
+        <item>ತೇಪೀ</item>
+        <item>ಸಿಯೋಲ್</item>
+        <item>ಆಂಬೋನ್</item>
+        <item>ವ್ಲಾಡಿವೊಸ್ಟೋಕ್</item>
+        <item>ಯಾಕುತ್ಸಕ್</item>
+        <item>ಖಬರ್ ವೋಸ್ಕ್</item>
+        <item>ಅಡಲೈಡ್</item>
+        <item>ಟೋಕಿಯೊ</item>
+        <item>ಯುಜ್ನೊ-ಸಕಾಲಿನ್‌ಸ್ಕ್</item>
+        <item>ಹ್ಯಾಲಿಫ್ಯಾಕ್ಸ್</item>
+        <item>ಗುವಾಮ್</item>
+        <item>ಕ್ಯಾನ್‌ಬೆರಾ</item>
+        <item>ಮ್ಯಾಗಡನ್</item>
+        <item>ಸಿಡ್ನಿ</item>
+        <item>ಪೆಟ್ರೊಪಾವಿಯೋಸ್ಕ್-ಕಾಮ್ ಚಾಟ್ ಸ್ಕೀ</item>
+        <item>ಟ್ಯಾರವಾ</item>
+        <item>ಅಕ್ಲ್ಯಾಂಡ್</item>
+        <item>ವೆಲ್ಲಿಂಗ್‌ಟನ್</item>
+        <item>ಪಾಗೋ ಪಾಗೋ</item>
+        <item>ಡೆನ್‌ಪಾಸರ್</item>
+        <item>ಬೆರ್ನ್</item>
+        <item>ಜುರಿಚ್</item>
+        <item>ಕೈರೊ</item>
+        <item>ಅಬಿಡ್ಜಾನ್</item>
+        <item>ಅಕ್ರಾ</item>
+        <item>ಅಡಿಸ್ ಅಬಾಬಾ</item>
+        <item>ಅಮ್ಮಾನ್</item>
+        <item>ಆಮಸ್ಟರ್‌ಡ್ಯಾಮ್</item>
+        <item>ಅನಾಡಿರ್</item>
+        <item>ಅಂಕಾರ</item>
+        <item>ಅಂಟನಾನರಿವೊ</item>
+        <item>ಅಶ್ಗಾಬಾತ್</item>
+        <item>ಅಸ್ಮಾರಾ</item>
+        <item>ಅಸ್ತಾನಾ</item>
+        <item>ಆಸಂಸಿಯಾನ್</item>
+        <item>ಆಸ್ಟಿನ್</item>
+        <item>ಬಗ್ದಾದ್</item>
+        <item>ಬಾಲ್ಟಿಮೋರ</item>
+        <item>ಬಮಾಕೊ</item>
+        <item>ಬಂಗುಯಿ</item>
+        <item>ಬಾರಿ</item>
+        <item>ಬೇಸೆ-ಟೆರ್ರೆ</item>
+        <item>ಬೈರುಟ್</item>
+        <item>ಬೆಲ್ ಗ್ರೇಡ್</item>
+        <item>ಬೆಲಿಝ್ ನಗರ</item>
+        <item>ಬಿಶ್‌ಕೇಕ್</item>
+        <item>ಬಿಸಾವು</item>
+        <item>ಬೊಲೊಗ್ನಾ</item>
+        <item>ಬಾಸ್ಟನ್</item>
+        <item>ಬ್ರಿಡ್ಜ್‌ಟೌನ್</item>
+        <item>ಬ್ರಿಸ್ ಬನ್</item>
+        <item>ಬ್ರೂಸೆಲ್ಸ್</item>
+        <item>ಕ್ಯಾನರಿ ಐಲ್ಯಾಂಡ್ಸ್</item>
+        <item>ಕೇಟನ್‌ಜಾರೊ</item>
+        <item>ಕೆಯೆನ್ನೆ</item>
+        <item>ಕ್ಯಾರ್ಲೋಟ್ಟೆ</item>
+        <item>ಚಿಸಿನು</item>
+        <item>ಕ್ಲೀವ್‍ಲ್ಯಾಂಡ್</item>
+        <item>ಕೊಲಂಬಸ್</item>
+        <item>ಕೊನಾಕ್ರಿ</item>
+        <item>ಕೋಪೆನ್‍ಹ್ಯಾಗೆನ್</item>
+        <item>ಕೋರ್ಕ್</item>
+        <item>ಕ್ರೋಟೋನ್</item>
+        <item>ಡಾಕರ್</item>
+        <item>ಡಮಾಸ್ಕಸ್</item>
+        <item>ದಾರ್ ಎಸ್ ಸಲಾಮ್</item>
+        <item>ಡಾರ್ವಿಸ್</item>
+        <item>ಡೆಟ್ರಾಯ್ಟ್</item>
+        <item>ಜಿಬೌಟಿ</item>
+        <item>ದೋಹಾ</item>
+        <item>ಡವಾಲಾ</item>
+        <item>ದುಶಾನ್ಬೆ</item>
+        <item>ಈಸ್ಟರ್ ಐಲ್ಯಾಂಡ್</item>
+        <item>ಎಡಿನ್‌ಬರ್ಗ್</item>
+        <item>ಎಲ್ ಪಾಸೊ</item>
+        <item>ಫ್ಲೋರೆನ್ಸ್</item>
+        <item>ಫೋರ್ಟ್-ಡೆ-ಫ್ರಾನ್ಸ್</item>
+        <item>ಫ್ರೀಟೌನ್</item>
+        <item>ಗಬರೋನೆ</item>
+        <item>ಗ್ಯಾಲಪಾಗೋಸ್ ಐಲ್ಯಾಂಡ್ಸ್</item>
+        <item>ಜಿನಿವಾ</item>
+        <item>ಜಿನೊವಾ</item>
+        <item>ಜಾರ್ಜ್‌ಟೌನ್</item>
+        <item>ಗ್ರಿಟ್ವಿಕೆನ್</item>
+        <item>ಗ್ವಾಟೆಮಾಲಾ ಸಿಟಿ</item>
+        <item>ಗುಸ್ಟಾವಿಯಾ</item>
+        <item>ಹಂಬರ್ಗ್‌</item>
+        <item>ಹರಾರೆ</item>
+        <item>ಹವಾನಾ</item>
+        <item>ಹೋಬರ್ಟ್</item>
+        <item>ಹೌಸ್ಟನ್</item>
+        <item>ಇಂಡಿಯಾನಾಪೊಲಿಸ್</item>
+        <item>ಜೋಹನ್ಸ್‌ಬರ್ಗ್</item>
+        <item>ಕಂಪಾಲ</item>
+        <item>ಖಾರ್ಟೋಯಮ್</item>
+        <item>ಕಿಂಗ್‌ಸ್ಟನ್</item>
+        <item>ಕುವೈತ್ ನಗರ</item>
+        <item>ಲಾಗೋಸ್</item>
+        <item>ಲಾಸ್ ವೆಗಾಸ್</item>
+        <item>ಜುಬ್ಲಜಾನಾ</item>
+        <item>ಹೈಕೊ</item>
+        <item>ಲೂಯಿಸ್‍ವಿಲ್ಲೆ</item>
+        <item>ಲುವಾಂಡ</item>
+        <item>ಲುಸಾಕ</item>
+        <item>ಲಕ್ಸೆಂಬರ್ಗ್</item>
+        <item>ಮಾಕೂವು</item>
+        <item>ಮಲಾಬೊ</item>
+        <item>ಮಾಲೆ</item>
+        <item>ಮ್ಯಾನಗುವಾ</item>
+        <item>ಮನಾಮ</item>
+        <item>ಮಾಪುಟೊ</item>
+        <item>ಮ್ಯಾರಿಗೋಟ್</item>
+        <item>ಮೆಕ್ಕಾ</item>
+        <item>ಮೆಲ್ಬೋರ್ನ್</item>
+        <item>ಮೆಂಫಿಸ್</item>
+        <item>ಮೆಸ್ಸಿನ</item>
+        <item>ಮಿಲಾನೊ</item>
+        <item>ಮಿಲ್ವಾಕೀ</item>
+        <item>ಮೊಗಾಡಿಶು</item>
+        <item>ಮಾನ್ರೋವಿಯಾ</item>
+        <item>ಮಾಂಟೆವೀಡಿಯೊ</item>
+        <item>ಮೊಂಟ್ರಿಯಲ್</item>
+        <item>ಮ್ಯೂನಿಚ್</item>
+        <item>ಮಸ್ಕಟ್</item>
+        <item>ನಪೋಲಿ</item>
+        <item>ನೇಟರ್ಸ್</item>
+        <item>"ಎನ್' ಜಾಮೆನ"</item>
+        <item>ನಿಯಾಮೆ</item>
+        <item>ನೌವಾಕ್ಚೋಟ್</item>
+        <item>ನೌಮಿಯಾ</item>
+        <item>ನುಕುಅಲೋಫಾ</item>
+        <item>ನೂಕ್</item>
+        <item>ಓಸಾಕ</item>
+        <item>ಔಗಾಡೋಗು</item>
+        <item>ಪಾಲೆರ್ಮೊ</item>
+        <item>ಪನಾಮ ನಗರ</item>
+        <item>ಪರಮಾರಿಬೋ</item>
+        <item>ಪರ್ಮ್</item>
+        <item>ಫಿಲಡೆಲ್ಫಿಯಾ</item>
+        <item>ಪಾಡ್‌ಗೋರಿಕಾ</item>
+        <item>ಪೋಂಟಾ ಡೆಲ್ಗಡ</item>
+        <item>ಪೋರ್ಟ್ ಲೂಯಿಸ್</item>
+        <item>ಪೋರ್ಟ್-ಔ-ಪ್ರಿನ್ಸ್</item>
+        <item>ಪೋರ್ಟ್‌ಲ್ಯಾಂಡ್, ಓರೆಗಾನ್</item>
+        <item>ಪ್ಯೋಂಗ್ಯಾಂಗ್</item>
+        <item>ಯಾಂಗಾನ್</item>
+        <item>ರೀಸೈಫ್</item>
+        <item>ರೇಕ್ಜಾವಿಕ್</item>
+        <item>ರಿಯಾಧ್</item>
+        <item>ಸೇಂಟ್-ಡೆನಿಸ್</item>
+        <item>ಸ್ಯಾನ್ ಆಂಟೋನಿಯೊ</item>
+        <item>ಸ್ಯಾನ್ ಡಿಯಾಗೋ</item>
+        <item>ಸ್ಯಾನ್ ಜೋಸ್</item>
+        <item>ಸ್ಯಾನ್ ಜೋಸ್</item>
+        <item>ಸ್ಯಾನ್ ಜುವಾನ್</item>
+        <item>ಸ್ಯಾನ್ ಮ್ಯಾರಿನೊ</item>
+        <item>ಸ್ಯಾನ್ ಸಲ್ವೋಡರ್</item>
+        <item>ಸನಾ</item>
+        <item>ಸ್ಯಾಂಟೊ ಡೊಮಿಂಗೊ</item>
+        <item>ಶಾಂಗೈ</item>
+        <item>ಶೆನ್ಜ್‌ಹನ್</item>
+        <item>ಸ್ಕೋಪ್ಜೆ</item>
+        <item>ಸೇಂಟ್ ಜಾನ್ಸ್</item>
+        <item>ಸುವಾ</item>
+        <item>ಟ್ಯಾಹಿಟಿ</item>
+        <item>ತೆಗುಸಿಗಲ್ಪ</item>
+        <item>ಹೋ ಚಿ ಮಿಂಚ್ ನಗರ</item>
+        <item>ಟಿಯಾಂಜಿನ್</item>
+        <item>ಟೊರಿನೊ</item>
+        <item>ವಡುಝ್</item>
+        <item>ವ್ಯಾಲೆಟ್ಟಾ</item>
+        <item>ವೆರೊನಾ</item>
+        <item>ವಿಕ್ಟೋರಿಯಾ</item>
+        <item>ವಿಯೆನ್ನಾ</item>
+        <item>ಯಾಮೌಸೌಕ್ರೊ</item>
+        <item>ಯಾವುಂಡ್</item>
+        <item>ಜಾಗ್ರೆಬ್</item>
+        <item>ಗ್ವಾಂಗ್ಜ್‌ಹೊವು</item>
+        <item>ಕಾರ್ಡಿಫ್</item>
+        <item>ರಿಜೈನಾ</item>
+        <item>ಚಾರ್ಲೋಟ್ ಎಮೆಲಿ</item>
+        <item>ಅಟ್ಲ್ಯಾಂಟಾ</item>
+        <item>ಮಯೊಟ್ಟೆ</item>
+        <item>ಸೇಂಟ್ ಪಿಯರಿ ಮತ್ತು ಮಿಕ್ವೆಲಾನ್</item>
+        <item>ಒಸ್ಲೊ</item>
+        <item>ಸ್ರೆಡ್ಮೆಕೋಲಿಮ್ಸ್ಕ್</item>
+        <item>ಸೆವೆರೋ-ಕುರಿಲ್ಸ್ಕ್</item>
+        <item>ಯುಹಾನ್</item>
+        <item>ಚೆಂಗ್ಡೂ</item>
+        <item>ಕ್ಸಿಯಾನ್</item>
+        <item>ಪೋರ್ಟ್ ಮೋರಿಸ್ಬೇ</item>
+        <item>ದಾವಾವೊ ನಗರ</item>
+        <item>ಚಾಂಗಿಂಗ್</item>
+        <item>ಶೆನ್ಯಾಂಗ್</item>
+        <item>ನನ್ಜಿಂಗ್</item>
+        <item>ಹರ್ಬಿನ್</item>
+        <item>ಜಿನಾನ್</item>
+        <item>ಜೆಂಗ್ಜ್‌ಹಾವ್</item>
+        <item>ಕನ್ಮಿಂಗ್</item>
+        <item>ಚಾಂಗ್‌ಚುನ್</item>
+        <item>ಫುಝೋವು</item>
+        <item>ಕುಚಿಂಗ್</item>
+        <item>ಮಕಸ್ಸಾರ್</item>
+        <item>ಹಾಂಗ್ ಝೌ</item>
+        <item>ಕ್ವಿಂಗ್ಡಾವೋ</item>
+        <item>ನಾನಿಂಗ್</item>
+        <item>ಉರ್ಮಕಿ</item>
+        <item>ನಸ್ಸೌ</item>
+        <item>ನಿಕೋಸಿಯಾ</item>
+        <item>ದಿಲಿ</item>
+        <item>ರೋಡ್ ಟೌನ್</item>
+        <item>ಲೋಮೆ</item>
+        <item>ರೋಸೌ</item>
+        <item>ಲಿಬ್ರೆವಿಲ್ಲೆ</item>
+        <item>ಮಾರ್ಸಿಲ್ಲೆ</item>
+        <item>ಮಾಸೆರು</item>
+        <item>ಮಜುರೊ</item>
+        <item>ಮೊನಾಕ್ಕೊ</item>
+        <item>ಬಂಡರ್ ಸೆರಿ ಬೆಗಾವನ್</item>
+        <item>ಬಂಜುಲ್</item>
+        <item>ಬುಸಾನ್</item>
+        <item>ಬುಜುಂಬುರಾ</item>
+        <item>ಬ್ರೆಜಾವಿಲ್ಲೆ</item>
+        <item>ವಿಯೆಂಟಿಯಾನ್</item>
+        <item>ವಿಂಡ್‌ಹೋಕ್</item>
+        <item>ಸರಾಜೆವೊ</item>
+        <item>ಸೈಪನ್</item>
+        <item>ಸಾವೊ ಟೋಮ್</item>
+        <item>ಸೆ. ಜಾರ್ಜ್ಸ್</item>
+        <item>ಸ್ಟಾನ್ಲಿ</item>
+        <item>ಆಡೆನ್</item>
+        <item>ಅಪಿಯಾ</item>
+        <item>ಅಂಡೋರಾ ಲಾ ವೆಲ್ಲಾ</item>
+        <item>ಲಾಯೌನೆ</item>
+        <item>ವಿಲ್ಲೆಮ್ಸ್ಟಾಡ್</item>
+        <item>ಬ್ಯಾಬೇನ್</item>
+        <item>ಕ್ಯಾಸ್ಟ್ರೀಸ್</item>
+        <item>ಕೊರೊರ್</item>
+        <item>ಕ್ಯಾನ್ಕ್ಯೂನ್</item>
+        <item>ಕಿಗಾಲಿ</item>
+        <item>ಕಿಂಗ್ಸ್ಟೌನ್</item>
+        <item>ಟೆಲ್ ಅವಿವ್</item>
+        <item>ತೋರ್ಶಾವ್ನ್</item>
+        <item>ತಿರಾನ</item>
+        <item>ತಿಂಫು</item>
+        <item>ಪೋರ್ಟೊ-ನೊವೊ</item>
+        <item>ಪ್ರಾಯಿಯಾ</item>
+        <item>ಫ್ರಾಂಕ್‌ಫರ್ಟ್</item>
+        <item>ಪ್ರಿಸ್ಟಿನಾ</item>
+        <item>ಹ್ಯಾಮಿಲ್ಟನ್</item>
+        <item>ಹೊನಿಯರಾ</item>
+        <item>ಪೋರ್ಟ್ ಆಫ್ ಸ್ಪೇನ್</item>
+        <item>ಮಿನ್ನಿಯಾಪೋಲಿಸ್</item>
+        <item>ಹಿಲೋ</item>
+        <item>ಓರಲ್ಯಾಂಡೊ</item>
+        <item>ಕಾನ್ಸಾಸ್ ನಗರ</item>
+        <item>ನ್ಯೂ ಓರ್ಲಿಯನ್ಸ್</item>
+        <item>ನ್ಯಾಶ್ವಿಲ್ಲೆ</item>
+        <item>ಟಕ್ಸನ್</item>
+        <item>ಟಂಪಾ</item>
+        <item>ಜಾಕ್ಸನ್‌ವಿಲ್ಲೆ</item>
+        <item>ಒಕ್ಲಹೋಮ ನಗರ</item>
+        <item>ಅಲ್ಬುಕರ್ಕ್</item>
+        <item>ಓಮಾಹ</item>
+        <item>ವರ್ಜೀನಿಯಾ ಬೀಚ್</item>
+        <item>ಬೋಯಿಸ್</item>
+        <item>ಡೆಸ್ ಮೊಯಿನ್ಸ್</item>
+        <item>ಬರ್ಮಿಂಗ್ಹ್ಯಾಮ್</item>
+        <item>ಸಾಲ್ಟ್ ಲೇಕ್ ಸಿಟಿ</item>
+        <item>ಲಿಟಲ್ ರಾಕ್</item>
+        <item>ಸಿಯೋಕ್ಸ್ ಫಾಲ್ಸ್</item>
+        <item>ಜಾಕ್ಸನ್</item>
+        <item>ಚಾರ್ಲ್‌ಸ್ಟನ್, ದಕ್ಷಿಣ ಕೆರೊಲಿನಾ</item>
+        <item>ಫಾರ್ಗೋ</item>
+        <item>ಬಿಲ್ಲಿಂಗ್‌ಗಳು</item>
+        <item>ಪೋರ್ಟ್‌ಲ್ಯಾಂಡ್, ಮೈನೇ</item>
+        <item>ಚೀಯೆನ್ನೆ</item>
+        <item>ಚಾರ್ಲ್‌ಸ್ಟನ್, ಪಶ್ಚಿಮ ವರ್ಜೀನಿಯಾ</item>
+        <item>ಪಿಟ್ಸ್‌ಬರ್ಗ್</item>
+        <item>ಗ್ರೀನ್ ಬೇ</item>
+        <item>ಸೇಂಟ್. ಲೂಯಿಸ್</item>
+        <item>ದಿ ವ್ಯಾಲಿ</item>
+        <item>UTC (ಕೋಆರ್ಡಿನೇಟೆಡ್ ಯೂನಿವರ್ಸಲ್ ಟೈಮ್)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>ಆಫ್ಘಾನಿಸ್ತಾನ</item>
+        <item>ಅಲ್ಜೀರಿಯಾ</item>
+        <item>ಸಮೊವಾ</item>
+        <item>ಆಂಟಿಗುವಾ ಮತ್ತು ಬರ್ಬುಡಾ</item>
+        <item>ಅರ್ಜೆಂಟಿನಾ</item>
+        <item>ಅರ್ಮೇನಿಯಾ</item>
+        <item>ಆಸ್ಟ್ರೇಲಿಯಾ</item>
+        <item>ಅಜೆರ್‌ಬೈಜಾನ್</item>
+        <item>ಬಾಂಗ್ಲಾದೇಶ</item>
+        <item>ರಿಪಬ್ಲಿಕ್ ಆಫ್ ಬಶ್ಕೋರೊಸ್ಥಾನ</item>
+        <item>ಬೆಲಾರಸ್</item>
+        <item>ಬೊಲಿವಿಯಾ</item>
+        <item>ಬ್ರೇಜಿಲ್</item>
+        <item>ಬಲ್ಗೇರಿಯಾ</item>
+        <item>ಕಂಬೋಡಿಯಾ</item>
+        <item>ಕೆನಡಾ</item>
+        <item>ಚಿಲೀ</item>
+        <item>ಚೀನಾ</item>
+        <item>ಕೊಲಂಬಿಯಾ</item>
+        <item>ಜೆಕ್ ಗಣರಾಜ್ಯ</item>
+        <item>ಕಾಂಗೊ ಗಣರಾಜ್ಯ</item>
+        <item>ಈಕ್ವೆಡಾರ್</item>
+        <item>ಈಸ್ಟೋನಿಯಾ</item>
+        <item>ಫಿನ್‌ಲ್ಯಾಂಡ್</item>
+        <item>ಫ್ರಾನ್ಸ್</item>
+        <item>ಜಾರ್ಜಿಯಾ</item>
+        <item>ಜರ್ಮನಿ</item>
+        <item>ಗ್ರೀಸ್</item>
+        <item>ಹಂಗೇರಿ</item>
+        <item>ಭಾರತ</item>
+        <item>ಇಂಡೋನೇಷಿಯಾ</item>
+        <item>ಇರಾನ್</item>
+        <item>ಐರ್ಲ್ಯಾಂಡ್</item>
+        <item>ಇಸ್ರೇಲ್</item>
+        <item>ಇಟಲಿ</item>
+        <item>ಜಪಾನ್</item>
+        <item>ಕಝಕಿಸ್ತಾನ್</item>
+        <item>ಕೀನ್ಯಾ</item>
+        <item>ಕಿರಿಬಾಟಿ</item>
+        <item>ಲಾಟ್ವಿಯಾ</item>
+        <item>ಲಿಥುವೇನಿಯಾ</item>
+        <item>ಮಲೇಷಿಯಾ</item>
+        <item>ಮೆಕ್ಸಿಕೋ</item>
+        <item>ಮಂಗೋಲಿಯಾ</item>
+        <item>ಮೊರೊಕ್ಕೊ</item>
+        <item>ನೇಪಾಳ</item>
+        <item>ನ್ಯೂಜಿಲ್ಯಾಂಡ್</item>
+        <item>ಪಾಕಿಸ್ತಾನ</item>
+        <item>ಪೆರು</item>
+        <item>ಫಿಲಿಫೈನ್ಸ್</item>
+        <item>ಪೋಲ್ಯಾಂಡ್</item>
+        <item>ಪೋರ್ಚುಗಲ್</item>
+        <item>ನಕ್ಷೆ</item>
+        <item>ದಕ್ಷಿಣ ಕೊರಿಯಾ</item>
+        <item>ರಿಪಬ್ಲಿಕ್ ಆಫ್ ಸಿಂಗಪೂರ್</item>
+        <item>ಲಿಬಿಯಾ</item>
+        <item>ರೋಮೇನಿಯಾ</item>
+        <item>ರಷ್ಯಾ</item>
+        <item>ಸೌದಿ ಅರೇಬಿಯಾ</item>
+        <item>ಸ್ಲೊವಾಕಿಯಾ</item>
+        <item>ಸೌತ್ ಆಫ್ರಿಕಾ</item>
+        <item>ಸ್ಪೇನ್</item>
+        <item>ಶ್ರೀಲಂಕಾ</item>
+        <item>ಸ್ವೀಡನ್</item>
+        <item>ತೈವಾನ್</item>
+        <item>ಥೈಲ್ಯಾಂಡ್</item>
+        <item>ಟ್ಯುನಿಶಿಯಾ</item>
+        <item>ಟರ್ಕಿ</item>
+        <item>UAE</item>
+        <item>UK</item>
+        <item>ಉಕ್ರೇನ್</item>
+        <item>USA</item>
+        <item>ಉಜ್ಬೇಕಿಸ್ತಾನ್</item>
+        <item>ವೆನೆಜುವೆಲ್ಲಾ</item>
+        <item>ವೀಯೆಟ್ನಾಂ</item>
+        <item>GB ವರ್ಜಿನ್ ಐಲ್ಯಾಂಡ್ಸ್</item>
+        <item>ಸ್ವಿಟರ್ಜಲ್ಯಾಂಡ್</item>
+        <item>ಈಜಿಪ್ಟ್</item>
+        <item>ಕೋಟೆ ಡಿವೋರೆ</item>
+        <item>ಗಾನಾ</item>
+        <item>ಇಥಿಯೋಪಿಯಾ</item>
+        <item>ಜೋರ್ಡಾನ್</item>
+        <item>ನೆದರ್‌ಲ್ಯಾಂಡ್ಸ್</item>
+        <item>ಮಡಗಾಸ್ಕರ್</item>
+        <item>ತುರ್ಕಮೆನಿಸ್ತಾನ್</item>
+        <item>ಇರಿಟ್ರಿಯಾ</item>
+        <item>ಪೆರುಗ್ವೆ</item>
+        <item>ಇರಾಕ್</item>
+        <item>ಮಾಲಿ</item>
+        <item>ಸೆಂಟ್ರಲ್ ಆಫ್ರಿಕನ್ ಗಣರಾಜ್ಯ</item>
+        <item>ಗ್ವಾಡೆಲೂಪ್</item>
+        <item>ಲೆಬನಾನ್</item>
+        <item>ಸರ್ಬಿಯಾ</item>
+        <item>ಬೆಲೀಜ್</item>
+        <item>ಕಿರ್ಗಿಸ್ತಾನ್</item>
+        <item>ಗಿನಿಯಾ ಬಿಸಾವು</item>
+        <item>ಬಾರ್ಬೆಡೋಸ್</item>
+        <item>ಬೆಲ್ಜಿಯಂ</item>
+        <item>ಫ್ರೆಂಚ್ ಗಿಯಾನಾ</item>
+        <item>ಮೊಲ್ಡೊವಾ</item>
+        <item>ಗ್ವೀನಿಯಾ</item>
+        <item>ಡೆನ್‍ಮಾರ್ಕ್</item>
+        <item>ಸೆನೆಗಲ್</item>
+        <item>ಸಿರಿಯಾ</item>
+        <item>ತಾನ್ಜೇನಿಯಾ</item>
+        <item>ಜಿಬೂಟಿ</item>
+        <item>ಕತಾರ್</item>
+        <item>ಕ್ಯಾಮೆರೂನ್</item>
+        <item>ತಜಕಿಸ್ಥಾನ</item>
+        <item>ಸ್ಕಾಟ್‌ಲ್ಯಾಂಡ್</item>
+        <item>ಮಾರ್ಟಿನೀಕ್</item>
+        <item>ಸಿಯಾರಾ ಲಿಯೋನ್</item>
+        <item>ಬೋಟ್ಸವಾನಾ</item>
+        <item>ಗಯಾನಾ</item>
+        <item>ಸೌತ್ ಜಾರ್ಜಿಯಾ</item>
+        <item>ಗ್ವಾಟೆಮಾಲಾ</item>
+        <item>ಸೇಂಟ್ ಬಾರ್ಥೆಲೆಮಿ</item>
+        <item>ಜಿಂಬಾಬ್ವೆ</item>
+        <item>ಕ್ಯೂಬಾ</item>
+        <item>ಉಗಾಂಡಾ</item>
+        <item>ಸೂಡಾನ್</item>
+        <item>ಜಮೈಕಾ</item>
+        <item>ಕುವೈತ್</item>
+        <item>ನೈಜೀರಿಯಾ</item>
+        <item>ಅಂಗೋಲಾ</item>
+        <item>ಜಾಂಬಿಯಾ</item>
+        <item>ಲಕ್ಸೆಂಬರ್ಗ್</item>
+        <item>ಇಕ್ವಿಟೋರಿಯಲ್ ಗಿನಿಯಾ</item>
+        <item>ಮಾಲ್ಡೀವ್ಸ್</item>
+        <item>ನಿಕರಾಗುವಾ</item>
+        <item>ಬಹ್ರೇನ್</item>
+        <item>ಮೊಜಾಂಬಿಕ್</item>
+        <item>ಸೇಂಟ್ ಮಾರ್ಟಿನ್</item>
+        <item>ಸೋಮಾಲಿಯಾ</item>
+        <item>ಲಿಬೇರಿಯಾ</item>
+        <item>ಉರುಗ್ವೆ</item>
+        <item>ಓಮಾನ್</item>
+        <item>ಚಾಡ್</item>
+        <item>ನೈಜರ್</item>
+        <item>ಮಾರಿಟೋನಿಯಾ</item>
+        <item>ನ್ಯೂ ಕ್ಯಾಲಿಡೋನಿಯಾ</item>
+        <item>ಟೊಂಗಾ</item>
+        <item>ಗ್ರೀನ್‌ಲ್ಯಾಂಡ್</item>
+        <item>ಬುರ್ಕಿನಾ ಫಾಸೊ</item>
+        <item>ಪನಾಮ</item>
+        <item>ಸುರಿನೇಮ್</item>
+        <item>ಮಾಂಟೆನೆಗ್ರೊ</item>
+        <item>ಮಾರೀಶಿಯಸ್</item>
+        <item>ಹೇಯ್ಟಿ</item>
+        <item>ಡೆಮಾಕ್ರಟಿಕ್ ಪೀಪಲ್ಸ್ ರಿಪಬ್ಲಿಕ್ ಆಫ್ ಕೊರಿಯಾ</item>
+        <item>ಮಾಯನ್ಮಾರ್</item>
+        <item>ಐಸ್‍ಲ್ಯಾಂಡ್</item>
+        <item>ರೀಯೂನಿಯನ್ ಐಲ್ಯಾಂಡ್</item>
+        <item>ಕೋಸ್ಟಾ ರಿಕಾ</item>
+        <item>ಪೋರ್ಟೊ ರಿಕೊ</item>
+        <item>ಎಲ್ ಸ್ಯಾಲ್ವೆಡಾರ್</item>
+        <item>ಯೆಮೆನ್</item>
+        <item>ಡೊಮಿನಿಕನ್ ರಿಪಬ್ಲಿಕ್</item>
+        <item>ಮ್ಯಾಸಿಡೋನಿಯಾ</item>
+        <item>ಫಿಜಿ</item>
+        <item>ಫ್ರೆಂಚ್ ಪಾಲಿನೇಶಿಯಾ</item>
+        <item>ಹೊಂಡುರಾಸ್</item>
+        <item>ಲಿಕ್ಟುನ್‍ಸ್ಟೈನ್</item>
+        <item>ಮಾಲ್ಟಾ</item>
+        <item>ಸೇಚೆಲ್ಸ್</item>
+        <item>ಆಸ್ಟ್ರಿಯಾ</item>
+        <item>ಕ್ರೊಯೇಶಿಯಾ</item>
+        <item>ವೇಲ್ಸ್</item>
+        <item>US ವರ್ಜಿನ್ ಐಲ್ಯಾ.</item>
+        <item>ಸ್ಲೊವೇನಿಯಾ</item>
+        <item>ಸ್ಯಾನ್ ಮ್ಯಾರಿನೊ</item>
+        <item>ನಾರ್ವೆ</item>
+        <item>ಪಪುವಾ ನ್ಯೂ ಗಿನೀ</item>
+        <item>ಬಹಾಮಾಸ್</item>
+        <item>ಸೈಪ್ರಸ್</item>
+        <item>ಟಿಮೋರ್-ಲೆಸ್ಟೆ</item>
+        <item>ಟೊಗೊ</item>
+        <item>ಡೊಮಿನಿಕಾ</item>
+        <item>ಗಬೋನ್</item>
+        <item>ಲೆಸೊಥೊ</item>
+        <item>ಮಾರ್ಷಲ್ ದ್ವೀಪಗಳು</item>
+        <item>ಮೊನಾಕೋ</item>
+        <item>ಬ್ರೂನಿ</item>
+        <item>ಗ್ಯಾಂಬಿಯಾ</item>
+        <item>ಬುರುಂಡಿ</item>
+        <item>ಕಾಂಗೋ ಪ್ರಜಾಸತ್ತಾತ್ಮಕ ಗಣರಾಜ್ಯ</item>
+        <item>ಲಾವೋಸ್</item>
+        <item>ನಮೀಬಿಯಾ</item>
+        <item>ಬೋಸ್ನಿಯಾ ಮತ್ತು ಹರ್ಜೆಗೋವಿನಾ</item>
+        <item>ಸೈಪನ್</item>
+        <item>ಸಾವೊ ಟೋಮ್ ಮತ್ತು ಪ್ರಿನ್ಸಿಪೆ</item>
+        <item>ಗ್ರೆನಡಾ</item>
+        <item>ಫಾಕ್ಲ್ಯಾಂಡ್ ದ್ವೀಪಗಳು</item>
+        <item>ಅಮೆರಿಕನ್ ಸಮೋವಾ</item>
+        <item>ಅಂಡೋರಾ</item>
+        <item>ಸಹ್ರಾವಿ ಗಣರಾಜ್ಯ</item>
+        <item>ಕುರಾಕೌ</item>
+        <item>ಎಸ್ವಾಟಿನಿ</item>
+        <item>ಸೇಂಟ್ ಲೂಸಿಯಾ</item>
+        <item>ಪಲಾವು</item>
+        <item>ರವಾಂಡಾ</item>
+        <item>ಸೇಂಟ್ ವಿನ್ಸೆಂಟ್ ಮತ್ತು ಗ್ರೆನಡೀನ್ಸ್</item>
+        <item>ಫ್ಯಾರೋ ದ್ವೀಪಗಳು</item>
+        <item>ಅಲ್ಬೇನಿಯಾ</item>
+        <item>ಭೂತಾನ್</item>
+        <item>ಬೆನಿನ್</item>
+        <item>ಕೇಪ್ ವರ್ಡೆ</item>
+        <item>ಕೊಸೊವೊ</item>
+        <item>ಬರ್ಮುಡಾ</item>
+        <item>ಸೊಲೊಮನ್ ದ್ವೀಪಗಳು</item>
+        <item>ತೈವಾನ್, ಚೀನಾ</item>
+        <item>ಟ್ರಿನಿಡಾಡ್ ಮತ್ತು ಟೊಬ್ಯಾಗೊ</item>
+        <item>ಆಂಗ್ಯುಲ್ಲಾ</item>
+        <item>UTC (ಕೋಆರ್ಡಿನೇಟೆಡ್ ಯೂನಿವರ್ಸಲ್ ಟೈಮ್)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ 1 ನಿಮಿಷಕ್ಕೆ ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %2$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s ಮತ್ತು %2$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %2$s ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s, %2$s, ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %sಗೆ ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s ಮತ್ತು %2$sಗೆ ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s, %2$s, ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s ಮತ್ತು %2$sಗೆ ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s, %2$s, ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s, %2$s, ಮತ್ತು %3$s ಹೊಂದಿಸಿದೆ.</item>
+        <item>ಎಚ್ಚರಗಂಟೆಯನ್ನು ಈಗಿನಿಂದ %1$s, %2$s, %3$s ಮತ್ತು %4$sಗೆ ಹೊಂದಿಸಿದೆ.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

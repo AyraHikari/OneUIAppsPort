@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="96.0" android:viewportHeight="96.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:name="checkbox" android:pivotX="48.0" android:pivotY="48.0">
+        <path android:name="check_mark" android:fillColor="?colorControlActivated" android:pathData="M48,48m-31,0a31,31 0 1,0 62,0a31,31 0 1,0-62,0 M41.9,62.4l-14.3,-14.2l4-4l10.3,10.1l21.7-21.5l4,4L41.9,62.4z" android:fillAlpha="@dimen/sesl_disabled_color_alpha" />
+    </group>
+</vector>

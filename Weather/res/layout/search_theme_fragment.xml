@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:tag="layout/search_theme_fragment_0" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/search_theme_list" android:tag="binding_1" android:background="@drawable/common_contents_bg" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/search_theme_progress_layout" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/search_theme_progress" android:drawingCacheQuality="high" android:duplicateParentState="true" android:layout_width="60.0dip" android:layout_height="60.0dip" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" android:autoStart="true" style="?android:progressBarStyleLarge" />
+        <TextView android:textAppearance="?android:textAppearance" android:textSize="15.0sp" android:textColor="@color/col_search_loading_text_color" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/searching_ing" />
+    </LinearLayout>
+</FrameLayout>

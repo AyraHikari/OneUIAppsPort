@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>中途島</item>
+        <item>檀香山</item>
+        <item>夏威夷</item>
+        <item>阿拉斯加</item>
+        <item>安克拉治</item>
+        <item>舊金山</item>
+        <item>溫哥華</item>
+        <item>西雅圖</item>
+        <item>洛杉磯</item>
+        <item>蒂華納</item>
+        <item>卡加立</item>
+        <item>鳳凰城</item>
+        <item>馬薩特蘭</item>
+        <item>丹佛</item>
+        <item>墨西哥市</item>
+        <item>溫尼伯</item>
+        <item>地牙哥加西亞</item>
+        <item>達拉斯</item>
+        <item>芝加哥</item>
+        <item>多倫多</item>
+        <item>邁阿密</item>
+        <item>利馬</item>
+        <item>基多</item>
+        <item>華盛頓特區</item>
+        <item>渥太華</item>
+        <item>紐約</item>
+        <item>波哥大</item>
+        <item>聖地牙哥</item>
+        <item>拉巴斯</item>
+        <item>卡拉卡斯</item>
+        <item>布宜諾賽利斯</item>
+        <item>紐芬蘭</item>
+        <item>聖約翰</item>
+        <item>聖保羅</item>
+        <item>巴西利亞</item>
+        <item>里約熱內盧</item>
+        <item>費爾南多迪諾羅尼亞群島</item>
+        <item>亞速爾群島</item>
+        <item>里斯本</item>
+        <item>卡薩布蘭卡</item>
+        <item>都柏林</item>
+        <item>拉巴特</item>
+        <item>馬德里</item>
+        <item>塞特爾門特</item>
+        <item>倫敦</item>
+        <item>金斯頓</item>
+        <item>巴塞隆納</item>
+        <item>巴黎</item>
+        <item>阿爾及爾</item>
+        <item>突尼斯</item>
+        <item>的黎波里</item>
+        <item>柏林</item>
+        <item>羅馬</item>
+        <item>布拉格</item>
+        <item>金夏沙</item>
+        <item>斯德哥爾摩</item>
+        <item>布拉迪斯拉發</item>
+        <item>開普敦</item>
+        <item>布達佩斯</item>
+        <item>華沙</item>
+        <item>加里寧格勒</item>
+        <item>索非亞</item>
+        <item>雅典</item>
+        <item>利沃夫</item>
+        <item>赫爾辛基</item>
+        <item>里加</item>
+        <item>塔林</item>
+        <item>布加勒斯特</item>
+        <item>維爾紐斯</item>
+        <item>盧本巴希</item>
+        <item>明斯克</item>
+        <item>聖彼得堡</item>
+        <item>伊斯坦堡</item>
+        <item>堪察加</item>
+        <item>基輔</item>
+        <item>耶路撒冷</item>
+        <item>莫斯科</item>
+        <item>哈爾科夫</item>
+        <item>奈洛比</item>
+        <item>吉達</item>
+        <item>伏爾加格勒</item>
+        <item>葉里溫</item>
+        <item>第比利斯</item>
+        <item>巴庫</item>
+        <item>赤塔</item>
+        <item>沙馬拉</item>
+        <item>德黑蘭</item>
+        <item>伊熱夫斯克</item>
+        <item>阿布達比</item>
+        <item>杜拜</item>
+        <item>烏法</item>
+        <item>葉卡捷琳堡</item>
+        <item>車里雅賓斯克</item>
+        <item>克洛奇</item>
+        <item>喀布爾</item>
+        <item>塔什干</item>
+        <item>伊斯蘭瑪巴德</item>
+        <item>孟買</item>
+        <item>鄂木斯克</item>
+        <item>阿拉木圖</item>
+        <item>邦加羅爾</item>
+        <item>海德拉巴</item>
+        <item>新德里</item>
+        <item>可倫坡</item>
+        <item>金奈</item>
+        <item>新西伯利亞</item>
+        <item>加德滿都</item>
+        <item>新庫茲涅茨克</item>
+        <item>加爾各答</item>
+        <item>達卡</item>
+        <item>科布多</item>
+        <item>克拉斯諾亞爾斯克</item>
+        <item>曼谷</item>
+        <item>吉隆坡</item>
+        <item>新加坡</item>
+        <item>伊爾庫茨克</item>
+        <item>金邊</item>
+        <item>河內</item>
+        <item>雅加達</item>
+        <item>烏蘭巴托</item>
+        <item>香港</item>
+        <item>伯斯</item>
+        <item>北京</item>
+        <item>馬尼拉</item>
+        <item>台北</item>
+        <item>首爾</item>
+        <item>安汶</item>
+        <item>海參崴</item>
+        <item>亞庫次克</item>
+        <item>伯力（察巴羅夫斯克）</item>
+        <item>阿德雷得</item>
+        <item>東京</item>
+        <item>南薩哈林斯克</item>
+        <item>哈利法克斯</item>
+        <item>關島</item>
+        <item>坎培拉</item>
+        <item>馬加丹</item>
+        <item>雪梨</item>
+        <item>堪察加彼得巴甫洛夫斯克</item>
+        <item>塔拉瓦</item>
+        <item>奧克蘭</item>
+        <item>威靈頓</item>
+        <item>帕哥帕哥</item>
+        <item>登巴薩</item>
+        <item>伯恩</item>
+        <item>蘇黎世</item>
+        <item>開羅</item>
+        <item>阿必尚</item>
+        <item>阿克拉</item>
+        <item>亞的斯亞貝巴</item>
+        <item>安曼</item>
+        <item>阿姆斯特丹</item>
+        <item>阿納德爾</item>
+        <item>安卡拉</item>
+        <item>安塔那那利佛</item>
+        <item>阿什哈巴德</item>
+        <item>阿斯馬拉</item>
+        <item>阿斯塔納</item>
+        <item>亞松森</item>
+        <item>奧斯丁</item>
+        <item>巴格達</item>
+        <item>巴爾的摩</item>
+        <item>巴馬科</item>
+        <item>班基</item>
+        <item>巴里</item>
+        <item>巴斯特爾</item>
+        <item>貝魯特</item>
+        <item>貝爾格來德</item>
+        <item>貝里斯</item>
+        <item>比什凱克</item>
+        <item>比索</item>
+        <item>波羅納</item>
+        <item>波士頓</item>
+        <item>橋鎮</item>
+        <item>布里斯班</item>
+        <item>布魯塞爾</item>
+        <item>加那利群島</item>
+        <item>卡坦扎羅</item>
+        <item>卡宴</item>
+        <item>夏洛特</item>
+        <item>奇西瑙</item>
+        <item>克里夫蘭</item>
+        <item>哥倫布</item>
+        <item>柯那克里</item>
+        <item>哥本哈根</item>
+        <item>科克</item>
+        <item>克羅托內</item>
+        <item>達喀爾</item>
+        <item>大馬士革</item>
+        <item>達累斯薩拉姆</item>
+        <item>達爾文</item>
+        <item>底特律</item>
+        <item>吉布地</item>
+        <item>杜哈</item>
+        <item>杜阿拉</item>
+        <item>杜尚別</item>
+        <item>復活島</item>
+        <item>愛丁堡</item>
+        <item>厄爾巴索</item>
+        <item>佛羅倫斯</item>
+        <item>法蘭西堡</item>
+        <item>自由城</item>
+        <item>嘉柏隆</item>
+        <item>加拉巴哥群島</item>
+        <item>日內瓦</item>
+        <item>熱那亞</item>
+        <item>喬治城</item>
+        <item>格里特維肯</item>
+        <item>瓜地馬拉市</item>
+        <item>古斯塔維亞</item>
+        <item>漢堡</item>
+        <item>哈拉雷</item>
+        <item>哈瓦那</item>
+        <item>霍巴特</item>
+        <item>休斯敦</item>
+        <item>印第安納波里</item>
+        <item>約翰尼斯堡</item>
+        <item>坎帕拉</item>
+        <item>喀土穆</item>
+        <item>金斯頓</item>
+        <item>科威特城</item>
+        <item>拉哥斯</item>
+        <item>拉斯維加斯</item>
+        <item>盧布爾雅那</item>
+        <item>海口</item>
+        <item>路易斯維爾</item>
+        <item>盧安達</item>
+        <item>路沙卡</item>
+        <item>盧森堡</item>
+        <item>澳門</item>
+        <item>馬拉波</item>
+        <item>馬列</item>
+        <item>馬納瓜</item>
+        <item>麥納瑪</item>
+        <item>馬普托</item>
+        <item>馬利戈特</item>
+        <item>麥加</item>
+        <item>墨爾本</item>
+        <item>孟菲斯</item>
+        <item>梅西那</item>
+        <item>米蘭</item>
+        <item>密爾瓦基</item>
+        <item>摩加迪休</item>
+        <item>蒙羅維亞</item>
+        <item>蒙特維多</item>
+        <item>蒙特婁</item>
+        <item>慕尼黑</item>
+        <item>馬斯喀特</item>
+        <item>那布勒斯</item>
+        <item>納特斯</item>
+        <item>恩賈梅納</item>
+        <item>尼阿美</item>
+        <item>諾克少</item>
+        <item>努美亞</item>
+        <item>奴瓜婁發</item>
+        <item>努克</item>
+        <item>大阪</item>
+        <item>瓦加杜古</item>
+        <item>巴勒莫</item>
+        <item>巴拿馬市</item>
+        <item>巴拉馬利波</item>
+        <item>波恩</item>
+        <item>費城</item>
+        <item>波德戈里察</item>
+        <item>蓬塔德爾加達港</item>
+        <item>路易士港</item>
+        <item>太子港</item>
+        <item>俄勒岡州，波特蘭</item>
+        <item>平壤</item>
+        <item>仰光</item>
+        <item>勒希非</item>
+        <item>雷克雅未克</item>
+        <item>利雅德</item>
+        <item>聖德尼</item>
+        <item>聖安東尼奧</item>
+        <item>聖地牙哥</item>
+        <item>聖約瑟</item>
+        <item>聖荷西</item>
+        <item>聖胡安</item>
+        <item>聖馬利諾</item>
+        <item>聖薩爾瓦多</item>
+        <item>薩拉</item>
+        <item>聖多明哥</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>斯科普里</item>
+        <item>聖約翰</item>
+        <item>蘇瓦</item>
+        <item>大溪地</item>
+        <item>德古斯加巴</item>
+        <item>胡志明市</item>
+        <item>天津</item>
+        <item>杜林</item>
+        <item>瓦都茲</item>
+        <item>瓦勒他</item>
+        <item>維諾那</item>
+        <item>維多利亞</item>
+        <item>維也納</item>
+        <item>雅穆索戈</item>
+        <item>雅恩德</item>
+        <item>札格拉布</item>
+        <item>廣州</item>
+        <item>加地夫</item>
+        <item>里賈納</item>
+        <item>夏洛特阿馬利亞</item>
+        <item>亞特蘭大</item>
+        <item>馬約特</item>
+        <item>聖皮耶與密克隆群島</item>
+        <item>奧斯陸</item>
+        <item>中科雷姆斯克</item>
+        <item>大洋城</item>
+        <item>武漢</item>
+        <item>成都</item>
+        <item>西安</item>
+        <item>莫士比港</item>
+        <item>達沃市</item>
+        <item>重慶</item>
+        <item>瀋陽</item>
+        <item>南京</item>
+        <item>哈爾濱</item>
+        <item>濟南</item>
+        <item>鄭州</item>
+        <item>昆明</item>
+        <item>長春</item>
+        <item>福州</item>
+        <item>古晉</item>
+        <item>望加錫 (Makassar)</item>
+        <item>杭州</item>
+        <item>青島</item>
+        <item>南寧</item>
+        <item>烏魯木齊</item>
+        <item>拿索</item>
+        <item>尼古西亞</item>
+        <item>狄力</item>
+        <item>羅德城</item>
+        <item>洛美</item>
+        <item>羅索</item>
+        <item>利伯維爾</item>
+        <item>馬賽</item>
+        <item>馬塞魯</item>
+        <item>馬紹爾群島</item>
+        <item>摩納哥</item>
+        <item>斯里巴卡旺市</item>
+        <item>班竹</item>
+        <item>釜山</item>
+        <item>布松布拉</item>
+        <item>布拉薩市</item>
+        <item>永珍</item>
+        <item>溫得和克</item>
+        <item>塞拉耶佛</item>
+        <item>塞班島</item>
+        <item>聖多美</item>
+        <item>聖喬治斯</item>
+        <item>史坦利</item>
+        <item>亞丁</item>
+        <item>阿皮亞</item>
+        <item>安道爾城</item>
+        <item>阿尤恩</item>
+        <item>威廉市</item>
+        <item>墨巴本</item>
+        <item>卡斯翠</item>
+        <item>柯羅州</item>
+        <item>坎昆</item>
+        <item>吉佳利</item>
+        <item>金斯敦</item>
+        <item>特拉維夫</item>
+        <item>托爾斯港</item>
+        <item>地拉那</item>
+        <item>廷布</item>
+        <item>新港</item>
+        <item>培亞</item>
+        <item>法蘭克福</item>
+        <item>普里斯提納</item>
+        <item>哈密爾頓</item>
+        <item>荷尼阿拉</item>
+        <item>西班牙港</item>
+        <item>明尼亞波利斯</item>
+        <item>希洛</item>
+        <item>奧蘭多</item>
+        <item>堪薩斯城</item>
+        <item>紐奧良</item>
+        <item>納許維爾</item>
+        <item>土桑</item>
+        <item>坦帕</item>
+        <item>傑克遜維爾</item>
+        <item>奧克拉荷馬市</item>
+        <item>阿爾伯克基</item>
+        <item>奧馬哈</item>
+        <item>維吉尼亞海灘</item>
+        <item>波夕</item>
+        <item>狄蒙</item>
+        <item>伯明罕</item>
+        <item>鹽湖城</item>
+        <item>小岩城</item>
+        <item>蘇瀑</item>
+        <item>傑克遜</item>
+        <item>南卡羅來納州，查爾斯頓</item>
+        <item>法哥</item>
+        <item>比靈斯</item>
+        <item>緬因州，波特蘭</item>
+        <item>夏安</item>
+        <item>西維吉尼亞州，查爾斯頓</item>
+        <item>匹茲堡</item>
+        <item>綠灣</item>
+        <item>聖路易</item>
+        <item>峽谷市</item>
+        <item>UTC (國際標準時間)</item>
+    </string-array>
+    <string-array name="CitiesPinyin">
+        <item>ㄓㄨㄥ 中 ㄊㄨ 途 ㄉㄠ 島</item>
+        <item>ㄊㄢ 檀 ㄒㄧㄤ 香 ㄕㄢ 山</item>
+        <item>ㄒㄧㄚ 夏 ㄨㄟ 威 ㄧ 夷</item>
+        <item>ㄚ 阿 ㄌㄚ 拉 ㄙ 斯 ㄐㄧㄚ 加</item>
+        <item>ㄢ 安 ㄎㄜ 克 ㄌㄚ 拉 ㄓ 治</item>
+        <item>ㄐㄧㄡ 舊 ㄐㄧㄣ 金 ㄕㄢ 山</item>
+        <item>ㄨㄣ 溫 ㄍㄜ 哥 ㄏㄨㄚ 華</item>
+        <item>ㄒㄧ 西 ㄧㄚ 雅 ㄊㄨ 圖</item>
+        <item>ㄌㄨㄛ 洛 ㄕㄢ 杉 ㄐㄧ 磯</item>
+        <item>ㄉㄧ 蒂 ㄏㄨㄚ 華 ㄋㄚ 納</item>
+        <item>ㄎㄚ 卡 ㄐㄧㄚ 加 ㄌㄧ 立</item>
+        <item>ㄈㄥ 鳳 ㄏㄨㄤ 凰 ㄔㄥ 城</item>
+        <item>ㄇㄚ 馬 ㄙㄚ 薩 ㄊㄜ 特 ㄌㄢ 蘭</item>
+        <item>ㄉㄢ 丹 ㄈㄛ 佛</item>
+        <item>ㄇㄛ 墨 ㄒㄧ 西 ㄍㄜ 哥 ㄕ 市</item>
+        <item>ㄨㄣ 溫 ㄋㄧ 尼 ㄅㄛ 伯</item>
+        <item>ㄉㄧ 地 ㄧㄚ 牙 ㄍㄜ 哥 ㄐㄧㄚ 加 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄉㄚ 達 ㄌㄚ 拉 ㄙ 斯</item>
+        <item>ㄓ 芝 ㄐㄧㄚ 加 ㄍㄜ 哥</item>
+        <item>ㄉㄨㄛ 多 ㄌㄨㄣ 倫 ㄉㄨㄛ 多</item>
+        <item>ㄇㄞ 邁 ㄚ 阿 ㄇㄧ 密</item>
+        <item>ㄌㄧ 利 ㄇㄚ 馬</item>
+        <item>ㄐㄧ 基 ㄉㄨㄛ 多</item>
+        <item>ㄏㄨㄚ 華 ㄕㄥ 盛 ㄉㄨㄣ 頓 ㄊㄜ 特 ㄑㄩ 區</item>
+        <item>ㄨㄛ 渥 ㄊㄞ 太 ㄏㄨㄚ 華</item>
+        <item>ㄋㄧㄡ 紐 ㄩㄝ 約</item>
+        <item>ㄅㄛ 波 ㄍㄜ 哥 ㄉㄚ 大</item>
+        <item>ㄕㄥ 聖 ㄉㄧ 地 ㄧㄚ 牙 ㄍㄜ 哥</item>
+        <item>ㄌㄚ 拉 ㄅㄚ 巴 ㄙ 斯</item>
+        <item>ㄎㄚ 卡 ㄌㄚ 拉 ㄎㄚ 卡 ㄙ 斯</item>
+        <item>ㄅㄨ 布 ㄧ 宜 ㄋㄨㄛ 諾 ㄙㄞ 賽 ㄌㄧ 利 ㄙ 斯</item>
+        <item>ㄋㄧㄡ 紐 ㄈㄣ 芬 ㄌㄢ 蘭</item>
+        <item>ㄕㄥ 聖 ㄩㄝ 約 ㄏㄢ 翰</item>
+        <item>ㄕㄥ 聖 ㄅㄠ 保 ㄌㄨㄛ 羅</item>
+        <item>ㄅㄚ 巴 ㄒㄧ 西 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄌㄧ 里 ㄩㄝ 約 ㄖㄜ 熱 ㄋㄟ 內 ㄌㄨ 盧</item>
+        <item>ㄈㄟ 費 ㄋㄢ 南 ㄉㄨㄛ 多 ㄋㄨㄛ 諾 ㄌㄨㄛ 羅 ㄋㄧ 尼 ㄧㄚ 亞 ㄉㄠ 島</item>
+        <item>ㄧㄚ 亞 ㄕㄨ 速 ㄦ 爾 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄌㄧ 里 ㄙ 斯 ㄅㄣ 本</item>
+        <item>ㄎㄚ 卡 ㄙㄚ 薩 ㄅㄨ 布 ㄌㄢ 蘭 ㄎㄚ 卡</item>
+        <item>ㄉㄡ 都 ㄅㄛ 柏 ㄌㄧㄣ 林</item>
+        <item>ㄌㄚ 拉 ㄅㄚ 巴 ㄊㄜ 特</item>
+        <item>ㄇㄚ 馬 ㄉㄜ 德 ㄌㄧ 里</item>
+        <item>ㄙㄞ 塞 ㄊㄜ 特 ㄦ 爾 ㄇㄣ 門 ㄊㄜ 特</item>
+        <item>ㄌㄨㄣ 倫 ㄉㄨㄣ 敦</item>
+        <item>ㄐㄧㄣ 金 ㄙ 斯 ㄉㄨㄣ 頓</item>
+        <item>ㄅㄚ 巴 ㄙㄞ 塞 ㄌㄨㄥ 隆 ㄋㄚ 納</item>
+        <item>ㄅㄚ 巴 ㄌㄧ 黎</item>
+        <item>ㄚ 阿 ㄦ 爾 ㄐㄧ 及 ㄦ 爾</item>
+        <item>ㄊㄨ 突 ㄋㄧ 尼 ㄙ 斯</item>
+        <item>ㄉㄜ 的 ㄌㄧ 黎 ㄅㄛ 波 ㄌㄧ 里</item>
+        <item>ㄅㄛ 柏 ㄌㄧㄣ 林</item>
+        <item>ㄌㄨㄛ 羅 ㄇㄚ 馬</item>
+        <item>ㄅㄨ 布 ㄌㄚ 拉 ㄍㄜ 格</item>
+        <item>ㄐㄧㄣ 金 ㄒㄧㄚ 夏 ㄕㄚ 沙</item>
+        <item>ㄙ 斯 ㄉㄜ 德 ㄍㄜ 哥 ㄦ 爾 ㄇㄛ 摩</item>
+        <item>ㄅㄨ 布 ㄌㄚ 拉 ㄉㄧ 迪 ㄙ 斯 ㄌㄚ 拉 ㄈㄚ 發</item>
+        <item>ㄎㄯ 開 ㄆㄨ 普 ㄉㄨㄣ 敦</item>
+        <item>ㄅㄨ 布 ㄉㄚ 達 ㄆㄟ 佩 ㄙ 斯</item>
+        <item>ㄏㄨㄚ 華 ㄕㄚ 沙</item>
+        <item>ㄐㄧㄚ 加 ㄌㄧ 里 ㄋㄧㄥ 寧 ㄍㄜ 格 ㄌㄜ 勒</item>
+        <item>ㄙㄨㄛ 索 ㄈㄟ 非 ㄧㄚ 亞</item>
+        <item>ㄧㄚ 雅 ㄉㄧㄢ 典</item>
+        <item>ㄌㄧ 利 ㄨㄛ 沃 ㄈㄨ 夫</item>
+        <item>ㄏㄜ 赫 ㄦ 爾 ㄒㄧㄣ 辛 ㄐㄧ 基</item>
+        <item>ㄌㄧ 里 ㄐㄧㄚ 加</item>
+        <item>ㄊㄚ 塔 ㄌㄧㄣ 林</item>
+        <item>ㄅㄨ 布 ㄐㄧㄚ 加 ㄌㄜ 勒 ㄙ 斯 ㄊㄜ 特</item>
+        <item>ㄨㄟ 維 ㄦ 爾 ㄋㄧㄡ 紐 ㄙ 斯</item>
+        <item>ㄌㄨ 盧 ㄅㄣ 本 ㄅㄚ 巴 ㄒㄧ 希</item>
+        <item>ㄇㄧㄤ 明 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄕㄥ 聖 ㄅㄧ 彼 ㄉㄜ 得 ㄅㄠ 堡</item>
+        <item>ㄧ 伊 ㄙ 斯 ㄊㄢ 坦 ㄅㄠ 堡</item>
+        <item>ㄎㄢ 堪 ㄔㄚ 察 ㄐㄧㄚ 加</item>
+        <item>ㄐㄧ 基 ㄈㄨ 輔</item>
+        <item>ㄧㄝ 耶 ㄌㄨ 路 ㄙㄚ 撒 ㄌㄥ 冷</item>
+        <item>ㄇㄛ 莫 ㄙ 斯 ㄎㄜ 科</item>
+        <item>ㄏㄚ 哈 ㄦ 爾 ㄎㄜ 科 ㄈㄨ 夫</item>
+        <item>ㄋㄞ 奈 ㄌㄨㄛ 洛 ㄅㄧ 比</item>
+        <item>ㄐㄧ 吉 ㄉㄚ 達</item>
+        <item>ㄈㄨ 伏 ㄦ 爾 ㄐㄧㄚ 加 ㄍㄜ 格 ㄌㄜ 勒</item>
+        <item>ㄧㄝ 葉 ㄌㄧ 里 ㄨㄣ 溫</item>
+        <item>ㄉㄧ 第 ㄅㄧ 比 ㄌㄧ 利 ㄙ 斯</item>
+        <item>ㄅㄚ 巴 ㄎㄨ 庫</item>
+        <item>ㄔ 赤 ㄊㄚ 塔</item>
+        <item>ㄕㄚ 沙 ㄇㄚ 馬 ㄌㄚ 拉</item>
+        <item>ㄉㄜ 德 ㄏㄟ 黑 ㄌㄢ 蘭</item>
+        <item>ㄧ 伊 ㄖㄜ 熱 ㄈㄨ 夫 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄚ 阿 ㄅㄨ 布 ㄉㄚ 達 ㄅㄧ 比</item>
+        <item>ㄉㄨ 杜 ㄅㄞ 拜</item>
+        <item>ㄨ 烏 ㄈㄚ 法</item>
+        <item>ㄧㄝ 葉 ㄎㄚ 卡 ㄐㄧㄝ 捷 ㄌㄧㄣ 琳 ㄅㄠ 堡</item>
+        <item>ㄔㄜ 車 ㄌㄧ 里 ㄧㄚ 雅 ㄅㄧㄣ 賓 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄎㄜ 克 ㄌㄨㄛ 洛 ㄑㄧ 奇</item>
+        <item>ㄎㄚ 喀 ㄅㄨ 布 ㄦ 爾</item>
+        <item>ㄊㄚ 塔 ㄕㄜ 什 ㄍㄢ 干</item>
+        <item>ㄧ 伊 ㄙ 斯 ㄌㄢ 蘭 ㄇㄚ 馬 ㄅㄚ 巴 ㄉㄜ 德</item>
+        <item>ㄇㄥ 孟 ㄇㄞ 買</item>
+        <item>ㄜ 鄂 ㄇㄨ 木 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄚ 阿 ㄌㄚ 拉 ㄇㄨ 木 ㄊㄨ 圖</item>
+        <item>ㄅㄤ 邦 ㄐㄧㄚ 加 ㄌㄨㄛ 羅 ㄦ 爾</item>
+        <item>ㄏㄞ 海 ㄉㄜ 德 ㄌㄚ 拉 ㄅㄚ 巴</item>
+        <item>ㄒㄧㄣ 新 ㄉㄜ 德 ㄌㄧ 里</item>
+        <item>ㄎㄜ 可 ㄌㄨㄣ 倫 ㄆㄛ 坡</item>
+        <item>ㄐㄧㄣ 金 ㄋㄞ 奈</item>
+        <item>ㄒㄧㄣ 新 ㄒㄧ 西 ㄅㄛ 伯 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄐㄧㄚ 加 ㄉㄜ 德 ㄇㄢ 滿 ㄉㄡ 都</item>
+        <item>ㄒㄧㄣ 新 ㄎㄨ 庫 ㄗ 茲 ㄋㄧㄝ 涅 ㄘ 茨 ㄎㄜ 克</item>
+        <item>ㄐㄧㄚ 加 ㄦ 爾 ㄍㄜ 各 ㄉㄚ 答</item>
+        <item>ㄉㄚ 達 ㄎㄚ 卡</item>
+        <item>ㄎㄜ 科 ㄅㄨ 布 ㄉㄨㄛ 多</item>
+        <item>ㄎㄜ 克 ㄌㄚ 拉 ㄙ 斯 ㄋㄨㄛ 諾 ㄧㄚ 亞 ㄦ 爾 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄇㄢ 曼 ㄍㄨ 谷</item>
+        <item>ㄐㄧ 吉 ㄌㄨㄥ 隆 ㄆㄛ 坡</item>
+        <item>ㄒㄧㄣ 新 ㄐㄧㄚ 加 ㄆㄛ 坡</item>
+        <item>ㄧ 伊 ㄦ 爾 ㄎㄨ 庫 ㄘ 茨 ㄎㄜ 克</item>
+        <item>ㄐㄧㄣ 金 ㄅㄧㄢ 邊</item>
+        <item>ㄏㄜ 河 ㄋㄟ 內</item>
+        <item>ㄧㄚ 雅 ㄐㄧㄚ 加 ㄉㄚ 達</item>
+        <item>ㄨ 烏 ㄌㄢ 蘭 ㄅㄚ 巴 ㄊㄨㄛ 托</item>
+        <item>ㄒㄧㄤ 香 ㄍㄤ 港</item>
+        <item>ㄅㄛ 伯 ㄙ 斯</item>
+        <item>ㄅㄟ 北 ㄐㄧㄥ 京</item>
+        <item>ㄇㄚ 馬 ㄋㄧ 尼 ㄌㄚ 拉</item>
+        <item>ㄊㄞ 台 ㄅㄟ 北</item>
+        <item>ㄕㄡ 首 ㄦ 爾</item>
+        <item>ㄢ 安 ㄨㄣ 汶</item>
+        <item>ㄏㄞ 海 ㄘㄢ 參 ㄨㄟ 崴</item>
+        <item>ㄧㄚ 亞 ㄎㄨ 庫 ㄘ 次 ㄎㄜ 克</item>
+        <item>ㄅㄛ 伯 ㄌㄧ 力 （ㄔㄚ 察 ㄅㄚ 巴 ㄌㄨㄛ 羅 ㄈㄨ 夫 ㄙ 斯 ㄎㄜ 克 ）</item>
+        <item>ㄚ 阿 ㄉㄜ 德 ㄌㄟ 雷 ㄉㄜ 得</item>
+        <item>ㄉㄨㄥ 東 ㄐㄧㄥ 京</item>
+        <item>ㄋㄢ 南 ㄙㄚ 薩 ㄏㄚ 哈 ㄌㄧㄣ 林 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄏㄚ 哈 ㄌㄧ 利 ㄈㄚ 法 ㄎㄜ 克 ㄙ 斯</item>
+        <item>ㄍㄨㄢ 關 ㄉㄠ 島</item>
+        <item>ㄎㄢ 坎 ㄆㄟ 培 ㄌㄚ 拉</item>
+        <item>ㄇㄚ 馬 ㄐㄧㄚ 加 ㄉㄢ 丹</item>
+        <item>ㄒㄩㄝ 雪 ㄌㄧ 梨</item>
+        <item>ㄎㄢ 堪 ㄔㄚ 察 ㄐㄧㄚ 加 ㄅㄧ 彼 ㄉㄜ 得 ㄅㄚ 巴 ㄈㄨ 甫 ㄌㄨㄛ 洛 ㄈㄨ 夫 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄊㄚ 塔 ㄌㄚ 拉 ㄨㄚ 瓦</item>
+        <item>ㄠ 奧 ㄎㄜ 克 ㄌㄢ 蘭</item>
+        <item>ㄨㄟ 威 ㄌㄧㄥ 靈 ㄉㄨㄣ 頓</item>
+        <item>ㄆㄚ 帕 ㄍㄜ 哥 ㄆㄚ 帕 ㄍㄜ 哥</item>
+        <item>ㄉㄥ 登 ㄅㄚ 巴 ㄙㄚ 薩</item>
+        <item>ㄅㄛ 伯 ㄣ 恩</item>
+        <item>ㄙㄨ 蘇 ㄌㄧ 黎 ㄕ 世</item>
+        <item>ㄎㄯ 開 ㄌㄨㄛ 羅</item>
+        <item>ㄚ 阿 ㄅㄧ 必 ㄕㄤ 尚</item>
+        <item>ㄚ 阿 ㄎㄜ 克 ㄌㄚ 拉</item>
+        <item>ㄧㄚ 亞 ㄉㄜ 的 ㄙ 斯 ㄧㄚ 亞 ㄅㄟ 貝 ㄅㄚ 巴</item>
+        <item>ㄢ 安 ㄇㄢ 曼</item>
+        <item>ㄚ 阿 ㄇㄨ 姆 ㄙ 斯 ㄊㄜ 特 ㄉㄢ 丹</item>
+        <item>ㄚ 阿 ㄋㄚ 納 ㄉㄜ 德 ㄦ 爾</item>
+        <item>ㄢ 安 ㄎㄚ 卡 ㄌㄚ 拉</item>
+        <item>ㄢ 安 ㄊㄚ 塔 ㄋㄚ 那 ㄋㄚ 那 ㄌㄧ 利 ㄈㄛ 佛</item>
+        <item>ㄚ 阿 ㄕㄜ 什 ㄏㄚ 哈 ㄅㄚ 巴 ㄊㄜ 特</item>
+        <item>ㄚ 阿 ㄙ 斯 ㄇㄚ 馬 ㄌㄚ 拉</item>
+        <item>ㄚ 阿 ㄙ 斯 ㄊㄚ 塔 ㄋㄚ 納</item>
+        <item>ㄧㄚ 亞 ㄙㄨㄥ 松 ㄙㄣ 森</item>
+        <item>ㄠ 奧 ㄙ 斯 ㄉㄧㄤ 丁</item>
+        <item>ㄅㄚ 巴 ㄍㄜ 格 ㄉㄚ 達</item>
+        <item>ㄅㄚ 巴 ㄦ 爾 ㄉㄜ 的 ㄇㄛ 摩</item>
+        <item>ㄅㄚ 巴 ㄇㄚ 馬 ㄎㄜ 科</item>
+        <item>ㄅㄢ 班 ㄐㄧ 基</item>
+        <item>ㄅㄚ 巴 ㄌㄧ 里</item>
+        <item>ㄅㄚ 巴 ㄙ 斯 ㄊㄜ 特 ㄦ 爾</item>
+        <item>ㄅㄟ 貝 ㄌㄨ 魯 ㄊㄜ 特</item>
+        <item>ㄅㄟ 貝 ㄦ 爾 ㄍㄜ 格 ㄌㄞ 來 ㄉㄜ 德</item>
+        <item>ㄅㄟ 貝 ㄌㄧ 里 ㄙ 斯</item>
+        <item>ㄅㄧ 比 ㄕㄜ 什 ㄎㄯ 凱 ㄎㄜ 克</item>
+        <item>ㄅㄧ 比 ㄙㄨㄛ 索</item>
+        <item>ㄅㄛ 波 ㄌㄨㄛ 羅 ㄋㄚ 納</item>
+        <item>ㄅㄛ 波 ㄕ 士 ㄉㄨㄣ 頓</item>
+        <item>ㄑㄧㄠ 橋 ㄓㄣ 鎮</item>
+        <item>ㄅㄨ 布 ㄌㄧ 里 ㄙ 斯 ㄅㄢ 班</item>
+        <item>ㄅㄨ 布 ㄌㄨ 魯 ㄙㄞ 塞 ㄦ 爾</item>
+        <item>ㄐㄧㄚ 加 ㄋㄚ 那 ㄌㄧ 利 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄎㄚ 卡 ㄊㄢ 坦 ㄓㄚ 扎 ㄌㄨㄛ 羅</item>
+        <item>ㄎㄚ 卡 ㄧㄢ 宴</item>
+        <item>ㄒㄧㄚ 夏 ㄌㄨㄛ 洛 ㄊㄜ 特</item>
+        <item>ㄐㄧ 基 ㄒㄧ 希 ㄋㄚ 訥 ㄨ 烏</item>
+        <item>ㄎㄜ 克 ㄌㄧ 里 ㄈㄨ 夫 ㄌㄢ 蘭</item>
+        <item>ㄍㄜ 哥 ㄌㄨㄣ 倫 ㄅㄨ 布</item>
+        <item>ㄎㄜ 柯 ㄋㄚ 那 ㄎㄜ 克 ㄌㄧ 里</item>
+        <item>ㄍㄜ 哥 ㄅㄣ 本 ㄏㄚ 哈 ㄍㄣ 根</item>
+        <item>ㄎㄜ 科 ㄎㄜ 克</item>
+        <item>ㄎㄜ 克 ㄌㄨㄛ 羅 ㄊㄨㄛ 托 ㄋㄟ 內</item>
+        <item>ㄉㄚ 達 ㄎㄚ 喀 ㄦ 爾</item>
+        <item>ㄉㄚ 大 ㄇㄚ 馬 ㄕ 士 ㄍㄜ 革</item>
+        <item>ㄉㄚ 達 ㄌㄟ 累 ㄙ 斯 ㄙㄚ 薩 ㄌㄚ 拉 ㄇㄨ 姆</item>
+        <item>ㄉㄚ 達 ㄦ 爾 ㄨㄣ 文</item>
+        <item>ㄉㄧ 底 ㄊㄜ 特 ㄌㄩ 律</item>
+        <item>ㄐㄧ 吉 ㄅㄨ 布 ㄉㄧ 地</item>
+        <item>ㄉㄨ 杜 ㄏㄚ 哈</item>
+        <item>ㄉㄨ 杜 ㄚ 阿 ㄌㄚ 拉</item>
+        <item>ㄉㄨ 杜 ㄕㄤ 尚 ㄅㄧㄝ 別</item>
+        <item>ㄈㄨ 復 ㄏㄨㄛ 活 ㄉㄠ 島</item>
+        <item>ㄞ 愛 ㄉㄧㄤ 丁 ㄅㄠ 堡</item>
+        <item>ㄜ 厄 ㄦ 爾 ㄅㄚ 巴 ㄙㄨㄛ 索</item>
+        <item>ㄈㄛ 佛 ㄌㄨㄛ 羅 ㄌㄨㄣ 倫 ㄙ 斯</item>
+        <item>ㄈㄚ 法 ㄌㄢ 蘭 ㄒㄧ 西 ㄅㄠ 堡</item>
+        <item>ㄗ 自 ㄧㄡ 由 ㄔㄥ 城</item>
+        <item>ㄐㄧㄚ 嘉 ㄅㄛ 柏 ㄌㄨㄥ 隆</item>
+        <item>ㄐㄧㄚ 加 ㄌㄚ 拉 ㄅㄚ 巴 ㄍㄜ 哥 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄖ 日 ㄋㄟ 內 ㄨㄚ 瓦</item>
+        <item>ㄖㄜ 熱 ㄋㄚ 那 ㄧㄚ 亞</item>
+        <item>ㄑㄧㄠ 喬 ㄓ 治 ㄓㄣ 鎮</item>
+        <item>ㄍㄜ 格 ㄌㄧ 里 ㄊㄜ 特 ㄨㄟ 維 ㄎㄣ 肯</item>
+        <item>ㄍㄨㄚ 瓜 ㄉㄧ 地 ㄇㄚ 馬 ㄌㄚ 拉 ㄕ 市</item>
+        <item>ㄍㄨ 古 ㄙ 斯 ㄊㄚ 塔 ㄨㄟ 維 ㄧㄚ 亞</item>
+        <item>ㄏㄢ 漢 ㄅㄠ 堡</item>
+        <item>ㄏㄚ 哈 ㄌㄚ 拉 ㄌㄟ 雷</item>
+        <item>ㄏㄚ 哈 ㄨㄚ 瓦 ㄋㄚ 那</item>
+        <item>ㄏㄨㄛ 霍 ㄅㄚ 巴 ㄊㄜ 特</item>
+        <item>ㄒㄧㄡ 休 ㄙ 斯 ㄉㄨㄣ 敦</item>
+        <item>ㄧㄣ 印 ㄉㄧ 第 ㄢ 安 ㄋㄚ 納 ㄅㄛ 波 ㄌㄧ 里</item>
+        <item>ㄩㄝ 約 ㄏㄢ 翰 ㄋㄧ 尼 ㄙ 斯 ㄅㄠ 堡</item>
+        <item>ㄎㄢ 坎 ㄆㄚ 帕 ㄌㄚ 拉</item>
+        <item>ㄎㄚ 喀 ㄊㄨ 土 ㄇㄨ 穆</item>
+        <item>ㄐㄧㄣ 金 ㄙ 斯 ㄉㄨㄣ 頓</item>
+        <item>ㄎㄜ 科 ㄨㄟ 威 ㄊㄜ 特</item>
+        <item>ㄌㄚ 拉 ㄍㄜ 哥 ㄙ 斯</item>
+        <item>ㄌㄚ 拉 ㄙ 斯 ㄨㄟ 維 ㄐㄧㄚ 加 ㄙ 斯</item>
+        <item>ㄌㄨ 盧 ㄅㄨ 布 ㄦ 爾 ㄧㄚ 雅 ㄋㄚ 那</item>
+        <item>ㄏㄞ 海 ㄎㄡ 口</item>
+        <item>ㄌㄨ 路 ㄧ 易 ㄙ 斯 ㄨㄟ 維 ㄦ 爾</item>
+        <item>ㄌㄨ 盧 ㄢ 安 ㄉㄚ 達</item>
+        <item>ㄌㄨ 路 ㄕㄚ 沙 ㄎㄚ 卡</item>
+        <item>ㄌㄨ 盧 ㄙㄣ 森 ㄅㄠ 堡</item>
+        <item>ㄠ 澳 ㄇㄣ 門</item>
+        <item>ㄇㄚ 馬 ㄌㄚ 拉 ㄅㄛ 波</item>
+        <item>ㄇㄚ 馬 ㄌㄧㄝ 列</item>
+        <item>ㄇㄚ 馬 ㄋㄚ 納 ㄍㄨㄚ 瓜</item>
+        <item>ㄇㄞ 麥 ㄋㄚ 納 ㄇㄚ 瑪</item>
+        <item>ㄇㄚ 馬 ㄆㄨ 普 ㄊㄨㄛ 托</item>
+        <item>ㄇㄚ 馬 ㄌㄧ 利 ㄍㄜ 戈 ㄊㄜ 特</item>
+        <item>ㄇㄞ 麥 ㄐㄧㄚ 加</item>
+        <item>ㄇㄛ 墨 ㄦ 爾 ㄅㄣ 本</item>
+        <item>ㄇㄥ 孟 ㄈㄟ 菲 ㄙ 斯</item>
+        <item>ㄇㄟ 梅 ㄒㄧ 西 ㄋㄚ 那</item>
+        <item>ㄇㄧ 米 ㄌㄢ 蘭</item>
+        <item>ㄇㄧ 密 ㄦ 爾 ㄨㄚ 瓦 ㄐㄧ 基</item>
+        <item>ㄇㄛ 摩 ㄐㄧㄚ 加 ㄉㄧ 迪 ㄒㄧㄡ 休</item>
+        <item>ㄇㄥ 蒙 ㄌㄨㄛ 羅 ㄨㄟ 維 ㄧㄚ 亞</item>
+        <item>ㄇㄥ 蒙 ㄊㄜ 特 ㄨㄟ 維 ㄉㄨㄛ 多</item>
+        <item>ㄇㄥ 蒙 ㄊㄜ 特 ㄌㄡ 婁</item>
+        <item>ㄇㄨ 慕 ㄋㄧ 尼 ㄏㄟ 黑</item>
+        <item>ㄇㄚ 馬 ㄙ 斯 ㄎㄚ 喀 ㄊㄜ 特</item>
+        <item>ㄋㄚ 那 ㄅㄨ 布 ㄌㄜ 勒 ㄙ 斯</item>
+        <item>ㄋㄚ 納 ㄊㄜ 特 ㄙ 斯</item>
+        <item>ㄣ 恩 ㄐㄧㄚ 賈 ㄇㄟ 梅 ㄋㄚ 納</item>
+        <item>ㄋㄧ 尼 ㄚ 阿 ㄇㄟ 美</item>
+        <item>ㄋㄨㄛ 諾 ㄎㄜ 克 ㄕㄠ 少</item>
+        <item>ㄋㄨ 努 ㄇㄟ 美 ㄧㄚ 亞</item>
+        <item>ㄋㄨ 奴 ㄍㄨㄚ 瓜 ㄌㄡ 婁 ㄈㄚ 發</item>
+        <item>ㄋㄨ 努 ㄎㄜ 克</item>
+        <item>ㄉㄚ 大 ㄅㄢ 阪</item>
+        <item>ㄨㄚ 瓦 ㄐㄧㄚ 加 ㄉㄨ 杜 ㄍㄨ 古</item>
+        <item>ㄅㄚ 巴 ㄌㄜ 勒 ㄇㄛ 莫</item>
+        <item>ㄅㄚ 巴 ㄋㄚ 拿 ㄇㄚ 馬 ㄕ 市</item>
+        <item>ㄅㄚ 巴 ㄌㄚ 拉 ㄇㄚ 馬 ㄌㄧ 利 ㄅㄛ 波</item>
+        <item>ㄅㄛ 波 ㄣ 恩</item>
+        <item>ㄈㄟ 費 ㄔㄥ 城</item>
+        <item>ㄅㄛ 波 ㄉㄜ 德 ㄍㄜ 戈 ㄌㄧ 里 ㄔㄚ 察</item>
+        <item>ㄆㄥ 蓬 ㄊㄚ 塔 ㄉㄜ 德 ㄦ 爾 ㄐㄧㄚ 加 ㄉㄚ 達 ㄍㄤ 港</item>
+        <item>ㄌㄨ 路 ㄧ 易 ㄕ 士 ㄍㄤ 港</item>
+        <item>ㄊㄞ 太 ㄗ 子 ㄍㄤ 港</item>
+        <item>ㄅㄛ 波 ㄊㄜ 特 ㄌㄢ 蘭</item>
+        <item>ㄆㄧㄥ 平 ㄖㄤ 壤</item>
+        <item>ㄧㄤ 仰 ㄍㄨㄤ 光</item>
+        <item>ㄌㄜ 勒 ㄒㄧ 希 ㄈㄟ 非</item>
+        <item>ㄌㄟ 雷 ㄎㄜ 克 ㄧㄚ 雅 ㄨㄟ 未 ㄎㄜ 克</item>
+        <item>ㄌㄧ 利 ㄧㄚ 雅 ㄉㄜ 德</item>
+        <item>ㄕㄥ 聖 ㄉㄜ 德 ㄋㄧ 尼</item>
+        <item>ㄕㄥ 聖 ㄢ 安 ㄉㄨㄥ 東 ㄋㄧ 尼 ㄠ 奧</item>
+        <item>ㄕㄥ 聖 ㄉㄧ 地 ㄧㄚ 牙 ㄍㄜ 哥</item>
+        <item>ㄕㄥ 聖 ㄩㄝ 約 ㄙㄜ 瑟</item>
+        <item>ㄕㄥ 聖 ㄏㄜ 荷 ㄒㄧ 西</item>
+        <item>ㄕㄥ 聖 ㄏㄨ 胡 ㄢ 安</item>
+        <item>ㄕㄥ 聖 ㄇㄚ 馬 ㄌㄧ 利 ㄋㄨㄛ 諾</item>
+        <item>ㄕㄥ 聖 ㄙㄚ 薩 ㄦ 爾 ㄨㄚ 瓦 ㄉㄨㄛ 多</item>
+        <item>ㄙㄚ 薩 ㄌㄚ 拉</item>
+        <item>ㄕㄥ 聖 ㄉㄨㄛ 多 ㄇㄧㄤ 明 ㄍㄜ 哥</item>
+        <item>ㄕㄤ 上 ㄏㄞ 海</item>
+        <item>ㄕㄣ 深 ㄓㄣ 圳</item>
+        <item>ㄙ 斯 ㄎㄜ 科 ㄆㄨ 普 ㄌㄧ 里</item>
+        <item>ㄕㄥ 聖 ㄩㄝ 約 ㄏㄢ 翰</item>
+        <item>ㄙㄨ 蘇 ㄨㄚ 瓦</item>
+        <item>ㄉㄚ 大 ㄒㄧ 溪 ㄉㄧ 地</item>
+        <item>ㄉㄜ 德 ㄍㄨ 古 ㄙ 斯 ㄐㄧㄚ 加 ㄅㄚ 巴</item>
+        <item>ㄏㄨ 胡 ㄓ 志 ㄇㄧㄤ 明 ㄕ 市</item>
+        <item>ㄊㄧㄢ 天 ㄐㄧㄣ 津</item>
+        <item>ㄉㄨ 杜 ㄌㄧㄣ 林</item>
+        <item>ㄨㄚ 瓦 ㄉㄡ 都 ㄗ 茲</item>
+        <item>ㄨㄚ 瓦 ㄌㄜ 勒 ㄊㄚ 他</item>
+        <item>ㄨㄟ 維 ㄋㄨㄛ 諾 ㄋㄚ 那</item>
+        <item>ㄨㄟ 維 ㄉㄨㄛ 多 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄨㄟ 維 ㄧㄝ 也 ㄋㄚ 納</item>
+        <item>ㄧㄚ 雅 ㄇㄨ 穆 ㄙㄨㄛ 索 ㄍㄜ 戈</item>
+        <item>ㄧㄚ 雅 ㄣ 恩 ㄉㄜ 德</item>
+        <item>ㄓㄚ 札 ㄍㄜ 格 ㄌㄚ 拉 ㄅㄨ 布</item>
+        <item>ㄍㄨㄤ 廣 ㄓㄡ 州</item>
+        <item>ㄐㄧㄚ 加 ㄉㄧ 地 ㄈㄨ 夫</item>
+        <item>ㄌㄧ 里 ㄐㄧㄚ 賈 ㄋㄚ 納</item>
+        <item>ㄒㄧㄚ 夏 ㄌㄨㄛ 洛 ㄊㄜ 特 ㄚ 阿 ㄇㄚ 馬 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄧㄚ 亞 ㄊㄜ 特 ㄌㄢ 蘭 ㄉㄚ 大</item>
+        <item>ㄇㄚ 馬 ㄩㄝ 約 ㄊㄜ 特</item>
+        <item>ㄕㄥ 聖 ㄆ一 皮 一ㄝ 耶 ㄩ 與 ㄇㄧ 密 ㄎㄜ 克 ㄌㄨㄥ 隆 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄠ 奧 ㄙ 斯 ㄌ一ㄡ 陸</item>
+        <item>ㄓㄨㄥ 中 ㄎㄜ 科 ㄌㄟ 雷 ㄇㄨ 姆 ㄙ 斯 ㄎㄜ 克</item>
+        <item>ㄉㄚ 大 ㄧㄤ 洋 ㄔㄥ 城</item>
+        <item>ㄨ 武 ㄏㄢ 漢</item>
+        <item>ㄔㄥ 成 ㄉㄡ 都</item>
+        <item>ㄒㄧ 西 ㄢ 安</item>
+        <item>ㄇㄛ 莫 ㄕ 士 ㄅㄧ 比 ㄍㄤ 港</item>
+        <item>ㄉㄚ 達 ㄨㄛ 沃 ㄕ 市</item>
+        <item>ㄔㄨㄥ 重 ㄑㄧㄥ 慶</item>
+        <item>ㄕㄣ 瀋 ㄧㄤ 陽</item>
+        <item>ㄋㄢ 南 ㄐㄧㄥ 京</item>
+        <item>ㄏㄚ 哈 ㄦ 爾 ㄅㄧㄣ 濱</item>
+        <item>ㄐㄧ 濟 ㄋㄢ 南</item>
+        <item>ㄓㄥ 鄭 ㄓㄡ 州</item>
+        <item>ㄎㄨㄣ 昆 ㄇㄧㄤ 明</item>
+        <item>ㄔㄤ 長 ㄔㄨㄣ 春</item>
+        <item>ㄈㄨ 福 ㄓㄡ 州</item>
+        <item>ㄍㄨ 古 ㄐㄧㄣ 晉</item>
+        <item>ㄨㄤ 望 ㄐㄧㄚ 加 ㄒㄧ 錫</item>
+        <item>ㄏㄤ 杭 ㄓㄡ 州</item>
+        <item>ㄑㄧㄥ青 ㄉㄠ 島</item>
+        <item>ㄋㄢ 南 ㄋㄧㄥ 寧</item>
+        <item>ㄨ 烏 ㄌㄨ 魯 ㄇㄨ 木 ㄑㄧ 齊</item>
+        <item>ㄋㄚ 拿 ㄙㄨㄛ 索</item>
+        <item>ㄋㄧ 尼 ㄍㄨ 古 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄉㄧ 狄 ㄌㄧ 力</item>
+        <item>ㄌㄨㄛ 羅 ㄉㄜ 德 ㄔㄥ 城</item>
+        <item>ㄌㄨㄛ 洛 ㄇㄟ 美</item>
+        <item>ㄌㄨㄛ 羅 ㄙㄨㄛ 索</item>
+        <item>ㄌㄧ 利 ㄅㄛ 伯 ㄨㄟ 維 ㄦ 爾</item>
+        <item>ㄇㄚ 馬 ㄙㄞ 賽</item>
+        <item>ㄇㄚ 馬 ㄙㄞ 塞 ㄌㄨ 魯</item>
+        <item>ㄇㄚ 馬 ㄕㄠ 紹 ㄦ 爾 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄇㄛ 摩 ㄋㄚ 納 ㄍㄜ 哥</item>
+        <item>ㄙ 斯 ㄌㄧ 里 ㄅㄚ 巴 ㄎㄚ 卡 ㄨㄤ 旺 ㄕ 市</item>
+        <item>ㄅㄢ 班 ㄓㄨ 竹</item>
+        <item>ㄈㄨ 釜 ㄕㄢ 山</item>
+        <item>ㄅㄨ 布 ㄙㄨㄥ 松 ㄅㄨ 布 ㄌㄚ 拉</item>
+        <item>ㄅㄨ 布 ㄌㄚ 拉 ㄌㄨㄥ 薩 ㄕ 市</item>
+        <item>ㄩㄥ 永 ㄓㄣ 珍</item>
+        <item>ㄨㄣ 溫 ㄉㄜ 得 ㄏㄜ 和 ㄎㄜ 克</item>
+        <item>ㄙㄞ 塞 ㄌㄚ 拉 ㄧㄝ 耶 ㄈㄛ 佛</item>
+        <item>ㄙㄞ 塞 ㄅㄢ 班 ㄉㄠ 島</item>
+        <item>ㄕㄥ 聖 ㄉㄨㄛ 多 ㄇㄟ 美</item>
+        <item>ㄕㄥ 聖 ㄑㄧㄠ 喬 ㄓ 治 ㄙ 斯</item>
+        <item>ㄕ 史 ㄊㄢ 坦 ㄌㄧ 利</item>
+        <item>ㄧㄚ 亞 ㄉㄧㄤ 丁</item>
+        <item>ㄚ 阿 ㄆ一 皮ㄧㄚ 亞</item>
+        <item>ㄢ 安 ㄉㄠ 道 ㄦ 爾 ㄔㄥ 城</item>
+        <item>ㄚ 阿 ㄧㄡ 尤 ㄣ 恩</item>
+        <item>ㄨㄟ 威 ㄌㄧㄢ 廉 ㄕ 市</item>
+        <item>ㄇㄛ 墨 ㄅㄚ 巴 ㄅㄣ 本</item>
+        <item>ㄎㄚ 卡 ㄙ 斯 ㄘㄨㄟ 翠</item>
+        <item>ㄎㄜ 柯 ㄌㄨㄛ 羅 ㄓㄡ 州</item>
+        <item>ㄎㄢ 坎 ㄎㄨㄣ 昆</item>
+        <item>ㄐㄧ 吉 ㄐㄧㄚ 佳 ㄌㄧ 利</item>
+        <item>ㄐㄧㄣ 金 ㄙ 斯 ㄉㄨㄣ 敦</item>
+        <item>ㄊㄜ 特 ㄌㄚ 拉 ㄨㄟ 維 ㄈㄨ 夫</item>
+        <item>ㄊㄨㄛ 托 ㄦ 爾 ㄙ 斯 ㄍㄤ 港</item>
+        <item>ㄉㄧ 地 ㄌㄚ 拉 ㄋㄚ 那</item>
+        <item>ㄊㄧㄥ 廷 ㄅㄨ 布</item>
+        <item>ㄒㄧㄣ 新 ㄍㄤ 港</item>
+        <item>ㄆㄟ 培 ㄧㄚ 亞</item>
+        <item>ㄈㄚ 法 ㄌㄢ 蘭 ㄎㄜ 克 ㄈㄨ 福</item>
+        <item>ㄆㄨ 普 ㄌㄧ 里 ㄙ 斯 ㄊㄧ 提 ㄋㄚ 納</item>
+        <item>ㄏㄚ 哈 ㄇㄧ 密 ㄦ 爾 ㄉㄨㄣ 頓</item>
+        <item>ㄏㄜ 荷 ㄋㄧ 尼 ㄚ 阿 ㄌㄚ 拉</item>
+        <item>ㄒㄧ 西 ㄅㄢ 班 ㄧㄚ 牙 ㄍㄤ 港</item>
+        <item>ㄇ丨ㄥ 明 ㄋ丨 尼 丨ㄚ 亞 ㄅㄛ 波 ㄌ丨 利 ㄙ 斯</item>
+        <item>ㄒ丨 希 ㄌㄨㄛ 洛</item>
+        <item>ㄠ 奧 ㄌㄢ 蘭 ㄉㄨㄛ 多</item>
+        <item>ㄎㄢ 堪 ㄙㄚ 薩 ㄙ 斯 ㄔㄥ 城</item>
+        <item>ㄋ丨ㄡ 紐 ㄠ 奧 ㄌ丨ㄤ 良</item>
+        <item>ㄋㄚ 納 ㄒㄩ 許 ㄨㄟ 維 ㄦ 爾</item>
+        <item>ㄊㄨ 土 ㄙㄤ 桑</item>
+        <item>ㄊㄢ 坦 ㄆㄚ 帕</item>
+        <item>ㄐ丨ㄝ 傑 ㄎㄜ 克 ㄒㄩㄣ 遜 ㄨㄟ 維 ㄦ 爾</item>
+        <item>ㄠ 奧 ㄎㄜ 克 ㄌㄚ 拉 ㄏㄜ 荷 ㄇㄚ 馬 ㄕ 市</item>
+        <item>ㄚ 阿 ㄦ 爾 ㄅㄛ 伯 ㄎㄜ 克 ㄐ丨 基</item>
+        <item>ㄠ 奧 ㄇㄚ 馬 ㄏㄚ 哈</item>
+        <item>ㄨㄟ 維 ㄐ丨 吉 ㄋ丨 尼 丨ㄚ 亞 ㄏㄞ 海 ㄊㄢ 灘</item>
+        <item>ㄅㄛ 波 ㄒ丨 夕</item>
+        <item>ㄉ丨 狄 ㄇㄥ 蒙</item>
+        <item>ㄅㄛ 伯 ㄇ丨ㄥ 明 ㄏㄢ 罕</item>
+        <item>丨ㄢ 鹽 ㄏㄨ 湖 ㄔㄥ 城</item>
+        <item>ㄒ丨ㄠ 小 丨ㄢ 岩 ㄔㄥ 城</item>
+        <item>ㄙㄨ 蘇 ㄆㄨ 瀑</item>
+        <item>ㄐ丨ㄝ 傑 ㄎㄜ 克 ㄒㄩㄣ 遜</item>
+        <item>ㄋㄚ 南 ㄎㄚ 卡 ㄌㄨㄛ 羅 ㄌㄞ 來 ㄋㄚ 納 ㄓㄡ 州，ㄔㄚ 查 ㄦ 爾 ㄙ 斯 ㄉㄨㄣ 頓</item>
+        <item>ㄈㄚ 法 ㄍㄜ 哥</item>
+        <item>ㄅ丨 比 ㄌ丨ㄥ 靈 ㄙ 斯</item>
+        <item>ㄇ丨ㄢ 緬 丨ㄣ 因 ㄓㄡ 州，ㄅㄛ 波 ㄊㄜ 特 ㄌㄢ 蘭</item>
+        <item>ㄐ丨ㄚ 夏 ㄢ 安</item>
+        <item>ㄒ丨 西 ㄨㄟ 維 ㄐ丨 吉 ㄋ丨 尼 丨ㄚ 亞 ㄓㄡ 州，ㄔㄚ 查 ㄦ 爾 ㄙ 斯 ㄉㄨㄣ 頓</item>
+        <item>ㄆ丨 匹 ㄗ 茲 ㄅㄠ 堡</item>
+        <item>ㄌㄨ 綠 ㄨㄢ 灣</item>
+        <item>ㄕㄥ 聖 ㄌㄨ 路 丨 易</item>
+        <item>ㄒㄧㄚ 峽 ㄍㄨ 谷 ㄕ 市</item>
+        <item>ㄒㄧㄝ 協 ㄉㄧㄠ 調 ㄊㄨㄥ 通 ㄩㄥ 用 ㄕ 時 ㄐㄧㄢ 間</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>阿富汗</item>
+        <item>阿爾及利亞</item>
+        <item>薩摩亞獨立國</item>
+        <item>安地卡及巴布達</item>
+        <item>阿根廷</item>
+        <item>亞美尼亞</item>
+        <item>澳大利亞</item>
+        <item>亞塞拜然</item>
+        <item>孟加拉</item>
+        <item>巴什科爾托斯坦共和國</item>
+        <item>白俄羅斯</item>
+        <item>玻利維亞</item>
+        <item>巴西</item>
+        <item>保加利亞</item>
+        <item>柬埔寨</item>
+        <item>加拿大</item>
+        <item>智利</item>
+        <item>中國</item>
+        <item>哥倫比亞</item>
+        <item>捷克</item>
+        <item>剛果共和國</item>
+        <item>厄瓜多爾</item>
+        <item>愛沙尼亞</item>
+        <item>芬蘭</item>
+        <item>法國</item>
+        <item>喬治亞</item>
+        <item>德國</item>
+        <item>希臘</item>
+        <item>匈牙利</item>
+        <item>印度</item>
+        <item>印尼</item>
+        <item>伊朗</item>
+        <item>愛爾蘭</item>
+        <item>以色列</item>
+        <item>義大利</item>
+        <item>日本</item>
+        <item>哈薩克</item>
+        <item>肯亞</item>
+        <item>吉里巴斯</item>
+        <item>拉脫維亞</item>
+        <item>立陶宛</item>
+        <item>馬來西亞</item>
+        <item>墨西哥</item>
+        <item>蒙古</item>
+        <item>摩洛哥</item>
+        <item>尼泊爾</item>
+        <item>紐西蘭</item>
+        <item>巴基斯坦</item>
+        <item>秘魯</item>
+        <item>菲律賓</item>
+        <item>波蘭</item>
+        <item>葡萄牙</item>
+        <item>地圖</item>
+        <item>南韓</item>
+        <item>新加坡共和國</item>
+        <item>利比亞</item>
+        <item>羅馬尼亞</item>
+        <item>俄羅斯</item>
+        <item>沙烏地阿拉伯</item>
+        <item>斯洛伐克</item>
+        <item>南非</item>
+        <item>西班牙</item>
+        <item>斯里蘭卡</item>
+        <item>瑞典</item>
+        <item>台灣</item>
+        <item>泰國</item>
+        <item>突尼西亞</item>
+        <item>土耳其</item>
+        <item>阿拉伯聯合大公國</item>
+        <item>英國</item>
+        <item>烏克蘭</item>
+        <item>美國</item>
+        <item>烏茲別克斯坦</item>
+        <item>委內瑞拉</item>
+        <item>越南</item>
+        <item>英屬維爾京群島</item>
+        <item>瑞士</item>
+        <item>埃及</item>
+        <item>象牙海岸</item>
+        <item>迦納</item>
+        <item>衣索比亞</item>
+        <item>約旦</item>
+        <item>荷蘭</item>
+        <item>馬達加斯加</item>
+        <item>土庫曼</item>
+        <item>厄立特里亞</item>
+        <item>巴拉圭</item>
+        <item>伊拉克</item>
+        <item>馬利</item>
+        <item>中非共和國</item>
+        <item>瓜德羅普</item>
+        <item>黎巴嫩</item>
+        <item>塞爾維亞</item>
+        <item>貝里斯</item>
+        <item>吉爾吉斯斯坦</item>
+        <item>幾內亞比索</item>
+        <item>巴貝多</item>
+        <item>比利時</item>
+        <item>法屬圭亞那</item>
+        <item>摩爾多瓦</item>
+        <item>幾內亞</item>
+        <item>丹麥</item>
+        <item>塞內加爾</item>
+        <item>敘利亞</item>
+        <item>坦尚尼亞</item>
+        <item>吉布地</item>
+        <item>卡達</item>
+        <item>喀麥隆</item>
+        <item>塔吉克</item>
+        <item>蘇格蘭</item>
+        <item>馬堤尼克</item>
+        <item>獅子山</item>
+        <item>波札那</item>
+        <item>蓋亞那</item>
+        <item>南喬治亞</item>
+        <item>瓜地馬拉</item>
+        <item>聖巴泰勒米島</item>
+        <item>辛巴威</item>
+        <item>古巴</item>
+        <item>烏干達</item>
+        <item>蘇丹</item>
+        <item>牙買加</item>
+        <item>科威特</item>
+        <item>奈及利亞</item>
+        <item>安哥拉</item>
+        <item>尚比亞</item>
+        <item>盧森堡</item>
+        <item>赤道幾內亞</item>
+        <item>馬爾地夫</item>
+        <item>尼加拉瓜</item>
+        <item>巴林</item>
+        <item>莫三比克</item>
+        <item>聖馬丁島</item>
+        <item>索馬利亞</item>
+        <item>賴比瑞亞</item>
+        <item>烏拉圭</item>
+        <item>阿曼</item>
+        <item>查德</item>
+        <item>尼日</item>
+        <item>茅利塔尼亞</item>
+        <item>新喀里多尼亞</item>
+        <item>東加</item>
+        <item>格陵蘭</item>
+        <item>布吉納法索</item>
+        <item>巴拿馬</item>
+        <item>蘇利南</item>
+        <item>蒙特內科羅共和國</item>
+        <item>模里西斯</item>
+        <item>海地</item>
+        <item>朝鮮民主主義人民共和國</item>
+        <item>緬甸</item>
+        <item>冰島</item>
+        <item>留尼旺島</item>
+        <item>哥斯大黎加</item>
+        <item>波多黎各</item>
+        <item>薩爾瓦多</item>
+        <item>葉門</item>
+        <item>多明尼加共和國</item>
+        <item>馬其頓</item>
+        <item>斐濟</item>
+        <item>法屬玻里尼西亞</item>
+        <item>宏都拉斯</item>
+        <item>列支敦斯登</item>
+        <item>馬爾他</item>
+        <item>塞席爾</item>
+        <item>奧地利</item>
+        <item>克羅埃西亞</item>
+        <item>威爾斯</item>
+        <item>美屬維爾京群島</item>
+        <item>斯洛維尼亞</item>
+        <item>聖馬利諾</item>
+        <item>挪威</item>
+        <item>巴布亞紐幾內亞</item>
+        <item>巴哈馬</item>
+        <item>賽普勒斯</item>
+        <item>東帝汶</item>
+        <item>多哥</item>
+        <item>多米尼克</item>
+        <item>加彭</item>
+        <item>賴索托</item>
+        <item>馬紹爾群島</item>
+        <item>摩納哥</item>
+        <item>汶萊</item>
+        <item>甘比亞</item>
+        <item>蒲隆地</item>
+        <item>剛果民主共和國</item>
+        <item>寮國</item>
+        <item>那米比亞</item>
+        <item>波士尼亞赫塞哥維納</item>
+        <item>塞班島</item>
+        <item>聖多美和普林西比</item>
+        <item>格瑞那達</item>
+        <item>福克蘭群島</item>
+        <item>美屬薩摩亞</item>
+        <item>安道爾</item>
+        <item>撒拉威阿拉伯民主共和國</item>
+        <item>庫拉索</item>
+        <item>史瓦帝尼王國</item>
+        <item>聖露西亞</item>
+        <item>帛琉</item>
+        <item>盧安達</item>
+        <item>聖文森及格瑞那丁</item>
+        <item>法羅群島</item>
+        <item>阿爾巴尼亞</item>
+        <item>不丹</item>
+        <item>貝南</item>
+        <item>維德角</item>
+        <item>科索沃</item>
+        <item>百慕達</item>
+        <item>所羅門群島</item>
+        <item>台灣</item>
+        <item>千里達及托巴哥</item>
+        <item>安圭拉</item>
+        <item>UTC (國際標準時間)</item>
+    </string-array>
+    <string-array name="CountriesPinyin">
+        <item>ㄚ 阿 ㄈㄨ 富 ㄏㄢ 汗</item>
+        <item>ㄚ 阿 ㄦ 爾 ㄐㄧ 及 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄇㄟ 美 ㄕㄨ 屬 ㄙㄚ 薩 ㄇㄛ 摩 ㄧㄚ 亞</item>
+        <item>ㄢ 安 ㄉㄧ 地 ㄎㄚ 卡 ㄐㄧ 及 ㄅㄚ 巴 ㄅㄨ 布 ㄉㄚ 達</item>
+        <item>ㄚ 阿 ㄍㄣ 根 ㄊㄧㄥ 廷</item>
+        <item>ㄧㄚ 亞 ㄇㄟ 美 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄠ 澳 ㄉㄚ 大 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄧㄚ 亞 ㄙㄞ 塞 ㄅㄞ 拜 ㄖㄢ 然</item>
+        <item>ㄇㄥ 孟 ㄐㄧㄚ 加 ㄌㄚ 拉</item>
+        <item>ㄅㄚ 巴 ㄕㄜ 什 ㄎㄜ 科 ㄦ 爾 ㄊㄨㄛ 托 ㄙ 斯 ㄊㄢ 坦 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄅㄞ 白 ㄜ 俄 ㄌㄨㄛ 羅 ㄙ 斯</item>
+        <item>ㄅㄛ 玻 ㄌㄧ 利 ㄨㄟ 維 ㄧㄚ 亞</item>
+        <item>ㄅㄚ 巴 ㄒㄧ 西</item>
+        <item>ㄅㄠ 保 ㄐㄧㄚ 加 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄐㄧㄢ 柬 ㄆㄨ 埔 ㄓㄞ 寨</item>
+        <item>ㄐㄧㄚ 加 ㄋㄚ 拿 ㄉㄚ 大</item>
+        <item>ㄓ 智 ㄌㄧ 利</item>
+        <item>ㄓㄨㄥ 中 ㄍㄨㄛ 國</item>
+        <item>ㄍㄜ 哥 ㄌㄨㄣ 倫 ㄅㄧ 比 ㄧㄚ 亞</item>
+        <item>ㄐㄧㄝ 捷 ㄎㄜ 克</item>
+        <item>ㄍㄤ 剛 ㄍㄨㄛ 果 ㄇㄧㄣ 民 ㄓㄨ 主 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄜ 厄 ㄍㄨㄚ 瓜 ㄉㄨㄛ 多 ㄦ 爾</item>
+        <item>ㄞ 愛 ㄕㄚ 沙 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄈㄣ 芬 ㄌㄢ 蘭</item>
+        <item>ㄈㄚ 法 ㄍㄨㄛ 國</item>
+        <item>ㄑㄧㄠ 喬 ㄓ 治 ㄧㄚ 亞</item>
+        <item>ㄉㄜ 德 ㄍㄨㄛ 國</item>
+        <item>ㄒㄧ 希 ㄌㄚ 臘</item>
+        <item>ㄒㄩㄥ 匈 ㄧㄚ 牙 ㄌㄧ 利</item>
+        <item>ㄧㄣ 印 ㄉㄨ 度</item>
+        <item>ㄧㄣ 印 ㄋㄧ 尼</item>
+        <item>ㄧ 伊 ㄌㄤ 朗</item>
+        <item>ㄞ 愛 ㄦ 爾 ㄌㄢ 蘭</item>
+        <item>ㄧ 以 ㄙㄜ 色 ㄌㄧㄝ 列</item>
+        <item>ㄧ 義 ㄉㄚ 大 ㄌㄧ 利</item>
+        <item>ㄖ 日 ㄅㄣ 本</item>
+        <item>ㄏㄚ 哈 ㄙㄚ 薩 ㄎㄜ 克</item>
+        <item>ㄎㄣ 肯 ㄧㄚ 亞</item>
+        <item>ㄐㄧ 吉 ㄌㄧ 里 ㄅㄚ 巴 ㄙ 斯</item>
+        <item>ㄌㄚ 拉 ㄊㄨㄛ 脫 ㄨㄟ 維 ㄧㄚ 亞</item>
+        <item>ㄌㄧ 立 ㄊㄠ 陶 ㄨㄢ 宛</item>
+        <item>ㄇㄚ 馬 ㄌㄞ 來 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄇㄛ 墨 ㄒㄧ 西 ㄍㄜ 哥</item>
+        <item>ㄇㄥ 蒙 ㄍㄨ 古</item>
+        <item>ㄇㄛ 摩 ㄌㄨㄛ 洛 ㄍㄜ 哥</item>
+        <item>ㄋㄧ 尼 ㄅㄛ 泊 ㄦ 爾</item>
+        <item>ㄋㄧㄡ 紐 ㄒㄧ 西 ㄌㄢ 蘭</item>
+        <item>ㄅㄚ 巴 ㄐㄧ 基 ㄙ 斯 ㄊㄢ 坦</item>
+        <item>ㄇㄧ 秘 ㄌㄨ 魯</item>
+        <item>ㄈㄟ 菲 ㄌㄩ 律 ㄅㄧㄣ 賓</item>
+        <item>ㄅㄛ 波 ㄌㄢ 蘭</item>
+        <item>ㄆㄨ 葡 ㄊㄠ 萄 ㄧㄚ 牙</item>
+        <item>ㄉㄧ 地 ㄊㄨ 圖</item>
+        <item>ㄏㄢ 韓 ㄍㄨㄛ 國</item>
+        <item>ㄒㄧㄣ 新 ㄐㄧㄚ 加 ㄆㄛ 坡 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄌㄧ 利 ㄅㄧ 比 ㄧㄚ 亞</item>
+        <item>ㄌㄨㄛ 羅 ㄇㄚ 馬 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄜ 俄 ㄌㄨㄛ 羅 ㄙ 斯</item>
+        <item>ㄕㄚ 沙 ㄨ 烏 ㄉㄧ 地 ㄚ 阿 ㄌㄚ 拉 ㄅㄛ 伯</item>
+        <item>ㄙ 斯 ㄌㄨㄛ 洛 ㄈㄚ 伐 ㄎㄜ 克</item>
+        <item>ㄋㄢ 南 ㄈㄟ 非</item>
+        <item>ㄒㄧ 西 ㄅㄢ 班 ㄧㄚ 牙</item>
+        <item>ㄙ 斯 ㄌㄧ 里 ㄌㄢ 蘭 ㄎㄚ 卡</item>
+        <item>ㄖㄨㄟ 瑞 ㄉㄧㄢ 典</item>
+        <item>ㄊㄞ 台 ㄨㄢ 灣</item>
+        <item>ㄊㄞ 泰 ㄍㄨㄛ 國</item>
+        <item>ㄊㄨ 突 ㄋㄧ 尼 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄊㄨ 土 ㄦ 耳 ㄑㄧ 其</item>
+        <item>ㄚ 阿 ㄌㄚ 拉 ㄅㄛ 伯 ㄌㄧㄢ 聯 ㄏㄜ 合 ㄉㄚ 大 ㄍㄨㄥ 公 ㄍㄨㄛ 國</item>
+        <item>ㄧㄥ 英 ㄍㄨㄛ 國</item>
+        <item>ㄨ 烏 ㄎㄜ 克 ㄌㄢ 蘭</item>
+        <item>ㄇㄟ 美 ㄍㄨㄛ 國</item>
+        <item>ㄨ 烏 ㄗ 茲 ㄅㄧㄝ 別 ㄎㄜ 克 ㄙ 斯 ㄊㄢ 坦</item>
+        <item>ㄨㄟ 委 ㄋㄟ 內 ㄖㄨㄟ 瑞 ㄌㄚ 拉</item>
+        <item>ㄩㄝ 越 ㄋㄢ 南</item>
+        <item>ㄧㄥ 英 ㄕㄨ 屬 ㄨㄟ 維 ㄦ 爾 ㄐㄧㄥ 京 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄖㄨㄟ 瑞 ㄕ 士</item>
+        <item>ㄞ 埃 ㄐㄧ 及</item>
+        <item>ㄒㄧㄤ 象 ㄧㄚ 牙 ㄏㄞ 海 ㄢ 岸</item>
+        <item>ㄐㄧㄚ 迦 ㄋㄚ 納</item>
+        <item>ㄧ 衣 ㄙㄨㄛ 索 ㄅㄧ 比 ㄧㄚ 亞</item>
+        <item>ㄩㄝ 約 ㄉㄢ 旦</item>
+        <item>ㄏㄜ 荷 ㄌㄢ 蘭</item>
+        <item>ㄇㄚ 馬 ㄉㄚ 達 ㄐㄧㄚ 加 ㄙ 斯 ㄐㄧㄚ 加</item>
+        <item>ㄊㄨ 土 ㄎㄨ 庫 ㄇㄢ 曼</item>
+        <item>ㄜ 厄 ㄌㄧ 立 ㄊㄜ 特 ㄌㄧ 里 ㄧㄚ 亞</item>
+        <item>ㄅㄚ 巴 ㄌㄚ 拉 ㄍㄨㄟ 圭</item>
+        <item>ㄧ 伊 ㄌㄚ 拉 ㄎㄜ 克</item>
+        <item>ㄇㄚ 馬 ㄌㄧ 利</item>
+        <item>ㄓㄨㄥ 中 ㄈㄟ 非 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄍㄨㄚ 瓜 ㄉㄜ 德 ㄌㄨㄛ 羅 ㄆㄨ 普</item>
+        <item>ㄌㄧ 黎 ㄅㄚ 巴 ㄋㄣ 嫩</item>
+        <item>ㄙㄞ 塞 ㄦ 爾 ㄨㄟ 維 ㄧㄚ 亞</item>
+        <item>ㄅㄟ 貝 ㄌㄧ 里 ㄙ 斯</item>
+        <item>ㄐㄧ 吉 ㄦ 爾 ㄐㄧ 吉 ㄙ 斯 ㄙ 斯 ㄊㄢ 坦</item>
+        <item>ㄐㄧ 幾 ㄋㄟ 內 ㄧㄚ 亞 ㄅㄧ 比 ㄙㄨㄛ 索</item>
+        <item>ㄅㄚ 巴 ㄅㄟ 貝 ㄉㄨㄛ 多</item>
+        <item>ㄅㄧ 比 ㄌㄧ 利 ㄕ 時</item>
+        <item>ㄈㄚ 法 ㄕㄨ 屬 ㄍㄨㄟ 圭 ㄧㄚ 亞 ㄋㄚ 那</item>
+        <item>ㄇㄛ 摩 ㄦ 爾 ㄉㄨㄛ 多 ㄨㄚ 瓦</item>
+        <item>ㄐㄧ 幾 ㄋㄟ 內 ㄧㄚ 亞</item>
+        <item>ㄉㄢ 丹 ㄇㄞ 麥</item>
+        <item>ㄙㄞ 塞 ㄋㄟ 內 ㄐㄧㄚ 加 ㄦ 爾</item>
+        <item>ㄒㄩ 敘 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄊㄢ 坦 ㄕㄤ 尚 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄐㄧ 吉 ㄅㄨ 布 ㄉㄧ 地</item>
+        <item>ㄎㄚ 卡 ㄉㄚ 達</item>
+        <item>ㄎㄚ 喀 ㄇㄞ 麥 ㄌㄨㄥ 隆</item>
+        <item>ㄊㄚ 塔 ㄐㄧ 吉 ㄎㄜ 克</item>
+        <item>ㄙㄨ 蘇 ㄍㄜ 格 ㄌㄢ 蘭</item>
+        <item>ㄇㄚ 馬 ㄊㄧ 堤 ㄋㄧ 尼 ㄎㄜ 克</item>
+        <item>ㄕ 獅 ㄗ 子 ㄕㄢ 山</item>
+        <item>ㄅㄛ 波 ㄓㄚ 札 ㄋㄚ 那</item>
+        <item>ㄍㄞ 蓋 ㄧㄚ 亞 ㄋㄚ 那</item>
+        <item>ㄋㄢ 南 ㄑㄧㄠ 喬 ㄓ 治 ㄧㄚ 亞</item>
+        <item>ㄍㄨㄚ 瓜 ㄉㄧ 地 ㄇㄚ 馬 ㄌㄚ 拉</item>
+        <item>ㄕㄥ 聖 ㄅㄚ 巴 ㄊㄞ 泰 ㄌㄜ 勒 ㄇㄧ 米 ㄉㄠ 島</item>
+        <item>ㄒㄧㄣ 辛 ㄅㄚ 巴 ㄨㄟ 威</item>
+        <item>ㄍㄨ 古 ㄅㄚ 巴</item>
+        <item>ㄨ 烏 ㄍㄢ 干 ㄉㄚ 達</item>
+        <item>ㄙㄨ 蘇 ㄉㄢ 丹</item>
+        <item>ㄧㄚ 牙 ㄇㄞ 買 ㄐㄧㄚ 加</item>
+        <item>ㄎㄜ 科 ㄨㄟ 威 ㄊㄜ 特</item>
+        <item>ㄋㄞ 奈 ㄐㄧ 及 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄢ 安 ㄍㄜ 哥 ㄌㄚ 拉</item>
+        <item>ㄕㄤ 尚 ㄅㄧ 比 ㄧㄚ 亞</item>
+        <item>ㄌㄨ 盧 ㄙㄣ 森 ㄅㄠ 堡</item>
+        <item>ㄔ 赤 ㄉㄠ 道 ㄐㄧ 幾 ㄋㄟ 內 ㄧㄚ 亞</item>
+        <item>ㄇㄚ 馬 ㄦ 爾 ㄉㄧ 地 ㄈㄨ 夫</item>
+        <item>ㄋㄧ 尼 ㄐㄧㄚ 加 ㄌㄚ 拉 ㄍㄨㄚ 瓜</item>
+        <item>ㄅㄚ 巴 ㄌㄧㄣ 林</item>
+        <item>ㄇㄛ 莫 ㄙㄢ 三 ㄅㄧ 比 ㄎㄜ 克</item>
+        <item>ㄕㄥ 聖 ㄇㄚ 馬 ㄉㄧㄤ 丁 ㄉㄠ 島</item>
+        <item>ㄙㄨㄛ 索 ㄇㄚ 馬 ㄌㄧ 利 ㄧㄚ 亞</item>
+        <item>ㄌㄞ 賴 ㄅㄧ 比 ㄖㄨㄟ 瑞 ㄧㄚ 亞</item>
+        <item>ㄨ 烏 ㄌㄚ 拉 ㄍㄨㄟ 圭</item>
+        <item>ㄚ 阿 ㄇㄢ 曼</item>
+        <item>ㄔㄚ 查 ㄉㄜ 德</item>
+        <item>ㄋㄧ 尼 ㄖ 日</item>
+        <item>ㄇㄠ 茅 ㄌㄧ 利 ㄊㄚ 塔 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄒㄧㄣ 新 ㄎㄚ 喀 ㄌㄧ 里 ㄉㄨㄛ 多 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄉㄨㄥ 東 ㄐㄧㄚ 加</item>
+        <item>ㄍㄜ 格 ㄌㄧㄥ 陵 ㄌㄢ 蘭</item>
+        <item>ㄅㄨ 布 ㄐㄧ 吉 ㄋㄚ 納 ㄈㄚ 法 ㄙㄨㄛ 索</item>
+        <item>ㄅㄚ 巴 ㄋㄚ 拿 ㄇㄚ 馬</item>
+        <item>ㄙㄨ 蘇 ㄌㄧ 利 ㄋㄢ 南</item>
+        <item>ㄇㄥ 蒙 ㄊㄜ 特 ㄋㄟ 內 ㄎㄜ 科 ㄌㄨㄛ 羅 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄇㄛ 模 ㄌㄧ 里 ㄒㄧ 西 ㄙ 斯</item>
+        <item>ㄏㄞ 海 ㄉㄧ 地</item>
+        <item>ㄅㄟ 北 ㄏㄢ 韓</item>
+        <item>ㄇㄧㄢ 緬 ㄉㄧㄢ 甸</item>
+        <item>ㄅㄧㄥ 冰 ㄉㄠ 島</item>
+        <item>ㄌㄧㄡ 留 ㄋㄧ 尼 ㄨㄤ 旺 ㄉㄠ 島</item>
+        <item>ㄍㄜ 哥 ㄙ 斯 ㄉㄚ 大 ㄌㄧ 黎 ㄐㄧㄚ 加</item>
+        <item>ㄅㄛ 波 ㄉㄨㄛ 多 ㄌㄧ 黎 ㄍㄜ 各</item>
+        <item>ㄙㄚ 薩 ㄦ 爾 ㄨㄚ 瓦 ㄉㄨㄛ 多</item>
+        <item>ㄧㄝ 葉 ㄇㄣ 門</item>
+        <item>ㄉㄨㄛ 多 ㄇㄧㄤ 明 ㄋㄧ 尼 ㄐㄧㄚ 加 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄇㄚ 馬 ㄑㄧ 其 ㄉㄨㄣ 頓</item>
+        <item>ㄈㄟ 斐 ㄐㄧ 濟</item>
+        <item>ㄈㄚ 法 ㄕㄨ 屬 ㄅㄛ 玻 ㄌㄧ 里 ㄋㄧ 尼 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄏㄨㄥ 宏 ㄉㄡ 都 ㄌㄚ 拉 ㄙ 斯</item>
+        <item>ㄌㄧㄝ 列 ㄓ 支 ㄉㄨㄣ 敦 ㄙ 斯 ㄉㄥ 登</item>
+        <item>ㄇㄚ 馬 ㄦ 爾 ㄊㄚ 他</item>
+        <item>ㄙㄞ 塞 ㄒㄧ 席 ㄦ 爾</item>
+        <item>ㄠ 奧 ㄉㄧ 地 ㄌㄧ 利</item>
+        <item>ㄎㄜ 克 ㄌㄨㄛ 羅 ㄞ 埃 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄨㄟ 威 ㄦ 爾 ㄙ 斯</item>
+        <item>ㄇㄟ 美 ㄕㄨ 屬 ㄨㄟ 維 ㄦ 爾 ㄐㄧㄥ 京 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄙ 斯 ㄌㄨㄛ 洛 ㄨㄟ 維 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄕㄥ 聖 ㄇㄚ 馬 ㄌㄧ 利 ㄋㄨㄛ 諾</item>
+        <item>ㄋㄨㄛ 挪 ㄨㄟ 威</item>
+        <item>ㄅㄚ 巴 ㄅㄨ 布 ㄧㄚ 亞 ㄋㄧㄡ 紐 ㄐㄧ 幾 ㄋㄟ 內 ㄧㄚ 亞</item>
+        <item>ㄅㄚ 巴 ㄏㄚ 哈 ㄇㄚ 馬</item>
+        <item>ㄙㄞ 賽 ㄆㄨ 普 ㄌㄜ 勒 ㄙ 斯</item>
+        <item>ㄉㄨㄥ 東 ㄉㄧ 帝 ㄨㄣ 汶</item>
+        <item>ㄉㄨㄛ 多 ㄍㄜ 哥</item>
+        <item>ㄉㄨㄛ 多 ㄇㄧ米ㄋㄧ 尼 ㄎㄜ 克</item>
+        <item>ㄐㄧㄚ 加 ㄆㄥ 彭</item>
+        <item>ㄌㄞ 賴 ㄙㄨㄛ 索 ㄊㄨㄛ 托</item>
+        <item>ㄇㄚ 馬 ㄕㄠ 紹 ㄦ 爾 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄇㄛ 摩 ㄋㄚ 納 ㄍㄜ 哥</item>
+        <item>ㄨㄣ 汶 ㄌㄞ 萊</item>
+        <item>ㄍㄢ 甘 ㄅㄧ 比 ㄧㄚ 亞</item>
+        <item>ㄆㄨ 蒲 ㄌㄨㄥ 隆 ㄉㄧ 地</item>
+        <item>ㄍㄤ 剛 ㄍㄨㄛ 果 ㄇㄧㄣ 民 ㄓㄨ 主 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄌㄧㄠ 寮 ㄍㄨㄛ 國</item>
+        <item>ㄋㄚ 那 ㄇㄧ 米 ㄅㄧ 比 ㄧㄚ 亞</item>
+        <item>ㄅㄛ 波 ㄕ 士 ㄋㄧ 尼 ㄧㄚ 亞 ㄏㄜ 赫 ㄙㄞ 塞 ㄍㄜ 哥 ㄨㄟ 維 ㄋㄚ 納</item>
+        <item>ㄙㄞ 塞 ㄅㄢ 班 ㄉㄠ 島</item>
+        <item>ㄕㄥ 聖 ㄉㄨㄛ 多 ㄇㄟ 美 ㄏㄜ 和 ㄆㄨ 普 ㄌㄧㄣ 林 ㄒㄧ 西 ㄅㄧ 比</item>
+        <item>ㄍㄜ 格 ㄖㄨㄟ 瑞 ㄋㄚ 那 ㄉㄚ 達</item>
+        <item>ㄈㄨ 福 ㄎㄜ 克 ㄌㄢ 蘭 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄇㄟ 美 ㄕㄨ 屬 ㄙㄚ 薩 ㄇㄛ 摩 ㄧㄚ 亞</item>
+        <item>ㄢ 安 ㄉㄠ 道 ㄦ 爾</item>
+        <item>ㄙㄚ 撒 ㄌㄚ 拉 ㄨㄟ 威 ㄚ 阿 ㄌㄚ 拉 ㄅㄛ 伯 ㄇㄧㄣ 民 ㄓㄨ 主 ㄍㄨㄥ 共 ㄏㄜ 和 ㄍㄨㄛ 國</item>
+        <item>ㄎㄨ 庫 ㄌㄚ 拉 ㄙㄨㄛ 索</item>
+        <item>ㄕ 史 ㄨㄚ 瓦 ㄐㄧ 濟 ㄌㄢ 蘭</item>
+        <item>ㄕㄥ 聖 ㄌㄨ 露 ㄒㄧ 西 ㄧㄚ 亞</item>
+        <item>ㄅㄛ 帛 ㄌㄧㄡ 琉</item>
+        <item>ㄌㄨ 盧 ㄢ 安 ㄉㄚ 達</item>
+        <item>ㄕㄥ 聖 ㄨㄣ 文 ㄙㄣ 森 ㄐㄧ 及 ㄍㄜ 格 ㄖㄨㄟ 瑞 ㄋㄚ 那 ㄉㄧㄥ 丁</item>
+        <item>ㄈㄚ 法 ㄌㄨㄛ 羅 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item>ㄚ 阿 ㄦ 爾 ㄅㄚ 巴 ㄋㄧ 尼 ㄧㄚ 亞</item>
+        <item>ㄅㄨ 不 ㄉㄢ 丹</item>
+        <item>ㄅㄟ 貝 ㄋㄢ 南</item>
+        <item>ㄨㄟ 維 ㄨㄟ 維 ㄐㄧㄠ 角</item>
+        <item>ㄎㄜ 科 ㄙㄨㄛ 索 ㄨㄛ 沃</item>
+        <item>ㄅㄞ 百 ㄇㄨ 慕 ㄉㄚ 達</item>
+        <item>ㄙㄨㄛ 所 ㄌㄨㄛ 羅 ㄇㄣ 門 ㄑㄩㄣ 群 ㄉㄠ 島</item>
+        <item></item>
+        <item>ㄑㄧㄢ 千 ㄌㄧ 里 ㄉㄚ 達 ㄐㄧ 及 ㄊㄨㄛ 托 ㄅㄚ 巴 ㄍㄜ 哥</item>
+        <item>ㄢ 安 ㄍㄨㄟ 圭 ㄌㄚ 拉</item>
+        <item></item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>鬧鐘將從現在開始 1 分鐘後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %2$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s 又 %2$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %2$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s、%2$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘已設為現在起%s分鐘後。</item>
+        <item>鬧鐘將從現在起 %1$s 又 %2$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s、%2$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在起 %1$s 又 %2$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s、%2$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在開始 %1$s、%2$s 又 %3$s 後響鈴。</item>
+        <item>鬧鐘將從現在起 %1$s、%2$s、%3$s 又 %4$s 後響鈴。</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

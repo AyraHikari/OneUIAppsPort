@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_popup_ampm_text_size">18.0dip</dimen>
+    <dimen name="stopwatch_common_timeview_layout_expand_height">516.0dip</dimen>
+    <dimen name="stopwatch_laptime_margin_top">4.0dip</dimen>
+    <dimen name="stopwatch_laptime_period_textview_width">13.0dip</dimen>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">380.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">320.0dip</dimen>
+</resources>

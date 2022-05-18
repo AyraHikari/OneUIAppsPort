@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Ní féidir níos mó ná %d suíomh a chur leis. Scrios roinnt suíomhanna leis an gceann seo a chur leis.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d suíomh a chur leis. Scrios roinnt suíomhanna leis an gceann seo a chur leis.</item>
+        <item quantity="two">Ní féidir níos mó ná %d shuíomh a chur leis. Scrios roinnt suíomhanna leis an gceann seo a chur leis.</item>
+        <item quantity="few">Ní féidir níos mó ná %d shuíomh a chur leis. Scrios roinnt suíomhanna leis an gceann seo a chur leis.</item>
+        <item quantity="many">Ní féidir níos mó ná %d suíomh a chur leis. Scrios roinnt suíomhanna leis an gceann seo a chur leis.</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Ní féidir níos mó ná %d carachtar a iontráil.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ní féidir níos mó ná %d charachtar a iontráil.</item>
+        <item quantity="two">Ní féidir níos mó ná %d charachtar a iontráil.</item>
+        <item quantity="few">Ní féidir níos mó ná %d charachtar a iontráil.</item>
+        <item quantity="many">Ní féidir níos mó ná %d gcarachtar a iontráil.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d roghnaithe</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d roghnaithe</item>
+        <item quantity="two">%d roghnaithe</item>
+        <item quantity="few">%d roghnaithe</item>
+        <item quantity="many">%d roghnaithe</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d lá</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d lá</item>
+        <item quantity="two">%d lá</item>
+        <item quantity="few">%d lá</item>
+        <item quantity="many">%d lá</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d ur an chloig</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ur an chloig</item>
+        <item quantity="two">%d ur an chloig</item>
+        <item quantity="few">%d ur an chloig</item>
+        <item quantity="many">%d n-ur an chloig</item>
+    </plurals>
+</resources>

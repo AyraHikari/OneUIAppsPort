@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_flurries__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s3" android:animation="@drawable/$weather_ic_flurries__1" />
+    <target android:name="s2" android:animation="@drawable/$weather_ic_flurries__7" />
+    <target android:name="s1" android:animation="@drawable/$weather_ic_flurries__13" />
+</animated-vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_connect_to_pc" android:title="@string/connect_to_computer" />
+    <item android:id="@id/menu_connect_to_new_phone" android:title="@string/connect_to_new_phone" />
+    <item android:id="@id/menu_settings" android:title="@string/settings" />
+    <item android:id="@id/menu_about" android:title="@string/about" />
+    <item android:id="@id/menu_contact_us" android:title="@string/help_contact_us" />
+</menu>

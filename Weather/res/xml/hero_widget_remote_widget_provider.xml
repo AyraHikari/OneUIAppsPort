@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/weather_and_clock_minWidth" android:minHeight="@dimen/weather_and_clock_minHeight" android:updatePeriodMillis="86400000" android:initialLayout="@layout/widget_initial_layout" android:configure="com.sec.android.daemonapp.setting.WidgetCheckConditionActivity" android:previewImage="@drawable/preview_weather_and_clock" android:resizeMode="horizontal|vertical" android:widgetFeatures="0x00000001"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

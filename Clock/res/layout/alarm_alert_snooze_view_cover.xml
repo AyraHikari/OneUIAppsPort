@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:id="@id/alarm_btn_snooze_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/alarm_btn_snooze" android:background="@drawable/shape_stripe_view_cover_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/alarm_snooze_text_size" android:textStyle="bold" android:textColor="@color/alert_snooze_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/alarm_textview_snooze" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/snooze" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@string/roboto_regular" />
+    </LinearLayout>
+</LinearLayout>

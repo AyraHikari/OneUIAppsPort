@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Аларма след %d дни</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аларма след %d ден</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Аларма след %d часа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аларма след %d час</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Аларма след %d часа и 1 минута</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аларма след %d час и 1 минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Аларма след %d минути</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Аларма след %d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">След %d минути</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">След %d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Не може да се добавят повече от %d аларми.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се добави повече от %d аларма.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d минути</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Изтриване на %d фона?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Изтриване на %d фон?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нови известия</item>
+        <item quantity="one">%d ново известие</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d са избрани</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d е избрано</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d минути по-рано</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d минута по-рано</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s и %3$d други</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s и %3$d друг</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Време на сън: %d часа</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Време на сън: %d час</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Време на сън: %d минути</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Време на сън: %d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Отлагане %d мин</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Отлагане %d мин</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Минус %d минути</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Минус %d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Плюс %d минути</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Плюс %d минута</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Не може да се добавят повече от %d предварително зададени таймера.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се добави повече от %d предварително зададен таймер.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Не може да се добавят повече от %d града.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Не може да се добави повече от %d град.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

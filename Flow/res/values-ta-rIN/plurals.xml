@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d கோப்புகளானது, கோப்பு இடமாற்ற பட்டியலுடன் சேர்க்கப்பட்டுள்ளன.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d கோப்பானது கோப்பு இடமாற்ற பட்டியலுடன் சேர்க்கப்பட்டுள்ளது.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Samsung Flow-இல் %d கணினிகள் அல்லது டேப்லெட்கள் வரை பதிவுசெய்து நிர்வகிக்கலாம்.
+
+ஒரு சமயத்தில் ஒரு கணினி அல்லது டேப்லெட்டை மட்டுமே இணைக்கலாம். பதிவுசெய்யப்பட்ட கணினிகள் அல்லது டேப்லெட்டுகள் உங்கள் ஃபோனுடன் இணைக்க முயலும்போது ஒன்றை நீங்கள் தேர்வு செய்ய வேண்டும்."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Samsung Flow-இல் %d கணினி அல்லது டேப்லெட் வரை பதிவுசெய்து நிர்வகிக்கலாம்.
+
+ஒரு சமயத்தில் ஒரு கணினி அல்லது டேப்லெட்டை மட்டுமே இணைக்கலாம். பதிவுசெய்யப்பட்ட கணினிகள் அல்லது டேப்லெட்டுகள் உங்கள் ஃபோனுடன் இணைக்க முயலும்போது ஒன்றை நீங்கள் தேர்வு செய்ய வேண்டும்."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

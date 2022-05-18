@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pip_timer_portrait_bottom_gap">30</integer>
+    <integer name="timer_flex_height">360</integer>
+    <integer name="timer_flex_width">460</integer>
+</resources>

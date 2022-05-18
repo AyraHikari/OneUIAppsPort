@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>يېرىم يول</item>
+        <item>ھونولۇلۇ</item>
+        <item>ھاۋاي</item>
+        <item>ئالياسكا</item>
+        <item>لەڭگەر</item>
+        <item>سان فىرانسىسكو</item>
+        <item>ۋانكۇۋىر</item>
+        <item>سېئاتل</item>
+        <item>لوس ئانجېلېس</item>
+        <item>تىجۇۋانا</item>
+        <item>كالگارى</item>
+        <item>فېنىكس</item>
+        <item>مازاتلان</item>
+        <item>دېنۋېر</item>
+        <item>مېكسىكا شەھىرى</item>
+        <item>ۋىننىپېگ</item>
+        <item>دىيېگو گارسىيا</item>
+        <item>داللاس</item>
+        <item>چىكاگو</item>
+        <item>تورونتو</item>
+        <item>مىيامى</item>
+        <item>لىما</item>
+        <item>كىۋىتو</item>
+        <item>ۋوشىنگتون ئالاھىدە رايونى</item>
+        <item>ئوتتاۋا</item>
+        <item>نىيۇيورك</item>
+        <item>بوگوتا</item>
+        <item>سانتىياگو</item>
+        <item>لا پاز</item>
+        <item>كاراكاس</item>
+        <item>بۇئېنوس ئايرېس</item>
+        <item>نېۋفۇندلاند</item>
+        <item>ساينت جون</item>
+        <item>سان پاۋلو</item>
+        <item>بىراسىلىيە</item>
+        <item>رىئودې ژانېيرو</item>
+        <item>فېرناندو دې نورونھا</item>
+        <item>ئازورېس</item>
+        <item>لىسبون</item>
+        <item>دارۇلبەيزا</item>
+        <item>دۇبلىن</item>
+        <item>رابات</item>
+        <item>مادرىد</item>
+        <item>ئولتۇراق</item>
+        <item>لوندون</item>
+        <item>كىڭستون</item>
+        <item>بارسېلونا</item>
+        <item>پارىژ</item>
+        <item>ئالجېرس</item>
+        <item>تۇنىس</item>
+        <item>ترىپولى</item>
+        <item>بېرلىن</item>
+        <item>رىم</item>
+        <item>پىراگا</item>
+        <item>كىنشاسا</item>
+        <item>ستوكھولم</item>
+        <item>بىراتىسلاۋا</item>
+        <item>كەيپ بازىرى</item>
+        <item>بۇداپېشت</item>
+        <item>ۋارشاۋا</item>
+        <item>كالىنىنگراد</item>
+        <item>سوفىيە</item>
+        <item>ئافېنا</item>
+        <item>لۋىۋ</item>
+        <item>خېلسىنكى</item>
+        <item>رىگا</item>
+        <item>تاللىن</item>
+        <item>بۇخارېست</item>
+        <item>ۋىلنيۇس</item>
+        <item>لۇبۇمباشى</item>
+        <item>مىنسك</item>
+        <item>ساينت پېتىربۇرگ</item>
+        <item>ئىستانبۇل</item>
+        <item>كامچاتكا</item>
+        <item>كىيېۋ</item>
+        <item>يېرۇسالېم</item>
+        <item>موسكۋا</item>
+        <item>خاركوۋ</item>
+        <item>نايروبى</item>
+        <item>جىددە</item>
+        <item>ۋولگوگراد</item>
+        <item>يېرېۋان</item>
+        <item>تىفلىس</item>
+        <item>باكۇ</item>
+        <item>چىتا</item>
+        <item>سامارا</item>
+        <item>تېھران</item>
+        <item>Izhevsk</item>
+        <item>ئەبۇ دەبى</item>
+        <item>دۇبەي</item>
+        <item>ئۇفا</item>
+        <item>يېكاتېرىنبۇرگ</item>
+        <item>چېليابىنسك</item>
+        <item>كاراچى</item>
+        <item>كابۇل</item>
+        <item>تاشكەنت</item>
+        <item>ئىسلامئاباد</item>
+        <item>بومباي</item>
+        <item>ئومسك</item>
+        <item>ئالما-ئاتا</item>
+        <item>بانگالور</item>
+        <item>ھەيدەرئاباد</item>
+        <item>يېڭى دېھلى</item>
+        <item>كولومبو</item>
+        <item>چېنناي</item>
+        <item>نوۋوسىبىرسك</item>
+        <item>كاتماندۇ</item>
+        <item>نوۋوكۇزنېتسىك</item>
+        <item>كولكاتا</item>
+        <item>داكا</item>
+        <item>خوۋد</item>
+        <item>كىراسنويارسك</item>
+        <item>باڭكوك</item>
+        <item>كۇئالا لۇمپۇر</item>
+        <item>سىنگاپور</item>
+        <item>ئىركۇتسك</item>
+        <item>فوم پېن</item>
+        <item>خانوي</item>
+        <item>جاكارتا</item>
+        <item>ئۇلانباتور</item>
+        <item>شياڭگاڭ</item>
+        <item>پېرس</item>
+        <item>بېيجىڭ</item>
+        <item>مانىلا</item>
+        <item>تەيبېي</item>
+        <item>سېئۇل</item>
+        <item>ئامبون</item>
+        <item>ۋىلادىۋوستوك</item>
+        <item>ياقۇتسك</item>
+        <item>خاباروۋسك</item>
+        <item>ئادېلايدې</item>
+        <item>توكيو</item>
+        <item>يۇژنو-ساخالىنسك</item>
+        <item>خالىفاكس</item>
+        <item>گۇئام</item>
+        <item>كانبېررا</item>
+        <item>ماگادان</item>
+        <item>سىدنېي</item>
+        <item>پېتروپاۋلوۋسك-كامچاتسكىي</item>
+        <item>تاراۋا</item>
+        <item>ئوكلاند</item>
+        <item>ۋېللىڭتون</item>
+        <item>پاگو پاگو</item>
+        <item>دېنپاسار</item>
+        <item>بېرن</item>
+        <item>ئىسيۇرىخ</item>
+        <item>قاھىرە</item>
+        <item>ئابىجان</item>
+        <item>ئاككرا</item>
+        <item>ئەددىس-ئەبېبە</item>
+        <item>ئاممان</item>
+        <item>ئامستېردام</item>
+        <item>ئانادىر</item>
+        <item>ئەنقەرە</item>
+        <item>ئانتانانارىۋو</item>
+        <item>ئاشخابات</item>
+        <item>ئاسمارا</item>
+        <item>ئاستانا</item>
+        <item>ئاسۇنسىيون</item>
+        <item>ئوستىن</item>
+        <item>باغداد</item>
+        <item>بالتىمور</item>
+        <item>باماكو</item>
+        <item>بانگۇي</item>
+        <item>بارى</item>
+        <item>باسسې-تېررې</item>
+        <item>بېيرۇت</item>
+        <item>بېلگىراد</item>
+        <item>بېلىز شەھىرى</item>
+        <item>بىشكەك</item>
+        <item>بىسساۋ</item>
+        <item>بولوگنا</item>
+        <item>بوستون</item>
+        <item>بىرىجتون</item>
+        <item>برىسبان</item>
+        <item>بىريۇسسېل</item>
+        <item>كانارى ئاراللىرى</item>
+        <item>كاتانزارو</item>
+        <item>كەيېن</item>
+        <item>شارلوت</item>
+        <item>كىزىنوۋ</item>
+        <item>كلېۋېلاند</item>
+        <item>كولۇمبۇس</item>
+        <item>كوناكرى</item>
+        <item>كوپېنھاگېن</item>
+        <item>كورك</item>
+        <item>كروتون</item>
+        <item>داكار</item>
+        <item>دەمەشىق</item>
+        <item>دارېس سالام</item>
+        <item>دارۋىن</item>
+        <item>دېترويت</item>
+        <item>جىبۇتى</item>
+        <item>دوھا</item>
+        <item>دولا</item>
+        <item>دۈشەنبە</item>
+        <item>ئىستېر ئارىلى</item>
+        <item>ئېدىنبۇرگ</item>
+        <item>ئەل پاسو</item>
+        <item>فلورېنس</item>
+        <item>فورت-دە-فىرانسىيە</item>
+        <item>فرىتون</item>
+        <item>گابورون</item>
+        <item>گالاپاگوس ئاراللىرى</item>
+        <item>جەنۋە</item>
+        <item>گېنوۋا</item>
+        <item>جورجتون</item>
+        <item>گرىتۋىكېن</item>
+        <item>گىۋاتېمالا شەھىرى</item>
+        <item>گۇستاۋىيە</item>
+        <item>ھامبۇرگ</item>
+        <item>ھارارې</item>
+        <item>ھاۋانا</item>
+        <item>ھوبارت</item>
+        <item>خيۇستون</item>
+        <item>ئىندىياناپولىس</item>
+        <item>يوھاننېسبۇرگ</item>
+        <item>كامپالا</item>
+        <item>خارتۇم</item>
+        <item>كىڭستون</item>
+        <item>كۇۋەيت شەھىرى</item>
+        <item>لاگوس</item>
+        <item>لاس ۋېگاس</item>
+        <item>ليۇبليانا</item>
+        <item>خەيكوۋ</item>
+        <item>لۇيىسۋىل</item>
+        <item>ئۇئاندا</item>
+        <item>لۇساكا</item>
+        <item>ليۇكسېمبۇرگ</item>
+        <item>ئاۋمېن</item>
+        <item>مالابو</item>
+        <item>ئەر</item>
+        <item>ماگاۋا</item>
+        <item>ماناما</item>
+        <item>ماپۇتو</item>
+        <item>مارىگوت</item>
+        <item>مەككە</item>
+        <item>مېلبۇرن</item>
+        <item>مېمفىس</item>
+        <item>مېسسىنا</item>
+        <item>مىلانو</item>
+        <item>مىلۋوكى</item>
+        <item>موگادىشۇ</item>
+        <item>مونروۋىيە</item>
+        <item>مونتېۋىدېئو</item>
+        <item>مونترېيال</item>
+        <item>مىيۇنخېن</item>
+        <item>مۇسكات</item>
+        <item>ناپولى</item>
+        <item>ناتېرس</item>
+        <item>ئەنجامېنا</item>
+        <item>نيامېي</item>
+        <item>نوكچوت</item>
+        <item>نومىيە</item>
+        <item>نۇكۇئالوفا</item>
+        <item>نۇك</item>
+        <item>ئوساكا</item>
+        <item>ۋاگادوگو</item>
+        <item>پالېرمو</item>
+        <item>پاناما شەھىرى</item>
+        <item>پارامارىبو</item>
+        <item>پېرم</item>
+        <item>فىلادېلفىيە</item>
+        <item>پودگورىسا</item>
+        <item>پونتا دېلگادا</item>
+        <item>لۇئىس پورتى</item>
+        <item>پورت-ئو-پىرىنس</item>
+        <item>پورتلاند، ئورېگون</item>
+        <item>پيوڭياڭ</item>
+        <item>يانگون</item>
+        <item>رەسىفە</item>
+        <item>رېيكاۋىك</item>
+        <item>رىياد</item>
+        <item>ساينت دېنىس</item>
+        <item>سان ئانتونىيو</item>
+        <item>سان دىيېگو</item>
+        <item>سان جوز</item>
+        <item>سان جوز</item>
+        <item>سان خۇان</item>
+        <item>سان مارىنو</item>
+        <item>سان سالۋادور</item>
+        <item>سائانا</item>
+        <item>سانتو دومىنگو</item>
+        <item>شاڭخەي</item>
+        <item>شېنجېن</item>
+        <item>سكوپيې</item>
+        <item>ساينت جون</item>
+        <item>سۇۋا</item>
+        <item>تاھىتى</item>
+        <item>تېغۇسىگالپا</item>
+        <item>خوچىمىن شەھىرى</item>
+        <item>تيەنجىن</item>
+        <item>تورىنو</item>
+        <item>ۋادۇز</item>
+        <item>ۋاللېتتا</item>
+        <item>ۋېرونا</item>
+        <item>ۋىكتورىيە</item>
+        <item>ۋيېنا</item>
+        <item>ياموسسوكرو</item>
+        <item>يائۇندەي</item>
+        <item>زاگرېب</item>
+        <item>گۇاڭجۇ</item>
+        <item>كاردىف</item>
+        <item>رېگىنا</item>
+        <item>شارلوت ئامالىيە</item>
+        <item>ئاتلانتا</item>
+        <item>مايوت</item>
+        <item>ساينت پىيېر ۋە مىكېلون</item>
+        <item>ئوسلو</item>
+        <item>سرېدنېكوليمسك</item>
+        <item>سېۋېرو-كۇرىلسك</item>
+        <item>ۋۇخەن</item>
+        <item>چېڭدۇ</item>
+        <item>شىئەن</item>
+        <item>مورېسبى پورتى</item>
+        <item>داۋاۋ شەھىرى</item>
+        <item>چۇڭچىڭ</item>
+        <item>شېنياڭ</item>
+        <item>نەنجىڭ</item>
+        <item>خاربىن</item>
+        <item>جىنەن</item>
+        <item>جېڭجۇ</item>
+        <item>كۇنمىڭ</item>
+        <item>چاڭچۈن</item>
+        <item>فۇجۇ</item>
+        <item>كۇچىڭ</item>
+        <item>ماكاسسار</item>
+        <item>خاڭجۇ</item>
+        <item>چىڭداۋ</item>
+        <item>نەننىڭ</item>
+        <item>ئۈرۈمچى</item>
+        <item>ناسسو</item>
+        <item>نىكوسىيا</item>
+        <item>دىلى</item>
+        <item>روۋد تاۋن</item>
+        <item>لومە</item>
+        <item>روزىيو</item>
+        <item>لىبرېۋىللا</item>
+        <item>مارسەي</item>
+        <item>ماسېرۇ</item>
+        <item>ماجۇرو</item>
+        <item>موناكو</item>
+        <item>باندار سېرى بېگاۋان</item>
+        <item>بانجۇل</item>
+        <item>بۇسان</item>
+        <item>بۇجۇمبۇرا</item>
+        <item>بىراززاۋىللا</item>
+        <item>ۋيېنتيان</item>
+        <item>ۋىندخوك</item>
+        <item>سارايېۋو</item>
+        <item>سايپان</item>
+        <item>ساۋ تومېي</item>
+        <item>ساينت جورج</item>
+        <item>ستانلېي</item>
+        <item>ئادېن</item>
+        <item>ئاپىيا</item>
+        <item>ئاندوررا لا ۋېللا</item>
+        <item>لائيۇن</item>
+        <item>ۋىللېمستاد</item>
+        <item>ئامبابانېي</item>
+        <item>كاسترىيس</item>
+        <item>كورور</item>
+        <item>كانكۇن</item>
+        <item>كىگالى</item>
+        <item>كىڭستاۋن</item>
+        <item>تېل ئاۋىۋ</item>
+        <item>تورشاۋن</item>
+        <item>تىرانا</item>
+        <item>تىمفۇ</item>
+        <item>پورتو-نوۋو</item>
+        <item>پىرايا</item>
+        <item>فىرانكفۇرت</item>
+        <item>پىرىستىنا</item>
+        <item>ھامىلتون</item>
+        <item>ھونىيارا</item>
+        <item>西班牙港</item>
+        <item>مىنېئاپولىس</item>
+        <item>ھىلو</item>
+        <item>ئورلاندو</item>
+        <item>كانساس شەھرى</item>
+        <item>يېڭى ئورلېئان</item>
+        <item>ناشۋىل</item>
+        <item>تۇسون</item>
+        <item>تامپا</item>
+        <item>جەكسونۋىل</item>
+        <item>ئوكلاھوما شەھرى</item>
+        <item>ئالبۇكەركى</item>
+        <item>ئوماھا</item>
+        <item>ۋىرگىنىيە-بىچ</item>
+        <item>بويسې</item>
+        <item>دېمويىن</item>
+        <item>بىرمىڭھام</item>
+        <item>سولت-لەيك-سىتى</item>
+        <item>لىتل-روك</item>
+        <item>سىيۇ-فالس</item>
+        <item>جەكسون</item>
+        <item>چارلېستون، جەنۇبىي كارولىنا</item>
+        <item>فارگو</item>
+        <item>بىللىڭز</item>
+        <item>پورتلاند، مەيىن</item>
+        <item>شايئەن</item>
+        <item>چارلېستون، غەربىي ۋىرگىنىيە</item>
+        <item>پىتسبۇرگ</item>
+        <item>گرىن بەي</item>
+        <item>سايىنت لۇئىس</item>
+        <item>瓦利</item>
+        <item>UTC (协调通用时间)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>ئافغانىستان</item>
+        <item>ئالجېرىيە</item>
+        <item>ساموئا</item>
+        <item>ئانتىگۇئا ۋە باربۇدا</item>
+        <item>ئارگېنتىنا</item>
+        <item>ئەرمېنىيە</item>
+        <item>ئاۋستىرالىيە</item>
+        <item>ئەزەربەيجان</item>
+        <item>بېنگال</item>
+        <item>باشقورتستان جۇمھۇرىيىتى</item>
+        <item>بېلارۇسىيە</item>
+        <item>بولىۋىيە</item>
+        <item>بىرازىلىيە</item>
+        <item>بۇلغارىيە</item>
+        <item>كامبودژا</item>
+        <item>كانادا</item>
+        <item>چىلى</item>
+        <item>جۇڭگو</item>
+        <item>كولومبىيە</item>
+        <item>چېخ جۇمھۇرىيىتى</item>
+        <item>كونگو جۇمھۇرىيىتى</item>
+        <item>ئېكۋادور</item>
+        <item>ئېستونىيە</item>
+        <item>فىنلاندىيە</item>
+        <item>فىرانسىيە</item>
+        <item>گىرۇزىيە</item>
+        <item>گېرمانىيە</item>
+        <item>گىرېتسىيە</item>
+        <item>ۋېنگىرىيە</item>
+        <item>ھىندىستان</item>
+        <item>ھىندونېزىيە</item>
+        <item>ئىران</item>
+        <item>ئىرېلاندىيە</item>
+        <item>ئىسرائىلىيە</item>
+        <item>ئىتالىيە</item>
+        <item>ياپونىيە</item>
+        <item>قازاقىستان</item>
+        <item>كېنىيە</item>
+        <item>كىرىباتى</item>
+        <item>لاتۋىيە</item>
+        <item>لىتۋانىيە</item>
+        <item>مالايسىيە</item>
+        <item>مېكسىكا</item>
+        <item>موڭغۇلىيە</item>
+        <item>ماراكەش</item>
+        <item>نېپال</item>
+        <item>يېڭى زېلاندىيە</item>
+        <item>پاكىستان</item>
+        <item>پېرۇ</item>
+        <item>فىلىپپىن</item>
+        <item>پولشا</item>
+        <item>پورتۇگالىيە</item>
+        <item>خەرىتە</item>
+        <item>جەنۇبىي كورېيە</item>
+        <item>سىنگاپور جۇمھۇرىيىتى</item>
+        <item>لىۋىيە</item>
+        <item>رومىنىيە</item>
+        <item>رۇسىيە</item>
+        <item>سەئۇدىي ئەرەبىستان</item>
+        <item>سىلوۋاكىيە</item>
+        <item>جەنۇبىي ئافرىقا</item>
+        <item>ئىسپانىيە</item>
+        <item>سرىلانكا</item>
+        <item>شىۋېتسىيە</item>
+        <item>تەيۋەن</item>
+        <item>تايلاند</item>
+        <item>تۇنىس</item>
+        <item>تۈركىيە</item>
+        <item>ئە ب خ</item>
+        <item>بىرلەشمە پادىشاھلىق</item>
+        <item>ئۇكرائىنا</item>
+        <item>ئامېرىكا</item>
+        <item>ئۆزبېكىستان</item>
+        <item>ۋېنېسۇئېلا</item>
+        <item>‏‏ۋىيېتنام</item>
+        <item>ئە ۋىرگىن ئا</item>
+        <item>شىۋېتسارىيە</item>
+        <item>مىسىر</item>
+        <item>كوتېدىۋويرې</item>
+        <item>گانا</item>
+        <item>ئېفىئوپىيە</item>
+        <item>ئىيوردانىيە</item>
+        <item>گوللاندىيە</item>
+        <item>ماداغاسقار</item>
+        <item>تۈركمەنىستان</item>
+        <item>ئېرىترىيە</item>
+        <item>پاراگۋاي</item>
+        <item>ئىراق</item>
+        <item>مالى</item>
+        <item>ئوتتۇرا ئافرىقا جۇمھۇرىيىتى</item>
+        <item>گىۋادىلوپ</item>
+        <item>لىۋان</item>
+        <item>سېربىيە</item>
+        <item>بېلىز</item>
+        <item>قىرغىزىستان</item>
+        <item>گىنىيە بىسساۋ</item>
+        <item>باربادوس</item>
+        <item>بېلگىيە</item>
+        <item>فىرانسىيەگە قاراشلىق گىۋىيانا</item>
+        <item>مولدوۋا</item>
+        <item>گىۋىنىيە</item>
+        <item>دانىيە</item>
+        <item>سېنېگال</item>
+        <item>سۈرىيە</item>
+        <item>تانزانىيە</item>
+        <item>جىبۇتى</item>
+        <item>قاتار</item>
+        <item>كامېرون</item>
+        <item>تاجىكىستان</item>
+        <item>شوتلاندىيە</item>
+        <item>مارتىنىكا</item>
+        <item>سېررالېيون</item>
+        <item>بوتسۋانا</item>
+        <item>گۇيانا</item>
+        <item>جەنۇبىي جورجىيە</item>
+        <item>گىۋاتېمالا</item>
+        <item>ساينت بارتېلېمى</item>
+        <item>زىمبابۋې</item>
+        <item>كۇبا</item>
+        <item>ئۇگاندا</item>
+        <item>سۇدان</item>
+        <item>يامايكا</item>
+        <item>كۇۋەيت</item>
+        <item>نىگېرىيە</item>
+        <item>ئانگولا</item>
+        <item>زامبىيە</item>
+        <item>ليۇكسېمبۇرگ</item>
+        <item>ئېكۋاتور گىۋىنېيەسى</item>
+        <item>مالدىۋېس</item>
+        <item>نىكاراگۇئا</item>
+        <item>بەھرەين</item>
+        <item>موزامبىك</item>
+        <item>ساينت مارتىن</item>
+        <item>سومالى</item>
+        <item>لىبېرىيە</item>
+        <item>ئۇرۇگۋاي</item>
+        <item>ئومان</item>
+        <item>چاد</item>
+        <item>نىگېر</item>
+        <item>ماۋرىتانىيە</item>
+        <item>يېڭى كالېدونىيە</item>
+        <item>تونگا</item>
+        <item>گىرېنلاندىيە</item>
+        <item>بۇركىنا فاسو</item>
+        <item>پاناما</item>
+        <item>سۇرىنام</item>
+        <item>قارا تاغ</item>
+        <item>ماۋرىتىيۇس</item>
+        <item>ھايتى</item>
+        <item>چاۋشيەن دېموكراتىك خەلق جۇمھۇرىيىتى پيوڭياڭ</item>
+        <item>ميانمار</item>
+        <item>ئىسلاندىيە</item>
+        <item>رېيۇنىيون ئارىلى</item>
+        <item>كوستا رىكا</item>
+        <item>پۇئېرتو رىكو</item>
+        <item>ئەل سالۋادور</item>
+        <item>يەمەن</item>
+        <item>دومىنىكا جۇمھۇرىيىتى</item>
+        <item>يۇنان</item>
+        <item>فىجى</item>
+        <item>فىرانسىيەگە قاراشلىق پولىنېزىيە</item>
+        <item>ھوندۇراس</item>
+        <item>لىچتېنشتېين</item>
+        <item>مالتا</item>
+        <item>سېيشېل</item>
+        <item>ئاۋستىرىيە</item>
+        <item>كىرودىيە</item>
+        <item>ۋالېس</item>
+        <item>ئا ق ش ۋرگ</item>
+        <item>سلوۋېنىيە</item>
+        <item>سان مارىنو</item>
+        <item>نورۋېگىيە</item>
+        <item>پاپۇئا يېڭى گىۋىنىيەسى</item>
+        <item>باھاما</item>
+        <item>سىپرۇس</item>
+        <item>شەرقىي تىمور</item>
+        <item>توگو</item>
+        <item>دومىنىكا</item>
+        <item>گابون</item>
+        <item>لېسوتو</item>
+        <item>مارشال ئاراللىرى</item>
+        <item>موناكو</item>
+        <item>بىرۇنېي</item>
+        <item>گامبىيە</item>
+        <item>بۇرۇندى</item>
+        <item>كونگو دېموكراتىك جۇمھۇرىيىتى</item>
+        <item>لائوس</item>
+        <item>نامبىيە</item>
+        <item>بوسنىيە-گېرتسېگوۋىنا</item>
+        <item>سايپان</item>
+        <item>ساۋ تومېي ۋە پىرىنسىپى</item>
+        <item>گىرېنادا</item>
+        <item>فالكلاند ئاراللىرى</item>
+        <item>ئامېرىكا ساموئا</item>
+        <item>ئاندوررا</item>
+        <item>ساھراۋى جۇمھۇرىيىتى</item>
+        <item>كۇراچاۋ</item>
+        <item>ئېسۋاتىنى</item>
+        <item>ساينت لۇسىيا</item>
+        <item>پالائۇ</item>
+        <item>رىۋاندا</item>
+        <item>ساينت ۋىنسېنت ۋە گىرېنادڭنېس</item>
+        <item>فارو ئاراللىرى</item>
+        <item>ئالبانىيە</item>
+        <item>بۇتان</item>
+        <item>بېنىن</item>
+        <item>يېشىل تۇمشۇق</item>
+        <item>كوسوۋو</item>
+        <item>بېرمۇدا</item>
+        <item>سولومون ئاراللىرى</item>
+        <item>جۇڭگو تەيۋەن</item>
+        <item>ترىنىداد ۋە توباگو</item>
+        <item>ئانگۋىللا</item>
+        <item>UTC (协调通用时间)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>ئەسكەرتمە ھازىردىن باشلاپ 1 مىنۇتقا تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %2$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s ۋە %2$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %2$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s، %2$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s ۋە %2$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s، %2$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s ۋە %2$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s، %2$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ %1$s، %2$s ۋە %3$s گە تەڭشەلدى.</item>
+        <item>ئەسكەرتمە ھازىردىن باشلاپ، %1$s، %2$s، %3$s ۋە %4$s گە تەڭشەلدى.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

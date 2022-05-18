@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:theme="@style/AppTheme" android:orientation="vertical" android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="192.0dip" style="@style/Widget.Material.AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/settings" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" style="@style/CollapsingToolbarStyle">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.core.widget.NestedScrollView android:theme="@style/AppTheme" android:id="@id/scrollView" android:background="?roundedCornerColor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior">
+            <TextView android:id="@id/description" android:paddingLeft="@dimen/activity_horizontal_ss_margin" android:paddingTop="@dimen/basic_dream_description_top_margin" android:paddingRight="@dimen/activity_horizontal_ss_margin" android:paddingBottom="@dimen/basic_dream_description_bottom_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shortcut_list_desc" style="@style/BasicDreamDescription"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </androidx.core.widget.NestedScrollView>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/scrollView">
+            <ProgressBar android:layout_gravity="center" android:id="@id/circleProgress" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="72.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/shortcutListView" android:background="@color/background_color" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/activity_horizontal_ss_margin" android:layout_marginEnd="@dimen/activity_horizontal_ss_margin" app:layout_behavior="@string/sesl_appbar_scrolling_view_behavior"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

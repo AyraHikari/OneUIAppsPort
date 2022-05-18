@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">එලාමය දින %dකින්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">එලාමය දින %dකින්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">එලාමය පැය %dකින්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">එලාමය පැය %dකින්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">පැය %d විනාඩි 1කින් එලාමය</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පැය %d විනාඩි 1කින් එලාමය</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">එලාමය විනාඩි %dකින්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">එලාමය විනාඩි %dකින්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">විනාඩි %dකින්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dකින්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">එලාම් %dකට වඩා එක් කළ නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">එලාම් %dකට වඩා එක් කළ නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">විනාඩි %dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">පසුබිම් %dක් මකන්න ද?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">පසුබිම් %dක් මකන්න ද?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">නව දැනුම්දීම් %dක්</item>
+        <item quantity="one">නව දැනුම්දීම් %dක්</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%dක් තේරිණි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%dක් තේරිණි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">විනාඩි %dකට කලින්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dකට කලින්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s, සහ තව %3$dක්</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s, සහ තව %3$dක්</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">නිදන වේලාව: පැය %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">නිදන වේලාව: පැය %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">නිදන වේලාව: විනාඩි %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">නිදන වේලාව: විනාඩි %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">විනාඩි %dක් කල් දමන්න</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dක් කල් දමන්න</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">විනාඩි %dක් අඩුයි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dක් අඩුයි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">විනාඩි %dක් වැඩියි</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">විනාඩි %dක් වැඩියි</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">පෙර සැකසූ මුහුර්තක %dකට වඩා එක් කළ නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d පෙර සැකසූ මුහුර්තකයකට වඩා එක් කළ නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">නගර %dකට වඩා එක් කළ නොහැක.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">නගර %dකට වඩා එක් කළ නොහැක.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

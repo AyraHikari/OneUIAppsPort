@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionModeBottomBarStyle" parent="@style/Widget.Design.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_bar_item_icon_color</item>
+        <item name="itemTextColor">@color/bottom_bar_item_text_color</item>
+    </style>
+    <style name="BedTimeWakeUpTimeButtonSelected">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sesl_tablayout_text_color_selected_dark</item>
+        <item name="android:fontFamily">@string/roboto_regular</item>
+    </style>
+    <style name="BedTimeWakeUpTimeButtonUnSelected">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/sesl_tablayout_text_color_default_dark</item>
+        <item name="android:fontFamily">@string/roboto_regular</item>
+    </style>
+    <style name="BottomBarStyle" parent="@style/Widget.Design.BottomNavigationView.Text">
+        <item name="android:background">@drawable/alarm_edit_app_bar_bg</item>
+        <item name="android:elevation">@dimen/clock_tab_divider_height</item>
+        <item name="fontFamily">@string/sec_roboto_light_font_family</item>
+        <item name="itemTextColor">@color/sesl_bottom_nav_text_color_dark</item>
+    </style>
+    <style name="ClockActionBarTheme" parent="@style/Theme.AppCompat" />
+    <style name="ClockActionModeStyle" parent="@android:style/Widget.DeviceDefault.ActionMode">
+        <item name="android:background">@drawable/actionbar_bg_divider</item>
+    </style>
+    <style name="ClockCollapsingToolbarLayoutStyle" parent="@style/Widget.Design.CollapsingToolbar" />
+    <style name="ClockDesignCollapsingToolbarTitle" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">@dimen/alarm_appbar_title_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">@dimen/alarm_appbar_title_text_line_spacing</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+    <style name="ClockNoActionBarStyle" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="ClockThemeAppCompat" parent="@style/Theme.AppCompat" />
+    <style name="ClockToolbarBackgroundStyle" parent="@style/Widget.AppCompat.Toolbar" />
+    <style name="ClockTtablayoutheme" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="DefaultThemeTWDatePicker" parent="@style/MyCustomThemeTWDatePicker">
+        <item name="android:colorBackground">@color/window_content_area_color</item>
+    </style>
+    <style name="EditTextSamsungStyle" parent="@style/Widget.AppCompat.EditText" />
+    <style name="FtuStartEndTimePickerTheme" parent="@style/Theme.AppCompat.PickerDialog.TimePicker">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+    <style name="ListDataSubHeaderStyle" parent="@style/Base.Widget.AppCompat.TextView.ListSeparator" />
+    <style name="MyCustomThemeForDialog" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
+        <item name="android:colorBackground">@color/window_content_area_color</item>
+        <item name="android:colorPrimary">@color/alert_dialog_text_color</item>
+        <item name="android:colorPrimaryDark">@color/alert_dialog_text_color</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_bg_color</item>
+        <item name="android:colorEdgeEffect">@color/primary</item>
+        <item name="android:windowLightNavigationBar">@bool/light_navigation_bar_icon_color</item>
+    </style>
+    <style name="MyCustomThemeTWDatePicker" parent="@style/Theme.AppCompat.PickerDialog">
+        <item name="android:colorPrimary">@color/alert_dialog_text_color</item>
+        <item name="android:colorPrimaryDark">@color/alert_dialog_text_color</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+    </style>
+    <style name="SetupWizardThemeForDialog" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
+        <item name="android:colorBackground">@color/setup_wizard_bg_color</item>
+        <item name="android:windowMinWidthMajor">@dimen/sesl_dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@dimen/sesl_dialog_min_width_minor</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_bg_color</item>
+        <item name="android:colorEdgeEffect">@color/primary</item>
+        <item name="android:windowLightNavigationBar">@bool/light_navigation_bar_icon_color</item>
+    </style>
+    <style name="SwitchStyle" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:colorPrimary">@color/color_control_activate</item>
+        <item name="colorPrimary">@color/color_control_activate</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.AppCompat.DayNight.PickerDialog.DatePicker" parent="@style/Theme.AppCompat.PickerDialog.DatePicker" />
+    <style name="Theme.AppCompat.DayNight.PickerDialog.TimePicker" parent="@style/Theme.AppCompat.PickerDialog.TimePicker" />
+    <style name="Theme.ClockPackage" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:statusBarColor">?colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+    </style>
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="WeatherUnitPopup" parent="@android:style/Widget.DeviceDefault.ListPopupWindow">
+        <item name="android:overlapAnchor">true</item>
+    </style>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="@style/Widget.MaterialComponents.BottomAppBar" />
+    <style name="Widget.MaterialComponents.NavigationRailView.PrimarySurface" parent="@style/Widget.MaterialComponents.NavigationRailView" />
+    <style name="WorldclockCollapsingToolbarTitle" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded" />
+</resources>

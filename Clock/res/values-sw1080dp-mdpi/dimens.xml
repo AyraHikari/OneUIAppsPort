@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="stopwatch_common_timeview_layout_expand_height">390.0dip</dimen>
+    <dimen name="stopwatch_laptime_margin_top">34.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">338.0dip</dimen>
+</resources>

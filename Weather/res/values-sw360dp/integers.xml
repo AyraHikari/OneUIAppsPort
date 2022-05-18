@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="edge_selected_max_length">25</integer>
+    <integer name="widget_grid_height">131</integer>
+    <integer name="widget_grid_height_ntt">110</integer>
+    <integer name="widget_grid_width">102</integer>
+</resources>

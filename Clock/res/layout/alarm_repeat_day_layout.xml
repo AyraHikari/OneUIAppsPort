@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:ellipsize="end" android:id="@id/alarm_list_alert_date" android:visibility="gone" android:maxLines="2" android:textAlignment="viewEnd" style="@style/AlarmListText.Days" />
+    <com.google.android.flexbox.FlexboxLayout android:id="@id/alarm_alert_repeat_days" android:layout_width="fill_parent" android:layout_height="wrap_content" app:alignContent="stretch" app:alignItems="stretch" app:flexWrap="wrap" app:showDivider="middle">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_sunday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_sunday" android:text="@string/sun1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_monday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_monday" android:layout_margin="0.0dip" android:text="@string/mon1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_tuesday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_tuesday" android:text="@string/tue1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_wednesday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_wednesday" android:text="@string/wed1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_thursday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_thursday" android:text="@string/thu1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_friday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_friday" android:text="@string/fri1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_alignSelf="flex_end">
+            <View android:id="@id/dot_saturday" style="@style/AlarmListText.RepeatDotDays" />
+            <TextView android:id="@id/letter_saturday" android:text="@string/sat1" style="@style/AlarmListText.RepeatDays" />
+        </LinearLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

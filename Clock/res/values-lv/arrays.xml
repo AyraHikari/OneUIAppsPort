@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>Midveja</item>
+        <item>Honolulu</item>
+        <item>Havaja</item>
+        <item>Aļaska</item>
+        <item>Ankoridža</item>
+        <item>Sanfrancisko</item>
+        <item>Vankūvera</item>
+        <item>Sietla</item>
+        <item>Losandželosa</item>
+        <item>Tihuāna</item>
+        <item>Kalgari</item>
+        <item>Fīniksa</item>
+        <item>Masatlana</item>
+        <item>Denvera</item>
+        <item>Mehiko</item>
+        <item>Vinipega</item>
+        <item>Diego Garsia</item>
+        <item>Dalasa</item>
+        <item>Čikāga</item>
+        <item>Toronto</item>
+        <item>Maiami</item>
+        <item>Lima</item>
+        <item>Kito</item>
+        <item>Vašingtona</item>
+        <item>Otava</item>
+        <item>Ņujorka</item>
+        <item>Bogota</item>
+        <item>Santjago</item>
+        <item>Lapasa</item>
+        <item>Karakasa</item>
+        <item>Buenosairesa</item>
+        <item>Ņūfaundlenda</item>
+        <item>Sentdžonsa</item>
+        <item>Sanpaulu</item>
+        <item>Brazilja</item>
+        <item>Riodežaneiro</item>
+        <item>Fernando de Noronha</item>
+        <item>Azoru salas</item>
+        <item>Lisabona</item>
+        <item>Kasablanka</item>
+        <item>Dublina</item>
+        <item>Rabāta</item>
+        <item>Madride</item>
+        <item>Setlementa</item>
+        <item>Londona</item>
+        <item>Kingstona</item>
+        <item>Barselona</item>
+        <item>Parīze</item>
+        <item>Alžīra</item>
+        <item>Tunisa</item>
+        <item>Tripole</item>
+        <item>Berlīne</item>
+        <item>Roma</item>
+        <item>Prāga</item>
+        <item>Kinšasa</item>
+        <item>Stokholma</item>
+        <item>Bratislava</item>
+        <item>Keiptauna</item>
+        <item>Budapešta</item>
+        <item>Varšava</item>
+        <item>Kaļiņingrada</item>
+        <item>Sofija</item>
+        <item>Atēnas</item>
+        <item>Ļvova</item>
+        <item>Helsinki</item>
+        <item>Rīga</item>
+        <item>Tallina</item>
+        <item>Bukareste</item>
+        <item>Viļņa</item>
+        <item>Lubumbaši</item>
+        <item>Minska</item>
+        <item>Sanktpēterburga</item>
+        <item>Stambula</item>
+        <item>Kamčatka</item>
+        <item>Kijeva</item>
+        <item>Jeruzaleme</item>
+        <item>Maskava</item>
+        <item>Harkova</item>
+        <item>Nairobi</item>
+        <item>Džida</item>
+        <item>Volgograda</item>
+        <item>Erevāna</item>
+        <item>Tbilisi</item>
+        <item>Baku</item>
+        <item>Čita</item>
+        <item>Samara</item>
+        <item>Teherāna</item>
+        <item>Iževska</item>
+        <item>Abū Dabī</item>
+        <item>Dubaija</item>
+        <item>Ufa</item>
+        <item>Jekaterinburga</item>
+        <item>Čeļabinska</item>
+        <item>Karači</item>
+        <item>Kabula</item>
+        <item>Taškenta</item>
+        <item>Islāmābāda</item>
+        <item>Mumbaja</item>
+        <item>Omska</item>
+        <item>Alma-Ata</item>
+        <item>Bangalora</item>
+        <item>Hiderabada</item>
+        <item>Ņūdeli</item>
+        <item>Kolombo</item>
+        <item>Čenaja</item>
+        <item>Novosibirska</item>
+        <item>Katmandu</item>
+        <item>Novokuzņecka</item>
+        <item>Kalkuta</item>
+        <item>Daka</item>
+        <item>Hovda</item>
+        <item>Krasnojarska</item>
+        <item>Bangkoka</item>
+        <item>Kualalumpūra</item>
+        <item>Singapūra</item>
+        <item>Irkutska</item>
+        <item>Pnompeņa</item>
+        <item>Hanoja</item>
+        <item>Džakarta</item>
+        <item>Ulanbatora</item>
+        <item>Honkonga</item>
+        <item>Pērta</item>
+        <item>Pekina</item>
+        <item>Manila</item>
+        <item>Taipeja</item>
+        <item>Seula</item>
+        <item>Ambona</item>
+        <item>Vladivostoka</item>
+        <item>Jakutska</item>
+        <item>Habarovska</item>
+        <item>Adelaida</item>
+        <item>Tokija</item>
+        <item>Dienvidsahalīna</item>
+        <item>Halifaksa</item>
+        <item>Guama</item>
+        <item>Kanbera</item>
+        <item>Magadana</item>
+        <item>Sidneja</item>
+        <item>Petropavlovska-Kamčatska</item>
+        <item>Tarava</item>
+        <item>Oklenda</item>
+        <item>Velingtona</item>
+        <item>Pagopago</item>
+        <item>Denpasara</item>
+        <item>Berne</item>
+        <item>Cīrihe</item>
+        <item>Kaira</item>
+        <item>Abidžana</item>
+        <item>Akra</item>
+        <item>Adisabeba</item>
+        <item>Ammāna</item>
+        <item>Amsterdama</item>
+        <item>Anadira</item>
+        <item>Ankara</item>
+        <item>Antananarivu</item>
+        <item>Ašgabata</item>
+        <item>Asmera</item>
+        <item>Astana</item>
+        <item>Asunsjona</item>
+        <item>Ostina</item>
+        <item>Bagdāde</item>
+        <item>Baltimora</item>
+        <item>Bamako</item>
+        <item>Bangi</item>
+        <item>Bari</item>
+        <item>Bastēra</item>
+        <item>Beiruta</item>
+        <item>Belgrada</item>
+        <item>Beliza</item>
+        <item>Biškeka</item>
+        <item>Bisava</item>
+        <item>Boloņa</item>
+        <item>Bostona</item>
+        <item>Bridžtauna</item>
+        <item>Brisbena</item>
+        <item>Brisele</item>
+        <item>Kanāriju salas</item>
+        <item>Katandzāro</item>
+        <item>Kajenna</item>
+        <item>Šarlote</item>
+        <item>Kišiņeva</item>
+        <item>Klīvlenda</item>
+        <item>Kolumbusa</item>
+        <item>Konakri</item>
+        <item>Koepnhāgena</item>
+        <item>Korka</item>
+        <item>Krotone</item>
+        <item>Dakāra</item>
+        <item>Damaska</item>
+        <item>Dāresalāma</item>
+        <item>Dārvina</item>
+        <item>Detroita</item>
+        <item>Džibutija</item>
+        <item>Doha</item>
+        <item>Duala</item>
+        <item>Dušanbe</item>
+        <item>Lieldienu sala</item>
+        <item>Edinburga</item>
+        <item>Elpaso</item>
+        <item>Florence</item>
+        <item>Fordefransa</item>
+        <item>Frītauna</item>
+        <item>Gaborone</item>
+        <item>Galapagu salas</item>
+        <item>Ženēva</item>
+        <item>Dženova</item>
+        <item>Džordžtauna</item>
+        <item>Grītvikena</item>
+        <item>Gvatemala</item>
+        <item>Gustavja</item>
+        <item>Hamburga</item>
+        <item>Harare</item>
+        <item>Havana</item>
+        <item>Hobārta</item>
+        <item>Hjūstona</item>
+        <item>Indianapolisa</item>
+        <item>Johannesburga</item>
+        <item>Kampala</item>
+        <item>Hartūma</item>
+        <item>Kingstona</item>
+        <item>Kuveita</item>
+        <item>Lagosa</item>
+        <item>Lasvegasa</item>
+        <item>Ļubļana</item>
+        <item>Haikou</item>
+        <item>Luisvila</item>
+        <item>Luanda</item>
+        <item>Lusaka</item>
+        <item>Luksembruga</item>
+        <item>Makau</item>
+        <item>Malabu</item>
+        <item>Male</item>
+        <item>Managva</item>
+        <item>Manāma</item>
+        <item>Maputo</item>
+        <item>Marigo</item>
+        <item>Meka</item>
+        <item>Melburna</item>
+        <item>Memfisa</item>
+        <item>Mesīna</item>
+        <item>Milāna</item>
+        <item>Milvokī</item>
+        <item>Mogadiša</item>
+        <item>Monrovija</item>
+        <item>Montevideo</item>
+        <item>Monreāla</item>
+        <item>Minhene</item>
+        <item>Maskata</item>
+        <item>Neapole</item>
+        <item>Natersa</item>
+        <item>Ndžamena</item>
+        <item>Niameja</item>
+        <item>Nuakšota</item>
+        <item>Numea</item>
+        <item>Nukualofa</item>
+        <item>Nūka</item>
+        <item>Osaka</item>
+        <item>Vagadugu</item>
+        <item>Palermo</item>
+        <item>Panama</item>
+        <item>Paramaribo</item>
+        <item>Perma</item>
+        <item>Filadelfija</item>
+        <item>Podgorica</item>
+        <item>Pontadelgada</item>
+        <item>Portluī</item>
+        <item>Portoprensa</item>
+        <item>Portlenda, Oregona</item>
+        <item>Phenjana</item>
+        <item>Jangona</item>
+        <item>Resifi</item>
+        <item>Reikjavīka</item>
+        <item>Rijāda</item>
+        <item>Sendenī</item>
+        <item>Sanantonio</item>
+        <item>Sandjego</item>
+        <item>Sanhosē</item>
+        <item>Sanhosē</item>
+        <item>Sanhuana</item>
+        <item>Sanmarīno</item>
+        <item>Sansalvadora</item>
+        <item>Sana</item>
+        <item>Santodomingo</item>
+        <item>Šanhaja</item>
+        <item>Šeņdžeņa</item>
+        <item>Skopje</item>
+        <item>Sentdžonsa</item>
+        <item>Suva</item>
+        <item>Taiti</item>
+        <item>Tegusigalpa</item>
+        <item>Hošiminsitija</item>
+        <item>Tiaņdzjiņa</item>
+        <item>Turīna</item>
+        <item>Vaduca</item>
+        <item>Valeta</item>
+        <item>Verona</item>
+        <item>Viktorija</item>
+        <item>Vīne</item>
+        <item>Jamusukro</item>
+        <item>Jaunde</item>
+        <item>Zagreba</item>
+        <item>Guandžou</item>
+        <item>Kārdifa</item>
+        <item>Ridžaina</item>
+        <item>Šarlotamālija</item>
+        <item>Atlanta</item>
+        <item>Majota</item>
+        <item>Senpjēra un Mikelona</item>
+        <item>Oslo</item>
+        <item>Sredņekolimska</item>
+        <item>Severo Kuriļska</item>
+        <item>Uaņa</item>
+        <item>Čendu</item>
+        <item>Sjiaņa</item>
+        <item>Portmorsbija</item>
+        <item>Davao</item>
+        <item>Čuncjina</item>
+        <item>Šenjana</item>
+        <item>Naņdzjina</item>
+        <item>Harbina</item>
+        <item>Dzjiņaņa</item>
+        <item>Džendžou</item>
+        <item>Kuņmina</item>
+        <item>Čančuņa</item>
+        <item>Fudžou</item>
+        <item>Kučinga</item>
+        <item>Makasara</item>
+        <item>Hangžou</item>
+        <item>Cjindao</item>
+        <item>Naņnina</item>
+        <item>Urumči</item>
+        <item>Naso</item>
+        <item>Nikozija</item>
+        <item>Dili</item>
+        <item>Rodtauna</item>
+        <item>Lome</item>
+        <item>Rozo</item>
+        <item>Librevilla</item>
+        <item>Marseļa</item>
+        <item>Maseru</item>
+        <item>Madžuro</item>
+        <item>Monako</item>
+        <item>Bandarseribegavana</item>
+        <item>Bandžula</item>
+        <item>Pusana</item>
+        <item>Budžumbura</item>
+        <item>Brazavila</item>
+        <item>Vjenčana</item>
+        <item>Vindhuka</item>
+        <item>Sarajeva</item>
+        <item>Saipana</item>
+        <item>Santome</item>
+        <item>Sentdžordžesa</item>
+        <item>Stenli</item>
+        <item>Adena</item>
+        <item>Apija</item>
+        <item>Andora la Velja</item>
+        <item>Ajūna</item>
+        <item>Vilemstade</item>
+        <item>Mbabane</item>
+        <item>Kastri</item>
+        <item>Korora</item>
+        <item>Kankūna</item>
+        <item>Kigali</item>
+        <item>Kingstona</item>
+        <item>Telaviva</item>
+        <item>Touršhavna</item>
+        <item>Tirāna</item>
+        <item>Thimphu</item>
+        <item>Portunovu</item>
+        <item>Praja</item>
+        <item>Frankfurte</item>
+        <item>Priština</item>
+        <item>Hamiltona</item>
+        <item>Honiara</item>
+        <item>Portofspeina</item>
+        <item>Mineapolisa</item>
+        <item>Hilo</item>
+        <item>Orlando</item>
+        <item>Kanzassitija</item>
+        <item>Ņūorleāna</item>
+        <item>Nešvila</item>
+        <item>Tūsona</item>
+        <item>Tampa</item>
+        <item>Džeksonvila</item>
+        <item>Oklahomasitija</item>
+        <item>Albukerke</item>
+        <item>Omaha</item>
+        <item>Virdžīnijabīča</item>
+        <item>Boisi</item>
+        <item>Demoina</item>
+        <item>Birmingema</item>
+        <item>Soltleiksitija</item>
+        <item>Litlroka</item>
+        <item>Sūfolsa</item>
+        <item>Džeksona</item>
+        <item>Čārlstona, Dienvidkarolīna</item>
+        <item>Fārgo</item>
+        <item>Bilingsa</item>
+        <item>Portlenda, Mena</item>
+        <item>Šaiena</item>
+        <item>Čārlstona, Rietumvirdžīnija</item>
+        <item>Pitsburga</item>
+        <item>Grīnbeja</item>
+        <item>Sentluisa</item>
+        <item>Veli</item>
+        <item>UTC (koordinētais universālais laiks)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Afganistāna</item>
+        <item>Alžīrija</item>
+        <item>Samoa</item>
+        <item>Antigva un Barbuda</item>
+        <item>Argentīna</item>
+        <item>Armēnija</item>
+        <item>Austrālija</item>
+        <item>Azerbaidžāna</item>
+        <item>Bangladeša</item>
+        <item>Baškortostānas Republika</item>
+        <item>Baltkrievija</item>
+        <item>Bolīvija</item>
+        <item>Brazīlija</item>
+        <item>Bulgārija</item>
+        <item>Kambodža</item>
+        <item>Kanāda</item>
+        <item>Čīle</item>
+        <item>Ķīna</item>
+        <item>Kolumbija</item>
+        <item>Čehijas Republika</item>
+        <item>Kongo Republika</item>
+        <item>Ekvadora</item>
+        <item>Igaunija</item>
+        <item>Somija</item>
+        <item>Francija</item>
+        <item>Gruzija</item>
+        <item>Vācija</item>
+        <item>Grieķija</item>
+        <item>Ungārija</item>
+        <item>Indija</item>
+        <item>Indonēzija</item>
+        <item>Irāna</item>
+        <item>Īrija</item>
+        <item>Izraēla</item>
+        <item>Itālija</item>
+        <item>Japāna</item>
+        <item>Kazahstāna</item>
+        <item>Kenija</item>
+        <item>Kiribati</item>
+        <item>Latvija</item>
+        <item>Lietuva</item>
+        <item>Malaizija</item>
+        <item>Meksika</item>
+        <item>Mongolija</item>
+        <item>Maroka</item>
+        <item>Nepāla</item>
+        <item>Jaunzēlande</item>
+        <item>Pakistāna</item>
+        <item>Peru</item>
+        <item>Filipīnas</item>
+        <item>Polija</item>
+        <item>Portugāle</item>
+        <item>Karte</item>
+        <item>Dienvidkoreja</item>
+        <item>Singapūras Republika</item>
+        <item>Lībija</item>
+        <item>Rumānija</item>
+        <item>Krievija</item>
+        <item>Saūda Arābija</item>
+        <item>Slovākija</item>
+        <item>Dienvidāfrika</item>
+        <item>Spānija</item>
+        <item>Šrilanka</item>
+        <item>Zviedrija</item>
+        <item>Taivāna</item>
+        <item>Taizeme</item>
+        <item>Tunisija</item>
+        <item>Turcija</item>
+        <item>Apvienotie Arābu Emirāti</item>
+        <item>Lielbritānija</item>
+        <item>Ukraina</item>
+        <item>ASV</item>
+        <item>Uzbekistāna</item>
+        <item>Venecuēla</item>
+        <item>Vjetnama</item>
+        <item>Virdž. salas</item>
+        <item>Šveice</item>
+        <item>Ēģipte</item>
+        <item>Kotdivuāra</item>
+        <item>Gana</item>
+        <item>Etiopija</item>
+        <item>Jordānija</item>
+        <item>Nīderlande</item>
+        <item>Madagaskara</item>
+        <item>Turkmenistāna</item>
+        <item>Eritreja</item>
+        <item>Paragvaja</item>
+        <item>Irāka</item>
+        <item>Mali</item>
+        <item>Centrālāfrikas Republika</item>
+        <item>Gvadelupa</item>
+        <item>Libāna</item>
+        <item>Serbija</item>
+        <item>Beliza</item>
+        <item>Kirgizstāna</item>
+        <item>Gvineja-Bisava</item>
+        <item>Barbadosa</item>
+        <item>Beļģija</item>
+        <item>Franču Gviāna</item>
+        <item>Moldova</item>
+        <item>Gvineja</item>
+        <item>Dānija</item>
+        <item>Senegāla</item>
+        <item>Sīrija</item>
+        <item>Tanzānija</item>
+        <item>Džibutija</item>
+        <item>Katara</item>
+        <item>Kamerūna</item>
+        <item>Tadžikistāna</item>
+        <item>Skotija</item>
+        <item>Martinika</item>
+        <item>Sjerraleone</item>
+        <item>Botsvāna</item>
+        <item>Gajāna</item>
+        <item>Dienviddžordžija</item>
+        <item>Gvatemala</item>
+        <item>Senbartelmī</item>
+        <item>Zimbabve</item>
+        <item>Kuba</item>
+        <item>Uganda</item>
+        <item>Sudāna</item>
+        <item>Jamaika</item>
+        <item>Kuveita</item>
+        <item>Nigērija</item>
+        <item>Angola</item>
+        <item>Zambija</item>
+        <item>Luksemburga</item>
+        <item>Ekvatoriālā Gvineja</item>
+        <item>Maldīvija</item>
+        <item>Nikaragva</item>
+        <item>Bahreina</item>
+        <item>Mozambika</item>
+        <item>Senmartēna</item>
+        <item>Somālija</item>
+        <item>Libērija</item>
+        <item>Urugvaja</item>
+        <item>Omāna</item>
+        <item>Čada</item>
+        <item>Nigēra</item>
+        <item>Mauritānija</item>
+        <item>Jaunkaledonija</item>
+        <item>Tonga</item>
+        <item>Grenlande</item>
+        <item>Burkinafaso</item>
+        <item>Panama</item>
+        <item>Surinama</item>
+        <item>Melnkalne</item>
+        <item>Maurīcija</item>
+        <item>Haiti</item>
+        <item>Korejas Tautas Demokrātiskā Republika</item>
+        <item>Mjanma</item>
+        <item>Islande</item>
+        <item>Reinjonas sala</item>
+        <item>Kostarika</item>
+        <item>Puertoriko</item>
+        <item>Salvadora</item>
+        <item>Jemena</item>
+        <item>Dominikānas Republika</item>
+        <item>Maķedonija</item>
+        <item>Fidži</item>
+        <item>Franču Polinēzija</item>
+        <item>Hondurasa</item>
+        <item>Lihtenšteina</item>
+        <item>Malta</item>
+        <item>Seišelu salas</item>
+        <item>Austrija</item>
+        <item>Horvātija</item>
+        <item>Velsa</item>
+        <item>ASV Virdž.</item>
+        <item>Slovēnija</item>
+        <item>Sanmarīno</item>
+        <item>Novēģija</item>
+        <item>Papua-Jaungvineja</item>
+        <item>Bahamu salas</item>
+        <item>Kipra</item>
+        <item>Austrumtimora</item>
+        <item>Togo</item>
+        <item>Dominika</item>
+        <item>Gabona</item>
+        <item>Lesoto</item>
+        <item>Māršala salas</item>
+        <item>Monako</item>
+        <item>Bruneja</item>
+        <item>Gambija</item>
+        <item>Burundi</item>
+        <item>Kongo Demokrātiskā Republika</item>
+        <item>Laosa</item>
+        <item>Namībija</item>
+        <item>Bosnija un Hercegovina</item>
+        <item>Saipana</item>
+        <item>Santome un Prinsipi</item>
+        <item>Grenāda</item>
+        <item>Folklenda salas</item>
+        <item>ASV Samoa</item>
+        <item>Andora</item>
+        <item>Sahravi Arābu Demokrātiskā Rep.</item>
+        <item>Kirasao</item>
+        <item>Svatini</item>
+        <item>Sentlūsija</item>
+        <item>Palau</item>
+        <item>Ruanda</item>
+        <item>Sentvinsenta un Grenadīnas</item>
+        <item>Fēru salas</item>
+        <item>Albānija</item>
+        <item>Butāna</item>
+        <item>Benina</item>
+        <item>Kaboverde</item>
+        <item>Kosova</item>
+        <item>Bermudu salas</item>
+        <item>Zālamana salas</item>
+        <item>Taivāna, Ķīna</item>
+        <item>Trinidāda un Tobāgo</item>
+        <item>Angilja</item>
+        <item>UTC (koordinētais universālais laiks)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>Modinātājs iestatīts pēc 1 minūtes.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %2$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s un %2$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %2$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s, %2$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s un %2$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s, %2$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s un %2$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s, %2$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s, %2$s un %3$s kopš šī brīža.</item>
+        <item>Modinātājs ir iestatīts uz laiku %1$s, %2$s, %3$s un %4$s kopš šī brīža.</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

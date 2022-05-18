@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">ਅਲਾਰਮ %d ਦਿਨ ਬਾਅਦ ਦਾ ਹੈ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਅਲਾਰਮ %d ਦਿਨ ਬਾਅਦ ਦਾ ਹੈ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">ਅਲਾਰਮ %d ਘੰਟੇ ਬਾਅਦ ਦਾ ਹੈ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਅਲਾਰਮ %d ਘੰਟੇ ਬਾਅਦ ਦਾ ਹੈ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">ਅਲਾਰਮ %d ਘੰਟੇ 1 ਮਿੰਟ ਬਾਅਦ ਵੱਜੇਗਾ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਅਲਾਰਮ %d ਘੰਟੇ 1 ਮਿੰਟ ਬਾਅਦ ਵੱਜੇਗਾ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">ਅਲਾਰਮ %d ਮਿੰਟ ਬਾਅਦ ਦਾ ਹੈ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਅਲਾਰਮ %d ਮਿੰਟ ਬਾਅਦ ਦਾ ਹੈ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">%d ਮਿੰਟਾਂ ਵਿੱਚ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਮਿੰਟ ਵਿੱਚ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">%d ਤੋਂ ਵੱਧ ਅਲਾਰਮਸ ਜੋੜੇ ਨਹੀਂ ਜਾ ਸਕਦੇ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਵੱਧ ਅਲਾਰਮ ਜੋੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d ਮਿੰਟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਮਿੰਟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">ਕੀ %d ਬੈਕਗ੍ਰਾਉਂਡ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਕੀ %d ਬੈਕਗ੍ਰਾਉਂਡ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">%d ਨੂੰ ਚੁਣਿਆ ਗਿਆ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਨੂੰ ਚੁਣਿਆ ਗਿਆ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d ਮਿੰਟ ਪਹਿਲਾਂ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਮਿੰਟ ਪਹਿਲਾਂ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s %2$s, ਅਤੇ ਹੋਰ %3$d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s %2$s, ਅਤੇ ਹੋਰ %3$d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">ਨੀਂਦ ਦਾ ਸਮਾਂ: %d ਘੰਟੇ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਨੀਂਦ ਦਾ ਸਮਾਂ: %d ਘੰਟਾ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">ਨੀਂਦ ਦਾ ਸਮਾਂ: %d ਮਿੰਟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਨੀਂਦ ਦਾ ਸਮਾਂ: %d ਮਿੰਟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">%d ਮਿੰ ਸਨੂਜ਼ ਕਰੋ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਮਿੰ ਸਨੂਜ਼ ਕਰੋ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">ਘਟਾਓ %d ਮਿੰਟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਘਟਾਓ %d ਮਿੰਟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">ਜੋੜ %d ਮਿੰਟ</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ਜੋੜ %d ਮਿੰਟ</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">%d ਤੋਂ ਵੱਧ ਪ੍ਰੀਸੈੱਟ ਟਾਈਮਰਾਂ ਨੂੰ ਜੋੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਵੱਧ ਪ੍ਰੀਸੈੱਟ ਟਾਈਮਰ ਨੂੰ ਜੋੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">%d ਤੋਂ ਜ਼ਿਆਦਾ ਸ਼ਹਿਰ ਜੋੜੇ ਨਹੀਂ ਜਾ ਸਕਦੇ।</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d ਤੋਂ ਜ਼ਿਆਦਾ ਸ਼ਹਿਰ ਜੋੜਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ।</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

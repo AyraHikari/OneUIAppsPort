@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>راستے کی درمیان میں</item>
+        <item>ہونولولو</item>
+        <item>ہوائی</item>
+        <item>الاسکا</item>
+        <item>اینکو ریج</item>
+        <item>سان فرانسسکو</item>
+        <item>وین کوور</item>
+        <item>سیٹلائیٹ</item>
+        <item>لاس اینجیلیس</item>
+        <item>تجوانہ</item>
+        <item>کیل گیری</item>
+        <item>فیونکس</item>
+        <item>مزاتیان</item>
+        <item>ڈینور</item>
+        <item>میکسکو شہر</item>
+        <item>وینیپیگ</item>
+        <item>ڈیاگو گارسیا</item>
+        <item>ڈلاس</item>
+        <item>شکاگو</item>
+        <item>ٹورانٹو</item>
+        <item>میامی</item>
+        <item>لیما</item>
+        <item>کویٹو</item>
+        <item>واشنٹن ڈی سی</item>
+        <item>اوتاوہ</item>
+        <item>نیویارک</item>
+        <item>بوگوٹا</item>
+        <item>سانتیاگو</item>
+        <item>لاپاز</item>
+        <item>کراکاس</item>
+        <item>بونس آئریز</item>
+        <item>نیو فاؤنڈ لینڈ</item>
+        <item>سینٹ جونز</item>
+        <item>ساؤپالو</item>
+        <item>براسیلیا</item>
+        <item>ریو ڈی جینرو</item>
+        <item>فرنانڈو ڈی نورنہا</item>
+        <item>ایزوریس</item>
+        <item>لزبن</item>
+        <item>کیسابلانکا</item>
+        <item>ڈبلن</item>
+        <item>رباط</item>
+        <item>میڈرڈ</item>
+        <item>سیٹیلمنٹ</item>
+        <item>لندن</item>
+        <item>کنگسٹن</item>
+        <item>بارسلونا</item>
+        <item>پیرس</item>
+        <item>الجیرز</item>
+        <item>تیونیس</item>
+        <item>تریپولی</item>
+        <item>برلن</item>
+        <item>روم</item>
+        <item>پراگ</item>
+        <item>کنشاسا</item>
+        <item>اسٹاک ہوم</item>
+        <item>براتسلوا</item>
+        <item>کیپ ٹاون</item>
+        <item>بوڈاپسٹ</item>
+        <item>وارسا</item>
+        <item>کالینن گراڈ</item>
+        <item>صوفیہ</item>
+        <item>ایتھنز</item>
+        <item>لویو</item>
+        <item>ہیلسنکی</item>
+        <item>ریگا</item>
+        <item>تیلن</item>
+        <item>بخارسٹ</item>
+        <item>ولنیس</item>
+        <item>لوبومباشی</item>
+        <item>منسک</item>
+        <item>سینٹ پیٹرزبرگ</item>
+        <item>استنبول</item>
+        <item>کام چاٹکا</item>
+        <item>کیو</item>
+        <item>یروشلم</item>
+        <item>ماسکو</item>
+        <item>کھارکیو</item>
+        <item>نیروبی</item>
+        <item>جدہ</item>
+        <item>وولگو گراڈ</item>
+        <item>یریوان</item>
+        <item>بلیسی</item>
+        <item>باکو</item>
+        <item>چیٹا</item>
+        <item>سمارا</item>
+        <item>تہران</item>
+        <item>اژہیوسک</item>
+        <item>ابوظہبی</item>
+        <item>دبئی</item>
+        <item>اوفا</item>
+        <item>یکاتربرگ</item>
+        <item>چلیابنسک</item>
+        <item>کراچی</item>
+        <item>کابل</item>
+        <item>تاشقند</item>
+        <item>اسلام آباد</item>
+        <item>ممبئی</item>
+        <item>اومسک</item>
+        <item>المعطی</item>
+        <item>بنگلور</item>
+        <item>حیدرآباد</item>
+        <item>نئی دلی</item>
+        <item>کولمبو</item>
+        <item>چینائے</item>
+        <item>نووسبرسک</item>
+        <item>کھٹمنڈو</item>
+        <item>نوووکزنیٹسک</item>
+        <item>کولکتہ</item>
+        <item>ڈھاکہ</item>
+        <item>ہوڈ</item>
+        <item>کراسنویارسک</item>
+        <item>بینکاک</item>
+        <item>کوالالمپور</item>
+        <item>سنگاپور</item>
+        <item>ارکتسک</item>
+        <item>نام پنہہ</item>
+        <item>ہینوئی</item>
+        <item>جکارتہ</item>
+        <item>یولان باتور</item>
+        <item>ہانگ کانگ</item>
+        <item>پرتھ</item>
+        <item>بیجنگ</item>
+        <item>منیلا</item>
+        <item>تائپے</item>
+        <item>سیول</item>
+        <item>آمبون</item>
+        <item>ولیودیتوک</item>
+        <item>یاک تسک</item>
+        <item>خبروسک</item>
+        <item>ایڈیلیڈ</item>
+        <item>ٹوکیو</item>
+        <item>یوژنو-سخالنسک</item>
+        <item>ہیلی فیکس</item>
+        <item>گوام</item>
+        <item>کینبرا</item>
+        <item>مگادان</item>
+        <item>سڈنی</item>
+        <item>پیتروپلوسک-کاماچسکی</item>
+        <item>ناراوا</item>
+        <item>آک لینڈ</item>
+        <item>ویلنگٹن</item>
+        <item>پاگو پاگو</item>
+        <item>ڈینپاسار</item>
+        <item>برن</item>
+        <item>زیورچ</item>
+        <item>قاہرہ</item>
+        <item>عابدجان</item>
+        <item>عکرا</item>
+        <item>عدیس ابابا</item>
+        <item>عمان</item>
+        <item>ایمسٹرڈیم</item>
+        <item>انادیر</item>
+        <item>انقرہ</item>
+        <item>انتاناناریو</item>
+        <item>اشک آباد</item>
+        <item>اسمارا</item>
+        <item>استانا</item>
+        <item>آسونسیون</item>
+        <item>آسٹن</item>
+        <item>بغداد</item>
+        <item>بالتی مور</item>
+        <item>باماکو</item>
+        <item>بنگوئی</item>
+        <item>باری</item>
+        <item>باسے-ٹیرے</item>
+        <item>بیروت</item>
+        <item>بلغراد</item>
+        <item>بیلیزے شھر</item>
+        <item>بشکک</item>
+        <item>بساؤ</item>
+        <item>بولوگنا</item>
+        <item>بوسٹن</item>
+        <item>برج ٹاؤن</item>
+        <item>برسبین</item>
+        <item>برسلز</item>
+        <item>جزائر کناری</item>
+        <item>کاٹنزارو</item>
+        <item>کائنے</item>
+        <item>شارلوٹے</item>
+        <item>چسیناؤ</item>
+        <item>کلیو لینڈ</item>
+        <item>کولمبس</item>
+        <item>کوناکری</item>
+        <item>کوپن ہیگن</item>
+        <item>کورک</item>
+        <item>کروٹون</item>
+        <item>ڈکار</item>
+        <item>دمشق</item>
+        <item>دارالسلام</item>
+        <item>ڈاروینی</item>
+        <item>ڈیٹرائٹ</item>
+        <item>جبوتی</item>
+        <item>دوہا</item>
+        <item>ڈوالا</item>
+        <item>دوشنبے</item>
+        <item>جزیرہ ایسٹر</item>
+        <item>ایڈنبرگ</item>
+        <item>الپاسو</item>
+        <item>فلورنس</item>
+        <item>فورٹ-ڈی-فرانس</item>
+        <item>فری ٹاؤن</item>
+        <item>گبورون</item>
+        <item>جزائر گالاپاگوس</item>
+        <item>جینیوا</item>
+        <item>جینوا</item>
+        <item>جارج ٹاؤن</item>
+        <item>گرائیٹ ویکن</item>
+        <item>گوئٹے مالا سٹی</item>
+        <item>گسٹاویا</item>
+        <item>ہیم برگ</item>
+        <item>حرارے</item>
+        <item>ہوانا</item>
+        <item>ہوبرٹ</item>
+        <item>ہوسٹن</item>
+        <item>انڈیانا پولس</item>
+        <item>جوہانسبرگ</item>
+        <item>کمپالا</item>
+        <item>خرطوم</item>
+        <item>کنگسٹن</item>
+        <item>کویت</item>
+        <item>لاگوس</item>
+        <item>لاس ویگاس</item>
+        <item>لوبیانا</item>
+        <item>ہائیکو</item>
+        <item>لوآئیزولے</item>
+        <item>لوآنڈا</item>
+        <item>لوساکا</item>
+        <item>لکسمبرگ</item>
+        <item>مکاؤ</item>
+        <item>مالابو</item>
+        <item>میل</item>
+        <item>ماناگوا</item>
+        <item>مناما</item>
+        <item>ماپوتو</item>
+        <item>ماریگوٹ</item>
+        <item>مکہ</item>
+        <item>ملبورن</item>
+        <item>میمفس</item>
+        <item>میسینا</item>
+        <item>میلان</item>
+        <item>ملواکی</item>
+        <item>مغادیشو</item>
+        <item>مونروویا</item>
+        <item>مونٹی ویڈیو</item>
+        <item>مونٹریال</item>
+        <item>میونخ</item>
+        <item>مسقط</item>
+        <item>نپولی</item>
+        <item>نیٹرز</item>
+        <item>این ڈی جمینا</item>
+        <item>نیامے</item>
+        <item>نوآکشوٹ</item>
+        <item>نومیا</item>
+        <item>نوکوآلوفا</item>
+        <item>نوک</item>
+        <item>اوساکا</item>
+        <item>اواگا ڈوگو</item>
+        <item>پالرمو</item>
+        <item>پاناما شھر</item>
+        <item>پاراماریبو</item>
+        <item>پرم</item>
+        <item>فلاڈلفیا</item>
+        <item>پودگوریکا</item>
+        <item>پونٹا ڈیلگاڈا</item>
+        <item>پورٹ لوئس</item>
+        <item>پورٹ-آؤ-پرنس</item>
+        <item>پورٹ لینڈ، اوریگون</item>
+        <item>پیانگ یانگ</item>
+        <item>یانگون</item>
+        <item>ریسفی</item>
+        <item>ریک جاوک</item>
+        <item>ریاض</item>
+        <item>سینٹ-ڈینس</item>
+        <item>سان اینٹونیو</item>
+        <item>سان ڈیاگو</item>
+        <item>سان جوز</item>
+        <item>سان جوز</item>
+        <item>سان جوآن</item>
+        <item>سان مارینو</item>
+        <item>سان سلواڈور</item>
+        <item>صنعا</item>
+        <item>سانٹو ڈومنگو</item>
+        <item>شنگھائی</item>
+        <item>شینزن</item>
+        <item>اسکوپجے</item>
+        <item>سینٹ جونز</item>
+        <item>سووا</item>
+        <item>تاہیٹی</item>
+        <item>ٹیگوسیگالپا</item>
+        <item>ھوچی من سٹی</item>
+        <item>تیان جن</item>
+        <item>تورن</item>
+        <item>وادوز</item>
+        <item>ولیٹا</item>
+        <item>ویرونا</item>
+        <item>وکٹوریا</item>
+        <item>ویانا</item>
+        <item>یاموسوکرو</item>
+        <item>یوآنڈے</item>
+        <item>زغریب</item>
+        <item>گوانگ زھاؤ</item>
+        <item>کارڈف</item>
+        <item>ریجینا</item>
+        <item>شارلوٹ امالی</item>
+        <item>اٹلانٹا</item>
+        <item>مایوٹے</item>
+        <item>سینٹ پیری اور مکوئلون</item>
+        <item>اوسلو</item>
+        <item>سریڈنیکولیمس</item>
+        <item>سیورو-کیورسک</item>
+        <item>ووہان</item>
+        <item>چانگ دے</item>
+        <item>ژیان</item>
+        <item>پورٹ مورسبے</item>
+        <item>داواؤ شہر</item>
+        <item>چونگکینگ</item>
+        <item>شینیانگ</item>
+        <item>نان جنگ</item>
+        <item>ہاربن</item>
+        <item>جینان</item>
+        <item>زھینگ زھاؤ</item>
+        <item>کنمنگ</item>
+        <item>چانگچون</item>
+        <item>فزہو</item>
+        <item>کوچنگ</item>
+        <item>مکاسر</item>
+        <item>ہانگژو</item>
+        <item>چنگداؤ</item>
+        <item>نان ننگ</item>
+        <item>اورومچی</item>
+        <item>ناساؤ</item>
+        <item>نیکوسیا</item>
+        <item>ڈیلی</item>
+        <item>روڈ ٹاؤن</item>
+        <item>لوم</item>
+        <item>روسیو</item>
+        <item>لیبرائیل</item>
+        <item>مارسیل</item>
+        <item>ماسیرو</item>
+        <item>ماجورو</item>
+        <item>موناکو</item>
+        <item>باندر سیری بیگوان</item>
+        <item>بنجول</item>
+        <item>بوسان</item>
+        <item>بوجومبورا</item>
+        <item>برازاوائل</item>
+        <item>وینٹیانے</item>
+        <item>ویندھوئیک</item>
+        <item>سارجیو</item>
+        <item>سیپان</item>
+        <item>ساؤ ٹوم</item>
+        <item>سینٹ جارجز</item>
+        <item>اسٹینلے</item>
+        <item>عدن</item>
+        <item>اپیا</item>
+        <item>اندورا لا ویلا</item>
+        <item>لایون</item>
+        <item>ویلم اسٹاڈ</item>
+        <item>مبابین</item>
+        <item>کاسٹریز</item>
+        <item>کورور</item>
+        <item>کانکون</item>
+        <item>کیگالی</item>
+        <item>کنگسٹاؤن</item>
+        <item>ٹیل آویو</item>
+        <item>تورشاؤن</item>
+        <item>ترانا</item>
+        <item>تھمفو</item>
+        <item>پورٹو-نیوو</item>
+        <item>پرایا</item>
+        <item>فرینکفرٹ</item>
+        <item>پرسٹینا</item>
+        <item>ہیملٹن</item>
+        <item>ہونیارا</item>
+        <item>پورٹ آف اسپین</item>
+        <item>منیاپولیس</item>
+        <item>ہیلو</item>
+        <item>اورلینڈو</item>
+        <item>کینساس سٹی</item>
+        <item>نیواورلئان</item>
+        <item>نیش ول</item>
+        <item>ٹیکسن</item>
+        <item>ٹمپا</item>
+        <item>جیکسون ویل</item>
+        <item>اوکلاہوما سٹی</item>
+        <item>البوبورق</item>
+        <item>اوماہا</item>
+        <item>ویرجینیا بیچ</item>
+        <item>بوئس</item>
+        <item>ڈیس موئنز</item>
+        <item>برمنگھم</item>
+        <item>سالٹ لیک سٹی</item>
+        <item>لٹل راک</item>
+        <item>سیوکس فالس</item>
+        <item>جیکسون</item>
+        <item>چارلسٹن، جنوبی کیرولائنا</item>
+        <item>فارگو</item>
+        <item>بلنگز</item>
+        <item>پورٹ لینڈ، مائن</item>
+        <item>چینے</item>
+        <item>چارلسٹن، ویسٹ ورجینیا</item>
+        <item>پِٹسبرگ</item>
+        <item>گرین بے</item>
+        <item>سینٹ لوئس</item>
+        <item>ویلی</item>
+        <item>‏UTC (کوآرڈینیٹیڈ یونیورسل ٹائم)</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>افغانستان</item>
+        <item>الجیریا</item>
+        <item>ساموآ</item>
+        <item>اینٹی گوا اور باربودا</item>
+        <item>ارجنٹینا</item>
+        <item>آرمینیا</item>
+        <item>آسٹریلیا</item>
+        <item>آذربائیجان</item>
+        <item>بنگلا دیش</item>
+        <item>جمہوریہ باشکورتوستان</item>
+        <item>بیلاروس</item>
+        <item>بولیویا</item>
+        <item>برازیل</item>
+        <item>بلغاریا</item>
+        <item>کمبوڈیا</item>
+        <item>کینیڈا</item>
+        <item>چلی</item>
+        <item>چین</item>
+        <item>کولمبیا</item>
+        <item>جمہوریہ چیک</item>
+        <item>کانگو جمہوريہ</item>
+        <item>ایکواڈور</item>
+        <item>ایسٹونیا</item>
+        <item>فن لینڈ</item>
+        <item>فرانس</item>
+        <item>جارجیا</item>
+        <item>جرمنی</item>
+        <item>گریس</item>
+        <item>ھنگری</item>
+        <item>بھارت</item>
+        <item>انڈونیشیا</item>
+        <item>ایران</item>
+        <item>آئرلینڈ</item>
+        <item>اسرائیل</item>
+        <item>اٹلی</item>
+        <item>جاپان</item>
+        <item>قزاقستان</item>
+        <item>کینیا</item>
+        <item>کریباتی</item>
+        <item>لٹویا</item>
+        <item>لتھوانیا</item>
+        <item>ملائیشیا</item>
+        <item>میکسیکو</item>
+        <item>مونگولیا</item>
+        <item>مراکش</item>
+        <item>نیپال</item>
+        <item>نیوزی لینڈ</item>
+        <item>پاکستان</item>
+        <item>پیرو</item>
+        <item>فلپائن</item>
+        <item>پولینڈ</item>
+        <item>پرتگال</item>
+        <item>نقشہ</item>
+        <item>جنوبی کوریا</item>
+        <item>جمہوریہ سنگاپور</item>
+        <item>لبیا</item>
+        <item>رومانیہ</item>
+        <item>روس</item>
+        <item>سعودی عرییہ</item>
+        <item>سلوواکیا</item>
+        <item>جنوبی افریقہ</item>
+        <item>اسپین</item>
+        <item>سری لنکا</item>
+        <item>سويڈن</item>
+        <item>تائیوان</item>
+        <item>تھائی لینڈ</item>
+        <item>تنیزیا</item>
+        <item>ترکی</item>
+        <item>متہدہ عرب عمارات</item>
+        <item>برطانیہ</item>
+        <item>یوکرین</item>
+        <item>امریکہ</item>
+        <item>ازبکستان</item>
+        <item>وینزویلا</item>
+        <item>ویت نام</item>
+        <item>‏GB جزائر ورجن</item>
+        <item>سوئزر لینڈ</item>
+        <item>مصر</item>
+        <item>کوٹے ڈی آئیوری</item>
+        <item>گھانا</item>
+        <item>ایتھوپیا</item>
+        <item>اردن</item>
+        <item>نیدر لینڈز</item>
+        <item>مڈغاسکر</item>
+        <item>ترکمنستان</item>
+        <item>اریٹیریا</item>
+        <item>پیراگوئے</item>
+        <item>ایراق</item>
+        <item>مالی</item>
+        <item>جمہوریہ مرکزی افریقا</item>
+        <item>گاڈےلوپ</item>
+        <item>لبنان</item>
+        <item>سربیا</item>
+        <item>بیلیزے</item>
+        <item>کرغستان</item>
+        <item>گنی بساؤ</item>
+        <item>بارباڈوس</item>
+        <item>بلجئیم</item>
+        <item>فرانسیسی گیانا</item>
+        <item>مالڈووا</item>
+        <item>گنی</item>
+        <item>ڈنمارک</item>
+        <item>سینیگال</item>
+        <item>سیریا</item>
+        <item>تنزانیہ</item>
+        <item>جبوتی</item>
+        <item>قطر</item>
+        <item>کیمرون</item>
+        <item>تاجکستان</item>
+        <item>اسکاٹ لینڈ</item>
+        <item>مارٹینیک</item>
+        <item>سیرالیون</item>
+        <item>بوتسوانا</item>
+        <item>گیانا</item>
+        <item>جنوبی جارجیا</item>
+        <item>گوئٹے مالا</item>
+        <item>سینٹ بارتھیلیمے</item>
+        <item>زمبابوے</item>
+        <item>کیوبا</item>
+        <item>یوگنڈا</item>
+        <item>سوڈان</item>
+        <item>جمیکا</item>
+        <item>کویت</item>
+        <item>نایجیریا</item>
+        <item>اینگولا</item>
+        <item>زمبیا</item>
+        <item>لکسمبرگ</item>
+        <item>استوائی گنی</item>
+        <item>مالدیپ</item>
+        <item>نکاراگوا</item>
+        <item>بہرین</item>
+        <item>موزامبق</item>
+        <item>سینٹ مارٹن</item>
+        <item>سومالیہ</item>
+        <item>لائبیریا</item>
+        <item>یوراگوئے</item>
+        <item>اومان</item>
+        <item>چاڈ</item>
+        <item>نائیجر</item>
+        <item>ماریطانیہ</item>
+        <item>نیو کیلیڈونیا</item>
+        <item>ٹونگا</item>
+        <item>گرین لینڈ</item>
+        <item>برکینا فاسو</item>
+        <item>پاناما</item>
+        <item>سرینام</item>
+        <item>مونٹی نیگرو</item>
+        <item>ماریشس</item>
+        <item>ہیٹی</item>
+        <item>ریاست عوامی جمہوریہ کوریا</item>
+        <item>میانمار</item>
+        <item>آئس لینڈ</item>
+        <item>جزیرہ ری یونین</item>
+        <item>کوسٹا ریکا</item>
+        <item>پیورٹو ریکو</item>
+        <item>ایل سلواڈور</item>
+        <item>یمن</item>
+        <item>جمہوريہ ڈومينيکن</item>
+        <item>مقدونیا</item>
+        <item>فجی</item>
+        <item>فرانسیسی پولینیسیا</item>
+        <item>ھنڈورس</item>
+        <item>لائشٹینشٹائن</item>
+        <item>مالٹا</item>
+        <item>سائیچلیز</item>
+        <item>آسٹریا</item>
+        <item>کروشیا</item>
+        <item>ویلز</item>
+        <item>جزائرورجنUS</item>
+        <item>سلووینیا</item>
+        <item>سان مارینو</item>
+        <item>ناروے</item>
+        <item>پاپاؤ نیو گنی</item>
+        <item>بہاماس</item>
+        <item>قبرص</item>
+        <item>تیمور لیسٹ</item>
+        <item>ٹوگو</item>
+        <item>ڈومینیکا</item>
+        <item>گبون</item>
+        <item>لیسوتھو</item>
+        <item>مارشل جزائر</item>
+        <item>موناکو</item>
+        <item>برونائی</item>
+        <item>گیمبیا</item>
+        <item>برونڈی</item>
+        <item>ڈیموکریٹک جمہوریہ کانگو</item>
+        <item>لاؤس</item>
+        <item>نمیبیا</item>
+        <item>بوسنیا اور ہرزیگوینا</item>
+        <item>سیپان</item>
+        <item>ساؤ ٹوم اور پرنسپے</item>
+        <item>گریناڈا</item>
+        <item>فاکلینڈ جزائر</item>
+        <item>امریکی ساموا</item>
+        <item>اندورا</item>
+        <item>صحرا جمہوریہ</item>
+        <item>کیوراساؤ</item>
+        <item>سوئزلینڈ</item>
+        <item>سینٹ لوسیا</item>
+        <item>پالاؤ</item>
+        <item>روانڈا</item>
+        <item>سینٹ ونسنٹ اور گریناڈینز</item>
+        <item>فارو جزائر</item>
+        <item>البانیہ</item>
+        <item>بھوٹان</item>
+        <item>بینن</item>
+        <item>کیپ وردے</item>
+        <item>کوسوو</item>
+        <item>برمودا</item>
+        <item>جزائر سولومن</item>
+        <item>تائیوان، چین</item>
+        <item>ٹرینیڈاڈ اور ٹوباگو</item>
+        <item>آنگوئیلا</item>
+        <item>‏UTC (کوآرڈینیٹیڈ یونیورسل ٹائم)</item>
+    </string-array>
+    <string-array name="alarm_set">
+        <item>الارم اب سے 1 منٹ کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %2$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s اور %2$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %2$s اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s، %2$s، اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %s کے لیے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s اور %2$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s، %2$s، اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s اور %2$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s، %2$s، اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s، %2$s، اور %3$s کے لئے سیٹ ہے۔</item>
+        <item>الارم اب سے %1$s, %2$s, %3$s, اور %4$s کے لئے سیٹ ہے۔</item>
+    </string-array>
+    <string-array name="weather_unit_type">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+</resources>

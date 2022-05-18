@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/alarm_cancel_circle_color" />
+            <size android:height="@dimen/clear_cover_dismiss_circle_size" android:width="@dimen/clear_cover_dismiss_circle_size" />
+        </shape>
+    </item>
+    <item android:left="@dimen/clear_cover_bg_stroke_width" android:top="@dimen/clear_cover_bg_stroke_width" android:right="@dimen/clear_cover_bg_stroke_width" android:bottom="@dimen/clear_cover_bg_stroke_width">
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/clear_cover_bg_stroke_width" android:color="@color/clear_cover_bg_stroke_color" />
+        </shape>
+    </item>
+</layer-list>

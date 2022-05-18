@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="?android:listDivider" android:start="@dimen/clock_list_divider_inset_start_end" android:end="@dimen/clock_list_divider_inset_start_end" />
+</layer-list>

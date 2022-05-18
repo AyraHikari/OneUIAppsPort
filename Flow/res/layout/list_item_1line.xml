@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_padding_top" android:layout_marginBottom="@dimen/list_item_padding_top" android:text="@string/app_name" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" style="@style/TextViewListItemTitle" />
+</LinearLayout>

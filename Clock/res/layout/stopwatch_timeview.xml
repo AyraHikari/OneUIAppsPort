@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/stopwatch_time_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="noHideDescendants" style="@style/Direction_LTR"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="end" android:id="@id/stopwatch_hour_prefix" android:visibility="gone" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toStartOf="parent" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:gravity="start" android:id="@id/stopwatch_hour_postfix" android:visibility="gone" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_hour_prefix" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:id="@id/stopwatch_hms_colon" android:visibility="gone" android:text="@string/colon" app:layout_constraintStart_toEndOf="@id/stopwatch_hour_postfix" style="@style/StopwatchTiimeViewColonStyle" />
+    <TextView android:gravity="end" android:id="@id/stopwatch_minute_prefix" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_hms_colon" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:gravity="start" android:id="@id/stopwatch_minute_postfix" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_minute_prefix" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:id="@id/stopwatch_ms_colon" android:text="@string/colon" app:layout_constraintStart_toEndOf="@id/stopwatch_minute_postfix" style="@style/StopwatchTiimeViewColonStyle" />
+    <TextView android:gravity="end" android:id="@id/stopwatch_second_prefix" android:width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_ms_colon" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:gravity="start" android:id="@id/stopwatch_second_postfix" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_second_prefix" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:id="@id/stopwatch_ms_period" android:text="@string/stopwatch_period" app:layout_constraintStart_toEndOf="@id/stopwatch_second_postfix" style="@style/StopwatchTiimeViewColonStyle" />
+    <TextView android:gravity="end" android:id="@id/stopwatch_milli_prefix" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_ms_period" style="@style/StopwatchTimeViewNumberStyle" />
+    <TextView android:gravity="start" android:id="@id/stopwatch_milli_postfix" android:layout_width="@dimen/stopwatch_time_textview_width" app:layout_constraintStart_toEndOf="@id/stopwatch_milli_prefix" style="@style/StopwatchTimeViewNumberStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

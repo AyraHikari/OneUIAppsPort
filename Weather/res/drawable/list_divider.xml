@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/list_divider_padding" android:insetRight="@dimen/list_divider_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <size android:height="1.0dip" />
+        <solid android:color="@color/col_def_list_divider_color" />
+        <corners android:radius="0.5dip" />
+    </shape>
+</inset>

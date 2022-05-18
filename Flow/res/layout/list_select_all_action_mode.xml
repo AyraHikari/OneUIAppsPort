@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/checkbox_layout" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip">
+        <CheckBox android:gravity="top" android:id="@id/all_select_checkbox" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:checked="false" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/theme_toolbar_main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/checkbox_all" android:layout_below="@id/all_select_checkbox" android:layout_centerHorizontal="true" android:fontFamily="sec-roboto-light" />
+    </RelativeLayout>
+    <TextView android:textSize="19.0sp" android:textColor="@color/theme_toolbar_main_text_color" android:ellipsize="end" android:gravity="top" android:layout_gravity="center_vertical" android:id="@id/selection_mode_title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLines="1" android:fontFamily="sec-roboto-light" style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+</LinearLayout>

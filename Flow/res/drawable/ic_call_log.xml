@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/perm_group_call_log_spr" android:tint="#ff505050" android:tintMode="src_in"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

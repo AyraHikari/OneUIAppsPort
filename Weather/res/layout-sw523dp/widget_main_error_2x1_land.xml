@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/widget_error_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/widget_error_2x1_msg_margin_horizontal_scaledown">
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error.BlackShadow" android:textSize="@dimen/widget_error_msg_text_size_scaledown" android:gravity="center" android:id="@id/widget_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Error" android:textSize="@dimen/widget_error_msg_text_size_scaledown" android:gravity="center" android:id="@id/widget_error_text_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/widget_setting_icon_touch_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_error_setting_icon_marginTop_land_scaledown">
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Setting.BlackShadow" android:textSize="@dimen/widget_error_setting_text_size_scaledown" android:id="@id/widget_error_setting_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_setting" />
+            <TextView android:textAppearance="@style/WeatherWidget.TextAppearance.Setting" android:textSize="@dimen/widget_error_setting_text_size_scaledown" android:id="@id/widget_error_setting_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_setting" />
+            <ImageView android:id="@id/widget_setting_icon" android:layout_width="@dimen/widget_error_setting_icon_size_scaledown" android:layout_height="@dimen/widget_error_setting_icon_size_scaledown" android:layout_marginStart="@dimen/widget_error_setting_icon_marginStart_scaledown" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

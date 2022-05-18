@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">Failu pārsūtīšanas sarakstam pievienoti %d faili.</item>
+        <item quantity="zero">Failu pārsūtīšanas sarakstam pievienoti %d faili.</item>
+        <item quantity="one">Failu pārsūtīšanas sarakstam pievienots %d fails.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Reģistrējiet un pārvaldiet līdz pat %d datoriem vai planšetdatoriem programmā Samsung Flow.
+
+Ar tālruni vienlaikus var savienot tikai vienu datoru vai planšetdatoru. Kad reģistrētie datori vai planšetdatori mēģinās izveidot savienojumu ar tālruni, jums būs jāizvēlas viens no tiem."</item>
+        <item quantity="zero">"Reģistrējiet un pārvaldiet līdz pat %d datoriem vai planšetdatoriem programmā Samsung Flow.
+
+Ar tālruni vienlaikus var savienot tikai vienu datoru vai planšetdatoru. Kad reģistrētie datori vai planšetdatori mēģinās izveidot savienojumu ar tālruni, jums būs jāizvēlas viens no tiem."</item>
+        <item quantity="one">"Reģistrējiet un pārvaldiet līdz pat %d datoram vai planšetdatoram programmā Samsung Flow.
+
+Ar tālruni vienlaikus var savienot tikai vienu datoru vai planšetdatoru. Kad reģistrētie datori vai planšetdatori mēģinās izveidot savienojumu ar tālruni, jums būs jāizvēlas viens no tiem."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

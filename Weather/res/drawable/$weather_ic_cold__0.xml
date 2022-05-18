@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="280.0dip" android:width="280.0dip" android:viewportWidth="280.0" android:viewportHeight="280.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="c1s3" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="Fill 1 ParentLink">
+        <group android:name="s3" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="-20.600698" aapt:layer_name="Fill 1">
+            <group android:name="s3pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Fill 1">
+                <path android:name="s3pg1p10" android:fillColor="#ffd7edf9" android:pathData="M 6 22.8 C 6 22.8 -6 22.8 -6 22.8 C -6 22.8 -6 -16.8 -6 -16.8 C -6 -20.11 -3.31 -22.8 0 -22.8 C 3.31 -22.8 6 -20.11 6 -16.8 C 6 -16.8 6 22.8 6 22.8 Z" android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="Fill 4 ParentLink">
+        <group android:name="s2" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="0.0" android:translateY="49.00071" aapt:layer_name="Fill 4">
+            <group android:name="s2pg1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="4.0" android:scaleY="4.0" android:rotation="0.0" android:translateX="0.0" android:translateY="0.0" aapt:layer_name="Fill 4">
+                <path android:name="s2pg1p10" android:fillColor="#ff6fb7f1" android:pathData="M 6 -6.68 C 6 -6.68 6 -15.7 6 -15.7 C 6 -15.7 -6 -15.7 -6 -15.7 C -6 -15.7 -6 -6.68 -6 -6.68 C -9.58 -4.61 -12 -0.74 -12 3.7 C -12 10.33 -6.63 15.7 0 15.7 C 6.63 15.7 12 10.33 12 3.7 C 12 -0.74 9.58 -4.61 6 -6.68 " android:fillAlpha="1.0" aapt:layer_name="Path 1" />
+            </group>
+        </group>
+    </group>
+    <group android:name="c1" android:pivotX="0.0" android:pivotY="0.0" android:scaleX="1.0" android:scaleY="1.0" android:rotation="0.0" android:translateX="140.0" android:translateY="140.0" aapt:layer_name="Null 151">
+        <path android:name="c1sld" android:fillColor="#ffffffff" android:pathData="M 0 0 H 100 V 100H 0 V 0 Z" android:fillAlpha="0.0" aapt:layer_name="Null 151" />
+    </group>
+</vector>

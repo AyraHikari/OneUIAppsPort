@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="line"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/dot_divider_width" android:color="@color/col_drawer_dot_divider_dash" android:dashWidth="@dimen/dot_dash_width" android:dashGap="@dimen/dot_dash_gap" />
+</shape>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/analog_clock_dial_and_color_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/widget_setting_style_label" android:background="@color/window_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/widget_setting_label_text_size" android:textStyle="bold" android:textColor="@color/widget_setting_text_color_dark_theme_title" android:paddingTop="@dimen/widget_setting_sub_header_top_padding" android:paddingBottom="@dimen/widget_setting_sub_header_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/widget_setting_style" android:fontFamily="sec-roboto-light" android:layout_marginStart="@dimen/widget_setting_preview_bottom_layout_margin_start" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/window_background_color" android:layout_width="@dimen/widget_setting_analog_clock_front_padding" android:layout_height="fill_parent" />
+        <com.sec.android.widgetapp.analogclock.AnalogClockWidgetStyles android:id="@id/normal_analog_clock_dial" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

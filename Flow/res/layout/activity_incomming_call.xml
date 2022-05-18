@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/callerIDImagePanel" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                <ImageView android:id="@id/defaultCallerImage" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/img_no_photo" />
+                <ImageView android:id="@id/callerImage" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" />
+                <ImageView android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/circle_border_incoming_call" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/callerIDImagePanel">
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/colorIncomingCallNameColor" android:id="@id/callerName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:minHeight="22.0dip" android:text="Jeanette McHale" android:cursorVisible="true" android:fontFamily="sec-roboto-condensed" />
+                <TextView android:textSize="18.0dip" android:textColor="@color/colorIncomingCallNumberColor" android:id="@id/callerNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20.0dip" android:text="MOBILE 012-345-6789" android:fontFamily="sec-roboto-light" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:layout_gravity="center_horizontal" android:background="#ffa8a8a8" android:layout_width="204.0dip" android:layout_height="1.0dip" android:layout_marginTop="31.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/colorIncomingCallNameColor" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:minHeight="18.0dip" android:text="@string/incoming_call_on_your_phone" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+</RelativeLayout>

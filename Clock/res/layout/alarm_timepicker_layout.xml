@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/timepicker_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/top_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@dimen/alarm_timepicker_top_margin_weight" />
+    <view android:theme="@style/AlarmThemeTimePicker" android:id="@id/timepicker" android:focusable="true" android:focusableInTouchMode="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@dimen/alarm_timepicker_weight" class="com.sec.android.app.clockpackage.alarm.ui.view.AlarmTimePickerLayout$AlarmTimePicker" />
+    <Space android:id="@id/bottom_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="@dimen/alarm_timepicker_bottom_margin_weight" />
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">التنبيه بعد %d يوم</item>
+        <item quantity="zero">التنبيه بعد %d يوم</item>
+        <item quantity="one">التنبيه بعد يوم واحد</item>
+        <item quantity="two">التنبيه بعد يومَين</item>
+        <item quantity="few">التنبيه بعد %d أيام</item>
+        <item quantity="many">التنبيه بعد %d يوماً</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">التنبيه بعد %d ساعة</item>
+        <item quantity="zero">التنبيه بعد %d ساعة</item>
+        <item quantity="one">التنبيه بعد ساعة واحدة</item>
+        <item quantity="two">التنبيه بعد ساعتَين</item>
+        <item quantity="few">التنبيه بعد %d ساعات</item>
+        <item quantity="many">التنبيه بعد %d ساعة</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">التنبيه بعد %d ساعة ودقيقة واحدة</item>
+        <item quantity="zero">التنبيه بعد %d ساعة ودقيقة واحدة</item>
+        <item quantity="one">التنبيه بعد ساعة واحدة ودقيقة واحدة</item>
+        <item quantity="two">التنبيه بعد ساعتَين ودقيقة واحدة</item>
+        <item quantity="few">التنبيه بعد %d ساعات ودقيقة واحدة</item>
+        <item quantity="many">التنبيه بعد %d ساعة ودقيقة واحدة</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">التنبيه بعد %d دقيقة</item>
+        <item quantity="zero">التنبيه بعد %d دقيقة</item>
+        <item quantity="one">التنبيه بعد دقيقة واحدة</item>
+        <item quantity="two">التنبيه بعد دقيقتَين</item>
+        <item quantity="few">التنبيه بعد %d دقائق</item>
+        <item quantity="many">التنبيه بعد %d دقيقة</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">خلال %d دقيقة</item>
+        <item quantity="zero">خلال %d دقيقة</item>
+        <item quantity="one">خلال دقيقة واحدة</item>
+        <item quantity="two">خلال دقيقتَين</item>
+        <item quantity="few">خلال %d دقائق</item>
+        <item quantity="many">خلال %d دقيقة</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">تتعذر إضافة أكثر من %d منبه.</item>
+        <item quantity="zero">تتعذر إضافة أكثر من %d منبه.</item>
+        <item quantity="one">تتعذر إضافة أكثر من منبه واحد.</item>
+        <item quantity="two">تتعذر إضافة أكثر من منبهَين.</item>
+        <item quantity="few">تتعذر إضافة أكثر من %d منبهات.</item>
+        <item quantity="many">تتعذر إضافة أكثر من %d منبهاً.</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d دقيقة</item>
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">دقيقة واحدة</item>
+        <item quantity="two">دقيقتان</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">هل تريد حذف %d خلفية؟</item>
+        <item quantity="zero">هل تريد حذف %d خلفية؟</item>
+        <item quantity="one">هل تريد حذف خلفية واحدة؟</item>
+        <item quantity="two">هل تريد حذف خلفيتين؟</item>
+        <item quantity="few">هل تريد حذف %d خلفيات؟</item>
+        <item quantity="many">هل تريد حذف %d خلفيةً؟</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">تم تحديد %d</item>
+        <item quantity="zero">تم تحديد %d</item>
+        <item quantity="one">تم تحديد %d</item>
+        <item quantity="two">تم تحديد %d</item>
+        <item quantity="few">تم تحديد %d</item>
+        <item quantity="many">تم تحديد %d</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">%d دقيقة قبل</item>
+        <item quantity="zero">%d دقيقة قبل</item>
+        <item quantity="one">دقيقة واحدة قبل</item>
+        <item quantity="two">دقيقتان قبل</item>
+        <item quantity="few">%d دقائق قبل</item>
+        <item quantity="many">%d دقيقةً قبل</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s و%2$s و%3$d عنصر آخر</item>
+        <item quantity="zero">%1$s و%2$s و%3$d عنصر آخر</item>
+        <item quantity="one">%1$s و%2$s وعنصر واحد آخر</item>
+        <item quantity="two">%1$s و%2$s وعنصران آخران</item>
+        <item quantity="few">%1$s و%2$s و%3$d عناصر أخرى</item>
+        <item quantity="many">%1$s و%2$s و%3$d عنصراً آخر</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">وقت النوم: %d ساعة</item>
+        <item quantity="zero">وقت النوم: %d ساعة</item>
+        <item quantity="one">وقت النوم: ساعة واحدة</item>
+        <item quantity="two">وقت النوم: ساعتان</item>
+        <item quantity="few">وقت النوم: %d ساعات</item>
+        <item quantity="many">وقت النوم: %d ساعةً</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">وقت النوم: %d دقيقة</item>
+        <item quantity="zero">وقت النوم: %d دقيقة</item>
+        <item quantity="one">وقت النوم: دقيقة واحدة</item>
+        <item quantity="two">وقت النوم: دقيقتان</item>
+        <item quantity="few">وقت النوم: %d دقائق</item>
+        <item quantity="many">وقت النوم: %d دقيقةً</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">التأخير %d دقيقة</item>
+        <item quantity="zero">التأخير %d دقيقة</item>
+        <item quantity="one">التأخير دقيقة واحدة</item>
+        <item quantity="two">التأخير دقيقتين</item>
+        <item quantity="few">التأخير %d دقائق</item>
+        <item quantity="many">التأخير %d دقيقة</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">تنقيص %d دقيقة</item>
+        <item quantity="zero">تنقيص %d دقيقة</item>
+        <item quantity="one">تنقيص دقيقة واحدة</item>
+        <item quantity="two">تنقيص دقيقتين</item>
+        <item quantity="few">تنقيص %d دقائق</item>
+        <item quantity="many">تنقيص %d دقيقة</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">إضافة %d دقيقة</item>
+        <item quantity="zero">إضافة %d دقيقة</item>
+        <item quantity="one">إضافة دقيقة واحدة</item>
+        <item quantity="two">إضافة دقيقتين</item>
+        <item quantity="few">إضافة %d دقائق</item>
+        <item quantity="many">إضافة %d دقيقة</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">تتعذر إضافة أكثر من %d مؤقت مضبوط مسبقاً.</item>
+        <item quantity="zero">تتعذر إضافة أكثر من %d مؤقت مضبوط مسبقاً.</item>
+        <item quantity="one">تتعذر إضافة أكثر من مؤقت واحد مضبوط مسبقاً.</item>
+        <item quantity="two">تتعذر إضافة أكثر من مؤقتين مضبوطين مسبقاً.</item>
+        <item quantity="few">تتعذر إضافة أكثر من %d مؤقتات مضبوطة مسبقاً.</item>
+        <item quantity="many">تتعذر إضافة أكثر من %d مؤقتاً مضبوطاً مسبقاً.</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">تتعذر إضافة أكثر من %d مدينة.</item>
+        <item quantity="zero">تتعذر إضافة أكثر من %d مدينة.</item>
+        <item quantity="one">تتعذر إضافة أكثر من مدينة واحدة.</item>
+        <item quantity="two">تتعذر إضافة أكثر من مدينتَين.</item>
+        <item quantity="few">تتعذر إضافة أكثر من %d مدنٍ.</item>
+        <item quantity="many">تتعذر إضافة أكثر من %d مدينة.</item>
+    </plurals>
+</resources>

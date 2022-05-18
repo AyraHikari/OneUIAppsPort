@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dropdown_list_layout" android:background="@drawable/window_content_area_for_clocktheme" android:focusable="false" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/dropdown_list_view" android:background="@color/window_content_area_color" android:focusable="true" android:nextFocusUp="@id/worldclock_search_map_txt_find" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:nestedScrollingEnabled="true" />
+        <View android:id="@id/dummy" android:background="@color/window_background_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/clock_no_item_found_textview_size" android:textColor="@color/worldclock_no_result_textcolor" android:gravity="center" android:id="@id/no_city_text" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wc_no_result" android:fontFamily="sec-roboto-light" android:layout_marginHorizontal="3.0dip" />
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alarm_widget_ampm_ko_text_size">10.5dip</dimen>
+    <dimen name="alarm_widget_ampm_ko_text_size_mini_land">10.5dip</dimen>
+    <dimen name="alarm_widget_ampm_text_size">10.5dip</dimen>
+    <dimen name="alarm_widget_date_text_size">8.0dip</dimen>
+    <dimen name="alarm_widget_days_text_size">8.0dip</dimen>
+    <dimen name="alarm_widget_name_text_size">8.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_height">30.0dip</dimen>
+    <dimen name="alarm_widget_onoff_btn_width">30.0dip</dimen>
+    <dimen name="alarm_widget_time_text_size">22.5dip</dimen>
+    <dimen name="clockwidget_common_date_textview_textsize">12.0dip</dimen>
+    <dimen name="clockwidget_timeview_ampm_textview_textsize">12.0dip</dimen>
+    <dimen name="digitalclock_day_night_icon_size_tablet">16.0dip</dimen>
+    <dimen name="digitalclock_timeview_number_textview_textsize">30.0dip</dimen>
+    <dimen name="dualclock_horizontal_clock_layout_margin_top_tablet">0.0dip</dimen>
+    <dimen name="dualclock_prefull_timeview_textsize_tablet">10.0dip</dimen>
+    <dimen name="dualclock_widget_ampm_text_size">10.0dip</dimen>
+    <dimen name="dualclock_widget_city_text_size">10.0dip</dimen>
+    <dimen name="dualclock_widget_date_text_size">10.0dip</dimen>
+    <dimen name="dualclock_widget_time_text_size">22.0dip</dimen>
+    <dimen name="first_city_text_size_tablet">0.0dip</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/Weather.Style.ActionBar" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expanded="false" style="@style/Weather.Style.Appbar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_app_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll|snap" app:title="Dev Options" style="@style/Weather.Style.CollapsingToolbar">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/Weather.Style.Toolbar" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_collapseMode="pin" app:title="Dev Options" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dev_options_container_layout" android:background="@color/col_common_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.appcompat.widget.SeslSwitchBar android:id="@id/dev_options_on" android:background="@drawable/common_bg" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.Custom.SwitchBar" />
+        <FrameLayout android:id="@id/dev_options_container" android:background="@drawable/common_contents_bg" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

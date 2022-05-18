@@ -1,0 +1,8 @@
+{
+  "weather": {
+    "type": 0,
+    "menuInSetting": 0,
+    "changeCurrentPage": false,
+    "labelResNameInSetting": "weather"
+  }
+}

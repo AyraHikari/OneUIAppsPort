@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/dot_shape">
+        <shape android:shape="oval">
+            <solid android:color="@color/alarm_widget_off_repeat_day_active_wbg" />
+            <size android:height="@dimen/alarm_widget_repeat_day_dot_size" android:width="@dimen/alarm_widget_repeat_day_dot_size" />
+        </shape>
+    </item>
+</layer-list>

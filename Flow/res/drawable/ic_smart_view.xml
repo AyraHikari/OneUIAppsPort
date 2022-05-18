@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/ic_smart_view_img" android:tint="@color/black_screen_view_text_color" android:tintMode="src_in"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

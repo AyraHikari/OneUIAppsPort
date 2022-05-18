@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">Nedá sa pridať viac než %d miest. Pred pridaním tohto miesta niektoré odstráňte.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nedá sa pridať viac než %d miesto. Pred pridaním tohto miesta niektoré odstráňte.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nedajú sa pridať viac než %d miesta. Pred pridaním tohto miesta niektoré odstráňte.</item>
+        <item quantity="many">Nedá sa pridať viac než %d miesta. Pred pridaním tohto miesta niektoré odstráňte.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nových upozornení</item>
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">Nedá sa zadať viac než %d znakov.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nedá sa zadať viac než %d znak.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nedajú sa zadať viac než %d znaky.</item>
+        <item quantity="many">Nedá sa zadať viac než %d znaku.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">Vybraté: %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Vybraté: %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Vybraté: %d</item>
+        <item quantity="many">Vybraté: %d</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d dní</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d deň</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dňa</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d hodín</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d hodina</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d hodiny</item>
+        <item quantity="many">%d hodiny</item>
+    </plurals>
+</resources>

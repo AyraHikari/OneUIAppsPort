@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/targetCircle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/movingCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sec.android.app.clockpackage.commonalert.view.AlertClearCircleImageView android:layout_gravity="center" android:id="@id/clearTargetCircle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.sec.android.app.clockpackage.commonalert.view.AlertClearCircleImageView android:layout_gravity="center" android:id="@id/animTargetCircle" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/tabCircle" android:background="@drawable/ripple" android:focusable="true" android:clickable="true" android:layout_width="@dimen/alert_sliding_tab_stripe_button_diameter" android:layout_height="@dimen/alert_sliding_tab_stripe_button_diameter" android:contentDescription="@string/dismiss" />
+    <ImageView android:layout_gravity="center" android:id="@id/handleImageView" android:visibility="visible" android:layout_width="@dimen/alert_sliding_tab_dismiss_button_width" android:layout_height="@dimen/alert_sliding_tab_dismiss_button_width" android:src="@drawable/clock_dismiss" android:tint="@color/stripe_dismiss_stroke_color" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/dismiss_arrow" android:layout_width="@dimen/arrow_width" android:layout_height="@dimen/arrow_container_height" android:rotation="270.0" android:layout_marginEnd="@dimen/arrow_translation">
+        <ImageView android:id="@id/arrow_2" android:layout_width="@dimen/arrow_width" android:layout_height="@dimen/arrow_height" android:src="@drawable/sliding_btn_arrow" android:tint="@color/primary" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/arrow_1" android:layout_width="@dimen/arrow_width" android:layout_height="@dimen/arrow_height" android:src="@drawable/sliding_btn_arrow" android:tint="@color/primary" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

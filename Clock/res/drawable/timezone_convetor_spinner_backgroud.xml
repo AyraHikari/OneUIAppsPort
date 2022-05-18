@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/list_popup_window_color" />
+            <stroke android:color="@color/list_popup_window_color_stroke" />
+        </shape>
+    </item>
+</selector>

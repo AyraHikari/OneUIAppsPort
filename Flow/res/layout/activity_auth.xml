@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_round_color" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/Theme.AppCompat.DayNight" android:layout_gravity="bottom" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:backgroundTint="@color/background_round_color" />
+    <RelativeLayout android:id="@id/activity_main_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" android:layout_centerHorizontal="true">
+        <androidx.core.widget.NestedScrollView android:background="@color/background_round_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.samsung.android.galaxycontinuity.customcontrols.RoundedCornerFrameLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/dashboard_help_image" android:adjustViewBounds="true" android:maxWidth="368.0dip" android:maxHeight="194.0dip" android:contentDescription="@null" />
+                </com.samsung.android.galaxycontinuity.customcontrols.RoundedCornerFrameLayout>
+                <TextView android:textSize="16.0sp" android:textColor="#ff505050" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/auth_help_desc_input_fingerprint" android:fontFamily="sec-roboto-light" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

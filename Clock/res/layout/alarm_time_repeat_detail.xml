@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/alarm_detail_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sec.android.app.clockpackage.alarm.ui.view.AlarmTimeSetting android:id="@id/alarm_time_group" android:background="@color/window_content_area_color" android:paddingTop="@dimen/alarm_noti_text_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.sec.android.app.clockpackage.alarm.ui.view.AlarmRepeatButton android:layout_gravity="center_horizontal" android:id="@id/custom_alarm_repeat_btn" android:background="@color/window_content_area_color" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_repeat_layout_height" />
+        <com.sec.android.app.clockpackage.alarm.ui.view.AlarmListDetail android:id="@id/alarm_detail_control" android:background="@color/window_content_area_color" android:paddingTop="@dimen/alarm_repeat_btn_layout_bottom_margin" android:paddingBottom="13.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    </LinearLayout>
+</ScrollView>

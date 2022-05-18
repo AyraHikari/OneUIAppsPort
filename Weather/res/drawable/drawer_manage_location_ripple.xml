@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="18.0dip" />
+            <solid android:color="@color/col_WHITE" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="18.0dip" />
+            <solid android:color="@color/col_drawer_manage_location_bg_color" />
+        </shape>
+    </item>
+</ripple>

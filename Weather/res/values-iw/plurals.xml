@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">ניתן להוסיף לכל היותר %d מיקומים. כדי להוסיף מיקום זה, מחק מיקומים אחדים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ניתן להוסיף רק %d מיקום. כדי להוסיף מיקום זה, מחק מיקומים אחדים.</item>
+        <item quantity="two">ניתן להוסיף לכל היותר %d מיקומים. כדי להוסיף מיקום זה, מחק מיקומים אחדים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">ניתן להוסיף לכל היותר %d מיקומים. כדי להוסיף מיקום זה, מחק מיקומים אחדים.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d התראות חדשות</item>
+        <item quantity="one">התראה חדשה אחת (%d)</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="many">%d התראות חדשות</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">ניתן להזין לכל היותר %d תווים.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">ניתן להזין לכל היותר %d תו.</item>
+        <item quantity="two">ניתן להזין לכל היותר %d תווים.</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">ניתן להזין לכל היותר %d תווים.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">%d נבחר/ו</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d נבחר/ו</item>
+        <item quantity="two">%d נבחר/ו</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d נבחר/ו</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d ימים</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d יום</item>
+        <item quantity="two">%d ימים</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d ימים</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d שעות</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d שעה</item>
+        <item quantity="two">%d שעות</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">%d שעות</item>
+    </plurals>
+</resources>

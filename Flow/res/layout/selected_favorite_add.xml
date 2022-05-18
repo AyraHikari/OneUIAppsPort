@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:layout_width="73.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/smart_view_button_favorites_bg" android:layout_width="73.0dip" android:layout_height="73.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/smart_view_favorites_add" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" android:backgroundTint="@color/favorite_add_bg_color" android:backgroundTintMode="src_in" />
+</RelativeLayout>

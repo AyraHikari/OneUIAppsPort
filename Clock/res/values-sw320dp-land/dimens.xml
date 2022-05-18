@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_bar_layout_height">247.0dip</dimen>
+    <dimen name="horizontal_margin_time_toolbar">167.0dip</dimen>
+    <dimen name="margin_between_time">7.0dip</dimen>
+    <dimen name="sleep_duration_text_height">28.0dip</dimen>
+    <dimen name="sleep_record_bed_image_icon_size">21.0dip</dimen>
+    <dimen name="sleep_visual_edit_inner_circle_dimens">170.0dip</dimen>
+    <dimen name="sleep_visual_edit_outer_circle_size">216.0dip</dimen>
+    <dimen name="sleep_visual_edit_outer_circle_top_margin">26.0dip</dimen>
+    <dimen name="stopwatch_button_layout_height">50.0dip</dimen>
+    <item type="dimen" name="timer_common_circle_vertical_bias_multi_window">0.5</item>
+    <dimen name="timer_common_highcontrastkeyboard_layout_height">22.0dip</dimen>
+    <dimen name="timer_common_keypad_layout_height">22.0dip</dimen>
+    <item type="dimen" name="timer_common_picker_vertical_bias_multi_window">0.5</item>
+    <dimen name="timer_common_timepicker_layout_min_height">100.0dip</dimen>
+    <item type="dimen" name="timer_common_title_vertical_bias_multi_window">0.5</item>
+    <dimen name="toolbar_height">88.0dip</dimen>
+    <dimen name="top_margin_time_toolbar">10.0dip</dimen>
+    <dimen name="widget_setting_preview_height">214.0dip</dimen>
+    <dimen name="widget_setting_preview_margin_bottom">24.0dip</dimen>
+    <dimen name="widget_setting_preview_margin_start">24.0dip</dimen>
+    <dimen name="widget_setting_preview_margin_top">11.0dip</dimen>
+    <dimen name="widget_setting_bottom_right_width">320.0dip</dimen>
+    <dimen name="widget_setting_preview_width">256.0dip</dimen>
+</resources>

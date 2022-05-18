@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alarm_main_alert_in_day_plurals">
+        <item quantity="other">Alarmă peste %d zile</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmă peste %d zi</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarmă peste %d zile</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hour_plurals">
+        <item quantity="other">Alarmă peste %d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmă peste %d oră</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarmă peste %d ore</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_hours_one_minute_plurals">
+        <item quantity="other">Alarmă peste %d ore și 1 minut</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmă peste %d oră și 1 minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarmă peste %d ore și 1 minut</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_in_min_plurals">
+        <item quantity="other">Alarmă peste %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Alarmă peste %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Alarmă peste %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_main_alert_snooze_in_min_plurals">
+        <item quantity="other">Peste %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Peste %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Peste %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_max_item">
+        <item quantity="other">Nu se pot adăuga mai mult de %d alarme.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate adăuga mai mult de %d alarmă.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot adăuga mai mult de %d alarme.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="alarm_snooze_time_in_minutes">
+        <item quantity="other">%d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="delete_backgrounds">
+        <item quantity="other">Ștergeți %d fundaluri?</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Ștergeți %d fundal?</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Ștergeți %d fundaluri?</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d de notificări noi</item>
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+    </plurals>
+    <plurals name="pd_selected">
+        <item quantity="other">S-au selectat %d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">S-a selectat %d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">S-au selectat %d</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="reminder_minutes_before_plurals">
+        <item quantity="other">Cu %d minute înainte</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Cu %d minut înainte</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Cu %d minute înainte</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="selected_alarm_ids">
+        <item quantity="other">%1$s, %2$s și încă %3$d</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%1$s, %2$s și încă %3$d</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%1$s, %2$s și încă %3$d</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_hour_plurals">
+        <item quantity="other">Durată somn: %d ore</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Durată somn: %d oră</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Durată somn: %d ore</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="sleep_duration_in_min_plurals">
+        <item quantity="other">Durată somn: %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Durată somn: %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Durată somn: %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_in_mins">
+        <item quantity="other">Amânare %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Amânare %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Amânare %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_minus_min">
+        <item quantity="other">Minus %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Minus %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Minus %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="snooze_plus_min">
+        <item quantity="other">Plus %d minute</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Plus %d minut</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Plus %d minute</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="timer_max_preset">
+        <item quantity="other">Nu se pot adăuga mai mult de %d temporizatoare presetate.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate adăuga mai mult de %d temporizator presetat.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot adăuga mai mult de %d temporizatoare presetate.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="wc_city_maxsize">
+        <item quantity="other">Nu se pot adăuga mai mult de %d orașe.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">Nu se poate adăuga mai mult de %d oraș.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">Nu se pot adăuga mai mult de %d orașe.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

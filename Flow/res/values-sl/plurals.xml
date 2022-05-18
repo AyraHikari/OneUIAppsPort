@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d datotek je bilo dodanih na seznam za prenos datotek.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d datoteka je bila dodana na seznam za prenos datotek.</item>
+        <item quantity="two">%d datoteki sta bili dodani na seznam za prenos datotek.</item>
+        <item quantity="few">%d datoteke so bile dodane na seznam za prenos datotek.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnikov ali tabličnih računalnikov.
+
+S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnik ali tablični računalnik.
+
+S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
+        <item quantity="two">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnika ali tablična računalnika.
+
+S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
+        <item quantity="few">"V aplikaciji Samsung Flow lahko registrirate in upravljate največ %d računalnike ali tablične računalnike.
+
+S telefonom je lahko povezan samo en računalnik ali tablični računalnik hkrati. Ko se s telefonom poskušajo povezati registrirani računalniki in registrirani tablični računalniki, boste morali izbrati enega od njih."</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

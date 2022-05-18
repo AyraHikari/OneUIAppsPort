@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlarmListText.Date" parent="@style/AlarmListText">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#fffafafa</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@string/roboto_regular</item>
+        <item name="android:layout_marginEnd">5.0dip</item>
+    </style>
+</resources>

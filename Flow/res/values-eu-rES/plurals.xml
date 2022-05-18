@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d fitxategi gehitu dira fitxategiak transferitzeko zerrendan.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d fitxategi gehitu da fitxategiak transferitzeko zerrendan.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"Erregistratu eta kudeatu %d ordenagailu edo tableta Samsung Flow-n.
+
+Ordenagailu edo tableta bakarra konekta daiteke telefonora aldi berean. Erregistratutako bi ordenagailuak edo tabletak telefonora konektatzen saiatzen direnean, bietako bat aukeratu beharko duzu."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"Erregistratu eta kudeatu %d ordenagailu edo tableta Samsung Flow-n.
+
+Ordenagailu edo tableta bakarra konekta daiteke telefonora aldi berean. Erregistratutako bi ordenagailuak edo tabletak telefonora konektatzen saiatzen direnean, bietako bat aukeratu beharko duzu."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">N/A</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

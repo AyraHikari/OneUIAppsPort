@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/worldclock_timezone_convertor_scroll_view" android:scrollbars="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/worldclock_timezone_convertor_layout" android:background="@color/window_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="parent">
+        <include android:id="@id/timezone_convertor_toolbar" layout="@layout/common_toolbar" />
+        <com.sec.android.app.clockpackage.worldclock.viewmodel.TimeZoneConvertorControlViewModel android:id="@id/worldclock_timezone_convertor_control_view" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/timezone_convertor_toolbar" app:layout_constraintVertical_bias="0.0" />
+        <com.sec.android.app.clockpackage.worldclock.viewmodel.TimeZoneListViewModel android:id="@id/worldclock_timezone_convertor_list_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/worldclock_timezone_convertor_control_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

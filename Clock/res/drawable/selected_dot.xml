@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring" android:useLevel="false" android:innerRadius="0.0dip" android:thickness="@dimen/alarm_list_alert_repeat_days_dot_radius">
+            <solid android:color="@color/selected_repeat_on_text_color" />
+        </shape>
+    </item>
+</layer-list>

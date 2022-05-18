@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+    <item>
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/connection_target_bg_color" />
+            <corners android:radius="26.0dip" />
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="?android:colorControlHighlight"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@android:id/mask">
+                <shape android:shape="rectangle">
+                    <solid android:color="?android:colorAccent" />
+                    <corners android:radius="26.0dip" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

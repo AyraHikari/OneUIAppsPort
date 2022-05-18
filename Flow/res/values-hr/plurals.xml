@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="files_added_to_transfer_list">
+        <item quantity="other">%d datoteka dodano na popis za prijenos datoteka.</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">%d datoteka dodana na popis za prijenos datoteka.</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">%d datoteke dodane na popis za prijenos datoteka.</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+    <plurals name="help_using_multi_device_desc">
+        <item quantity="other">"U usluzi Samsung Flow registrirajte najviše %d računala ili tableta i upravljajte njima.
+
+Istovremeno je s telefonom moguće povezati samo jedno računalo ili tablet. Morat ćete odabrati jedan uređaj kada se oba registrirana računala ili tableta pokušaju povezati s telefonom."</item>
+        <item quantity="zero">N/A</item>
+        <item quantity="one">"U usluzi Samsung Flow registrirajte najviše %d računalo ili tablet i upravljajte njime.
+
+Istovremeno je s telefonom moguće povezati samo jedno računalo ili tablet. Morat ćete odabrati jedan uređaj kada se oba registrirana računala ili tableta pokušaju povezati s telefonom."</item>
+        <item quantity="two">N/A</item>
+        <item quantity="few">"U usluzi Samsung Flow registrirajte najviše %d računala ili tableta i upravljajte njima.
+
+Istovremeno je s telefonom moguće povezati samo jedno računalo ili tablet. Morat ćete odabrati jedan uređaj kada se oba registrirana računala ili tableta pokušaju povezati s telefonom."</item>
+        <item quantity="many">N/A</item>
+    </plurals>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/imageLayout" android:background="@drawable/mms_attachment_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:minHeight="49.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iconImage" android:layout_width="24.0dip" android:layout_height="24.0dip" android:tint="#ff8d8d8d" android:layout_marginStart="12.0dip" android:layout_marginEnd="7.0dip" android:tintMode="src_in" />
+        <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="19.0dip">
+            <TextView android:textSize="16.0dip" android:textColor="#ff252525" android:id="@id/firstLineText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

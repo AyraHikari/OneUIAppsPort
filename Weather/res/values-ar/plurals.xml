@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cant_add_more_than_location">
+        <item quantity="other">تتعذر إضافة أكثر من %d موقع. احذف بعض المواقع لإضافة هذا الموقع.</item>
+        <item quantity="zero">تتعذر إضافة أكثر من %d موقع. احذف بعض المواقع لإضافة هذا الموقع.</item>
+        <item quantity="one">تتعذر إضافة أكثر من موقع واحد. احذف بعض المواقع لإضافة هذا الموقع.</item>
+        <item quantity="two">تتعذر إضافة أكثر من موقعَين. احذف بعض المواقع لإضافة هذا الموقع.</item>
+        <item quantity="few">تتعذر إضافة أكثر من %d مواقع. احذف بعض المواقع لإضافة هذا الموقع.</item>
+        <item quantity="many">تتعذر إضافة أكثر من %d موقعاً. احذف بعض المواقع لإضافة هذا الموقع.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+    <plurals name="search_up_to_characters_allowed">
+        <item quantity="other">يتعذر إدخال أكثر من %d حرف.</item>
+        <item quantity="zero">يتعذر إدخال أكثر من %d حرف.</item>
+        <item quantity="one">يتعذر إدخال أكثر من حرف واحد.</item>
+        <item quantity="two">يتعذر إدخال أكثر من حرفين.</item>
+        <item quantity="few">يتعذر إدخال أكثر من %d أحرف.</item>
+        <item quantity="many">يتعذر إدخال أكثر من %d حرفاً.</item>
+    </plurals>
+    <plurals name="selected_count_msg">
+        <item quantity="other">تم تحديد %d</item>
+        <item quantity="zero">تم تحديد %d</item>
+        <item quantity="one">تم تحديد %d</item>
+        <item quantity="two">تم تحديد %d</item>
+        <item quantity="few">تم تحديد %d</item>
+        <item quantity="many">تم تحديد %d</item>
+    </plurals>
+    <plurals name="selected_days_msg">
+        <item quantity="other">%d يوم</item>
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">يوم واحد</item>
+        <item quantity="two">يومان</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d يوماً</item>
+    </plurals>
+    <plurals name="selected_hours_msg">
+        <item quantity="other">%d ساعة</item>
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">ساعتان</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+    </plurals>
+</resources>

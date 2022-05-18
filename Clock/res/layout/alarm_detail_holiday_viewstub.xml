@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/alarm_holiday_boz" android:soundEffectsEnabled="false" android:paddingVertical="0.0dip" style="@style/ListViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/alarm_holiday_subject" android:text="@string/alarm_holiday" android:maxLines="1" android:layout_centerInParent="true" android:layout_toStartOf="@id/alarm_holiday_switch" android:layout_alignParentStart="true" android:paddingVertical="@dimen/alarm_winset_listview_padding_top_bottom" style="@style/TextStyle_1" />
+    <Switch android:theme="@style/SwitchStyle" android:id="@id/alarm_holiday_switch" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_centerInParent="true" android:layout_marginStart="@dimen/alarm_detail_item_switch_margin_start" android:layout_marginEnd="@dimen/alarm_detail_item_textview_margin_end" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/stopwatch_list_header_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/stopwatch_list_header" android:layout="@layout/stopwatch_list_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/stopwatch_list_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/stopwatch_list_header_layout" android:nestedScrollingEnabled="true">
+        <ListView android:layout_gravity="center_horizontal" android:id="@id/stopwatch_watchlist" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/stopwatch_list_item_bg" android:divider="@color/stopwatch_divider_color" android:dividerHeight="@dimen/stopwatch_list_divider_dividerHeight" android:choiceMode="singleChoice" android:footerDividersEnabled="false" android:importantForAccessibility="no" android:nestedScrollingEnabled="true" />
+    </FrameLayout>
+</RelativeLayout>

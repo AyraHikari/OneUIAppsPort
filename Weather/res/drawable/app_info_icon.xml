@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:maxWidth="@dimen/about_page_info_icon_size" android:maxHeight="@dimen/about_page_info_icon_size">
+            <bitmap android:src="@drawable/tw_ic_ab_app_info_mtrl" android:tint="@color/col_def_action_button_tint_color" android:autoMirrored="true" />
+        </rotate>
+    </item>
+</layer-list>

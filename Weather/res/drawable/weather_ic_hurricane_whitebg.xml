@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$weather_ic_hurricane_whitebg__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="s3" android:animation="@drawable/$weather_ic_hurricane_whitebg__1" />
+    <target android:name="s3s2" android:animation="@drawable/$weather_ic_hurricane_whitebg__7" />
+    <target android:name="s2" android:animation="@drawable/$weather_ic_hurricane_whitebg__13" />
+    <target android:name="s3s1" android:animation="@drawable/$weather_ic_hurricane_whitebg__18" />
+    <target android:name="s1" android:animation="@drawable/$weather_ic_hurricane_whitebg__24" />
+</animated-vector>

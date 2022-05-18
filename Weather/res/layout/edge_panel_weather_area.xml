@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/edge_panel_weather_area_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/edge_weather_current_icon" android:tag="binding_1" android:layout_width="@dimen/edge_weather_current_location_icon_size" android:layout_height="@dimen/edge_weather_current_location_icon_size" android:backgroundTint="@color/col_edge_location_icon_tint" />
+    <TextView android:textSize="@dimen/edge_weather_city_name_text_size" android:textColor="@color/col_edge_city_name" android:ellipsize="end" android:gravity="center" android:id="@id/edge_weather_location" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@string/font_roboto_regular" />
+    <TextClock android:textSize="@dimen/edge_weather_date_time_text_size" android:textColor="@color/col_edge_day_time" android:ellipsize="end" android:gravity="center" android:id="@id/edge_weather_time" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@string/font_roboto_regular" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/edge_weather_icon" android:tag="binding_4" android:layout_width="@dimen/edge_weather_icon_size" android:layout_height="@dimen/edge_weather_icon_size" android:layout_marginTop="@dimen/edge_weather_icon_margin_top" />
+</LinearLayout>

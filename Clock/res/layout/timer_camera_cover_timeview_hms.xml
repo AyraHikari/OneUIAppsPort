@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Direction_Locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Direction_LTR">
+        <TextView android:textSize="@dimen/camera_cover_text_size" android:textColor="@color/alert_clear_cover_text_color" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/timer_alert_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:includeFontPadding="false" android:fontFamily="sec-roboto-regular" />
+        <TextView android:id="@id/timer_hour_prefix" android:visibility="visible" android:layout_toEndOf="@id/timer_alert_minus" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_hour_postfix" android:visibility="visible" android:layout_toEndOf="@id/timer_hour_prefix" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_hms_colon" android:visibility="visible" android:text="@string/colon" android:layout_toEndOf="@id/timer_hour_postfix" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_minute_prefix" android:layout_toEndOf="@id/timer_hms_colon" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_minute_postfix" android:layout_toEndOf="@id/timer_minute_prefix" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_ms_colon" android:text="@string/colon" android:layout_toEndOf="@id/timer_minute_postfix" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_second_prefix" android:layout_toEndOf="@id/timer_ms_colon" style="@style/TimerCameraCoverTimeViewStyle" />
+        <TextView android:id="@id/timer_second_postfix" android:layout_toEndOf="@id/timer_second_prefix" style="@style/TimerCameraCoverTimeViewStyle" />
+    </RelativeLayout>
+</LinearLayout>
